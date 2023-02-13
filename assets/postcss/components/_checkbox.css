@@ -1,0 +1,47 @@
+@layer components {
+  .checkbox {
+    @apply relative;
+    input {
+      @apply hidden;
+    }
+
+    &-indicator {
+      @apply transition-all duration-300 flex items-center bg-white justify-center rounded-[0.25rem] border border-content absolute inset-0 w-full h-full;
+      svg {
+        @apply w-[80%] h-[80%] stroke-white;
+      }
+    }
+    input:checked ~ .checkbox-indicator {
+      @apply bg-primary border-primary;
+    }
+
+    &.checkbox-xl{
+      @apply w-[1.75rem] h-[1.75rem];
+    }
+    &.checkbox-lg{
+      @apply w-[1.5rem] h-[1.5rem];
+    }
+    &.checkbox-md{
+      @apply w-[1.25rem] h-[1.25rem];
+    }
+    &.checkbox-sm{
+      @apply w-[.9375rem] h-[.9375rem];
+    }
+  }
+
+  .radio{
+    .radio-xl{
+      @apply w-6 h-6;
+    }
+    .radio-lg{
+      @apply w-5 h-5;
+    }
+    .radio-md{
+      @apply w-4 h-4;
+    }
+    .radio-sm{
+      @apply w-3 h-3;
+    }
+  }
+}
+

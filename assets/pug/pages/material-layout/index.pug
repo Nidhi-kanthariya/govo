@@ -1,0 +1,160 @@
+
+//- feather
+-var feather= true;
+
+//- custom select
+-var customSelect= true;
+
+//- customizer  
+-var customizer=true;
+
+//- apex-chart
+-var apexChart=true;
+-var materialApex=true;
+
+//- Chart Js
+-var chartJs=true;
+
+//- sidebar
+-var sidebar = true;
+
+//- Full Calender Js
+-var fullCalender=true; 
+
+
+//- Breadcrumbs
+-var pageTitle="Material Dashboard";
+-var breadcrumb=['dashboard','material']; 
+
+//- all JSON  
+include ../../data/all-data
+
+//- all mixin  
+include ../../mixin/mixin
+
+doctype html
+html(lang='en' data-theme="material-skin")
+    include ../../layout/header-files 
+    body(dir="ltr" class="material-skin")
+        main.page-wrapper  
+            include ../../layout/header/material/header
+            // Sidebar Start 
+            div.page-sidebar.sidebar-dark.material-sidebar.unique-sidebar
+                include ../../layout/sidebar/material
+            // Sidebar End     
+            div.page-body-wrapper
+                // Page Body Start 
+                div.page-body(class="!mt-[-80px] !px-body-space2")
+                    div.grid.grid-cols-12.gap-card-gap  
+                        div.col-span-3(class="2xl:order-3 2xl:col-span-4 lg:order-2 lg:col-span-6 2md:col-span-12")
+                            div.card
+                                div.card-header
+                                    +card-header("Market Overview","setting", HISTORY_DROPDOWN,"Last five months")
+                                div.card-body
+                                    div#market-overview-chart(class="-mx-card-space")
+                                    ul.flex.items-center.justify-between(class="2md:max-w-[60%] 3sm:max-w-full sm:max-w-[90%] 2md:mx-auto")
+                                        li(class="px-[5px]")
+                                            div(class="w-[46px] mx-auto text-center") 
+                                                div.sales-small.sales-small-1(class="h-[45px]")
+                                            div.flex.items-center.justify-center.flex-col 
+                                                span(class="text-sm font-semibold text-title") 300     
+                                                span(class="font-semibold text-3xs text-content") Watch Sale     
+                                        li(class="w-[1px] h-[30px] bg-border-light")  
+                                        li(class="px-[5px]")
+                                            div(class="w-[46px] mx-auto text-center") 
+                                                div.sales-small.sales-small-2(class="h-[45px]")
+                                            div.flex.items-center.justify-center.flex-col 
+                                                span(class="text-sm font-semibold text-title") 1120   
+                                                span(class="font-semibold text-3xs text-content") Phone Sale    
+                                        li(class="w-[1px] h-[30px] bg-border-light")  
+                                        li(class="px-[5px]")
+                                            div(class="w-[46px] mx-auto text-center") 
+                                                div.sales-small.sales-small-3(class="h-[45px]") 
+                                            div.flex.items-center.justify-center.flex-col 
+                                                span(class="text-sm font-semibold text-title") 530    
+                                                span(class="font-semibold text-3xs text-content") Tablet Sale     
+                        div.col-span-6(class="2xl:col-span-8 2xl:order-2 lg:col-span-12")
+                            div.card
+                                div.card-header 
+                                    +card-header("Monthly Progress","setting", HISTORY_DROPDOWN)
+                                div.card-body
+                                    div.overflow-auto.custom-scroll  
+                                        include ../../components/table/monthly-progress
+                        div.col-span-3(class="2xl:col-span-4 2xl:order-1 lg:col-span-6 2md:col-span-12")
+                            include ../../components/welcome-card3
+                        div.col-span-6(class="2xl:order-4 2xl:col-span-8 lg:col-span-12")
+                            div.card
+                                div.card-header
+                                    +card-header("Sales Reports","select", HISTORY_DROPDOWN)
+                                div.card-body
+                                    div#salesReportsLineChart.apex-custom-tooltip.apex-tooltip-style1 
+                        div.col-span-3(class="2xl:order-5 2xl:col-span-4 2lg:col-span-12")
+                            div(class="grid grid-cols-2 gap-card-gap")
+                                div.col-span-2(class="2lg:col-span-1 sm:col-span-2")
+                                    div.card 
+                                        div.card-body
+                                            +widget1(REVENUE_WIDGET) 
+                                div.col-span-2(class="2lg:col-span-1 sm:col-span-2")
+                                    div.card.p-0(class="overflow-hidden")
+                                        div.relative
+                                            img(class="w-full h-[179px] 2sm:h-[150px]" src="../../assets/images/banner/2.jpg" alt="banner") 
+                                            div(class="absolute top-1/2 -translate-y-1/2 left-0 max-w-[70%] px-card-space")   
+                                                h5(class="text-lg font-extrabold text-title") $5,859
+                                                p(class="text-lg font-normal 4xl:text-sm text-title") Make an announcement to your coworkers   
+                        div.col-span-3(class="2xl:order-7 2xl:col-span-4 lg:col-span-6 md:col-span-12")
+                            div.card
+                                div.card-header  
+                                    +card-header("Task","setting", HISTORY_DROPDOWN) 
+                                div.card-body 
+                                    +task-list-checkbox(TASK_LIST)
+                        div.col-span-4(class="2xl:order-6 2xl:col-span-8 2lg:col-span-12")
+                            div.card
+                                div.card-header 
+                                    +card-header("User Status","setting", HISTORY_DROPDOWN) 
+                                div.card-body
+                                    div.overflow-auto.custom-scroll  
+                                        include ../../components/table/user-status
+                        div.col-span-4(class="2xl:order-8 2xl:col-span-8 lg:col-span-6 md:col-span-12")
+                            div.card
+                                div.card-header
+                                    +card-header("Sales Reports","setting", HISTORY_DROPDOWN) 
+                                div.card-body
+                                    div
+                                        h5(class="text-2xl 3sm:text-sm 3xl:text-lg lg:text-base font-extrabold flex items-center gap-[5px]") $1500.89K
+                                            span(class="text-sm font-semibold lg:text-xs 3sm:lg:text-2xs text-content") ( Sales last 5 Months )
+                                    div#sellerReportBar(class="-mb-card-space")      
+                        div.col-span-4(class="2xl:order-9 2xl:col-span-6 md:col-span-12")
+                            div.card
+                                div.card-header 
+                                    +card-header("News & Update","setting", HISTORY_DROPDOWN) 
+                                div.card-body
+                                    +news-update(NEWS_UPDATE2,"badge","link")
+                        div.col-span-4(class="2xl:order-10 2xl:col-span-6 md:col-span-12")
+                            div.card
+                                div.card-header
+                                    +card-header("Active Tasks","select", HISTORY_DROPDOWN) 
+                                div.card-body
+                                    +todo-list(TODO_LIST)
+                        div.col-span-8(class="2xl:order-11 2xl:col-span-12")
+                            div.card
+                                div.card-header
+                                    div.flex.items-center.justify-between
+                                        +card-header("Schedule")
+                                        div.avatar-group.-space-x-5(class="justify-start")
+                                            div.avatar(class="w-[35px] h-[35px]  border-[2px] border-white")
+                                                div
+                                                    img(src="../../assets/images/avatar/33.jpg" alt="avatar") 
+                                            div.avatar(class="w-[35px] h-[35px]  border-[2px] border-white")
+                                                div
+                                                    img(src="../../assets/images/avatar/34.jpg" alt="avatar") 
+                                            div.avatar.placeholder(class="w-[35px] h-[35px]  border-[2px] bg-primary border-white")
+                                                div
+                                                    span(class="font-bold text-white text-3xs") 26+ 
+                                div.card-body
+                                    div#calendar-container(class="h-[317px] weekly-schedule")
+                                        div#calendar(class="h-full overflow-auto custom-scroll")
+
+                // Page Body End 
+                +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[19px] shadow-footer bg-white px-body-space2 mt-card-gap")
+        include ../../components/customizer
+    include ../../layout/footer-files

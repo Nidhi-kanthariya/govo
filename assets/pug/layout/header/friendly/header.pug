@@ -1,0 +1,38 @@
+// Page Header start
+header.sticky.top-0(class="z-[4]") 
+  div.page-header(class="ml-auto transition-all px-body-space2  bg-primary shadow-header")
+    div(class="py-[18px] md:py-[14px] flex items-center gap-[88px] 5xl:gap-[72px] 3xl:gap-[55px] xl:gap-[10px]")
+      div.left-header(class="flex-[0_0_auto]")
+        div(class="flex items-center w-full xl:gap-3")
+          div.logo-wrapper
+            a(href="index.html")
+              img(class="w-[calc(55px_+_(85_-_55)_*_((100vw_-_320px)_/_(1920_-_320)))]" src="../../assets/images/logo/logo-w.png" alt="logo")
+          button.sidebar-toggle(class="hidden xl:block")
+            +SVG_ICON("Category","w-6 4xl:w-5 h-6 4xl:h-5 stroke-white")
+      div.right-header.flex.items-center(class="gap-[30px] w-full md:gap-[18px] sm:gap-[10px] 2sm:gap-0")
+        div.search-box-wrapper(class="transition-all duration-300 xl:px-body-space2 xl:bg-primary xl:scale-0 xl:opacity-0 xl:invisible xl:max-w-full xl:w-full xl:z-[5] flex-1 xl:absolute xl:left-0 w-full max-w-[480px] rounded-5 overflow-hidden text-white") 
+          div.search-box.relative(class="bg-white-light ")
+            input(class="bg-transparent w-full py-[11px] pl-[25px] pr-[55px] text-xs font-semibold text-white placeholder:text-white" placeholder="Type to Search..." type="search")       
+            +SVG_ICON("Search","xl:hidden w-6 h-6 5xl:w-5 5xl:h-5 stroke-white top-1/2 -translate-y-1/2 right-[25px] absolute")
+            i(data-feather="x" class="search-close hidden cursor-pointer xl:block w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-white top-1/2 -translate-y-1/2 right-[25px] absolute")
+        div.icon-menu.ml-auto
+          ul.flex.items.center(class="gap-[15px] 2xl:gap-[9px] 2sm:gap-[6px]")
+            li(class="2sm:p-0 2sm:bg-transparent hidden xl:flex items-center justify-center 5xl:px-[12px] 5xl:py-[9px] sm:px[10px] sm:py-[7px] px-[14px] py-[9px] bg-white-light rounded-5")
+              button.search-show
+                +SVG_ICON("Search","w-6 h-6 5xl:w-5 5xl:h-5 stroke-white")
+            li(class="sm:hidden flex items-center justify-center 5xl:px-[12px] 5xl:py-[9px] sm:px[10px] sm:py-[7px] px-[14px] py-[9px] bg-white-light rounded-5")  
+              include ./notification
+            li(class="2sm:p-0 2sm:bg-transparent flex items-center justify-center 5xl:px-[12px] 5xl:py-[9px] sm:px[10px] sm:py-[7px] px-[14px] py-[9px] bg-white-light rounded-5")
+              +SVG_ICON("Star","w-6 h-6 5xl:w-5 5xl:h-5 stroke-white")
+            li(class="md:hidden flex items-center justify-center 5xl:px-[12px] 5xl:py-[9px] sm:px[10px] sm:py-[7px] px-[14px] py-[9px] bg-white-light rounded-5")
+              include ./message
+            li(class="2sm:p-0 2sm:bg-transparent md:hidden  flex items-center justify-center 5xl:px-[12px] 5xl:py-[9px] sm:px[10px] sm:py-[7px] px-[14px] py-[9px] bg-white-light rounded-5")
+              include ./cart
+            li(class="2sm:p-0 2sm:bg-transparent flex customizer-btn items-center justify-center 5xl:px-[12px] 5xl:py-[9px] sm:px[10px] sm:py-[7px] px-[14px] py-[9px] bg-white-light rounded-5")
+              +SVG_ICON("Setting","w-6 h-6 5xl:w-5 5xl:h-5 cursor-pointer transition-all duration-300 group-hover:stroke-primary stroke-white")
+        ul.profile-box.flex.items-center
+          li(class="pr-[11px] last:pr-0 border-r md:border-none md:pr-0 border-white-light flex items-center") 
+            include ./language-dropdown      
+          li(class="md:hidden pl-[11px] first:pl-0 flex items-center")
+            include ./profile-box
+// Page Header end

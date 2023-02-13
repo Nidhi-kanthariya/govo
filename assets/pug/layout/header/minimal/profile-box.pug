@@ -1,0 +1,19 @@
+
+// Profile Start 
+div.dropdown 
+   div.flex.items-center(class="gap-[10px] cursor-pointer") 
+      div
+         img(class="w-[calc(35px_+_(40_-_35)_*_((100vw_-_320px)_/_(1920_-_320)))] h-auto rounded-full" src="../../assets/images/avatar/1.jpg" alt="avatar")
+      div(class="md:hidden")
+         h4(class="text-xs font-bold")  Helen Walter
+         span.flex.items-center.gap-1(class="text-3xs font-semibold text-content")
+            | Admin
+            +SVG_ICON( "Fill-Arrow","w-[6px] h-[4px]")
+   div.dropdown-menu(class="!min-w-[170px]") 
+      ul.flex.flex-col.gap-3 
+         each setting in PROFILE_SETTING
+            li 
+               a(href=`${setting.url}` class="text-title flex items-center gap-2")
+                  +SVG_ICON(`${setting.icon}`,"w-[22px] h-[22px] stroke-title")
+                  = setting.name
+// Profile End 

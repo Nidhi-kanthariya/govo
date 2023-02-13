@@ -1,0 +1,85 @@
+//- sidebar
+-var sidebar = true;
+
+//- feathet
+-var feather= true;
+
+//- customSelect
+-var customSelect= true;
+
+//- customizer
+-var customizer=true;
+
+//- prism
+-var prism=true;
+
+//- Breadcrumbs
+-var pageTitle="Form Validation";
+-var breadcrumb=['Ui Kits','Form Validation'];
+
+//- json
+include ../../data/all-data
+
+//- mixin
+include ../../mixin/mixin
+
+doctype html
+html(lang='en')  
+    include ../../layout/header-files 
+    body(dir="ltr" class="unique-skin") 
+        main.page-wrapper
+            div.page-body-wrapper(class="mb-10 2xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300")
+                include ../../layout/header/unique/header     
+                // Sidebar Start 
+                div.page-sidebar.sidebar-dark.unique-sidebar
+                    include ../../layout/sidebar/unique
+                // Sidebar End 
+
+                // Page Body Start 
+                div.page-body
+                    div.grid.grid-cols-12.gap-card-gap
+                        div.col-span-6(class="md:col-span-12")
+                            div.card.tabs
+                                div.card-header.pb-2.header-bottom-border
+                                    div.flex.flex-col
+                                        h3.text-lg.font-bold Basic Form
+                                        p To set the custom select use 
+                                            strong .custom-select   
+                                            | & 
+                                            strong .select-style-1  
+                                            | class.
+                                        div.preview-code.tab-links
+                                            button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
+                                            button.p-0.tab.tab-lifted(data-tabFilter="2" class="tab-link tab-2") Html
+                                div.card-body                                   
+                                    div.tabs-content
+                                        div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
+                                            div.flex.items-center.flex-col.flex-wrap.gap-2(class="my-2")  
+                                                div
+                                                    label.block.mb-2.text-sm.text-gray-800(for='email') Email
+                                                    input.w-full.px-4.py-2.text-base.border.border-gray-300.rounded.outline-none(type='text' name='name' class='focus:ring-blue-500 focus:border-blue-500 focus:ring-1' placeholder='Email Address')
+                                                    span.text-sm.text-red-600  These credentials do not match our records.
+                                        div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
+                                            button.btn.copyBtn 
+                                                i(data-feather="clipboard")
+                                            pre(class="overflow-auto language-html custom-scroll")
+                                                code
+                                                    |&lt;div class="custom-select select-style-1"&gt;
+                                                    |   &lt;select&gt;
+                                                    |      &lt;option disabled selected&gt;Pick your favorite Simpson&lt;/option&gt;
+                                                    |      &lt;option&gt;Homer&lt;/option&gt;
+                                                    |      &lt;option&gt;Marge&lt;/option&gt; 
+                                                    |      &lt;option&gt;Bart&lt;/option&gt; 
+                                                    |      &lt;option&gt;Lisa&lt;/option&gt; 
+                                                    |      &lt;option&gt;Maggie&lt;/option&gt;
+                                                    |    &lt;/select&gt;
+                                                    |&lt;/div&gt;
+
+
+
+                // Page Body End 
+                +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
+
+            include ../../components/customizer
+
+        include ../../layout/footer-files

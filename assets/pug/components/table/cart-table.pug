@@ -1,0 +1,39 @@
+//- ====================
+//-  User Information
+//- ====================
+//- increase-decrease
+
+table.table.equal-space.table-hover.table-action
+    thead 
+    tr 
+        each userHead,index in CART.header
+            if(index===0)
+                th=  userHead 
+            else 
+                th=  userHead 
+    tbody
+        each bodyData,index in CART.body
+            tr(class="hover:bg-gray-light")
+                td(class="min-w-[130px]")
+                    div(class="flex items-center gap-2")
+                        img(class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full" src=`../../assets/images/product/${bodyData.image}`, alt=`${bodyData.title}`) 
+                        div
+                            h4(class="text-xs font-semibold text-title")=bodyData.title
+                            span(class="text-[0.813rem] font-medium text-content")=bodyData.ItemId
+                td(class="min-w-[130px]")
+                    div.flex.gap-1.items-center 
+                        span(class="text-lg font-bold text-title")=bodyData.subTitle
+                        del(class="font-bold text-2xs text-content ")=bodyData.priceDel
+                    span(class="text-[0.813rem] font-medium text-secondary")=bodyData.offer
+                td(class="max-w-[110px]")
+                    +PlusMinus(bodyData.qty)
+                td(class="min-w-[50px]")  
+                    h4(class="text-xs font-semibold text-title")= bodyData.totalPrice
+                td(class="min-w-[50px]")
+                    div.flex.gap-3.items-center.justify-end  
+                        a(href="javascript:void(0)")
+                            +SVG_ICON("Edit-Square","hover:stroke-primary w-[18px] h-[18px] stroke-title")     
+                        a(href="javascript:void(0)") 
+                            +SVG_ICON("Delete","hover:stroke-primary w-[18px] h-[18px] stroke-title")   
+                        a(href="javascript:void(0)")
+                            i(data-feather="bookmark" class="h-5 stroke-content") 

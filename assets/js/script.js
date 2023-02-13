@@ -1,0 +1,306 @@
+// Hex Code Convert To Rgba Number ///
+'use strict';
+
+window.addEventListener('load', () => {
+  const bgImg = document.querySelectorAll('.bg-img');
+  for (i = 0; i < bgImg.length; i++) {
+    let bgImgEl = bgImg[i];
+    /// Optional Class Add ///
+    if (bgImgEl.classList.contains('bg-top')) {
+      bgImgEl.parentNode.classList.add('b-top');
+    } else if (bgImgEl.classList.contains('bg-bottom')) {
+      bgImgEl.parentNode.classList.add('b-buttom');
+    } else if (bgImgEl.classList.contains('bg-center')) {
+      bgImgEl.parentNode.classList.add('b-center');
+    } else if (bgImgEl.classList.contains('bg-left')) {
+      bgImgEl.parentNode.classList.add('b-left');
+    } else if (bgImgEl.classList.contains('bg-right')) {
+      bgImgEl.parentNode.classList.add('b-right');
+    }
+
+    /// Lazyloader Class Add ///
+    if (bgImgEl.classList.contains('blur-up')) {
+      bgImgEl.parentNode.classList.add('blur-up', 'lazyload');
+    }
+
+    /// Size Class Add ///
+    if (bgImgEl.classList.contains('bg_size_content')) {
+      bgImgEl.parentNode.classList.add('b_size_content');
+    }
+
+    /// Ratio Style ///
+    bgImgEl.parentNode.classList.add('bg-size');
+    const bgSrc = bgImgEl.src;
+    bgImgEl.style.display = 'none';
+    bgImgEl.parentNode.setAttribute(
+      'style',
+      `
+        background-image: url(${bgSrc});
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        `,
+    );
+  }
+});
+
+/*========================
+    Search Js
+ ==============================*/
+
+//  xl:scale-0 xl:opacity-0 xl:invisible
+const searchShow = document.querySelector('.search-show');
+const searchClose = document.querySelector('.search-close');
+const searchBoxWrapper = document.querySelector('.search-box-wrapper');
+searchShow?.addEventListener('click', function () {
+  searchBoxWrapper.classList.remove('xl:scale-0', 'xl:opacity-0', 'xl:invisible');
+});
+searchClose?.addEventListener('click', function () {
+  searchBoxWrapper.classList.add('xl:scale-0', 'xl:opacity-0', 'xl:invisible');
+});
+/*========================
+    Language Select Js
+ ==============================*/
+const languageSelect = document.querySelector('.language-select');
+const languageSelectBtn = document.getElementById('language-select');
+const languageList = document.querySelector('.language-menu');
+languageList?.addEventListener('click', function (e) {
+  const language = e.target.closest('.language-option');
+  if (!language) return;
+  const languageValue = language.dataset.value;
+  const flagImage = language.querySelector('img').src;
+  languageSelectBtn.querySelector('img').src = flagImage;
+  languageSelectBtn.querySelector('span').textContent = languageValue;
+});
+
+/*=====================
+    Header Drop Down Toggle
+==========================*/
+const headerDropdownMenu = document.querySelectorAll('.dropdown');
+document.body.addEventListener('click', function (event) {
+  const dropdownEl = event.target.closest('.dropdown');
+  const visible = dropdownEl?.closest('.dropdown')?.classList.contains('show');
+  const dropdownMenuElement = event.target.closest('.dropdown-menu');
+  headerDropdownMenu.forEach((item) => {
+    if (!dropdownMenuElement) {
+      item.classList.remove('show');
+    }
+  });
+  if (!dropdownEl) return;
+
+  if (!visible && !dropdownEl.classList.contains('on-hover-show')) dropdownEl?.classList.add('show');
+});
+
+const customizerSidebar = document.querySelector('.customizer-sidebar');
+const customizerBtn = document.querySelector('.customizer-btn');
+const customizerCloseBtn = document.querySelector('.customizer-close');
+
+/// Customizer Sidebar Show ///
+customizerBtn?.addEventListener('click', function () {
+  customizerSidebar.classList.add('show');
+});
+
+/// Customizer Sidebar Hide ///
+customizerCloseBtn?.addEventListener('click', function () {
+  customizerSidebar.classList.remove('show');
+});
+
+/*=====================
+    Plus Minus Item Js 
+==========================*/
+const plusMinus = document.querySelectorAll('.plus-minus ');
+plusMinus.forEach((element) => {
+  const addButton = element.querySelector('.add');
+  const subButton = element.querySelector('.sub');
+  addButton?.addEventListener('click', function () {
+    const inputEl = this.parentNode.querySelector("input[type='number']");
+    if (inputEl.value < 20) {
+      inputEl.value = Number(inputEl.value) + 1;
+    }
+  });
+  subButton?.addEventListener('click', function () {
+    const inputEl = this.parentNode.querySelector("input[type='number']");
+    if (inputEl.value >= 1) {
+      inputEl.value = Number(inputEl.value) - 1;
+    }
+  });
+});
+
+/*=====================
+    Cart Item Remove js
+==========================*/
+const cartBagProduct = document.querySelector('.shopping-bag');
+const cartRemoveBtn = cartBagProduct?.querySelectorAll('.remove-cart');
+cartRemoveBtn?.forEach((el) => {
+  el.addEventListener('click', function () {
+    this.closest('.cart-item').style.display = 'none';
+  });
+});
+
+/*=====================
+    Tabs Js
+==========================*/
+const tabs = document.querySelectorAll('.tabs');
+tabs?.forEach((tab) => {
+  tab.addEventListener('click', function (event) {
+    const navLink = event.target.closest('.tab-link');
+    if (!navLink) return;
+    const allNavLinks = navLink.closest('.tab-links')?.querySelectorAll('.tab-link');
+    console.log(allNavLinks);
+    allNavLinks.forEach((navLink) => {
+      navLink.classList.remove('tab-active');
+    });
+    navLink.classList.add('tab-active');
+
+    const currentTabContent = navLink.dataset.tabfilter;
+    const tabContents = navLink.closest('.tabs').parentElement.querySelectorAll('.tab-pan');
+    tabContents.forEach((tabContent) => {
+      tabContent.classList.remove('active');
+      setTimeout(() => {
+        tabContent.classList.remove('show');
+      }, 400);
+
+      tabContent.classList.remove('show');
+      if (tabContent.dataset.tabcontent === currentTabContent) {
+        tabContent.classList.add('active');
+        setTimeout(() => {
+          tabContent.classList.add('show');
+        }, 400);
+      }
+    });
+  });
+});
+
+/*=====================
+    Copy Js
+==========================*/
+
+// Copy Function
+function copyFunction() {
+  const BtnParentEl = this.closest('.copyParent').querySelector('pre').textContent;
+
+  navigator.clipboard.writeText(BtnParentEl);
+  this.innerHTML = ` 
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle">
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline>
+      </svg>`;
+  setTimeout(() => {
+    this.innerHTML = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clipboard">
+      <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+    </svg>`;
+  }, 1500);
+}
+
+const copyBtn = document.querySelectorAll('.copyBtn');
+copyBtn?.forEach((copyBtn) => {
+  copyBtn.addEventListener('click', copyFunction);
+});
+
+/*=====================
+    Collapse Js
+==========================*/
+
+var accItem = document.getElementsByClassName('accordionItem');
+var accHD = document.getElementsByClassName('accordionItemHeading');
+for (i = 0; i < accHD.length; i++) {
+  accHD[i].addEventListener('click', toggleItem, false);
+}
+function toggleItem() {
+  var itemClass = this.parentNode.className;
+  for (i = 0; i < accItem.length; i++) {
+    accItem[i].className = 'accordionItem close';
+  }
+  if (itemClass == 'accordionItem close') {
+    this.parentNode.className = 'accordionItem open';
+  }
+}
+
+/*=====================
+    Countdown Js
+==========================*/
+
+window.addEventListener('load', () => {
+  var countDownDate = new Date('March 5, 2023 15:37:25').getTime();
+  var x = setInterval(function () {
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="timer"
+    const timerEl = document.querySelectorAll('.timer');
+    timerEl.forEach((el) => {
+      if (el.querySelector('.days')) {
+        el.querySelector('.days').innerHTML = days;
+      }
+      if (el.querySelector('.hours')) {
+        el.querySelector('.hours').innerHTML = hours;
+      }
+      if (el.querySelector('.minutes')) {
+        el.querySelector('.minutes').innerHTML = minutes;
+      }
+      if (el.querySelector('.seconds')) {
+        el.querySelector('.seconds').innerHTML = seconds;
+      }
+    });
+
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById('demo').innerHTML = 'EXPIRED';
+    }
+  }, 1000);
+});
+
+/*=====================
+  Todo List Edit Delete Js 
+  ==========================*/
+const todoList = document.querySelectorAll('.todo-list');
+todoList?.forEach((el) => {
+  const removeAttrFn = () => {
+    el.querySelector('[contenteditable]')?.removeAttribute('contenteditable');
+  };
+
+  el.addEventListener('click', function (event) {
+    const edit = event.target.closest('.edit');
+    const remove = event.target.closest('.delete');
+    const editRemove = event.target.closest('[contenteditable]');
+    if (!editRemove) {
+      removeAttrFn();
+    }
+    if (!edit && !remove) return;
+
+    if (remove) {
+      remove.closest('.todo-item').remove();
+    }
+    if (edit) {
+      edit.closest('.todo-item').querySelector('h5').setAttribute('contenteditable', true);
+      edit.closest('.todo-item').querySelector('h5').focus();
+    }
+  });
+});
+
+
+  /*==============================
+    Password Show hide js 
+ =====================================*/
+ const showHideBtn = document.querySelectorAll('.showHidePassword');
+ console.log(showHideBtn)
+ let activeEye = 1;
+ for (let i = 0; i < showHideBtn.length; ++i) {
+   showHideBtn[i].addEventListener('click', function () {
+     let inputEl = showHideBtn[i].parentNode.querySelector('input');
+     if (inputEl.type === 'password') {
+       inputEl.type = 'text';
+       activeEye = 2;
+     } else {
+       inputEl.type = 'password';
+       activeEye = 1;
+     }
+     showHideBtn[i].src = `../../assets/icons/svg/eye-${activeEye}.svg`;
+   });
+ } 

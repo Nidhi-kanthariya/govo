@@ -1,0 +1,31 @@
+
+// Cart Start 
+div.dropdown.shopping-bag 
+   +SVG_ICON("Buy","w-6 h-6 w-6 h-6 3xl:w-5 3xl:h-5 2lg:w-[18px] 2lg:h-[18px] stroke-white")
+   div.dropdown-menu(class="!min-w-[320px]")
+      div.flex.items-center.justify-between(class="pb-[15px] border-b border-border-light") 
+         h4(class="text-base font-bold text-title")
+            | Cart Items
+            span(class="text-sm text-content font-bold")  (25)
+         button(class="p-2 rounded-full bg-gray-light transition-all duration-300 group hover:bg-primary")
+            +SVG_ICON("Delete","w-[18px] h-[18px] transition-all duration-300 group-hover:stroke-white stroke-title")
+
+      ul(class="flex flex-col max-h-[232px] overflow-auto custom-scroll px-1") 
+         each cartItems in ADD_TO_CART_ITEMS
+            li.cart-item.flex.items-center.gap-3(class="py-3  last:border-b-0 border-b border-border-light transition-all duration-300  rounded-5")
+               a.flex.items-center(href="./product.html" class="gap-[12px]")
+                  div.rounded-full(class="relative ")
+                     img(class="rounded-full min-w-[2.25rem] min-h-[2.25rem] w-full h-auto object-cover" src=`../../assets/images/product/${cartItems.image}` alt=`${cartItems.name}`) 
+
+                  div
+                     h4(class="line-clamp-1 text-xs font-semibold text-title" )= cartItems.name
+                     p(class="line-clamp-1 text-xs font-semibold text-content ")= cartItems.price
+               div(class="items-center flex gap-2 ml-auto")
+                  +PlusMinus(cartItems.qty)
+                  +SVG_ICON("Delete","remove-cart w-[16px] h-[16px] cursor-pointer transition-all duration-300 hover:stroke-primary stroke-title")
+      div(class="pt-[15px] border-t border-light")
+         div.flex.items-center.justify-between(class="mb-[15px]")
+            h4(class="text-sm font-semibold") Bag Total
+            span(class="text-base font-semibold") $250.00 
+         a(href="checkout.html" class="btn btn-primary text-sm font-semibold text-white w-full") Proceed to Checkout 
+// Cart End 

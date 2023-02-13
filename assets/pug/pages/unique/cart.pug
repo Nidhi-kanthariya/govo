@@ -1,0 +1,96 @@
+//- sidebar
+-var sidebar = true;
+
+//- feather
+-var feather= true;
+
+//- custom select
+-var customSelect = true;
+
+//- customizer 
+-var customizer = true;
+
+//- textEditor
+//- -var textEditor = true;
+
+//- dropzone
+//- -var dropzone = true;
+
+//- filepond
+-var filepond = true;
+
+//- emailApp
+-var emailApp = true;
+
+//- Breadcrumbs
+-var pageTitle="Email";
+-var breadcrumb=['Email'];
+
+//- all JSON  
+include ../../data/all-data
+
+//- all mixin   
+include ../../mixin/mixin
+
+doctype html
+html(lang='en')
+    include ../../layout/header-files
+    body(dir="ltr" class="unique-skin")
+        main.page-wrapper
+            div.page-body-wrapper(class="mb-10 2xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300")
+                include ../../layout/header/unique/header     
+                // Sidebar Start 
+                div.page-sidebar.sidebar-dark.unique-sidebar
+                    include ../../layout/sidebar/unique 
+                // Sidebar End 
+
+                // Page Body Start
+                div.page-body
+                    div.grid.grid-cols-12.gap-card-gap
+                        div.col-span-9(class="xl:col-span-12")
+                            div.card.tabs  
+                                div.overflow-auto.custom-scroll   
+                                    include ../../components/table/cart-table 
+                        div.col-span-3(class="relative xl:col-span-12")
+                            div.card.tabs.sticky.top-36 
+                                div.card-header
+                                    h3(class="mb-2 font-bold text-title") Cart information 
+                                    div.divider.w-full.mb-2  
+                                div.card-body 
+                                    div.flex.flex-col.mb-2.gap-1  
+                                        label(for="coupon-code").font-bold.text-xs.text-primary Apply Coupon code
+                                        div.flex.items-center.justify-center 
+                                            input(type="text" placeholder="Enter Coupon code" class="p-[11px]" id="coupon-code").w-full.rounded-br-none.rounded-tr-none.border.border-border-light.rounded-5.text-xs.text-content
+                                            span.flex.items-center.justify-center.bg-primary.text-white.rounded-5.border-none.rounded-bl-none.rounded-tl-none.font-medium.text-xs(class="py-[12px] px-[11px]") Apply
+                                    div.divider.w-full.mb-2 
+                                    ul.flex.flex-col.gap-2.mb-2 
+                                        li.flex.items-center.justify-between.text-content.font-bold
+                                            h6 Subtotal  
+                                            h6 $511 
+                                        li.flex.items-center.justify-between.text-secondary.font-bold
+                                            h6 Coupon Discount
+                                            h6 (-)0.00 
+                                        li.flex.items-center.justify-between.text-content.font-bold
+                                            h6 Shipping
+                                            h6 $6.90 
+                                    div.divider.w-full.mb-2 
+                                    ul.flex.flex-col.gap-2.mb-2 
+                                        li.flex.items-center.justify-between.text-primary.font-extrabold 
+                                            h6 Total(USD) 
+                                            h6 $345  
+                                div.card-footer 
+                                    div.flex.flex-col.gap-2 
+                                        button.btn.btn-secondary.w-full.text-white Process To Checkout
+                                        button.btn.btn-primary.text-white.flex.justify-center.items-center.gap-2  
+                                            a(href="shop.html")
+                                            i(data-feather="arrow-left" class="h-5 stroke-white")
+                                            | Back to Shopping
+
+
+
+
+
+                    // Page Body End  
+                    +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
+            include ../../components/customizer
+    include ../../layout/footer-files

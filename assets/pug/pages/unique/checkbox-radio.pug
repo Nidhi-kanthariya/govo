@@ -1,0 +1,643 @@
+//- sidebar
+-var sidebar = true;
+
+//- feathet
+-var feather= true;
+
+//- customSelect
+-var customSelect= true;
+
+//- customizer
+-var customizer=true;
+
+//- prism
+-var prism=true;
+
+//- Breadcrumbs
+-var pageTitle="Checkbox & Radio";
+-var breadcrumb=['Ui Kits','Checkbox & Radio'];    
+
+//- json
+include ../../data/all-data
+
+//- mixin
+include ../../mixin/mixin
+
+doctype html
+html(lang='en')  
+   include ../../layout/header-files 
+   body(dir="ltr" class="unique-skin") 
+      main.page-wrapper
+         div.page-body-wrapper(class="mb-10 2xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300")
+            include ../../layout/header/unique/header     
+            // Sidebar Start 
+            div.page-sidebar.sidebar-dark.unique-sidebar
+               include ../../layout/sidebar/unique
+            // Sidebar End
+
+            // Page Body Start 
+            div.page-body
+               div.grid.grid-cols-12.gap-card-gap
+                  div.col-span-4(class="lg:col-span-6 md:col-span-12")
+                     div.card.tabs
+                        div.card-header.pb-2.header-bottom-border
+                           div.flex.flex-col
+                              h3.text-lg.font-bold Checked Checkbox
+                              p Here, the checked checkbox that you can use. 
+                              div.preview-code.tab-links
+                                 button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
+                                 button.p-0.tab.tab-lifted(data-tabFilter="2" class="tab-link tab-2") Html
+                        div.card-body                                   
+                           div.tabs-content
+                              div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
+                                 div.flex.justify-center.gap-2.flex-wrap
+                                    div.flex.items-center.gap-2
+                                       label.checkbox.checkbox-md.cursor-pointer  
+                                          input(type='checkbox' class="peer" checked) 
+                                          div.checkbox-indicator(class="peer-checked:!bg-primary !border-primary")  
+                                             i(data-feather="check")
+                                       p Remember Me
+                              div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
+                                 button.btn.copyBtn 
+                                    i(data-feather="clipboard")
+                                 pre(class="overflow-auto language-html custom-scroll")
+                                    code
+                                       |&lt;div class="flex flex-wrap justify-center gap-2"&gt;
+                                       |   &lt;div class="flex items-center gap-2"&gt; 
+                                       |       &lt;label class="cursor-pointer checkbox checkbox-md"&gt;
+                                       |           &lt;input type="checkbox" class="peer" checked=""/&gt;
+                                       |           &lt;div class="checkbox-indicator peer-checked:!bg-primary !border-primary"&gt;
+                                       |              &lt;i data-feather="check"&gt;&lt;/i&gt;
+                                       |           &lt;/div&gt;
+                                       |       &lt;/label&gt;
+                                       |       &lt;p&gt;Remember Me&lt;/p&gt;
+                                       |   &lt;/div&gt; 
+                                       |&lt;/div&gt;
+
+                  div.col-span-4(class="lg:col-span-6 md:col-span-12")
+                     div.card.tabs
+                        div.card-header.pb-2.header-bottom-border
+                           div.flex.flex-col
+                              h3.text-lg.font-bold Default 
+                              p Set the default checkbox inside the project. 
+                              div.preview-code.tab-links
+                                 button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
+                                 button.p-0.tab.tab-lifted(data-tabFilter="2" class="tab-link tab-2") Html
+                        div.card-body                                   
+                           div.tabs-content
+                              div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
+                                 div.flex.justify-center.gap-2.flex-wrap
+                                    div.flex.items-center.gap-2
+                                       label.checkbox.checkbox-md.cursor-pointer 
+                                          input(type='checkbox' class="peer") 
+                                          div.checkbox-indicator(class="peer-checked:!bg-secondary !border-secondary")  
+                                             i(data-feather="check")
+                                       p Default
+                              div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
+                                 button.btn.copyBtn 
+                                    i(data-feather="clipboard")
+                                 pre(class="overflow-auto language-html custom-scroll")
+                                    code
+                                       |&lt;div class="flex flex-wrap justify-center gap-2"&gt;
+                                       |   &lt;div class="flex items-center gap-2"&gt; 
+                                       |       &lt;label class="cursor-pointer checkbox checkbox-md"&gt;
+                                       |           &lt;input type="checkbox" class="peer"&gt;
+                                       |           &lt;div class="checkbox-indicator peer-checked:!bg-secondary !border-secondary"&gt;
+                                       |              &lt;i data-feather="check"&gt;&lt;/i&gt;
+                                       |           &lt;/div&gt;
+                                       |       &lt;/label&gt;
+                                       |       &lt;p&gt;Default&lt;/p&gt;
+                                       |   &lt;/div&gt; 
+                                       |&lt;/div&gt;
+
+                  div.col-span-4(class="lg:col-span-6 md:col-span-12")
+                     div.card.tabs
+                        div.card-header.pb-2.header-bottom-border
+                           div.flex.flex-col
+                              h3.text-lg.font-bold Disabled Checked
+                              p Set the disabled checkbox, use 
+                                 strong .disabled  
+                                 | class. 
+                              div.preview-code.tab-links
+                                 button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
+                                 button.p-0.tab.tab-lifted(data-tabFilter="2" class="tab-link tab-2") Html
+                        div.card-body                                   
+                           div.tabs-content
+                              div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
+                                 div.flex.justify-center.gap-2.flex-wrap
+                                    div.flex.items-center.gap-2.opacity-40
+                                       label.checkbox.checkbox-md.cursor-pointer  
+                                          input(type='checkbox' class="peer" disabled) 
+                                          div.checkbox-indicator(class="peer-checked:!bg-warning !border-warning")  
+                                             i(data-feather="check")
+                                       p Disabled Checked
+                              div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
+                                 button.btn.copyBtn 
+                                    i(data-feather="clipboard")
+                                 pre(class="overflow-auto language-html custom-scroll")
+                                    code
+                                       |&lt;div class="flex flex-wrap justify-center gap-2"&gt;
+                                       |   &lt;div class="flex items-center gap-2 opacity-40"&gt; 
+                                       |       &lt;label class="cursor-pointer checkbox checkbox-md"&gt;
+                                       |           &lt;input type="checkbox" class="peer" disabled&gt;
+                                       |           &lt;div class="checkbox-indicator peer-checked:!bg-warning !border-warning"&gt;
+                                       |              &lt;i data-feather="check"&gt;&lt;/i&gt;
+                                       |           &lt;/div&gt;
+                                       |       &lt;/label&gt;
+                                       |       &lt;p&gt;Disabled Checked&lt;/p&gt;
+                                       |   &lt;/div&gt; 
+                                       |&lt;/div&gt;
+
+                  div.col-span-6(class="md:col-span-12")
+                     div.card.tabs
+                        div.card-header.pb-2.header-bottom-border
+                           div.flex.flex-col
+                              h3.text-lg.font-bold Colored checkbox
+                              p Add the sizes of checkbox with different colored using  
+                                 strong .checkbox-* 
+                                 | & 
+                                 strong .bg-*  
+                                 | class. 
+                              div.preview-code.tab-links
+                                 button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
+                                 button.p-0.tab.tab-lifted(data-tabFilter="2" class="tab-link tab-2") Html
+                        div.card-body                                   
+                           div.tabs-content
+                              div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
+                                 div.flex.justify-center.gap-3.flex-wrap
+                                    div.flex.items-center.gap-2
+                                       label.checkbox.checkbox-md.cursor-pointer   
+                                          input(type='checkbox' checked='checked' class="peer") 
+                                          div.checkbox-indicator(class="peer-checked:!bg-warning !border-warning")  
+                                             i(data-feather="check") 
+                                       p Warning
+                                    div.flex.items-center.gap-2  
+                                       label.checkbox.checkbox-md.cursor-pointer   
+                                          input(type='checkbox' class="peer") 
+                                          div.checkbox-indicator(class="peer-checked:!bg-info !border-info")  
+                                             i(data-feather="check")
+                                       p Info 
+                                    div.flex.items-center.gap-2 
+                                       label.checkbox.checkbox-md.cursor-pointer   
+                                          input(type='checkbox' checked='checked' class="peer") 
+                                          div.checkbox-indicator(class="peer-checked:!bg-danger !border-danger")  
+                                             i(data-feather="check")
+                                       p Danger
+                                    div.flex.items-center.gap-2 
+                                       label.checkbox.checkbox-md.cursor-pointer
+                                          input(type='checkbox' class="peer") 
+                                          div.checkbox-indicator(class="peer-checked:!bg-success !border-success")  
+                                             i(data-feather="check")
+                                       p Success
+                              div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
+                                 button.btn.copyBtn 
+                                    i(data-feather="clipboard")
+                                 pre(class="overflow-auto language-html custom-scroll")
+                                    code
+                                       |&lt;div class="flex flex-wrap justify-center gap-3"&gt;
+                                       |   &lt;div class="flex items-center gap-2"&gt; 
+                                       |       &lt;label checkbox checkbox-md cursor-pointer"&gt;
+                                       |           &lt;input type= 'checkbox'class="peer" checked='checked'/&gt;
+                                       |           &lt;div checkbox-indicator class="peer-checked:!bg-warning !border-warning"&gt;
+                                       |               &lt;i data-feather="check"&gt;&lt;/i&gt;
+                                       |           &lt;/div&gt; 
+                                       |       &lt;/label&gt;
+                                       |       &lt;p&gt;Warning&lt;/p&gt;
+                                       |   &lt;/div&gt; 
+                                       |   &lt;div class="flex items-center gap-2"&gt; 
+                                       |       &lt;label checkbox checkbox-md cursor-pointer"&gt;
+                                       |           &lt;input type= 'checkbox'class="peer"/&gt;
+                                       |           &lt;div checkbox-indicator class="peer-checked:!bg-info !border-info"&gt;
+                                       |               &lt;i data-feather="check"&gt;&lt;/i&gt;
+                                       |           &lt;/div&gt; 
+                                       |       &lt;/label&gt;
+                                       |       &lt;p&gt;Info&lt;/p&gt;
+                                       |   &lt;/div&gt; 
+                                       |   &lt;div class="flex items-center gap-2"&gt; 
+                                       |       &lt;label checkbox checkbox-md cursor-pointer"&gt;
+                                       |           &lt;input type= 'checkbox'class="peer" checked='checked'/&gt;
+                                       |           &lt;div checkbox-indicator class="peer-checked:!bg-danger !border-danger"&gt;
+                                       |               &lt;i data-feather="check"&gt;&lt;/i&gt;
+                                       |           &lt;/div&gt; 
+                                       |       &lt;/label&gt;
+                                       |       &lt;p&gt;Danger&lt;/p&gt;
+                                       |   &lt;/div&gt; 
+                                       |   &lt;div class="flex items-center gap-2"&gt; 
+                                       |       &lt;label checkbox checkbox-md cursor-pointer"&gt;
+                                       |           &lt;input type= 'checkbox'class="peer"/&gt;
+                                       |           &lt;div checkbox-indicator class="peer-checked:!bg-success !border-success"&gt;
+                                       |               &lt;i data-feather="check"&gt;&lt;/i&gt;
+                                       |           &lt;/div&gt; 
+                                       |       &lt;/label&gt;
+                                       |       &lt;p&gt;Success&lt;/p&gt;
+                                       |   &lt;/div&gt; 
+                                       |&lt;/div&gt;
+
+                  div.col-span-6(class="md:col-span-12")
+                     div.card.tabs
+                        div.card-header.pb-2.header-bottom-border
+                           div.flex.flex-col
+                              h3.text-lg.font-bold Colored Radio
+                              p Set the sizes of checkbox with different colored using  
+                                 strong .radio-* 
+                                 | & 
+                                 strong .bg-*  
+                                 | class. 
+                              div.preview-code.tab-links
+                                 button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
+                                 button.p-0.tab.tab-lifted(data-tabFilter="2" class="tab-link tab-2") Html
+                        div.card-body                                   
+                           div.tabs-content
+                              div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
+                                 div.flex.justify-center.gap-3.flex-wrap
+                                    div.flex.items-center.gap-2
+                                       div.relative.radio
+                                          input#radio.cursor-pointer.peer.absolute.opacity-0.z-10(type='radio')
+                                          div.border.border-primary.relative(class='radio-md peer-checked:block top-[0rem] rounded-full')
+                                          div.bg-transparent.rounded-full.absolute(class='w-[0.65rem] h-[0.65rem] peer-checked:bg-primary peer-checked:left[0.18rem] peer-checked:top[0.17rem] left-[0.18rem] top-[0.17rem]')
+                                       p.m-0 Primary
+                                    div.flex.items-center.gap-2
+                                       div.relative.radio
+                                          input#radio.cursor-pointer.peer.absolute.opacity-0.z-10(type='radio' checked='checked')
+                                          div.border.border-secondary.relative(class='radio-md peer-checked:block top-[0rem] rounded-full')
+                                          div.bg-transparent.rounded-full.absolute(class='w-[0.65rem] h-[0.65rem] peer-checked:bg-secondary peer-checked:left[0.18rem] peer-checked:top[0.17rem] left-[0.18rem] top-[0.17rem]')
+                                       p.m-0 Secondary
+                                    div.flex.items-center.gap-2
+                                       div.relative.radio
+                                          input#radio.cursor-pointer.peer.absolute.opacity-0.z-10(type='radio')
+                                          div.border.border-info.relative(class='radio-md peer-checked:block top-[0rem] rounded-full')
+                                          div.bg-transparent.rounded-full.absolute(class='w-[0.65rem] h-[0.65rem] peer-checked:bg-info peer-checked:left[0.18rem] peer-checked:top[0.17rem] left-[0.18rem] top-[0.17rem]')
+                                       p.m-0 Info
+                                    div.flex.items-center.gap-2
+                                       div.relative.radio
+                                          input#radio.cursor-pointer.peer.absolute.opacity-0.z-10(type='radio' checked='checked')
+                                          div.border.border-warning.relative(class='radio-md peer-checked:block top-[0rem] rounded-full')
+                                          div.bg-transparent.rounded-full.absolute(class='w-[0.65rem] h-[0.65rem] peer-checked:bg-warning peer-checked:left[0.18rem] peer-checked:top[0.17rem] left-[0.18rem] top-[0.17rem]')
+                                       p.m-0 Warning
+
+                              div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
+                                 button.btn.copyBtn 
+                                    i(data-feather="clipboard")
+                                 pre(class="overflow-auto language-html custom-scroll")
+                                    code
+                                       |&lt;div class="flex flex-wrap justify-center gap-3"&gt;
+                                       |   &lt;div class="flex items-center gap-2"&gt; 
+                                       |       &lt;div class="relative radio"&gt;
+                                       |           &lt;input id="radio" type="radio" class="absolute z-10 opacity-0 cursor-pointer peer"&gt;
+                                       |           &lt;div class="border border-primary relative radio-xl peer-checked:block top-[0rem] rounded-full"&gt;&lt;/div&gt;
+                                       |           &lt;div class="bg-transparent w-4 h-4 rounded-full absolute peer-checked:bg-primary peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"&gt;&lt;/div&gt;
+                                       |       &lt;/div&gt;
+                                       |       &lt;p&gt;Primary&lt;/p&gt;
+                                       |   &lt;/div&gt;
+                                       |   &lt;div class="flex items-center gap-2"&gt; 
+                                       |       &lt;div class="relative radio"&gt;
+                                       |           &lt;input id="radio" type="radio" class="absolute z-10 opacity-0 cursor-pointer peer checked='checked'"&gt;
+                                       |           &lt;div class="border border-secondary relative radio-xl peer-checked:block top-[0rem] rounded-full"&gt;&lt;/div&gt;
+                                       |           &lt;div class="bg-transparent w-3 h-3 rounded-full absolute peer-checked:bg-secondary peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"&gt;&lt;/div&gt;
+                                       |       &lt;/div&gt;
+                                       |       &lt;p&gt;Secondary&lt;/p&gt;
+                                       |   &lt;/div&gt;
+                                       |   &lt;div class="flex items-center gap-2"&gt; 
+                                       |       &lt;div class="relative radio"&gt;
+                                       |           &lt;input id="radio" type="radio" class="absolute z-10 opacity-0 cursor-pointer peer"&gt;
+                                       |           &lt;div class="border border-info relative radio-xl peer-checked:block top-[0rem] rounded-full"&gt;&lt;/div&gt;
+                                       |           &lt;div class="bg-transparent w-4 h-4 rounded-full absolute peer-checked:bg-info peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"&gt;&lt;/div&gt;
+                                       |       &lt;/div&gt;
+                                       |       &lt;p&gt;Info&lt;/p&gt;
+                                       |   &lt;/div&gt;
+                                       |   &lt;div class="flex items-center gap-2"&gt; 
+                                       |       &lt;div class="relative radio"&gt;
+                                       |           &lt;input id="radio" type="radio" class="absolute z-10 opacity-0 cursor-pointer peer checked='checked'"&gt;
+                                       |           &lt;div class="border border-warning relative radio-xl peer-checked:block top-[0rem] rounded-full"&gt;&lt;/div&gt;
+                                       |           &lt;div class="bg-transparent w-3 h-3 rounded-full absolute peer-checked:bg-warning peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"&gt;&lt;/div&gt;
+                                       |       &lt;/div&gt;
+                                       |       &lt;p&gt;Warning&lt;/p&gt;
+                                       |   &lt;/div&gt; 
+                                       |&lt;/div&gt;
+
+                  div.col-span-6(class="md:col-span-12")
+                     div.card.tabs
+                        div.card-header.pb-2.header-bottom-border
+                           div.flex.flex-col
+                              h3.text-lg.font-bold Checkbox Sizes
+                              p Add the sizes of checkbox, using 
+                                 strong .checkbox-*  
+                                 | class. 
+                              div.preview-code.tab-links
+                                 button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
+                                 button.p-0.tab.tab-lifted(data-tabFilter="2" class="tab-link tab-2") Html
+                        div.card-body                                   
+                           div.tabs-content
+                              div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
+                                 div.flex.justify-center.gap-3.flex-wrap
+                                    div.flex.items-center.gap-2
+                                       label.checkbox.checkbox-xl.cursor-pointer   
+                                          input(type='checkbox' checked='checked' class="peer") 
+                                          div.checkbox-indicator(class="peer-checked:!bg-success !border-success")  
+                                             i(data-feather="check")
+                                       p Checkout-xl 
+                                    div.flex.items-center.gap-2  
+                                       label.checkbox.checkbox-lg.cursor-pointer   
+                                          input(type='checkbox' class="peer") 
+                                          div.checkbox-indicator(class="peer-checked:!bg-success !border-success")  
+                                             i(data-feather="check")
+                                       p Checkout-lg 
+                                    div.flex.items-center.gap-2 
+                                       label.checkbox.checkbox-md.cursor-pointer   
+                                          input(type='checkbox' class="peer") 
+                                          div.checkbox-indicator(class="peer-checked:!bg-success !border-success")  
+                                             i(data-feather="check")
+                                       p Checkout-md
+                                    div.flex.items-center.gap-2 
+                                       label.checkbox.checkbox-sm.cursor-pointer
+                                          input(type='checkbox' checked='checked' class="peer") 
+                                          div.checkbox-indicator(class="peer-checked:!bg-success !border-success")  
+                                             i(data-feather="check")
+                                       p Checkout-sm
+                              div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
+                                 button.btn.copyBtn 
+                                    i(data-feather="clipboard")
+                                 pre(class="overflow-auto language-html custom-scroll")
+                                    code
+                                       |&lt;div class="flex flex-wrap justify-center gap-3"&gt;
+                                       |   &lt;div class="flex items-center gap-2"&gt; 
+                                       |       &lt;label checkbox checkbox-xl cursor-pointer"&gt;
+                                       |           &lt;input type= 'checkbox'class="peer" checked='checked'/&gt;
+                                       |           &lt;div checkbox-indicator class="peer-checked:!bg-success !border-success"&gt;
+                                       |               &lt;i data-feather="check"&gt;&lt;/i&gt;
+                                       |           &lt;/div&gt; 
+                                       |       &lt;/label&gt;
+                                       |       &lt;p&gt;Checkout-xl&lt;/p&gt;
+                                       |   &lt;/div&gt; 
+                                       |   &lt;div class="flex items-center gap-2"&gt; 
+                                       |       &lt;label checkbox checkbox-lg cursor-pointer"&gt;
+                                       |           &lt;input type= 'checkbox'class="peer"/&gt;
+                                       |           &lt;div checkbox-indicator class="peer-checked:!bg-success !border-success"&gt;
+                                       |               &lt;i data-feather="check"&gt;&lt;/i&gt;
+                                       |           &lt;/div&gt; 
+                                       |       &lt;/label&gt;
+                                       |       &lt;p&gt;Checkout-lg&lt;/p&gt;
+                                       |   &lt;/div&gt; 
+                                       |   &lt;div class="flex items-center gap-2"&gt; 
+                                       |       &lt;label checkbox checkbox-md cursor-pointer"&gt;
+                                       |           &lt;input type= 'checkbox'class="peer"/&gt;
+                                       |           &lt;div checkbox-indicator class="peer-checked:!bg-success !border-success"&gt;
+                                       |               &lt;i data-feather="check"&gt;&lt;/i&gt;
+                                       |           &lt;/div&gt; 
+                                       |       &lt;/label&gt;
+                                       |       &lt;p&gt;Checkout-md&lt;/p&gt;
+                                       |   &lt;/div&gt; 
+                                       |   &lt;div class="flex items-center gap-2"&gt; 
+                                       |       &lt;label checkbox checkbox-sm cursor-pointer"&gt;
+                                       |           &lt;input type= 'checkbox'class="peer" checked='checked'/&gt;
+                                       |           &lt;div checkbox-indicator class="peer-checked:!bg-success !border-success"&gt;
+                                       |               &lt;i data-feather="check"&gt;&lt;/i&gt;
+                                       |           &lt;/div&gt; 
+                                       |       &lt;/label&gt;
+                                       |       &lt;p&gt;Checkout-sm&lt;/p&gt;
+                                       |   &lt;/div&gt; 
+                                       |&lt;/div&gt;
+
+                  div.col-span-6(class="lg:col-span-6 md:col-span-12")
+                     div.card.tabs
+                        div.card-header.pb-2.header-bottom-border
+                           div.flex.flex-col
+                              h3.text-lg.font-bold Radio Sizes
+                              p Set the sizes of radio, using 
+                                 strong .radio-*  
+                                 | class.
+                              div.preview-code.tab-links
+                                 button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
+                                 button.p-0.tab.tab-lifted(data-tabFilter="2" class="tab-link tab-2") Html
+                        div.card-body                                   
+                           div.tabs-content
+                              div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
+                                 div.flex.justify-center.gap-3.flex-wrap
+                                    div.flex.items-center.gap-2
+                                       div.relative.radio
+                                          input#radio.cursor-pointer.peer.absolute.opacity-0.z-10(type='radio' checked='checked')
+                                          div.border.border-primary.relative(class='radio-xl peer-checked:block top-[0rem] rounded-full')
+                                          div.bg-transparent.w-4.h-4.rounded-full.absolute(class='peer-checked:bg-primary peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]')
+                                       p.m-0 Radio-xl
+                                    div.flex.items-center.gap-2
+                                       div.relative.radio
+                                          input#radio.cursor-pointer.peer.absolute.opacity-0.z-10(type='radio' checked='checked')
+                                          div.border.border-primary.relative(class='radio-lg peer-checked:block top-[0rem] rounded-full')
+                                          div.bg-transparent.w-3.h-3.rounded-full.absolute(class='peer-checked:bg-primary peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]')
+                                       p.m-0 Radio-lg
+                                    div.flex.items-center.gap-2
+                                       div.relative.radio
+                                          input#radio.cursor-pointer.peer.absolute.opacity-0.z-10(type='radio')
+                                          div.border.border-primary.relative(class='radio-md peer-checked:block top-[0rem] rounded-full')
+                                          div.bg-transparent.rounded-full.absolute(class='w-[0.65rem] h-[0.65rem] peer-checked:bg-primary peer-checked:left[0.18rem] peer-checked:top[0.17rem] left-[0.18rem] top-[0.17rem]')
+                                       p.m-0 Radio-md
+                                    div.flex.items-center.gap-2
+                                       div.relative.radio
+                                          input#radio.cursor-pointer.peer.absolute.opacity-0.z-10(type='radio')
+                                          div.border.border-primary.relative(class='radio-sm peer-checked:block top-[0rem] rounded-full')
+                                          div.bg-transparent.rounded-full.absolute(class='w-[0.40rem] h-[0.40rem] peer-checked:bg-primary peer-checked:left[0.15rem] peer-checked:top[0.15rem] left-[0.15rem] top-[0.15rem]')
+                                       p.m-0 Radio-sm
+
+                              div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
+                                 button.btn.copyBtn 
+                                    i(data-feather="clipboard")
+                                 pre(class="overflow-auto language-html custom-scroll")
+                                    code
+                                       |&lt;div class="flex flex-wrap justify-center gap-3"&gt;
+                                       |   &lt;div class="flex items-center gap-2"&gt; 
+                                       |       &lt;div class="relative radio"&gt;
+                                       |           &lt;input id="radio" type="radio" class="absolute z-10 opacity-0 cursor-pointer peer"&gt;
+                                       |           &lt;div class="border border-primary relative radio-xl peer-checked:block top-[0rem] rounded-full"&gt;&lt;/div&gt;
+                                       |           &lt;div class="bg-transparent w-4 h-4 rounded-full absolute peer-checked:bg-primary peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"&gt;&lt;/div&gt;
+                                       |       &lt;/div&gt;
+                                       |       &lt;p&gt;Radio-xl&lt;/p&gt;
+                                       |   &lt;/div&gt;
+                                       |   &lt;div class="flex items-center gap-2"&gt; 
+                                       |       &lt;div class="relative radio"&gt;
+                                       |           &lt;input id="radio" type="radio" class="absolute z-10 opacity-0 cursor-pointer peer"&gt;
+                                       |           &lt;div class="border border-primary relative radio-xl peer-checked:block top-[0rem] rounded-full"&gt;&lt;/div&gt;
+                                       |           &lt;div class="bg-transparent w-3 h-3 rounded-full absolute peer-checked:bg-primary peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"&gt;&lt;/div&gt;
+                                       |       &lt;/div&gt;
+                                       |       &lt;p&gt;Radio-lg&lt;/p&gt;
+                                       |   &lt;/div&gt; 
+                                       |   &lt;div class="flex items-center gap-2"&gt; 
+                                       |       &lt;div class="relative radio"&gt;
+                                       |           &lt;input id="radio" type="radio" class="absolute z-10 opacity-0 cursor-pointer peer"&gt;
+                                       |           &lt;div class="border border-primary relative radio-xl peer-checked:block top-[0rem] rounded-full"&gt;&lt;/div&gt;
+                                       |           &lt;div class="bg-transparent w-[0.65rem] h-[0.65rem] rounded-full absolute peer-checked:bg-primary peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"&gt;&lt;/div&gt;
+                                       |       &lt;/div&gt;
+                                       |       &lt;p&gt;Radio-md&lt;/p&gt;
+                                       |   &lt;/div&gt;
+                                       |   &lt;div class="flex items-center gap-2"&gt; 
+                                       |       &lt;div class="relative radio"&gt;
+                                       |           &lt;input id="radio" type="radio" class="absolute z-10 opacity-0 cursor-pointer peer"&gt;
+                                       |           &lt;div class="border border-primary relative radio-xl peer-checked:block top-[0rem] rounded-full"&gt;&lt;/div&gt;
+                                       |           &lt;div class="bg-transparent w-[0.40rem] h-[0.40rem] rounded-full absolute peer-checked:bg-primary peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"&gt;&lt;/div&gt;
+                                       |       &lt;/div&gt;
+                                       |       &lt;p&gt;Radio-sm&lt;/p&gt;
+                                       |   &lt;/div&gt;
+                                       |&lt;/div&gt;
+
+                  div.col-span-4(class="lg:col-span-6 md:col-span-12")
+                     div.card.tabs
+                        div.card-header.pb-2.header-bottom-border
+                           div.flex.flex-col
+                              h3.text-lg.font-bold Basic Radio
+                              p Here, the basic radio that you can use. 
+                              div.preview-code.tab-links
+                                 button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
+                                 button.p-0.tab.tab-lifted(data-tabFilter="2" class="tab-link tab-2") Html
+                        div.card-body                                   
+                           div.tabs-content
+                              div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
+                                 div.flex.justify-center.gap-3.flex-wrap
+                                    div.flex.items-center.gap-2
+                                       div.relative.radio
+                                          input#radio.cursor-pointer.peer.absolute.opacity-0.z-10(type='radio')
+                                          div.border.border-info.relative(class='radio-md peer-checked:block top-[0rem] rounded-full')
+                                          div.bg-transparent.rounded-full.absolute(class='w-[0.65rem] h-[0.65rem] peer-checked:bg-info peer-checked:left[0.18rem] peer-checked:top[0.17rem] left-[0.18rem] top-[0.17rem]')
+                                       p.m-0 Radio 1
+                                    div.flex.items-center.gap-2
+                                       div.relative.radio
+                                          input#radio.cursor-pointer.peer.absolute.opacity-0.z-10(type='radio')
+                                          div.border.border-info.relative(class='radio-md peer-checked:block top-[0rem] rounded-full')
+                                          div.bg-transparent.rounded-full.absolute(class='w-[0.65rem] h-[0.65rem] peer-checked:bg-info peer-checked:left[0.18rem] peer-checked:top[0.17rem] left-[0.18rem] top-[0.17rem]')
+                                       p.m-0 Radio 2
+
+                              div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
+                                 button.btn.copyBtn 
+                                    i(data-feather="clipboard")
+                                 pre(class="overflow-auto language-html custom-scroll")
+                                    code
+                                       |&lt;div class="flex flex-wrap justify-center gap-3"&gt;
+                                       |   &lt;div class="flex items-center gap-2"&gt; 
+                                       |       &lt;div class="relative radio"&gt;
+                                       |           &lt;input id="radio" type="radio" class="absolute z-10 opacity-0 cursor-pointer peer"&gt;
+                                       |           &lt;div class="border border-primary relative radio-xl peer-checked:block top-[0rem] rounded-full"&gt;&lt;/div&gt;
+                                       |           &lt;div class="bg-transparent w-4 h-4 rounded-full absolute peer-checked:bg-primary peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"&gt;&lt;/div&gt;
+                                       |       &lt;/div&gt;
+                                       |       &lt;p&gt;Radio 1&lt;/p&gt;
+                                       |   &lt;/div&gt;
+                                       |   &lt;div class="flex items-center gap-2"&gt; 
+                                       |       &lt;div class="relative radio"&gt;
+                                       |           &lt;input id="radio" type="radio" class="absolute z-10 opacity-0 cursor-pointer peer"&gt;
+                                       |           &lt;div class="border border-primary relative radio-xl peer-checked:block top-[0rem] rounded-full"&gt;&lt;/div&gt;
+                                       |           &lt;div class="bg-transparent w-3 h-3 rounded-full absolute peer-checked:bg-primary peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"&gt;&lt;/div&gt;
+                                       |       &lt;/div&gt;
+                                       |       &lt;p&gt;Radio 2&lt;/p&gt;
+                                       |   &lt;/div&gt; 
+                                       |&lt;/div&gt;
+
+                  div.col-span-4(class="lg:col-span-6 md:col-span-12")
+                     div.card.tabs
+                        div.card-header.pb-2.header-bottom-border
+                           div.flex.flex-col
+                              h3.text-lg.font-bold Default radio
+                              p Add default radio inside the project. 
+                              div.preview-code.tab-links
+                                 button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
+                                 button.p-0.tab.tab-lifted(data-tabFilter="2" class="tab-link tab-2") Html
+                        div.card-body                                   
+                           div.tabs-content
+                              div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
+                                 div.flex.justify-center.gap-3.flex-wrap
+                                    div.flex.items-center.gap-2
+                                       div.relative.radio
+                                          input#radio.cursor-pointer.peer.absolute.opacity-0.z-10(type='radio' checked="checked")
+                                          div.border.border-secondary.relative(class='radio-md peer-checked:block top-[0rem] rounded-full')
+                                          div.bg-transparent.rounded-full.absolute(class='w-[0.65rem] h-[0.65rem] peer-checked:bg-secondary peer-checked:left[0.18rem] peer-checked:top[0.17rem] left-[0.18rem] top-[0.17rem]')
+                                       p.m-0 Radio 1
+                                    div.flex.items-center.gap-2
+                                       div.relative.radio
+                                          input#radio.cursor-pointer.peer.absolute.opacity-0.z-10(type='radio')
+                                          div.border.border-secondary.relative(class='radio-md peer-checked:block top-[0rem] rounded-full')
+                                          div.bg-transparent.rounded-full.absolute(class='w-[0.65rem] h-[0.65rem] peer-checked:bg-secondary peer-checked:left[0.18rem] peer-checked:top[0.17rem] left-[0.18rem] top-[0.17rem]')
+                                       p.m-0 Radio 2
+
+                              div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
+                                 button.btn.copyBtn 
+                                    i(data-feather="clipboard")
+                                 pre(class="overflow-auto language-html custom-scroll")
+                                    code
+                                       |&lt;div class="flex flex-wrap justify-center gap-3"&gt;
+                                       |   &lt;div class="flex items-center gap-2"&gt; 
+                                       |       &lt;div class="relative radio"&gt;
+                                       |           &lt;input id="radio" type="radio" checked="checked" class="absolute z-10 opacity-0 cursor-pointer peer"&gt;
+                                       |           &lt;div class="border border-primary relative radio-xl peer-checked:block top-[0rem] rounded-full"&gt;&lt;/div&gt;
+                                       |           &lt;div class="bg-transparent w-4 h-4 rounded-full absolute peer-checked:bg-primary peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"&gt;&lt;/div&gt;
+                                       |       &lt;/div&gt;
+                                       |       &lt;p&gt;Radio 1&lt;/p&gt;
+                                       |   &lt;/div&gt;
+                                       |   &lt;div class="flex items-center gap-2"&gt; 
+                                       |       &lt;div class="relative radio"&gt;
+                                       |           &lt;input id="radio" type="radio" class="absolute z-10 opacity-0 cursor-pointer peer"&gt;
+                                       |           &lt;div class="border border-primary relative radio-xl peer-checked:block top-[0rem] rounded-full"&gt;&lt;/div&gt;
+                                       |           &lt;div class="bg-transparent w-3 h-3 rounded-full absolute peer-checked:bg-primary peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"&gt;&lt;/div&gt;
+                                       |       &lt;/div&gt;
+                                       |       &lt;p&gt;Radio 2&lt;/p&gt;
+                                       |   &lt;/div&gt; 
+                                       |&lt;/div&gt;
+
+                  div.col-span-4(class="lg:col-span-6 md:col-span-12")
+                     div.card.tabs
+                        div.card-header.pb-2.header-bottom-border
+                           div.flex.flex-col
+                              h3.text-lg.font-bold Disable Radio
+                              p To set the disabled radio, use 
+                                 strong .disabled  
+                                 | class. 
+                              div.preview-code.tab-links
+                                 button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
+                                 button.p-0.tab.tab-lifted(data-tabFilter="2" class="tab-link tab-2") Html
+                        div.card-body                                   
+                           div.tabs-content
+                              div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
+                                 div.flex.justify-center.gap-3.flex-wrap
+                                    div.flex.items-center.gap-2.opacity-40
+                                       div.relative.radio
+                                          input#radio.peer.absolute.opacity-0.z-10(type='radio' checked="checked" disabled="disabled")
+                                          div.border.border-primary.relative(class='radio-md peer-checked:block top-[0rem] rounded-full')
+                                          div.bg-transparent.rounded-full.absolute(class='w-[0.65rem] h-[0.65rem] peer-checked:bg-primary peer-checked:left[0.18rem] peer-checked:top[0.17rem] left-[0.18rem] top-[0.17rem]')
+                                       p.m-0 Disable Radio
+                                    div.flex.items-center.gap-2.opacity-40
+                                       div.relative.radio
+                                          input#radio.peer.absolute.opacity-0.z-10(type='radio' disabled)
+                                          div.border.border-primary.relative(class='radio-md peer-checked:block top-[0rem] rounded-full')
+                                          div.bg-transparent.rounded-full.absolute(class='w-[0.65rem] h-[0.65rem] peer-checked:bg-primary peer-checked:left[0.18rem] peer-checked:top[0.17rem] left-[0.18rem] top-[0.17rem]')
+                                       p.m-0 Disable Radio
+
+                              div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
+                                 button.btn.copyBtn 
+                                    i(data-feather="clipboard")
+                                 pre(class="overflow-auto language-html custom-scroll")
+                                    code
+                                       |&lt;div class="flex flex-wrap justify-center gap-3"&gt;
+                                       |   &lt;div class="flex items-center gap-2 opacity-40"&gt; 
+                                       |       &lt;div class="relative radio"&gt;
+                                       |           &lt;input id="radio" type="radio" checked="checked" class="absolute z-10 opacity-0 peer" disabled="disabled"&gt;
+                                       |           &lt;div class="border border-primary relative radio-xl peer-checked:block top-[0rem] rounded-full"&gt;&lt;/div&gt;
+                                       |           &lt;div class="bg-transparent w-4 h-4 rounded-full absolute peer-checked:bg-primary peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"&gt;&lt;/div&gt;
+                                       |       &lt;/div&gt;
+                                       |       &lt;p&gt;Disable&lt;/p&gt;
+                                       |   &lt;/div&gt;
+                                       |   &lt;div class="flex items-center gap-2 opacity-40"&gt; 
+                                       |       &lt;div class="relative radio"&gt;
+                                       |           &lt;input id="radio" type="radio" class="absolute z-10 opacity-0 peer" disabled&gt;
+                                       |           &lt;div class="border border-primary relative radio-xl peer-checked:block top-[0rem] rounded-full"&gt;&lt;/div&gt;
+                                       |           &lt;div class="bg-transparent w-3 h-3 rounded-full absolute peer-checked:bg-primary peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"&gt;&lt;/div&gt;
+                                       |       &lt;/div&gt;
+                                       |       &lt;p&gt;Disable Radio&lt;/p&gt;
+                                       |   &lt;/div&gt; 
+                                       |&lt;/div&gt;
+
+
+
+            // Page Body End 
+            +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
+
+      include ../../components/customizer
+
+   include ../../layout/footer-files
+
+
+

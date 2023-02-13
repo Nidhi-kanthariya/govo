@@ -1,0 +1,166 @@
+//- sidebar
+-var sidebar = true;
+
+//- feather
+-var feather= true;
+
+//- custom select
+-var customSelect= true;
+
+//- customizer  
+-var customizer=true;
+
+//- apex-chart
+-var apexChart=true;
+-var minimalApex=true;
+
+//- Breadcrumbs
+-var pageTitle="Minimal Dashboard";
+-var breadcrumb=['dashboard','minimal'];
+
+
+//- all JSON 
+include ../../data/all-data
+
+//- all mixin   
+include ../../mixin/mixin
+
+doctype html
+html(lang='en' data-theme="minimal-skin")  
+   include ../../layout/header-files 
+   body(dir="ltr" class="minimal-skin") 
+      main.page-wrapper
+         div.page-body-wrapper(class="mb-10 2xl:w-full 4xl:w-[calc(100%_-_230px)] ml-auto transition-all duration-300 w-[calc(100%_-_253px)]")
+            include ../../layout/header/minimal/header     
+            // Sidebar Start 
+            div.page-sidebar.unique-sidebar.minimal-sidebar 
+               include ../../layout/sidebar/minimal
+            // Sidebar End 
+
+            // Page Body Start 
+            div.page-body
+               div.grid.grid-cols-12.gap-card-gap  
+                  div.col-span-6(class="3xl:col-span-4 lg:col-span-7 md:col-span-12 md:order-1")
+                     include ../../components/welcome-card2  
+                  div.col-span-3(class="3xl:col-span-4 lg:col-span-5 md:col-span-6 md:order-2 2md:col-span-12")
+                     div.card
+                        div.card-header
+                           +card-header("Recent Activity","setting", HISTORY_DROPDOWN)
+                        div.card-body
+                           +recent-activity(RECENT_ACTIVITY)
+                  div.col-span-3(class="3xl:col-span-4 lg:col-span-5 md:col-span-6 md:order-3 2md:col-span-12")
+                     div.card
+                        div.card-header
+                           +card-header("Sales Stats","setting", HISTORY_DROPDOWN)
+                        div.card-body
+                           div#salesStatsRadialChart
+                  div.col-span-6(class="lg:col-span-7 md:col-span-12 md:order-4")
+                     div.card
+                        div.card-header
+                           +card-header("Last Orders","btn-group",FILTER)
+                        div.card-body 
+                           div#lastOrdersChart.round-bar 
+                  div.col-span-6(class="lg:col-span-7 md:col-span-12 md:order-5")
+                     div.card
+                        div.card-header
+                           +card-header("Last Orders","select",HiSTORY_DATE_DROPDOWN)
+                        div.card-body 
+                           div.overflow-auto.custom-scroll  
+                              include ../../components/table/last-order
+                  div.col-span-4(class="xl3:col-span-5 md:col-span-6 md:order-6 2md:col-span-12")
+                     div.card
+                        div.card-header
+                           +card-header("Monthly Invoices","setting",HISTORY_DROPDOWN)
+                        div.card-body
+                           +invoice-icon(MONTHLY_INVOICES)
+                  div.col-span-4(class="xl3:col-span-7 md:col-span-12 md:order-8")
+                     div.card
+                        div.card-header
+                           +card-header("Recent Statistics","select",HiSTORY_DATE_DROPDOWN)
+                        div.card-body
+                           div
+                              ul.flex.items-center(class="gap-[47px] 2md:gap-[30px]") 
+                                 li.flex.items-center.gap-4(class="xl:gap-3") 
+                                    div(class="p-[10px] xl:p-2 bg-primary-light")
+                                       +SVG_ICON("Arrow-Up","w-5 h-5 xl:w-[18px] xl:h-[18px] stroke-title")
+                                    span(class="text-base xl:text-sm md:text-xs font-semibold text-title") $5.850   
+                                 li.flex.items-center.gap-4(class="xl:gap-3") 
+                                    div(class="p-[10px] xl:p-2 bg-secondary-light")
+                                       +SVG_ICON("Arrow-Down","w-5 h-5 xl:w-[18px] xl:h-[18px] stroke-title")
+                                    span(class="text-base xl:text-sm md:text-xs font-semibold text-title") $1.750 
+                           div.relative 
+                              div#recentStatisticsChart1           
+                              div#recentStatisticsChart2(class="absolute inset-0")           
+                  div.col-span-4(class="xl3:col-span-5 md:col-span-6 md:order-7 2md:col-span-12") 
+                     div.card
+                        div.card-header
+                           +card-header("All Notification (10)","setting",HISTORY_DROPDOWN)
+                        div.card-body 
+                           +notification(NOTIFICATION_CARD2)
+                  div.col-span-6(class="xl3:col-span-7 lg:col-span-12 md:order-9")
+                     div.card
+                        div.card-header
+                           +card-header("Project Summary","setting",HISTORY_DROPDOWN)
+                        div.card-body
+                           div.overflow-auto.custom-scroll  
+                              include ../../components/table/project-summery
+                  div.col-span-6(class="xl3:col-span-12 md:order-10")
+                     div.card
+                        div.card-header
+                           +card-header("Project Summary","setting",HISTORY_DROPDOWN)
+                        div.card-body
+                           div#groupBarChart(class="sm:-mt-[20px]")
+                           ul.flex.items-center(class="2md:flex-col 2md:p-0 pt-[8px] border-t border-border-light")
+                              li(class="w-1/2 2md:px-0 2md:w-full px-5 4xl:px-4 2md:py-[13px] py-[10px] 2md:last:pb-0 2md:border-b 2md:border-r-0 border-r border-border-light last:border-none")
+                                 div.flex.items-center.justify-between.gap-2(class="xl:flex-col xl3:flex-row") 
+                                    div.flex.items-center.flex-col
+                                       h5(class="text-2xl 4xl:text-base sm:text-sm font-extrabold text-title") $ 4,875
+                                       span(class="text-xs text-content font-semibold") Total Sales
+                                    div.flex.items-center.flex-col
+                                       span(class="text-sm sm:text-xs font-semibold text-content") 1,00,00
+                                       span(class="text-xs sm:text-2xs text-content font-semibold") 85% goal reached
+                                 div(class="progress-bar progress-sm xl:mt-[15px] md:mt-[10px] mt-[26px]")
+                                    div(class="bg-primary" style="width:70%")
+                              li(class="w-1/2 2md:px-0 2md:w-full px-5 4xl:px-4 2md:py-[13px] py-[10px] 2md:last:pb-0 2md:border-b 2md:border-r-0 border-r border-border-light last:border-none ")
+                                 div.flex.items-center.justify-between.gap-2(class="xl:flex-col xl3:flex-row")
+                                    div.flex.items-center.flex-col
+                                       h5(class="text-2xl 4xl:text-base sm:text-sm font-extrabold text-title") $ 7,560
+                                       span(class="text-xs text-content font-semibold") Total Income
+                                    div.flex.items-center.flex-col
+                                       span(class="text-sm sm:text-xs font-semibold text-content") 1,00,00
+                                       span(class="text-xs sm:text-2xs text-content font-semibold line") 45% goal reached
+                                 div(class="progress-bar progress-sm xl:mt-[15px] md:mt-[10px] mt-[26px] ")
+                                    div(class="bg-secondary" style="width:70%")
+
+            // Page Body End
+
+            +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
+
+   include ../../components/customizer
+
+   input#add-project-modal(class="peer" type='checkbox')
+   label.modal-overlay(for='peer-checked:block add-project-modal')
+   div.modal(class="max-w-[430px] modal-center peer-checked:block")
+      div.modal-header
+         h3 Add Project
+         label(for='add-project-modal') X
+      div.modal-body
+         form.theme-form.flex.flex-col
+            div.grid.grid-cols-12.gap-4
+               div.col-span-12
+                  div.input-wrapper
+                     label(class="!text-xs" for="title") Title 
+                     input(id="title" name="title" type="text" placeholder="Add Project Title" required)
+               div.col-span-12
+                  div.input-wrapper
+                     label(class="!text-xs" for="subTitle") Sub Title  
+                     input(id="subTitle" name="subTitle" type="text" placeholder="Enter Subtitle" required)
+               div.col-span-12
+                  div.input-wrapper
+                     label(class="!text-xs" for="price") Price 
+                     input(id="price" name="price" type="number" placeholder="2520.01" required)
+      div.modal-footer.justify-end
+         div.flex.items-center.justify-end.gap-2
+            label.btn.btn-outline.btn-primary.text-white(class="px-[30px] py-[10px]" for='add-project-modal') Cancel
+            label.btn.btn-primary.text-white(class="px-[30px] py-[10px]" for='add-project-modal') Add
+include ../../layout/footer-files

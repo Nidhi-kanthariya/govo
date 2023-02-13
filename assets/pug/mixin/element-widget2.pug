@@ -1,0 +1,15 @@
+//- ==========
+//-  Widget 2  
+//- ==========
+mixin widget2(data)
+   div.relative 
+      div.flex.items-center.justify-between
+         div(class="flex-[0_1_50%]")
+            h3(class="text-lg font-bold text-title leading-none")= data.title
+            div(class="mt-[15px]") 
+               h4.flex.items-center(class="text-2xl  5xl:text-lg 4xl:text-base font-extrabold text-title gap-[7px]")= data.price      
+               span(class="text-3xs text-content font-semibold")= data.subTitle
+            p(class="line-clamp-3 mt-[18px] font-normal text-xs text-title")= data.pera   
+         div(id=`${data.chart}`) 
+      button(class="flex rounded-full absolute top-0 right-0 items-center justify-center p-[5px] bg-gray-light") 
+         +SVG_ICON("Setting","w-[18px] h-[18px] stroke-title") 

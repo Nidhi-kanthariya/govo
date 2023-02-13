@@ -1,0 +1,27 @@
+// Sub header Start 
+div(class="flex sm:hidden items-center justify-between py-[4px] ") 
+  h1(class="text-lg 4xl:text-base font-extrabold text-white capitalize")= pageTitle
+  ul.flex.items-center(class="gap-[4px] xl:gap-0 xl3:hidden") 
+    li(class="dropdown on-hover-show cursor-pointer transition-all group xl:px-[12px] pt-[5px] px-[15px] py-[7px] bg-white-light") 
+      span(class="text-xs font-bold transition-all text-white") General
+      div.dropdown-menu(class="!min-w-[890px] !left-0 -translate-x-[20%] !right-unset !p-0") 
+        include ../../../components/general-menu
+    li(class="dropdown on-hover-show cursor-pointer transition-all duration-300 group xl:px-[12px] pt-[5px] px-[15px] py-[7px] hover:bg-white-light" ) 
+      span(class="text-xs font-bold transition-all duration-300	text-white") Components
+      div.dropdown-menu(class="!min-w-[220px] !left-0 !right-unset") 
+        include ../../../components/components-menu
+    li(class="dropdown on-hover-show cursor-pointer transition-all duration-300 group xl:px-[12px] pt-[5px] px-[15px] py-[7px] hover:bg-white-light" ) 
+      span(class="text-xs font-bold transition-all duration-300	text-white") Applications
+      div.dropdown-menu(class="!min-w-[190px] !left-0 !right-unset") 
+        include ../../../components/app-menu 
+    li(class="dropdown on-hover-show cursor-pointer transition-all duration-300 group xl:px-[12px] pt-[5px] px-[15px] py-[7px] hover:bg-white-light" ) 
+      span(class="text-xs font-bold transition-all duration-300	text-white") Pages
+      div.dropdown-menu(class="!min-w-[190px] !left-0 !right-unset") 
+        include ../../../components/app-menu 
+    li(class="dropdown on-hover-show cursor-pointer transition-all duration-300 group xl:px-[12px] pt-[5px] px-[15px] py-[7px] hover:bg-white-light" ) 
+      span(class="text-xs font-bold transition-all duration-300	text-white") Miscellaneous
+  div.flex.items-center(class="gap-[14px]")
+    // Breadcrumbs Start 
+    +breadcrumb(breadcrumb,"breadcrumb-style-2") 
+    // Breadcrumbs End 
+// Sub header End 

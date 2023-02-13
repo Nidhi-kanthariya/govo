@@ -1,0 +1,7 @@
+@layer components {
+  .page-header {
+    .hide {
+      @apply hidden 2xl:flex;
+    }
+  }
+}

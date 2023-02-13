@@ -1,0 +1,20 @@
+
+//- Sidebar
+aside(class="sidebar")  
+   nav.sidebar-main 
+      ul.sidebar-links.custom-scroll
+         each mainMenu in SIDEBAR_MENU
+            each menuItem in mainMenu.menu   
+               li.sidebar-list
+                  a(href=`${menuItem.url}`).sidebar-link.sidebar-title
+                     span 
+                        +SVG_ICON(`${menuItem.icon}`) 
+                  if menuItem.subMenu
+                     div(class="submenu-wrapper")
+                        h4(class="flex items-center gap-2 text-sm font-semibold mb-3")
+                           +SVG_ICON(`${menuItem.icon}`,"w-[20px] h-[20px]")
+                           = menuItem.title     
+                        ul.sidebar-submenu
+                           each subLink in menuItem.subMenu
+                              li 
+                                 a(href=`${subLink.url}`)=subLink.title 
