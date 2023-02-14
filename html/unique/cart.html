@@ -17,9 +17,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
     <!-- Custom Select css-->
     <link rel="stylesheet" href="../../assets/css/vendors/custom-select.css">
-    <!-- filepond css-->
-    <link rel="stylesheet" href="../../assets/css/vendors/filepond/filepond.css">
-    <link rel="stylesheet" href="../../assets/css/vendors/filepond/filepond-plugin-image-preview.css">
     <!-- App css-->
     <link rel="stylesheet" href="../../assets/css/style.css">
   </head>
@@ -36,7 +33,7 @@
                     <use href="../../assets/svg/_sprite.svg#Category"> </use>
                   </svg>
                 </button>
-                <h1 class="flex items-center gap-1 text-lg font-extrabold leading-none sm:hidden 4xl:text-base">Email</h1>
+                <h1 class="flex items-center gap-1 text-lg font-extrabold leading-none sm:hidden 4xl:text-base">Cart</h1>
               </div>
               <div class="right-header flex items-center flex-1 sm:gap-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] gap-[calc(20px_+_(30_-_20)_*_((100vw_-_320px)_/_(1920_-_320)))] xl:gap-[calc(20px_+_(45_-_20)_*_((100vw_-_320px)_/_(1920_-_320)))]  justify-end">
                 <div class="search-box-wrapper transition-all duration-300 max-w-[40%] xl:scale-0 xl:opacity-0 xl:invisible xl:px-body-space xl:max-w-full w-full xl:z-[5] flex-1 xl:absolute xl:left-0">
@@ -840,7 +837,9 @@
                               <use href="../../assets/svg/_sprite.svg#Home"> </use>
                             </svg></a></li>
                         <li class="px-2"> <span>/</span></li>
-                        <li class="breadcrumb-items capitalize active">Email</li>
+                        <li class="breadcrumb-items capitalize">Ecommerce</li>
+                        <li class="px-2"> <span>/</span></li>
+                        <li class="breadcrumb-items capitalize active">Cart</li>
                       </ol>
                     </nav>
                   </div>
@@ -1119,265 +1118,410 @@
         <!-- Page Body Start-->
         <div class="page-body">
           <div class="grid grid-cols-12 gap-card-gap">
-            <div class="col-span-9 xl:col-span-12">
-              <div class="card tabs"> 
+            <div class="col-span-9 xl:col-span-8 lg:col-span-12">
+              <div class="card"> 
                 <div class="overflow-auto custom-scroll">  
-                  <table class="table equal-space table-hover table-action">
-                    <thead> </thead>
-                    <tr> 
-                      <th>Name</th>
-                      <th>Price</th>
-                      <th>Quantity</th>
-                      <th>Total</th>
-                      <th>Action</th>
-                    </tr>
+                  <table class="table equal-space table-action shopping-bag">
+                    <thead> 
+                      <tr> 
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
                     <tbody>
                       <tr class="hover:bg-gray-light">
-                        <td class="min-w-[130px]">
+                        <td class="min-w-[155px]">
                           <div class="flex items-center gap-2"><img class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full" src="../../assets/images/product/1.jpg" alt="Samsung TV">
                             <div>
                               <h4 class="text-xs font-semibold text-title">Samsung TV</h4><span class="text-[0.813rem] font-medium text-content">#GS-4567</span>
                             </div>
                           </div>
                         </td>
-                        <td class="min-w-[130px]">
+                        <td class="min-w-[155px]">
                           <div class="flex gap-1 items-center"> <span class="text-lg font-bold text-title">$251</span>
                             <del class="font-bold text-2xs text-content ">$599</del>
                           </div><span class="text-[0.813rem] font-medium text-secondary">22%OFF</span>
                         </td>
-                        <td class="max-w-[110px]">
+                        <td class="min-w-[100px]"> 
                           <div class="plus-minus flex items-center text-center bg-primary-light border border-primary rounded-5"><i class="sub cursor-pointer w-5 h-5 bg-primary border-r border-primary stroke-white" data-feather="minus"></i>
                             <input class="text-center bg-transparent text-title" type="number" value="2" min="1" max="10"/><i class="add cursor-pointer w-5 h-5 bg-primary border-l border-primary stroke-white" data-feather="plus"></i>
                           </div>
                         </td>
-                        <td class="min-w-[50px]"> 
-                          <h4 class="text-xs font-semibold text-title">$215</h4>
+                        <td class="min-w-[100px] 2md:min-w-[65px]"> 
+                          <h4 class="text-xs font-semibold text-title">$502</h4>
                         </td>
-                        <td class="min-w-[50px]">
-                          <div class="flex gap-3 items-center justify-end"> <a href="javascript:void(0)">
-                              <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title"> 
-                                <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                              </svg></a><a href="javascript:void(0)"> 
-                              <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title"> 
-                                <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                              </svg></a><a href="javascript:void(0)"><i class="h-5 stroke-content" data-feather="bookmark"> </i></a></div>
+                        <td class="min-w-[100px] 2md:min-w-max">
+                          <div class="flex gap-3 items-center justify-end block 2md:hidden"> 
+                            <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                              <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
+                            </svg>
+                            <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                              <use href="../../assets/svg/_sprite.svg#Delete"> </use>
+                            </svg><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i>
+                          </div>
+                          <div class="dropdown dropdown-bottom"><i class="hidden w-5 h-5 cursor-pointer stroke-title 2md:block" data-feather="more-vertical"></i>
+                            <div class="hidden text-left dropdown-menu 2md:block">
+                              <ul class="flex flex-col justify-start gap-3">
+                                <li class="cursor-pointer">
+                                  <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                                    <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
+                                  </svg>
+                                </li>
+                                <li class="cursor-pointer">   
+                                  <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                                    <use href="../../assets/svg/_sprite.svg#Delete"> </use>
+                                  </svg>
+                                </li>
+                                <li class="cursor-pointer"><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i></li>
+                              </ul>
+                            </div>
+                          </div>
                         </td>
                       </tr>
                       <tr class="hover:bg-gray-light">
-                        <td class="min-w-[130px]">
+                        <td class="min-w-[155px]">
                           <div class="flex items-center gap-2"><img class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full" src="../../assets/images/product/2.jpg" alt="Spring Bed">
                             <div>
                               <h4 class="text-xs font-semibold text-title">Spring Bed</h4><span class="text-[0.813rem] font-medium text-content">#GS-6567</span>
                             </div>
                           </div>
                         </td>
-                        <td class="min-w-[130px]">
-                          <div class="flex gap-1 items-center"> <span class="text-lg font-bold text-title">$123</span>
+                        <td class="min-w-[155px]">
+                          <div class="flex gap-1 items-center"> <span class="text-lg font-bold text-title">$433</span>
                             <del class="font-bold text-2xs text-content ">$789</del>
                           </div><span class="text-[0.813rem] font-medium text-secondary">45%OFF</span>
                         </td>
-                        <td class="max-w-[110px]">
+                        <td class="min-w-[100px]"> 
                           <div class="plus-minus flex items-center text-center bg-primary-light border border-primary rounded-5"><i class="sub cursor-pointer w-5 h-5 bg-primary border-r border-primary stroke-white" data-feather="minus"></i>
-                            <input class="text-center bg-transparent text-title" type="number" value="2" min="1" max="10"/><i class="add cursor-pointer w-5 h-5 bg-primary border-l border-primary stroke-white" data-feather="plus"></i>
+                            <input class="text-center bg-transparent text-title" type="number" value="3" min="1" max="10"/><i class="add cursor-pointer w-5 h-5 bg-primary border-l border-primary stroke-white" data-feather="plus"></i>
                           </div>
                         </td>
-                        <td class="min-w-[50px]"> 
-                          <h4 class="text-xs font-semibold text-title">$210</h4>
+                        <td class="min-w-[100px] 2md:min-w-[65px]"> 
+                          <h4 class="text-xs font-semibold text-title">$1301</h4>
                         </td>
-                        <td class="min-w-[50px]">
-                          <div class="flex gap-3 items-center justify-end"> <a href="javascript:void(0)">
-                              <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title"> 
-                                <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                              </svg></a><a href="javascript:void(0)"> 
-                              <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title"> 
-                                <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                              </svg></a><a href="javascript:void(0)"><i class="h-5 stroke-content" data-feather="bookmark"> </i></a></div>
+                        <td class="min-w-[100px] 2md:min-w-max">
+                          <div class="flex gap-3 items-center justify-end block 2md:hidden"> 
+                            <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                              <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
+                            </svg>
+                            <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                              <use href="../../assets/svg/_sprite.svg#Delete"> </use>
+                            </svg><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i>
+                          </div>
+                          <div class="dropdown dropdown-bottom"><i class="hidden w-5 h-5 cursor-pointer stroke-title 2md:block" data-feather="more-vertical"></i>
+                            <div class="hidden text-left dropdown-menu 2md:block">
+                              <ul class="flex flex-col justify-start gap-3">
+                                <li class="cursor-pointer">
+                                  <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                                    <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
+                                  </svg>
+                                </li>
+                                <li class="cursor-pointer">   
+                                  <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                                    <use href="../../assets/svg/_sprite.svg#Delete"> </use>
+                                  </svg>
+                                </li>
+                                <li class="cursor-pointer"><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i></li>
+                              </ul>
+                            </div>
+                          </div>
                         </td>
                       </tr>
                       <tr class="hover:bg-gray-light">
-                        <td class="min-w-[130px]">
+                        <td class="min-w-[155px]">
                           <div class="flex items-center gap-2"><img class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full" src="../../assets/images/product/3.jpg" alt="Long Dress">
                             <div>
                               <h4 class="text-xs font-semibold text-title">Long Dress</h4><span class="text-[0.813rem] font-medium text-content">#GS-9211</span>
                             </div>
                           </div>
                         </td>
-                        <td class="min-w-[130px]">
-                          <div class="flex gap-1 items-center"> <span class="text-lg font-bold text-title">$451</span>
+                        <td class="min-w-[155px]">
+                          <div class="flex gap-1 items-center"> <span class="text-lg font-bold text-title">$659</span>
                             <del class="font-bold text-2xs text-content ">$999</del>
                           </div><span class="text-[0.813rem] font-medium text-secondary">34%OFF</span>
                         </td>
-                        <td class="max-w-[110px]">
+                        <td class="min-w-[100px]"> 
                           <div class="plus-minus flex items-center text-center bg-primary-light border border-primary rounded-5"><i class="sub cursor-pointer w-5 h-5 bg-primary border-r border-primary stroke-white" data-feather="minus"></i>
-                            <input class="text-center bg-transparent text-title" type="number" value="2" min="1" max="10"/><i class="add cursor-pointer w-5 h-5 bg-primary border-l border-primary stroke-white" data-feather="plus"></i>
+                            <input class="text-center bg-transparent text-title" type="number" value="7" min="1" max="10"/><i class="add cursor-pointer w-5 h-5 bg-primary border-l border-primary stroke-white" data-feather="plus"></i>
                           </div>
                         </td>
-                        <td class="min-w-[50px]"> 
-                          <h4 class="text-xs font-semibold text-title">$561</h4>
+                        <td class="min-w-[100px] 2md:min-w-[65px]"> 
+                          <h4 class="text-xs font-semibold text-title">$4615</h4>
                         </td>
-                        <td class="min-w-[50px]">
-                          <div class="flex gap-3 items-center justify-end"> <a href="javascript:void(0)">
-                              <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title"> 
-                                <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                              </svg></a><a href="javascript:void(0)"> 
-                              <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title"> 
-                                <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                              </svg></a><a href="javascript:void(0)"><i class="h-5 stroke-content" data-feather="bookmark"> </i></a></div>
+                        <td class="min-w-[100px] 2md:min-w-max">
+                          <div class="flex gap-3 items-center justify-end block 2md:hidden"> 
+                            <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                              <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
+                            </svg>
+                            <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                              <use href="../../assets/svg/_sprite.svg#Delete"> </use>
+                            </svg><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i>
+                          </div>
+                          <div class="dropdown dropdown-bottom"><i class="hidden w-5 h-5 cursor-pointer stroke-title 2md:block" data-feather="more-vertical"></i>
+                            <div class="hidden text-left dropdown-menu 2md:block">
+                              <ul class="flex flex-col justify-start gap-3">
+                                <li class="cursor-pointer">
+                                  <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                                    <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
+                                  </svg>
+                                </li>
+                                <li class="cursor-pointer">   
+                                  <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                                    <use href="../../assets/svg/_sprite.svg#Delete"> </use>
+                                  </svg>
+                                </li>
+                                <li class="cursor-pointer"><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i></li>
+                              </ul>
+                            </div>
+                          </div>
                         </td>
                       </tr>
                       <tr class="hover:bg-gray-light">
-                        <td class="min-w-[130px]">
+                        <td class="min-w-[155px]">
                           <div class="flex items-center gap-2"><img class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full" src="../../assets/images/product/4.jpg" alt="Phillip Lightbulb">
                             <div>
                               <h4 class="text-xs font-semibold text-title">Phillip Lightbulb</h4><span class="text-[0.813rem] font-medium text-content">#GS-5214</span>
                             </div>
                           </div>
                         </td>
-                        <td class="min-w-[130px]">
-                          <div class="flex gap-1 items-center"> <span class="text-lg font-bold text-title">$321</span>
+                        <td class="min-w-[155px]">
+                          <div class="flex gap-1 items-center"> <span class="text-lg font-bold text-title">$251</span>
                             <del class="font-bold text-2xs text-content ">$699</del>
                           </div><span class="text-[0.813rem] font-medium text-secondary">64%OFF</span>
                         </td>
-                        <td class="max-w-[110px]">
+                        <td class="min-w-[100px]"> 
                           <div class="plus-minus flex items-center text-center bg-primary-light border border-primary rounded-5"><i class="sub cursor-pointer w-5 h-5 bg-primary border-r border-primary stroke-white" data-feather="minus"></i>
-                            <input class="text-center bg-transparent text-title" type="number" value="2" min="1" max="10"/><i class="add cursor-pointer w-5 h-5 bg-primary border-l border-primary stroke-white" data-feather="plus"></i>
+                            <input class="text-center bg-transparent text-title" type="number" value="4" min="1" max="10"/><i class="add cursor-pointer w-5 h-5 bg-primary border-l border-primary stroke-white" data-feather="plus"></i>
                           </div>
                         </td>
-                        <td class="min-w-[50px]"> 
-                          <h4 class="text-xs font-semibold text-title">$411</h4>
+                        <td class="min-w-[100px] 2md:min-w-[65px]"> 
+                          <h4 class="text-xs font-semibold text-title">$1006</h4>
                         </td>
-                        <td class="min-w-[50px]">
-                          <div class="flex gap-3 items-center justify-end"> <a href="javascript:void(0)">
-                              <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title"> 
-                                <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                              </svg></a><a href="javascript:void(0)"> 
-                              <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title"> 
-                                <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                              </svg></a><a href="javascript:void(0)"><i class="h-5 stroke-content" data-feather="bookmark"> </i></a></div>
+                        <td class="min-w-[100px] 2md:min-w-max">
+                          <div class="flex gap-3 items-center justify-end block 2md:hidden"> 
+                            <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                              <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
+                            </svg>
+                            <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                              <use href="../../assets/svg/_sprite.svg#Delete"> </use>
+                            </svg><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i>
+                          </div>
+                          <div class="dropdown dropdown-bottom"><i class="hidden w-5 h-5 cursor-pointer stroke-title 2md:block" data-feather="more-vertical"></i>
+                            <div class="hidden text-left dropdown-menu 2md:block">
+                              <ul class="flex flex-col justify-start gap-3">
+                                <li class="cursor-pointer">
+                                  <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                                    <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
+                                  </svg>
+                                </li>
+                                <li class="cursor-pointer">   
+                                  <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                                    <use href="../../assets/svg/_sprite.svg#Delete"> </use>
+                                  </svg>
+                                </li>
+                                <li class="cursor-pointer"><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i></li>
+                              </ul>
+                            </div>
+                          </div>
                         </td>
                       </tr>
                       <tr class="hover:bg-gray-light">
-                        <td class="min-w-[130px]">
+                        <td class="min-w-[155px]">
                           <div class="flex items-center gap-2"><img class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full" src="../../assets/images/product/5.jpg" alt="Ladies Handbags">
                             <div>
                               <h4 class="text-xs font-semibold text-title">Ladies Handbags</h4><span class="text-[0.813rem] font-medium text-content">#GS-65411</span>
                             </div>
                           </div>
                         </td>
-                        <td class="min-w-[130px]">
-                          <div class="flex gap-1 items-center"> <span class="text-lg font-bold text-title">$345</span>
+                        <td class="min-w-[155px]">
+                          <div class="flex gap-1 items-center"> <span class="text-lg font-bold text-title">$254</span>
                             <del class="font-bold text-2xs text-content ">$499</del>
                           </div><span class="text-[0.813rem] font-medium text-secondary">49%OFF</span>
                         </td>
-                        <td class="max-w-[110px]">
+                        <td class="min-w-[100px]"> 
                           <div class="plus-minus flex items-center text-center bg-primary-light border border-primary rounded-5"><i class="sub cursor-pointer w-5 h-5 bg-primary border-r border-primary stroke-white" data-feather="minus"></i>
-                            <input class="text-center bg-transparent text-title" type="number" value="2" min="1" max="10"/><i class="add cursor-pointer w-5 h-5 bg-primary border-l border-primary stroke-white" data-feather="plus"></i>
+                            <input class="text-center bg-transparent text-title" type="number" value="6" min="1" max="10"/><i class="add cursor-pointer w-5 h-5 bg-primary border-l border-primary stroke-white" data-feather="plus"></i>
                           </div>
                         </td>
-                        <td class="min-w-[50px]"> 
-                          <h4 class="text-xs font-semibold text-title">$395</h4>
+                        <td class="min-w-[100px] 2md:min-w-[65px]"> 
+                          <h4 class="text-xs font-semibold text-title">$1526</h4>
                         </td>
-                        <td class="min-w-[50px]">
-                          <div class="flex gap-3 items-center justify-end"> <a href="javascript:void(0)">
-                              <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title"> 
-                                <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                              </svg></a><a href="javascript:void(0)"> 
-                              <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title"> 
-                                <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                              </svg></a><a href="javascript:void(0)"><i class="h-5 stroke-content" data-feather="bookmark"> </i></a></div>
+                        <td class="min-w-[100px] 2md:min-w-max">
+                          <div class="flex gap-3 items-center justify-end block 2md:hidden"> 
+                            <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                              <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
+                            </svg>
+                            <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                              <use href="../../assets/svg/_sprite.svg#Delete"> </use>
+                            </svg><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i>
+                          </div>
+                          <div class="dropdown dropdown-bottom"><i class="hidden w-5 h-5 cursor-pointer stroke-title 2md:block" data-feather="more-vertical"></i>
+                            <div class="hidden text-left dropdown-menu 2md:block">
+                              <ul class="flex flex-col justify-start gap-3">
+                                <li class="cursor-pointer">
+                                  <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                                    <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
+                                  </svg>
+                                </li>
+                                <li class="cursor-pointer">   
+                                  <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                                    <use href="../../assets/svg/_sprite.svg#Delete"> </use>
+                                  </svg>
+                                </li>
+                                <li class="cursor-pointer"><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i></li>
+                              </ul>
+                            </div>
+                          </div>
                         </td>
                       </tr>
                       <tr class="hover:bg-gray-light">
-                        <td class="min-w-[130px]">
+                        <td class="min-w-[155px]">
                           <div class="flex items-center gap-2"><img class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full" src="../../assets/images/product/6.png" alt="Latest Cosmetics">
                             <div>
                               <h4 class="text-xs font-semibold text-title">Latest Cosmetics</h4><span class="text-[0.813rem] font-medium text-content">#GS-34611</span>
                             </div>
                           </div>
                         </td>
-                        <td class="min-w-[130px]">
-                          <div class="flex gap-1 items-center"> <span class="text-lg font-bold text-title">$645</span>
-                            <del class="font-bold text-2xs text-content ">$699</del>
+                        <td class="min-w-[155px]">
+                          <div class="flex gap-1 items-center"> <span class="text-lg font-bold text-title">$422</span>
+                            <del class="font-bold text-2xs text-content ">$768</del>
                           </div><span class="text-[0.813rem] font-medium text-secondary">45%OFF</span>
                         </td>
-                        <td class="max-w-[110px]">
+                        <td class="min-w-[100px]"> 
                           <div class="plus-minus flex items-center text-center bg-primary-light border border-primary rounded-5"><i class="sub cursor-pointer w-5 h-5 bg-primary border-r border-primary stroke-white" data-feather="minus"></i>
                             <input class="text-center bg-transparent text-title" type="number" value="2" min="1" max="10"/><i class="add cursor-pointer w-5 h-5 bg-primary border-l border-primary stroke-white" data-feather="plus"></i>
                           </div>
                         </td>
-                        <td class="min-w-[50px]"> 
-                          <h4 class="text-xs font-semibold text-title">$234</h4>
+                        <td class="min-w-[100px] 2md:min-w-[65px]"> 
+                          <h4 class="text-xs font-semibold text-title">$844</h4>
                         </td>
-                        <td class="min-w-[50px]">
-                          <div class="flex gap-3 items-center justify-end"> <a href="javascript:void(0)">
-                              <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title"> 
-                                <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                              </svg></a><a href="javascript:void(0)"> 
-                              <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title"> 
-                                <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                              </svg></a><a href="javascript:void(0)"><i class="h-5 stroke-content" data-feather="bookmark"> </i></a></div>
+                        <td class="min-w-[100px] 2md:min-w-max">
+                          <div class="flex gap-3 items-center justify-end block 2md:hidden"> 
+                            <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                              <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
+                            </svg>
+                            <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                              <use href="../../assets/svg/_sprite.svg#Delete"> </use>
+                            </svg><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i>
+                          </div>
+                          <div class="dropdown dropdown-bottom"><i class="hidden w-5 h-5 cursor-pointer stroke-title 2md:block" data-feather="more-vertical"></i>
+                            <div class="hidden text-left dropdown-menu 2md:block">
+                              <ul class="flex flex-col justify-start gap-3">
+                                <li class="cursor-pointer">
+                                  <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                                    <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
+                                  </svg>
+                                </li>
+                                <li class="cursor-pointer">   
+                                  <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                                    <use href="../../assets/svg/_sprite.svg#Delete"> </use>
+                                  </svg>
+                                </li>
+                                <li class="cursor-pointer"><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i></li>
+                              </ul>
+                            </div>
+                          </div>
                         </td>
                       </tr>
                       <tr class="hover:bg-gray-light">
-                        <td class="min-w-[130px]">
+                        <td class="min-w-[155px]">
                           <div class="flex items-center gap-2"><img class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full" src="../../assets/images/product/7.png" alt="Latest Nike shoes">
                             <div>
                               <h4 class="text-xs font-semibold text-title">Latest Nike shoes</h4><span class="text-[0.813rem] font-medium text-content">#GS-64247</span>
                             </div>
                           </div>
                         </td>
-                        <td class="min-w-[130px]">
-                          <div class="flex gap-1 items-center"> <span class="text-lg font-bold text-title">$784</span>
+                        <td class="min-w-[155px]">
+                          <div class="flex gap-1 items-center"> <span class="text-lg font-bold text-title">$224</span>
                             <del class="font-bold text-2xs text-content ">$899</del>
                           </div><span class="text-[0.813rem] font-medium text-secondary">75%OFF</span>
                         </td>
-                        <td class="max-w-[110px]">
+                        <td class="min-w-[100px]"> 
                           <div class="plus-minus flex items-center text-center bg-primary-light border border-primary rounded-5"><i class="sub cursor-pointer w-5 h-5 bg-primary border-r border-primary stroke-white" data-feather="minus"></i>
-                            <input class="text-center bg-transparent text-title" type="number" value="2" min="1" max="10"/><i class="add cursor-pointer w-5 h-5 bg-primary border-l border-primary stroke-white" data-feather="plus"></i>
+                            <input class="text-center bg-transparent text-title" type="number" value="3" min="1" max="10"/><i class="add cursor-pointer w-5 h-5 bg-primary border-l border-primary stroke-white" data-feather="plus"></i>
                           </div>
                         </td>
-                        <td class="min-w-[50px]"> 
-                          <h4 class="text-xs font-semibold text-title">$764</h4>
+                        <td class="min-w-[100px] 2md:min-w-[65px]"> 
+                          <h4 class="text-xs font-semibold text-title">$674</h4>
                         </td>
-                        <td class="min-w-[50px]">
-                          <div class="flex gap-3 items-center justify-end"> <a href="javascript:void(0)">
-                              <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title"> 
-                                <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                              </svg></a><a href="javascript:void(0)"> 
-                              <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title"> 
-                                <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                              </svg></a><a href="javascript:void(0)"><i class="h-5 stroke-content" data-feather="bookmark"> </i></a></div>
+                        <td class="min-w-[100px] 2md:min-w-max">
+                          <div class="flex gap-3 items-center justify-end block 2md:hidden"> 
+                            <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                              <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
+                            </svg>
+                            <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                              <use href="../../assets/svg/_sprite.svg#Delete"> </use>
+                            </svg><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i>
+                          </div>
+                          <div class="dropdown dropdown-bottom"><i class="hidden w-5 h-5 cursor-pointer stroke-title 2md:block" data-feather="more-vertical"></i>
+                            <div class="hidden text-left dropdown-menu 2md:block">
+                              <ul class="flex flex-col justify-start gap-3">
+                                <li class="cursor-pointer">
+                                  <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                                    <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
+                                  </svg>
+                                </li>
+                                <li class="cursor-pointer">   
+                                  <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                                    <use href="../../assets/svg/_sprite.svg#Delete"> </use>
+                                  </svg>
+                                </li>
+                                <li class="cursor-pointer"><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i></li>
+                              </ul>
+                            </div>
+                          </div>
                         </td>
                       </tr>
                       <tr class="hover:bg-gray-light">
-                        <td class="min-w-[130px]">
+                        <td class="min-w-[155px]">
                           <div class="flex items-center gap-2"><img class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full" src="../../assets/images/product/8.png" alt="Apple MacBook Air">
                             <div>
                               <h4 class="text-xs font-semibold text-title">Apple MacBook Air</h4><span class="text-[0.813rem] font-medium text-content">#GS-3452</span>
                             </div>
                           </div>
                         </td>
-                        <td class="min-w-[130px]">
-                          <div class="flex gap-1 items-center"> <span class="text-lg font-bold text-title">$751</span>
+                        <td class="min-w-[155px]">
+                          <div class="flex gap-1 items-center"> <span class="text-lg font-bold text-title">$768</span>
                             <del class="font-bold text-2xs text-content ">$1200</del>
                           </div><span class="text-[0.813rem] font-medium text-secondary">36%OFF</span>
                         </td>
-                        <td class="max-w-[110px]">
+                        <td class="min-w-[100px]"> 
                           <div class="plus-minus flex items-center text-center bg-primary-light border border-primary rounded-5"><i class="sub cursor-pointer w-5 h-5 bg-primary border-r border-primary stroke-white" data-feather="minus"></i>
                             <input class="text-center bg-transparent text-title" type="number" value="2" min="1" max="10"/><i class="add cursor-pointer w-5 h-5 bg-primary border-l border-primary stroke-white" data-feather="plus"></i>
                           </div>
                         </td>
-                        <td class="min-w-[50px]"> 
-                          <h4 class="text-xs font-semibold text-title">$955</h4>
+                        <td class="min-w-[100px] 2md:min-w-[65px]"> 
+                          <h4 class="text-xs font-semibold text-title">$1536</h4>
                         </td>
-                        <td class="min-w-[50px]">
-                          <div class="flex gap-3 items-center justify-end"> <a href="javascript:void(0)">
-                              <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title"> 
-                                <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                              </svg></a><a href="javascript:void(0)"> 
-                              <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title"> 
-                                <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                              </svg></a><a href="javascript:void(0)"><i class="h-5 stroke-content" data-feather="bookmark"> </i></a></div>
+                        <td class="min-w-[100px] 2md:min-w-max">
+                          <div class="flex gap-3 items-center justify-end block 2md:hidden"> 
+                            <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                              <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
+                            </svg>
+                            <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                              <use href="../../assets/svg/_sprite.svg#Delete"> </use>
+                            </svg><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i>
+                          </div>
+                          <div class="dropdown dropdown-bottom"><i class="hidden w-5 h-5 cursor-pointer stroke-title 2md:block" data-feather="more-vertical"></i>
+                            <div class="hidden text-left dropdown-menu 2md:block">
+                              <ul class="flex flex-col justify-start gap-3">
+                                <li class="cursor-pointer">
+                                  <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                                    <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
+                                  </svg>
+                                </li>
+                                <li class="cursor-pointer">   
+                                  <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
+                                    <use href="../../assets/svg/_sprite.svg#Delete"> </use>
+                                  </svg>
+                                </li>
+                                <li class="cursor-pointer"><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i></li>
+                              </ul>
+                            </div>
+                          </div>
                         </td>
                       </tr>
                     </tbody>
@@ -1385,21 +1529,21 @@
                 </div>
               </div>
             </div>
-            <div class="col-span-3 relative xl:col-span-12">
-              <div class="card tabs sticky top-36"> 
+            <div class="col-span-3 xl:col-span-4 lg:col-span-12">
+              <div class="card sticky top-0"> 
                 <div class="card-header">
                   <h3 class="mb-2 font-bold text-title">Cart information </h3>
-                  <div class="divider w-full mb-2"> </div>
+                  <div class="divider w-full"> </div>
                 </div>
-                <div class="card-body"> 
-                  <div class="flex flex-col mb-2 gap-1"> 
-                    <label class="font-bold text-xs text-primary" for="coupon-code">Apply Coupon code</label>
+                <div class="card-body flex flex-col gap-2"> 
+                  <div class="flex flex-col gap-1"> 
+                    <label class="font-bold text-xs text-primary" for="coupon-code">Apply Coupon Code</label>
                     <div class="flex items-center justify-center"> 
-                      <input class="p-[11px] w-full rounded-br-none rounded-tr-none border border-border-light rounded-5 text-xs text-content" type="text" placeholder="Enter Coupon code" id="coupon-code"><span class="flex items-center justify-center bg-primary text-white rounded-5 border-none rounded-bl-none rounded-tl-none font-medium text-xs py-[12px] px-[11px]">Apply</span>
+                      <input class="p-[11px] w-full rounded-br-none rounded-tr-none border border-border-light rounded-5 text-xs text-content" type="text" placeholder="Enter code" id="coupon-code"><span class="flex items-center justify-center bg-primary text-white rounded-5 border-none rounded-bl-none rounded-tl-none font-medium text-xs py-[12px] px-[11px]">Apply</span>
                     </div>
                   </div>
-                  <div class="divider w-full mb-2"> </div>
-                  <ul class="flex flex-col gap-2 mb-2"> 
+                  <div class="divider w-full my-3"> </div>
+                  <ul class="flex flex-col gap-2"> 
                     <li class="flex items-center justify-between text-content font-bold">
                       <h6>Subtotal  </h6>
                       <h6>$511 </h6>
@@ -1413,8 +1557,8 @@
                       <h6>$6.90 </h6>
                     </li>
                   </ul>
-                  <div class="divider w-full mb-2"> </div>
-                  <ul class="flex flex-col gap-2 mb-2"> 
+                  <div class="divider w-full my-3"> </div>
+                  <ul class="flex flex-col gap-2"> 
                     <li class="flex items-center justify-between text-primary font-extrabold"> 
                       <h6>Total(USD) </h6>
                       <h6>$345  </h6>
@@ -1422,10 +1566,9 @@
                   </ul>
                 </div>
                 <div class="card-footer"> 
-                  <div class="flex flex-col gap-2"> 
-                    <button class="btn btn-secondary w-full text-white">Process To Checkout</button>
-                    <button class="btn btn-primary text-white flex justify-center items-center gap-2"> <a href="shop.html"></a><i class="h-5 stroke-white" data-feather="arrow-left"></i>Back to Shopping</button>
-                  </div>
+                  <div class="flex flex-col gap-3"> <a href="checkout.html">
+                      <button class="btn btn-secondary w-full text-white">Process To Checkout</button></a><a href="shop.html">
+                      <button class="btn btn-primary text-white w-full flex justify-center items-center gap-2"> <i class="w-5 h-5 stroke-white" data-feather="arrow-left"></i>Back to Shopping</button></a></div>
                 </div>
               </div>
             </div>
@@ -1521,14 +1664,6 @@
   <script src="../../assets/js/custom-select.js"></script>
   <!-- Sidebar Js -->
   <script src="../../assets/js/sidebar.js"></script>
-  <!-- emailApp js-->
-  <script src="../../assets/js/email-app/email-app-page.js"></script>
-  <!-- filepond js-->
-  <script src="../../assets/js/filepond/filepond-plugin-image-preview.js"> </script>
-  <script src="../../assets/js/filepond/filepond-plugin-file-rename.js"> </script>
-  <script src="../../assets/js/filepond/filepond-plugin-image-transform.js"> </script>
-  <script src="../../assets/js/filepond/filepond.js"></script>
-  <script src="../../assets/js/filepond/filepond-custom.js"> </script>
   <!-- Custom script   -->
   <script src="../../assets/js/script.js">  </script>
 </html>

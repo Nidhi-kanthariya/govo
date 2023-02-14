@@ -10,21 +10,9 @@
 //- customizer 
 -var customizer = true;
 
-//- textEditor
-//- -var textEditor = true;
-
-//- dropzone
-//- -var dropzone = true;
-
-//- filepond
--var filepond = true;
-
-//- emailApp
--var emailApp = true;
-
 //- Breadcrumbs
--var pageTitle="Email";
--var breadcrumb=['Email'];
+-var pageTitle="Cart";
+-var breadcrumb=['Ecommerce','Cart'];
 
 //- all JSON  
 include ../../data/all-data
@@ -47,23 +35,23 @@ html(lang='en')
                 // Page Body Start
                 div.page-body
                     div.grid.grid-cols-12.gap-card-gap
-                        div.col-span-9(class="xl:col-span-12")
-                            div.card.tabs  
+                        div.col-span-9(class="xl:col-span-8 lg:col-span-12")
+                            div.card  
                                 div.overflow-auto.custom-scroll   
                                     include ../../components/table/cart-table 
-                        div.col-span-3(class="relative xl:col-span-12")
-                            div.card.tabs.sticky.top-36 
+                        div.col-span-3(class="xl:col-span-4 lg:col-span-12")
+                            div.card.sticky.top-0 
                                 div.card-header
                                     h3(class="mb-2 font-bold text-title") Cart information 
-                                    div.divider.w-full.mb-2  
-                                div.card-body 
-                                    div.flex.flex-col.mb-2.gap-1  
-                                        label(for="coupon-code").font-bold.text-xs.text-primary Apply Coupon code
+                                    div.divider.w-full  
+                                div.card-body.flex.flex-col.gap-2 
+                                    div.flex.flex-col.gap-1  
+                                        label(for="coupon-code").font-bold.text-xs.text-primary Apply Coupon Code
                                         div.flex.items-center.justify-center 
-                                            input(type="text" placeholder="Enter Coupon code" class="p-[11px]" id="coupon-code").w-full.rounded-br-none.rounded-tr-none.border.border-border-light.rounded-5.text-xs.text-content
+                                            input(type="text" placeholder="Enter code" class="p-[11px]" id="coupon-code").w-full.rounded-br-none.rounded-tr-none.border.border-border-light.rounded-5.text-xs.text-content
                                             span.flex.items-center.justify-center.bg-primary.text-white.rounded-5.border-none.rounded-bl-none.rounded-tl-none.font-medium.text-xs(class="py-[12px] px-[11px]") Apply
-                                    div.divider.w-full.mb-2 
-                                    ul.flex.flex-col.gap-2.mb-2 
+                                    div.divider.w-full.my-3 
+                                    ul.flex.flex-col.gap-2 
                                         li.flex.items-center.justify-between.text-content.font-bold
                                             h6 Subtotal  
                                             h6 $511 
@@ -73,18 +61,19 @@ html(lang='en')
                                         li.flex.items-center.justify-between.text-content.font-bold
                                             h6 Shipping
                                             h6 $6.90 
-                                    div.divider.w-full.mb-2 
-                                    ul.flex.flex-col.gap-2.mb-2 
+                                    div.divider.w-full.my-3 
+                                    ul.flex.flex-col.gap-2 
                                         li.flex.items-center.justify-between.text-primary.font-extrabold 
                                             h6 Total(USD) 
                                             h6 $345  
                                 div.card-footer 
-                                    div.flex.flex-col.gap-2 
-                                        button.btn.btn-secondary.w-full.text-white Process To Checkout
-                                        button.btn.btn-primary.text-white.flex.justify-center.items-center.gap-2  
-                                            a(href="shop.html")
-                                            i(data-feather="arrow-left" class="h-5 stroke-white")
-                                            | Back to Shopping
+                                    div.flex.flex-col.gap-3 
+                                        a(href="checkout.html")
+                                            button.btn.btn-secondary.w-full.text-white Process To Checkout
+                                        a(href="shop.html")
+                                            button.btn.btn-primary.text-white.w-full.flex.justify-center.items-center.gap-2  
+                                                i(data-feather="arrow-left" class="w-5 h-5 stroke-white")
+                                                | Back to Shopping
 
 
 

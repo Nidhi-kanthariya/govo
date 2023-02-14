@@ -78,9 +78,63 @@
       &.table-action{
         tr{
           th{
-            @apply pb-4;
+            @apply pb-4 ; 
             &:last-child{
               @apply text-end;
+            }
+          }
+        }
+        .plus-minus{
+          @apply max-w-max;
+          svg{
+            @apply h-6 w-6 p-1;
+          }
+        }
+        tbody{
+          tr{
+            &:last-child{
+              td{
+                .dropdown{
+                  &.dropdown-bottom{
+                    .dropdown-menu {
+                      @apply !bottom-full !top-unset !right-0 !left-unset;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .dropdown{
+            .dropdown-menu{
+              @apply p-2;
+            }
+          }
+        }
+        &.invoice{
+          thead {
+            tr {
+              th {
+                @apply last:text-start;
+                &:nth-child(2),
+                &:nth-child(4){
+                    @apply 2md:hidden;
+                }
+              }
+            }
+          }
+          tbody {
+            tr {
+              &:last-child{ 
+                td {
+                  @apply pb-[18px];
+                }
+              }
+              td{
+                &:nth-child(2),
+                &:nth-child(4){
+                    @apply 2md:hidden;
+                }
+              }
             }
           }
         }

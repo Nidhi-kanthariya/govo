@@ -1,0 +1,135 @@
+//- sidebar
+-var sidebar = true;
+
+//- feather
+-var feather= true;
+
+//- custom select
+-var customSelect = true;
+
+//- customizer 
+-var customizer = true;
+
+//- Breadcrumbs
+-var pageTitle="Shop";
+-var breadcrumb=['Ecommerce','Shop'];
+
+//- all JSON  
+include ../../data/all-data
+
+//- all mixin   
+include ../../mixin/mixin
+
+doctype html
+html(lang='en')
+    include ../../layout/header-files
+    body(dir="ltr" class="unique-skin")
+        main.page-wrapper
+            div.page-body-wrapper(class="mb-10 2xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300")
+                include ../../layout/header/unique/header     
+                // Sidebar Start 
+                div.page-sidebar.sidebar-dark.unique-sidebar
+                    include ../../layout/sidebar/unique 
+                // Sidebar End 
+
+                // Page Body Start
+                div.page-body
+                    div.grid.grid-cols-12.gap-card-gap
+                        div.col-span-3(class="lg:col-span-12")
+                            div.card
+                                div.card-header
+                                    h2(class="mb-3 font-bold text-title") Filters
+                                div.card-body
+                                    div.flex.flex-col.flex-wrap.gap-2
+                                        div.accordionWrapper
+                                            div.accordionItem.open
+                                                h4.accordionItemHeading.bg-primary Brand
+                                                div.accordionItemContent
+                                                    ul.flex.gap-2.flex-col
+                                                        li.flex.items-center.gap-2
+                                                            div.checkbox(class="w-4 h-4") 
+                                                                input(type='checkbox' class="peer" id="zara") 
+                                                                div.checkbox-indicator(class="peer-checked:!bg-primary !border !border-primary") 
+                                                                    i(data-feather="check")
+                                                            label(for="zara").text-content Zara (21)
+                                                        li.flex.items-center.gap-2
+                                                            div.checkbox(class="w-4 h-4") 
+                                                                input(type='checkbox' class="peer" id="nike")
+                                                                div.checkbox-indicator(class="peer-checked:!bg-primary !border !border-primary") 
+                                                                    i(data-feather="check")
+                                                            label(for="nike").text-content Nike (31)
+                                                        li.flex.items-center.gap-2   
+                                                            div.checkbox(class="w-4 h-4") 
+                                                                input(type='checkbox' class="peer" id="louis-vuitton") 
+                                                                div.checkbox-indicator(class="peer-checked:!bg-primary !border !border-primary") 
+                                                                    i(data-feather="check")
+                                                            label(for="louis-vuitton").text-content Louis Vuitton (15)
+                                                        li.flex.items-center.gap-2
+                                                            div.checkbox(class="w-4 h-4")
+                                                                input(type='checkbox' class="peer" id="puma") 
+                                                                div.checkbox-indicator(class="peer-checked:!bg-primary !border !border-primary") 
+                                                                    i(data-feather="check")
+                                                            label(for="puma").text-content Puma (21)
+                                                        li.flex.items-center.gap-2
+                                                            div.checkbox(class="w-4 h-4")
+                                                                input(type='checkbox' class="peer" id="Folio") 
+                                                                div.checkbox-indicator(class="peer-checked:!bg-primary !border !border-primary") 
+                                                                    i(data-feather="check")
+                                                            label(for="Folio").text-content Folio (25)
+                                                        li.flex.items-center.gap-2
+                                                            div.checkbox(class="w-4 h-4")
+                                                                input(type='checkbox' class="peer" id="H&m") 
+                                                                div.checkbox-indicator(class="peer-checked:!bg-primary !border !border-primary") 
+                                                                    i(data-feather="check")
+                                                            label(for="H&m").text-content H & M (5)
+
+                                    //- div.flex.flex-col.flex-wrap.gap-2
+                                    //-     div.accordionWrapper
+                                    //-         div.accordionItem.open
+                                    //-             h4.accordionItemHeading.bg-primary Categories
+                                    //-             div.accordionItemContent
+                                    //-                 ul.flex.gap-2.flex-col
+                                    //-                     li.flex.items-center.gap-2
+                                    //-                         div.checkbox(class="w-4 h-4") 
+                                    //-                             input(type='checkbox' class="peer" id="zara") 
+                                    //-                             div.checkbox-indicator(class="peer-checked:!bg-primary !border !border-primary") 
+                                    //-                                 i(data-feather="check")
+                                    //-                         label(for="zara").text-content Zara (21)
+                                    //-                     li.flex.items-center.gap-2
+                                    //-                         div.checkbox(class="w-4 h-4") 
+                                    //-                             input(type='checkbox' class="peer" id="nike")
+                                    //-                             div.checkbox-indicator(class="peer-checked:!bg-primary !border !border-primary") 
+                                    //-                                 i(data-feather="check")
+                                    //-                         label(for="nike").text-content Nike (31)
+                                    //-                     li.flex.items-center.gap-2   
+                                    //-                         div.checkbox(class="w-4 h-4") 
+                                    //-                             input(type='checkbox' class="peer" id="louis-vuitton") 
+                                    //-                             div.checkbox-indicator(class="peer-checked:!bg-primary !border !border-primary") 
+                                    //-                                 i(data-feather="check")
+                                    //-                         label(for="louis-vuitton").text-content Louis Vuitton (15)
+                                    //-                     li.flex.items-center.gap-2
+                                    //-                         div.checkbox(class="w-4 h-4")
+                                    //-                             input(type='checkbox' class="peer" id="puma") 
+                                    //-                             div.checkbox-indicator(class="peer-checked:!bg-primary !border !border-primary") 
+                                    //-                                 i(data-feather="check")
+                                    //-                         label(for="puma").text-content Puma (21)
+                                    //-                     li.flex.items-center.gap-2
+                                    //-                         div.checkbox(class="w-4 h-4")
+                                    //-                             input(type='checkbox' class="peer" id="Folio") 
+                                    //-                             div.checkbox-indicator(class="peer-checked:!bg-primary !border !border-primary") 
+                                    //-                                 i(data-feather="check")
+                                    //-                         label(for="Folio").text-content Folio (25)
+                                    //-                     li.flex.items-center.gap-2
+                                    //-                         div.checkbox(class="w-4 h-4")
+                                    //-                             input(type='checkbox' class="peer" id="H&m") 
+                                    //-                             div.checkbox-indicator(class="peer-checked:!bg-primary !border !border-primary") 
+                                    //-                                 i(data-feather="check")
+                                    //-                         label(for="H&m").text-content H & M (5)
+
+
+
+
+                    // Page Body End  
+                    +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
+            include ../../components/customizer
+    include ../../layout/footer-files
