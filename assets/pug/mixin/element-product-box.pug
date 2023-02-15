@@ -1,0 +1,130 @@
+- 
+    var PRODUCT_BOX = [
+        {
+            image: "ecommerce/product.jpg",
+            productName: "Fastrack smart watch",
+            price: "$85",
+            deletePrice: "$95",
+            rate: "3",
+            label: "Sale"
+        },
+        {
+            image: "ecommerce/sofa.jpg",
+            productName: "Latest running shoes",
+            price: "$98",
+            deletePrice: "$110",
+            rate: "2"
+        },
+        {
+            image: "ecommerce/mindy-jacobs.jpg",
+            productName: "Beardo hoodie - Lion heart",
+            price: "$75",
+            deletePrice: "$80",
+            rate: "4",
+            label: "50% off"
+        },
+        {
+            image: "ecommerce/angelo-pantazis.jpg",
+            productName: "Boat rockerz 610 bluetooth",
+            price: "$50",
+            deletePrice: "$70",
+            rate: "5"
+        },
+        {
+            image: "ecommerce/Wood-Art.jpg",
+            productName: "Latest running shoes",
+            price: "$98",
+            deletePrice: "$110",
+            rate: "3"
+        },
+        {
+            image: "ecommerce/greensofa.jpg",
+            productName: "Latest Black Bloutooth",
+            price: "$90",
+            deletePrice: "$200",
+            rate: "5"
+        },
+        {
+            image: "ecommerce/product.jpg",
+            productName: "Fastrack smart watch",
+            price: "$85",
+            deletePrice: "$95",
+            rate: "3",
+            label: "Sale"
+        },
+        {
+            image: "ecommerce/sofa.jpg",
+            productName: "Latest running shoes",
+            price: "$98",
+            deletePrice: "$110",
+            rate: "2"
+        },
+        {
+            image: "ecommerce/mindy-jacobs.jpg",
+            productName: "Beardo hoodie - Lion heart",
+            price: "$75",
+            deletePrice: "$80",
+            rate: "4",
+            label: "50% off"
+        },
+        {
+            image: "ecommerce/angelo-pantazis.jpg",
+            productName: "Boat rockerz 610 bluetooth",
+            price: "$50",
+            deletePrice: "$70",
+            rate: "5"
+        },
+        {
+            image: "ecommerce/Wood-Art.jpg",
+            productName: "Latest running shoes",
+            price: "$98",
+            deletePrice: "$110",
+            rate: "3"
+        },
+        {
+            image: "ecommerce/greensofa.jpg",
+            productName: "Latest Black Bloutooth",
+            price: "$90",
+            deletePrice: "$200",
+            rate: "5"
+        },
+
+    ];
+
+//-// Element Product
+mixin rating(number,ratingClasses) 
+    - var n = 0; 
+        while n <= 4
+            li(class="leading-[normal]")
+                i.iconly-Star.text-warning(class=`${(number <= n ?'icli':'icbo')} ${ratingClasses}`)
+            - n++
+mixin product(data,modal,modalId)
+    .card.p-3(class="group") 
+        .card-body
+            .relative
+                if (data.label)
+                    span.badge.badge-primary.badge-xs.absolute.font-bold(class="top-3 left-3.5 rounded-[3px] ")= data.label
+                //- +iconly(`icon-wishlist absolute top-1.5 right-2.5 opacity-0 scale-0 cursor-pointer transition ease-in-out ${data.iconClass ? data.iconClass : "group-hover:text-primary group-hover:scale-100 group-hover:opacity-100 group-hover:transition group-hover:ease-in-out"}`, 'Heart', 'text-[20px] sm:text-[16px]', ['1','2','3'], 'path_formatter')
+                //- +iconly(`icon-cart absolute top-8 right-2.5 opacity-0 scale-0 cursor-pointer transition ease-in-out ${data.iconClass ? data.iconClass : "group-hover:text-secondary group-hover:scale-100 group-hover:opacity-100 group-hover:transition group-hover:ease-in-out"}`, 'Buy', 'text-[20px] sm:text-[16px]', ['1','2','3'], 'path_formatter')
+                //- if (modal === "modal")
+                //-     label(for= modalId)    
+                //-         +iconly(`icon-cart absolute top-14 right-2.5 opacity-0 scale-0 cursor-pointer transition ease-in-out ${data.iconClass ? data.iconClass : "group-hover:text-info group-hover:scale-100 group-hover:opacity-100 group-hover:transition group-hover:ease-in-out"}`, 'Show', 'text-[20px] sm:text-[16px]', ['1','2','3'], 'path_formatter')
+
+                a(href="product.html")
+                    img(src=`../../assets/images/${data.image}` class="rounded-[15px] w-full" alt="product image")
+            div.pt-2 
+                a(href="product.html")     
+                    h4.font-medium.text-xs.truncate= data.productName
+                    h6.text-3xs.flex(class="pt-0.5 gap-1")
+                        span.font-bold.text-primary= data.price
+                        del.text-gray-500= data.deletePrice 
+                .flex.justify-between(class="gap-1 pt-1")
+                    ul.flex
+                        +rating(data.rate) 
+                    ul.flex.color-variant(class="gap-[3px]")
+                        li(class="leading-[normal]" data-image="../../assets/images/product/2.jpg")
+                            button.w-3.h-3.bg-primary.rounded-full(type="button")
+                        li(class="leading-[normal]" data-image="../../assets/images/product/1.jpg")
+                            button.w-3.h-3.bg-warning.rounded-full(type="button")
+                        li(class="leading-[normal]" data-image="../../assets/images/product/3.jpg")
+                            button.w-3.h-3.bg-success.rounded-full(type="button")
