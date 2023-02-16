@@ -92,19 +92,19 @@ document.body.addEventListener('click', function (event) {
   if (!visible && !dropdownEl.classList.contains('on-hover-show')) dropdownEl?.classList.add('show');
 });
 
-const customizerSidebar = document.querySelector('.customizer-sidebar');
-const customizerBtn = document.querySelector('.customizer-btn');
-const customizerCloseBtn = document.querySelector('.customizer-close');
+// const customizerSidebar = document.querySelector('.customizer-sidebar');
+// const customizerBtn = document.querySelector('.customizer-btn');
+// const customizerCloseBtn = document.querySelector('.customizer-close');
 
-/// Customizer Sidebar Show ///
-customizerBtn?.addEventListener('click', function () {
-  customizerSidebar.classList.add('show');
-});
+// /// Customizer Sidebar Show ///
+// customizerBtn?.addEventListener('click', function () {
+//   customizerSidebar.classList.add('show');
+// });
 
-/// Customizer Sidebar Hide ///
-customizerCloseBtn?.addEventListener('click', function () {
-  customizerSidebar.classList.remove('show');
-});
+// /// Customizer Sidebar Hide ///
+// customizerCloseBtn?.addEventListener('click', function () {
+//   customizerSidebar.classList.remove('show');
+// });
 
 /*=====================
     Plus Minus Item Js 

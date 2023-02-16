@@ -117,4 +117,14 @@
       @apply bg-gradient-to-r from-amber-400 via-red-600 to-blue-600;
     }  
   }
+  .heart{
+    svg {
+      * {
+           fill: url(#lgrad);
+        }
+        &:not(.svg-inline--fa) {
+          position: absolute;
+      }
+    }
+  }
 }

@@ -1423,7 +1423,7 @@
         </div>
       </div>
       <!-- Customizer-->
-      <div class="customizer-sidebar bg-white">
+      <div class="bg-white customizer-sidebar">
         <div class="flex rtl:flex items-center text-title bg-primary justify-between  p-[15px] shadow-md"> <span class="text-base font-semibold text-white">Customizer</span>
           <button class="customizer-close"> <i class="w-4 h-4 stroke-white" data-feather="x"></i></button>
         </div>
@@ -1432,58 +1432,58 @@
             <ul class="flex flex-col gap-7 mode-event">  
               <li>
                 <div>
-                  <h5 class="leading-none text-dark font-semibold text-sm">Template Mode</h5><span class="leading-none text-content text-xs font-medium">Choose template mode dark & light</span>
+                  <h5 class="leading-none text-dark text-sm font-semibold">Template Mode</h5><span class="leading-none text-content text-xs font-medium">Choose template mode dark & light</span>
                 </div>
                 <div class="mt-2">
                   <ul class="flex items-center gap-3 flex-wrap"> 
                     <li class="relative">
-                      <input class="peer absolute opacity-0 invisible" checked id="light-checked" type="radio" name="mode"><i class="stroke-primary z-[10] transition-all scale-0 opacity-0 absolute peer-checked:opacity-100 peer-checked:scale-100 top-2 right-2 w-4 h-4" data-feather="check-circle"></i>
-                      <label class="mode-theme-light shadow-md border border-light overflow-hidden rounded-5 block" for="light-checked"> <img class="w-[90px] object-cover" src="../../assets/images/customizer/light.png" alt="light"></label>
+                      <input class="absolute invisible opacity-0 peer" checked id="light-checked" type="radio" name="mode"><i class="stroke-primary z-[10] transition-all scale-0 opacity-0 absolute peer-checked:opacity-100 peer-checked:scale-100 top-2 right-2 w-4 h-4" data-feather="check-circle"></i>
+                      <label class="block overflow-hidden border shadow-md mode-theme-light border-light rounded-5" for="light-checked"> <img class="w-[90px] object-cover" src="../../assets/images/customizer/light.png" alt="light"></label>
                     </li>
                     <li class="relative">
-                      <input class="peer absolute opacity-0 invisible" id="dark-checked" type="radio" name="mode"><i class="stroke-white z-[10] transition-all scale-0 opacity-0 absolute peer-checked:opacity-100 peer-checked:scale-100 top-2 right-2 w-4 h-4" data-feather="check-circle"></i>
-                      <label class="mode-theme-dark shadow-md border border-light overflow-hidden rounded-5 block" for="dark-checked"> <img class="w-[90px] object-cover" src="../../assets/images/customizer/dark.png" alt="dark"></label>
+                      <input class="absolute invisible opacity-0 peer" id="dark-checked" type="radio" name="mode"><i class="stroke-white z-[10] transition-all scale-0 opacity-0 absolute peer-checked:opacity-100 peer-checked:scale-100 top-2 right-2 w-4 h-4" data-feather="check-circle"></i>
+                      <label class="block overflow-hidden border shadow-md mode-theme-dark border-light rounded-5" for="dark-checked"> <img class="w-[90px] object-cover" src="../../assets/images/customizer/dark.png" alt="dark"></label>
                     </li>
                   </ul>
                 </div>
               </li>
               <li>
                 <div>
-                  <h5 class="leading-none text-dark font-semibold text-sm">Layout Type</h5><span class="leading-none text-content text-xs">Choose layout Ltr & Rtl</span>
+                  <h5 class="leading-none text-dark text-sm font-semibold">Layout Type</h5><span class="leading-none text-content text-xs">Choose layout Ltr & Rtl</span>
                 </div>
                 <div class="mt-2">
                   <ul class="flex items-center gap-3">
                     <li class="relative">
-                      <input class="peer absolute opacity-0 invisible" checked id="ltr-checked" type="radio" name="dir"><i class="stroke-primary z-[10] transition-all scale-0 opacity-0 absolute peer-checked:opacity-100 peer-checked:scale-100 top-2 right-2 w-4 h-4" data-feather="check-circle"></i>
-                      <label class="layout-ltr shadow-md border border-light overflow-hidden rounded-5 block" for="ltr-checked"> <img class="w-[90px] object-cover" src="../../assets/images/customizer/ltr.png" alt="ltr"></label>
+                      <input class="absolute invisible opacity-0 peer" checked id="ltr-checked" type="radio" name="dir"><i class="stroke-primary z-[10] transition-all scale-0 opacity-0 absolute peer-checked:opacity-100 peer-checked:scale-100 top-2 right-2 w-4 h-4" data-feather="check-circle"></i>
+                      <label class="block overflow-hidden border shadow-md layout-ltr border-light rounded-5" for="ltr-checked"> <img class="w-[90px] object-cover" src="../../assets/images/customizer/ltr.png" alt="ltr"></label>
                     </li>
                     <li class="relative"> 
-                      <input class="peer absolute opacity-0 invisible" id="rtl-checked" type="radio" name="dir"><i class="stroke-white z-[10] transition-all scale-0 opacity-0 absolute peer-checked:opacity-100 peer-checked:scale-100 top-2 right-2 w-4 h-4" data-feather="check-circle"></i>
-                      <label class="layout-rtl shadow-md border border-light overflow-hidden rounded-5 block" for="rtl-checked"> <img class="w-[90px] object-cover" src="../../assets/images/customizer/rtl.png" alt="rtl"></label>
+                      <input class="absolute invisible opacity-0 peer" id="rtl-checked" type="radio" name="dir"><i class="stroke-white z-[10] transition-all scale-0 opacity-0 absolute peer-checked:opacity-100 peer-checked:scale-100 top-2 right-2 w-4 h-4" data-feather="check-circle"></i>
+                      <label class="block overflow-hidden border shadow-md layout-rtl border-light rounded-5" for="rtl-checked"> <img class="w-[90px] object-cover" src="../../assets/images/customizer/rtl.png" alt="rtl"></label>
                     </li>
                   </ul>
                 </div>
               </li>
               <li>
                 <div>
-                  <h5 class="leading-none text-dark font-semibold text-sm">Sidebar Type</h5><span class="leading-none text-content text-xs">Choose Sidebar  icon & full</span>
+                  <h5 class="leading-none text-dark text-sm font-semibold">Sidebar Type</h5><span class="leading-none text-content text-xs">Choose Sidebar  icon & full</span>
                 </div>
                 <div class="mt-2">
                   <ul class="flex items-center gap-3">
                     <li class="relative">
-                      <input class="peer absolute opacity-0 invisible" checked id="full-sidebar" type="radio" name="sidebar-type"><i class="stroke-primary z-[10] transition-all scale-0 opacity-0 absolute peer-checked:opacity-100 peer-checked:scale-100 top-2 right-2 w-4 h-4" data-feather="check-circle"></i>
-                      <label class="sidebar-full shadow-md border border-light overflow-hidden rounded-5 block" for="full-sidebar"> <img class="w-[90px] object-cover" src="../../assets/images/customizer/full-sidebar.png" alt="full sidebar"></label>
+                      <input class="absolute invisible opacity-0 peer" checked id="full-sidebar" type="radio" name="sidebar-type"><i class="stroke-primary z-[10] transition-all scale-0 opacity-0 absolute peer-checked:opacity-100 peer-checked:scale-100 top-2 right-2 w-4 h-4" data-feather="check-circle"></i>
+                      <label class="block overflow-hidden border shadow-md sidebar-full border-light rounded-5" for="full-sidebar"> <img class="w-[90px] object-cover" src="../../assets/images/customizer/full-sidebar.png" alt="full sidebar"></label>
                     </li>
                     <li class="relative"> 
-                      <input class="peer absolute opacity-0 invisible" id="icon-sidebar" type="radio" name="sidebar-type"><i class="stroke-primary z-[10] transition-all scale-0 opacity-0 absolute peer-checked:opacity-100 peer-checked:scale-100 top-2 right-2 w-4 h-4" data-feather="check-circle"></i>
-                      <label class="sidebar-icon shadow-md border border-light overflow-hidden rounded-5 block" for="icon-sidebar"> <img class="w-[90px] object-cover" src="../../assets/images/customizer/icon-sidebar.png" alt="icon sidebar"></label>
+                      <input class="absolute invisible opacity-0 peer" id="icon-sidebar" type="radio" name="sidebar-type"><i class="stroke-primary z-[10] transition-all scale-0 opacity-0 absolute peer-checked:opacity-100 peer-checked:scale-100 top-2 right-2 w-4 h-4" data-feather="check-circle"></i>
+                      <label class="block overflow-hidden border shadow-md sidebar-icon border-light rounded-5" for="icon-sidebar"> <img class="w-[90px] object-cover" src="../../assets/images/customizer/icon-sidebar.png" alt="icon sidebar"></label>
                     </li>
                   </ul>
                 </div>
               </li>
               <li>
                 <div class="flex items-center justify-between"> 
-                  <label class="leading-none text-dark font-semibold text-sm" for="monochrome">Monochrome Mode</label>
+                  <label class="leading-none text-dark text-sm font-semibold" for="monochrome">Monochrome Mode</label>
                   <input class="monochrome toggle toggle-primary" id="monochrome" name="monochrome" type="checkbox">
                 </div>
               </li>
@@ -1491,7 +1491,7 @@
           </div>
         </div>
         <div class="flex items-center gap-2 p-[15px] border-t border-light dark:bg-primaryLight"> 
-          <button class="btn btn-ghost reset-customizer flex-1">Reset  </button>
+          <button class="btn btn-ghost flex-1 reset-customizer">Reset  </button>
           <button class="btn btn-primary text-white flex-1">Buy Now</button>
         </div>
       </div>
@@ -1508,6 +1508,8 @@
   <script src="../../assets/js/apexchart/unique-custom.js"></script>
   <!-- Sidebar Js -->
   <script src="../../assets/js/sidebar.js"></script>
+  <!-- customizer js-->
+  <script src="../../assets/js/customizer.js"> </script>
   <!-- Custom script   -->
   <script src="../../assets/js/script.js">  </script>
 </html>
