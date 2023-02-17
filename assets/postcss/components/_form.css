@@ -18,7 +18,7 @@
     input {
       @apply bg-gray-light rounded-5 w-full py-[0.6875rem] pl-[1.5625rem] pr-[3.4375rem]  text-xs font-semibold text-title;
     }
-    input[type='checkbox'] {
+    input[type="checkbox"] {
       @apply h-[0.8125rem] w-[0.8125rem];
     }
     a {
@@ -41,7 +41,7 @@
         @apply bg-gray-light py-2 px-4 rounded-none text-primary text-xs;
       }
       img {
-        @apply w-6 h-6 ;
+        @apply w-6 h-6;
       }
     }
     span {
@@ -51,17 +51,17 @@
       }
     }
 
-    &.login{
-      label{
-       @apply mb-1 block text-xs;
+    &.login {
+      label {
+        @apply mb-1 block text-xs;
       }
-      input[type='Email'] {
-      @apply focus:border focus:border-primary border-border-light border bg-white  w-full;
-      }
-      input[type='Date'] {
+      input[type="Email"] {
         @apply focus:border focus:border-primary border-border-light border bg-white  w-full;
       }
-      input[type='password'] {
+      input[type="Date"] {
+        @apply focus:border focus:border-primary border-border-light border bg-white  w-full;
+      }
+      input[type="password"] {
         @apply focus:border focus:border-primary border-border-light border bg-white  w-full;
       }
     }
@@ -90,40 +90,60 @@
       @apply border-border-light border bg-gray-light rounded-lg p-3;
     }
 
-    .timer{
-      span{
+    .timer {
+      span {
         @apply text-title;
       }
     }
   }
 
-  .ops-svg{
+  .ops-svg {
     @apply absolute top-[11%] right-[30%] w-[23%];
   }
 
-  .instagram{
+  .instagram {
     svg {
       * {
-           fill: url(#rg);
-        }
-        &:not(.svg-inline--fa) {
-          position: absolute;
+        fill: url(#rg);
+      }
+      &:not(.svg-inline--fa) {
+        position: absolute;
       }
     }
-    span{
+    span {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
       @apply bg-gradient-to-r from-amber-400 via-red-600 to-blue-600;
-    }  
+    }
   }
-  .heart{
+  .heart {
     svg {
       * {
-           fill: url(#lgrad);
-        }
-        &:not(.svg-inline--fa) {
-          position: absolute;
+        fill: url(#lgrad);
+      }
+      &:not(.svg-inline--fa) {
+        position: absolute;
+      }
+    }
+  }
+  .shopping-cart {
+    svg {
+      * {
+        fill: url(#grid);
+      }
+      &:not(.svg-inline--fa) {
+        position: absolute;
+      }
+    }
+  }
+  .modal-eye {
+    svg {
+      * {
+        fill: url(#rgrad);
+      }
+      &:not(.svg-inline--fa) {
+        position: absolute;
       }
     }
   }

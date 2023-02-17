@@ -10,7 +10,7 @@
   --info: #b52af6;
   --info-light: #b52af64d;
   --warning: #feb858;
-  --warning-light:#feb8584d;
+  --warning-light: #feb8584d;
   --danger: #f1523d;
   --danger-light: #f1523d4d;
   --light: #d8ecff;
@@ -49,9 +49,9 @@
   --facebook: #3f5a9e;
   --instagram1: #fdf497;
   --instagram2: #fd5949;
-  --instagram3: #285AEB;
+  --instagram3: #285aeb;
 }
-html[class='dark'] {
+html[class="dark"] {
   --White: #1f2f3e;
   --black: #fff;
 }
@@ -82,7 +82,6 @@ html[class='dark'] {
 
   --secondary: 255, 141, 175;
   --secondary-light: rgba(var(--secondary), 0.3);
-  
 }
 /* Crypto Skin */
 .crypto-skin {
@@ -1646,7 +1645,7 @@ input:focus {
   font-weight: 600;
   color: var(--title);
 }
-.theme-form input[type='checkbox'] {
+.theme-form input[type="checkbox"] {
   height: 0.8125rem;
   width: 0.8125rem;
 }
@@ -1744,36 +1743,36 @@ input:focus {
   line-height: 1.4;
   letter-spacing: 0.025rem;
 }
-.theme-form.login input[type='Email'] {
+.theme-form.login input[type="Email"] {
   width: 100%;
   border-width: 1px;
   border-color: var(--border-light);
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.theme-form.login input[type='Email']:focus {
+.theme-form.login input[type="Email"]:focus {
   border-width: 1px;
   border-color: rgba(var(--primary),1);
 }
-.theme-form.login input[type='Date'] {
+.theme-form.login input[type="Date"] {
   width: 100%;
   border-width: 1px;
   border-color: var(--border-light);
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.theme-form.login input[type='Date']:focus {
+.theme-form.login input[type="Date"]:focus {
   border-width: 1px;
   border-color: rgba(var(--primary),1);
 }
-.theme-form.login input[type='password'] {
+.theme-form.login input[type="password"] {
   width: 100%;
   border-width: 1px;
   border-color: var(--border-light);
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.theme-form.login input[type='password']:focus {
+.theme-form.login input[type="password"]:focus {
   border-width: 1px;
   border-color: rgba(var(--primary),1);
 }
@@ -1863,12 +1862,12 @@ input:focus {
   width: 23%;
 }
 .instagram svg * {
-           fill: url(#rg);
-        }
-.instagram svg:not(.svg-inline--fa) {
-          position: absolute;
+        fill: url(#rg);
       }
-.instagram span{
+.instagram svg:not(.svg-inline--fa) {
+        position: absolute;
+      }
+.instagram span {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -1881,10 +1880,22 @@ input:focus {
       --tw-gradient-to: #2563eb;
     }
 .heart svg * {
-           fill: url(#lgrad);
-        }
+        fill: url(#lgrad);
+      }
 .heart svg:not(.svg-inline--fa) {
-          position: absolute;
+        position: absolute;
+      }
+.shopping-cart svg * {
+        fill: url(#grid);
+      }
+.shopping-cart svg:not(.svg-inline--fa) {
+        position: absolute;
+      }
+.modal-eye svg * {
+        fill: url(#rgrad);
+      }
+.modal-eye svg:not(.svg-inline--fa) {
+        position: absolute;
       }
 .indicator {
   position: relative;
@@ -5225,6 +5236,9 @@ code[class*="language-"],
 .mt-\[38px\] {
   margin-top: 38px;
 }
+.mt-\[3px\] {
+  margin-top: 3px;
+}
 .mt-\[4px\] {
   margin-top: 4px;
 }
@@ -5344,6 +5358,9 @@ code[class*="language-"],
 }
 .h-\[0\.875rem\] {
   height: 0.875rem;
+}
+.h-\[0\.8rem\] {
+  height: 0.8rem;
 }
 .h-\[0\.9rem\] {
   height: 0.9rem;
@@ -5596,6 +5613,9 @@ code[class*="language-"],
 .min-h-\[100px\] {
   min-height: 100px;
 }
+.min-h-\[120px\] {
+  min-height: 120px;
+}
 .min-h-\[18px\] {
   min-height: 18px;
 }
@@ -5717,6 +5737,9 @@ code[class*="language-"],
 }
 .w-\[0\.875rem\] {
   width: 0.875rem;
+}
+.w-\[0\.8rem\] {
+  width: 0.8rem;
 }
 .w-\[0\.9rem\] {
   width: 0.9rem;
@@ -6413,6 +6436,9 @@ code[class*="language-"],
 .gap-\[\.5625rem\] {
   gap: .5625rem;
 }
+.gap-\[0\.3rem\] {
+  gap: 0.3rem;
+}
 .gap-\[0\.5rem\] {
   gap: 0.5rem;
 }
@@ -6929,6 +6955,9 @@ code[class*="language-"],
 }
 .\!p-2 {
   padding: 0.5rem !important;
+}
+.\!p-\[15px\] {
+  padding: 15px !important;
 }
 .p-0 {
   padding: 0px;
@@ -9404,6 +9433,9 @@ code[class*="language-"],
   Countdown CSS
 ==========================*/
 /*=====================
+    Ecommerce CSS
+  ==========================*/
+/*=====================
     Mask CSS
   ==========================*/
 /*=====================
@@ -11404,6 +11436,9 @@ code[class*="language-"],
   .md\:-mt-\[5px\] {
     margin-top: -5px;
   }
+  .md\:mt-3 {
+    margin-top: 0.75rem;
+  }
   .md\:mt-\[-0\.125rem\] {
     margin-top: -0.125rem;
   }
@@ -11472,6 +11507,9 @@ code[class*="language-"],
   }
   .md\:max-w-\[70\%\] {
     max-width: 70%;
+  }
+  .md\:max-w-\[80\%\] {
+    max-width: 80%;
   }
   .md\:flex-row {
     flex-direction: row;
@@ -11595,9 +11633,6 @@ code[class*="language-"],
   }
   .\32md\:col-span-5 {
     grid-column: span 5 / span 5;
-  }
-  .\32md\:col-span-6 {
-    grid-column: span 6 / span 6;
   }
   .\32md\:col-span-7 {
     grid-column: span 7 / span 7;
@@ -11911,6 +11946,9 @@ code[class*="language-"],
   .sm\:min-w-\[38px\] {
     min-width: 38px;
   }
+  .sm\:max-w-\[100\%\] {
+    max-width: 100%;
+  }
   .sm\:max-w-\[75\%\] {
     max-width: 75%;
   }
@@ -12081,9 +12119,6 @@ code[class*="language-"],
   }
   .\32sm\:top-\[10\%\] {
     top: 10%;
-  }
-  .\32sm\:col-span-12 {
-    grid-column: span 12 / span 12;
   }
   .\32sm\:-mx-\[34px\] {
     margin-left: -34px;
