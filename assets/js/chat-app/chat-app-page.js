@@ -13,7 +13,7 @@ rightSidebarBtn?.addEventListener('click', function (e) {
   rightSidebarHeaderToggle.classList.toggle('hide');
   rightHeaderLogoShowOptions?.classList.toggle('hide');
   rightSidebarHideLogoShow.classList.toggle('col-span-6');
-    rightSidebarHideLogoShow.classList.toggle('col-span-9'); 
+  rightSidebarHideLogoShow.classList.toggle('col-span-9'); 
 
 });
 rightSidebarHeaderToggle?.addEventListener('click', function (e) {

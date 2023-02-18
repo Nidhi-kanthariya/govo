@@ -10,6 +10,9 @@
 //- custom select
 -var customSelect = true;
 
+//- ecommerce
+-var ecommerce = true;
+
 //- customizer 
 -var customizer = true;
 
@@ -47,15 +50,21 @@ html(lang='en')
                                         +SVG_ICON("Search","xl:hidden w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 right-[25px] absolute")
                                         i(data-feather="x" class="search-close hidden cursor-pointer xl:block w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 right-[25px] absolute")
                         
-                        div.col-span-12.flex.items-center.justify-between.gap-3.bg-white.p-3 
-                            div.product-filter 
-                                +SVG_ICON("Filter", "w-6 h-6 stroke-title xl:block hidden")
+                        div.col-span-12.flex.items-center.justify-between.gap-3.bg-white.p-3.rounded-5 
                             div.flex.items-center.gap-3
+                                label(for="sortby" class="min-w-max text-xs text-content3") Sort By                                    
+                                select.form-select.block.w-full.px-3.text-xs.font-normal.text-content3.bg-white.bg-clip-padding.bg-no-repeat.border.border-border-light.rounded-5.transition.ease-in-out.m-0(class='min-w-[150px] py-[9px]' id="sortby" aria-label='Default select example')
+                                    option(selected='') All
+                                    option(value='1') Popular
+                                    option(value='2') Price Low
+                                    option(value='3') Price Hight
+                            div.flex.items-center.gap-3
+                                div.product-filter
+                                    +SVG_ICON("Filter", "w-6 h-6 stroke-content3 xl:block hidden")
                                 div.product-setting 
-                                    i(data-feather="grid" class="w-6 h-6 stroke-title")
+                                    i(data-feather="grid" class="w-6 h-6 stroke-content3")
                                 div.product-setting 
-                                    i(data-feather="list" class="w-6 h-6 stroke-title")
-                        
+                                    i(data-feather="list" class="w-6 h-6 stroke-content3")
                         div.col-span-3(class="xl:hidden")
                             div.card.sticky.top-0(class="product-filter")
                                 div.card-header 

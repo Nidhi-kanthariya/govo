@@ -1132,15 +1132,24 @@
                 </div>
               </div>
             </div>
-            <div class="col-span-12 flex items-center justify-between gap-3 bg-white p-3"> 
-              <div class="product-filter"> 
-                <svg class="w-6 h-6 stroke-title xl:block hidden"> 
-                  <use href="../../assets/svg/_sprite.svg#Filter"> </use>
-                </svg>
+            <div class="col-span-12 flex items-center justify-between gap-3 bg-white p-3 rounded-5"> 
+              <div class="flex items-center gap-3">
+                <label class="min-w-max text-xs text-content3" for="sortby">Sort By                                    </label>
+                <select class="form-select block w-full px-3 text-xs font-normal text-content3 bg-white bg-clip-padding bg-no-repeat border border-border-light rounded-5 transition ease-in-out m-0 min-w-[150px] py-[9px]" id="sortby" aria-label="Default select example">
+                  <option selected="">All</option>
+                  <option value="1">Popular</option>
+                  <option value="2">Price Low</option>
+                  <option value="3">Price Hight</option>
+                </select>
               </div>
               <div class="flex items-center gap-3">
-                <div class="product-setting"> <i class="w-6 h-6 stroke-title" data-feather="grid"></i></div>
-                <div class="product-setting"> <i class="w-6 h-6 stroke-title" data-feather="list"></i></div>
+                <div class="product-filter">
+                  <svg class="w-6 h-6 stroke-content3 xl:block hidden"> 
+                    <use href="../../assets/svg/_sprite.svg#Filter"> </use>
+                  </svg>
+                </div>
+                <div class="product-setting"> <i class="w-6 h-6 stroke-content3" data-feather="grid"></i></div>
+                <div class="product-setting"> <i class="w-6 h-6 stroke-content3" data-feather="list"></i></div>
               </div>
             </div>
             <div class="col-span-3 xl:hidden">
@@ -1918,6 +1927,8 @@
   <script src="../../assets/js/custom-select.js"></script>
   <!-- Sidebar Js -->
   <script src="../../assets/js/sidebar.js"></script>
+  <!-- ecommerce js-->
+  <script src="../../assets/js/email-app/ecommerce-app-page.js"></script>
   <!-- fontAwesome js-->
   <script src="../../assets/js/fontawesome/all.min.js"></script>
   <!-- customizer js-->
