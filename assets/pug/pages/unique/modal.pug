@@ -630,7 +630,7 @@ html(lang='en')
       div.modal-main
          input#modal-1(class="peer" name="modal-1" type='checkbox')
          label.modal-overlay(class="peer-checked:block" for='modal-1')
-         div.modal(class="peer-checked:block w-[18.75rem]")
+         div.modal(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem]")
             div.modal-header
                h3 Hurry !!
                label(for='modal-1') 
@@ -647,7 +647,7 @@ html(lang='en')
       div.modal-main
          input#modal-2(class="peer" name="modal-2" type='checkbox')
          label.modal-overlay(class="peer-checked:block" for='modal-2')
-         div.modal(class="peer-checked:block w-[15.625rem]")
+         div.modal(class="peer-checked:opacity-100 peer-checked:visible w-[15.625rem]")
             div.modal-header
                h3 Web Design
                label(for='modal-2') 
@@ -660,7 +660,7 @@ html(lang='en')
       div.modal-main
          input#modal-3(class="peer" name="modal-3" type='checkbox')
          label.modal-overlay(class="peer-checked:block" for='modal-3')
-         div.modal(class="w-11/12 max-w-2xl peer-checked:block")
+         div.modal(class="w-11/12 max-w-2xl peer-checked:opacity-100 peer-checked:visible")
             div.modal-header
                h3 Start with your goals
                label(for='modal-3') 
@@ -687,7 +687,7 @@ html(lang='en')
       div.modal-main
          input#modal-4(class="peer" name="modal-4" type='checkbox')
          label.modal-overlay(class="peer-checked:block" for='modal-4')
-         div.modal(class="w-11/12 max-w-5xl peer-checked:block ")
+         div.modal(class="w-11/12 max-w-5xl peer-checked:opacity-100 peer-checked:visible")
             div.modal-header
                h3 UX Designer
                label(for='modal-4') 
@@ -713,7 +713,7 @@ html(lang='en')
       div.modal-main
          input#modal-5(class="peer" name="modal-5" type='checkbox')
          label.modal-overlay(class="peer-checked:block" for='modal-5')
-         div.modal(class="w-[18.75rem] peer-checked:block")
+         div.modal(class="w-[18.75rem] peer-checked:opacity-100 peer-checked:visible")
             div.modal-header
                h3 Cookies
                label(for='modal-5') 
@@ -729,7 +729,7 @@ html(lang='en')
       div.modal-main
          input#modal-6(class="peer" name="modal-6" type='checkbox')
          label.modal-overlay(class="peer-checked:block" for='modal-6')
-         div.modal.modal-center(class="peer-checked:block w-[18.75rem]")
+         div.modal.modal-center(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem]")
             div.modal-body.text-center
                div.modal-img
                   img(class="" src="../../assets/images/modal/danger.gif" alt="danger" class="w-14")
@@ -741,7 +741,7 @@ html(lang='en')
       div.modal-main
          input#modal-7(class="peer" name="modal-7" type='checkbox')
          label.modal-overlay(class="peer-checked:block" for='modal-7')
-         div.modal(class="peer-checked:block w-[18.75rem]")
+         div.modal(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem]")
             div.modal-header
                h3 Wed Designer
                label(for='modal-7') 
@@ -769,7 +769,7 @@ html(lang='en')
       div.modal-main
          input#modal-8(class="peer" name="modal-8" type='checkbox')
          label.modal-overlay(class="peer-checked:block" for='modal-8')
-         div.modal(class="max-w-sm peer-checked:block")
+         div.modal(class="max-w-sm peer-checked:opacity-100 peer-checked:visible")
             div.modal-body
                form.theme-form.flex.flex-col.gap-3
                   h3 Log in to account
@@ -786,9 +786,9 @@ html(lang='en')
                               i(data-feather="check")
                         span Remember Me
                      div(class="!mb-0")
-                        a(href="/forgot-password") Forgot Password? 
+                        a(href="forgot-password.html") Forgot Password? 
                   div(class="!mb-0")
-                     button.btn.btn-primary.text-white Sign in
+                     button.btn.btn-primary.text-white(a href="index.html") Sign in
                   div
                      h4 Or Sign in with 
                   div.social
@@ -803,13 +803,13 @@ html(lang='en')
                         | Facebook  
                   div.text-center
                      span Don't have an account? 
-                        small.cursor-pointer Create Now
+                        a(href="register.html") Create Now
 
       //- Tooltip & popover modal
       div.modal-main
          input#modal-9(class="peer" name="modal-9" type='checkbox')
          label.modal-overlay(class="peer-checked:block" for='modal-9')
-         div.modal(class="w-[18.75rem] peer-checked:block")
+         div.modal(class="w-[18.75rem] peer-checked:opacity-100 peer-checked:visible")
             div.modal-header
                h3 Modal Title
                label(for='modal-9') 
@@ -823,7 +823,7 @@ html(lang='en')
       div.modal-main
          input#modal-10(class="peer" name="modal-10" type='checkbox')
          label.modal-overlay(class="peer-checked:block" for='modal-10')
-         div.modal.modal-top-left(class="peer-checked:block w-[18.75rem]")
+         div.modal.modal-top-left(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem]")
             div.modal-body.text-center
                ul.modal-img
                   li
@@ -839,7 +839,7 @@ html(lang='en')
       div.modal-main
          input#modal-11(class="peer" name="modal-11" type='checkbox')
          label.modal-overlay(class="peer-checked:block" for='modal-11')
-         div.modal.modal-top-center(class="peer-checked:block w-[18.75rem]")
+         div.modal.modal-top-center(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem]")
             div.modal-body.text-center
                ul.modal-img
                   li
@@ -855,7 +855,7 @@ html(lang='en')
       div.modal-main
          input#modal-14(class="peer" name="modal-14" type='checkbox')
          label.modal-overlay(class="peer-checked:block" for='modal-14')
-         div.modal.modal-top-right(class="peer-checked:block w-[18.75rem]")
+         div.modal.modal-top-right(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem]")
             div.modal-body.text-center
                ul.modal-img
                   li
@@ -871,7 +871,7 @@ html(lang='en')
       div.modal-main
          input#modal-12(class="peer" name="modal-12" type='checkbox')
          label.modal-overlay(class="peer-checked:block" for='modal-12')
-         div.modal.modal-bottom-left(class="peer-checked:block w-[18.75rem]")
+         div.modal.modal-bottom-left(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem]")
             div.modal-body.text-center
                div.modal-img
                   img(class="" src="../../assets/images/modal/success.gif" alt="success" class="w-28")
@@ -883,7 +883,7 @@ html(lang='en')
       div.modal-main
          input#modal-13(class="peer" name="modal-13" type='checkbox')
          label.modal-overlay(class="peer-checked:block" for='modal-13')
-         div.modal.modal-bottom-center(class="peer-checked:block w-[18.75rem]")
+         div.modal.modal-bottom-center(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem]")
             div.modal-body.text-center
                div.modal-img
                   img(class="" src="../../assets/images/modal/success.gif" alt="success" class="w-28")
@@ -895,7 +895,7 @@ html(lang='en')
       div.modal-main
          input#modal-15(class="peer" name="modal-15" type='checkbox')
          label.modal-overlay(class="peer-checked:block" for='modal-15')
-         div.modal.modal-bottom-right(class="peer-checked:block w-[18.75rem]")
+         div.modal.modal-bottom-right(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem]")
             div.modal-body.text-center
                div.modal-img
                   img(class="" src="../../assets/images/modal/success.gif" alt="success" class="w-28")

@@ -124,9 +124,50 @@
             rating:"150 Ratings",
             rate: "4.5"
         },
+        {
+            image: "ecommerce/13.jpg",
+            productName: "Face Wash - For Good Skincare",
+            price: "$75",
+            deletePrice: "$100",
+            delivery:"Free delivery by Govo",
+            discount:"(25% Off)",
+            rating:"150 Ratings",
+            rate: "4.9",
+            label: "25% off"
+        },
+        {
+            image: "ecommerce/14.jpg",
+            productName: "Perfume - Great fragrance, Good Mood ",
+            price: "$299",
+            deletePrice: "$399",
+            delivery:"Free delivery by Govo",
+            discount:"(15% Off)",
+            rating:"150 Ratings",
+            rate: "4.7"
+        },
+        {
+            image: "ecommerce/15.jpg",
+            productName: "Sun Glasses - Eye Protection, Regular Usage",
+            price: "$98",
+            deletePrice: "$110",
+            delivery:"Free delivery by Govo",
+            discount:"(15% Off)",
+            rating:"150 Ratings",
+            rate: "3.6"
+        },
+        {
+            image: "ecommerce/16.jpg",
+            productName: "Women's Leather Bags",
+            price: "$212",
+            deletePrice: "$250",
+            delivery:"Free delivery by Govo",
+            discount:"(15% Off)",
+            rating:"150 Ratings",
+            rate: "4.5"
+        },
     ];
 
-mixin product(data,modal,modalId)
+mixin product(data,modal,productmodal)
     .card.p-3(class="scale-0 hover:transition-all hover:ease-in-out group hover:scale-105 transform-none") 
         .card-body
             .relative
@@ -148,13 +189,13 @@ mixin product(data,modal,modalId)
                             ellipse(cx='50%' cy='50%' rx='600' ry='200')
                         i.fa-solid.fa-cart-shopping(class="flex items-center justify-center p-2 bg-white rounded-full")
                     if (modal === "modal")
-                        label(for= modalId)
-                            a(href="javascript:void(0)" class="btn modal-eye !p-0")
-                                svg(width='0' height='0') 
-                                    radialGradient#rgrad(cx="50%" cy="50%" r="50%" )
-                                        stop(offset='0%' style='stop-color:rgb(51, 191, 191);stop-opacity:1.00')
-                                        stop(offset='100%' style='stop-color:rgb(51, 191, 191);stop-opacity:1.00')
-                                i.fa-solid.fa-eye(class="flex items-center justify-center p-2 bg-white rounded-full")
+                        label.button-label.p-0.modal-eye(for='productmodal')
+                            //- a(href="javascript:void(0)" class="btn modal-eye !p-0")
+                            svg(width='0' height='0') 
+                                radialGradient#rgrad(cx="50%" cy="50%" r="50%" )
+                                    stop(offset='0%' style='stop-color:rgb(51, 191, 191);stop-opacity:1.00')
+                                    stop(offset='100%' style='stop-color:rgb(51, 191, 191);stop-opacity:1.00')
+                            i.fa-solid.fa-eye(class="flex items-center justify-center p-2 bg-white rounded-full")
                 a(href="product.html")
                     img(src=`../../assets/images/${data.image}` class="rounded-[4px] w-full" alt="product image")
             div.pt-2 
