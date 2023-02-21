@@ -20,8 +20,8 @@ rightSidebarHeaderToggle?.addEventListener('click', function (e) {
   rightSidebar.classList.toggle('right-hide-show-sidebar');
   rightSidebarHeaderToggle.classList.toggle('hide');
   this.closest('.right-sidebar-hide-logo-show')?.classList.toggle('hide');
-   rightSidebarHideLogoShow.classList.toggle('col-span-6');
-    rightSidebarHideLogoShow.classList.toggle('col-span-9');
+  rightSidebarHideLogoShow.classList.toggle('col-span-6');
+  rightSidebarHideLogoShow.classList.toggle('col-span-9');
 });
 
 const leftSidebarHeaderToggle = document.querySelector('.left-sidebar-toggle-btn');

@@ -1,0 +1,172 @@
+//- sidebar
+-var sidebar = true;
+
+//- feather
+-var feather= true;
+
+//- fontawesome
+-var fontAwesome=true;
+
+//- custom select
+-var customSelect = true;
+
+//- ecommerce
+-var ecommerce = true;
+
+//- swiper-slider
+-var swiper=true;
+
+//- customizer 
+-var customizer = true;
+
+//- Breadcrumbs
+-var pageTitle="Checkout";
+-var breadcrumb=['Ecommerce','Checkout'];
+
+//- all JSON  
+include ../../data/all-data
+
+//- all mixin   
+include ../../mixin/mixin
+
+doctype html
+html(lang='en')
+    include ../../layout/header-files
+    body(dir="ltr" class="unique-skin")
+        main.page-wrapper
+            div.page-body-wrapper(class="mb-10 2xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300")
+                include ../../layout/header/unique/header     
+                // Sidebar Start 
+                div.page-sidebar.sidebar-dark.unique-sidebar
+                    include ../../layout/sidebar/unique 
+                // Sidebar End 
+
+                // Page Body Start
+                div.page-body 
+                    div.grid.grid-cols-12.gap-card-gap.card.checkout-detail 
+                        div.col-span-8(class="lg:col-span-12 w-full tabs flex flex-col")
+                            div.mb-1.tab-links.flex.items-center(class="3sm:justify-center")
+                                button.tab.product-tab.w-full.items-center.tab-active(data-tabFilter="1" class="tab-link") 
+                                    //- i(data-feather="user",class="w-[1.125rem] h-[1.125rem] stroke-title")
+                                    i.fa-regular.fa-user(class="w-[1.125rem] h-[1.125rem] text-title")
+                                    | Billing Info  
+                                button.tab.product-tab.w-full.items-center(data-tabFilter="2" class="tab-link")
+                                    //- i(data-feather="truck",class="w-[1.125rem] h-[1.125rem] stroke-title")
+                                    i.fa-solid.fa-truck-fast(class="w-[1.125rem] h-[1.125rem] text-title")
+                                    | Shipping Info
+                                button.tab.product-tab.w-full.items-center(data-tabFilter="3" class="tab-link")
+                                    //- i(data-feather="credit-card",class="w-[1.125rem] h-[1.125rem] stroke-title")
+                                    i.fa-solid.fa-money-bill(class="w-[1.125rem] h-[1.125rem] text-title")
+                                    | Payment Info  
+                                button.tab.product-tab.w-full.items-center(data-tabFilter="3" class="tab-link")
+                                    //- i(data-feather="check-circle",class="w-[1.125rem] h-[1.125rem] stroke-title")
+                                    i.fa-regular.fa-circle-check(class="w-[1.125rem] h-[1.125rem] text-title")
+                                    | Finish  
+                            div.tabs-content
+                                div(data-tabContent="1" class="tab-pan fade active show first:rounded-tl-none rounded-5 border-none !px-1 !pb-0")
+                                    div
+                                        h6.text-title.font-semibold.mb-2 Billing Information 
+                                        p.text-content3.mb-5  Fill up the following information 
+                                        form(action="index.html" class="theme-form flex flex-col gap-4 m-0")
+                                            div.grid.grid-cols-12.gap-5
+                                                div.col-span-6
+                                                    label(for="firstName") First Name
+                                                    input(type="text" id="firstName" required)
+                                                div.col-span-6
+                                                    label(for="lastName") Last Name
+                                                    input(type="text" id="lastName" required)
+                                            div.grid.grid-cols-12.gap-5
+                                                div.col-span-6
+                                                    label(for="number") Phone No
+                                                    input(type="Number" id="number" maxlength="10" pattern="\d{10}" class="rounded"  required)
+                                                div.col-span-6
+                                                    label(for="email") Email
+                                                    input(type="email" id="email" required)
+                                            div 
+                                                label(for="address") Address 
+                                                textarea(placeholder="Enter the address.." row="3" id="address" class="p-[11px]").w-full.border.border-border-light.rounded-5.text-xs.text-content
+                                            div.grid.grid-cols-12.gap-5
+                                                div.col-span-4
+                                                    label(for="country") Country
+                                                    select.form-select.block.w-full.px-3.text-xs.font-normal.text-content3.bg-white.bg-clip-padding.bg-no-repeat.border.border-border-light.rounded-5.transition.ease-in-out.m-0(class='min-w-[150px] py-[9px]' id="sortby" aria-label='Default select example')
+                                                        option(selected='') Select Country
+                                                        option(value='1') India
+                                                        option(value='2') South Korea
+                                                        option(value='3') Canada
+                                                        option(value='3') USA
+                                                        option(value='3') UAE
+                                                        option(value='3') UK
+                                                div.col-span-4
+                                                    label(for="state") State
+                                                    input(type="text" id="state" required)
+                                                div.col-span-4
+                                                    label(for="postcode") Postcode
+                                                    input(type="text" id="postcode" required)
+                                            div.flex.items-center.gap-2
+                                                label.checkbox.checkbox-sm.cursor-pointer(class="!mb-0")  
+                                                    input(type='checkbox' class="peer") 
+                                                    div.checkbox-indicator(class="peer-checked:!bg-primary !border-primary")  
+                                                        i(data-feather="check")
+                                                p(class="!my-0") Remember me for next time
+                                            div 
+                                                label(for="otherNotes") Other Notes 
+                                                textarea(placeholder="Enter the address.." row="3" id="otherNotes" class="p-[11px]").w-full.border.border-border-light.rounded-5.text-xs.text-content
+                                            div.flex.justify-between.items-center
+                                                button.btn.bg-secondary.text-xs.text-white.flex.items-center.gap-2(class="!w-fit" type='button') 
+                                                    i(data-feather="arrow-left" class="w-4 h-4 stroke-white")
+                                                    |  Return to Shopping Cart
+                                                button.btn.btn-primary.text-xs.text-white.flex.items-center.gap-2(class="!w-fit" type='button') 
+                                                    |  Proceed to Next
+                                                    i(data-feather="truck" class="w-4 h-4 stroke-white")
+
+                                            
+
+
+                                div(data-tabContent="2" class="tab-pan fade group relative first:rounded-tl-none rounded-5 border-none !px-1 !pb-0")
+                                    p.text-xs.text-gray-500 We use tabs to manage space and to make the website more attractive. Tabs are used to navigate and display different content around the website. We use tabs to manage space and to make the website more attractive.
+                                div(data-tabContent="3" class="tab-pan fade group relative first:rounded-tl-none rounded-5 border-none !px-1 !pb-0")
+                                    p.text-xs.text-gray-500 Tabs are used to navigate and display different content around the website. abs are used to navigate and display different content around the website. 
+                    
+                        div.col-span-4(class="lg:col-span-12 w-full")
+                            div.flex.flex-col.gap-2 
+                                div.flex.flex-col.gap-1  
+                                    label(for="coupon-code").font-bold.text-xs.text-primary Apply Coupon Code
+                                    div.flex.items-center.justify-center 
+                                        input(type="text" placeholder="Enter code" class="p-[11px]" id="coupon-code").w-full.rounded-br-none.rounded-tr-none.border.border-border-light.rounded-5.text-xs.text-content
+                                        span.flex.items-center.justify-center.bg-primary.text-white.rounded-5.border-none.rounded-bl-none.rounded-tl-none.font-medium.text-xs(class="py-[12px] px-[11px]") Apply
+                                div.divider.w-full.my-3 
+                                ul.flex.flex-col.gap-2 
+                                    li.flex.items-center.justify-between.text-content.font-bold
+                                        h6 Subtotal  
+                                        h6 $511 
+                                    li.flex.items-center.justify-between.text-secondary.font-bold
+                                        h6 Coupon Discount
+                                        h6 (-)0.00 
+                                    li.flex.items-center.justify-between.text-content.font-bold
+                                        h6 Shipping
+                                        h6 $6.90 
+                                div.divider.w-full.my-3 
+                                ul.flex.flex-col.gap-2 
+                                    li.flex.items-center.justify-between.text-primary.font-extrabold 
+                                        h6 Total(USD) 
+                                        h6 $345  
+                                div.flex.flex-col.gap-3 
+                                    a(href="checkout.html")
+                                        button.btn.btn-secondary.w-full.text-white Process To Checkout
+                                    a(href="shop.html")
+                                        button.btn.btn-primary.text-white.w-full.flex.justify-center.items-center.gap-2  
+                                            i(data-feather="arrow-left" class="w-5 h-5 stroke-white")
+                                            | Back to Shopping
+                           
+
+
+                    // Page Body End  
+                    +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
+            include ../../components/customizer             
+    include ../../layout/footer-files
+
+
+
+    
+
+                  

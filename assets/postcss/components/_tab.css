@@ -8,15 +8,15 @@
 
     &-active {
       @apply text-primary font-extrabold;
-      svg{
+      svg {
         @apply stroke-primary;
       }
     }
-    &.rounded-bg{
+    &.rounded-bg {
       @apply rounded-3xl py-[0.3rem] px-[0.5rem];
-      
-      &.tab-active{
-        @apply bg-info text-white; 
+
+      &.tab-active {
+        @apply bg-info text-white;
       }
     }
   }
@@ -31,24 +31,24 @@
 
         &.tab-active {
           @apply border-b-2 border-primary text-primary;
-          &.warning-border{
+          &.warning-border {
             @apply border-warning text-warning;
           }
         }
 
-        &.tabs-bordered-bg{ 
+        &.tabs-bordered-bg {
           @apply hover:bg-primary-light hover:border-b-2 hover:border-primary hover:text-primary;
-          
-          &.secondary-bg{
-              @apply hover:bg-secondary-extralight hover:border-secondary hover:text-secondary;
-              &.tab-active{
-                @apply bg-secondary-extralight text-secondary border-secondary;
-                svg{
-                  @apply stroke-secondary; 
-                }
+
+          &.secondary-bg {
+            @apply hover:bg-secondary-extralight hover:border-secondary hover:text-secondary;
+            &.tab-active {
+              @apply bg-secondary-extralight text-secondary border-secondary;
+              svg {
+                @apply stroke-secondary;
               }
             }
-          &.tab-active{
+          }
+          &.tab-active {
             @apply bg-primary-light;
           }
         }
@@ -56,15 +56,15 @@
 
       &.tabs-boxed {
         @apply bg-transparent p-2;
-        
+
         &.tab-active {
           @apply text-white bg-primary rounded;
-          &.secondary-boxed{
-          @apply bg-secondary;
-        }
-        &.success-boxed{
-          @apply bg-success;
-        }
+          &.secondary-boxed {
+            @apply bg-secondary;
+          }
+          &.success-boxed {
+            @apply bg-success;
+          }
         }
       }
 
@@ -73,6 +73,16 @@
 
         &.tab-active {
           @apply border-r-2 border-primary text-primary sm:border-r-0 sm:border-b-2;
+        }
+      }
+
+      &.product-tab {
+        @apply bg-primary-light border-none text-title items-center flex gap-2 flex-row p-4;
+        svg {
+          @apply p-[0.35rem] bg-primary rounded-full text-white w-[1.125rem] h-[1.125rem];
+        }
+        &.tab-active {
+          @apply bg-primary-extralight text-primary;
         }
       }
     }

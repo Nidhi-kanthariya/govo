@@ -31,4 +31,33 @@
       @apply opacity-100 visible absolute top-0 left-0 z-[4] transition-all duration-1000 translate-x-0 ease-in-out;
     }
   }
+
+  .product-wrapper-grid {
+    &.list-view {
+      .product-box {
+        .card {
+          @apply hover:scale-100;
+          .card-body {
+            @apply flex gap-3;
+            .relative {
+              img {
+                @apply w-[18.75rem];
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .checkout-detail {
+    form {
+      label {
+        @apply mb-2 text-content3 font-semibold text-xs inline-block;
+      }
+      input,
+      textarea {
+        @apply bg-transparent text-xs p-[11px] text-content border border-border-light;
+      }
+    }
+  }
 }

@@ -53,7 +53,7 @@ html(lang='en')
                                         +SVG_ICON("Search","xl:hidden w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 right-[25px] absolute")
                                         i(data-feather="x" class="search-close hidden cursor-pointer xl:block w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 right-[25px] absolute")
                         
-                        div.col-span-12.flex.items-center.justify-between.gap-3.bg-white.p-3.rounded-5 
+                        div.col-span-12.flex.items-center.justify-between.gap-3.bg-white.p-3.rounded-5(class="2sm:flex-col") 
                             div.flex.items-center.gap-3
                                 label(for="sortby" class="min-w-max text-xs text-content3") Sort By                                    
                                 select.form-select.block.w-full.px-3.text-xs.font-normal.text-content3.bg-white.bg-clip-padding.bg-no-repeat.border.border-border-light.rounded-5.transition.ease-in-out.m-0(class='min-w-[150px] py-[9px]' id="sortby" aria-label='Default select example')
@@ -65,9 +65,11 @@ html(lang='en')
                                 div.product-filter 
                                     +SVG_ICON("Filter", "w-6 h-6 stroke-content3 xl:block hidden shop-toggle")
                                 div.product-setting 
-                                    i(data-feather="grid" class="w-6 h-6 stroke-content3")
+                                    a(href="javscript:void(0)" class="grid-layout-view")
+                                        i(data-feather="grid" class="w-6 h-6 stroke-content3")
                                 div.product-setting 
-                                    i(data-feather="list" class="w-6 h-6 stroke-content3")
+                                    a(href="javscript:void(0)" class="list-layout-view")
+                                        i(data-feather="list" class="w-6 h-6 stroke-content3")
                         div.col-span-3(class="shop-sidebar")
                             div.card.sticky.top-0(class="product-filter")
                                 div.card-header 
@@ -250,10 +252,10 @@ html(lang='en')
                                         div(class="block w-full p-3 mb-2 border-2 bg-white-light border-primary-light")
                                             +new-product-card(NEW_PRODUCT)
 
-                        div.col-span-9(class="xl:col-span-12")
+                        div.col-span-9(class="xl:col-span-12 product-wrapper-grid")
                             .grid.grid-cols-12.gap-6(class="sm:mt-5") 
                                 each data in PRODUCT_BOX
-                                    div.col-span-3(class='4xl:col-span-4 md:col-span-6 sm:col-span-12')
+                                    div.col-span-3(class='4xl:col-span-4 md:col-span-6 sm:col-span-12 product-box')
                                         +product(data,"modal", "productmodal")
 
                     // Page Body End  

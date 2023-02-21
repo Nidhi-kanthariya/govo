@@ -35,7 +35,7 @@
                     <use href="../../assets/svg/_sprite.svg#Category"> </use>
                   </svg>
                 </button>
-                <h1 class="flex items-center gap-1 text-lg font-extrabold leading-none sm:hidden 4xl:text-base">Shop</h1>
+                <h1 class="flex items-center gap-1 text-lg font-extrabold leading-none sm:hidden 4xl:text-base">Checkout</h1>
               </div>
               <div class="right-header flex items-center flex-1 sm:gap-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] gap-[calc(20px_+_(30_-_20)_*_((100vw_-_320px)_/_(1920_-_320)))] xl:gap-[calc(20px_+_(45_-_20)_*_((100vw_-_320px)_/_(1920_-_320)))]  justify-end">
                 <div class="search-box-wrapper transition-all duration-300 max-w-[40%] xl:scale-0 xl:opacity-0 xl:invisible xl:px-body-space xl:max-w-full w-full xl:z-[5] flex-1 xl:absolute xl:left-0">
@@ -841,7 +841,7 @@
                         <li class="px-2"> <span>/</span></li>
                         <li class="breadcrumb-items capitalize">Ecommerce</li>
                         <li class="px-2"> <span>/</span></li>
-                        <li class="breadcrumb-items capitalize active">Shop</li>
+                        <li class="breadcrumb-items capitalize active">Checkout</li>
                       </ol>
                     </nav>
                   </div>
@@ -1119,895 +1119,126 @@
         <!-- Sidebar End -->
         <!-- Page Body Start-->
         <div class="page-body"> 
-          <div class="grid grid-cols-12 gap-card-gap">
-            <div class="col-span-12"> 
-              <div class="rounded-5 overflow-hidden relative"><img class="w-full drop-shadow-lg min-h-[120px] max-h-[300px]" src="../../assets/images/ecommerce/light-berner.jpg" alt="light-banner.jpg">
-                <div class="absolute text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[40%] lg:max-w-[75%] xl:max-w-[50%]">
-                  <div class="search-box relative">
-                    <input class="focus:ring-2 focus:ring-warning bg-wi border-border-light border ring-offset-2 rounded-5 w-full py-[11px] pl-[25px] pr-[55px] md:py-[5px] text-xs font-semibold text-title" placeholder="Search Brands..." type="search">
-                    <svg class="xl:hidden w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 right-[25px] absolute"> 
-                      <use href="../../assets/svg/_sprite.svg#Search"> </use>
-                    </svg><i class="search-close hidden cursor-pointer xl:block w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 right-[25px] absolute" data-feather="x"></i>
+          <div class="grid grid-cols-12 gap-card-gap card checkout-detail"> 
+            <div class="col-span-8 lg:col-span-12 w-full tabs flex flex-col">
+              <div class="mb-1 tab-links flex items-center 3sm:justify-center">
+                <button class="tab product-tab w-full items-center tab-active tab-link" data-tabFilter="1"> <i class="fa-regular fa-user w-[1.125rem] h-[1.125rem] text-title"></i>Billing Info  </button>
+                <button class="tab product-tab w-full items-center tab-link" data-tabFilter="2"><i class="fa-solid fa-truck-fast w-[1.125rem] h-[1.125rem] text-title"></i>Shipping Info</button>
+                <button class="tab product-tab w-full items-center tab-link" data-tabFilter="3"><i class="fa-solid fa-money-bill w-[1.125rem] h-[1.125rem] text-title"></i>Payment Info  </button>
+                <button class="tab product-tab w-full items-center tab-link" data-tabFilter="3"><i class="fa-regular fa-circle-check w-[1.125rem] h-[1.125rem] text-title"></i>Finish  </button>
+              </div>
+              <div class="tabs-content">
+                <div class="tab-pan fade active show first:rounded-tl-none rounded-5 border-none !px-1 !pb-0" data-tabContent="1">
+                  <div>
+                    <h6 class="text-title font-semibold mb-2">Billing Information </h6>
+                    <p class="text-content3 mb-5"> Fill up the following information </p>
+                    <form class="theme-form flex flex-col gap-4 m-0" action="index.html">
+                      <div class="grid grid-cols-12 gap-5">
+                        <div class="col-span-6">
+                          <label for="firstName">First Name</label>
+                          <input type="text" id="firstName" required>
+                        </div>
+                        <div class="col-span-6">
+                          <label for="lastName">Last Name</label>
+                          <input type="text" id="lastName" required>
+                        </div>
+                      </div>
+                      <div class="grid grid-cols-12 gap-5">
+                        <div class="col-span-6">
+                          <label for="number">Phone No</label>
+                          <input class="rounded" type="Number" id="number" maxlength="10" pattern="d{10}" required>
+                        </div>
+                        <div class="col-span-6">
+                          <label for="email">Email</label>
+                          <input type="email" id="email" required>
+                        </div>
+                      </div>
+                      <div> 
+                        <label for="address">Address </label>
+                        <textarea class="p-[11px] w-full border border-border-light rounded-5 text-xs text-content" placeholder="Enter the address.." row="3" id="address"></textarea>
+                      </div>
+                      <div class="grid grid-cols-12 gap-5">
+                        <div class="col-span-4">
+                          <label for="country">Country</label>
+                          <select class="form-select block w-full px-3 text-xs font-normal text-content3 bg-white bg-clip-padding bg-no-repeat border border-border-light rounded-5 transition ease-in-out m-0 min-w-[150px] py-[9px]" id="sortby" aria-label="Default select example">
+                            <option selected="">Select Country</option>
+                            <option value="1">India</option>
+                            <option value="2">South Korea</option>
+                            <option value="3">Canada</option>
+                            <option value="3">USA</option>
+                            <option value="3">UAE</option>
+                            <option value="3">UK</option>
+                          </select>
+                        </div>
+                        <div class="col-span-4">
+                          <label for="state">State</label>
+                          <input type="text" id="state" required>
+                        </div>
+                        <div class="col-span-4">
+                          <label for="postcode">Postcode</label>
+                          <input type="text" id="postcode" required>
+                        </div>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <label class="checkbox checkbox-sm cursor-pointer !mb-0"> 
+                          <input class="peer" type="checkbox">
+                          <div class="checkbox-indicator peer-checked:!bg-primary !border-primary"> <i data-feather="check"></i></div>
+                        </label>
+                        <p class="!my-0">Remember me for next time</p>
+                      </div>
+                      <div> 
+                        <label for="otherNotes">Other Notes </label>
+                        <textarea class="p-[11px] w-full border border-border-light rounded-5 text-xs text-content" placeholder="Enter the address.." row="3" id="otherNotes"></textarea>
+                      </div>
+                      <div class="flex justify-between items-center">
+                        <button class="btn bg-secondary text-xs text-white flex items-center gap-2 !w-fit" type="button"> <i class="w-4 h-4 stroke-white" data-feather="arrow-left"></i> Return to Shopping Cart</button>
+                        <button class="btn btn-primary text-xs text-white flex items-center gap-2 !w-fit" type="button">
+                            Proceed to Next<i class="w-4 h-4 stroke-white" data-feather="truck"></i></button>
+                      </div>
+                    </form>
                   </div>
+                </div>
+                <div class="tab-pan fade group relative first:rounded-tl-none rounded-5 border-none !px-1 !pb-0" data-tabContent="2">
+                  <p class="text-xs text-gray-500">We use tabs to manage space and to make the website more attractive. Tabs are used to navigate and display different content around the website. We use tabs to manage space and to make the website more attractive.</p>
+                </div>
+                <div class="tab-pan fade group relative first:rounded-tl-none rounded-5 border-none !px-1 !pb-0" data-tabContent="3">
+                  <p class="text-xs text-gray-500">Tabs are used to navigate and display different content around the website. abs are used to navigate and display different content around the website. </p>
                 </div>
               </div>
             </div>
-            <div class="col-span-12 flex items-center justify-between gap-3 bg-white p-3 rounded-5 2sm:flex-col"> 
-              <div class="flex items-center gap-3">
-                <label class="min-w-max text-xs text-content3" for="sortby">Sort By                                    </label>
-                <select class="form-select block w-full px-3 text-xs font-normal text-content3 bg-white bg-clip-padding bg-no-repeat border border-border-light rounded-5 transition ease-in-out m-0 min-w-[150px] py-[9px]" id="sortby" aria-label="Default select example">
-                  <option selected="">All</option>
-                  <option value="1">Popular</option>
-                  <option value="2">Price Low</option>
-                  <option value="3">Price Hight</option>
-                </select>
-              </div>
-              <div class="flex items-center gap-3">
-                <div class="product-filter"> 
-                  <svg class="w-6 h-6 stroke-content3 xl:block hidden shop-toggle"> 
-                    <use href="../../assets/svg/_sprite.svg#Filter"> </use>
-                  </svg>
-                </div>
-                <div class="product-setting"> <a class="grid-layout-view" href="javscript:void(0)"><i class="w-6 h-6 stroke-content3" data-feather="grid"></i></a></div>
-                <div class="product-setting"> <a class="list-layout-view" href="javscript:void(0)"><i class="w-6 h-6 stroke-content3" data-feather="list"></i></a></div>
-              </div>
-            </div>
-            <div class="col-span-3 shop-sidebar">
-              <div class="card sticky top-0 product-filter">
-                <div class="card-header"> 
-                  <div class="flex items-center justify-between w-full"> 
-                    <h2 class="font-bold text-title">Filters</h2>
-                    <button class="p-1 rounded-full sm:p-1 shop-close-sidebar hidden xl:block"><i class="w-4 h-4" data-feather="x"></i></button>
+            <div class="col-span-4 lg:col-span-12 w-full">
+              <div class="flex flex-col gap-2"> 
+                <div class="flex flex-col gap-1"> 
+                  <label class="font-bold text-xs text-primary" for="coupon-code">Apply Coupon Code</label>
+                  <div class="flex items-center justify-center"> 
+                    <input class="p-[11px] w-full rounded-br-none rounded-tr-none border border-border-light rounded-5 text-xs text-content" type="text" placeholder="Enter code" id="coupon-code"><span class="flex items-center justify-center bg-primary text-white rounded-5 border-none rounded-bl-none rounded-tl-none font-medium text-xs py-[12px] px-[11px]">Apply</span>
                   </div>
                 </div>
-                <div class="card-body flex flex-col gap-1">
-                  <div class="flex flex-col flex-wrap gap-2">
-                    <div class="accordionWrapper">
-                      <div class="accordionItem open">
-                        <h4 class="accordionItemHeading bg-primary">Brand</h4>
-                        <div class="accordionItemContent">
-                          <ul class="flex gap-2 flex-col">
-                            <li class="flex items-center gap-2" a href="javascript:void(0)">
-                              <div class="checkbox w-4 h-4"> 
-                                <input class="peer" type="checkbox" id="zara">
-                                <div class="checkbox-indicator peer-checked:!bg-primary !border peer-checked:!border-primary"> <i data-feather="check"></i></div>
-                              </div>
-                              <label class="text-content" for="zara">Zara (21)</label>
-                            </li>
-                            <li class="flex items-center gap-2" a href="javascript:void(0)">
-                              <div class="checkbox w-4 h-4"> 
-                                <input class="peer" type="checkbox" id="nike">
-                                <div class="checkbox-indicator peer-checked:!bg-primary !border peer-checked:!border-primary"> <i data-feather="check"></i></div>
-                              </div>
-                              <label class="text-content" for="nike">Nike (31)</label>
-                            </li>
-                            <li class="flex items-center gap-2" a href="javascript:void(0)">  
-                              <div class="checkbox w-4 h-4"> 
-                                <input class="peer" type="checkbox" id="louis-vuitton" checked>
-                                <div class="checkbox-indicator peer-checked:!bg-primary !border peer-checked:!border-primary"> <i data-feather="check"></i></div>
-                              </div>
-                              <label class="text-content" for="louis-vuitton">Louis Vuitton (15)</label>
-                            </li>
-                            <li class="flex items-center gap-2" a href="javascript:void(0)">
-                              <div class="checkbox w-4 h-4">
-                                <input class="peer" type="checkbox" id="puma">
-                                <div class="checkbox-indicator peer-checked:!bg-primary !border peer-checked:!border-primary"> <i data-feather="check"></i></div>
-                              </div>
-                              <label class="text-content" for="puma">Puma (21)</label>
-                            </li>
-                            <li class="flex items-center gap-2" a href="javascript:void(0)">
-                              <div class="checkbox w-4 h-4">
-                                <input class="peer" type="checkbox" id="dior" checked>
-                                <div class="checkbox-indicator peer-checked:!bg-primary !border peer-checked:!border-primary"> <i data-feather="check"></i></div>
-                              </div>
-                              <label class="text-content" for="dior">Dior (25)</label>
-                            </li>
-                            <li class="flex items-center gap-2" a href="javascript:void(0)">
-                              <div class="checkbox w-4 h-4">
-                                <input class="peer" type="checkbox" id="H&amp;m">
-                                <div class="checkbox-indicator peer-checked:!bg-primary !border peer-checked:!border-primary"> <i data-feather="check"></i></div>
-                              </div>
-                              <label class="text-content" for="H&amp;m">H & M (5)</label>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex flex-col flex-wrap gap-2">
-                    <div class="accordionWrapper">
-                      <div class="accordionItem open">
-                        <h4 class="accordionItemHeading bg-primary">Categories</h4>
-                        <div class="accordionItemContent">
-                          <ul class="flex gap-2 flex-col">
-                            <li class="flex items-center justify-between cursor-pointer" a href="javascript:void(0)"><span class="text-xs text-content">Fashion</span><small class="text-2x text-content">39   </small></li>
-                            <li class="flex items-center justify-between cursor-pointer" a href="javascript:void(0)"> <span class="text-xs text-content">Trends</span><small class="text-2x text-content">25</small></li>
-                            <li class="flex items-center justify-between cursor-pointer" a href="javascript:void(0)"> <span class="text-xs text-content"> Designer</span><small class="text-2x text-content">15</small></li>
-                            <li class="flex items-center justify-between cursor-pointer" a href="javascript:void(0)"> <span class="text-xs text-content"> Swimwear</span><small class="text-2x text-content">51</small></li>
-                            <li class="flex items-center justify-between cursor-pointer" a href="javascript:void(0)"> <span class="text-xs text-content">Home & kitchen  </span><small class="text-2x text-content">84</small></li>
-                            <li class="flex items-center justify-between cursor-pointer" a href="javascript:void(0)"><span class="text-xs text-content">Toys & hobbies</span><small class="text-2x text-content">54</small></li>
-                            <li class="flex items-center justify-between cursor-pointer" a href="javascript:void(0)"><span class="text-xs text-content">Tools & hardware</span><small class="text-2x text-content">54</small></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex flex-col flex-wrap gap-2">
-                    <div class="accordionWrapper">
-                      <div class="accordionItem open">
-                        <h4 class="accordionItemHeading bg-primary">Discount </h4>
-                        <div class="accordionItemContent">
-                          <ul class="flex gap-2 flex-col">
-                            <li class="flex items-center gap-2" a href="javascript:void(0)">
-                              <div class="checkbox w-4 h-4"> 
-                                <input class="peer" type="checkbox" id="50%off">
-                                <div class="checkbox-indicator peer-checked:!bg-primary !border peer-checked:!border-primary"> <i data-feather="check"></i></div>
-                              </div>
-                              <label class="text-content" for="50%off">50% or more</label>
-                            </li>
-                            <li class="flex items-center gap-2" a href="javascript:void(0)">
-                              <div class="checkbox w-4 h-4"> 
-                                <input class="peer" type="checkbox" id="40%off" checked>
-                                <div class="checkbox-indicator peer-checked:!bg-primary !border peer-checked:!border-primary"> <i data-feather="check"></i></div>
-                              </div>
-                              <label class="text-content" for="40%off">40% or more</label>
-                            </li>
-                            <li class="flex items-center gap-2" a href="javascript:void(0)">  
-                              <div class="checkbox w-4 h-4"> 
-                                <input class="peer" type="checkbox" id="30%off">
-                                <div class="checkbox-indicator peer-checked:!bg-primary !border peer-checked:!border-primary"> <i data-feather="check"></i></div>
-                              </div>
-                              <label class="text-content" for="30%off">30% or more</label>
-                            </li>
-                            <li class="flex items-center gap-2" a href="javascript:void(0)">
-                              <div class="checkbox w-4 h-4">
-                                <input class="peer" type="checkbox" id="20%off">
-                                <div class="checkbox-indicator peer-checked:!bg-primary !border peer-checked:!border-primary"> <i data-feather="check"></i></div>
-                              </div>
-                              <label class="text-content" for="20%off">20% or more</label>
-                            </li>
-                            <li class="flex items-center gap-2" a href="javascript:void(0)">
-                              <div class="checkbox w-4 h-4">
-                                <input class="peer" type="checkbox" id="10%off">
-                                <div class="checkbox-indicator peer-checked:!bg-primary !border peer-checked:!border-primary"> <i data-feather="check"></i></div>
-                              </div>
-                              <label class="text-content" for="10%off">10% or more</label>
-                            </li>
-                            <li class="flex items-center gap-2" a href="javascript:void(0)">
-                              <div class="checkbox w-4 h-4">
-                                <input class="peer" type="checkbox" id="less10%">
-                                <div class="checkbox-indicator peer-checked:!bg-primary !border peer-checked:!border-primary"> <i data-feather="check"></i></div>
-                              </div>
-                              <label class="text-content" for="less10%">Less than 10%</label>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex flex-col flex-wrap gap-2">
-                    <div class="accordionWrapper">
-                      <div class="accordionItem open">
-                        <h4 class="accordionItemHeading bg-primary">Rating </h4>
-                        <div class="accordionItemContent">
-                          <ul class="flex gap-2 flex-col">
-                            <li class="flex items-center gap-2" a href="javascript:void(0)">
-                              <div class="checkbox w-4 h-4"> 
-                                <input class="peer" type="checkbox" id="4above" checked>
-                                <div class="checkbox-indicator peer-checked:!bg-primary !border peer-checked:!border-primary"> <i data-feather="check"></i></div>
-                              </div>
-                              <div class="flex items-center gap-1"><i class="w-5 h-5 fill-warning" data-feather="star"></i><i class="w-5 h-5 fill-warning" data-feather="star"></i><i class="w-5 h-5 fill-warning" data-feather="star"></i><i class="w-5 h-5 fill-warning" data-feather="star"></i><i class="w-5 h-5 fill-content" data-feather="star"></i></div>
-                              <label class="text-content" for="4above">4 & Above</label>
-                            </li>
-                            <li class="flex items-center gap-2" a href="javascript:void(0)">  
-                              <div class="checkbox w-4 h-4"> 
-                                <input class="peer" type="checkbox" id="3above">
-                                <div class="checkbox-indicator peer-checked:!bg-primary !border peer-checked:!border-primary"> <i data-feather="check"></i></div>
-                              </div>
-                              <div class="flex items-center gap-1"><i class="w-5 h-5 fill-warning" data-feather="star"></i><i class="w-5 h-5 fill-warning" data-feather="star"></i><i class="w-5 h-5 fill-warning" data-feather="star"></i><i class="w-5 h-5 fill-content" data-feather="star"></i><i class="w-5 h-5 fill-content" data-feather="star"></i></div>
-                              <label class="text-content" for="3above">3 & Above</label>
-                            </li>
-                            <li class="flex items-center gap-2" a href="javascript:void(0)">
-                              <div class="checkbox w-4 h-4">
-                                <input class="peer" type="checkbox" id="2above">
-                                <div class="checkbox-indicator peer-checked:!bg-primary !border peer-checked:!border-primary"> <i data-feather="check"></i></div>
-                              </div>
-                              <div class="flex items-center gap-1"><i class="w-5 h-5 fill-warning" data-feather="star"></i><i class="w-5 h-5 fill-warning" data-feather="star"></i><i class="w-5 h-5 fill-content" data-feather="star"></i><i class="w-5 h-5 fill-content" data-feather="star"></i><i class="w-5 h-5 fill-content" data-feather="star"></i></div>
-                              <label class="text-content" for="2above">2 & Above</label>
-                            </li>
-                            <li class="flex items-center gap-2" a href="javascript:void(0)">
-                              <div class="checkbox w-4 h-4">
-                                <input class="peer" type="checkbox" id="1star">
-                                <div class="checkbox-indicator peer-checked:!bg-primary !border peer-checked:!border-primary"> <i data-feather="check"></i></div>
-                              </div>
-                              <div class="flex items-center gap-1"><i class="w-5 h-5 fill-warning" data-feather="star"></i><i class="w-5 h-5 fill-content" data-feather="star"></i><i class="w-5 h-5 fill-content" data-feather="star"></i><i class="w-5 h-5 fill-content" data-feather="star"></i><i class="w-5 h-5 fill-content" data-feather="star"></i></div>
-                              <label class="text-content" for="1star">1</label>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex flex-col">
-                    <h4 class="bg-primary text-white text-sm p-3 w-full cursor-pointer rounded font-bold rounded-tr-[0.25rem] rounded-tl-[0.25rem] rounded-br-none rounded-bl-none">New Product</h4>
-                    <div class="block w-full p-3 mb-2 border-2 bg-white-light border-primary-light">
-                      <ul> 
-                        <li class="group flex items-center group gap-[calc(7px_+_(15_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] first:pt-0 last:pb-0 first:border-none py-[13px] border-t border-light"> 
-                          <div class="rounded-5 overflow-hidden min-w-14 min-h-auto 6xl:w-12"><img class="object-cover w-10 h-10 rounded-full" src="../../assets/images/product/5.jpg" alt="event"/></div>
-                          <div class=" max-w-[185px] 4xl:max-w-[250px] 2xl:max-w-[180px] lg:max-w-full 3sm:max-w-[180px]"> 
-                            <h4 class="text-xs font-bold truncate transition-all group-hover:text-primary">Bags For Women</h4><span class="text-3xs font-normal text-content3 block truncate mt-[4px] w-calc(55px_+_(140_-_55)_*_((100vw_-_320px)_/_(1920_-_320)))">$360.00 (150 item)</span>
-                          </div>
-                          <div class="flex flex-col gap-1 items-center ml-auto"> <span class="text-xs font-bold text-title whitespace-nowrap">$340.00</span><span class="text-3xs font-normal text-content3 whitespace-nowrap">25 Sales</span></div>
-                        </li>
-                        <li class="group flex items-center group gap-[calc(7px_+_(15_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] first:pt-0 last:pb-0 first:border-none py-[13px] border-t border-light"> 
-                          <div class="rounded-5 overflow-hidden min-w-14 min-h-auto 6xl:w-12"><img class="object-cover w-10 h-10 rounded-full" src="../../assets/images/product/3.jpg" alt="event"/></div>
-                          <div class=" max-w-[185px] 4xl:max-w-[250px] 2xl:max-w-[180px] lg:max-w-full 3sm:max-w-[180px]"> 
-                            <h4 class="text-xs font-bold truncate transition-all group-hover:text-primary">Long Dress</h4><span class="text-3xs font-normal text-content3 block truncate mt-[4px] w-calc(55px_+_(140_-_55)_*_((100vw_-_320px)_/_(1920_-_320)))">$840.00 (185 item)</span>
-                          </div>
-                          <div class="flex flex-col gap-1 items-center ml-auto"> <span class="text-xs font-bold text-title whitespace-nowrap">$750.00</span><span class="text-3xs font-normal text-content3 whitespace-nowrap">180 Sales</span></div>
-                        </li>
-                        <li class="group flex items-center group gap-[calc(7px_+_(15_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] first:pt-0 last:pb-0 first:border-none py-[13px] border-t border-light"> 
-                          <div class="rounded-5 overflow-hidden min-w-14 min-h-auto 6xl:w-12"><img class="object-cover w-10 h-10 rounded-full" src="../../assets/images/product/2.jpg" alt="event"/></div>
-                          <div class=" max-w-[185px] 4xl:max-w-[250px] 2xl:max-w-[180px] lg:max-w-full 3sm:max-w-[180px]"> 
-                            <h4 class="text-xs font-bold truncate transition-all group-hover:text-primary">Spring Bed</h4><span class="text-3xs font-normal text-content3 block truncate mt-[4px] w-calc(55px_+_(140_-_55)_*_((100vw_-_320px)_/_(1920_-_320)))">$140.00 (302 item)</span>
-                          </div>
-                          <div class="flex flex-col gap-1 items-center ml-auto"> <span class="text-xs font-bold text-title whitespace-nowrap">$2370.00</span><span class="text-3xs font-normal text-content3 whitespace-nowrap">284 Sales</span></div>
-                        </li>
-                        <li class="group flex items-center group gap-[calc(7px_+_(15_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] first:pt-0 last:pb-0 first:border-none py-[13px] border-t border-light"> 
-                          <div class="rounded-5 overflow-hidden min-w-14 min-h-auto 6xl:w-12"><img class="object-cover w-10 h-10 rounded-full" src="../../assets/images/product/1.jpg" alt="event"/></div>
-                          <div class=" max-w-[185px] 4xl:max-w-[250px] 2xl:max-w-[180px] lg:max-w-full 3sm:max-w-[180px]"> 
-                            <h4 class="text-xs font-bold truncate transition-all group-hover:text-primary">Samsung TV</h4><span class="text-3xs font-normal text-content3 block truncate mt-[4px] w-calc(55px_+_(140_-_55)_*_((100vw_-_320px)_/_(1920_-_320)))">$140.00 (405 item)</span>
-                          </div>
-                          <div class="flex flex-col gap-1 items-center ml-auto"> <span class="text-xs font-bold text-title whitespace-nowrap">$2370.00</span><span class="text-3xs font-normal text-content3 whitespace-nowrap">315 Sales</span></div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-span-9 xl:col-span-12 product-wrapper-grid">
-              <div class="grid grid-cols-12 gap-6 sm:mt-5"> 
-                <div class="col-span-3 4xl:col-span-4 md:col-span-6 sm:col-span-12 product-box">
-                  <div class="card p-3 scale-0 hover:transition-all hover:ease-in-out group hover:scale-105 transform-none"> 
-                    <div class="card-body">
-                      <div class="relative"><span class="badge bg-secondary badge-xs absolute font-bold top-3 right-3.5 rounded-[3px] text-2xs">Sale</span>
-                        <div class="absolute top-[-1px] left-[-10px] flex flex-col invisible gap-1 p-3 transition-all duration-300 ease-linear opacity-0 cursor-pointer group-hover:visible group-hover:opacity-100 group-hover:left-[-1px]"><a class="btn heart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="lgrad" x1="0%" y1="50%" x2="100%" y2="50%">
-                                <stop offset="0%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                            </svg><i class="fa-solid fa-heart flex items-center justify-center p-2 bg-white rounded-full"></i></a><a class="btn shopping-cart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="grid" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                              <ellipse cx="50%" cy="50%" rx="600" ry="200"></ellipse>
-                            </svg><i class="fa-solid fa-cart-shopping flex items-center justify-center p-2 bg-white rounded-full"></i></a>
-                          <label class="button-label p-0 modal-eye" for="productmodal">
-                            <svg width="0" height="0"> 
-                              <radialGradient id="rgrad" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                              </radialGradient>
-                            </svg><i class="fa-solid fa-eye flex items-center justify-center p-2 bg-white rounded-full"></i>
-                          </label>
-                        </div><a href="product.html"><img class="rounded-[4px] w-full" src="../../assets/images/ecommerce/1.jpg" alt="product image"/></a>
-                      </div>
-                      <div class="pt-2"> <a class="flex flex-col gap-[0.3rem]" href="product.html">    
-                          <h4 class="font-bold text-sm text-title line-clamp-1">Wooden Sofa Set</h4>
-                          <div class="flex items-center pt-0.5 gap-1"><span class="text-lg font-bold text-primary">$339</span>
-                            <del class="text-content3 text-sm">$399</del><small class="text-danger font-sm">(15% Off)</small>
-                          </div>
-                          <div class="flex items-center gap-1">
-                            <div class="flex items-center gap-1 bg-warning py-1 px-2 rounded-5 max-w-max"><i class="w-[0.8rem] h-[0.8rem] stroke-white fill-white" data-feather="star"></i><span class="font-semibold leading-none text-white text-2xs mt-[3px]">3.5</span></div><span class="text-content3 text-xs">43 Ratings</span>
-                          </div>
-                          <p class="text-title text-2xs mt-2">Free delivery by Govo</p></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-span-3 4xl:col-span-4 md:col-span-6 sm:col-span-12 product-box">
-                  <div class="card p-3 scale-0 hover:transition-all hover:ease-in-out group hover:scale-105 transform-none"> 
-                    <div class="card-body">
-                      <div class="relative">
-                        <div class="absolute top-[-1px] left-[-10px] flex flex-col invisible gap-1 p-3 transition-all duration-300 ease-linear opacity-0 cursor-pointer group-hover:visible group-hover:opacity-100 group-hover:left-[-1px]"><a class="btn heart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="lgrad" x1="0%" y1="50%" x2="100%" y2="50%">
-                                <stop offset="0%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                            </svg><i class="fa-solid fa-heart flex items-center justify-center p-2 bg-white rounded-full"></i></a><a class="btn shopping-cart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="grid" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                              <ellipse cx="50%" cy="50%" rx="600" ry="200"></ellipse>
-                            </svg><i class="fa-solid fa-cart-shopping flex items-center justify-center p-2 bg-white rounded-full"></i></a>
-                          <label class="button-label p-0 modal-eye" for="productmodal">
-                            <svg width="0" height="0"> 
-                              <radialGradient id="rgrad" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                              </radialGradient>
-                            </svg><i class="fa-solid fa-eye flex items-center justify-center p-2 bg-white rounded-full"></i>
-                          </label>
-                        </div><a href="product.html"><img class="rounded-[4px] w-full" src="../../assets/images/ecommerce/2.jpg" alt="product image"/></a>
-                      </div>
-                      <div class="pt-2"> <a class="flex flex-col gap-[0.3rem]" href="product.html">    
-                          <h4 class="font-bold text-sm text-title line-clamp-1">Latest Headphone</h4>
-                          <div class="flex items-center pt-0.5 gap-1"><span class="text-lg font-bold text-primary">$520</span>
-                            <del class="text-content3 text-sm">$650</del><small class="text-danger font-sm">(20% Off)</small>
-                          </div>
-                          <div class="flex items-center gap-1">
-                            <div class="flex items-center gap-1 bg-warning py-1 px-2 rounded-5 max-w-max"><i class="w-[0.8rem] h-[0.8rem] stroke-white fill-white" data-feather="star"></i><span class="font-semibold leading-none text-white text-2xs mt-[3px]">3.9</span></div><span class="text-content3 text-xs">540 Ratings</span>
-                          </div>
-                          <p class="text-title text-2xs mt-2">Free delivery by Govo</p></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-span-3 4xl:col-span-4 md:col-span-6 sm:col-span-12 product-box">
-                  <div class="card p-3 scale-0 hover:transition-all hover:ease-in-out group hover:scale-105 transform-none"> 
-                    <div class="card-body">
-                      <div class="relative"><span class="badge bg-secondary badge-xs absolute font-bold top-3 right-3.5 rounded-[3px] text-2xs">50% off</span>
-                        <div class="absolute top-[-1px] left-[-10px] flex flex-col invisible gap-1 p-3 transition-all duration-300 ease-linear opacity-0 cursor-pointer group-hover:visible group-hover:opacity-100 group-hover:left-[-1px]"><a class="btn heart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="lgrad" x1="0%" y1="50%" x2="100%" y2="50%">
-                                <stop offset="0%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                            </svg><i class="fa-solid fa-heart flex items-center justify-center p-2 bg-white rounded-full"></i></a><a class="btn shopping-cart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="grid" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                              <ellipse cx="50%" cy="50%" rx="600" ry="200"></ellipse>
-                            </svg><i class="fa-solid fa-cart-shopping flex items-center justify-center p-2 bg-white rounded-full"></i></a>
-                          <label class="button-label p-0 modal-eye" for="productmodal">
-                            <svg width="0" height="0"> 
-                              <radialGradient id="rgrad" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                              </radialGradient>
-                            </svg><i class="fa-solid fa-eye flex items-center justify-center p-2 bg-white rounded-full"></i>
-                          </label>
-                        </div><a href="product.html"><img class="rounded-[4px] w-full" src="../../assets/images/ecommerce/3.jpg" alt="product image"/></a>
-                      </div>
-                      <div class="pt-2"> <a class="flex flex-col gap-[0.3rem]" href="product.html">    
-                          <h4 class="font-bold text-sm text-title line-clamp-1">Running Shoes</h4>
-                          <div class="flex items-center pt-0.5 gap-1"><span class="text-lg font-bold text-primary">$75</span>
-                            <del class="text-content3 text-sm">$150</del><small class="text-danger font-sm">(50% Off)</small>
-                          </div>
-                          <div class="flex items-center gap-1">
-                            <div class="flex items-center gap-1 bg-warning py-1 px-2 rounded-5 max-w-max"><i class="w-[0.8rem] h-[0.8rem] stroke-white fill-white" data-feather="star"></i><span class="font-semibold leading-none text-white text-2xs mt-[3px]">4.6</span></div><span class="text-content3 text-xs">70 Ratings</span>
-                          </div>
-                          <p class="text-title text-2xs mt-2">Free delivery by Govo</p></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-span-3 4xl:col-span-4 md:col-span-6 sm:col-span-12 product-box">
-                  <div class="card p-3 scale-0 hover:transition-all hover:ease-in-out group hover:scale-105 transform-none"> 
-                    <div class="card-body">
-                      <div class="relative">
-                        <div class="absolute top-[-1px] left-[-10px] flex flex-col invisible gap-1 p-3 transition-all duration-300 ease-linear opacity-0 cursor-pointer group-hover:visible group-hover:opacity-100 group-hover:left-[-1px]"><a class="btn heart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="lgrad" x1="0%" y1="50%" x2="100%" y2="50%">
-                                <stop offset="0%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                            </svg><i class="fa-solid fa-heart flex items-center justify-center p-2 bg-white rounded-full"></i></a><a class="btn shopping-cart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="grid" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                              <ellipse cx="50%" cy="50%" rx="600" ry="200"></ellipse>
-                            </svg><i class="fa-solid fa-cart-shopping flex items-center justify-center p-2 bg-white rounded-full"></i></a>
-                          <label class="button-label p-0 modal-eye" for="productmodal">
-                            <svg width="0" height="0"> 
-                              <radialGradient id="rgrad" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                              </radialGradient>
-                            </svg><i class="fa-solid fa-eye flex items-center justify-center p-2 bg-white rounded-full"></i>
-                          </label>
-                        </div><a href="product.html"><img class="rounded-[4px] w-full" src="../../assets/images/ecommerce/4.jpg" alt="product image"/></a>
-                      </div>
-                      <div class="pt-2"> <a class="flex flex-col gap-[0.3rem]" href="product.html">    
-                          <h4 class="font-bold text-sm text-title line-clamp-1">Gorgeous Flower Vase</h4>
-                          <div class="flex items-center pt-0.5 gap-1"><span class="text-lg font-bold text-primary">$63</span>
-                            <del class="text-content3 text-sm">$70</del><small class="text-danger font-sm">(10% Off)</small>
-                          </div>
-                          <div class="flex items-center gap-1">
-                            <div class="flex items-center gap-1 bg-warning py-1 px-2 rounded-5 max-w-max"><i class="w-[0.8rem] h-[0.8rem] stroke-white fill-white" data-feather="star"></i><span class="font-semibold leading-none text-white text-2xs mt-[3px]">4.8</span></div><span class="text-content3 text-xs">180 Ratings</span>
-                          </div>
-                          <p class="text-title text-2xs mt-2">Free delivery by Govo</p></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-span-3 4xl:col-span-4 md:col-span-6 sm:col-span-12 product-box">
-                  <div class="card p-3 scale-0 hover:transition-all hover:ease-in-out group hover:scale-105 transform-none"> 
-                    <div class="card-body">
-                      <div class="relative">
-                        <div class="absolute top-[-1px] left-[-10px] flex flex-col invisible gap-1 p-3 transition-all duration-300 ease-linear opacity-0 cursor-pointer group-hover:visible group-hover:opacity-100 group-hover:left-[-1px]"><a class="btn heart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="lgrad" x1="0%" y1="50%" x2="100%" y2="50%">
-                                <stop offset="0%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                            </svg><i class="fa-solid fa-heart flex items-center justify-center p-2 bg-white rounded-full"></i></a><a class="btn shopping-cart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="grid" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                              <ellipse cx="50%" cy="50%" rx="600" ry="200"></ellipse>
-                            </svg><i class="fa-solid fa-cart-shopping flex items-center justify-center p-2 bg-white rounded-full"></i></a>
-                          <label class="button-label p-0 modal-eye" for="productmodal">
-                            <svg width="0" height="0"> 
-                              <radialGradient id="rgrad" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                              </radialGradient>
-                            </svg><i class="fa-solid fa-eye flex items-center justify-center p-2 bg-white rounded-full"></i>
-                          </label>
-                        </div><a href="product.html"><img class="rounded-[4px] w-full" src="../../assets/images/ecommerce/5.jpg" alt="product image"/></a>
-                      </div>
-                      <div class="pt-2"> <a class="flex flex-col gap-[0.3rem]" href="product.html">    
-                          <h4 class="font-bold text-sm text-title line-clamp-1">Cleaning, sanitizing, and disinfecting supplies</h4>
-                          <div class="flex items-center pt-0.5 gap-1"><span class="text-lg font-bold text-primary">$82</span>
-                            <del class="text-content3 text-sm">$110</del><small class="text-danger font-sm">(25% Off)</small>
-                          </div>
-                          <div class="flex items-center gap-1">
-                            <div class="flex items-center gap-1 bg-warning py-1 px-2 rounded-5 max-w-max"><i class="w-[0.8rem] h-[0.8rem] stroke-white fill-white" data-feather="star"></i><span class="font-semibold leading-none text-white text-2xs mt-[3px]">3.9</span></div><span class="text-content3 text-xs">162 Ratings</span>
-                          </div>
-                          <p class="text-title text-2xs mt-2">Free delivery by Govo</p></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-span-3 4xl:col-span-4 md:col-span-6 sm:col-span-12 product-box">
-                  <div class="card p-3 scale-0 hover:transition-all hover:ease-in-out group hover:scale-105 transform-none"> 
-                    <div class="card-body">
-                      <div class="relative">
-                        <div class="absolute top-[-1px] left-[-10px] flex flex-col invisible gap-1 p-3 transition-all duration-300 ease-linear opacity-0 cursor-pointer group-hover:visible group-hover:opacity-100 group-hover:left-[-1px]"><a class="btn heart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="lgrad" x1="0%" y1="50%" x2="100%" y2="50%">
-                                <stop offset="0%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                            </svg><i class="fa-solid fa-heart flex items-center justify-center p-2 bg-white rounded-full"></i></a><a class="btn shopping-cart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="grid" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                              <ellipse cx="50%" cy="50%" rx="600" ry="200"></ellipse>
-                            </svg><i class="fa-solid fa-cart-shopping flex items-center justify-center p-2 bg-white rounded-full"></i></a>
-                          <label class="button-label p-0 modal-eye" for="productmodal">
-                            <svg width="0" height="0"> 
-                              <radialGradient id="rgrad" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                              </radialGradient>
-                            </svg><i class="fa-solid fa-eye flex items-center justify-center p-2 bg-white rounded-full"></i>
-                          </label>
-                        </div><a href="product.html"><img class="rounded-[4px] w-full" src="../../assets/images/ecommerce/6.jpg" alt="product image"/></a>
-                      </div>
-                      <div class="pt-2"> <a class="flex flex-col gap-[0.3rem]" href="product.html">    
-                          <h4 class="font-bold text-sm text-title line-clamp-1">Apple AirPods</h4>
-                          <div class="flex items-center pt-0.5 gap-1"><span class="text-lg font-bold text-primary">$162</span>
-                            <del class="text-content3 text-sm">$200</del><small class="text-danger font-sm">(19% Off)</small>
-                          </div>
-                          <div class="flex items-center gap-1">
-                            <div class="flex items-center gap-1 bg-warning py-1 px-2 rounded-5 max-w-max"><i class="w-[0.8rem] h-[0.8rem] stroke-white fill-white" data-feather="star"></i><span class="font-semibold leading-none text-white text-2xs mt-[3px]">4.5</span></div><span class="text-content3 text-xs">125 Ratings</span>
-                          </div>
-                          <p class="text-title text-2xs mt-2">Free delivery by Govo</p></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-span-3 4xl:col-span-4 md:col-span-6 sm:col-span-12 product-box">
-                  <div class="card p-3 scale-0 hover:transition-all hover:ease-in-out group hover:scale-105 transform-none"> 
-                    <div class="card-body">
-                      <div class="relative"><span class="badge bg-secondary badge-xs absolute font-bold top-3 right-3.5 rounded-[3px] text-2xs">Sale</span>
-                        <div class="absolute top-[-1px] left-[-10px] flex flex-col invisible gap-1 p-3 transition-all duration-300 ease-linear opacity-0 cursor-pointer group-hover:visible group-hover:opacity-100 group-hover:left-[-1px]"><a class="btn heart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="lgrad" x1="0%" y1="50%" x2="100%" y2="50%">
-                                <stop offset="0%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                            </svg><i class="fa-solid fa-heart flex items-center justify-center p-2 bg-white rounded-full"></i></a><a class="btn shopping-cart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="grid" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                              <ellipse cx="50%" cy="50%" rx="600" ry="200"></ellipse>
-                            </svg><i class="fa-solid fa-cart-shopping flex items-center justify-center p-2 bg-white rounded-full"></i></a>
-                          <label class="button-label p-0 modal-eye" for="productmodal">
-                            <svg width="0" height="0"> 
-                              <radialGradient id="rgrad" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                              </radialGradient>
-                            </svg><i class="fa-solid fa-eye flex items-center justify-center p-2 bg-white rounded-full"></i>
-                          </label>
-                        </div><a href="product.html"><img class="rounded-[4px] w-full" src="../../assets/images/ecommerce/7.jpg" alt="product image"/></a>
-                      </div>
-                      <div class="pt-2"> <a class="flex flex-col gap-[0.3rem]" href="product.html">    
-                          <h4 class="font-bold text-sm text-title line-clamp-1">Three Seater Leather Sofa</h4>
-                          <div class="flex items-center pt-0.5 gap-1"><span class="text-lg font-bold text-primary">$712</span>
-                            <del class="text-content3 text-sm">$750</del><small class="text-danger font-sm">(5% Off)</small>
-                          </div>
-                          <div class="flex items-center gap-1">
-                            <div class="flex items-center gap-1 bg-warning py-1 px-2 rounded-5 max-w-max"><i class="w-[0.8rem] h-[0.8rem] stroke-white fill-white" data-feather="star"></i><span class="font-semibold leading-none text-white text-2xs mt-[3px]">3.8</span></div><span class="text-content3 text-xs">250 Ratings</span>
-                          </div>
-                          <p class="text-title text-2xs mt-2">Free delivery by Govo</p></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-span-3 4xl:col-span-4 md:col-span-6 sm:col-span-12 product-box">
-                  <div class="card p-3 scale-0 hover:transition-all hover:ease-in-out group hover:scale-105 transform-none"> 
-                    <div class="card-body">
-                      <div class="relative">
-                        <div class="absolute top-[-1px] left-[-10px] flex flex-col invisible gap-1 p-3 transition-all duration-300 ease-linear opacity-0 cursor-pointer group-hover:visible group-hover:opacity-100 group-hover:left-[-1px]"><a class="btn heart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="lgrad" x1="0%" y1="50%" x2="100%" y2="50%">
-                                <stop offset="0%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                            </svg><i class="fa-solid fa-heart flex items-center justify-center p-2 bg-white rounded-full"></i></a><a class="btn shopping-cart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="grid" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                              <ellipse cx="50%" cy="50%" rx="600" ry="200"></ellipse>
-                            </svg><i class="fa-solid fa-cart-shopping flex items-center justify-center p-2 bg-white rounded-full"></i></a>
-                          <label class="button-label p-0 modal-eye" for="productmodal">
-                            <svg width="0" height="0"> 
-                              <radialGradient id="rgrad" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                              </radialGradient>
-                            </svg><i class="fa-solid fa-eye flex items-center justify-center p-2 bg-white rounded-full"></i>
-                          </label>
-                        </div><a href="product.html"><img class="rounded-[4px] w-full" src="../../assets/images/ecommerce/8.jpg" alt="product image"/></a>
-                      </div>
-                      <div class="pt-2"> <a class="flex flex-col gap-[0.3rem]" href="product.html">    
-                          <h4 class="font-bold text-sm text-title line-clamp-1">Gucci Sling Bag</h4>
-                          <div class="flex items-center pt-0.5 gap-1"><span class="text-lg font-bold text-primary">$105</span>
-                            <del class="text-content3 text-sm">$138</del><small class="text-danger font-sm">(15% Off)</small>
-                          </div>
-                          <div class="flex items-center gap-1">
-                            <div class="flex items-center gap-1 bg-warning py-1 px-2 rounded-5 max-w-max"><i class="w-[0.8rem] h-[0.8rem] stroke-white fill-white" data-feather="star"></i><span class="font-semibold leading-none text-white text-2xs mt-[3px]">2.5</span></div><span class="text-content3 text-xs">150 Ratings</span>
-                          </div>
-                          <p class="text-title text-2xs mt-2">Free delivery by Govo</p></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-span-3 4xl:col-span-4 md:col-span-6 sm:col-span-12 product-box">
-                  <div class="card p-3 scale-0 hover:transition-all hover:ease-in-out group hover:scale-105 transform-none"> 
-                    <div class="card-body">
-                      <div class="relative"><span class="badge bg-secondary badge-xs absolute font-bold top-3 right-3.5 rounded-[3px] text-2xs">12% off</span>
-                        <div class="absolute top-[-1px] left-[-10px] flex flex-col invisible gap-1 p-3 transition-all duration-300 ease-linear opacity-0 cursor-pointer group-hover:visible group-hover:opacity-100 group-hover:left-[-1px]"><a class="btn heart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="lgrad" x1="0%" y1="50%" x2="100%" y2="50%">
-                                <stop offset="0%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                            </svg><i class="fa-solid fa-heart flex items-center justify-center p-2 bg-white rounded-full"></i></a><a class="btn shopping-cart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="grid" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                              <ellipse cx="50%" cy="50%" rx="600" ry="200"></ellipse>
-                            </svg><i class="fa-solid fa-cart-shopping flex items-center justify-center p-2 bg-white rounded-full"></i></a>
-                          <label class="button-label p-0 modal-eye" for="productmodal">
-                            <svg width="0" height="0"> 
-                              <radialGradient id="rgrad" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                              </radialGradient>
-                            </svg><i class="fa-solid fa-eye flex items-center justify-center p-2 bg-white rounded-full"></i>
-                          </label>
-                        </div><a href="product.html"><img class="rounded-[4px] w-full" src="../../assets/images/ecommerce/9.jpg" alt="product image"/></a>
-                      </div>
-                      <div class="pt-2"> <a class="flex flex-col gap-[0.3rem]" href="product.html">    
-                          <h4 class="font-bold text-sm text-title line-clamp-1">Nike - Latest Sports Shoes</h4>
-                          <div class="flex items-center pt-0.5 gap-1"><span class="text-lg font-bold text-primary">$176</span>
-                            <del class="text-content3 text-sm">$200</del><small class="text-danger font-sm">(12% Off)</small>
-                          </div>
-                          <div class="flex items-center gap-1">
-                            <div class="flex items-center gap-1 bg-warning py-1 px-2 rounded-5 max-w-max"><i class="w-[0.8rem] h-[0.8rem] stroke-white fill-white" data-feather="star"></i><span class="font-semibold leading-none text-white text-2xs mt-[3px]">4.9</span></div><span class="text-content3 text-xs">150 Ratings</span>
-                          </div>
-                          <p class="text-title text-2xs mt-2">Free delivery by Govo</p></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-span-3 4xl:col-span-4 md:col-span-6 sm:col-span-12 product-box">
-                  <div class="card p-3 scale-0 hover:transition-all hover:ease-in-out group hover:scale-105 transform-none"> 
-                    <div class="card-body">
-                      <div class="relative">
-                        <div class="absolute top-[-1px] left-[-10px] flex flex-col invisible gap-1 p-3 transition-all duration-300 ease-linear opacity-0 cursor-pointer group-hover:visible group-hover:opacity-100 group-hover:left-[-1px]"><a class="btn heart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="lgrad" x1="0%" y1="50%" x2="100%" y2="50%">
-                                <stop offset="0%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                            </svg><i class="fa-solid fa-heart flex items-center justify-center p-2 bg-white rounded-full"></i></a><a class="btn shopping-cart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="grid" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                              <ellipse cx="50%" cy="50%" rx="600" ry="200"></ellipse>
-                            </svg><i class="fa-solid fa-cart-shopping flex items-center justify-center p-2 bg-white rounded-full"></i></a>
-                          <label class="button-label p-0 modal-eye" for="productmodal">
-                            <svg width="0" height="0"> 
-                              <radialGradient id="rgrad" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                              </radialGradient>
-                            </svg><i class="fa-solid fa-eye flex items-center justify-center p-2 bg-white rounded-full"></i>
-                          </label>
-                        </div><a href="product.html"><img class="rounded-[4px] w-full" src="../../assets/images/ecommerce/10.jpg" alt="product image"/></a>
-                      </div>
-                      <div class="pt-2"> <a class="flex flex-col gap-[0.3rem]" href="product.html">    
-                          <h4 class="font-bold text-sm text-title line-clamp-1">Three Seater Sofa Cum Bed</h4>
-                          <div class="flex items-center pt-0.5 gap-1"><span class="text-lg font-bold text-primary">$299</span>
-                            <del class="text-content3 text-sm">$399</del><small class="text-danger font-sm">(15% Off)</small>
-                          </div>
-                          <div class="flex items-center gap-1">
-                            <div class="flex items-center gap-1 bg-warning py-1 px-2 rounded-5 max-w-max"><i class="w-[0.8rem] h-[0.8rem] stroke-white fill-white" data-feather="star"></i><span class="font-semibold leading-none text-white text-2xs mt-[3px]">4.7</span></div><span class="text-content3 text-xs">150 Ratings</span>
-                          </div>
-                          <p class="text-title text-2xs mt-2">Free delivery by Govo</p></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-span-3 4xl:col-span-4 md:col-span-6 sm:col-span-12 product-box">
-                  <div class="card p-3 scale-0 hover:transition-all hover:ease-in-out group hover:scale-105 transform-none"> 
-                    <div class="card-body">
-                      <div class="relative">
-                        <div class="absolute top-[-1px] left-[-10px] flex flex-col invisible gap-1 p-3 transition-all duration-300 ease-linear opacity-0 cursor-pointer group-hover:visible group-hover:opacity-100 group-hover:left-[-1px]"><a class="btn heart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="lgrad" x1="0%" y1="50%" x2="100%" y2="50%">
-                                <stop offset="0%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                            </svg><i class="fa-solid fa-heart flex items-center justify-center p-2 bg-white rounded-full"></i></a><a class="btn shopping-cart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="grid" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                              <ellipse cx="50%" cy="50%" rx="600" ry="200"></ellipse>
-                            </svg><i class="fa-solid fa-cart-shopping flex items-center justify-center p-2 bg-white rounded-full"></i></a>
-                          <label class="button-label p-0 modal-eye" for="productmodal">
-                            <svg width="0" height="0"> 
-                              <radialGradient id="rgrad" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                              </radialGradient>
-                            </svg><i class="fa-solid fa-eye flex items-center justify-center p-2 bg-white rounded-full"></i>
-                          </label>
-                        </div><a href="product.html"><img class="rounded-[4px] w-full" src="../../assets/images/ecommerce/11.jpg" alt="product image"/></a>
-                      </div>
-                      <div class="pt-2"> <a class="flex flex-col gap-[0.3rem]" href="product.html">    
-                          <h4 class="font-bold text-sm text-title line-clamp-1">Coffee cup</h4>
-                          <div class="flex items-center pt-0.5 gap-1"><span class="text-lg font-bold text-primary">$98</span>
-                            <del class="text-content3 text-sm">$110</del><small class="text-danger font-sm">(15% Off)</small>
-                          </div>
-                          <div class="flex items-center gap-1">
-                            <div class="flex items-center gap-1 bg-warning py-1 px-2 rounded-5 max-w-max"><i class="w-[0.8rem] h-[0.8rem] stroke-white fill-white" data-feather="star"></i><span class="font-semibold leading-none text-white text-2xs mt-[3px]">3.6</span></div><span class="text-content3 text-xs">150 Ratings</span>
-                          </div>
-                          <p class="text-title text-2xs mt-2">Free delivery by Govo</p></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-span-3 4xl:col-span-4 md:col-span-6 sm:col-span-12 product-box">
-                  <div class="card p-3 scale-0 hover:transition-all hover:ease-in-out group hover:scale-105 transform-none"> 
-                    <div class="card-body">
-                      <div class="relative">
-                        <div class="absolute top-[-1px] left-[-10px] flex flex-col invisible gap-1 p-3 transition-all duration-300 ease-linear opacity-0 cursor-pointer group-hover:visible group-hover:opacity-100 group-hover:left-[-1px]"><a class="btn heart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="lgrad" x1="0%" y1="50%" x2="100%" y2="50%">
-                                <stop offset="0%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                            </svg><i class="fa-solid fa-heart flex items-center justify-center p-2 bg-white rounded-full"></i></a><a class="btn shopping-cart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="grid" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                              <ellipse cx="50%" cy="50%" rx="600" ry="200"></ellipse>
-                            </svg><i class="fa-solid fa-cart-shopping flex items-center justify-center p-2 bg-white rounded-full"></i></a>
-                          <label class="button-label p-0 modal-eye" for="productmodal">
-                            <svg width="0" height="0"> 
-                              <radialGradient id="rgrad" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                              </radialGradient>
-                            </svg><i class="fa-solid fa-eye flex items-center justify-center p-2 bg-white rounded-full"></i>
-                          </label>
-                        </div><a href="product.html"><img class="rounded-[4px] w-full" src="../../assets/images/ecommerce/12.jpg" alt="product image"/></a>
-                      </div>
-                      <div class="pt-2"> <a class="flex flex-col gap-[0.3rem]" href="product.html">    
-                          <h4 class="font-bold text-sm text-title line-clamp-1">Leatherette Seater</h4>
-                          <div class="flex items-center pt-0.5 gap-1"><span class="text-lg font-bold text-primary">$485</span>
-                            <del class="text-content3 text-sm">$590</del><small class="text-danger font-sm">(15% Off)</small>
-                          </div>
-                          <div class="flex items-center gap-1">
-                            <div class="flex items-center gap-1 bg-warning py-1 px-2 rounded-5 max-w-max"><i class="w-[0.8rem] h-[0.8rem] stroke-white fill-white" data-feather="star"></i><span class="font-semibold leading-none text-white text-2xs mt-[3px]">4.5</span></div><span class="text-content3 text-xs">150 Ratings</span>
-                          </div>
-                          <p class="text-title text-2xs mt-2">Free delivery by Govo</p></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-span-3 4xl:col-span-4 md:col-span-6 sm:col-span-12 product-box">
-                  <div class="card p-3 scale-0 hover:transition-all hover:ease-in-out group hover:scale-105 transform-none"> 
-                    <div class="card-body">
-                      <div class="relative"><span class="badge bg-secondary badge-xs absolute font-bold top-3 right-3.5 rounded-[3px] text-2xs">25% off</span>
-                        <div class="absolute top-[-1px] left-[-10px] flex flex-col invisible gap-1 p-3 transition-all duration-300 ease-linear opacity-0 cursor-pointer group-hover:visible group-hover:opacity-100 group-hover:left-[-1px]"><a class="btn heart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="lgrad" x1="0%" y1="50%" x2="100%" y2="50%">
-                                <stop offset="0%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                            </svg><i class="fa-solid fa-heart flex items-center justify-center p-2 bg-white rounded-full"></i></a><a class="btn shopping-cart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="grid" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                              <ellipse cx="50%" cy="50%" rx="600" ry="200"></ellipse>
-                            </svg><i class="fa-solid fa-cart-shopping flex items-center justify-center p-2 bg-white rounded-full"></i></a>
-                          <label class="button-label p-0 modal-eye" for="productmodal">
-                            <svg width="0" height="0"> 
-                              <radialGradient id="rgrad" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                              </radialGradient>
-                            </svg><i class="fa-solid fa-eye flex items-center justify-center p-2 bg-white rounded-full"></i>
-                          </label>
-                        </div><a href="product.html"><img class="rounded-[4px] w-full" src="../../assets/images/ecommerce/13.jpg" alt="product image"/></a>
-                      </div>
-                      <div class="pt-2"> <a class="flex flex-col gap-[0.3rem]" href="product.html">    
-                          <h4 class="font-bold text-sm text-title line-clamp-1">Face Wash - For Good Skincare</h4>
-                          <div class="flex items-center pt-0.5 gap-1"><span class="text-lg font-bold text-primary">$75</span>
-                            <del class="text-content3 text-sm">$100</del><small class="text-danger font-sm">(25% Off)</small>
-                          </div>
-                          <div class="flex items-center gap-1">
-                            <div class="flex items-center gap-1 bg-warning py-1 px-2 rounded-5 max-w-max"><i class="w-[0.8rem] h-[0.8rem] stroke-white fill-white" data-feather="star"></i><span class="font-semibold leading-none text-white text-2xs mt-[3px]">4.9</span></div><span class="text-content3 text-xs">150 Ratings</span>
-                          </div>
-                          <p class="text-title text-2xs mt-2">Free delivery by Govo</p></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-span-3 4xl:col-span-4 md:col-span-6 sm:col-span-12 product-box">
-                  <div class="card p-3 scale-0 hover:transition-all hover:ease-in-out group hover:scale-105 transform-none"> 
-                    <div class="card-body">
-                      <div class="relative">
-                        <div class="absolute top-[-1px] left-[-10px] flex flex-col invisible gap-1 p-3 transition-all duration-300 ease-linear opacity-0 cursor-pointer group-hover:visible group-hover:opacity-100 group-hover:left-[-1px]"><a class="btn heart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="lgrad" x1="0%" y1="50%" x2="100%" y2="50%">
-                                <stop offset="0%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                            </svg><i class="fa-solid fa-heart flex items-center justify-center p-2 bg-white rounded-full"></i></a><a class="btn shopping-cart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="grid" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                              <ellipse cx="50%" cy="50%" rx="600" ry="200"></ellipse>
-                            </svg><i class="fa-solid fa-cart-shopping flex items-center justify-center p-2 bg-white rounded-full"></i></a>
-                          <label class="button-label p-0 modal-eye" for="productmodal">
-                            <svg width="0" height="0"> 
-                              <radialGradient id="rgrad" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                              </radialGradient>
-                            </svg><i class="fa-solid fa-eye flex items-center justify-center p-2 bg-white rounded-full"></i>
-                          </label>
-                        </div><a href="product.html"><img class="rounded-[4px] w-full" src="../../assets/images/ecommerce/14.jpg" alt="product image"/></a>
-                      </div>
-                      <div class="pt-2"> <a class="flex flex-col gap-[0.3rem]" href="product.html">    
-                          <h4 class="font-bold text-sm text-title line-clamp-1">Perfume - Great fragrance, Good Mood </h4>
-                          <div class="flex items-center pt-0.5 gap-1"><span class="text-lg font-bold text-primary">$299</span>
-                            <del class="text-content3 text-sm">$399</del><small class="text-danger font-sm">(15% Off)</small>
-                          </div>
-                          <div class="flex items-center gap-1">
-                            <div class="flex items-center gap-1 bg-warning py-1 px-2 rounded-5 max-w-max"><i class="w-[0.8rem] h-[0.8rem] stroke-white fill-white" data-feather="star"></i><span class="font-semibold leading-none text-white text-2xs mt-[3px]">4.7</span></div><span class="text-content3 text-xs">150 Ratings</span>
-                          </div>
-                          <p class="text-title text-2xs mt-2">Free delivery by Govo</p></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-span-3 4xl:col-span-4 md:col-span-6 sm:col-span-12 product-box">
-                  <div class="card p-3 scale-0 hover:transition-all hover:ease-in-out group hover:scale-105 transform-none"> 
-                    <div class="card-body">
-                      <div class="relative">
-                        <div class="absolute top-[-1px] left-[-10px] flex flex-col invisible gap-1 p-3 transition-all duration-300 ease-linear opacity-0 cursor-pointer group-hover:visible group-hover:opacity-100 group-hover:left-[-1px]"><a class="btn heart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="lgrad" x1="0%" y1="50%" x2="100%" y2="50%">
-                                <stop offset="0%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                            </svg><i class="fa-solid fa-heart flex items-center justify-center p-2 bg-white rounded-full"></i></a><a class="btn shopping-cart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="grid" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                              <ellipse cx="50%" cy="50%" rx="600" ry="200"></ellipse>
-                            </svg><i class="fa-solid fa-cart-shopping flex items-center justify-center p-2 bg-white rounded-full"></i></a>
-                          <label class="button-label p-0 modal-eye" for="productmodal">
-                            <svg width="0" height="0"> 
-                              <radialGradient id="rgrad" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                              </radialGradient>
-                            </svg><i class="fa-solid fa-eye flex items-center justify-center p-2 bg-white rounded-full"></i>
-                          </label>
-                        </div><a href="product.html"><img class="rounded-[4px] w-full" src="../../assets/images/ecommerce/15.jpg" alt="product image"/></a>
-                      </div>
-                      <div class="pt-2"> <a class="flex flex-col gap-[0.3rem]" href="product.html">    
-                          <h4 class="font-bold text-sm text-title line-clamp-1">Sun Glasses - Eye Protection, Regular Usage</h4>
-                          <div class="flex items-center pt-0.5 gap-1"><span class="text-lg font-bold text-primary">$98</span>
-                            <del class="text-content3 text-sm">$110</del><small class="text-danger font-sm">(15% Off)</small>
-                          </div>
-                          <div class="flex items-center gap-1">
-                            <div class="flex items-center gap-1 bg-warning py-1 px-2 rounded-5 max-w-max"><i class="w-[0.8rem] h-[0.8rem] stroke-white fill-white" data-feather="star"></i><span class="font-semibold leading-none text-white text-2xs mt-[3px]">3.6</span></div><span class="text-content3 text-xs">150 Ratings</span>
-                          </div>
-                          <p class="text-title text-2xs mt-2">Free delivery by Govo</p></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-span-3 4xl:col-span-4 md:col-span-6 sm:col-span-12 product-box">
-                  <div class="card p-3 scale-0 hover:transition-all hover:ease-in-out group hover:scale-105 transform-none"> 
-                    <div class="card-body">
-                      <div class="relative">
-                        <div class="absolute top-[-1px] left-[-10px] flex flex-col invisible gap-1 p-3 transition-all duration-300 ease-linear opacity-0 cursor-pointer group-hover:visible group-hover:opacity-100 group-hover:left-[-1px]"><a class="btn heart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="lgrad" x1="0%" y1="50%" x2="100%" y2="50%">
-                                <stop offset="0%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(255, 97, 80);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                            </svg><i class="fa-solid fa-heart flex items-center justify-center p-2 bg-white rounded-full"></i></a><a class="btn shopping-cart !p-0" href="javascript:void(0)">
-                            <svg width="0" height="0"> 
-                              <linearGradient id="grid" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(181 42 246);stop-opacity:1.00"></stop>
-                              </linearGradient>
-                              <ellipse cx="50%" cy="50%" rx="600" ry="200"></ellipse>
-                            </svg><i class="fa-solid fa-cart-shopping flex items-center justify-center p-2 bg-white rounded-full"></i></a>
-                          <label class="button-label p-0 modal-eye" for="productmodal">
-                            <svg width="0" height="0"> 
-                              <radialGradient id="rgrad" cx="50%" cy="50%" r="50%">
-                                <stop offset="0%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                                <stop offset="100%" style="stop-color:rgb(51, 191, 191);stop-opacity:1.00"></stop>
-                              </radialGradient>
-                            </svg><i class="fa-solid fa-eye flex items-center justify-center p-2 bg-white rounded-full"></i>
-                          </label>
-                        </div><a href="product.html"><img class="rounded-[4px] w-full" src="../../assets/images/ecommerce/16.jpg" alt="product image"/></a>
-                      </div>
-                      <div class="pt-2"> <a class="flex flex-col gap-[0.3rem]" href="product.html">    
-                          <h4 class="font-bold text-sm text-title line-clamp-1">Women's Leather Bags</h4>
-                          <div class="flex items-center pt-0.5 gap-1"><span class="text-lg font-bold text-primary">$212</span>
-                            <del class="text-content3 text-sm">$250</del><small class="text-danger font-sm">(15% Off)</small>
-                          </div>
-                          <div class="flex items-center gap-1">
-                            <div class="flex items-center gap-1 bg-warning py-1 px-2 rounded-5 max-w-max"><i class="w-[0.8rem] h-[0.8rem] stroke-white fill-white" data-feather="star"></i><span class="font-semibold leading-none text-white text-2xs mt-[3px]">4.5</span></div><span class="text-content3 text-xs">150 Ratings</span>
-                          </div>
-                          <p class="text-title text-2xs mt-2">Free delivery by Govo</p></a></div>
-                    </div>
-                  </div>
-                </div>
+                <div class="divider w-full my-3"> </div>
+                <ul class="flex flex-col gap-2"> 
+                  <li class="flex items-center justify-between text-content font-bold">
+                    <h6>Subtotal  </h6>
+                    <h6>$511 </h6>
+                  </li>
+                  <li class="flex items-center justify-between text-secondary font-bold">
+                    <h6>Coupon Discount</h6>
+                    <h6>(-)0.00 </h6>
+                  </li>
+                  <li class="flex items-center justify-between text-content font-bold">
+                    <h6>Shipping</h6>
+                    <h6>$6.90 </h6>
+                  </li>
+                </ul>
+                <div class="divider w-full my-3"> </div>
+                <ul class="flex flex-col gap-2"> 
+                  <li class="flex items-center justify-between text-primary font-extrabold"> 
+                    <h6>Total(USD) </h6>
+                    <h6>$345  </h6>
+                  </li>
+                </ul>
+                <div class="flex flex-col gap-3"> <a href="checkout.html">
+                    <button class="btn btn-secondary w-full text-white">Process To Checkout</button></a><a href="shop.html">
+                    <button class="btn btn-primary text-white w-full flex justify-center items-center gap-2"> <i class="w-5 h-5 stroke-white" data-feather="arrow-left"></i>Back to Shopping</button></a></div>
               </div>
             </div>
           </div>
@@ -2091,102 +1322,6 @@
         <div class="flex items-center gap-2 p-[15px] border-t border-light dark:bg-primaryLight"> 
           <button class="btn btn-ghost flex-1 reset-customizer">Reset  </button>
           <button class="btn btn-primary text-white flex-1">Buy Now</button>
-        </div>
-      </div>
-      <div class="modal-main">
-        <input class="peer" id="productmodal" name="productmodal" type="checkbox">
-        <label class="modal-overlay peer-checked:block" for="productmodal"></label>
-        <div class="modal modal-center peer-checked:opacity-100 peer-checked:visible !duration-75">
-          <div class="modal-body product-modal">
-            <div class="grid grid-cols-12 gap-card-gap md:max-w-[80%] sm:max-w-[100%] mx-auto">
-              <div class="col-span-6 md:col-span-12">            
-                <div class="product-slider">
-                  <div class="swiper productImgNav">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide"><img src="../../assets/images/ecommerce/18.jpg" alt="product"></div>
-                      <div class="swiper-slide"><img src="../../assets/images/ecommerce/17.jpg" alt="product"></div>
-                      <div class="swiper-slide"><img src="../../assets/images/ecommerce/19.jpg" alt="product"></div>
-                      <div class="swiper-slide"><img src="../../assets/images/ecommerce/20.jpg" alt="product"></div>
-                      <div class="swiper-slide"><img src="../../assets/images/ecommerce/21.jpg" alt="product"></div>
-                    </div>
-                    <div class="swiper-button-next text-primary"></div>
-                    <div class="swiper-button-prev text-primary"></div>
-                  </div>
-                  <div class="swiper productImg mt-4 md:mt-3">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide"><img src="../../assets/images/ecommerce/18.jpg" alt="product"></div>
-                      <div class="swiper-slide"><img src="../../assets/images/ecommerce/17.jpg" alt="product"></div>
-                      <div class="swiper-slide"><img src="../../assets/images/ecommerce/19.jpg" alt="product"></div>
-                      <div class="swiper-slide"><img src="../../assets/images/ecommerce/20.jpg" alt="product"></div>
-                      <div class="swiper-slide"><img src="../../assets/images/ecommerce/21.jpg" alt="product"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-span-6 md:col-span-12 md:mt-5"> 
-                <div class="flex justify-between">
-                  <h3 class="leading-none font-semibold 3xl:flex 3xl:justify-between 3xl:items-center lg:text-xl text-primary">Casual Men's t-shirt</h3>
-                  <div class="flex gap-2 items-center"> 
-                    <label for="productmodal"> <i class="w-4 h-4 stroke-dark cursor-pointer" data-feather="x"></i></label>
-                  </div>
-                </div><span class="text-content3 text-xs leading-none">#15704                  </span>
-                <p class="text-content3 text-xs leading-none">Currently in stock    </p>
-                <h4 class="font-semibold text-title lg:text-lg my-2">$500 
-                  <del class="text-danger">$350 </del>
-                </h4>
-                <div class="flex items-center gap-2">
-                  <div class="flex items-center gap-0"><i class="w-4 h-4 fill-warning stroke-transparent" data-feather="star"></i><i class="w-4 h-4 fill-warning stroke-transparent" data-feather="star"></i><i class="w-4 h-4 fill-warning stroke-transparent" data-feather="star"></i><i class="w-4 h-4 fill-warning stroke-transparent" data-feather="star"></i><i class="w-4 h-4 fill-content stroke-transparent" data-feather="star"></i></div>
-                  <label class="text-content3 text-xs font-semibold" for="4above">1059 ratings</label>
-                </div>
-                <p class="text-content3 text-sm mt-1">This Men's Oversize T-Shirt is ideal for daily wear or for college because it is incredibly cool and cosy.</p>
-                <div class="divider w-full my-4 before:!bg-border-light after:!bg-border-light"></div>
-                <div class="flex items-center gap-3">
-                  <label class="text-title text-sm font-medium min-w-[80px]" for="color">Color</label>
-                  <ul class="flex flex-wrap gap-2 items-center" id="color">
-                    <li class="w-6 h-6 bg-light rounded-full cursor-pointer"></li>
-                    <li class="w-6 h-6 bg-black rounded-full cursor-pointer"></li>
-                    <li class="w-6 h-6 bg-warning rounded-full cursor-pointer"></li>
-                    <li class="w-6 h-6 bg-danger rounded-full cursor-pointer"></li>
-                    <li class="w-6 h-6 bg-info rounded-full cursor-pointer"></li>
-                  </ul>
-                </div>
-                <div class="divider w-full my-4 before:!bg-border-light after:!bg-border-light"></div>
-                <div class="flex items-center gap-3">
-                  <label class="text-title text-sm font-medium min-w-[80px]" for="qty">Quantity   </label>
-                  <select class="form-select block w-full px-3 text-xs font-normal text-content3 bg-white bg-clip-padding bg-no-repeat border border-border-light rounded-5 transition ease-in-out m-0 min-w-[150px] py-[9px] w-max" id="qty" aria-label="Default select example">
-                    <option selected="">1</option>
-                    <option value="1">2</option>
-                    <option value="2">3</option>
-                    <option value="3">4</option>
-                    <option value="3">5</option>
-                  </select>
-                </div>
-                <div class="divider w-full my-4 before:!bg-border-light after:!bg-border-light"></div>
-                <div class="flex items-center gap-3">
-                  <label class="text-title text-sm font-medium min-w-[80px]" for="size">Sizes   </label>
-                  <div class="flex items-center">
-                    <button class="btn btn-md border border-border-light rounded-none text-title leading-none hover:bg-gray-extralight">S </button>
-                    <button class="btn btn-md btn-active text-title leading-none border border-border-light bg-gray-extralight rounded-none hover:bg-gray-extralight">M</button>
-                    <button class="btn btn-md border border-border-light rounded-none text-title leading-none hover:bg-gray-extralight">L</button>
-                    <button class="btn btn-md border border-border-light rounded-none text-title leading-none hover:bg-gray-extralight">XL</button>
-                  </div>
-                </div>
-                <div class="divider w-full my-4 before:!bg-border-light after:!bg-border-light"></div>
-                <div class="social flex gap-3 items-center"><a class="!text-linkedin" href="https://www.linkedin.com/login"><i class="fa-brands fa-linkedin-in w-5 h-5"></i></a><a class="!text-twitter" href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter w-5 h-5"></i></a><a class="!text-success" href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp w-5 h-5"></i></a><a class="!text-facebook" href="https://www.facebook.com/"><i class="fa-brands fa-facebook w-5 h-5"></i></a><a class="instagram" href="https://www.instagram.com/accounts/login/">
-                    <svg width="0" height="0">
-                      <radialgradient id="rg" r="150%" cx="30%" cy="107%">
-                        <stop stop-color="#fdf497" offset="0"></stop>
-                        <stop stop-color="#fdf497" offset="0.05"></stop>
-                        <stop stop-color="#fd5949" offset="0.45"></stop>
-                        <stop stop-color="#d6249f" offset="0.6"></stop>
-                        <stop stop-color="#285AEB" offset="0.9"></stop>
-                      </radialgradient>
-                    </svg><i class="fa-brands fa-instagram w-5 h-5"></i></a></div>
-                <div class="divider w-full my-4 before:!bg-border-light after:!bg-border-light"></div>
-                <div class="flex flex-wrap gap-2 items-center capitalize"> <a class="btn btn-primary text-white text-sm" href="cart.html">Add to cart         </a><a class="btn btn-secondary text-white text-sm" href="wishlist.html">Add to wishlist         </a><a class="btn btn-warning text-white text-sm" href="checkout.html">Buy it now         </a></div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </main>

@@ -859,6 +859,9 @@ input:focus {
   white-space: nowrap;
   font-weight: 600;
 }
+.product-wrapper-grid.list-view .product-box .card .card-body .breadcrumb nav .breadcrumb-list .breadcrumb-items a img {
+  width: 18.75rem;
+}
 .breadcrumb nav .breadcrumb-list .breadcrumb-items a {
   position: relative;
   display: flex;
@@ -943,6 +946,9 @@ input:focus {
 .breadcrumb-style-5 nav .breadcrumb-list .breadcrumb-items a {
   width: auto;
   background-color: transparent;
+}
+.product-wrapper-grid.list-view .product-box .card .card-body .breadcrumb-style-5 nav .breadcrumb-list li img {
+  width: 18.75rem;
 }
 .breadcrumb-style-5 nav .breadcrumb-list li {
   position: relative;
@@ -1198,6 +1204,9 @@ input:focus {
   --tw-shadow-colored: var(--card-shadow);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+.product-wrapper-grid.list-view .product-box .card .card-body .card-header img {
+  width: 18.75rem;
+}
 .card-header {
   position: relative;
 }
@@ -1247,6 +1256,9 @@ input:focus {
 .card-body p strong {
   --tw-text-opacity: 1;
   color: rgb(248 113 113 / var(--tw-text-opacity));
+}
+.product-wrapper-grid.list-view .product-box .card .card-body .checkbox img {
+  width: 18.75rem;
 }
 .checkbox {
   position: relative;
@@ -1388,6 +1400,9 @@ input:focus {
   stroke: #fff;
   transition-duration: 100ms;
 }
+.product-wrapper-grid.list-view .product-box .card .card-body .dropdown img {
+  width: 18.75rem;
+}
 .dropdown {
   position: relative;
   display: inline-block;
@@ -1485,6 +1500,9 @@ input:focus {
 }
 .tabs .dropdown .dropdown-menu ul {
   gap: 0px;
+}
+.product-wrapper-grid.list-view .product-box .card .card-body .divider img {
+  width: 18.75rem;
 }
 .divider {
   position: relative;
@@ -1660,6 +1678,9 @@ input:focus {
   margin-top: 1rem;
   margin-bottom: 1rem;
   width: 100%;
+}
+.product-wrapper-grid.list-view .product-box .card .card-body .theme-form h4 img {
+  width: 18.75rem;
 }
 .theme-form h4 {
   position: relative;
@@ -1897,6 +1918,9 @@ input:focus {
 .modal-eye svg:not(.svg-inline--fa) {
         position: absolute;
       }
+.product-wrapper-grid.list-view .product-box .card .card-body .indicator img {
+  width: 18.75rem;
+}
 .indicator {
   position: relative;
   max-width: -moz-fit-content;
@@ -2224,14 +2248,19 @@ body.monochrome-mode:before {
         height: var(--size);
         width: var(--size);
         --thickness: calc(var(--size) / 10);
-        position: relative;
-        box-sizing: content-box;
-        display: inline-grid;
-        place-content: center;
-        border-radius: 9999px;
-        background-color: var(--gray-extralight);
-        vertical-align: middle;
     }
+.product-wrapper-grid.list-view .product-box .card .card-body .radial-progress img {
+  width: 18.75rem;
+}
+.radial-progress {
+  position: relative;
+  box-sizing: content-box;
+  display: inline-grid;
+  place-content: center;
+  border-radius: 9999px;
+  background-color: var(--gray-extralight);
+  vertical-align: middle;
+}
 .radial-progress.radial-xs {
             --size: 5rem; 
         }
@@ -2647,6 +2676,9 @@ code[class*="language-"],
 .table.table-variant.table-bordered thead tr th {
   padding-top: unset;
 }
+.product-wrapper-grid.list-view .product-box .card .card-body .tab img {
+  width: 18.75rem;
+}
 .tab {
   position: relative;
   cursor: pointer;
@@ -2773,7 +2805,33 @@ code[class*="language-"],
     border-bottom-width: 2px;
   }
 }
+.tabs .tab.product-tab {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  border-style: none;
+  background-color: var(--primary-light);
+  padding: 1rem;
+  color: var(--title);
+}
+.tabs .tab.product-tab svg {
+  height: 1.125rem;
+  width: 1.125rem;
+  border-radius: 9999px;
+  background-color: rgba(var(--primary),1);
+  padding: 0.35rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.tabs .tab.product-tab.tab-active {
+  background-color: var(--primary-extralight);
+  color: rgba(var(--primary),1);
+}
 /* START TOOLTIP STYLES */
+.product-wrapper-grid.list-view .product-box .card .card-body [data-tw-tooltip] img {
+  width: 18.75rem;
+}
 [data-tw-tooltip] {
   position: relative;
   display: inline-block;
@@ -3157,6 +3215,9 @@ code[class*="language-"],
     padding-top: 1.125rem;
   }
 }
+.product-wrapper-grid.list-view .product-box .card .card-body .page-sidebar.unique-sidebar .sidebar .search-wrapper .search-box img {
+  width: 18.75rem;
+}
 .page-sidebar.unique-sidebar .sidebar .search-wrapper .search-box {
   position: relative;
 }
@@ -3279,6 +3340,9 @@ code[class*="language-"],
 }
 .page-sidebar.sidebar-dark.unique-sidebar .logo-wrapper svg {
   stroke: #fff;
+}
+.product-wrapper-grid.list-view .product-box .card .card-body .page-sidebar.sidebar-dark.unique-sidebar .search-box img {
+  width: 18.75rem;
 }
 .page-sidebar.sidebar-dark.unique-sidebar .search-box {
   position: relative;
@@ -3725,7 +3789,10 @@ code[class*="language-"],
   gap: 1rem;
 }
 @media (max-width: 575px) {
-  .message .message-box .message-content {
+              .product-wrapper-grid.list-view .product-box .card .card-body .message .message-box .message-content img {
+    width: 18.75rem;
+  }
+              .message .message-box .message-content {
     position: relative;
     gap: 0px;
   }
@@ -3829,6 +3896,9 @@ code[class*="language-"],
 .emoji-picker-insert input:focus:not([tabindex^='-']) {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+.product-wrapper-grid.list-view .product-box .card .card-body .emoji-picker-insert .emoji-btn img {
+  width: 18.75rem;
 }
 .emoji-picker-insert .emoji-btn {
   position: relative;
@@ -3975,6 +4045,9 @@ code[class*="language-"],
     line-height: 1.25rem;
     letter-spacing: 0.03125rem;
   }
+}
+.product-wrapper-grid.list-view .product-box .card .card-body .countdown-1 li img {
+  width: 18.75rem;
 }
 .countdown-1 li {
   position: relative;
@@ -4254,6 +4327,38 @@ code[class*="language-"],
   transition-duration: 1000ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.product-wrapper-grid.list-view .product-box .card:hover {
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.product-wrapper-grid.list-view .product-box .card .card-body {
+  display: flex;
+  gap: 0.75rem;
+}
+.product-wrapper-grid.list-view .product-box .card .card-body .relative img {
+  width: 18.75rem;
+}
+.checkout-detail form label {
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  letter-spacing: 0.025rem;
+  font-weight: 600;
+  color: var(--content3);
+}
+.checkout-detail form input,
+      .checkout-detail form textarea {
+  border-width: 1px;
+  border-color: var(--border-light);
+  background-color: transparent;
+  padding: 11px;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  letter-spacing: 0.025rem;
+  color: var(--content);
+}
 .mask img {
   width: 10rem;
 }
@@ -4367,6 +4472,9 @@ code[class*="language-"],
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   animation: none;
 }
+.product-wrapper-grid.list-view .product-box .card .card-body .rating img {
+  width: 18.75rem;
+}
 .rating {
   position: relative;
   display: inline-flex;
@@ -4377,6 +4485,9 @@ code[class*="language-"],
   cursor: pointer;
   opacity: 1;
 }
+.product-wrapper-grid.list-view .product-box .card .card-body .swiper img {
+  width: 18.75rem;
+}
 .swiper {
   position: relative;
   z-index: 1;
@@ -4385,6 +4496,9 @@ code[class*="language-"],
   list-style-type: none;
   overflow: hidden;
   padding: 0px;
+}
+.product-wrapper-grid.list-view .product-box .card .card-body .swiper .swiper-wrapper img {
+  width: 18.75rem;
 }
 .swiper .swiper-wrapper {
   position: relative;
@@ -4395,6 +4509,9 @@ code[class*="language-"],
   width: 100%;
   flex: none;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.product-wrapper-grid.list-view .product-box .card .card-body .swiper .swiper-wrapper .swiper-slide img {
+  width: 18.75rem;
 }
 .swiper .swiper-wrapper .swiper-slide {
   position: relative;
@@ -4575,17 +4692,22 @@ code[class*="language-"],
 .steps .step:after {
                 content: counter(step);
                 counter-increment: step;
-                position: relative;
-                z-index: 1;
-                grid-column-start: 1;
-                grid-row-start: 1;
-                display: grid;
-                height: 2rem;
-                width: 2rem;
-                place-content: center;
-                place-self: center;
-                border-radius: 9999px;
             }
+.product-wrapper-grid.list-view .product-box .card .card-body .steps .step:after img {
+  width: 18.75rem;
+}
+.steps .step:after {
+  position: relative;
+  z-index: 1;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  display: grid;
+  height: 2rem;
+  width: 2rem;
+  place-content: center;
+  place-self: center;
+  border-radius: 9999px;
+}
 .steps .step:before,
             .steps .step:after {
   --tw-bg-opacity: 1;
@@ -4652,6 +4774,9 @@ code[class*="language-"],
   --tw-translate-x: -50%;
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.product-wrapper-grid.list-view .product-box .card .card-body .swap img {
+  width: 18.75rem;
 }
 .swap {
   position: relative;
@@ -5121,6 +5246,10 @@ code[class*="language-"],
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.\!my-0 {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
 .\!mb-0 {
   margin-bottom: 0px !important;
 }
@@ -5162,6 +5291,9 @@ code[class*="language-"],
 }
 .mb-4 {
   margin-bottom: 1rem;
+}
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 .mb-\[-0\.25rem\] {
   margin-bottom: -0.25rem;
@@ -9534,6 +9666,11 @@ code[class*="language-"],
 /*=====================
   Wow Animation CSS
   ==========================*/
+@media (max-width: 1199px) {
+              .product-wrapper-grid.list-view .product-box .card .card-body .xl\:relative img {
+    width: 18.75rem;
+  }
+}
 @media (max-width: 675px) {
 
         .\32md\:responsive-vertical.steps {
