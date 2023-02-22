@@ -46,45 +46,41 @@ html(lang='en')
                     div.grid.grid-cols-12.gap-card-gap.card.checkout-detail 
                         div.col-span-8(class="lg:col-span-12 w-full tabs flex flex-col")
                             div.mb-1.tab-links.flex.items-center(class="3sm:justify-center")
-                                button.tab.product-tab.w-full.items-center.tab-active(data-tabFilter="1" class="tab-link") 
-                                    //- i(data-feather="user",class="w-[1.125rem] h-[1.125rem] stroke-title")
-                                    i.fa-regular.fa-user(class="w-[1.125rem] h-[1.125rem] text-title")
+                                button.tab.product-tab.w-full.items-center.text-sm.tab-active(data-tabFilter="1" class="tab-link") 
+                                    i.fa-solid.fa-user
                                     | Billing Info  
-                                button.tab.product-tab.w-full.items-center(data-tabFilter="2" class="tab-link")
-                                    //- i(data-feather="truck",class="w-[1.125rem] h-[1.125rem] stroke-title")
-                                    i.fa-solid.fa-truck-fast(class="w-[1.125rem] h-[1.125rem] text-title")
+                                button.tab.product-tab.w-full.items-center.text-sm(data-tabFilter="2" class="tab-link")
+                                    i.fa-solid.fa-truck-fast
                                     | Shipping Info
-                                button.tab.product-tab.w-full.items-center(data-tabFilter="3" class="tab-link")
-                                    //- i(data-feather="credit-card",class="w-[1.125rem] h-[1.125rem] stroke-title")
-                                    i.fa-solid.fa-money-bill(class="w-[1.125rem] h-[1.125rem] text-title")
+                                button.tab.product-tab.w-full.items-center.text-sm(data-tabFilter="3" class="tab-link")
+                                    i.fa-solid.fa-money-bill
                                     | Payment Info  
-                                button.tab.product-tab.w-full.items-center(data-tabFilter="3" class="tab-link")
-                                    //- i(data-feather="check-circle",class="w-[1.125rem] h-[1.125rem] stroke-title")
-                                    i.fa-regular.fa-circle-check(class="w-[1.125rem] h-[1.125rem] text-title")
+                                button.tab.product-tab.w-full.items-center.text-sm(data-tabFilter="3" class="tab-link")
+                                    i.fa-solid.fa-circle-check
                                     | Finish  
                             div.tabs-content
                                 div(data-tabContent="1" class="tab-pan fade active show first:rounded-tl-none rounded-5 border-none !px-1 !pb-0")
                                     div
-                                        h6.text-title.font-semibold.mb-2 Billing Information 
+                                        h5.text-title.font-semibold.mb-2 Billing Information 
                                         p.text-content3.mb-5  Fill up the following information 
                                         form(action="index.html" class="theme-form flex flex-col gap-4 m-0")
                                             div.grid.grid-cols-12.gap-5
                                                 div.col-span-6
                                                     label(for="firstName") First Name
-                                                    input(type="text" id="firstName" required)
+                                                    input(type="text" id="firstName" placeholder="Enter your first name" required)
                                                 div.col-span-6
                                                     label(for="lastName") Last Name
-                                                    input(type="text" id="lastName" required)
+                                                    input(type="text" id="lastName" placeholder="Enter your last name" required)
                                             div.grid.grid-cols-12.gap-5
                                                 div.col-span-6
-                                                    label(for="number") Phone No
-                                                    input(type="Number" id="number" maxlength="10" pattern="\d{10}" class="rounded"  required)
+                                                    label(for="number") Contact No
+                                                    input(type="Number" id="number" placeholder="Enter your contact no" maxlength="10" pattern="\d{10}" class="rounded"  required)
                                                 div.col-span-6
                                                     label(for="email") Email
-                                                    input(type="email" id="email" required)
+                                                    input(type="email" id="email" placeholder="Enter your email id" required)
                                             div 
                                                 label(for="address") Address 
-                                                textarea(placeholder="Enter the address.." row="3" id="address" class="p-[11px]").w-full.border.border-border-light.rounded-5.text-xs.text-content
+                                                textarea(placeholder="Enter your address.." row="3" id="address" class="p-[11px] focus:border-none").w-full.border.border-border-light.rounded-5.text-xs.text-content
                                             div.grid.grid-cols-12.gap-5
                                                 div.col-span-4
                                                     label(for="country") Country
@@ -98,10 +94,10 @@ html(lang='en')
                                                         option(value='3') UK
                                                 div.col-span-4
                                                     label(for="state") State
-                                                    input(type="text" id="state" required)
+                                                    input(type="text" id="state" placeholder="Enter your state" required)
                                                 div.col-span-4
                                                     label(for="postcode") Postcode
-                                                    input(type="text" id="postcode" required)
+                                                    input(type="text" id="postcode" placeholder="Enter your postcode" required)
                                             div.flex.items-center.gap-2
                                                 label.checkbox.checkbox-sm.cursor-pointer(class="!mb-0")  
                                                     input(type='checkbox' class="peer") 
@@ -110,23 +106,154 @@ html(lang='en')
                                                 p(class="!my-0") Remember me for next time
                                             div 
                                                 label(for="otherNotes") Other Notes 
-                                                textarea(placeholder="Enter the address.." row="3" id="otherNotes" class="p-[11px]").w-full.border.border-border-light.rounded-5.text-xs.text-content
+                                                textarea(placeholder="Enter your address.." row="3" id="otherNotes" class="p-[11px] focus:border-none").w-full.border.border-border-light.rounded-5.text-xs.text-content
                                             div.flex.justify-between.items-center
-                                                button.btn.bg-secondary.text-xs.text-white.flex.items-center.gap-2(class="!w-fit" type='button') 
+                                                button.btn.bg-secondary.text-xs.text-white.flex.items-center.gap-2(class="!w-fit !m-0" type='button') 
                                                     i(data-feather="arrow-left" class="w-4 h-4 stroke-white")
                                                     |  Return to Shopping Cart
-                                                button.btn.btn-primary.text-xs.text-white.flex.items-center.gap-2(class="!w-fit" type='button') 
+                                                button.btn.btn-primary.text-xs.text-white.flex.items-center.gap-2(class="!w-fit !m-0" type='button') 
                                                     |  Proceed to Next
                                                     i(data-feather="truck" class="w-4 h-4 stroke-white")
-
-                                            
-
-
                                 div(data-tabContent="2" class="tab-pan fade group relative first:rounded-tl-none rounded-5 border-none !px-1 !pb-0")
-                                    p.text-xs.text-gray-500 We use tabs to manage space and to make the website more attractive. Tabs are used to navigate and display different content around the website. We use tabs to manage space and to make the website more attractive.
+                                    div
+                                        h5.text-title.font-semibold.mb-2 Shipping Information 
+                                        p.text-content3.mb-5 Fill up the following information to send you the order
+                                        div.flex.justify-between.gap-2.items-center.mb-5 
+                                            h6.text-title.font-medium Saved Address 
+                                            button.btn.bg-gray-light(type='button' class="p-1") 
+                                                i(data-feather="plus" class="w-4 h-4 stroke-content3")
+                                        div.grid.grid-cols-12.gap-card-gap.mb-5 
+                                            div.col-span-4
+                                                div.border.border-border-light.p-4 
+                                                    div.flex.justify-between.gap-2.items-center.mb-4 
+                                                        div.flex.items-center.gap-2
+                                                            label.checkbox.checkbox-sm.cursor-pointer  
+                                                                input(type='checkbox' class="peer" checked) 
+                                                                div.checkbox-indicator(class="peer-checked:!bg-primary rounded-full !border-primary")  
+                                                                    i(data-feather="check")
+                                                            p Home 
+                                                        div.flex.items-center.gap-2
+                                                            +SVG_ICON("Edit-Square", "w-4 h-4 stroke-title") 
+                                                            +SVG_ICON("Delete", "w-4 h-4 stroke-title") 
+                                                    div.flex.flex-col.gap-2 
+                                                        h6.text-title.font-bold Filomena Green 
+                                                        p.text-content3.text-xs 
+                                                            span.font-semibold Address: 
+                                                            | 	2211 Fruitville Rd, Sarasota, Florida, US 34237
+                                                        p.text-content3.text-xs 
+                                                            span.font-semibold Contact: 
+                                                            | 	(941) 321-5643
+                                            div.col-span-4
+                                                div.border.border-border-light.p-4 
+                                                    div.flex.justify-between.gap-2.items-center.mb-4 
+                                                        div.flex.items-center.gap-2
+                                                            label.checkbox.checkbox-sm.cursor-pointer  
+                                                                input(type='checkbox' class="peer") 
+                                                                div.checkbox-indicator(class="peer-checked:!bg-primary rounded-full !border-primary")  
+                                                                    i(data-feather="check")
+                                                            p Home
+                                                        div.flex.items-center.gap-2 
+                                                            +SVG_ICON("Edit-Square", "w-4 h-4 stroke-title") 
+                                                            +SVG_ICON("Delete", "w-4 h-4 stroke-title") 
+                                                    div.flex.flex-col.gap-2 
+                                                        h6.text-title.font-bold 	Ms. Ila Runte DDS
+                                                        p.text-content3.text-xs 
+                                                            span.font-semibold Address: 
+                                                            | 	1531 E 23rd St S, Independence, Mississippi, US 64055
+                                                        p.text-content3.text-xs 
+                                                            span.font-semibold Contact: 
+                                                            | 	(816) 252-4500                                        
+                                        h6.text-title.font-medium.mb-5 Shipping Method 
+                                        div.grid.grid-cols-12.gap-card-gap.mb-5 
+                                            div.col-span-6
+                                                div.border.border-border-light.p-4
+                                                    div.flex.items-center.gap-2.mb-1
+                                                        label.checkbox.checkbox-sm.cursor-pointer  
+                                                            input(type='checkbox' class="peer") 
+                                                            div.checkbox-indicator(class="peer-checked:!bg-primary rounded-full !border-primary")  
+                                                                i(data-feather="check")
+                                                        p.text-title.font-semibold Standard Delivery - Free 
+                                                    p.pl-6.text-content3.text-xs Estimated 5-7 days shipping
+                                            div.col-span-6
+                                                div.border.border-border-light.p-4 
+                                                    div.flex.items-center.gap-2.mb-1
+                                                        label.checkbox.checkbox-sm.cursor-pointer  
+                                                            input(type='checkbox' class="peer" checked) 
+                                                            div.checkbox-indicator(class="peer-checked:!bg-primary rounded-full !border-primary")  
+                                                                i(data-feather="check")
+                                                        p.text-title.font-semibold Express Delivery - $24 
+                                                    p.pl-6.text-content3.text-xs Estimated 1-2 days shipping
+                                        div.flex.justify-between.items-center
+                                                button.btn.bg-secondary.text-xs.text-white.flex.items-center.gap-2(class="!w-fit !m-0" type='button') 
+                                                    i(data-feather="arrow-left" class="w-4 h-4 stroke-white")
+                                                    |  Return to Shopping Cart
+                                                button.btn.btn-primary.text-xs.text-white.flex.items-center.gap-2(class="!w-fit !m-0" type='button') 
+                                                    |  Proceed to Next
+                                                    i(data-feather="truck" class="w-4 h-4 stroke-white")
                                 div(data-tabContent="3" class="tab-pan fade group relative first:rounded-tl-none rounded-5 border-none !px-1 !pb-0")
-                                    p.text-xs.text-gray-500 Tabs are used to navigate and display different content around the website. abs are used to navigate and display different content around the website. 
-                    
+                                   div
+                                        h5.text-title.font-semibold.mb-2 Payment Information 
+                                        p.text-content3.mb-5 Fill up the following information to send you the order
+                                        div.border.border-border-light.p-4.mb-5 
+                                            div.flex.gap-2.items-center.justify-between
+                                                div
+                                                    div.flex.items-center.gap-2.mb-1
+                                                        label.checkbox.checkbox-sm.cursor-pointer  
+                                                            input(type='checkbox' class="peer" checked) 
+                                                            div.checkbox-indicator(class="peer-checked:!bg-primary rounded-full !border-primary")  
+                                                                i(data-feather="check")
+                                                        p.text-title.font-semibold PayPal
+                                                    p.pl-6.text-content3.text-xs You will be taken to the PayPal website to finish your transaction safely
+                                                i.fa-brands.fa-cc-paypal(class="text-2xl text-primary")
+                                        div.border.border-border-light.p-4.mb-5 
+                                            div.flex.gap-2.items-center.justify-between.mb-5
+                                                div
+                                                    div.flex.items-center.gap-2.mb-1
+                                                        label.checkbox.checkbox-sm.cursor-pointer  
+                                                            input(type='checkbox' class="peer") 
+                                                            div.checkbox-indicator(class="peer-checked:!bg-primary rounded-full !border-primary")  
+                                                                i(data-feather="check")
+                                                        p.text-title.font-semibold Credit Card
+                                                    p.pl-6.text-content3.text-xs Transferring money securely through your bank account. Mastercard, Visa, Discover, and Stripe are all accepted
+                                                i.fa-regular.fa-credit-card(class="text-2xl text-primary")
+                                            form(action="index.html" class="theme-form flex flex-col gap-4 m-0")
+                                                div
+                                                    label(for="cardholder") Card holder
+                                                    input(type="text" id="cardholder" placeholder="Enter card holder name" required)
+                                                div
+                                                    label(for="cardholder") Card Number
+                                                    input(type="number" id="cardholder" placeholder="Enter card number" required)
+                                                div.grid.grid-cols-12.gap-5
+                                                    div.col-span-6
+                                                        label(for="expirydate") Expiry Date
+                                                        input(type="number" id="expirydate" placeholder="MM/YY" required)
+                                                    div.col-span-6
+                                                        label(for="cvv") CVV
+                                                        input(type="number" id="cvv" placeholder="Enter your last name" required)
+                                            
+                                        div.border.border-border-light.p-4.mb-5 
+                                            div.flex.gap-2.items-center.justify-between
+                                                div
+                                                    div.flex.items-center.gap-2.mb-1
+                                                        label.checkbox.checkbox-sm.cursor-pointer  
+                                                            input(type='checkbox' class="peer") 
+                                                            div.checkbox-indicator(class="peer-checked:!bg-primary rounded-full !border-primary")  
+                                                                i(data-feather="check")
+                                                        p.text-title.font-semibold Cash On Delivery
+                                                    p.pl-6.text-content3.text-xs After your order is delivered, make a cash payment
+                                                i.fa-solid.fa-money-bill(class="text-2xl text-primary")
+
+                                        div.flex.justify-between.items-center
+                                                button.btn.bg-secondary.text-xs.text-white.flex.items-center.gap-2(class="!w-fit !m-0" type='button') 
+                                                    i(data-feather="arrow-left" class="w-4 h-4 stroke-white")
+                                                    |  Return to Shopping Cart
+                                                button.btn.btn-primary.text-xs.text-white.flex.items-center.gap-2(class="!w-fit !m-0" type='button') 
+                                                    |  Proceed to Next
+                                                    i(data-feather="truck" class="w-4 h-4 stroke-white")
+                                   
+
+
+
                         div.col-span-4(class="lg:col-span-12 w-full")
                             div.flex.flex-col.gap-2 
                                 div.flex.flex-col.gap-1  

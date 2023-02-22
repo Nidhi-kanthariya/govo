@@ -2096,9 +2096,9 @@
       <div class="modal-main">
         <input class="peer" id="productmodal" name="productmodal" type="checkbox">
         <label class="modal-overlay peer-checked:block" for="productmodal"></label>
-        <div class="modal modal-center peer-checked:opacity-100 peer-checked:visible !duration-75">
-          <div class="modal-body product-modal">
-            <div class="grid grid-cols-12 gap-card-gap md:max-w-[80%] sm:max-w-[100%] mx-auto">
+        <div class="modal modal-center peer-checked:opacity-100 peer-checked:visible !duration-75 w-11/12 max-w-5xl">
+          <div class="modal-body product-modal md:modal-content-scroll md:custom-scroll md:!h-[90vh] !px-4">
+            <div class="grid grid-cols-12 gap-card-gap">
               <div class="col-span-6 md:col-span-12">            
                 <div class="product-slider">
                   <div class="swiper productImgNav">
@@ -2123,9 +2123,11 @@
                   </div>
                 </div>
               </div>
-              <div class="col-span-6 md:col-span-12 md:mt-5"> 
-                <div class="flex justify-between">
-                  <h3 class="leading-none font-semibold 3xl:flex 3xl:justify-between 3xl:items-center lg:text-xl text-primary">Casual Men's t-shirt</h3>
+              <div class="col-span-6 md:col-span-12"> 
+                <div class="flex justify-between gap-2">
+                  <div class="flex items-center gap-2">
+                    <h3 class="leading-none font-semibold 3xl:flex 3xl:justify-between 3xl:items-center text-primary ">Casual Men's t-shirt</h3><i class="fa-solid fa-share w-4 h-4 text-content"></i>
+                  </div>
                   <div class="flex gap-2 items-center"> 
                     <label for="productmodal"> <i class="w-4 h-4 stroke-dark cursor-pointer" data-feather="x"></i></label>
                   </div>
@@ -2138,32 +2140,37 @@
                   <div class="flex items-center gap-0"><i class="w-4 h-4 fill-warning stroke-transparent" data-feather="star"></i><i class="w-4 h-4 fill-warning stroke-transparent" data-feather="star"></i><i class="w-4 h-4 fill-warning stroke-transparent" data-feather="star"></i><i class="w-4 h-4 fill-warning stroke-transparent" data-feather="star"></i><i class="w-4 h-4 fill-content stroke-transparent" data-feather="star"></i></div>
                   <label class="text-content3 text-xs font-semibold" for="4above">1059 ratings</label>
                 </div>
-                <p class="text-content3 text-sm mt-1">This Men's Oversize T-Shirt is ideal for daily wear or for college because it is incredibly cool and cosy.</p>
-                <div class="divider w-full my-4 before:!bg-border-light after:!bg-border-light"></div>
-                <div class="flex items-center gap-3">
-                  <label class="text-title text-sm font-medium min-w-[80px]" for="color">Color</label>
-                  <ul class="flex flex-wrap gap-2 items-center" id="color">
-                    <li class="w-6 h-6 bg-light rounded-full cursor-pointer"></li>
-                    <li class="w-6 h-6 bg-black rounded-full cursor-pointer"></li>
-                    <li class="w-6 h-6 bg-warning rounded-full cursor-pointer"></li>
-                    <li class="w-6 h-6 bg-danger rounded-full cursor-pointer"></li>
-                    <li class="w-6 h-6 bg-info rounded-full cursor-pointer"></li>
-                  </ul>
+                <p class="text-content3 text-sm mt-1 line-clamp-2">This Men's Oversize T-Shirt is ideal for daily wear or for college because it is incredibly cool and cosy.</p>
+                <div class="divider w-full my-4 before:!bg-border-light after:!bg-border-light 2lg:my-3"></div>
+                <div class="grid grid-cols-12 gap-card-gap items-center"> 
+                  <div class="col-span-6 2lg:col-span-7 2sm:col-span-12">
+                    <div class="flex items-center gap-3">
+                      <label class="text-title text-sm font-medium" for="color">Color</label>
+                      <ul class="flex flex-wrap gap-1 items-center" id="color">
+                        <li class="w-5 h-5 bg-light rounded-full cursor-pointer"></li>
+                        <li class="w-5 h-5 bg-black rounded-full cursor-pointer"></li>
+                        <li class="w-5 h-5 bg-warning rounded-full cursor-pointer"></li>
+                        <li class="w-5 h-5 bg-danger rounded-full cursor-pointer"></li>
+                        <li class="w-5 h-5 bg-info rounded-full cursor-pointer"></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-span-6 2lg:col-span-5 2sm:col-span-12">
+                    <div class="flex items-center gap-3">
+                      <label class="text-title text-sm font-medium" for="qty">Qty   </label>
+                      <select class="form-select block w-full px-3 text-xs font-normal text-content3 bg-white bg-clip-padding bg-no-repeat border border-border-light rounded-5 transition ease-in-out m-0 py-1 min-w-[50px] 2sm:w-[100px]" id="qty" aria-label="Default select example">
+                        <option selected="">1</option>
+                        <option value="1">2</option>
+                        <option value="2">3</option>
+                        <option value="3">4</option>
+                        <option value="3">5</option>
+                      </select>
+                    </div>
+                  </div>
                 </div>
-                <div class="divider w-full my-4 before:!bg-border-light after:!bg-border-light"></div>
+                <div class="divider w-full my-4 before:!bg-border-light after:!bg-border-light 2lg:my-3"></div>
                 <div class="flex items-center gap-3">
-                  <label class="text-title text-sm font-medium min-w-[80px]" for="qty">Quantity   </label>
-                  <select class="form-select block w-full px-3 text-xs font-normal text-content3 bg-white bg-clip-padding bg-no-repeat border border-border-light rounded-5 transition ease-in-out m-0 min-w-[150px] py-[9px] w-max" id="qty" aria-label="Default select example">
-                    <option selected="">1</option>
-                    <option value="1">2</option>
-                    <option value="2">3</option>
-                    <option value="3">4</option>
-                    <option value="3">5</option>
-                  </select>
-                </div>
-                <div class="divider w-full my-4 before:!bg-border-light after:!bg-border-light"></div>
-                <div class="flex items-center gap-3">
-                  <label class="text-title text-sm font-medium min-w-[80px]" for="size">Sizes   </label>
+                  <label class="text-title text-sm font-medium" for="size">Sizes   </label>
                   <div class="flex items-center">
                     <button class="btn btn-md border border-border-light rounded-none text-title leading-none hover:bg-gray-extralight">S </button>
                     <button class="btn btn-md btn-active text-title leading-none border border-border-light bg-gray-extralight rounded-none hover:bg-gray-extralight">M</button>
@@ -2171,19 +2178,8 @@
                     <button class="btn btn-md border border-border-light rounded-none text-title leading-none hover:bg-gray-extralight">XL</button>
                   </div>
                 </div>
-                <div class="divider w-full my-4 before:!bg-border-light after:!bg-border-light"></div>
-                <div class="social flex gap-3 items-center"><a class="!text-linkedin" href="https://www.linkedin.com/login"><i class="fa-brands fa-linkedin-in w-5 h-5"></i></a><a class="!text-twitter" href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter w-5 h-5"></i></a><a class="!text-success" href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp w-5 h-5"></i></a><a class="!text-facebook" href="https://www.facebook.com/"><i class="fa-brands fa-facebook w-5 h-5"></i></a><a class="instagram" href="https://www.instagram.com/accounts/login/">
-                    <svg width="0" height="0">
-                      <radialgradient id="rg" r="150%" cx="30%" cy="107%">
-                        <stop stop-color="#fdf497" offset="0"></stop>
-                        <stop stop-color="#fdf497" offset="0.05"></stop>
-                        <stop stop-color="#fd5949" offset="0.45"></stop>
-                        <stop stop-color="#d6249f" offset="0.6"></stop>
-                        <stop stop-color="#285AEB" offset="0.9"></stop>
-                      </radialgradient>
-                    </svg><i class="fa-brands fa-instagram w-5 h-5"></i></a></div>
-                <div class="divider w-full my-4 before:!bg-border-light after:!bg-border-light"></div>
-                <div class="flex flex-wrap gap-2 items-center capitalize"> <a class="btn btn-primary text-white text-sm" href="cart.html">Add to cart         </a><a class="btn btn-secondary text-white text-sm" href="wishlist.html">Add to wishlist         </a><a class="btn btn-warning text-white text-sm" href="checkout.html">Buy it now         </a></div>
+                <div class="divider w-full my-4 before:!bg-border-light after:!bg-border-light 2lg:my-3"></div>
+                <div class="flex flex-wrap gap-2 items-center capitalize 2lg:gap-1"> <a class="btn btn-primary text-white text-sm lg:px-2 lg:text-xs" href="cart.html">Add to cart         </a><a class="btn btn-secondary text-white text-sm lg:px-2 lg:text-xs" href="wishlist.html">Add to wishlist         </a><a class="btn btn-warning text-white text-sm lg:px-2 lg:text-xs" href="checkout.html">Buy it now         </a></div>
               </div>
             </div>
           </div>

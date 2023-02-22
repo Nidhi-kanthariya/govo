@@ -2112,6 +2112,19 @@ input:focus {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+.modal-main .modal .modal-body.modal-content-scroll.custom-scroll {
+            /* &::-webkit-scrollbar-thumb {
+              @apply bg-gray-300  rounded-[0.625px] border border-gray-400  h-[0.3125rem];
+            } */
+          }
+.modal-main .modal .modal-body.modal-content-scroll.custom-scroll::-webkit-scrollbar {
+  height: 0.25rem;
+  width: 0.25rem;
+}
+.modal-main .modal .modal-body.modal-content-scroll.custom-scroll::-webkit-scrollbar-track {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
 .modal-main .modal .modal-body .modal-img {
           display: flex;
           justify-content: center;
@@ -2816,11 +2829,11 @@ code[class*="language-"],
   color: var(--title);
 }
 .tabs .tab.product-tab svg {
-  height: 1.125rem;
-  width: 1.125rem;
+  height: 1rem;
+  width: 1rem;
   border-radius: 9999px;
   background-color: rgba(var(--primary),1);
-  padding: 0.35rem;
+  padding: 0.5rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -3031,6 +3044,19 @@ code[class*="language-"],
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+.modal-main .modal .modal-body.modal-content-scroll.weekly-schedule .fc-scrollgrid {
+            /* &::-webkit-scrollbar-thumb {
+              @apply bg-gray-300  rounded-[0.625px] border border-gray-400  h-[0.3125rem];
+            } */
+          }
+.modal-main .modal .modal-body.modal-content-scroll.weekly-schedule .fc-scrollgrid::-webkit-scrollbar {
+  height: 0.25rem;
+  width: 0.25rem;
+}
+.modal-main .modal .modal-body.modal-content-scroll.weekly-schedule .fc-scrollgrid::-webkit-scrollbar-track {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 .weekly-schedule .fc-scrollgrid {
   min-width: 31.25rem;
@@ -4289,6 +4315,15 @@ code[class*="language-"],
 .product-modal .product-slider .swiper.productImg .swiper-wrapper .swiper-slide.swiper-slide-thumb-active {
   opacity: 1;
 }
+@media (max-width: 767px) {
+  .product-modal .product-slider .swiper.productImgNav .swiper-wrapper .swiper-slide img {
+    max-height: 21rem;
+    min-height: 15rem;
+    width: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+}
 .product-modal .social a {
   border-radius: 9999px;
   background-color: var(--gray-extralight);
@@ -5202,6 +5237,10 @@ code[class*="language-"],
 .m-2 {
   margin: 0.5rem;
 }
+.\!my-0 {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
 .-mx-\[60px\] {
   margin-left: -60px;
   margin-right: -60px;
@@ -5245,10 +5284,6 @@ code[class*="language-"],
 .my-\[10px\] {
   margin-top: 10px;
   margin-bottom: 10px;
-}
-.\!my-0 {
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
 }
 .\!mb-0 {
   margin-bottom: 0px !important;
@@ -5537,6 +5572,9 @@ code[class*="language-"],
 }
 .h-\[0\.40rem\] {
   height: 0.40rem;
+}
+.h-\[0\.60rem\] {
+  height: 0.60rem;
 }
 .h-\[0\.65rem\] {
   height: 0.65rem;
@@ -5916,6 +5954,9 @@ code[class*="language-"],
 }
 .w-\[0\.40rem\] {
   width: 0.40rem;
+}
+.w-\[0\.60rem\] {
+  width: 0.60rem;
 }
 .w-\[0\.65rem\] {
   width: 0.65rem;
@@ -7229,6 +7270,10 @@ code[class*="language-"],
   padding-left: 0.5rem !important;
   padding-right: 0.5rem !important;
 }
+.\!px-4 {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
 .\!px-body-space2 {
   padding-left: calc(0.9375rem + (6.5625 - 0.9375) * ((100vw - 20rem) / (120 - 20))) !important;
   padding-right: calc(0.9375rem + (6.5625 - 0.9375) * ((100vw - 20rem) / (120 - 20))) !important;
@@ -7497,6 +7542,9 @@ code[class*="language-"],
 }
 .pl-4 {
   padding-left: 1rem;
+}
+.pl-6 {
+  padding-left: 1.5rem;
 }
 .pl-8 {
   padding-left: 2rem;
@@ -7775,9 +7823,6 @@ code[class*="language-"],
 .\!text-secondary {
   color: rgba(var(--secondary),1) !important;
 }
-.\!text-success {
-  color: var(--success) !important;
-}
 .\!text-twitter {
   color: var(--twitter) !important;
 }
@@ -8015,6 +8060,10 @@ code[class*="language-"],
 [dir=rtl] .pl-4 {
   padding-left: unset;
   padding-right: 1rem;
+}
+[dir=rtl] .pl-6 {
+  padding-left: unset;
+  padding-right: 1.5rem;
 }
 [dir=rtl] .pl-8 {
   padding-left: unset;
@@ -9666,9 +9715,68 @@ code[class*="language-"],
 /*=====================
   Wow Animation CSS
   ==========================*/
+@media (max-width: 767px) {
+    .md\:custom-scroll::-webkit-scrollbar {
+    height: 0.25rem;
+    width: 0.25rem;
+  }
+    .md\:custom-scroll::-webkit-scrollbar-track {
+    --tw-bg-opacity: 1;
+    background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  }
+    .md\:custom-scroll::-webkit-scrollbar-thumb {
+    height: 0.3125rem;
+    border-radius: 0.625px;
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgb(156 163 175 / var(--tw-border-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+  }
+}
 @media (max-width: 1199px) {
               .product-wrapper-grid.list-view .product-box .card .card-body .xl\:relative img {
     width: 18.75rem;
+  }
+}
+@media (max-width: 767px) {
+
+        .modal-main .modal .md\:modal-content-scroll.modal-body {
+    left: 0px;
+    right: 0px;
+    height: 18.75rem;
+    width: auto;
+    overflow: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+          .modal-main .modal .md\:modal-content-scroll.modal-body.custom-scroll {
+            /* &::-webkit-scrollbar-thumb {
+              @apply bg-gray-300  rounded-[0.625px] border border-gray-400  h-[0.3125rem];
+            } */
+          }
+
+          .modal-main .modal .md\:custom-scroll.modal-body.modal-content-scroll {
+            /* &::-webkit-scrollbar-thumb {
+              @apply bg-gray-300  rounded-[0.625px] border border-gray-400  h-[0.3125rem];
+            } */
+          }
+            .modal-main .modal .md\:modal-content-scroll.modal-body.custom-scroll::-webkit-scrollbar {
+    height: 0.25rem;
+    width: 0.25rem;
+  }
+            .modal-main .modal .md\:custom-scroll.modal-body.modal-content-scroll::-webkit-scrollbar {
+    height: 0.25rem;
+    width: 0.25rem;
+  }
+            .modal-main .modal .md\:modal-content-scroll.modal-body.custom-scroll::-webkit-scrollbar-track {
+    --tw-bg-opacity: 1;
+    background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  }
+            .modal-main .modal .md\:custom-scroll.modal-body.modal-content-scroll::-webkit-scrollbar-track {
+    --tw-bg-opacity: 1;
+    background-color: rgb(229 231 235 / var(--tw-bg-opacity));
   }
 }
 @media (max-width: 675px) {
@@ -10210,6 +10318,9 @@ code[class*="language-"],
 }
 .focus\:border:focus {
   border-width: 1px;
+}
+.focus\:border-none:focus {
+  border-style: none;
 }
 .focus\:border-blue-500:focus {
   --tw-border-opacity: 1;
@@ -11440,6 +11551,10 @@ code[class*="language-"],
   .lg\:p-\[0\.75rem\] {
     padding: 0.75rem;
   }
+  .lg\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
   .lg\:px-\[10px\] {
     padding-left: 10px;
     padding-right: 10px;
@@ -11507,11 +11622,21 @@ code[class*="language-"],
   .\32lg\:col-span-4 {
     grid-column: span 4 / span 4;
   }
+  .\32lg\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
   .\32lg\:col-span-6 {
     grid-column: span 6 / span 6;
   }
+  .\32lg\:col-span-7 {
+    grid-column: span 7 / span 7;
+  }
   .\32lg\:col-span-8 {
     grid-column: span 8 / span 8;
+  }
+  .\32lg\:my-3 {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
   }
   .\32lg\:-mt-\[14px\] {
     margin-top: -14px;
@@ -11569,6 +11694,9 @@ code[class*="language-"],
   }
   .\32lg\:max-w-\[208px\] {
     max-width: 208px;
+  }
+  .\32lg\:gap-1 {
+    gap: 0.25rem;
   }
   .\32lg\:gap-\[14px\] {
     gap: 14px;
@@ -11693,6 +11821,9 @@ code[class*="language-"],
   }
   .md\:hidden {
     display: none;
+  }
+  .md\:\!h-\[90vh\] {
+    height: 90vh !important;
   }
   .md\:h-\[180px\] {
     height: 180px;
@@ -12363,6 +12494,9 @@ code[class*="language-"],
   .\32sm\:top-\[10\%\] {
     top: 10%;
   }
+  .\32sm\:col-span-12 {
+    grid-column: span 12 / span 12;
+  }
   .\32sm\:-mx-\[34px\] {
     margin-left: -34px;
     margin-right: -34px;
@@ -12420,6 +12554,9 @@ code[class*="language-"],
   }
   .\32sm\:w-\[100\%\] {
     width: 100%;
+  }
+  .\32sm\:w-\[100px\] {
+    width: 100px;
   }
   .\32sm\:w-\[16px\] {
     width: 16px;

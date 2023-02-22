@@ -15,6 +15,15 @@
             }
           }
         }
+        &.productImgNav {
+          .swiper-wrapper {
+            .swiper-slide {
+              img {
+                @apply md:w-full md:max-h-[21rem] md:min-h-[15rem] md:object-fill;
+              }
+            }
+          }
+        }
       }
     }
 
