@@ -2839,6 +2839,7 @@ code[class*="language-"],
 }
 .tabs .tab.product-tab.tab-active {
   background-color: var(--primary-extralight);
+  font-weight: 600;
   color: rgba(var(--primary),1);
 }
 /* START TOOLTIP STYLES */
@@ -4394,6 +4395,17 @@ code[class*="language-"],
   letter-spacing: 0.025rem;
   color: var(--content);
 }
+.checkout-detail form a {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.checkout-detail table.equal-space tbody tr td {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.product-detail .product-slider .swiper.productImgNav .swiper-wrapper .swiper-slide img {
+              /* @apply h-[30.25rem] object-fill; */
+            }
 .mask img {
   width: 10rem;
 }
@@ -5886,6 +5898,9 @@ code[class*="language-"],
 .w-10 {
   width: 2.5rem;
 }
+.w-10\/12 {
+  width: 83.333333%;
+}
 .w-11 {
   width: 2.75rem;
 }
@@ -5927,6 +5942,9 @@ code[class*="language-"],
 }
 .w-52 {
   width: 13rem;
+}
+.w-56 {
+  width: 14rem;
 }
 .w-6 {
   width: 1.5rem;
@@ -6265,6 +6283,9 @@ code[class*="language-"],
 .min-w-\[155px\] {
   min-width: 155px;
 }
+.min-w-\[158px\] {
+  min-width: 158px;
+}
 .min-w-\[160px\] {
   min-width: 160px;
 }
@@ -6450,6 +6471,9 @@ code[class*="language-"],
 .max-w-max {
   max-width: -moz-max-content;
   max-width: max-content;
+}
+.max-w-md {
+  max-width: 28rem;
 }
 .max-w-sm {
   max-width: 24rem;
@@ -7570,6 +7594,9 @@ code[class*="language-"],
 .pr-2 {
   padding-right: 0.5rem;
 }
+.pr-4 {
+  padding-right: 1rem;
+}
 .pr-\[11px\] {
   padding-right: 11px;
 }
@@ -7807,6 +7834,9 @@ code[class*="language-"],
 }
 .\!text-content {
   color: var(--content) !important;
+}
+.\!text-dark {
+  color: var(--dark) !important;
 }
 .\!text-facebook {
   color: var(--facebook) !important;
@@ -8056,6 +8086,10 @@ code[class*="language-"],
 [dir=rtl] .pl-3 {
   padding-left: unset;
   padding-right: 0.75rem;
+}
+[dir=rtl] .pr-4 {
+  padding-left: 1rem;
+  padding-right: unset;
 }
 [dir=rtl] .pl-4 {
   padding-left: unset;
@@ -10319,8 +10353,8 @@ code[class*="language-"],
 .focus\:border:focus {
   border-width: 1px;
 }
-.focus\:border-none:focus {
-  border-style: none;
+.focus\:\!border-border-light:focus {
+  border-color: var(--border-light) !important;
 }
 .focus\:border-blue-500:focus {
   --tw-border-opacity: 1;
@@ -10542,6 +10576,23 @@ code[class*="language-"],
 }
 [dir="rtl"] .rtl\:flex {
   display: flex;
+}
+[dir="rtl"] .rtl\:border-l {
+  border-left-width: 1px;
+}
+[dir="rtl"] .rtl\:pl-4 {
+  padding-left: 1rem;
+}
+[dir="rtl"] .rtl\:pr-unset {
+  padding-right: unset;
+}
+[dir=rtl] [dir="rtl"] .rtl\:pl-4 {
+  padding-left: unset;
+  padding-right: 1rem;
+}
+[dir=rtl] [dir="rtl"] .rtl\:pr-unset {
+  padding-left: unset;
+  padding-right: unset;
 }
 .dark .dark\:bg-dark-dense {
   background-color: var(--dark-dense);
@@ -11542,6 +11593,9 @@ code[class*="language-"],
   .lg\:gap-4 {
     gap: 1rem;
   }
+  .lg\:border-none {
+    border-style: none;
+  }
   .lg\:p-3 {
     padding: 0.75rem;
   }
@@ -11575,6 +11629,9 @@ code[class*="language-"],
     padding-top: 5px;
     padding-bottom: 5px;
   }
+  .lg\:pr-0 {
+    padding-right: 0px;
+  }
   .lg\:text-2xs {
     font-size: 0.8125rem;
     line-height: 1.2;
@@ -11607,9 +11664,28 @@ code[class*="language-"],
   .lg\:leading-none {
     line-height: 1;
   }
+  [dir=rtl] .lg\:pr-0 {
+    padding-left: 0px;
+    padding-right: unset;
+  }
+  [dir=rtl] .lg\:pr-0.5 {
+    padding-left: 0.125rem;
+    padding-right: unset;
+  }
   .lg\:after\:h-\[17px\]::after {
     content: var(--tw-content);
     height: 17px;
+  }
+  [dir="rtl"] .rtl\:lg\:pl-0 {
+    padding-left: 0px;
+  }
+  [dir=rtl] [dir="rtl"] .rtl\:lg\:pl-0 {
+    padding-left: unset;
+    padding-right: 0px;
+  }
+  [dir=rtl] [dir="rtl"] .rtl\:lg\:pl-0.5 {
+    padding-left: unset;
+    padding-right: 0.125rem;
   }
 }
 @media (max-width: 875px) {
@@ -12005,6 +12081,9 @@ code[class*="language-"],
   .\32md\:col-span-5 {
     grid-column: span 5 / span 5;
   }
+  .\32md\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
   .\32md\:col-span-7 {
     grid-column: span 7 / span 7;
   }
@@ -12275,6 +12354,9 @@ code[class*="language-"],
   .sm\:min-h-\[38px\] {
     min-height: 38px;
   }
+  .sm\:\!w-full {
+    width: 100% !important;
+  }
   .sm\:w-52 {
     width: 13rem;
   }
@@ -12352,6 +12434,9 @@ code[class*="language-"],
   }
   .sm\:gap-2 {
     gap: 0.5rem;
+  }
+  .sm\:gap-3 {
+    gap: 0.75rem;
   }
   .sm\:gap-\[10px\] {
     gap: 10px;

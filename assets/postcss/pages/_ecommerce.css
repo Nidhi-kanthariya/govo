@@ -67,6 +67,33 @@
       textarea {
         @apply bg-transparent text-xs p-[11px] text-content border border-border-light;
       }
+      a {
+        @apply text-white;
+      }
+    }
+    table {
+      &.equal-space {
+        tbody {
+          tr {
+            td {
+              @apply py-4;
+            }
+          }
+        }
+      }
+    }
+  }
+  .product-detail {
+    .product-slider {
+      .swiper.productImgNav {
+        .swiper-wrapper {
+          .swiper-slide {
+            img {
+              /* @apply h-[30.25rem] object-fill; */
+            }
+          }
+        }
+      }
     }
   }
 }

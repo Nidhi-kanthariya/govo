@@ -1,0 +1,143 @@
+//- sidebar
+-var sidebar = true;
+
+//- feather
+-var feather= true;
+
+//- fontawesome
+-var fontAwesome=true;
+
+//- custom select
+-var customSelect = true;
+
+//- ecommerce
+-var ecommerce = true;
+
+//- swiper-slider
+-var swiper=true;
+
+//- customizer 
+-var customizer = true;
+
+//- Breadcrumbs
+-var pageTitle="Product";
+-var breadcrumb=['Ecommerce','Product'];
+
+//- all JSON  
+include ../../data/all-data
+
+//- all mixin   
+include ../../mixin/mixin
+
+doctype html
+html(lang='en')
+    include ../../layout/header-files
+    body(dir="ltr" class="unique-skin")
+        main.page-wrapper
+            div.page-body-wrapper(class="mb-10 2xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300")
+                include ../../layout/header/unique/header     
+                // Sidebar Start 
+                div.page-sidebar.sidebar-dark.unique-sidebar
+                    include ../../layout/sidebar/unique 
+                // Sidebar End 
+
+                // Page Body Start
+                div.page-body 
+                    div.grid.grid-cols-12.gap-4.card.product-detail.relative 
+                        div.col-span-4(class="lg:col-span-12 sticky top-0")
+                            div.product-slider
+                                div.swiper.productImgNav
+                                    div.swiper-wrapper
+                                        div.swiper-slide
+                                            img(src="../../assets/images/ecommerce/22.jpg" alt="product")
+                                        div.swiper-slide
+                                            img(src="../../assets/images/ecommerce/23.jpg" alt="product")
+                                        div.swiper-slide
+                                            img(src="../../assets/images/ecommerce/24.jpg" alt="product")
+                                        div.swiper-slide
+                                            img(src="../../assets/images/ecommerce/25.jpg" alt="product")
+                                        div.swiper-slide
+                                            img(src="../../assets/images/ecommerce/26.jpg" alt="product")
+                                    div.swiper-button-next(class="text-primary")
+                                    div.swiper-button-prev(class="text-primary")
+                                div.swiper.productImg( class="mt-4 md:mt-3")
+                                    div.swiper-wrapper
+                                        div.swiper-slide
+                                            img(src="../../assets/images/ecommerce/22.jpg" alt="product")
+                                        div.swiper-slide
+                                            img(src="../../assets/images/ecommerce/23.jpg" alt="product")
+                                        div.swiper-slide
+                                            img(src="../../assets/images/ecommerce/24.jpg" alt="product")
+                                        div.swiper-slide
+                                            img(src="../../assets/images/ecommerce/25.jpg" alt="product")
+                                        div.swiper-slide
+                                            img(src="../../assets/images/ecommerce/26.jpg" alt="product")
+                        div.col-span-8(class="lg:col-span-12 w-full")
+                            div 
+                                h3.leading-none(class="font-semibold 3xl:flex 3xl:justify-between 3xl:items-center text-title mb-2") Women's Latest Bags Collections
+                                span.text-content3.text-xs.leading-none #15704                  
+                                p.text-content3.text-xs.leading-none Currently in stock    
+                                h4(class="font-semibold text-title lg:text-lg my-2") $500 
+                                    del(class="text-danger") $350 
+                                div.flex.items-center.gap-2
+                                    div.flex.items-center.gap-0
+                                        i(data-feather="star" class="w-4 h-4 fill-warning stroke-transparent")
+                                        i(data-feather="star" class="w-4 h-4 fill-warning stroke-transparent")
+                                        i(data-feather="star" class="w-4 h-4 fill-warning stroke-transparent")
+                                        i(data-feather="star" class="w-4 h-4 fill-warning stroke-transparent")
+                                        i(data-feather="star" class="w-4 h-4 fill-content stroke-transparent")
+                                    label(for="4above").text-content3.text-xs.font-semibold 1059 ratings
+                                p.text-content3.text-sm.mt-1.line-clamp-2 This Men's Oversize T-Shirt is ideal for daily wear or for college because it is incredibly cool and cosy.
+                                div.divider.w-full.my-4(class="before:!bg-border-light after:!bg-border-light 2lg:my-3")
+                                div.grid.grid-cols-12.gap-card-gap.items-center 
+                                    div.col-span-6(class="2lg:col-span-5 2sm:col-span-12")
+                                        div.flex.items-center.gap-3
+                                            label.text-title.text-sm.font-medium(for="size") Sizes   
+                                            ul.flex.items-center.gap-2
+                                                li.border.border-border-light.rounded-full.text-title.leading-none.w-8.h-8.flex.items-center.justify-center(class="hover:bg-gray-extralight") S 
+                                                li.btn-active.text-title.leading-none.w-8.h-8.flex.items-center.justify-center.border.border-border-light.bg-gray-extralight.rounded-full(class="hover:bg-gray-extralight") M
+                                                li.border.border-border-light.rounded-full.text-title.leading-none.w-8.h-8.flex.items-center.justify-center(class="hover:bg-gray-extralight") L
+                                                li.border.border-border-light.rounded-full.text-title.leading-none.w-8.h-8.flex.items-center.justify-center(class="hover:bg-gray-extralight") XL
+                                    div.col-span-6(class="2lg:col-span-7 2sm:col-span-12")
+                                        div.flex.items-center.gap-3
+                                            label.text-title.text-sm.font-medium(for="color") Color
+                                            ul(class="flex flex-wrap gap-2 items-center" id="color")
+                                                li(class="w-6 h-6 bg-light rounded-full cursor-pointer")
+                                                li(class="w-6 h-6 bg-black rounded-full cursor-pointer")
+                                                li(class="w-6 h-6 bg-warning rounded-full cursor-pointer")
+                                                li(class="w-6 h-6 bg-danger rounded-full cursor-pointer")
+                                                li(class="w-6 h-6 bg-info rounded-full cursor-pointer")
+                                        //- div.flex.items-center.gap-3
+                                        //-     label.text-title.text-sm.font-medium(for="qty") Qty   
+                                        //-     select.form-select.block.w-full.px-3.text-xs.font-normal.text-content3.bg-white.bg-clip-padding.bg-no-repeat.border.border-border-light.rounded-5.transition.ease-in-out.m-0(class='py-1 min-w-[50px] 2sm:w-[100px]' id="qty" aria-label='Default select example')
+                                        //-         option(selected='') 1
+                                        //-         option(value='1') 2
+                                        //-         option(value='2') 3
+                                        //-         option(value='3') 4
+                                        //-         option(value='3') 5
+                                
+                                //- div.divider.w-full.my-4(class="before:!bg-border-light after:!bg-border-light 2lg:my-3")
+                                //- div.flex.items-center.gap-3
+                                //-     label.text-title.text-sm.font-medium(for="size") Sizes   
+                                //-     ul.flex.items-center.gap-4
+                                //-         li.border.border-border-light.rounded-full.text-title.leading-none.w-10.h-10.flex.items-center.justify-center(class="hover:bg-gray-extralight") S 
+                                //-         li.btn-active.text-title.leading-none.w-10.h-10.flex.items-center.justify-center.border.border-border-light.bg-gray-extralight.rounded-full(class="hover:bg-gray-extralight") M
+                                //-         li.border.border-border-light.rounded-full.text-title.leading-none.w-10.h-10.flex.items-center.justify-center(class="hover:bg-gray-extralight") L
+                                //-         li.border.border-border-light.rounded-full.text-title.leading-none.w-10.h-10.flex.items-center.justify-center(class="hover:bg-gray-extralight") XL
+                                div.divider.w-full.my-4(class="before:!bg-border-light after:!bg-border-light 2lg:my-3")
+                                div.flex.flex-wrap.gap-2.items-center.capitalize(class="2lg:gap-1") 
+                                    a(href="cart.html").btn.btn-primary.text-white.text-sm(class="lg:px-2 lg:text-xs") Add to cart         
+                                    a(href="wishlist.html").btn.btn-secondary.text-white.text-sm(class="lg:px-2 lg:text-xs") Add to wishlist         
+                                    a(href="checkout.html").btn.btn-warning.text-white.text-sm(class="lg:px-2 lg:text-xs") Buy it now   
+                                 
+
+                    // Page Body End  
+                    +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
+            include ../../components/customizer 
+    include ../../layout/footer-files
+
+
+
+    
+
+                  

@@ -35,7 +35,7 @@
                     <use href="../../assets/svg/_sprite.svg#Category"> </use>
                   </svg>
                 </button>
-                <h1 class="flex items-center gap-1 text-lg font-extrabold leading-none sm:hidden 4xl:text-base">Checkout</h1>
+                <h1 class="flex items-center gap-1 text-lg font-extrabold leading-none sm:hidden 4xl:text-base">Product</h1>
               </div>
               <div class="right-header flex items-center flex-1 sm:gap-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] gap-[calc(20px_+_(30_-_20)_*_((100vw_-_320px)_/_(1920_-_320)))] xl:gap-[calc(20px_+_(45_-_20)_*_((100vw_-_320px)_/_(1920_-_320)))]  justify-end">
                 <div class="search-box-wrapper transition-all duration-300 max-w-[40%] xl:scale-0 xl:opacity-0 xl:invisible xl:px-body-space xl:max-w-full w-full xl:z-[5] flex-1 xl:absolute xl:left-0">
@@ -841,7 +841,7 @@
                         <li class="px-2"> <span>/</span></li>
                         <li class="breadcrumb-items capitalize">Ecommerce</li>
                         <li class="px-2"> <span>/</span></li>
-                        <li class="breadcrumb-items capitalize active">Checkout</li>
+                        <li class="breadcrumb-items capitalize active">Product</li>
                       </ol>
                     </nav>
                   </div>
@@ -1119,334 +1119,71 @@
         <!-- Sidebar End -->
         <!-- Page Body Start-->
         <div class="page-body"> 
-          <div class="grid grid-cols-12 gap-4 card checkout-detail"> 
-            <div class="col-span-8 lg:col-span-12 w-full tabs flex flex-col lg:border-none lg:pr-0 rtl:lg:pl-0 border-r border-border-light pr-4 rtl:border-l rtl:pl-4 rtl:pr-unset">
-              <div class="mb-1 tab-links flex items-center 2md:flex-col">
-                <button class="tab product-tab w-full items-center text-sm tab-active tab-link" data-tabFilter="1"> <i class="fa-solid fa-user"></i>Billing  </button>
-                <button class="tab product-tab w-full items-center text-sm tab-link" data-tabFilter="2"><i class="fa-solid fa-truck-fast"></i>Shipping</button>
-                <button class="tab product-tab w-full items-center text-sm tab-link" data-tabFilter="3"><i class="fa-solid fa-money-bill"></i>Payment  </button>
-                <button class="tab product-tab w-full items-center text-sm tab-link" data-tabFilter="4"><i class="fa-solid fa-circle-check"></i>Finish  </button>
-              </div>
-              <div class="tabs-content">
-                <div class="tab-pan fade active show first:rounded-tl-none rounded-5 border-none !px-1 !pb-0" data-tabContent="1">
-                  <div>
-                    <h5 class="text-title font-semibold mb-2">Billing Information </h5>
-                    <p class="text-content3 mb-5"> Fill up the following information </p>
-                    <form class="theme-form flex flex-col gap-4 m-0" action="index.html">
-                      <div class="grid grid-cols-12 gap-5">
-                        <div class="col-span-6 sm:col-span-12">
-                          <label for="firstName">First Name</label>
-                          <input type="text" id="firstName" placeholder="Enter your first name" required>
-                        </div>
-                        <div class="col-span-6 sm:col-span-12">
-                          <label for="lastName">Last Name</label>
-                          <input type="text" id="lastName" placeholder="Enter your last name" required>
-                        </div>
-                      </div>
-                      <div class="grid grid-cols-12 gap-5">
-                        <div class="col-span-6 sm:col-span-12">
-                          <label for="number">Contact No</label>
-                          <input class="rounded" type="Number" id="number" placeholder="Enter your contact no" maxlength="10" pattern="d{10}" required>
-                        </div>
-                        <div class="col-span-6 sm:col-span-12">
-                          <label for="email">Email</label>
-                          <input type="email" id="email" placeholder="Enter your email id" required>
-                        </div>
-                      </div>
-                      <div> 
-                        <label for="address">Address </label>
-                        <textarea class="p-[11px] focus:!border-border-light w-full border border-border-light rounded-5 text-xs text-content" placeholder="Enter your address.." row="3" id="address"></textarea>
-                      </div>
-                      <div class="grid grid-cols-12 gap-5">
-                        <div class="col-span-4 2md:col-span-6 sm:col-span-12">
-                          <label for="country">Country</label>
-                          <select class="form-select block w-full px-3 text-xs font-normal text-content3 bg-white bg-clip-padding bg-no-repeat border border-border-light rounded-5 transition ease-in-out m-0 min-w-[150px] py-[9px]" id="sortby" aria-label="Default select example">
-                            <option selected="">Select Country</option>
-                            <option value="1">India</option>
-                            <option value="2">South Korea</option>
-                            <option value="3">Canada</option>
-                            <option value="3">USA</option>
-                            <option value="3">UAE</option>
-                            <option value="3">UK</option>
-                          </select>
-                        </div>
-                        <div class="col-span-4 2md:col-span-6 sm:col-span-12">
-                          <label for="state">State</label>
-                          <input type="text" id="state" placeholder="Enter your state" required>
-                        </div>
-                        <div class="col-span-4 2md:col-span-12">
-                          <label for="postcode">Postcode</label>
-                          <input type="text" id="postcode" placeholder="Enter your postcode" required>
-                        </div>
-                      </div>
-                      <div class="flex items-center gap-2">
-                        <label class="checkbox checkbox-sm cursor-pointer !mb-0"> 
-                          <input class="peer" type="checkbox">
-                          <div class="checkbox-indicator peer-checked:!bg-primary !border-primary"> <i data-feather="check"></i></div>
-                        </label>
-                        <p class="!my-0">Remember me for next time</p>
-                      </div>
-                      <div> 
-                        <label for="otherNotes">Other Notes </label>
-                        <textarea class="p-[11px] focus:!border-border-light w-full border border-border-light rounded-5 text-xs text-content" placeholder="Enter your address.." row="3" id="otherNotes"></textarea>
-                      </div>
-                      <div class="flex justify-between items-center sm:flex-col sm:gap-3"><a class="btn bg-secondary text-xs text-white flex items-center gap-2 !w-fit sm:!w-full justify-center !m-0" href="cart.html" type="button"> <i class="w-4 h-4 stroke-white" data-feather="arrow-left"></i> Return to Shopping Cart</a><a class="btn btn-primary text-xs text-white flex items-center gap-2 !w-fit sm:!w-full justify-center !m-0" href="javascript:void(0)" type="button">
-                            Proceed to Next<i class="w-4 h-4 stroke-white" data-feather="truck"></i></a></div>
-                    </form>
+          <div class="grid grid-cols-12 gap-4 card product-detail relative"> 
+            <div class="col-span-4 lg:col-span-12 sticky top-0">
+              <div class="product-slider">
+                <div class="swiper productImgNav">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../../assets/images/ecommerce/22.jpg" alt="product"></div>
+                    <div class="swiper-slide"><img src="../../assets/images/ecommerce/23.jpg" alt="product"></div>
+                    <div class="swiper-slide"><img src="../../assets/images/ecommerce/24.jpg" alt="product"></div>
+                    <div class="swiper-slide"><img src="../../assets/images/ecommerce/25.jpg" alt="product"></div>
+                    <div class="swiper-slide"><img src="../../assets/images/ecommerce/26.jpg" alt="product"></div>
                   </div>
+                  <div class="swiper-button-next text-primary"></div>
+                  <div class="swiper-button-prev text-primary"></div>
                 </div>
-                <div class="tab-pan fade group relative first:rounded-tl-none rounded-5 border-none !px-1 !pb-0" data-tabContent="2">
-                  <div>
-                    <h5 class="text-title font-semibold mb-2">Shipping Information </h5>
-                    <p class="text-content3 mb-5">Fill up the following information to send you the order</p>
-                    <div class="flex justify-between gap-2 items-center mb-5"> 
-                      <h6 class="text-title font-medium">Saved Address</h6>
-                      <label class="btn bg-gray-light p-1" for="modal-edit"> <i class="w-4 h-4 stroke-content3" data-feather="plus"></i></label>
-                    </div>
-                    <div class="grid grid-cols-12 gap-card-gap mb-5"> 
-                      <div class="col-span-4 xl:col-span-6 2md:col-span-12">
-                        <div class="border border-border-light p-4"> 
-                          <div class="flex justify-between gap-2 items-center mb-4"> 
-                            <div class="flex items-center gap-2">
-                              <label class="checkbox checkbox-sm cursor-pointer"> 
-                                <input class="peer" type="checkbox" checked>
-                                <div class="checkbox-indicator peer-checked:!bg-primary rounded-full !border-primary"> <i data-feather="check"></i></div>
-                              </label>
-                              <p>Home </p>
-                            </div>
-                            <div class="flex items-center gap-2">
-                              <label for="modal-edit"> 
-                                <svg class="w-4 h-4 stroke-title cursor-pointer"> 
-                                  <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                                </svg>
-                              </label>
-                              <label for="modal-delete"> 
-                                <svg class="w-4 h-4 stroke-title cursor-pointer"> 
-                                  <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                                </svg>
-                              </label>
-                            </div>
-                          </div>
-                          <div class="flex flex-col gap-2"> 
-                            <h6 class="text-title font-bold">Filomena Green </h6>
-                            <p class="text-content3 text-xs"> <span class="font-semibold">Address: </span>	2211 Fruitville Rd, Sarasota, Florida, US 34237</p>
-                            <p class="text-content3 text-xs"> <span class="font-semibold">Contact: </span>	(941) 321-5643</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-span-4 xl:col-span-6 2md:col-span-12">
-                        <div class="border border-border-light p-4"> 
-                          <div class="flex justify-between gap-2 items-center mb-4"> 
-                            <div class="flex items-center gap-2">
-                              <label class="checkbox checkbox-sm cursor-pointer"> 
-                                <input class="peer" type="checkbox">
-                                <div class="checkbox-indicator peer-checked:!bg-primary rounded-full !border-primary"> <i data-feather="check"></i></div>
-                              </label>
-                              <p>Home</p>
-                            </div>
-                            <div class="flex items-center gap-2"> 
-                              <label for="modal-edit"> 
-                                <svg class="w-4 h-4 stroke-title cursor-pointer"> 
-                                  <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                                </svg>
-                              </label>
-                              <label for="modal-delete"> 
-                                <svg class="w-4 h-4 stroke-title cursor-pointer"> 
-                                  <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                                </svg>
-                              </label>
-                            </div>
-                          </div>
-                          <div class="flex flex-col gap-2"> 
-                            <h6 class="text-title font-bold">	Ms. Ila Runte DDS</h6>
-                            <p class="text-content3 text-xs"> <span class="font-semibold">Address: </span>	1531 E 23rd St S, Independence, Mississippi, US 64055</p>
-                            <p class="text-content3 text-xs"> <span class="font-semibold">Contact: </span>	(816) 252-4500                                        </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <h6 class="text-title font-medium mb-5">Shipping Method </h6>
-                    <div class="grid grid-cols-12 gap-card-gap mb-5"> 
-                      <div class="col-span-6 2md:col-span-12">
-                        <div class="border border-border-light p-4">
-                          <div class="flex items-center gap-2 mb-1">
-                            <label class="checkbox checkbox-sm cursor-pointer"> 
-                              <input class="peer" type="checkbox">
-                              <div class="checkbox-indicator peer-checked:!bg-primary rounded-full !border-primary"> <i data-feather="check"></i></div>
-                            </label>
-                            <p class="text-title font-semibold">Standard Delivery - Free </p>
-                          </div>
-                          <p class="pl-6 text-content3 text-xs">Estimated 5-7 days shipping</p>
-                        </div>
-                      </div>
-                      <div class="col-span-6 2md:col-span-12">
-                        <div class="border border-border-light p-4"> 
-                          <div class="flex items-center gap-2 mb-1">
-                            <label class="checkbox checkbox-sm cursor-pointer"> 
-                              <input class="peer" type="checkbox" checked>
-                              <div class="checkbox-indicator peer-checked:!bg-primary rounded-full !border-primary"> <i data-feather="check"></i></div>
-                            </label>
-                            <p class="text-title font-semibold">Express Delivery - $24 </p>
-                          </div>
-                          <p class="pl-6 text-content3 text-xs">Estimated 1-2 days shipping</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="flex justify-between items-center sm:flex-col sm:gap-3"><a class="btn bg-secondary text-xs text-white flex items-center gap-2 !w-fit sm:!w-full justify-center !m-0" href="cart.html" type="button"> <i class="w-4 h-4 stroke-white" data-feather="arrow-left"></i> Return to Shopping Cart</a><a class="btn btn-primary text-xs text-white flex items-center gap-2 !w-fit sm:!w-full justify-center !m-0" href="javascript:void(0)" type="button">
-                          Proceed to Next<i class="w-4 h-4 stroke-white" data-feather="truck"></i></a></div>
-                  </div>
-                </div>
-                <div class="tab-pan fade group relative first:rounded-tl-none rounded-5 border-none !px-1 !pb-0" data-tabContent="3">
-                  <div>
-                    <h5 class="text-title font-semibold mb-2">Payment Information </h5>
-                    <p class="text-content3 mb-5">Fill up the following information to send you the order</p>
-                    <div class="border border-border-light p-4 mb-5"> 
-                      <div class="flex gap-2 items-center justify-between">
-                        <div>
-                          <div class="flex items-center gap-2 mb-1">
-                            <label class="checkbox checkbox-sm cursor-pointer"> 
-                              <input class="peer" type="checkbox" checked>
-                              <div class="checkbox-indicator peer-checked:!bg-primary rounded-full !border-primary"> <i data-feather="check"></i></div>
-                            </label>
-                            <p class="text-title font-semibold">PayPal</p>
-                          </div>
-                          <p class="pl-6 text-content3 text-xs">You will be taken to the PayPal website to finish your transaction safely</p>
-                        </div><img class="h-[30px]" src="../../assets/images/ecommerce/paypal.png" alt="PayPal">
-                      </div>
-                    </div>
-                    <div class="border border-border-light p-4 mb-5"> 
-                      <div class="flex gap-2 items-center justify-between mb-5">
-                        <div>
-                          <div class="flex items-center gap-2 mb-1">
-                            <label class="checkbox checkbox-sm cursor-pointer"> 
-                              <input class="peer" type="checkbox">
-                              <div class="checkbox-indicator peer-checked:!bg-primary rounded-full !border-primary"> <i data-feather="check"></i></div>
-                            </label>
-                            <p class="text-title font-semibold">Credit Card</p>
-                          </div>
-                          <p class="pl-6 text-content3 text-xs">Transferring money securely through your bank account. Mastercard, Visa, Discover, and Stripe are all accepted</p>
-                        </div><img class="h-[30px]" src="../../assets/images/ecommerce/credit-card.png" alt="credit card">
-                      </div>
-                      <form class="theme-form flex flex-col gap-4 m-0" action="index.html">
-                        <div>
-                          <label for="cardholder">Card holder</label>
-                          <input type="text" id="cardholder" placeholder="Enter card holder name" required>
-                        </div>
-                        <div>
-                          <label for="cardholder">Card Number</label>
-                          <input type="number" id="cardholder" placeholder="Enter card number" required>
-                        </div>
-                        <div class="grid grid-cols-12 gap-5">
-                          <div class="col-span-6 sm:col-span-12">
-                            <label for="expirydate">Expiry Date</label>
-                            <input type="number" id="expirydate" placeholder="MM/YY" required>
-                          </div>
-                          <div class="col-span-6 sm:col-span-12">
-                            <label for="cvv">CVV</label>
-                            <input type="number" id="cvv" placeholder="Enter your last name" required>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                    <div class="border border-border-light p-4 mb-5"> 
-                      <div class="flex gap-2 items-center justify-between">
-                        <div>
-                          <div class="flex items-center gap-2 mb-1">
-                            <label class="checkbox checkbox-sm cursor-pointer"> 
-                              <input class="peer" type="checkbox">
-                              <div class="checkbox-indicator peer-checked:!bg-primary rounded-full !border-primary"> <i data-feather="check"></i></div>
-                            </label>
-                            <p class="text-title font-semibold">Cash On Delivery</p>
-                          </div>
-                          <p class="pl-6 text-content3 text-xs">After your order is delivered, make a cash payment</p>
-                        </div><img class="h-[30px]" src="../../assets/images/ecommerce/cash-on-delivery.png" alt="cash on delivery">
-                      </div>
-                    </div>
-                    <div class="flex justify-between items-center sm:flex-col sm:gap-3"><a class="btn bg-secondary text-xs text-white flex items-center gap-2 !w-fit sm:!w-full justify-center !m-0" href="cart.html" type="button"> <i class="w-4 h-4 stroke-white" data-feather="arrow-left"></i> Return to Shopping Cart</a><a class="btn btn-primary text-xs text-white flex items-center gap-2 !w-fit sm:!w-full justify-center !m-0" href="javascript:void(0)" type="button">
-                          Proceed to Next<i class="w-4 h-4 stroke-white" data-feather="truck"></i></a></div>
-                  </div>
-                </div>
-                <div class="tab-pan fade group relative first:rounded-tl-none rounded-5 border-none !px-1 !pb-0" data-tabContent="4">
-                  <div class="flex flex-col gap-2"><img class="mx-auto w-56" src="../../assets/images/ecommerce/pop-new-year.gif" alt="order confirmed">
-                    <h3 class="text-title text-lg font-bold text-center">Thank you! Your order is confirmed. </h3>
-                    <p class="text-content text-xs font-semibold text-center">An email with your order's specifics will be sent to you as order confirmation.</p>
-                    <p class="text-dark font-bold text-base text-center">Order ID: <a class="!text-dark underline text-base" href="javascript:void(0)">NV1430</a></p>
+                <div class="swiper productImg mt-4 md:mt-3">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../../assets/images/ecommerce/22.jpg" alt="product"></div>
+                    <div class="swiper-slide"><img src="../../assets/images/ecommerce/23.jpg" alt="product"></div>
+                    <div class="swiper-slide"><img src="../../assets/images/ecommerce/24.jpg" alt="product"></div>
+                    <div class="swiper-slide"><img src="../../assets/images/ecommerce/25.jpg" alt="product"></div>
+                    <div class="swiper-slide"><img src="../../assets/images/ecommerce/26.jpg" alt="product"></div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-span-4 lg:col-span-12 w-full">
-              <div class="flex flex-col gap-2"> 
-                <h5 class="text-title font-semibold mb-2">Current Cart</h5>
-                <div class="overflow-auto custom-scroll"> 
-                  <table class="table equal-space">
-                    <thead> 
-                      <tr> 
-                        <th>Product</th>
-                        <th>Product Detail</th>
-                        <th>Price</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><img class="w-16 h-14 rounded-5" src="../../assets/images/ecommerce/11.jpg" alt="11.jpg"></td>
-                        <td class="min-w-[158px]">
-                          <div>
-                            <h4 class="text-xs font-semibold text-title">Coffee Cup</h4><span class="block mt-1 font-semibold text-2xs text-content">$98 * 2</span>
-                          </div>
-                        </td>
-                        <td class="min-w-[.625rem]">$190</td>
-                      </tr>
-                      <tr>
-                        <td><img class="w-16 h-14 rounded-5" src="../../assets/images/ecommerce/13.jpg" alt="13.jpg"></td>
-                        <td class="min-w-[158px]">
-                          <div>
-                            <h4 class="text-xs font-semibold text-title">Facewash - For Good skincare</h4><span class="block mt-1 font-semibold text-2xs text-content">$75 * 2</span>
-                          </div>
-                        </td>
-                        <td class="min-w-[.625rem]">$150</td>
-                      </tr>
-                      <tr>
-                        <td><img class="w-16 h-14 rounded-5" src="../../assets/images/ecommerce/14.jpg" alt="14.jpg"></td>
-                        <td class="min-w-[158px]">
-                          <div>
-                            <h4 class="text-xs font-semibold text-title">Perfume - Great fragrance</h4><span class="block mt-1 font-semibold text-2xs text-content">$299</span>
-                          </div>
-                        </td>
-                        <td class="min-w-[.625rem]">$299</td>
-                      </tr>
-                      <tr>
-                        <td><img class="w-16 h-14 rounded-5" src="../../assets/images/ecommerce/16.jpg" alt="16.jpg"></td>
-                        <td class="min-w-[158px]">
-                          <div>
-                            <h4 class="text-xs font-semibold text-title">Women's Leather Bags</h4><span class="block mt-1 font-semibold text-2xs text-content">$212</span>
-                          </div>
-                        </td>
-                        <td class="min-w-[.625rem]">$212</td>
-                      </tr>
-                      <tr> 
-                        <td class="font-bold text-xs" colspan="2">Sub Total :</td>
-                        <td class="font-bold text-xs text-end">$851.00 </td>
-                      </tr>
-                      <tr> 
-                        <td class="text-xs" colspan="2">Discount :</td>
-                        <td class="text-content3 text-xs text-end">-$50.00</td>
-                      </tr>
-                      <tr> 
-                        <td class="text-xs" colspan="2">Shipping Charge :</td>
-                        <td class="text-content3 text-xs text-end">-$25.99  </td>
-                      </tr>
-                      <tr> 
-                        <td class="text-xs" colspan="2">Tax :</td>
-                        <td class="text-content3 text-xs text-end">-$12.59  </td>
-                      </tr>
-                      <tr> 
-                        <td class="font-bold text-xs" colspan="2">Total (USD) :</td>
-                        <td class="font-bold text-xs text-end">$787.6 </td>
-                      </tr>
-                    </tbody>
-                  </table>
+            <div class="col-span-8 lg:col-span-12 w-full">
+              <div> 
+                <h3 class="leading-none font-semibold 3xl:flex 3xl:justify-between 3xl:items-center text-title mb-2">Women's Latest Bags Collections</h3><span class="text-content3 text-xs leading-none">#15704                  </span>
+                <p class="text-content3 text-xs leading-none">Currently in stock    </p>
+                <h4 class="font-semibold text-title lg:text-lg my-2">$500 
+                  <del class="text-danger">$350 </del>
+                </h4>
+                <div class="flex items-center gap-2">
+                  <div class="flex items-center gap-0"><i class="w-4 h-4 fill-warning stroke-transparent" data-feather="star"></i><i class="w-4 h-4 fill-warning stroke-transparent" data-feather="star"></i><i class="w-4 h-4 fill-warning stroke-transparent" data-feather="star"></i><i class="w-4 h-4 fill-warning stroke-transparent" data-feather="star"></i><i class="w-4 h-4 fill-content stroke-transparent" data-feather="star"></i></div>
+                  <label class="text-content3 text-xs font-semibold" for="4above">1059 ratings</label>
                 </div>
+                <p class="text-content3 text-sm mt-1 line-clamp-2">This Men's Oversize T-Shirt is ideal for daily wear or for college because it is incredibly cool and cosy.</p>
+                <div class="divider w-full my-4 before:!bg-border-light after:!bg-border-light 2lg:my-3"></div>
+                <div class="grid grid-cols-12 gap-card-gap items-center"> 
+                  <div class="col-span-6 2lg:col-span-5 2sm:col-span-12">
+                    <div class="flex items-center gap-3">
+                      <label class="text-title text-sm font-medium" for="size">Sizes   </label>
+                      <ul class="flex items-center gap-2">
+                        <li class="border border-border-light rounded-full text-title leading-none w-8 h-8 flex items-center justify-center hover:bg-gray-extralight">S </li>
+                        <li class="btn-active text-title leading-none w-8 h-8 flex items-center justify-center border border-border-light bg-gray-extralight rounded-full hover:bg-gray-extralight">M</li>
+                        <li class="border border-border-light rounded-full text-title leading-none w-8 h-8 flex items-center justify-center hover:bg-gray-extralight">L</li>
+                        <li class="border border-border-light rounded-full text-title leading-none w-8 h-8 flex items-center justify-center hover:bg-gray-extralight">XL</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-span-6 2lg:col-span-7 2sm:col-span-12">
+                    <div class="flex items-center gap-3">
+                      <label class="text-title text-sm font-medium" for="color">Color</label>
+                      <ul class="flex flex-wrap gap-2 items-center" id="color">
+                        <li class="w-6 h-6 bg-light rounded-full cursor-pointer"></li>
+                        <li class="w-6 h-6 bg-black rounded-full cursor-pointer"></li>
+                        <li class="w-6 h-6 bg-warning rounded-full cursor-pointer"></li>
+                        <li class="w-6 h-6 bg-danger rounded-full cursor-pointer"></li>
+                        <li class="w-6 h-6 bg-info rounded-full cursor-pointer"></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="divider w-full my-4 before:!bg-border-light after:!bg-border-light 2lg:my-3"></div>
+                <div class="flex flex-wrap gap-2 items-center capitalize 2lg:gap-1"> <a class="btn btn-primary text-white text-sm lg:px-2 lg:text-xs" href="cart.html">Add to cart         </a><a class="btn btn-secondary text-white text-sm lg:px-2 lg:text-xs" href="wishlist.html">Add to wishlist         </a><a class="btn btn-warning text-white text-sm lg:px-2 lg:text-xs" href="checkout.html">Buy it now   </a></div>
               </div>
             </div>
           </div>
@@ -1530,59 +1267,6 @@
         <div class="flex items-center gap-2 p-[15px] border-t border-light dark:bg-primaryLight"> 
           <button class="btn btn-ghost flex-1 reset-customizer">Reset  </button>
           <button class="btn btn-primary text-white flex-1">Buy Now</button>
-        </div>
-      </div>
-      <div class="modal-main">
-        <input class="peer" id="modal-edit" name="modal-edit" type="checkbox">
-        <label class="modal-overlay peer-checked:block" for="modal-edit"></label>
-        <div class="modal modal-center peer-checked:opacity-100 peer-checked:visible w-10/12 max-w-md">
-          <div class="modal-header"> 
-            <h3 class="text-title font-semibold text-sm">Information </h3>
-            <label for="modal-edit"> <i class="w-4 h-4 stroke-content3" data-feather="x"></i></label>
-          </div>
-          <div class="modal-body checkout-detail">
-            <form class="theme-form flex flex-col gap-3 !m-0">
-              <div>
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Enter your name" required>
-              </div>
-              <div> 
-                <label for="address">Address </label>
-                <textarea class="p-[11px] focus:!border-border-light w-full border border-border-light rounded-5 text-xs text-content" placeholder="Enter your address.." row="3" id="address"></textarea>
-              </div>
-              <div> 
-                <label for="country">Address Type</label>
-                <select class="form-select block w-full px-3 text-xs font-normal text-content3 bg-white bg-clip-padding bg-no-repeat border border-border-light rounded-5 transition ease-in-out m-0 min-w-[150px] py-[9px]" id="sortby" aria-label="Default select example">
-                  <option selected="">Home </option>
-                  <option value="1">Office</option>
-                </select>
-              </div>
-              <div> 
-                <label for="number">Contact No</label>
-                <input class="rounded" type="Number" id="number" placeholder="Enter your contact no" maxlength="10" pattern="d{10}" required>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer flex justify-end gap-3">
-            <label class="inline-block btn bg-gray-light p-3 text-title" for="modal-edit">Close</label>
-            <label class="inline-block btn btn-primary p-3 text-white" for="modal-edit">Save  </label>
-          </div>
-        </div>
-      </div>
-      <div class="modal-main">
-        <input class="peer" id="modal-delete" name="modal-delete" type="checkbox">
-        <label class="modal-overlay peer-checked:block" for="modal-delete"></label>
-        <div class="modal modal-center peer-checked:opacity-100 peer-checked:visible w-10/12 max-w-md">
-          <div class="modal-body text-center">
-            <label class="flex justify-end" for="modal-delete"> <i class="w-4 h-4 stroke-content3" data-feather="x"></i></label>
-            <div class="modal-img"><img class="w-28" src="../../assets/images/ecommerce/delete.gif" alt="delete gif"></div>
-            <h3 class="text-lg font-bold mb-2">Are you sure?</h3>
-            <p class="mb-3">Delete this address only if you are certain you want to.</p>
-          </div>
-          <div class="modal-footer flex justify-end gap-3">
-            <label class="inline-block btn bg-gray-light p-3 text-title" for="modal-delete">Close</label>
-            <label class="inline-block btn btn-danger p-3 text-white" for="modal-delete">Yes, Sure!</label>
-          </div>
         </div>
       </div>
     </main>

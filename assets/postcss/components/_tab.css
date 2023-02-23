@@ -82,7 +82,7 @@
           @apply p-2 bg-primary rounded-full text-white w-4 h-4;
         }
         &.tab-active {
-          @apply bg-primary-extralight text-primary;
+          @apply bg-primary-extralight text-primary font-semibold;
         }
       }
     }
