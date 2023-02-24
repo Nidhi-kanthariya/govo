@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="../../assets/css/vendors/custom-select.css">
     <!-- fontAwesome CSS-->
     <link rel="stylesheet" href="../../assets/css/vendors/fontawesome/all.css">
+    <!-- filepond css-->
+    <link rel="stylesheet" href="../../assets/css/vendors/filepond/filepond.css">
+    <link rel="stylesheet" href="../../assets/css/vendors/filepond/filepond-plugin-image-preview.css">
     <!-- App css-->
     <link rel="stylesheet" href="../../assets/css/style.css">
   </head>
@@ -35,7 +38,7 @@
                     <use href="../../assets/svg/_sprite.svg#Category"> </use>
                   </svg>
                 </button>
-                <h1 class="flex items-center gap-1 text-lg font-extrabold leading-none sm:hidden 4xl:text-base">Product</h1>
+                <h1 class="flex items-center gap-1 text-lg font-extrabold leading-none sm:hidden 4xl:text-base">Add Product</h1>
               </div>
               <div class="right-header flex items-center flex-1 sm:gap-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] gap-[calc(20px_+_(30_-_20)_*_((100vw_-_320px)_/_(1920_-_320)))] xl:gap-[calc(20px_+_(45_-_20)_*_((100vw_-_320px)_/_(1920_-_320)))]  justify-end">
                 <div class="search-box-wrapper transition-all duration-300 max-w-[40%] xl:scale-0 xl:opacity-0 xl:invisible xl:px-body-space xl:max-w-full w-full xl:z-[5] flex-1 xl:absolute xl:left-0">
@@ -841,7 +844,7 @@
                         <li class="px-2"> <span>/</span></li>
                         <li class="breadcrumb-items capitalize">Ecommerce</li>
                         <li class="px-2"> <span>/</span></li>
-                        <li class="breadcrumb-items capitalize active">Product</li>
+                        <li class="breadcrumb-items capitalize active">Add Product</li>
                       </ol>
                     </nav>
                   </div>
@@ -1119,158 +1122,113 @@
         <!-- Sidebar End -->
         <!-- Page Body Start-->
         <div class="page-body"> 
-          <div class="grid grid-cols-12 card product-detail relative gap-card-gap"> 
-            <div class="col-span-4 xl:col-span-5 md:col-span-12">
-              <div class="product-slider sticky top-0">
-                <div class="swiper productImgNav">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="../../assets/images/ecommerce/22.jpg" alt="product"></div>
-                    <div class="swiper-slide"><img src="../../assets/images/ecommerce/23.jpg" alt="product"></div>
-                    <div class="swiper-slide"><img src="../../assets/images/ecommerce/24.jpg" alt="product"></div>
-                    <div class="swiper-slide"><img src="../../assets/images/ecommerce/25.jpg" alt="product"></div>
-                    <div class="swiper-slide"><img src="../../assets/images/ecommerce/26.jpg" alt="product"></div>
+          <div class="grid grid-cols-12 gap-4 add-product card">
+            <div class="col-span-8 lg:col-span-12 lg:border-none lg:pr-0 rtl:lg:pl-0 border-r border-border-light pr-4 rtl:border-l rtl:pl-4 rtl:pr-unset">
+              <div> 
+                <form class="theme-form flex flex-col gap-4 m-0" action="index.html">
+                  <div> 
+                    <label for="productName">Product Name</label>
+                    <input type="text" id="productName" value="Women's Latest Bags" required>
                   </div>
-                  <div class="swiper-button-next text-primary"></div>
-                  <div class="swiper-button-prev text-primary"></div>
-                </div>
-                <div class="swiper productImg mt-4 md:mt-3">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="../../assets/images/ecommerce/22.jpg" alt="product"></div>
-                    <div class="swiper-slide"><img src="../../assets/images/ecommerce/23.jpg" alt="product"></div>
-                    <div class="swiper-slide"><img src="../../assets/images/ecommerce/24.jpg" alt="product"></div>
-                    <div class="swiper-slide"><img src="../../assets/images/ecommerce/25.jpg" alt="product"></div>
-                    <div class="swiper-slide"><img src="../../assets/images/ecommerce/26.jpg" alt="product"></div>
+                  <div> 
+                    <label for="description">Product Description </label>
+                    <textarea class="p-[11px] focus:!border-border-light w-full border border-border-light rounded-5 text-xs text-content" placeholder="A bag that holds your entire universe!"></textarea>
                   </div>
-                </div>
+                  <div class="grid grid-cols-12 gap-5">
+                    <div class="col-span-6 2md:col-span-6 sm:col-span-12">
+                      <label for="category">Category</label>
+                      <select class="form-select block w-full px-3 text-xs font-normal text-content3 bg-white bg-clip-padding bg-no-repeat border border-border-light rounded-5 transition ease-in-out m-0 min-w-[150px] py-[9px]" id="category" aria-label="Default select example">
+                        <option selected="">Applications</option>
+                        <option value="1">Grocery</option>
+                        <option value="2">Fashion</option>
+                        <option value="3">Electronics</option>
+                        <option value="4">Furniture</option>
+                        <option value="5">Watch</option>
+                        <option value="6">Kitchen</option>
+                        <option value="7">Beauty & Personal Care</option>
+                      </select>
+                    </div>
+                    <div class="col-span-6 2md:col-span-6 sm:col-span-12">
+                      <label for="brand">Brand</label>
+                      <select class="form-select block w-full px-3 text-xs font-normal text-content3 bg-white bg-clip-padding bg-no-repeat border border-border-light rounded-5 transition ease-in-out m-0 min-w-[150px] py-[9px]" id="brand" aria-label="Default select example">
+                        <option selected="">Dior</option>
+                        <option value="1">Gucci</option>
+                        <option value="2">louis vuitton</option>
+                        <option value="3">Campus </option>
+                        <option value="4">Adidas</option>
+                        <option value="5">Puma</option>
+                        <option value="6">Nike</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-12 gap-5">
+                    <div class="col-span-4 2md:col-span-6 sm:col-span-12">
+                      <label for="gender">Gender</label>
+                      <select class="form-select block w-full px-3 text-xs font-normal text-content3 bg-white bg-clip-padding bg-no-repeat border border-border-light rounded-5 transition ease-in-out m-0 min-w-[150px] py-[9px]" id="gender" aria-label="Default select example">
+                        <option selected="">Female</option>
+                        <option value="1">Male </option>
+                        <option value="2">All</option>
+                      </select>
+                    </div>
+                    <div class="col-span-4 2md:col-span-6 sm:col-span-12">
+                      <label for="qty">Quantity</label>
+                      <input type="text" id="qty" placeholder="Enter product quantity.." required>
+                    </div>
+                    <div class="col-span-4 2md:col-span-6 sm:col-span-12">
+                      <label for="price">Price </label>
+                      <div class="flex items-center"><span class="flex items-center justify-center bg-gray-light text-title border border-border-light rounded-5 rounded-br-none rounded-tr-none font-medium text-xs !leading-snug py-[12px] px-[11px]">$</span>
+                        <input class="p-[11px] w-full rounded-5 border border-border-light text-xs text-content !rounded-bl-none !rounded-tl-none" type="text" id="price" placeholder="300">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-12 gap-5"> 
+                    <div class="col-span-6 2md:col-span-6 sm:col-span-12">
+                      <label for="tax">Tax</label>
+                      <select class="form-select block w-full px-3 text-xs font-normal text-content3 bg-white bg-clip-padding bg-no-repeat border border-border-light rounded-5 transition ease-in-out m-0 min-w-[150px] py-[9px]" id="tax" aria-label="Default select example">
+                        <option selected="">Choose Tax</option>
+                        <option value="1">2% </option>
+                        <option value="2">3%</option>
+                      </select>
+                    </div>
+                    <div class="col-span-6 2md:col-span-6 sm:col-span-12">
+                      <label for="discount">Discount</label>
+                      <div class="flex items-center"><span class="flex items-center justify-center bg-gray-light text-title border border-border-light rounded-5 rounded-br-none rounded-tr-none font-medium text-xs !leading-snug py-[12px] px-[11px]">%</span>
+                        <input class="p-[11px] w-full rounded-5 border border-border-light text-xs text-content !rounded-bl-none !rounded-tl-none" type="text" id="discount" placeholder="10">
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <label for="productImage">Product Images</label>
+                    <input class="show-preview" type="file" id="productImage">
+                  </div>
+                </form>
               </div>
             </div>
-            <div class="col-span-8 xl:col-span-7 md:col-span-12">
-              <div> 
-                <div class="flex items-center gap-2 justify-between">
-                  <h3 class="leading-none font-semibold 3xl:flex 3xl:justify-between 3xl:items-center text-title mb-3">Women's Latest Bags Collections</h3><a class="btn bg-gray-light p-2" href="add-product.html"><i class="w-4 h-4 stroke-title" data-feather="plus"></i></a>
-                </div>
-                <div class="flex items-center gap-3 mb-3 flex-wrap"><span class="text-content3 text-xs leading-none border-r border-border-light pr-3">#15704 </span>
-                  <p class="text-title text-xs leading-none font-semibold border-r border-border-light pr-3"> <span class="text-content3 text-xs leading-none">Seller: </span>Backy Fashion              </p>
-                  <p class="text-title text-xs leading-none font-semibold"><span class="text-content3 text-xs leading-none">Available: </span>In Stock</p>
-                </div>
-                <div class="flex items-center gap-2 mb-4">
-                  <div class="flex items-center gap-0"><i class="w-4 h-4 fill-warning stroke-transparent" data-feather="star"></i><i class="w-4 h-4 fill-warning stroke-transparent" data-feather="star"></i><i class="w-4 h-4 fill-warning stroke-transparent" data-feather="star"></i><i class="w-4 h-4 fill-warning stroke-transparent" data-feather="star"></i><i class="w-4 h-4 fill-content stroke-transparent" data-feather="star"></i></div>
-                  <label class="text-content3 text-xs font-semibold" for="4above">1059 ratings</label>
-                </div>
-                <h4 class="font-semibold text-title lg:text-lg my-2">$500 
-                  <del class="text-danger">$350 </del>
-                </h4>
-                <div class="divider w-full my-4 before:!bg-border-light after:!bg-border-light 2lg:my-3"></div>
-                <div class="grid grid-cols-12 gap-card-gap items-center"> 
-                  <div class="col-span-6 lg:col-span-12 md:col-span-6 sm:col-span-12">
-                    <div class="flex items-center gap-3">
-                      <label class="text-title text-sm font-medium" for="size">Sizes   </label>
-                      <ul class="flex items-center gap-2">
-                        <li class="border border-border-light rounded-full text-title leading-none w-8 h-8 flex items-center justify-center hover:bg-gray-extralight">S </li>
-                        <li class="btn-active text-title leading-none w-8 h-8 flex items-center justify-center border border-border-light bg-gray-extralight rounded-full hover:bg-gray-extralight">M</li>
-                        <li class="border border-border-light rounded-full text-title leading-none w-8 h-8 flex items-center justify-center hover:bg-gray-extralight">L</li>
-                        <li class="border border-border-light rounded-full text-title leading-none w-8 h-8 flex items-center justify-center hover:bg-gray-extralight">XL</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-span-6 lg:col-span-12 md:col-span-6 sm:col-span-12">
-                    <div class="flex items-center gap-3">
-                      <label class="text-title text-sm font-medium" for="color">Color</label>
-                      <ul class="flex flex-wrap gap-2 items-center" id="color">
-                        <li class="w-6 h-6 bg-light rounded-full cursor-pointer"></li>
-                        <li class="w-6 h-6 bg-black rounded-full cursor-pointer"></li>
-                        <li class="w-6 h-6 bg-warning rounded-full cursor-pointer"></li>
-                        <li class="w-6 h-6 bg-danger rounded-full cursor-pointer"></li>
-                        <li class="w-6 h-6 bg-info rounded-full cursor-pointer"></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="divider w-full my-4 before:!bg-border-light after:!bg-border-light 2lg:my-3">     </div>
-                <div>
-                  <h6 class="text-title font-medium">Description: </h6>
-                  <p class="text-content3 text-sm mt-2 line-clamp-2">A bag that holds your entire universe! A tote bag is a shoulder bag with parallel handles that might have side panels or not. The exterior is beige and has one main compartment, three total pockets, and a zippered clasp. I use excellent, cruelty-free materials.</p>
-                </div>
-                <div class="divider w-full my-4 before:!bg-border-light after:!bg-border-light 2lg:my-3"></div>
+            <div class="col-span-4">
+              <form class="theme-form flex flex-col gap-4 m-0" action="index.html">
                 <div> 
-                  <h6 class="text-title font-medium">Product Description:</h6>
-                  <div class="w-full tabs flex-col mt-2">
-                    <div class="tab-links flex items-center mb-[1px]">
-                      <button class="tab tabs-bordered danger-border text-xs tab-active tab-link" data-tabFilter="1">Specification </button>
-                      <button class="tab tabs-bordered danger-border text-xs tab-link" data-tabFilter="2">Detail</button>
-                      <button class="tab tabs-bordered danger-border text-xs tab-link" data-tabFilter="3">Review</button>
-                    </div>
-                    <div class="tabs-content">
-                      <div class="tab-pan fade active show first:rounded-tl-none rounded-5 border border-border-light !p-4" data-tabContent="1">
-                        <div class="overflow-auto custom-scroll"> 
-                          <table class="table equal-space">
-                            <tbody>
-                              <tr> 
-                                <th class="font-bold text-title text-xs min-w-[137px] w-[200px]">Category</th>
-                                <td class="text-xs !text-start">Bags</td>
-                              </tr>
-                              <tr> 
-                                <th class="font-bold text-title text-xs min-w-[137px] w-[200px]">Brand</th>
-                                <td class="text-xs !text-start">Backy Fashion</td>
-                              </tr>
-                              <tr> 
-                                <th class="font-bold text-title text-xs min-w-[137px] w-[200px]">Color</th>
-                                <td class="text-xs !text-start">Black</td>
-                              </tr>
-                              <tr> 
-                                <th class="font-bold text-title text-xs min-w-[137px] w-[200px]">Material</th>
-                                <td class="text-xs !text-start">Leather</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
-                      <div class="tab-pan fade group relative first:rounded-tl-none rounded-5 border border-border-light !p-4" data-tabContent="2">
-                        <p class="text-base text-title font-semibold mb-3">Backy Fashion Women's Leather Bags</p>
-                        <p class="text-content3 text-sm">A bag that holds your entire universe! A tote bag is a shoulder bag with parallel handles that might have side panels or not. The exterior is beige and has one main compartment, three total pockets, and a zippered clasp. I use excellent, cruelty-free materials.</p>
-                        <ul class="list-disc mt-3 pl-5"> 
-                          <li class="text-xs font-medium text-content3">Main zip compartment</li>
-                          <li class="text-xs font-medium text-content3">3 total number of pocket</li>
-                          <li class="text-xs font-medium text-content3">Made in India </li>
-                          <li class="text-xs font-medium text-content3">Leading fashion brand since 30 years</li>
-                          <li class="text-xs font-medium text-content3">6 months warranty</li>
-                        </ul>
-                      </div>
-                      <div class="tab-pan fade group relative first:rounded-tl-none rounded-5 border border-border-light !p-4" data-tabContent="3">
-                        <div class="flex flex-col gap-3">
-                          <div class="border border-border-light border-dashed flex flex-col gap-3 p-3">
-                            <div class="flex items-center justify-between gap-2">
-                              <div class="flex items-center gap-0"><i class="w-4 h-4 fill-warning stroke-transparent" data-feather="star"></i><i class="w-4 h-4 fill-warning stroke-transparent" data-feather="star"></i><i class="w-4 h-4 fill-warning stroke-transparent" data-feather="star"></i><i class="w-4 h-4 fill-warning stroke-transparent" data-feather="star"></i><i class="w-4 h-4 fill-content stroke-transparent" data-feather="star"></i></div><span class="text-xs text-content3 font-medium">06 Feb, 2023 </span>
-                            </div>
-                            <div class="text-content3 text-sm flex flex-col gap-2">
-                              <p>Excellent for the price, the product quality and appearance are fantastic.</p>
-                            </div>
-                            <div class="flex items-center gap-2"><img class="w-10 h-10 rounded-full" src="../../assets/images/avatar/2.jpg" alt="">
-                              <div>
-                                <h4 class="text-xs font-semibold text-title">Kitten</h4><span class="block mt-1 font-semibold text-2xs text-content">California, US</span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="border border-border-light border-dashed flex flex-col gap-3 p-3">
-                            <div class="flex items-center justify-between gap-2">
-                              <div class="flex items-center gap-0"><i class="w-4 h-4 fill-warning stroke-transparent" data-feather="star"></i><i class="w-4 h-4 fill-warning stroke-transparent" data-feather="star"></i><i class="w-4 h-4 fill-warning stroke-transparent" data-feather="star"></i><i class="w-4 h-4 fill-warning stroke-transparent" data-feather="star"></i><i class="w-4 h-4 fill-warning stroke-transparent" data-feather="star"></i></div><span class="text-xs text-content3 font-medium">24 Jan, 2023 </span>
-                            </div>
-                            <div class="text-content3 text-sm flex flex-col gap-2">
-                              <p>Good product, I am so happy.</p>
-                            </div>
-                            <div class="flex items-center gap-2"><img class="w-10 h-10 rounded-full" src="../../assets/images/avatar/4.jpg" alt="">
-                              <div>
-                                <h4 class="text-xs font-semibold text-title">Mary John</h4><span class="block mt-1 font-semibold text-2xs text-content">British Columbia, Canada</span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  <label for="productTag">Product Tags</label>
+                  <div class="border border-border-light  rounded-5 w-full p-[11px] text-xs font-semibold text-title flex gap-2"><span class="font-semibold bg-primary flex items-center gap-2 px-2 py-1 rounded-3xl !w-fit !text-3xs !text-white !leading-none">  leather<i class="w-3 h-3 stroke-white alert-del cursor-pointer" data-feather="x"></i></span>
+                    <input class="!border-none !p-0" type="text" id="productTag" required>
                   </div>
                 </div>
-                <div class="flex flex-wrap gap-2 items-center capitalize 2lg:gap-1 mt-3"> <a class="btn btn-primary text-white text-sm lg:px-2 lg:text-xs" href="cart.html">Add to cart         </a><a class="btn btn-secondary text-white text-sm lg:px-2 lg:text-xs" href="wishlist.html">Add to wishlist         </a><a class="btn btn-warning text-white text-sm lg:px-2 lg:text-xs" href="checkout.html">Buy it now   </a></div>
-              </div>
+                <div> 
+                  <label for="productShortDescription">Product Short Description </label>
+                  <textarea class="p-[11px] focus:!border-border-light w-full border border-border-light rounded-5 text-xs text-content" placeholder="Enter Short description for product.." row="3" id="productShortDescription"></textarea>
+                </div>
+                <div> 
+                  <label for="manufactureName">Manufacturer Name</label>
+                  <input type="text" id="manufactureName" placeholder="Enter manufacture name.." required>
+                </div>
+                <div> 
+                  <label for="manufacturerBrand">Manufacturer Brand </label>
+                  <input type="text" id="manufacturerBrand" placeholder="Enter manufacture brand.." required>
+                </div>
+                <div> 
+                  <label for="description">Additional </label>
+                  <textarea class="p-[11px] focus:!border-border-light w-full border border-border-light rounded-5 text-xs text-content" placeholder="Enter product description.." row="3" id="description"></textarea>
+                </div>
+              </form>
             </div>
           </div>
           <!-- Page Body End  -->
@@ -1371,6 +1329,12 @@
   <script src="../../assets/js/ecommerce-app/ecommerce-app-page.js"></script>
   <!-- fontAwesome js-->
   <script src="../../assets/js/fontawesome/all.min.js"></script>
+  <!-- filepond js-->
+  <script src="../../assets/js/filepond/filepond-plugin-image-preview.js"> </script>
+  <script src="../../assets/js/filepond/filepond-plugin-file-rename.js"> </script>
+  <script src="../../assets/js/filepond/filepond-plugin-image-transform.js"> </script>
+  <script src="../../assets/js/filepond/filepond.js"></script>
+  <script src="../../assets/js/filepond/filepond-custom.js"> </script>
   <!-- customizer js-->
   <script src="../../assets/js/customizer.js"> </script>
   <!-- Custom script   -->

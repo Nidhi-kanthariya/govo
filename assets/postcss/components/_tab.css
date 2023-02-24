@@ -34,6 +34,9 @@
           &.warning-border {
             @apply border-warning text-warning;
           }
+          &.danger-border {
+            @apply border-danger text-danger;
+          }
         }
 
         &.tabs-bordered-bg {

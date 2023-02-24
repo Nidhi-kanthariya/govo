@@ -1,3 +1,4 @@
+
 // Custom filepond js
 
 // Get a reference to the file input element
@@ -11,15 +12,15 @@ inputElement.forEach((item) => {
     const pond = FilePond.create(item);
   }
 
-//   if (item.classList.contains("show-preview")) {
-//     FilePond.registerPlugin(FilePondPluginImagePreview);
-//     const pond = FilePond.create(item);
-//   }
+  if (item.classList.contains("show-preview")) {
+    FilePond.registerPlugin(FilePondPluginImagePreview);
+    const pond = FilePond.create(item);
+  }
 
-//   if (item.classList.contains("transform-preview")) {
-//     FilePond.registerPlugin(FilePondPluginImageTransform);
-//     const pond = FilePond.create(item);
-//   }
+  if (item.classList.contains("transform-preview")) {
+    FilePond.registerPlugin(FilePondPluginImageTransform);
+    const pond = FilePond.create(item);
+  }
 
   FilePond.create({
     fileMetadataObject: {
@@ -30,8 +31,8 @@ inputElement.forEach((item) => {
             left: 0,
             right: 0,
             bottom: 0,
-            height: "30px",
-            backgroundColor: "rgba(51, 191, 191,0.08)",
+            height: "60px",
+            backgroundColor: "rgba(0,0,0,.5)",
           },
         ],
         [

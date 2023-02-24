@@ -58,7 +58,8 @@
       }
     }
   }
-  .checkout-detail {
+  .checkout-detail,
+  .add-product {
     form {
       label {
         @apply mb-2 text-content3 font-semibold text-xs inline-block;
@@ -89,7 +90,38 @@
         .swiper-wrapper {
           .swiper-slide {
             img {
-              /* @apply h-[30.25rem] object-fill; */
+              @apply w-full;
+            }
+          }
+        }
+      }
+    }
+    .tabs {
+      .tab {
+        &.tabs-bordered {
+          &.tab-active {
+            @apply border-b-[.0625rem] font-medium;
+          }
+        }
+      }
+    }
+    table {
+      &.equal-space {
+        tr {
+          th,
+          td {
+            @apply p-4;
+          }
+          &:last-child {
+            th,
+            td {
+              @apply pb-0;
+            }
+          }
+          &:first-child {
+            th,
+            td {
+              @apply pt-0;
             }
           }
         }
