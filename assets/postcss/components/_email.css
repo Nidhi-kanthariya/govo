@@ -102,6 +102,11 @@
       }
       .filepond--file {
         @apply bg-gray-light;
+        .filepond--image-preview-wrapper {
+          .filepond--image-preview {
+            @apply bg-border-light;
+          }
+        }
       }
 
       *:not(text) {
@@ -113,6 +118,7 @@
             @apply text-title p-[.4375rem];
             .filepond--file-action-button {
               &.filepond--action-remove-item {
+                @apply bg-transparent;
                 &:hover,
                 &:focus {
                   @apply shadow-none;

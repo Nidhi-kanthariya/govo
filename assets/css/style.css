@@ -1640,6 +1640,9 @@ input:focus {
 .show-preview.filepond--root .filepond--file {
   background-color: var(--gray-light);
 }
+.show-preview.filepond--root .filepond--file .filepond--image-preview-wrapper .filepond--image-preview {
+  background-color: var(--border-light);
+}
 .show-preview.filepond--root *:not(text) {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1647,6 +1650,9 @@ input:focus {
 .show-preview.filepond--root .filepond--list .filepond--item .filepond--file {
   padding: .4375rem;
   color: var(--title);
+}
+.show-preview.filepond--root .filepond--list .filepond--item .filepond--file .filepond--file-action-button.filepond--action-remove-item {
+  background-color: transparent;
 }
 .show-preview.filepond--root .filepond--list .filepond--item .filepond--file .filepond--file-action-button.filepond--action-remove-item:hover,
                 .show-preview.filepond--root .filepond--list .filepond--item .filepond--file .filepond--file-action-button.filepond--action-remove-item:focus {
@@ -7731,6 +7737,9 @@ code[class*="language-"],
 .pt-2 {
   padding-top: 0.5rem;
 }
+.pt-3 {
+  padding-top: 0.75rem;
+}
 .pt-4 {
   padding-top: 1rem;
 }
@@ -7923,11 +7932,11 @@ code[class*="language-"],
 .italic {
   font-style: italic;
 }
+.\!leading-\[18px\] {
+  line-height: 18px !important;
+}
 .\!leading-none {
   line-height: 1 !important;
-}
-.\!leading-snug {
-  line-height: 1.375 !important;
 }
 .leading-5 {
   line-height: 1.25rem;
@@ -10332,8 +10341,17 @@ code[class*="language-"],
 .first\:rounded-tl-none:first-child {
   border-top-left-radius: 0px;
 }
+.first\:border-b:first-child {
+  border-bottom-width: 1px;
+}
+.first\:border-dashed:first-child {
+  border-style: dashed;
+}
 .first\:border-none:first-child {
   border-style: none;
+}
+.first\:border-border-light:first-child {
+  border-color: var(--border-light);
 }
 .first\:pl-0:first-child {
   padding-left: 0px;
@@ -10391,6 +10409,16 @@ code[class*="language-"],
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.hover\:scale-95:hover {
+  --tw-scale-x: .95;
+  --tw-scale-y: .95;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.hover\:scale-100:hover {
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .hover\:rounded-br-\[25px\]:hover {
@@ -10553,6 +10581,11 @@ code[class*="language-"],
 .group:hover .group-hover\:scale-125 {
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.group:hover .group-hover\:scale-100 {
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .group:hover .group-hover\:stroke-primary {
@@ -10894,6 +10927,9 @@ code[class*="language-"],
   }
   .\34xl\:top-\[25\%\] {
     top: 25%;
+  }
+  .\34xl\:col-span-3 {
+    grid-column: span 3 / span 3;
   }
   .\34xl\:col-span-4 {
     grid-column: span 4 / span 4;
@@ -11588,6 +11624,9 @@ code[class*="language-"],
   .lg\:col-span-12 {
     grid-column: span 12 / span 12;
   }
+  .lg\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
   .lg\:col-span-5 {
     grid-column: span 5 / span 5;
   }
@@ -11731,6 +11770,12 @@ code[class*="language-"],
   }
   .lg\:gap-4 {
     gap: 1rem;
+  }
+  .lg\:border-b {
+    border-bottom-width: 1px;
+  }
+  .lg\:border-r-0 {
+    border-right-width: 0px;
   }
   .lg\:border-none {
     border-style: none;

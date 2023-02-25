@@ -316,3 +316,14 @@ todoList?.forEach((el) => {
       x.parentElement.classList.add('hidden');
     })
   );
+
+  /*=====================
+  13. Wishlist Remove js
+  ==========================*/
+  const wishlistProduct = document.querySelectorAll('.wishlist-box');
+  wishlistProduct?.forEach((el) => {
+    const deleteButton = el.querySelector('.delete-button');
+    deleteButton.addEventListener('click', function () {
+      this.closest('.col-span-3').style.display = 'none';
+    });
+  });
