@@ -33,7 +33,7 @@
                     <use href="../../assets/svg/_sprite.svg#Category"> </use>
                   </svg>
                 </button>
-                <h1 class="flex items-center gap-1 text-lg font-extrabold leading-none sm:hidden 4xl:text-base">Cart</h1>
+                <h1 class="flex items-center gap-1 text-lg font-extrabold leading-none sm:hidden 4xl:text-base">Invoice Preview</h1>
               </div>
               <div class="right-header flex items-center flex-1 sm:gap-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] gap-[calc(20px_+_(30_-_20)_*_((100vw_-_320px)_/_(1920_-_320)))] xl:gap-[calc(20px_+_(45_-_20)_*_((100vw_-_320px)_/_(1920_-_320)))]  justify-end">
                 <div class="search-box-wrapper transition-all duration-300 max-w-[40%] xl:scale-0 xl:opacity-0 xl:invisible xl:px-body-space xl:max-w-full w-full xl:z-[5] flex-1 xl:absolute xl:left-0">
@@ -839,7 +839,7 @@
                         <li class="px-2"> <span>/</span></li>
                         <li class="breadcrumb-items capitalize">Ecommerce</li>
                         <li class="px-2"> <span>/</span></li>
-                        <li class="breadcrumb-items capitalize active">Cart</li>
+                        <li class="breadcrumb-items capitalize active">Invoice Preview</li>
                       </ol>
                     </nav>
                   </div>
@@ -1118,458 +1118,155 @@
         <!-- Page Body Start-->
         <div class="page-body">
           <div class="grid grid-cols-12 gap-card-gap">
-            <div class="col-span-9 xl:col-span-8 lg:col-span-12">
-              <div class="card"> 
-                <div class="overflow-auto custom-scroll">  
-                  <table class="table equal-space table-action shopping-bag cart-main">
-                    <thead> 
-                      <tr> 
-                        <th>Item Name</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        <th>Total</th>
-                        <th>Action</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="hover:bg-gray-light cart-item">
-                        <td class="min-w-[155px]">
-                          <div class="flex items-center gap-2"><img class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full" src="../../assets/images/product/1.jpg" alt="Samsung TV">
-                            <div>
-                              <h4 class="text-xs font-semibold text-title">Samsung TV</h4><span class="text-[0.813rem] font-medium text-content">#GS-4567</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td class="min-w-[155px]">
-                          <div class="flex gap-1 items-center"> <span class="text-lg font-bold text-title">$251</span>
-                            <del class="font-bold text-2xs text-content ">$599</del>
-                          </div><span class="text-[0.813rem] font-medium text-secondary">22%OFF</span>
-                        </td>
-                        <td class="min-w-[100px]"> 
-                          <div class="plus-minus flex items-center text-center bg-primary-light border border-primary rounded-5"><i class="sub cursor-pointer w-5 h-5 bg-primary border-r border-primary stroke-white" data-feather="minus"></i>
-                            <input class="text-center bg-transparent text-title" type="number" value="2" min="1" max="10"/><i class="add cursor-pointer w-5 h-5 bg-primary border-l border-primary stroke-white" data-feather="plus"></i>
-                          </div>
-                        </td>
-                        <td class="min-w-[100px] 2md:min-w-[65px]"> 
-                          <h4 class="text-xs font-semibold text-title">$502</h4>
-                        </td>
-                        <td class="min-w-[100px] 2md:min-w-max">
-                          <div class="flex gap-3 items-center justify-end block 2md:hidden"> 
-                            <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                              <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                            </svg>
-                            <svg class="hover:stroke-primary remove-cart w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                              <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                            </svg><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i>
-                          </div>
-                          <div class="dropdown dropdown-bottom"><i class="hidden w-5 h-5 cursor-pointer stroke-title 2md:block" data-feather="more-vertical"></i>
-                            <div class="hidden text-left dropdown-menu 2md:block">
-                              <ul class="flex flex-col justify-start gap-3">
-                                <li class="cursor-pointer">
-                                  <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                                    <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                                  </svg>
-                                </li>
-                                <li class="cursor-pointer">   
-                                  <svg class="hover:stroke-primary remove-cart w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                                    <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                                  </svg>
-                                </li>
-                                <li class="cursor-pointer"><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr class="hover:bg-gray-light cart-item">
-                        <td class="min-w-[155px]">
-                          <div class="flex items-center gap-2"><img class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full" src="../../assets/images/product/2.jpg" alt="Spring Bed">
-                            <div>
-                              <h4 class="text-xs font-semibold text-title">Spring Bed</h4><span class="text-[0.813rem] font-medium text-content">#GS-6567</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td class="min-w-[155px]">
-                          <div class="flex gap-1 items-center"> <span class="text-lg font-bold text-title">$433</span>
-                            <del class="font-bold text-2xs text-content ">$789</del>
-                          </div><span class="text-[0.813rem] font-medium text-secondary">45%OFF</span>
-                        </td>
-                        <td class="min-w-[100px]"> 
-                          <div class="plus-minus flex items-center text-center bg-primary-light border border-primary rounded-5"><i class="sub cursor-pointer w-5 h-5 bg-primary border-r border-primary stroke-white" data-feather="minus"></i>
-                            <input class="text-center bg-transparent text-title" type="number" value="3" min="1" max="10"/><i class="add cursor-pointer w-5 h-5 bg-primary border-l border-primary stroke-white" data-feather="plus"></i>
-                          </div>
-                        </td>
-                        <td class="min-w-[100px] 2md:min-w-[65px]"> 
-                          <h4 class="text-xs font-semibold text-title">$1301</h4>
-                        </td>
-                        <td class="min-w-[100px] 2md:min-w-max">
-                          <div class="flex gap-3 items-center justify-end block 2md:hidden"> 
-                            <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                              <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                            </svg>
-                            <svg class="hover:stroke-primary remove-cart w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                              <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                            </svg><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i>
-                          </div>
-                          <div class="dropdown dropdown-bottom"><i class="hidden w-5 h-5 cursor-pointer stroke-title 2md:block" data-feather="more-vertical"></i>
-                            <div class="hidden text-left dropdown-menu 2md:block">
-                              <ul class="flex flex-col justify-start gap-3">
-                                <li class="cursor-pointer">
-                                  <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                                    <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                                  </svg>
-                                </li>
-                                <li class="cursor-pointer">   
-                                  <svg class="hover:stroke-primary remove-cart w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                                    <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                                  </svg>
-                                </li>
-                                <li class="cursor-pointer"><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr class="hover:bg-gray-light cart-item">
-                        <td class="min-w-[155px]">
-                          <div class="flex items-center gap-2"><img class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full" src="../../assets/images/product/3.jpg" alt="Long Dress">
-                            <div>
-                              <h4 class="text-xs font-semibold text-title">Long Dress</h4><span class="text-[0.813rem] font-medium text-content">#GS-9211</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td class="min-w-[155px]">
-                          <div class="flex gap-1 items-center"> <span class="text-lg font-bold text-title">$659</span>
-                            <del class="font-bold text-2xs text-content ">$999</del>
-                          </div><span class="text-[0.813rem] font-medium text-secondary">34%OFF</span>
-                        </td>
-                        <td class="min-w-[100px]"> 
-                          <div class="plus-minus flex items-center text-center bg-primary-light border border-primary rounded-5"><i class="sub cursor-pointer w-5 h-5 bg-primary border-r border-primary stroke-white" data-feather="minus"></i>
-                            <input class="text-center bg-transparent text-title" type="number" value="7" min="1" max="10"/><i class="add cursor-pointer w-5 h-5 bg-primary border-l border-primary stroke-white" data-feather="plus"></i>
-                          </div>
-                        </td>
-                        <td class="min-w-[100px] 2md:min-w-[65px]"> 
-                          <h4 class="text-xs font-semibold text-title">$4615</h4>
-                        </td>
-                        <td class="min-w-[100px] 2md:min-w-max">
-                          <div class="flex gap-3 items-center justify-end block 2md:hidden"> 
-                            <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                              <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                            </svg>
-                            <svg class="hover:stroke-primary remove-cart w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                              <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                            </svg><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i>
-                          </div>
-                          <div class="dropdown dropdown-bottom"><i class="hidden w-5 h-5 cursor-pointer stroke-title 2md:block" data-feather="more-vertical"></i>
-                            <div class="hidden text-left dropdown-menu 2md:block">
-                              <ul class="flex flex-col justify-start gap-3">
-                                <li class="cursor-pointer">
-                                  <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                                    <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                                  </svg>
-                                </li>
-                                <li class="cursor-pointer">   
-                                  <svg class="hover:stroke-primary remove-cart w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                                    <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                                  </svg>
-                                </li>
-                                <li class="cursor-pointer"><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr class="hover:bg-gray-light cart-item">
-                        <td class="min-w-[155px]">
-                          <div class="flex items-center gap-2"><img class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full" src="../../assets/images/product/4.jpg" alt="Phillip Lightbulb">
-                            <div>
-                              <h4 class="text-xs font-semibold text-title">Phillip Lightbulb</h4><span class="text-[0.813rem] font-medium text-content">#GS-5214</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td class="min-w-[155px]">
-                          <div class="flex gap-1 items-center"> <span class="text-lg font-bold text-title">$251</span>
-                            <del class="font-bold text-2xs text-content ">$699</del>
-                          </div><span class="text-[0.813rem] font-medium text-secondary">64%OFF</span>
-                        </td>
-                        <td class="min-w-[100px]"> 
-                          <div class="plus-minus flex items-center text-center bg-primary-light border border-primary rounded-5"><i class="sub cursor-pointer w-5 h-5 bg-primary border-r border-primary stroke-white" data-feather="minus"></i>
-                            <input class="text-center bg-transparent text-title" type="number" value="4" min="1" max="10"/><i class="add cursor-pointer w-5 h-5 bg-primary border-l border-primary stroke-white" data-feather="plus"></i>
-                          </div>
-                        </td>
-                        <td class="min-w-[100px] 2md:min-w-[65px]"> 
-                          <h4 class="text-xs font-semibold text-title">$1006</h4>
-                        </td>
-                        <td class="min-w-[100px] 2md:min-w-max">
-                          <div class="flex gap-3 items-center justify-end block 2md:hidden"> 
-                            <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                              <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                            </svg>
-                            <svg class="hover:stroke-primary remove-cart w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                              <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                            </svg><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i>
-                          </div>
-                          <div class="dropdown dropdown-bottom"><i class="hidden w-5 h-5 cursor-pointer stroke-title 2md:block" data-feather="more-vertical"></i>
-                            <div class="hidden text-left dropdown-menu 2md:block">
-                              <ul class="flex flex-col justify-start gap-3">
-                                <li class="cursor-pointer">
-                                  <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                                    <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                                  </svg>
-                                </li>
-                                <li class="cursor-pointer">   
-                                  <svg class="hover:stroke-primary remove-cart w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                                    <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                                  </svg>
-                                </li>
-                                <li class="cursor-pointer"><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr class="hover:bg-gray-light cart-item">
-                        <td class="min-w-[155px]">
-                          <div class="flex items-center gap-2"><img class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full" src="../../assets/images/product/5.jpg" alt="Ladies Handbags">
-                            <div>
-                              <h4 class="text-xs font-semibold text-title">Ladies Handbags</h4><span class="text-[0.813rem] font-medium text-content">#GS-65411</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td class="min-w-[155px]">
-                          <div class="flex gap-1 items-center"> <span class="text-lg font-bold text-title">$254</span>
-                            <del class="font-bold text-2xs text-content ">$499</del>
-                          </div><span class="text-[0.813rem] font-medium text-secondary">49%OFF</span>
-                        </td>
-                        <td class="min-w-[100px]"> 
-                          <div class="plus-minus flex items-center text-center bg-primary-light border border-primary rounded-5"><i class="sub cursor-pointer w-5 h-5 bg-primary border-r border-primary stroke-white" data-feather="minus"></i>
-                            <input class="text-center bg-transparent text-title" type="number" value="6" min="1" max="10"/><i class="add cursor-pointer w-5 h-5 bg-primary border-l border-primary stroke-white" data-feather="plus"></i>
-                          </div>
-                        </td>
-                        <td class="min-w-[100px] 2md:min-w-[65px]"> 
-                          <h4 class="text-xs font-semibold text-title">$1526</h4>
-                        </td>
-                        <td class="min-w-[100px] 2md:min-w-max">
-                          <div class="flex gap-3 items-center justify-end block 2md:hidden"> 
-                            <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                              <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                            </svg>
-                            <svg class="hover:stroke-primary remove-cart w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                              <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                            </svg><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i>
-                          </div>
-                          <div class="dropdown dropdown-bottom"><i class="hidden w-5 h-5 cursor-pointer stroke-title 2md:block" data-feather="more-vertical"></i>
-                            <div class="hidden text-left dropdown-menu 2md:block">
-                              <ul class="flex flex-col justify-start gap-3">
-                                <li class="cursor-pointer">
-                                  <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                                    <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                                  </svg>
-                                </li>
-                                <li class="cursor-pointer">   
-                                  <svg class="hover:stroke-primary remove-cart w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                                    <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                                  </svg>
-                                </li>
-                                <li class="cursor-pointer"><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr class="hover:bg-gray-light cart-item">
-                        <td class="min-w-[155px]">
-                          <div class="flex items-center gap-2"><img class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full" src="../../assets/images/product/6.png" alt="Latest Cosmetics">
-                            <div>
-                              <h4 class="text-xs font-semibold text-title">Latest Cosmetics</h4><span class="text-[0.813rem] font-medium text-content">#GS-34611</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td class="min-w-[155px]">
-                          <div class="flex gap-1 items-center"> <span class="text-lg font-bold text-title">$422</span>
-                            <del class="font-bold text-2xs text-content ">$768</del>
-                          </div><span class="text-[0.813rem] font-medium text-secondary">45%OFF</span>
-                        </td>
-                        <td class="min-w-[100px]"> 
-                          <div class="plus-minus flex items-center text-center bg-primary-light border border-primary rounded-5"><i class="sub cursor-pointer w-5 h-5 bg-primary border-r border-primary stroke-white" data-feather="minus"></i>
-                            <input class="text-center bg-transparent text-title" type="number" value="2" min="1" max="10"/><i class="add cursor-pointer w-5 h-5 bg-primary border-l border-primary stroke-white" data-feather="plus"></i>
-                          </div>
-                        </td>
-                        <td class="min-w-[100px] 2md:min-w-[65px]"> 
-                          <h4 class="text-xs font-semibold text-title">$844</h4>
-                        </td>
-                        <td class="min-w-[100px] 2md:min-w-max">
-                          <div class="flex gap-3 items-center justify-end block 2md:hidden"> 
-                            <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                              <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                            </svg>
-                            <svg class="hover:stroke-primary remove-cart w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                              <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                            </svg><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i>
-                          </div>
-                          <div class="dropdown dropdown-bottom"><i class="hidden w-5 h-5 cursor-pointer stroke-title 2md:block" data-feather="more-vertical"></i>
-                            <div class="hidden text-left dropdown-menu 2md:block">
-                              <ul class="flex flex-col justify-start gap-3">
-                                <li class="cursor-pointer">
-                                  <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                                    <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                                  </svg>
-                                </li>
-                                <li class="cursor-pointer">   
-                                  <svg class="hover:stroke-primary remove-cart w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                                    <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                                  </svg>
-                                </li>
-                                <li class="cursor-pointer"><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr class="hover:bg-gray-light cart-item">
-                        <td class="min-w-[155px]">
-                          <div class="flex items-center gap-2"><img class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full" src="../../assets/images/product/7.png" alt="Latest Nike shoes">
-                            <div>
-                              <h4 class="text-xs font-semibold text-title">Latest Nike shoes</h4><span class="text-[0.813rem] font-medium text-content">#GS-64247</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td class="min-w-[155px]">
-                          <div class="flex gap-1 items-center"> <span class="text-lg font-bold text-title">$224</span>
-                            <del class="font-bold text-2xs text-content ">$899</del>
-                          </div><span class="text-[0.813rem] font-medium text-secondary">75%OFF</span>
-                        </td>
-                        <td class="min-w-[100px]"> 
-                          <div class="plus-minus flex items-center text-center bg-primary-light border border-primary rounded-5"><i class="sub cursor-pointer w-5 h-5 bg-primary border-r border-primary stroke-white" data-feather="minus"></i>
-                            <input class="text-center bg-transparent text-title" type="number" value="3" min="1" max="10"/><i class="add cursor-pointer w-5 h-5 bg-primary border-l border-primary stroke-white" data-feather="plus"></i>
-                          </div>
-                        </td>
-                        <td class="min-w-[100px] 2md:min-w-[65px]"> 
-                          <h4 class="text-xs font-semibold text-title">$674</h4>
-                        </td>
-                        <td class="min-w-[100px] 2md:min-w-max">
-                          <div class="flex gap-3 items-center justify-end block 2md:hidden"> 
-                            <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                              <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                            </svg>
-                            <svg class="hover:stroke-primary remove-cart w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                              <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                            </svg><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i>
-                          </div>
-                          <div class="dropdown dropdown-bottom"><i class="hidden w-5 h-5 cursor-pointer stroke-title 2md:block" data-feather="more-vertical"></i>
-                            <div class="hidden text-left dropdown-menu 2md:block">
-                              <ul class="flex flex-col justify-start gap-3">
-                                <li class="cursor-pointer">
-                                  <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                                    <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                                  </svg>
-                                </li>
-                                <li class="cursor-pointer">   
-                                  <svg class="hover:stroke-primary remove-cart w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                                    <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                                  </svg>
-                                </li>
-                                <li class="cursor-pointer"><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr class="hover:bg-gray-light cart-item">
-                        <td class="min-w-[155px]">
-                          <div class="flex items-center gap-2"><img class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full" src="../../assets/images/product/8.png" alt="Apple MacBook Air">
-                            <div>
-                              <h4 class="text-xs font-semibold text-title">Apple MacBook Air</h4><span class="text-[0.813rem] font-medium text-content">#GS-3452</span>
-                            </div>
-                          </div>
-                        </td>
-                        <td class="min-w-[155px]">
-                          <div class="flex gap-1 items-center"> <span class="text-lg font-bold text-title">$768</span>
-                            <del class="font-bold text-2xs text-content ">$1200</del>
-                          </div><span class="text-[0.813rem] font-medium text-secondary">36%OFF</span>
-                        </td>
-                        <td class="min-w-[100px]"> 
-                          <div class="plus-minus flex items-center text-center bg-primary-light border border-primary rounded-5"><i class="sub cursor-pointer w-5 h-5 bg-primary border-r border-primary stroke-white" data-feather="minus"></i>
-                            <input class="text-center bg-transparent text-title" type="number" value="2" min="1" max="10"/><i class="add cursor-pointer w-5 h-5 bg-primary border-l border-primary stroke-white" data-feather="plus"></i>
-                          </div>
-                        </td>
-                        <td class="min-w-[100px] 2md:min-w-[65px]"> 
-                          <h4 class="text-xs font-semibold text-title">$1536</h4>
-                        </td>
-                        <td class="min-w-[100px] 2md:min-w-max">
-                          <div class="flex gap-3 items-center justify-end block 2md:hidden"> 
-                            <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                              <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                            </svg>
-                            <svg class="hover:stroke-primary remove-cart w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                              <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                            </svg><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i>
-                          </div>
-                          <div class="dropdown dropdown-bottom"><i class="hidden w-5 h-5 cursor-pointer stroke-title 2md:block" data-feather="more-vertical"></i>
-                            <div class="hidden text-left dropdown-menu 2md:block">
-                              <ul class="flex flex-col justify-start gap-3">
-                                <li class="cursor-pointer">
-                                  <svg class="hover:stroke-primary w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                                    <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                                  </svg>
-                                </li>
-                                <li class="cursor-pointer">   
-                                  <svg class="hover:stroke-primary remove-cart w-[18px] h-[18px] stroke-title cursor-pointer"> 
-                                    <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                                  </svg>
-                                </li>
-                                <li class="cursor-pointer"><i class="w-5 h-5 cursor-pointer stroke-content" data-feather="bookmark"></i></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-            <div class="col-span-3 xl:col-span-4 lg:col-span-12">
-              <div class="card sticky top-0"> 
-                <div class="card-header">
-                  <h3 class="mb-2 font-bold text-title">Cart Information </h3>
-                  <div class="divider w-full"> </div>
-                </div>
-                <div class="card-body flex flex-col gap-2"> 
-                  <div class="flex flex-col gap-1"> 
-                    <label class="font-bold text-xs text-primary" for="coupon-code">Apply Coupon Code</label>
-                    <div class="flex items-center justify-center"> 
-                      <input class="p-[11px] w-full rounded-br-none rounded-tr-none border border-border-light rounded-5 text-xs text-content" type="text" placeholder="Enter code" id="coupon-code"><span class="flex items-center justify-center bg-primary text-white rounded-5 border-none rounded-bl-none rounded-tl-none font-medium text-xs py-[12px] px-[11px]">Apply</span>
-                    </div>
-                  </div>
-                  <div class="divider w-full my-3"> </div>
-                  <ul class="flex flex-col gap-2"> 
-                    <li class="flex items-center justify-between text-content font-bold">
-                      <h6>Subtotal  </h6>
-                      <h6>$511 </h6>
-                    </li>
-                    <li class="flex items-center justify-between text-secondary font-bold">
-                      <h6>Coupon Discount</h6>
-                      <h6>(-)0.00 </h6>
-                    </li>
-                    <li class="flex items-center justify-between text-content font-bold">
-                      <h6>Shipping</h6>
-                      <h6>$6.90 </h6>
-                    </li>
-                  </ul>
-                  <div class="divider w-full my-3"> </div>
-                  <ul class="flex flex-col gap-2"> 
-                    <li class="flex items-center justify-between text-primary font-extrabold"> 
-                      <h6>Total(USD) </h6>
-                      <h6>$345  </h6>
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-footer"> 
-                  <div class="flex flex-col gap-3"> <a href="checkout.html">
-                      <button class="btn btn-secondary w-full text-white">Process To Checkout</button></a><a href="shop.html">
-                      <button class="btn btn-primary text-white w-full flex justify-center items-center gap-2"> <i class="w-5 h-5 stroke-white" data-feather="arrow-left"></i>Back to Shopping</button></a></div>
-                </div>
+            <div class="col-span-12">
+              <div class="card m-auto max-w-5xl invoice-preview overflow-auto custom-scroll"> 
+                <table class="table equal-space">
+                  <tbody>  
+                    <tr>                              
+                      <td class="min-w-[220px]"><img class="w-20" src="../../assets/images/logo/logo-dark.png" alt="logo">
+                        <div class="mt-4">
+                          <p class="text-title text-xs font-bold uppercase">Address </p>
+                          <p class="font-medium text-content3">Washington, United States</p>
+                          <p class="font-medium text-content3">98499</p>
+                        </div>
+                      </td>
+                      <td class="min-w-[220px]">
+                        <p class="text-title text-xs font-semibold">Registration No: <span class="font-medium text-content3">8459725</span></p>
+                        <p class="text-title text-xs font-semibold">Email Id: <span class="font-medium text-content3">govo@theme.com</span></p>
+                        <p class="text-title text-xs font-semibold">Contact No: <span class="font-medium text-content3">(773) 847-8982 </span></p>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td colspan="2">
+                        <table class="table equal-space">
+                          <tbody>  
+                            <tr> 
+                              <td class="min-w-[120px]">
+                                <p class="text-title text-xs font-bold uppercase">Invoice No</p><span class="font-medium text-content3">go157864</span>
+                              </td>
+                              <td class="min-w-[150px]">
+                                <p class="text-title text-xs font-bold uppercase">Date </p><span class="font-medium text-content3">23Feb, 2023 </span><small class="font-medium text-content3 text-2xs">2:45PM </small>
+                              </td>
+                              <td class="min-w-[150px]">
+                                <p class="text-title text-xs font-bold uppercase">payment Status</p>
+                                <div class="badge bg-success-light text-success rounded inline-block">Paid</div>
+                              </td>
+                              <td class="min-w-[130px]">
+                                <p class="text-title text-xs font-bold uppercase">Total Amount</p><span class="font-medium text-content3">$787.6</span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="min-w-[220px]"> 
+                        <p class="text-title text-xs font-bold uppercase !mb-3">Shipping Address </p>
+                        <p class="font-medium text-content3">14300 Gallant Fox Ln, Bowie</p>
+                        <p class="font-medium text-content3">Maryland, 20715, US</p>
+                        <p class="font-medium text-content3">(301) 464-0110</p>
+                      </td>
+                      <td class="min-w-[220px]"> 
+                        <p class="text-title text-xs font-bold uppercase !mb-3">Billing Address </p>
+                        <p class="font-medium text-content3">14300 Gallant Fox Ln, Bowie</p>
+                        <p class="font-medium text-content3">Maryland, 20715, US</p>
+                        <p class="font-medium text-content3">(301) 464-0110</p>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td class="invoice-table" colspan="2">
+                        <div class="overflow-auto custom-scroll"> 
+                          <table class="table equal-space">
+                            <thead> 
+                              <tr> 
+                                <th>Product</th>
+                                <th>Product Detail</th>
+                                <th>Price</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><img class="w-16 h-14 rounded-5" src="../../assets/images/ecommerce/11.jpg" alt="11.jpg"></td>
+                                <td class="min-w-[158px]">
+                                  <div>
+                                    <h4 class="text-xs font-semibold text-title">Coffee Cup</h4><span class="block mt-1 font-semibold text-2xs text-content">$98 * 2</span>
+                                  </div>
+                                </td>
+                                <td class="min-w-[.625rem]">$190</td>
+                              </tr>
+                              <tr>
+                                <td><img class="w-16 h-14 rounded-5" src="../../assets/images/ecommerce/13.jpg" alt="13.jpg"></td>
+                                <td class="min-w-[158px]">
+                                  <div>
+                                    <h4 class="text-xs font-semibold text-title">Facewash - For Good skincare</h4><span class="block mt-1 font-semibold text-2xs text-content">$75 * 2</span>
+                                  </div>
+                                </td>
+                                <td class="min-w-[.625rem]">$150</td>
+                              </tr>
+                              <tr>
+                                <td><img class="w-16 h-14 rounded-5" src="../../assets/images/ecommerce/14.jpg" alt="14.jpg"></td>
+                                <td class="min-w-[158px]">
+                                  <div>
+                                    <h4 class="text-xs font-semibold text-title">Perfume - Great fragrance</h4><span class="block mt-1 font-semibold text-2xs text-content">$299</span>
+                                  </div>
+                                </td>
+                                <td class="min-w-[.625rem]">$299</td>
+                              </tr>
+                              <tr>
+                                <td><img class="w-16 h-14 rounded-5" src="../../assets/images/ecommerce/16.jpg" alt="16.jpg"></td>
+                                <td class="min-w-[158px]">
+                                  <div>
+                                    <h4 class="text-xs font-semibold text-title">Women's Leather Bags</h4><span class="block mt-1 font-semibold text-2xs text-content">$212</span>
+                                  </div>
+                                </td>
+                                <td class="min-w-[.625rem]">$212</td>
+                              </tr>
+                              <tr> 
+                                <td class="font-bold text-xs" colspan="2">Sub Total :</td>
+                                <td class="font-bold text-xs text-end">$851.00 </td>
+                              </tr>
+                              <tr> 
+                                <td class="text-xs" colspan="2">Discount :</td>
+                                <td class="text-content3 text-xs text-end">-$50.00</td>
+                              </tr>
+                              <tr> 
+                                <td class="text-xs" colspan="2">Shipping Charge :</td>
+                                <td class="text-content3 text-xs text-end">-$25.99  </td>
+                              </tr>
+                              <tr> 
+                                <td class="text-xs" colspan="2">Tax :</td>
+                                <td class="text-content3 text-xs text-end">-$12.59  </td>
+                              </tr>
+                              <tr> 
+                                <td class="font-bold text-xs" colspan="2">Total (USD) :</td>
+                                <td class="font-bold text-xs text-end">$787.6 </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td class="!text-left" colspan="2">
+                        <p class="text-title text-xs font-semibold">Payment Method: <span class="font-medium text-content3">Mastercard</span></p>
+                        <p class="text-title text-xs font-semibold">Card Holder: <span class="font-medium text-content3">	Vilma Gerhold</span></p>
+                        <p class="text-title text-xs font-semibold">Card Number: <span class="font-medium text-content3">xxx xxxx xxxx 7159       </span></p>
+                        <p class="text-title text-xs font-semibold">Total Amount: <span class="font-medium text-content3">$787.6                                     </span></p>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td class="!text-left" colspan="2">
+                        <p class="text-title text-xs font-bold uppercase">Notes </p>
+                        <p class="font-medium text-content3">All accounts must be settled within seven days of receiving an invoice. to be paid by check, credit card, or online direct deposit. If the account is not paid within seven days, the agreed-upon quoted fee indicated above will be charged to the credits details provided as confirmation of the task completed.</p>
+                      </td>
+                    </tr>
+                    <tr> 
+                      <td colspan="2">
+                        <div class="flex items-center gap-2 justify-end"><a class="btn btn-success py-1 text-white text-xs flex gap-2 items-center" href="javascript:window.print()"> <i class="w-4 h-4 stroke-white" data-feather="printer"></i>Print</a><a class="btn btn-secondary py-1 text-white text-xs flex gap-2 items-center" href="../../assets/chat-doc/invoice.pdf" Download> <i class="w-4 h-4 stroke-white" data-feather="arrow-down">                                              </i>Download</a></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>

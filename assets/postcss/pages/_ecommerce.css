@@ -128,4 +128,55 @@
       }
     }
   }
+
+  .invoice-preview {
+    .table {
+      &.equal-space {
+        tbody {
+          tr {
+            &:first-child {
+              td {
+                @apply pt-0;
+              }
+            }
+            td {
+              &:last-child {
+                @apply text-right;
+              }
+            }
+            table {
+              tbody {
+                tr {
+                  td {
+                    &:last-child {
+                      /* @apply !text-left; */
+                    }
+                  }
+                }
+              }
+            }
+          }
+          p {
+            @apply mb-1;
+          }
+        }
+        .invoice-table {
+          thead {
+            tr {
+              th {
+                @apply bg-border-light py-3;
+              }
+            }
+          }
+          tbody {
+            tr {
+              td {
+                @apply py-3;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -18,7 +18,7 @@ table.table(class="equal-space table-action invoice")
 
     tbody 
         each bodyData, index in INVOICE_TABLE.body
-            tr(class="hover:bg-gray-light")
+            tr(class="hover:bg-gray-light invoice-item")
                 td(class="min-w-[210px]") 
                     div(class="flex items-center gap-2")
                         label.checkbox.cursor-pointer.block(class="w-4 h-4") 
@@ -43,8 +43,8 @@ table.table(class="equal-space table-action invoice")
                         button
                             +SVG_ICON("Edit-Square","w-[1.125rem] h-[1.125rem] stroke-title hover:stroke-primary")
                         button
-                            +SVG_ICON("Delete","w-[1.125rem] h-[1.125rem] stroke-title hover:stroke-primary")
-                        button
+                            +SVG_ICON("Delete","w-[1.125rem] h-[1.125rem] remove-invoice stroke-title hover:stroke-primary")
+                        a(href="../../assets/chat-doc/invoice.pdf" Download)
                             +SVG_ICON("Arrow-Down","w-[1.125rem] h-[1.125rem] stroke-title hover:stroke-primary")
                     div.dropdown.dropdown-bottom.on-hover-show(class=`inline-flex justify-end hidden 2lg:block ${USER_INFORMATION.body.length === index + 1 ? "top-open" : ""}`)
                         button 
@@ -56,7 +56,7 @@ table.table(class="equal-space table-action invoice")
                                         +SVG_ICON("Edit-Square","hover:stroke-primary w-[1.125rem] h-[1.125rem] stroke-title")   
                                 li
                                     a(href="javascript:void(0)")
-                                        +SVG_ICON("Delete","hover:stroke-primary w-[1.125rem] h-[1.125rem] stroke-title") 
+                                        +SVG_ICON("Delete","hover:stroke-primary w-[1.125rem] remove-invoice h-[1.125rem] stroke-title") 
                                 li
-                                    a(href="javascript:void(0)")
+                                    a(href="../../assets/chat-doc/invoice.pdf" Download)
                                         +SVG_ICON("Arrow-Down","hover:stroke-primary w-[1.125rem] h-[1.125rem] stroke-title") 
