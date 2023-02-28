@@ -4,30 +4,25 @@
 //- feather
 -var feather= true;
 
-//- fontawesome
--var fontAwesome=true;
-
 //- custom select
 -var customSelect = true;
-
-//- ecommerce
--var ecommerce = true;
-
-//- swiper-slider
--var swiper=true;
 
 //- customizer 
 -var customizer = true;
 
+//- jkanban js
+- var jkanban = true; 
+
 //- Breadcrumbs
--var pageTitle="Wishlist";
--var breadcrumb=['Ecommerce','Wishlist'];
+-var pageTitle="Kanban-board";
+-var breadcrumb=['Kanban-board'];
 
 //- all JSON  
 include ../../data/all-data
 
 //- all mixin   
 include ../../mixin/mixin
+
 
 doctype html
 html(lang='en')
@@ -42,18 +37,18 @@ html(lang='en')
         // Sidebar End 
 
         // Page Body Start
-        div.page-body 
-          div.grid.grid-cols-12.gap-card-gap
-            each data in WISHLIST_PRODUCT_BOX
-              div.col-span-3(class='4xl:col-span-3 lg:col-span-4 2md:col-span-6 2sm:col-span-12')
-                +wishlist-product(data)
-
+        div.page-body
+          div.grid.grid-cols-12.gap-card-gaps
+            div.col-span-12
+              div.card
+                div.card-header
+                  h3(class="font-bold text-title mb-3") Custom Board
+                  .divider.w-full
+                div.card-body
+                  div.grid.grid-cols-12.gap-3 
+                    each data in KANBAN_BOARD  
+                      +kanban-board(data)
           // Page Body End  
           +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
-      include ../../components/customizer       
+      include ../../components/customizer
   include ../../layout/footer-files
-
-
-
-
-
