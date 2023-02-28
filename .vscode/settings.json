@@ -9,6 +9,7 @@
         "Fruitville",
         "Govo",
         "Groshev",
+        "jkanban",
         "kanban",
         "Malikan",
         "Runte",
@@ -16,5 +17,6 @@
         "swiper",
         "Unstarred",
         "vacay"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
