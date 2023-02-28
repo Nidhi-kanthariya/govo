@@ -33,7 +33,7 @@
                     <use href="../../assets/svg/_sprite.svg#Category"> </use>
                   </svg>
                 </button>
-                <h1 class="flex items-center gap-1 text-lg font-extrabold leading-none sm:hidden 4xl:text-base">Unique Dashboard</h1>
+                <h1 class="flex items-center gap-1 text-lg font-extrabold leading-none sm:hidden 4xl:text-base">Invoice</h1>
               </div>
               <div class="right-header flex items-center flex-1 sm:gap-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] gap-[calc(20px_+_(30_-_20)_*_((100vw_-_320px)_/_(1920_-_320)))] xl:gap-[calc(20px_+_(45_-_20)_*_((100vw_-_320px)_/_(1920_-_320)))]  justify-end">
                 <div class="search-box-wrapper transition-all duration-300 max-w-[40%] xl:scale-0 xl:opacity-0 xl:invisible xl:px-body-space xl:max-w-full w-full xl:z-[5] flex-1 xl:absolute xl:left-0">
@@ -837,9 +837,9 @@
                               <use href="../../assets/svg/_sprite.svg#Home"> </use>
                             </svg></a></li>
                         <li class="px-2"> <span>/</span></li>
-                        <li class="breadcrumb-items capitalize">dashboard</li>
+                        <li class="breadcrumb-items capitalize">Ecommerce</li>
                         <li class="px-2"> <span>/</span></li>
-                        <li class="breadcrumb-items capitalize active">unique</li>
+                        <li class="breadcrumb-items capitalize active">Invoice</li>
                       </ol>
                     </nav>
                   </div>
@@ -1116,957 +1116,187 @@
           </aside>
         </div>
         <!-- Sidebar End -->
-        <!-- Page Body Start-->
+        <!-- Page Body Start -->
         <div class="page-body">
           <div class="grid grid-cols-12 gap-card-gap">
-            <div class="col-span-3 ratio_109 4xl:col-span-4 lg:col-span-6 lg:-order-2 2md:col-span-12">
-              <!-- Welcome Card -->
-              <div class="card p-card-space before:!pt-0 bg-primary 3sm:pb-[150px] 2sm:pb-[170px] pb-[246px] 5xl:pb-[258px] 4xl:pb-[231px] relative"><img class="bg-img" src="../../assets/images/svg/1.svg" alt="welcome banner">
-                <div>
-                  <h4 class="flex items-center gap-2 justify-between"> <span class="flex items-center gap-2 text-3xl font-semibold text-white 3sm:text-lg 5xl:text-2xl ">Hello, Amirreza<img class="w-[22px] h-[22px]" src="../../assets/images/waving-hand.png" alt="waving-hand"></span>
-                    <div class="dropdown on-hover-show">
-                      <button class="before:absolute flex items-center justify-center before:inset-0 before:bg-white before:opacity-[34%] before:rounded-full p-[5px]"> 
-                        <svg class="w-[18px] h-[18px] stroke-white"> 
-                          <use href="../../assets/svg/_sprite.svg#Setting"> </use>
-                        </svg>
-                      </button>
-                      <div class="dropdown-menu w">
-                        <ul> 
-                          <li><a href="profile.html">Profile Setting  </a></li>
-                          <li><a href="email.html">Message  </a></li>
-                          <li><a href="todo-app.html">Taskboard  </a></li>
-                        </ul>
-                      </div>
+            <div class="col-span-12">
+              <div class="card m-auto max-w-5xl invoice-preview overflow-auto custom-scroll"> 
+                <div class="grid grid-cols-12 gap-card-gap sm:gap-1">
+                  <div class="col-span-4 lg:col-span-6 sm:col-span-12"><img class="w-20" src="../../assets/images/logo/logo-dark.png" alt="logo">
+                    <div class="mt-4"> 
+                      <form class="theme-form m-0">
+                        <label for="address">Address </label>
+                        <textarea class="p-[11px] focus:!border-border-light w-full border border-border-light rounded-5 text-xs text-content" placeholder="Enter address" row="3" id="address"></textarea>
+                      </form>
                     </div>
-                  </h4>
-                  <p class="text-xs font-semibold text-content-white leading-[22px] max-w-[285px] mt-1">Welcome to the Govo family! we are glad that you are visite this dashboard.</p>
-                  <button class="mt-6 sm:mt-4 rounded-5 py-[8px] px-4 bg-white text-xs font-bold text-title ">What New!</button>
+                  </div>
+                  <div class="col-span-4 lg:col-span-6 lg:hidden"></div>
+                  <div class="col-span-4 lg:col-span-6 sm:col-span-12">          
+                    <div>
+                      <form class="theme-form m-0 flex flex-col gap-2">
+                        <input class="font-medium.text-content3" type="text" id="register" placeholder="Registration no.." required>
+                        <input class="font-medium.text-content3" type="email" id="email" placeholder="Email id.." required>
+                        <input class="font-medium.text-content3" type="number" id="contact" placeholder="Contact no.. " required>
+                      </form>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-span-6 4xl:col-span-8 lg:col-span-12 lg:-order-1">
-              <div class="card">
-                <div class="card-header">
-                  <div class="flex justify-between w-full flex-wrap gap-2 items-center">
-                    <h3 class="text-lg font-bold text-title leading-none">Transaction History</h3>
-                    <div class="custom-select select-style-1"> 
-                      <select class="capitalize">
-                        <option>Yearly</option>
-                        <option>Monthly</option>
-                        <option>Weekly</option>
+                <div class="divider w-full bg-gray-light"></div>
+                <form class="theme-form m-0">
+                  <div class="grid grid-cols-12 gap-card-gap">
+                    <div class="col-span-3 md:col-span-6 sm:col-span-12 min-w-[120px]">
+                      <label for="number">INVOICE NO</label>
+                      <input type="text" id="number" placeholder="go157864" required>
+                    </div>
+                    <div class="col-span-3 md:col-span-6 sm:col-span-12 min-w-[150px]">
+                      <label for="date">DATE</label>
+                      <input type="text" id="date" placeholder="23Feb, 2023 2:45PM " required>
+                    </div>
+                    <div class="col-span-3 md:col-span-6 sm:col-span-12 min-w-[150px]">
+                      <label for="status">PAYMENT STATUS</label>
+                      <select class="form-select block w-full px-3 text-xs font-normal text-content3 bg-white bg-clip-padding bg-no-repeat border border-border-light rounded-5 transition ease-in-out m-0 min-w-[150px] py-[9px]" id="status" aria-label="Default select example">
+                        <option selected="">Paid</option>
+                        <option value="1">Unpaid</option>
+                        <option value="2">Refund</option>
                       </select>
                     </div>
+                    <div class="col-span-3 md:col-span-6 sm:col-span-12 min-w-[130px]">
+                      <label for="amount">TOTAL AMOUNT</label>
+                      <input type="text" id="amount" placeholder="$787.6" readonly>
+                    </div>
+                  </div>
+                </form>
+                <div class="divider w-full bg-gray-light"></div>
+                <div class="grid grid-cols-12 gap-card-gap">
+                  <div class="col-span-4 lg:col-span-6 sm:col-span-12">
+                    <form class="theme-form m-0 flex flex-col gap-2">
+                      <label class="!mb-0" for="address">Shipping Address</label>
+                      <input type="text" id="name" placeholder="Vilma Gerhold" required>
+                      <textarea class="p-[11px] focus:!border-border-light w-full border border-border-light rounded-5 text-xs text-content" placeholder="14300 Gallant Fox Ln, Bowie, Maryland, 20715, US" row="3" id="address"></textarea>
+                      <input type="number" id="name" placeholder="(301) 464-0110" required>
+                    </form>
+                  </div>
+                  <div class="col-span-4 lg:hidden"></div>
+                  <div class="col-span-4 lg:col-span-6 sm:col-span-12">
+                    <form class="theme-form m-0 flex flex-col gap-2">
+                      <label class="!mb-0" for="address">Billing Address</label>
+                      <input type="text" id="name" placeholder="Vilma Gerhold" required>
+                      <textarea class="p-[11px] focus:!border-border-light w-full border border-border-light rounded-5 text-xs text-content" placeholder="14300 Gallant Fox Ln, Bowie, Maryland, 20715, US" row="3" id="address"></textarea>
+                      <input type="number" id="name" placeholder="(301) 464-0110" required>
+                    </form>
                   </div>
                 </div>
-                <div class="card-body">
+                <div class="flex items-center gap-2">
+                  <label class="checkbox checkbox-sm cursor-pointer"> 
+                    <input class="peer" type="checkbox">
+                    <div class="checkbox-indicator peer-checked:!bg-primary !border-primary"> <i data-feather="check"></i></div>
+                  </label>
+                  <p class="text-content3">Shipping & Billing address are the same?</p>
+                </div>
+                <div class="divider w-full bg-gray-light"></div>
+                <div class="invoice-table-detail">
                   <div class="overflow-auto custom-scroll"> 
-                    <table class="table"> 
-                      <thead> 
-                        <tr> 
-                          <th>Item Name</th>
-                          <th>Date And Time</th>
-                          <th>Amount</th>
-                          <th>invoice no.</th>
-                          <th>Status</th>
-                          <th>payment</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td class="min-w-[11.125rem]"> 
-                            <div class="flex items-center gap-[.5625rem]"><img class="w-10 h-10 rounded-full" src="../../assets/images/product/1.jpg" alt="Samsung TV">
-                              <div>
-                                <h4 class="text-xs font-semibold text-title">Samsung TV</h4><span class="block mt-1 font-semibold text-2xs text-content">Item Sold</span>
-                              </div>
-                            </div>
-                          </td>
-                          <td class="min-w-[7.5rem]"> 
-                            <div> 
-                              <h4 class="text-xs font-semibold text-title">Jan 25, 2022</h4><span class="block mt-1 font-semibold text-2xs text-content">Item Sold</span>
-                            </div>
-                          </td>
-                          <td class="min-w-[6.25rem]"> 
-                            <h4 class="text-xs font-semibold text-success">$251 USD</h4>
-                          </td>
-                          <td class="min-w-[5.3125rem]"> 
-                            <h4 class="text-xs font-semibold uppercase text-title">#px0101</h4>
-                          </td>
-                          <td class="min-w-[4.6875rem]"> 
-                            <div class="progress-bar progress-sm max-w-[3.375rem]">
-                              <div class="bg-success" style="width:50%"> </div>
-                            </div>
-                          </td>
-                          <td class="min-w-[6.25rem]"> 
-                            <h4 class="text-xs font-semibold text-title">Paypal</h4>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="min-w-[11.125rem]"> 
-                            <div class="flex items-center gap-[.5625rem]"><img class="w-10 h-10 rounded-full" src="../../assets/images/product/2.jpg" alt="Spring Bed">
-                              <div>
-                                <h4 class="text-xs font-semibold text-title">Spring Bed</h4><span class="block mt-1 font-semibold text-2xs text-content">Bought item</span>
-                              </div>
-                            </div>
-                          </td>
-                          <td class="min-w-[7.5rem]"> 
-                            <div> 
-                              <h4 class="text-xs font-semibold text-title">Feb 20, 2022</h4><span class="block mt-1 font-semibold text-2xs text-content">Bought item</span>
-                            </div>
-                          </td>
-                          <td class="min-w-[6.25rem]"> 
-                            <h4 class="text-xs font-semibold text-danger">$350 USD</h4>
-                          </td>
-                          <td class="min-w-[5.3125rem]"> 
-                            <h4 class="text-xs font-semibold uppercase text-title">#rf304f</h4>
-                          </td>
-                          <td class="min-w-[4.6875rem]"> 
-                            <div class="progress-bar progress-sm max-w-[3.375rem]">
-                              <div class="bg-danger" style="width:70%"> </div>
-                            </div>
-                          </td>
-                          <td class="min-w-[6.25rem]"> 
-                            <h4 class="text-xs font-semibold text-title">Credit Card</h4>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="min-w-[11.125rem]"> 
-                            <div class="flex items-center gap-[.5625rem]"><img class="w-10 h-10 rounded-full" src="../../assets/images/product/3.jpg" alt="Long Dress">
-                              <div>
-                                <h4 class="text-xs font-semibold text-title">Long Dress</h4><span class="block mt-1 font-semibold text-2xs text-content">Bought item</span>
-                              </div>
-                            </div>
-                          </td>
-                          <td class="min-w-[7.5rem]"> 
-                            <div> 
-                              <h4 class="text-xs font-semibold text-title">Oct 25, 2022</h4><span class="block mt-1 font-semibold text-2xs text-content">Bought item</span>
-                            </div>
-                          </td>
-                          <td class="min-w-[6.25rem]"> 
-                            <h4 class="text-xs font-semibold text-success">$240 USD</h4>
-                          </td>
-                          <td class="min-w-[5.3125rem]"> 
-                            <h4 class="text-xs font-semibold uppercase text-title">#dnj480</h4>
-                          </td>
-                          <td class="min-w-[4.6875rem]"> 
-                            <div class="progress-bar progress-sm max-w-[3.375rem]">
-                              <div class="bg-success" style="width:40%"> </div>
-                            </div>
-                          </td>
-                          <td class="min-w-[6.25rem]"> 
-                            <h4 class="text-xs font-semibold text-title">Paypal</h4>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="min-w-[11.125rem]"> 
-                            <div class="flex items-center gap-[.5625rem]"><img class="w-10 h-10 rounded-full" src="../../assets/images/product/4.jpg" alt="Phillip Lightbulb">
-                              <div>
-                                <h4 class="text-xs font-semibold text-title">Phillip Lightbulb</h4><span class="block mt-1 font-semibold text-2xs text-content">Item Sold</span>
-                              </div>
-                            </div>
-                          </td>
-                          <td class="min-w-[7.5rem]"> 
-                            <div> 
-                              <h4 class="text-xs font-semibold text-title">Dec 27, 2022</h4><span class="block mt-1 font-semibold text-2xs text-content">Item Sold</span>
-                            </div>
-                          </td>
-                          <td class="min-w-[6.25rem]"> 
-                            <h4 class="text-xs font-semibold text-danger">$200 USD</h4>
-                          </td>
-                          <td class="min-w-[5.3125rem]"> 
-                            <h4 class="text-xs font-semibold uppercase text-title">#g189d0</h4>
-                          </td>
-                          <td class="min-w-[4.6875rem]"> 
-                            <div class="progress-bar progress-sm max-w-[3.375rem]">
-                              <div class="bg-danger" style="width:60%"> </div>
-                            </div>
-                          </td>
-                          <td class="min-w-[6.25rem]"> 
-                            <h4 class="text-xs font-semibold text-title">Credit Card</h4>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-span-3 4xl:col-span-4 lg:col-span-12">
-              <div class="grid grid-cols-2 gap-card-gap"> 
-                <div class="col-span-2 lg:col-span-1 2md:col-span-2">
-                  <div class="card">
-                    <div class="card-body">
-                      <div> 
-                        <div class="flex items-center justify-between">
-                          <div>
-                            <h3 class="text-lg font-bold text-title leading-none">Revenue</h3>
-                            <h4 class="flex items-center mt-[12px] text-2xl 5xl:text-lg 4xl:text-base font-extrabold text-title gap-[7px]">$4,875<span class="flex items-center gap-1 text-3xs font-semibold text-success">36.28%
-                                <svg class="w-[6px] h-[6px] -rotate-180 fill-success stroke-success"> 
-                                  <use href="../../assets/svg/_sprite.svg#Fill-Arrow"> </use>
-                                </svg></span></h4>
-                          </div>
-                          <div class="avatar-group -space-x-6 justify-center">
-                            <div class="avatar w-12 h-12 5xl:w-11 5xl:h-11 border-[2px] border-white">
-                              <div><img src="../../assets/images/avatar/1.jpg" alt="avatar"/></div>
-                            </div>
-                            <div class="avatar w-12 h-12 5xl:w-11 5xl:h-11 border-[2px] border-white">
-                              <div><img src="../../assets/images/avatar/2.jpg" alt="avatar"/></div>
-                            </div>
-                            <div class="avatar placeholder w-12 h-12 5xl:w-11 5xl:h-11 border-[2px] bg-gray-light border-white">
-                              <div><span class="text-xs font-bold text-title">26+</span></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="mt-[17px]" id="revenueChart"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-span-2 lg:col-span-1 2md:col-span-2">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="relative"> 
-                        <div class="flex items-center justify-between">
-                          <div class="flex-[0_1_50%]">
-                            <h3 class="text-lg font-bold text-title leading-none">Earnings</h3>
-                            <div class="mt-[15px]"> 
-                              <h4 class="flex items-center text-2xl  5xl:text-lg 4xl:text-base font-extrabold text-title gap-[7px]">$4,875</h4><span class="text-3xs text-content font-semibold">Total Expense</span>
-                            </div>
-                            <p class="line-clamp-3 mt-[18px] font-normal text-xs text-title">Profit is grow 45% more than last Month continue increasing</p>
-                          </div>
-                          <div id="earningChart"> </div>
-                        </div>
-                        <button class="flex rounded-full absolute top-0 right-0 items-center justify-center p-[5px] bg-gray-light"> 
-                          <svg class="w-[18px] h-[18px] stroke-title"> 
-                            <use href="../../assets/svg/_sprite.svg#Setting"> </use>
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-span-6 4xl:col-span-8 lg:col-span-12 lg:-order-1">
-              <div class="card">
-                <div class="card-header">
-                  <div class="flex justify-between w-full flex-wrap gap-2 items-center">
-                    <h3 class="text-lg font-bold text-title leading-none">User Information</h3>
-                    <div class="dropdown on-hover-show">
-                      <button class="flex rounded-full items-center justify-center p-[5px] bg-gray-light"> 
-                        <svg class="w-[18px] h-[18px] stroke-title"> 
-                          <use href="../../assets/svg/_sprite.svg#Setting"> </use>
-                        </svg>
-                      </button>
-                      <div class="dropdown-menu">
-                        <ul>
-                          <li><a href="javascript:void(0)">Completed</a></li>
-                          <li><a href="javascript:void(0)">Pending</a></li>
-                          <li><a href="javascript:void(0)">1 Day Ago</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="overflow-auto custom-scroll"> 
-                    <table class="table"> 
-                      <thead> </thead>
-                      <tr> 
-                        <th>
-                          <div class="flex items-center gap-2">
-                            <label class="checkbox w-[15px] h-[15px]">
-                              <input type="checkbox">
-                              <div class="checkbox-indicator"><i data-feather="check"></i></div>
-                            </label>Name
-                          </div>
-                        </th>
-                        <th>Email Address</th>
-                        <th>Status</th>
-                        <th>Role</th>
-                        <th>Action</th>
-                      </tr>
-                      <tbody>
-                        <tr>
-                          <td class="min-w-[210px]"> 
-                            <div class="flex items-center gap-2">
-                              <label class="checkbox w-[15px] h-[15px]">
-                                <input type="checkbox">
-                                <div class="checkbox-indicator"><i data-feather="check"></i></div>
-                              </label>
-                              <div class="flex items-center gap-[9px]"><img class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full" src="../../assets/images/avatar/1.jpg" alt="Dmitriy Groshev">
-                                <div>
-                                  <h4 class="text-xs font-semibold text-title">Dmitriy Groshev</h4><span class="block mt-1 font-semibold text-2xs text-content">United Kingdom</span>
-                                </div>
-                              </div>
-                            </div>
-                          </td>
-                          <td class="min-w-[120px]">
-                            <div> <a class="text-xs font-semibold text-title" href="mail:tohello123@dribbble.com">hello123@dribbble.com</a></div>
-                          </td>
-                          <td class="min-w-[75px]"> 
-                            <h4 class="text-xs font-semibold text-success">Invited</h4>
-                          </td>
-                          <td class="min-w-[140px]">
-                            <h4 class="text-xs font-semibold text-title">Interface Designer</h4>
-                          </td>
-                          <td class="min-w-[50px] text-right"> 
-                            <div class="dropdown on-hover-show inline-flex justify-end ">
-                              <button class="group"> 
-                                <svg class="w-[18px] h-[18px] stroke-title"> 
-                                  <use href="../../assets/svg/_sprite.svg#Dote-h"> </use>
-                                </svg>
-                              </button>
-                              <div class="dropdown-menu !right-0 !left-unset ">
-                                <ul>
-                                  <li class="group"> <a href="javascript:void(0)">
-                                      <svg class="group-hover:stroke-primary w-[18px] h-[18px] stroke-title"> 
-                                        <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                                      </svg></a></li>
-                                  <li class="group"> <a href="javascript:void(0)">
-                                      <svg class="group-hover:stroke-primary w-[18px] h-[18px] stroke-title"> 
-                                        <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                                      </svg></a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="min-w-[210px]"> 
-                            <div class="flex items-center gap-2">
-                              <label class="checkbox w-[15px] h-[15px]">
-                                <input type="checkbox" checked>
-                                <div class="checkbox-indicator"><i data-feather="check"></i></div>
-                              </label>
-                              <div class="flex items-center gap-[9px]"><img class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full" src="../../assets/images/avatar/2.jpg" alt="Patrick Beverley">
-                                <div>
-                                  <h4 class="text-xs font-semibold text-title">Patrick Beverley</h4><span class="block mt-1 font-semibold text-2xs text-content">Australia</span>
-                                </div>
-                              </div>
-                            </div>
-                          </td>
-                          <td class="min-w-[120px]">
-                            <div> <a class="text-xs font-semibold text-title" href="mail:tobeverley.lac@gmail.com">beverley.lac@gmail.com</a></div>
-                          </td>
-                          <td class="min-w-[75px]"> 
-                            <h4 class="text-xs font-semibold text-danger">Active</h4>
-                          </td>
-                          <td class="min-w-[140px]">
-                            <h4 class="text-xs font-semibold text-title">Interface Designer</h4>
-                          </td>
-                          <td class="min-w-[50px] text-right"> 
-                            <div class="dropdown on-hover-show inline-flex justify-end ">
-                              <button class="group"> 
-                                <svg class="w-[18px] h-[18px] stroke-title"> 
-                                  <use href="../../assets/svg/_sprite.svg#Dote-h"> </use>
-                                </svg>
-                              </button>
-                              <div class="dropdown-menu !right-0 !left-unset ">
-                                <ul>
-                                  <li class="group"> <a href="javascript:void(0)">
-                                      <svg class="group-hover:stroke-primary w-[18px] h-[18px] stroke-title"> 
-                                        <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                                      </svg></a></li>
-                                  <li class="group"> <a href="javascript:void(0)">
-                                      <svg class="group-hover:stroke-primary w-[18px] h-[18px] stroke-title"> 
-                                        <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                                      </svg></a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="min-w-[210px]"> 
-                            <div class="flex items-center gap-2">
-                              <label class="checkbox w-[15px] h-[15px]">
-                                <input type="checkbox">
-                                <div class="checkbox-indicator"><i data-feather="check"></i></div>
-                              </label>
-                              <div class="flex items-center gap-[9px]"><img class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full" src="../../assets/images/avatar/3.jpg" alt="Kevin Greem">
-                                <div>
-                                  <h4 class="text-xs font-semibold text-title">Kevin Greem</h4><span class="block mt-1 font-semibold text-2xs text-content">United Kingdom</span>
-                                </div>
-                              </div>
-                            </div>
-                          </td>
-                          <td class="min-w-[120px]">
-                            <div> <a class="text-xs font-semibold text-title" href="mail:togreen4502@gmail.com">green4502@gmail.com</a></div>
-                          </td>
-                          <td class="min-w-[75px]"> 
-                            <h4 class="text-xs font-semibold text-success">Invited</h4>
-                          </td>
-                          <td class="min-w-[140px]">
-                            <h4 class="text-xs font-semibold text-title">Project Manager</h4>
-                          </td>
-                          <td class="min-w-[50px] text-right"> 
-                            <div class="dropdown on-hover-show inline-flex justify-end ">
-                              <button class="group"> 
-                                <svg class="w-[18px] h-[18px] stroke-title"> 
-                                  <use href="../../assets/svg/_sprite.svg#Dote-h"> </use>
-                                </svg>
-                              </button>
-                              <div class="dropdown-menu !right-0 !left-unset ">
-                                <ul>
-                                  <li class="group"> <a href="javascript:void(0)">
-                                      <svg class="group-hover:stroke-primary w-[18px] h-[18px] stroke-title"> 
-                                        <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                                      </svg></a></li>
-                                  <li class="group"> <a href="javascript:void(0)">
-                                      <svg class="group-hover:stroke-primary w-[18px] h-[18px] stroke-title"> 
-                                        <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                                      </svg></a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="min-w-[210px]"> 
-                            <div class="flex items-center gap-2">
-                              <label class="checkbox w-[15px] h-[15px]">
-                                <input type="checkbox">
-                                <div class="checkbox-indicator"><i data-feather="check"></i></div>
-                              </label>
-                              <div class="flex items-center gap-[9px]"><img class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full" src="../../assets/images/avatar/4.jpg" alt="William Barton">
-                                <div>
-                                  <h4 class="text-xs font-semibold text-title">William Barton</h4><span class="block mt-1 font-semibold text-2xs text-content">Netherlands</span>
-                                </div>
-                              </div>
-                            </div>
-                          </td>
-                          <td class="min-w-[120px]">
-                            <div> <a class="text-xs font-semibold text-title" href="mail:tobarton-will@gmail.com">barton-will@gmail.com</a></div>
-                          </td>
-                          <td class="min-w-[75px]"> 
-                            <h4 class="text-xs font-semibold text-danger">Active</h4>
-                          </td>
-                          <td class="min-w-[140px]">
-                            <h4 class="text-xs font-semibold text-title">Backend Engineer</h4>
-                          </td>
-                          <td class="min-w-[50px] text-right"> 
-                            <div class="dropdown on-hover-show inline-flex justify-end top-open">
-                              <button class="group"> 
-                                <svg class="w-[18px] h-[18px] stroke-title"> 
-                                  <use href="../../assets/svg/_sprite.svg#Dote-h"> </use>
-                                </svg>
-                              </button>
-                              <div class="dropdown-menu !right-0 !left-unset ">
-                                <ul>
-                                  <li class="group"> <a href="javascript:void(0)">
-                                      <svg class="group-hover:stroke-primary w-[18px] h-[18px] stroke-title"> 
-                                        <use href="../../assets/svg/_sprite.svg#Edit-Square"> </use>
-                                      </svg></a></li>
-                                  <li class="group"> <a href="javascript:void(0)">
-                                      <svg class="group-hover:stroke-primary w-[18px] h-[18px] stroke-title"> 
-                                        <use href="../../assets/svg/_sprite.svg#Delete"> </use>
-                                      </svg></a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-span-3 4xl:col-span-4 lg:col-span-12"> 
-              <div class="grid grid-cols-2 gap-card-gap">
-                <div class="col-span-2 lg:col-span-1 2md:col-span-2">
-                  <div class="card">
-                    <div class="card-header">
-                      <div class="flex justify-between w-full flex-wrap gap-2 items-center">
-                        <h3 class="text-lg font-bold text-title leading-none">Inventory Cost</h3>
-                        <div class="dropdown on-hover-show">
-                          <button class="flex rounded-full items-center justify-center p-[5px] bg-gray-light"> 
-                            <svg class="w-[18px] h-[18px] stroke-title"> 
-                              <use href="../../assets/svg/_sprite.svg#Setting"> </use>
-                            </svg>
-                          </button>
-                          <div class="dropdown-menu">
-                            <ul>
-                              <li><a href="javascript:void(0)">Yearly</a></li>
-                              <li><a href="javascript:void(0)">Monthly</a></li>
-                              <li><a href="javascript:void(0)">Weekly</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card-body"> 
-                      <ul> 
-                        <li class="py-[7px] px-[10px] bg-gray-light mt-[9px] first:mt-0"><a class="flex items-center justify-between" href="javascript:void(0)">
-                            <div class="flex items-center gap-2"><img class="w-10 h-10 rounded-full" src="../../assets/images/product/product-list/1.jpg" alt="Inventory Cost"/>
-                              <div>
-                                <h3 class="text-xs font-semibold text-title line-clamp-1">Inventory Cost</h3>
-                                <h4 class="text-2xs font-semibold text-content line-clamp-1">It explains the ins and outs.</h4>
-                              </div>
-                            </div><span class="text-sm font-bold text-title">$2,400</span></a></li>
-                        <li class="py-[7px] px-[10px] bg-gray-light mt-[9px] first:mt-0"><a class="flex items-center justify-between" href="javascript:void(0)">
-                            <div class="flex items-center gap-2"><img class="w-10 h-10 rounded-full" src="../../assets/images/product/product-list/2.jpg" alt="Eternal Cost"/>
-                              <div>
-                                <h3 class="text-xs font-semibold text-title line-clamp-1">Eternal Cost</h3>
-                                <h4 class="text-2xs font-semibold text-content line-clamp-1">It explains the ins and outs.</h4>
-                              </div>
-                            </div><span class="text-sm font-bold text-title">$4,700</span></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-span-2 lg:col-span-1 2md:col-span-2">
-                  <div class="card">
-                    <div class="card-header">
-                      <div class="flex justify-between w-full flex-wrap gap-2 items-center">
-                        <h3 class="text-lg font-bold text-title leading-none">Advertising</h3>
-                        <div class="dropdown on-hover-show">
-                          <button class="flex rounded-full items-center justify-center p-[5px] bg-gray-light"> 
-                            <svg class="w-[18px] h-[18px] stroke-title"> 
-                              <use href="../../assets/svg/_sprite.svg#Setting"> </use>
-                            </svg>
-                          </button>
-                          <div class="dropdown-menu">
-                            <ul>
-                              <li><a href="javascript:void(0)">Yearly</a></li>
-                              <li><a href="javascript:void(0)">Monthly</a></li>
-                              <li><a href="javascript:void(0)">Weekly</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card-body"> 
-                      <ul> 
-                        <li class="py-[7px] px-[10px] bg-gray-light mt-[9px] first:mt-0"><a class="flex items-center justify-between" href="javascript:void(0)">
-                            <div class="flex items-center gap-2"><img class="w-10 h-10 rounded-full" src="../../assets/images/product/product-list/3.jpg" alt="Linkedin"/>
-                              <div>
-                                <h3 class="text-xs font-semibold text-title line-clamp-1">Linkedin</h3>
-                                <h4 class="text-2xs font-semibold text-content line-clamp-1">It explains the ins and outs.</h4>
-                              </div>
-                            </div><span class="text-sm font-bold text-title">$3,460</span></a></li>
-                        <li class="py-[7px] px-[10px] bg-gray-light mt-[9px] first:mt-0"><a class="flex items-center justify-between" href="javascript:void(0)">
-                            <div class="flex items-center gap-2"><img class="w-10 h-10 rounded-full" src="../../assets/images/product/product-list/4.jpg" alt="Facebook"/>
-                              <div>
-                                <h3 class="text-xs font-semibold text-title line-clamp-1">Facebook</h3>
-                                <h4 class="text-2xs font-semibold text-content line-clamp-1">It explains the ins and outs.</h4>
-                              </div>
-                            </div><span class="text-sm font-bold text-title">$1,230</span></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-span-3 4xl:col-span-4 lg:col-span-6 lg:-order-1 2md:col-span-12">
-              <div class="card"> 
-                <div class="card-header">
-                  <div class="flex justify-between w-full flex-wrap gap-2 items-center">
-                    <h3 class="text-lg font-bold text-title leading-none">Audit log</h3>
-                    <div class="dropdown on-hover-show">
-                      <button class="flex rounded-full items-center justify-center p-[5px] bg-gray-light"> 
-                        <svg class="w-[18px] h-[18px] stroke-title"> 
-                          <use href="../../assets/svg/_sprite.svg#Setting"> </use>
-                        </svg>
-                      </button>
-                      <div class="dropdown-menu">
-                        <ul>
-                          <li><a href="javascript:void(0)">Yearly</a></li>
-                          <li><a href="javascript:void(0)">Monthly</a></li>
-                          <li><a href="javascript:void(0)">Weekly</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body"> 
-                  <ul> 
-                    <li class="flex gap-3 items-center justify-between relative first:mt-0 5xl:mt-[37px] lg:mt-[32px] mt-[38px] after:w-[3px] lg:after:h-[17px] after:h-[25px] after:absolute after:left-[17px] after:-bottom-[7px] after:bg-border-light after:translate-y-full last:after:hidden">
-                      <div class="flex items-center gap-2">
-                        <div class="flex items-center justify-center rounded-full p-2 bg-success"><span class="sm:w-[18px] sm:h-[18px] w-[22px] h-[22px] flex items-center  rounded-full justify-center bg-white"><i class="w-[14px] h-[14px] stroke-success stroke-[4]" data-feather="check"> </i></span></div>
-                        <div> 
-                          <h3 class="text-xs font-semibold text-title line-clamp-1">Route P204_salesfores created</h3>
-                          <h4 class="text-2xs font-semibold text-content line-clamp-1">Andre Sluczka</h4>
-                        </div>
-                      </div><span class="min-w-fit badge bg-gray-light text-3xs text-title py-[7px] px-[13px]">2hr ago</span>
-                    </li>
-                    <li class="flex gap-3 items-center justify-between relative first:mt-0 5xl:mt-[37px] lg:mt-[32px] mt-[38px] after:w-[3px] lg:after:h-[17px] after:h-[25px] after:absolute after:left-[17px] after:-bottom-[7px] after:bg-border-light after:translate-y-full last:after:hidden">
-                      <div class="flex items-center gap-2">
-                        <div class="flex items-center justify-center rounded-full p-2 bg-warning"><span class="sm:w-[18px] sm:h-[18px] w-[22px] h-[22px] flex items-center  rounded-full justify-center bg-white"><i class="w-[14px] h-[14px] stroke-warning stroke-[4]" data-feather="alert-circle"> </i></span></div>
-                        <div> 
-                          <h3 class="text-xs font-semibold text-title line-clamp-1">R304_salesforece undeployed</h3>
-                          <h4 class="text-2xs font-semibold text-content line-clamp-1">Fabian Beliza</h4>
-                        </div>
-                      </div><span class="min-w-fit badge bg-gray-light text-3xs text-title py-[7px] px-[13px]">4hr ago</span>
-                    </li>
-                    <li class="flex gap-3 items-center justify-between relative first:mt-0 5xl:mt-[37px] lg:mt-[32px] mt-[38px] after:w-[3px] lg:after:h-[17px] after:h-[25px] after:absolute after:left-[17px] after:-bottom-[7px] after:bg-border-light after:translate-y-full last:after:hidden">
-                      <div class="flex items-center gap-2">
-                        <div class="flex items-center justify-center rounded-full p-2 bg-danger"><span class="sm:w-[18px] sm:h-[18px] w-[22px] h-[22px] flex items-center  rounded-full justify-center bg-white"><i class="w-[14px] h-[14px] stroke-danger stroke-[4]" data-feather="x"> </i></span></div>
-                        <div> 
-                          <h3 class="text-xs font-semibold text-title line-clamp-1">R304_salesforece failed</h3>
-                          <h4 class="text-2xs font-semibold text-content line-clamp-1">Michael Ganatra</h4>
-                        </div>
-                      </div><span class="min-w-fit badge bg-gray-light text-3xs text-title py-[7px] px-[13px]">10 Jun</span>
-                    </li>
-                    <li class="flex gap-3 items-center justify-between relative first:mt-0 5xl:mt-[37px] lg:mt-[32px] mt-[38px] after:w-[3px] lg:after:h-[17px] after:h-[25px] after:absolute after:left-[17px] after:-bottom-[7px] after:bg-border-light after:translate-y-full last:after:hidden">
-                      <div class="flex items-center gap-2">
-                        <div class="flex items-center justify-center rounded-full p-2 bg-success"><span class="sm:w-[18px] sm:h-[18px] w-[22px] h-[22px] flex items-center  rounded-full justify-center bg-white"><i class="w-[14px] h-[14px] stroke-success stroke-[4]" data-feather="check"> </i></span></div>
-                        <div> 
-                          <h3 class="text-xs font-semibold text-title line-clamp-1">New environment DEV created</h3>
-                          <h4 class="text-2xs font-semibold text-content line-clamp-1">Wade Warren</h4>
-                        </div>
-                      </div><span class="min-w-fit badge bg-gray-light text-3xs text-title py-[7px] px-[13px]">22 Oct</span>
-                    </li>
-                    <li class="flex gap-3 items-center justify-between relative first:mt-0 5xl:mt-[37px] lg:mt-[32px] mt-[38px] after:w-[3px] lg:after:h-[17px] after:h-[25px] after:absolute after:left-[17px] after:-bottom-[7px] after:bg-border-light after:translate-y-full last:after:hidden">
-                      <div class="flex items-center gap-2">
-                        <div class="flex items-center justify-center rounded-full p-2 bg-success"><span class="sm:w-[18px] sm:h-[18px] w-[22px] h-[22px] flex items-center  rounded-full justify-center bg-white"><i class="w-[14px] h-[14px] stroke-success stroke-[4]" data-feather="check"> </i></span></div>
-                        <div> 
-                          <h3 class="text-xs font-semibold text-title line-clamp-1">Project salesforce created</h3>
-                          <h4 class="text-2xs font-semibold text-content line-clamp-1">Bessie Cooper</h4>
-                        </div>
-                      </div><span class="min-w-fit badge bg-gray-light text-3xs text-title py-[7px] px-[13px]">10 july</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-span-3 4xl:col-span-4 lg:-order-2 lg:col-span-6 2md:col-span-12">
-              <div class="card"> 
-                <div class="card-header">
-                  <div class="flex justify-between w-full flex-wrap gap-2 items-center">
-                    <h3 class="text-lg font-bold text-title leading-none">News &amp; Update</h3>
-                  </div>
-                </div>
-                <div class="card-body"> 
-                  <ul> 
-                    <li class="group flex items-center group justify-between gap-3 first:pt-0 last:pb-0 first:border-none py-[13px] border-t border-border-light"> 
-                      <div class="flex items-center gap-[10px] flex-[1_1_0]">
-                        <div class="rounded-5 overflow-hidden w-[60px] 5xl:w-[59px] lg:w-[51px] 2sm:w-[48px]"><img class="w-full h-auto object-cover" src="../../assets/images/news/1.jpg" alt="event"/></div>
-                        <div class="flex-1"> <a href="blog.html">
-                            <h4 class="transition-all text-xs text-title font-semibold line-clamp-1 group-hover:text-primary">Google project apply reviwe</h4></a><span class="text-2xs font-semibold text-content line-clamp-1 mt-[4px]">Today’s news headlines..</span>
-                        </div>
-                      </div><span class="min-w-fit badge bg-gray-light text-3xs text-title py-[7px] px-[13px]">2hr ago</span>
-                    </li>
-                    <li class="group flex items-center group justify-between gap-3 first:pt-0 last:pb-0 first:border-none py-[13px] border-t border-border-light"> 
-                      <div class="flex items-center gap-[10px] flex-[1_1_0]">
-                        <div class="rounded-5 overflow-hidden w-[60px] 5xl:w-[59px] lg:w-[51px] 2sm:w-[48px]"><img class="w-full h-auto object-cover" src="../../assets/images/news/2.jpg" alt="event"/></div>
-                        <div class="flex-1"> <a href="blog.html">
-                            <h4 class="transition-all text-xs text-title font-semibold line-clamp-1 group-hover:text-primary">Business logo create</h4></a><span class="text-2xs font-semibold text-content line-clamp-1 mt-[4px]">check out the latest...</span>
-                        </div>
-                      </div><span class="min-w-fit badge bg-gray-light text-3xs text-title py-[7px] px-[13px]">4hr ago</span>
-                    </li>
-                    <li class="group flex items-center group justify-between gap-3 first:pt-0 last:pb-0 first:border-none py-[13px] border-t border-border-light"> 
-                      <div class="flex items-center gap-[10px] flex-[1_1_0]">
-                        <div class="rounded-5 overflow-hidden w-[60px] 5xl:w-[59px] lg:w-[51px] 2sm:w-[48px]"><img class="w-full h-auto object-cover" src="../../assets/images/news/3.jpg" alt="event"/></div>
-                        <div class="flex-1"> <a href="blog.html">
-                            <h4 class="transition-all text-xs text-title font-semibold line-clamp-1 group-hover:text-primary">Business project research</h4></a><span class="text-2xs font-semibold text-content line-clamp-1 mt-[4px]">News in english: get...</span>
-                        </div>
-                      </div><span class="min-w-fit badge bg-gray-light text-3xs text-title py-[7px] px-[13px]">10 Jun</span>
-                    </li>
-                    <li class="group flex items-center group justify-between gap-3 first:pt-0 last:pb-0 first:border-none py-[13px] border-t border-border-light"> 
-                      <div class="flex items-center gap-[10px] flex-[1_1_0]">
-                        <div class="rounded-5 overflow-hidden w-[60px] 5xl:w-[59px] lg:w-[51px] 2sm:w-[48px]"><img class="w-full h-auto object-cover" src="../../assets/images/news/4.jpg" alt="event"/></div>
-                        <div class="flex-1"> <a href="blog.html">
-                            <h4 class="transition-all text-xs text-title font-semibold line-clamp-1 group-hover:text-primary">Recruitment in it Department</h4></a><span class="text-2xs font-semibold text-content line-clamp-1 mt-[4px]">Technology and...</span>
-                        </div>
-                      </div><span class="min-w-fit badge bg-gray-light text-3xs text-title py-[7px] px-[13px]">22 Jun</span>
-                    </li>
-                    <li class="group flex items-center group justify-between gap-3 first:pt-0 last:pb-0 first:border-none py-[13px] border-t border-border-light"> 
-                      <div class="flex items-center gap-[10px] flex-[1_1_0]">
-                        <div class="rounded-5 overflow-hidden w-[60px] 5xl:w-[59px] lg:w-[51px] 2sm:w-[48px]"><img class="w-full h-auto object-cover" src="../../assets/images/news/5.jpg" alt="event"/></div>
-                        <div class="flex-1"> <a href="blog.html">
-                            <h4 class="transition-all text-xs text-title font-semibold line-clamp-1 group-hover:text-primary">Business project research</h4></a><span class="text-2xs font-semibold text-content line-clamp-1 mt-[4px]">Contributions private...</span>
-                        </div>
-                      </div><span class="min-w-fit badge bg-gray-light text-3xs text-title py-[7px] px-[13px]">10 july</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-span-9 4xl:col-span-8 lg:col-span-12">
-              <div class="card"> 
-                <div class="card-header">
-                  <div class="flex justify-between w-full flex-wrap gap-2 items-center">
-                    <h3 class="text-lg font-bold text-title leading-none">Users Positions</h3>
-                    <div class="flex">
-                      <button class="py-2 px-3 text-3xs font-semibold rounded-none text-title bg-gray-light hover:bg-primary hover:text-white focus:text-white focus:bg-primary">Yearly</button>
-                      <button class="py-2 px-3 text-3xs font-semibold rounded-none text-title bg-gray-light hover:bg-primary hover:text-white focus:text-white focus:bg-primary">Monthly</button>
-                      <button class="py-2 px-3 text-3xs font-semibold rounded-none text-white bg-primary hover:bg-primary hover:text-white focus:text-white focus:bg-primary">Weekly</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="grid grid-cols-12"> 
-                    <div class="col-span-2 xl:col-span-3 2md:col-span-12">
-                      <ul class="flex flex-col gap-[14px] 2md:gap-[8px] 2md:flex-row 2md:flex-wrap">
-                        <li>
-                          <button class="flex items-center gap-2 justify-start w-full text-xs font-semibold 2md:py-[7px] 2md:px-[7px] py-[9px] px-4 bg-gray-light"><span class="w-[10px] bg-success h-[10px] rounded-[2px]"></span><span class="text-xs font-semibold text-left line-clamp-1">Rephrase Words</span></button>
-                        </li>
-                        <li>
-                          <button class="flex items-center gap-2 justify-start w-full text-xs font-semibold 2md:py-[7px] 2md:px-[7px] py-[9px] px-4 bg-gray-light"><span class="w-[10px] bg-danger h-[10px] rounded-[2px]"></span><span class="text-xs font-semibold text-left line-clamp-1">Presentation</span></button>
-                        </li>
-                        <li>
-                          <button class="flex items-center gap-2 justify-start w-full text-xs font-semibold 2md:py-[7px] 2md:px-[7px] py-[9px] px-4 bg-gray-light"><span class="w-[10px] bg-title h-[10px] rounded-[2px]"></span><span class="text-xs font-semibold text-left line-clamp-1">Fill the Gap</span></button>
-                        </li>
-                        <li>
-                          <button class="flex items-center gap-2 justify-start w-full text-xs font-semibold 2md:py-[7px] 2md:px-[7px] py-[9px] px-4 bg-gray-light"><span class="w-[10px] bg-warning h-[10px] rounded-[2px]"></span><span class="text-xs font-semibold text-left line-clamp-1">Drag and Drop</span></button>
-                        </li>
-                        <li>
-                          <button class="flex items-center gap-2 justify-start w-full text-xs font-semibold 2md:py-[7px] 2md:px-[7px] py-[9px] px-4 bg-gray-light"><span class="w-[10px] bg-success h-[10px] rounded-[2px]"></span><span class="text-xs font-semibold text-left line-clamp-1">Quizz</span></button>
-                        </li>
-                        <li>
-                          <button class="flex items-center gap-2 justify-start w-full text-xs font-semibold 2md:py-[7px] 2md:px-[7px] py-[9px] px-4 bg-gray-light"><span class="w-[10px] bg-danger h-[10px] rounded-[2px]"></span><span class="text-xs font-semibold text-left line-clamp-1">Introduction</span></button>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-span-10 xl:col-span-9 2md:col-span-12">
-                      <div class="custom-data-label apex-custom-text 2md:-mt-[12px] ml-[-40px] 2md:ml-0" id="userPosition"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-span-3 4xl:col-span-4 lg:col-span-12">
-              <div class="card"> 
-                <div class="card-header">
-                  <div class="flex justify-between w-full flex-wrap gap-2 items-center">
-                    <h3 class="text-lg font-bold text-title leading-none">Sell Overview</h3>
-                    <div class="dropdown on-hover-show">
-                      <button class="flex rounded-full items-center justify-center p-[5px] bg-gray-light"> 
-                        <svg class="w-[18px] h-[18px] stroke-title"> 
-                          <use href="../../assets/svg/_sprite.svg#Setting"> </use>
-                        </svg>
-                      </button>
-                      <div class="dropdown-menu">
-                        <ul>
-                          <li><a href="javascript:void(0)">Yearly</a></li>
-                          <li><a href="javascript:void(0)">Monthly</a></li>
-                          <li><a href="javascript:void(0)">Weekly</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="apex-custom-tooltip apex-tooltip-style1 mb-[-15px]" id="SellOverview"></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-span-6 4xl:col-span-8 lg:col-span-12">
-              <div class="card">
-                <div class="card-header">
-                  <div class="flex justify-between w-full flex-wrap gap-2 items-center">
-                    <h3 class="text-lg font-bold text-title leading-none">Opne Invoices</h3>
-                    <div class="dropdown on-hover-show">
-                      <button class="flex rounded-full items-center justify-center p-[5px] bg-gray-light"> 
-                        <svg class="w-[18px] h-[18px] stroke-title"> 
-                          <use href="../../assets/svg/_sprite.svg#Setting"> </use>
-                        </svg>
-                      </button>
-                      <div class="dropdown-menu">
-                        <ul>
-                          <li><a href="javascript:void(0)">Yearly</a></li>
-                          <li><a href="javascript:void(0)">Monthly</a></li>
-                          <li><a href="javascript:void(0)">Weekly</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <div class="overflow-auto custom-scroll"> 
-                    <178></178>
                     <table class="table equal-space">
                       <thead> 
                         <tr> 
-                          <th>Name</th>
-                          <th>Date</th>
-                          <th>Amount</th>
-                          <th>Status</th>
-                          <th>Action</th>
+                          <th>Product</th>
+                          <th>Product Detail</th>
+                          <th>Price</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td class="min-w-[11.125rem]"> <a class="flex items-center gap-[.5625rem]" href="./invoice.html"><img class="2sm:w-[2.375rem] 2sm:h-[2.375rem] w-10 h-10 rounded-full" src="../../assets/images/avatar/1.jpg" alt="Andy Groshev">
-                              <div>
-                                <h4 class="text-xs font-semibold text-title">Andy Groshev</h4>
-                              </div></a></td>
-                          <td class="min-w-[7.5rem]"> 
-                            <h4 class="text-xs font-semibold text-content">25 Nov 2022</h4>
-                          </td>
-                          <td class="min-w-[6.25rem]"> 
-                            <h4 class="text-xs font-semibold text-title">$2.588.00</h4>
-                          </td>
-                          <td class="min-w-[5.3125rem]"> 
-                            <h4 class="text-xs font-semibold capitalize text-success">Paid</h4>
-                          </td>
-                          <td class="min-w-[6.25rem] max-w-[6.25rem]"> 
-                            <div class="custom-select select-style-1">
-                              <select>
-                                <option value="">Copy</option>
-                                <option value="">Send Email</option>
-                                <option value="">Before Due</option>
-                                <option value="">Past Due</option>
-                              </select>
+                          <td><img class="w-16 h-14 rounded-5" src="../../assets/images/ecommerce/11.jpg" alt="11.jpg"></td>
+                          <td class="min-w-[158px]">
+                            <div>
+                              <h4 class="text-xs font-semibold text-title">Coffee Cup</h4><span class="block mt-1 font-semibold text-2xs text-content">$98 * 2</span>
                             </div>
                           </td>
+                          <td class="min-w-[.625rem]">$190</td>
                         </tr>
                         <tr>
-                          <td class="min-w-[11.125rem]"> <a class="flex items-center gap-[.5625rem]" href="./invoice.html"><img class="2sm:w-[2.375rem] 2sm:h-[2.375rem] w-10 h-10 rounded-full" src="../../assets/images/avatar/2.jpg" alt="Patrick Press">
-                              <div>
-                                <h4 class="text-xs font-semibold text-title">Patrick Press</h4>
-                              </div></a></td>
-                          <td class="min-w-[7.5rem]"> 
-                            <h4 class="text-xs font-semibold text-content">20 Nov 2022</h4>
-                          </td>
-                          <td class="min-w-[6.25rem]"> 
-                            <h4 class="text-xs font-semibold text-title">$4.800.00</h4>
-                          </td>
-                          <td class="min-w-[5.3125rem]"> 
-                            <h4 class="text-xs font-semibold capitalize text-danger">Past Due</h4>
-                          </td>
-                          <td class="min-w-[6.25rem] max-w-[6.25rem]"> 
-                            <div class="custom-select select-style-1">
-                              <select>
-                                <option value="">Copy</option>
-                                <option value="">Send Email</option>
-                                <option value="">Before Due</option>
-                                <option value="">Past Due</option>
-                              </select>
+                          <td><img class="w-16 h-14 rounded-5" src="../../assets/images/ecommerce/13.jpg" alt="13.jpg"></td>
+                          <td class="min-w-[158px]">
+                            <div>
+                              <h4 class="text-xs font-semibold text-title">Facewash - For Good skincare</h4><span class="block mt-1 font-semibold text-2xs text-content">$75 * 2</span>
                             </div>
                           </td>
+                          <td class="min-w-[.625rem]">$150</td>
                         </tr>
                         <tr>
-                          <td class="min-w-[11.125rem]"> <a class="flex items-center gap-[.5625rem]" href="./invoice.html"><img class="2sm:w-[2.375rem] 2sm:h-[2.375rem] w-10 h-10 rounded-full" src="../../assets/images/avatar/3.jpg" alt="Kevin Greem">
-                              <div>
-                                <h4 class="text-xs font-semibold text-title">Kevin Greem</h4>
-                              </div></a></td>
-                          <td class="min-w-[7.5rem]"> 
-                            <h4 class="text-xs font-semibold text-content">12 Nov 2022</h4>
-                          </td>
-                          <td class="min-w-[6.25rem]"> 
-                            <h4 class="text-xs font-semibold text-title">$4.678.00</h4>
-                          </td>
-                          <td class="min-w-[5.3125rem]"> 
-                            <h4 class="text-xs font-semibold capitalize text-success">Paid</h4>
-                          </td>
-                          <td class="min-w-[6.25rem] max-w-[6.25rem]"> 
-                            <div class="custom-select select-style-1">
-                              <select>
-                                <option value="">Copy</option>
-                                <option value="">Send Email</option>
-                                <option value="">Before Due</option>
-                                <option value="">Past Due</option>
-                              </select>
+                          <td><img class="w-16 h-14 rounded-5" src="../../assets/images/ecommerce/14.jpg" alt="14.jpg"></td>
+                          <td class="min-w-[158px]">
+                            <div>
+                              <h4 class="text-xs font-semibold text-title">Perfume - Great fragrance</h4><span class="block mt-1 font-semibold text-2xs text-content">$299</span>
                             </div>
                           </td>
+                          <td class="min-w-[.625rem]">$299</td>
                         </tr>
                         <tr>
-                          <td class="min-w-[11.125rem]"> <a class="flex items-center gap-[.5625rem]" href="./invoice.html"><img class="2sm:w-[2.375rem] 2sm:h-[2.375rem] w-10 h-10 rounded-full" src="../../assets/images/avatar/4.jpg" alt="Arocca Barton">
-                              <div>
-                                <h4 class="text-xs font-semibold text-title">Arocca Barton</h4>
-                              </div></a></td>
-                          <td class="min-w-[7.5rem]"> 
-                            <h4 class="text-xs font-semibold text-content">10 Oct 2022</h4>
-                          </td>
-                          <td class="min-w-[6.25rem]"> 
-                            <h4 class="text-xs font-semibold text-title">$2.450.00</h4>
-                          </td>
-                          <td class="min-w-[5.3125rem]"> 
-                            <h4 class="text-xs font-semibold capitalize text-title">Privet</h4>
-                          </td>
-                          <td class="min-w-[6.25rem] max-w-[6.25rem]"> 
-                            <div class="custom-select select-style-1">
-                              <select>
-                                <option value="">Copy</option>
-                                <option value="">Send Email</option>
-                                <option value="">Before Due</option>
-                                <option value="">Past Due</option>
-                              </select>
+                          <td><img class="w-16 h-14 rounded-5" src="../../assets/images/ecommerce/16.jpg" alt="16.jpg"></td>
+                          <td class="min-w-[158px]">
+                            <div>
+                              <h4 class="text-xs font-semibold text-title">Women's Leather Bags</h4><span class="block mt-1 font-semibold text-2xs text-content">$212</span>
                             </div>
                           </td>
+                          <td class="min-w-[.625rem]">$212</td>
+                        </tr>
+                        <tr> 
+                          <td class="font-bold text-xs" colspan="2">Sub Total :</td>
+                          <td class="font-bold text-xs text-end">$851.00 </td>
+                        </tr>
+                        <tr> 
+                          <td class="text-xs" colspan="2">Discount :</td>
+                          <td class="text-content3 text-xs text-end">-$50.00</td>
+                        </tr>
+                        <tr> 
+                          <td class="text-xs" colspan="2">Shipping Charge :</td>
+                          <td class="text-content3 text-xs text-end">-$25.99  </td>
+                        </tr>
+                        <tr> 
+                          <td class="text-xs" colspan="2">Tax :</td>
+                          <td class="text-content3 text-xs text-end">-$12.59  </td>
+                        </tr>
+                        <tr> 
+                          <td class="font-bold text-xs" colspan="2">Total (USD) :</td>
+                          <td class="font-bold text-xs text-end">$787.6 </td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-span-3 4xl:col-span-4 lg:col-span-6 lg:-order-1 2md:col-span-12">
-              <div class="card"> 
-                <div class="card-header">
-                  <div class="flex justify-between w-full flex-wrap gap-2 items-center">
-                    <h3 class="text-lg font-bold text-title leading-none">Notification</h3>
-                    <div class="dropdown on-hover-show">
-                      <button class="flex rounded-full items-center justify-center p-[5px] bg-gray-light"> 
-                        <svg class="w-[18px] h-[18px] stroke-title"> 
-                          <use href="../../assets/svg/_sprite.svg#Setting"> </use>
-                        </svg>
-                      </button>
-                      <div class="dropdown-menu">
-                        <ul>
-                          <li><a href="javascript:void(0)">Yearly</a></li>
-                          <li><a href="javascript:void(0)">Monthly</a></li>
-                          <li><a href="javascript:void(0)">Weekly</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+                <div class="divider w-full bg-gray-light"></div>
+                <div class="w-[245px] max-w-[300px]">
+                  <form class="theme-form m-0 flex flex-col gap-2">
+                    <label class="!mb-0" for="address">Payment Detail</label>
+                    <select class="form-select block w-full px-3 text-xs font-normal text-content3 bg-white bg-clip-padding bg-no-repeat border border-border-light rounded-5 transition ease-in-out m-0 min-w-[150px] py-[9px]" id="paymentMethod" aria-label="Default select example">
+                      <option selected="">Payment Method</option>
+                      <option value="1">Mastercard</option>
+                      <option value="2">Credit Card</option>
+                      <option value="3">PayPal</option>
+                      <option value="4">Visa</option>
+                    </select>
+                    <input type="text" id="card-name" placeholder="Vilma Gerhold" required>
+                    <input type="number" id="name" placeholder="xxx xxxx xxxx 7159" required>
+                    <input type="number" id="name" placeholder="$787.6" readonly>
+                  </form>
                 </div>
-                <div class="card-body">
-                  <ul> 
-                    <li class="group flex items-center group justify-between gap-3 first:pt-0 last:pb-0 first:border-none py-[13px] border-t border-border-light"> 
-                      <div class="flex items-center gap-[10px] flex-[1_1_0]">
-                        <div class="overflow-hidden rounded-full object-cover sm:min-w-[38px] sm:min-h-[38px] 5xl:min-w-[42px] 5xl:min-h-[42px] min-w-[45px] min-h-[45px]"><img class="w-full h-auto object-cover" src="../../assets/images/avatar/12.jpg" alt="event"/></div>
-                        <div class="flex-1"> <a href="chat-app.html">
-                            <h4 class="transition-all text-xs text-title font-semibold line-clamp-1 group-hover:text-primary">Dmitriy Groshev</h4></a><span class="text-2xs font-semibold text-content line-clamp-1 mt-[4px]">Cody fisher create task on ERP management system</span>
-                        </div>
-                      </div><span class="min-w-fit badge text-3xs bg-gray-light text-title py-[7px] px-[13px]">2hr ago</span>
-                    </li>
-                    <li class="group flex items-center group justify-between gap-3 first:pt-0 last:pb-0 first:border-none py-[13px] border-t border-border-light"> 
-                      <div class="flex items-center gap-[10px] flex-[1_1_0]">
-                        <div class="overflow-hidden rounded-full object-cover sm:min-w-[38px] sm:min-h-[38px] 5xl:min-w-[42px] 5xl:min-h-[42px] min-w-[45px] min-h-[45px]"><img class="w-full h-auto object-cover" src="../../assets/images/avatar/13.jpg" alt="event"/></div>
-                        <div class="flex-1"> <a href="chat-app.html">
-                            <h4 class="transition-all text-xs text-title font-semibold line-clamp-1 group-hover:text-primary">Kristin watson</h4></a><span class="text-2xs font-semibold text-content line-clamp-1 mt-[4px]">Kristin watson payment gateway needed on sellmokam</span>
-                        </div>
-                      </div><span class="min-w-fit badge text-3xs bg-gray-light text-title py-[7px] px-[13px]">4hr ago</span>
-                    </li>
-                    <li class="group flex items-center group justify-between gap-3 first:pt-0 last:pb-0 first:border-none py-[13px] border-t border-border-light"> 
-                      <div class="flex items-center gap-[10px] flex-[1_1_0]">
-                        <div class="overflow-hidden rounded-full object-cover sm:min-w-[38px] sm:min-h-[38px] 5xl:min-w-[42px] 5xl:min-h-[42px] min-w-[45px] min-h-[45px]"><img class="w-full h-auto object-cover" src="../../assets/images/avatar/14.jpg" alt="event"/></div>
-                        <div class="flex-1"> <a href="chat-app.html">
-                            <h4 class="transition-all text-xs text-title font-semibold line-clamp-1 group-hover:text-primary">Janis Evans</h4></a><span class="text-2xs font-semibold text-content line-clamp-1 mt-[4px]">Jacob jones generate invoice on E-Commerce</span>
-                        </div>
-                      </div><span class="min-w-fit badge text-3xs bg-gray-light text-title py-[7px] px-[13px]">10 Jun</span>
-                    </li>
-                    <li class="group flex items-center group justify-between gap-3 first:pt-0 last:pb-0 first:border-none py-[13px] border-t border-border-light"> 
-                      <div class="flex items-center gap-[10px] flex-[1_1_0]">
-                        <div class="overflow-hidden rounded-full object-cover sm:min-w-[38px] sm:min-h-[38px] 5xl:min-w-[42px] 5xl:min-h-[42px] min-w-[45px] min-h-[45px]"><img class="w-full h-auto object-cover" src="../../assets/images/avatar/15.jpg" alt="event"/></div>
-                        <div class="flex-1"> <a href="chat-app.html">
-                            <h4 class="transition-all text-xs text-title font-semibold line-clamp-1 group-hover:text-primary">Mukrani Pabelo</h4></a><span class="text-2xs font-semibold text-content line-clamp-1 mt-[4px]">Esther howard sent new logo on burger bro</span>
-                        </div>
-                      </div><span class="min-w-fit badge text-3xs bg-gray-light text-title py-[7px] px-[13px]">22 Jun</span>
-                    </li>
-                    <li class="group flex items-center group justify-between gap-3 first:pt-0 last:pb-0 first:border-none py-[13px] border-t border-border-light"> 
-                      <div class="flex items-center gap-[10px] flex-[1_1_0]">
-                        <div class="overflow-hidden rounded-full object-cover sm:min-w-[38px] sm:min-h-[38px] 5xl:min-w-[42px] 5xl:min-h-[42px] min-w-[45px] min-h-[45px]"><img class="w-full h-auto object-cover" src="../../assets/images/avatar/16.jpg" alt="event"/></div>
-                        <div class="flex-1"> <a href="chat-app.html">
-                            <h4 class="transition-all text-xs text-title font-semibold line-clamp-1 group-hover:text-primary">Josephin Water</h4></a><span class="text-2xs font-semibold text-content line-clamp-1 mt-[4px]">Esther howard comment on QHI Media Project</span>
-                        </div>
-                      </div><span class="min-w-fit badge text-3xs bg-gray-light text-title py-[7px] px-[13px]">10 july</span>
-                    </li>
-                  </ul>
-                </div>
+                <div class="divider w-full bg-gray-light"></div>
+                <form class="theme-form m-0 flex flex-col gap-2">
+                  <label for="notes">Notes</label>
+                  <p class="font-medium text-content3 !text-start rtl:!text-end">All accounts must be settled within seven days of receiving an invoice. to be paid by check, credit card, or online direct deposit. If the account is not paid within seven days, the agreed-upon quoted fee indicated above will be charged to the credits details provided as confirmation of the task completed.</p>
+                </form>
+                <div class="divider w-full bg-gray-light"></div>
+                <div class="flex items-center gap-2 justify-end"><a class="btn btn-success py-1 text-white text-xs flex gap-2 items-center" href="javascript:window.print()"> <i class="w-4 h-4 stroke-white" data-feather="printer"></i>Print</a><a class="btn btn-secondary py-1 text-white text-xs flex gap-2 items-center" href="../../assets/chat-doc/invoice.pdf" Download> <i class="w-4 h-4 stroke-white" data-feather="arrow-down">                                              </i>Download   </a></div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- Page Body End -->
-        <div class="page-footer sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap"> 
-          <p class="text-xs font-semibold text-center text-content">Copyright 2023 © Govo theme by pixelstrap</p>
-          <div class="flex items-center gap-2"> 
-            <p class="text-xs font-semibold text-center text-content">Hand crafted & made with</p><i class="stroke-danger h-[18px] w-[18px] fill-danger" data-feather="heart"></i>
+          <!-- Page Body End  -->
+          <div class="page-footer sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap"> 
+            <p class="text-xs font-semibold text-center text-content">Copyright 2023 © Govo theme by pixelstrap</p>
+            <div class="flex items-center gap-2"> 
+              <p class="text-xs font-semibold text-center text-content">Hand crafted & made with</p><i class="stroke-danger h-[18px] w-[18px] fill-danger" data-feather="heart"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -2150,10 +1380,6 @@
   <script src="../../assets/js/feather-custom.js"></script>
   <!-- Select Js -->
   <script src="../../assets/js/custom-select.js"></script>
-  <!-- Apex Chart Js -->
-  <script src="../../assets/js/apexchart/apexcharts.js"></script>
-  <script src="../../assets/js/apexchart/apex-common.js"></script>
-  <script src="../../assets/js/apexchart/unique-custom.js"></script>
   <!-- Sidebar Js -->
   <script src="../../assets/js/sidebar.js"></script>
   <!-- customizer js-->

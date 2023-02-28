@@ -59,7 +59,8 @@
     }
   }
   .checkout-detail,
-  .add-product {
+  .add-product,
+  .invoice-preview {
     form {
       label {
         @apply mb-2 text-content3 font-semibold text-xs inline-block;
@@ -81,6 +82,13 @@
             }
           }
         }
+      }
+    }
+  }
+  .invoice-preview {
+    form {
+      label {
+        @apply text-title text-xs font-bold uppercase;
       }
     }
   }
@@ -144,17 +152,6 @@
                 @apply text-right;
               }
             }
-            table {
-              tbody {
-                tr {
-                  td {
-                    &:last-child {
-                      /* @apply !text-left; */
-                    }
-                  }
-                }
-              }
-            }
           }
           p {
             @apply mb-1;
@@ -172,6 +169,29 @@
             tr {
               td {
                 @apply py-3;
+              }
+            }
+          }
+        }
+      }
+    }
+    .invoice-table-detail {
+      .table {
+        thead {
+          tr {
+            th {
+              @apply bg-border-light py-3;
+            }
+          }
+        }
+        tbody {
+          tr {
+            td {
+              @apply py-3;
+            }
+            &:first-child {
+              td {
+                @apply pt-3;
               }
             }
           }

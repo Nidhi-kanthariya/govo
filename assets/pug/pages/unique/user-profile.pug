@@ -1,0 +1,161 @@
+//- sidebar
+-var sidebar = true;
+
+//- feather
+-var feather= true;
+
+//- fontAwesome
+-var fontAwesome = true;
+
+//- custom select
+-var customSelect = true;
+
+//- customizer 
+-var customizer = true;
+
+//- Breadcrumbs
+-var pageTitle="User Profile";
+-var breadcrumb=['User','User Profile'];
+
+//- all JSON  
+include ../../data/all-data
+
+//- all mixin   
+include ../../mixin/mixin
+
+doctype html
+html(lang='en')
+    include ../../layout/header-files
+    body(dir="ltr" class="unique-skin")
+        main.page-wrapper
+            div.page-body-wrapper(class="mb-10 2xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300")
+                include ../../layout/header/unique/header     
+                // Sidebar Start 
+                div.page-sidebar.sidebar-dark.unique-sidebar
+                    include ../../layout/sidebar/unique 
+                // Sidebar End 
+
+                // Page Body Start
+                div.page-body
+                    div.grid.grid-cols-12.gap-card-gap
+                        div.col-span-9
+                        div.col-span-3(class="gap-card-gap flex flex-col") 
+                            div.card 
+                                div.card-header.pb-2.header-bottom-border(class="!border-dashed")
+                                    h3.text-lg.font-bold About Me 
+                                div.card-body
+                                    ul.flex.flex-col.gap-4 
+                                        li.flex.items-center.gap-3
+                                            +SVG_ICON("Send", "w-9 h-9 p-2 bg-border-light stroke-title rounded-full")
+                                            div.flex.flex-col 
+                                                p.text-xs.font-semibold UX Designer At Pixelstrap
+                                                span.text-content3.font-semibold.text-2xs Bangalore - 2021
+                                        li.flex.items-center.gap-3
+                                            +SVG_ICON("Buy", "w-9 h-9 p-2 bg-border-light stroke-title rounded-full")
+                                            div.flex.flex-col 
+                                                p.text-xs.font-semibold Studied Computer Science
+                                                span.text-content3.font-semibold.text-2xs At London University - 2015
+                                        li.flex.items-center.gap-3
+                                            +SVG_ICON("Download", "w-9 h-9 p-2 bg-border-light stroke-title rounded-full")
+                                            div.flex.flex-col 
+                                                p.text-xs.font-semibold Relationship Status
+                                                span.text-content3.font-semibold.text-2xs Single
+                                        li.flex.items-center.gap-3
+                                            +SVG_ICON("Swap", "w-9 h-9 p-2 bg-border-light stroke-title rounded-full")
+                                            div.flex.flex-col 
+                                                p.text-xs.font-semibold Lived In London
+                                                span.text-content3.font-semibold.text-2xs Last 5 Year
+                                        li.flex.items-center.gap-3
+                                            +SVG_ICON("Ticket-Star", "w-9 h-9 p-2 bg-border-light stroke-title rounded-full")
+                                            div.flex.flex-col 
+                                                p.text-xs.font-semibold Blood Group
+                                                span.text-content3.font-semibold.text-2xs O+ Positive
+                                    div
+                                        div(class="pt-4 pb-2 border-b border-border-light !border-dashed")
+                                            h3.text-lg.font-bold Social Networks 
+                                        div.flex.flex-col.gap-2.mt-4 
+                                            button.btn.bg-facebook.text-white.flex.items-center.gap-3.text-xs.font-semibold.justify-center 
+                                                i.fa-brands.fa-facebook-f
+                                                | Facebook
+                                            button.btn.bg-twitter.text-white.flex.items-center.gap-3.text-xs.font-semibold.justify-center 
+                                                i.fa-brands.fa-twitter
+                                                | Twitter
+                                            button.btn.bg-danger.text-white.flex.items-center.gap-3.text-xs.font-semibold.justify-center 
+                                                i.fa-brands.fa-dribbble
+                                                | Dribble
+
+                            div.card.gap-0 
+                                div.card-header
+                                    h3.text-lg.font-bold Friends 
+                                div.card-body
+                                    div.accordionWrapper.flush
+                                        div.accordionItem.open
+                                            h4.accordionItemHeading(class="!text-content3 !px-0 !border-dashed flex items-center justify-between") 
+                                                | Close Friends
+                                                +SVG_ICON("Arrow-Down-Circle","w-[1.25rem] h-[1.25rem] !stroke-primary")
+                                            div.accordionItemContent(class="!px-0 !border-none !mb-0")
+                                                ul.flex.flex-col.gap-4
+                                                    li                                 
+                                                        a.flex.items-center.gap-3(href="user-card.html")  
+                                                            div.avatar  
+                                                                div.w-10.rounded-full(class="xl:w-9") 
+                                                                    img(src='../../assets/images/avatar/25.jpg' alt='avatar')
+                                                            div
+                                                                p.text-xs.font-semibold(class="leading-none lg:text-2xs") Carla Packard
+                                                                span.text-content3.font-semibold.text-2xs Alabma, USA
+                                                    li                                 
+                                                        a.flex.items-center.gap-3(href="user-card.html")  
+                                                            div.avatar
+                                                                div.w-10.rounded-full(class="xl:w-9")
+                                                                    img(src='../../assets/images/avatar/15.jpg' alt='avatar')
+                                                            div
+                                                                p.text-xs.font-semibold(class="leading-none lg:text-2xs") Andrew Black
+                                                                span.text-content3.font-semibold.text-2xs Alabma, USA
+                                                    li                                 
+                                                        a.flex.items-center.gap-3(href="user-card.html")  
+                                                            div.avatar
+                                                                div.w-10.rounded-full(class="xl:w-9")
+                                                                    img(src='../../assets/images/avatar/6.jpg' alt='avatar')
+                                                            div
+                                                                p.text-xs.font-semibold(class="leading-none lg:text-2xs") Oliver Dawson
+                                                                span.text-content3.font-semibold.text-2xs Alabma, USA 
+                                                    li                                 
+                                                        a.flex.items-center.gap-3(href="user-card.html")  
+                                                            div.avatar
+                                                                div.w-10.rounded-full(class="xl:w-9")
+                                                                    img(src='../../assets/images/avatar/27.jpg' alt='avatar')
+                                                            div
+                                                                p.text-xs.font-semibold(class="leading-none lg:text-2xs") Robert Lanzel
+                                                                span.text-content3.font-semibold.text-2xs Alabma, USA  
+
+                                    div.accordionWrapper.flush
+                                        div.accordionItem.open
+                                            h4.accordionItemHeading(class="!text-content3 !px-0 !border-dashed flex items-center justify-between")
+                                                | Recent Chats
+                                                +SVG_ICON("Arrow-Down-Circle","w-[1.25rem] h-[1.25rem] !stroke-primary")
+                                            div.accordionItemContent(class="!px-0 !border-none !mb-0")
+                                                ul.flex.flex-col.gap-4
+                                                    li                                 
+                                                        a.flex.items-center.gap-3(href="user-card.html")  
+                                                            div.avatar  
+                                                                div.w-10.rounded-full(class="xl:w-9") 
+                                                                    img(src='../../assets/images/avatar/25.jpg' alt='avatar')
+                                                            div
+                                                                p.text-xs.font-semibold(class="leading-none lg:text-2xs") Carla Packard
+                                                                span.text-content3.font-semibold.text-2xs Alabma, USA
+                                                    li                                 
+                                                        a.flex.items-center.gap-3(href="user-card.html")  
+                                                            div.avatar
+                                                                div.w-10.rounded-full(class="xl:w-9")
+                                                                    img(src='../../assets/images/avatar/15.jpg' alt='avatar')
+                                                            div
+                                                                p.text-xs.font-semibold(class="leading-none lg:text-2xs") Andrew Black
+                                                                span.text-content3.font-semibold.text-2xs Alabma, USA
+                                                
+                                
+
+
+                    // Page Body End  
+                    +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
+            include ../../components/customizer
+    include ../../layout/footer-files

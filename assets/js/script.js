@@ -329,24 +329,12 @@ todoList?.forEach((el) => {
   });
 
   /*=====================
-  13. Invoice Remove js
+  13. List-item Remove js
   ==========================*/
-  const invoiceBox = document.querySelector('.invoice');
-  const invoiceRemove = invoiceBox?.querySelectorAll('.remove-invoice');
+  const invoiceBox = document.querySelector('.invoice , .cart-main');
+  const invoiceRemove = invoiceBox?.querySelectorAll('.remove-invoice , .remove-cart');
   invoiceRemove?.forEach((el) => {
     el.addEventListener('click', function () {
-      this.closest('.invoice-item').style.display = 'none';
-    });
-  });
-
-
-    /*=====================
-  13. Invoice Remove js
-  ==========================*/
-  const cartBox = document.querySelector('.cart-main');
-  const cartRemove = cartBox?.querySelectorAll('.remove-cart');
-  cartRemove?.forEach((el) => {
-    el.addEventListener('click', function () {
-      this.closest('.cart-item').style.display = 'none';
+      this.closest('.invoice-item , .cart-item').style.display = 'none';
     });
   });

@@ -139,14 +139,6 @@
           }
         }
       }
-
-      &.invoice-preview {
-        tbody {
-          td {
-            @apply pt-0;
-          }
-        }
-      }
     }
     &.table-bordered {
       thead {
