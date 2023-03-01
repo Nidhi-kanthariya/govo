@@ -37,120 +37,194 @@ html(lang='en')
 
                 // Page Body Start
                 div.page-body
-                    div.grid.grid-cols-12.gap-card-gap
+                    div.user-bg 
+                        img(src="../../assets/images/user-app/bg.jpg", alt="" class="w-full h-80")
+                    div.grid.grid-cols-12.gap-card-gap(class="px-body-space mt-[-100px]")
+                        div.col-span-3
+                            div.grid.grid-cols-12.gap-4
+                                div.col-span-12
+                                    div.card 
+                                        div.card-body.flex.flex-col.gap-4.items-center.justify-center
+                                            div.avatar.rounded-xl.overflow-visible(class="w-[128px] h-[123px] relative mb-4")
+                                                img(src='../../assets/images/avatar/38.jpg' alt='girl in yellow jacket')
+                                                span.p-1.bg-white.rounded-full.absolute(class="bottom-[-12px] right-[-12px] shadow-xl")
+                                                    a(href="user-profile.html")
+                                                        +SVG_ICON("Edit","w-5 h-5 stroke-title")
+                                            div.text-center
+                                                p.text-xs.text-title(class="font-semibold") Emayila Sidorshina
+                                                span.text-2xs.text-content3(class="font-semibold")  emayiladosidorshina@gmail.com
+                                div.col-span-12
+                                    div.card 
+                                        div.card-header 
+                                            h3.text-lg.font-bold Info  
+                                        div.card-body.flex.flex-col.gap-4
+                                            p.text-title.text-xs.font-semibold.capitalize Name: 
+                                                span.font-medium.text-content3 Emayila Sidorshina
+                                            p.text-title.text-xs.font-semibold.capitalize Email Id: 
+                                                span.font-medium.text-content3 emayiladosidorshina@gmail.com
+                                            p.text-title.text-xs.font-semibold.capitalize Contact No: 
+                                                span.font-medium.text-content3 (773) 847-8982 
+                                            p.text-title.text-xs.font-semibold.capitalize Registration date: 
+                                                span.font-medium.text-content3 Oct, 25,2022
+                                            p.text-title.text-xs.font-semibold.capitalize Member Status: 
+                                                span.font-medium.text-content3 Active Member
+                                        
+                                div.col-span-12
+                                    div.card 
+                                        div.card-header 
+                                            h3.text-lg.font-bold Social Media 
+                                        div.card-body
+                                            div.social(class="sm:flex-col flex items-center justify-center gap-2")
+                                                a(href="https://www.facebook.com/login" class="bg-gray-light rounded-full btn !text-facebook")
+                                                    i.fa-brands.fa-facebook-f(class="w-4 h-4")
+                                                a(href="https://www.linkedin.com/login" class="bg-gray-light rounded-full btn !text-linkedin")
+                                                    i.fa-brands.fa-linkedin-in(class="w-4 h-4")
+                                                a(href="https://twitter.com/i/flow/login" class="bg-gray-light rounded-full btn !text-twitter")
+                                                    i.fa-brands.fa-twitter(class="w-4 h-4")
+                                                a(href="https://www.instagram.com/accounts/login/" class="bg-gray-light rounded-full btn instagram !text-instagram")
+                                                    svg(width='0' height='0')
+                                                        radialgradient#rg(r='150%' cx='30%' cy='107%')
+                                                            stop(stop-color='#fdf497' offset='0')
+                                                            stop(stop-color='#fdf497' offset='0.05')
+                                                            stop(stop-color='#fd5949' offset='0.45')
+                                                            stop(stop-color='#d6249f' offset='0.6')
+                                                            stop(stop-color='#285AEB' offset='0.9')
+                                                    i.fa-brands.fa-instagram(class="w-4 h-4")
+                                                a(href="https://www.rss.com/" class="bg-gray-light rounded-full btn !text-danger")
+                                                    i.fa-solid.fa-rss(class="w-4 h-4")
+                                                
+                                div.col-span-12
+                                    div.card 
+                                        div.card-header 
+                                            h3.text-lg.font-bold Skills 
+                                        div.card-body
+                                            div.flex.flex-wrap.gap-2 
+                                                div.badge.bg-primary.text-white.rounded-full HTML
+                                                div.badge.bg-primary.text-white.rounded-full Css
+                                                div.badge.bg-primary.text-white.rounded-full JavaScript
+                                                div.badge.bg-primary.text-white.rounded-full Tailwindcss
+                                                div.badge.bg-primary.text-white.rounded-full Pug 
+                                                div.badge.bg-primary.text-white.rounded-full Illustrator
+                                            
+                                                
                         div.col-span-9
-                        div.col-span-3(class="gap-card-gap flex flex-col") 
-                            div.card 
-                                div.card-header.pb-2.header-bottom-border(class="!border-dashed")
-                                    h3.text-lg.font-bold About Me 
-                                div.card-body
-                                    ul.flex.flex-col.gap-4 
-                                        li.flex.items-center.gap-3
-                                            +SVG_ICON("Send", "w-9 h-9 p-2 bg-border-light stroke-title rounded-full")
-                                            div.flex.flex-col 
-                                                p.text-xs.font-semibold UX Designer At Pixelstrap
-                                                span.text-content3.font-semibold.text-2xs Bangalore - 2021
-                                        li.flex.items-center.gap-3
-                                            +SVG_ICON("Buy", "w-9 h-9 p-2 bg-border-light stroke-title rounded-full")
-                                            div.flex.flex-col 
-                                                p.text-xs.font-semibold Studied Computer Science
-                                                span.text-content3.font-semibold.text-2xs At London University - 2015
-                                        li.flex.items-center.gap-3
-                                            +SVG_ICON("Download", "w-9 h-9 p-2 bg-border-light stroke-title rounded-full")
-                                            div.flex.flex-col 
-                                                p.text-xs.font-semibold Relationship Status
-                                                span.text-content3.font-semibold.text-2xs Single
-                                        li.flex.items-center.gap-3
-                                            +SVG_ICON("Swap", "w-9 h-9 p-2 bg-border-light stroke-title rounded-full")
-                                            div.flex.flex-col 
-                                                p.text-xs.font-semibold Lived In London
-                                                span.text-content3.font-semibold.text-2xs Last 5 Year
-                                        li.flex.items-center.gap-3
-                                            +SVG_ICON("Ticket-Star", "w-9 h-9 p-2 bg-border-light stroke-title rounded-full")
-                                            div.flex.flex-col 
-                                                p.text-xs.font-semibold Blood Group
-                                                span.text-content3.font-semibold.text-2xs O+ Positive
-                                    div
-                                        div(class="pt-4 pb-2 border-b border-border-light !border-dashed")
-                                            h3.text-lg.font-bold Social Networks 
-                                        div.flex.flex-col.gap-2.mt-4 
-                                            button.btn.bg-facebook.text-white.flex.items-center.gap-3.text-xs.font-semibold.justify-center 
-                                                i.fa-brands.fa-facebook-f
-                                                | Facebook
-                                            button.btn.bg-twitter.text-white.flex.items-center.gap-3.text-xs.font-semibold.justify-center 
-                                                i.fa-brands.fa-twitter
-                                                | Twitter
-                                            button.btn.bg-danger.text-white.flex.items-center.gap-3.text-xs.font-semibold.justify-center 
-                                                i.fa-brands.fa-dribbble
-                                                | Dribble
+                                    
+              
+                            
+                        
+                        
+                        //- div.col-span-3(class="gap-card-gap flex flex-col") 
+                        //-     div.card 
+                        //-         div.card-header.pb-2.header-bottom-border(class="!border-dashed")
+                        //-             h3.text-lg.font-bold About Me 
+                        //-         div.card-body
+                        //-             ul.flex.flex-col.gap-4 
+                        //-                 li.flex.items-center.gap-3
+                        //-                     +SVG_ICON("Send", "w-9 h-9 p-2 bg-border-light stroke-title rounded-full")
+                        //-                     div.flex.flex-col 
+                        //-                         p.text-xs.font-semibold UX Designer At Pixelstrap
+                        //-                         span.text-content3.font-semibold.text-2xs Bangalore - 2021
+                        //-                 li.flex.items-center.gap-3
+                        //-                     +SVG_ICON("Buy", "w-9 h-9 p-2 bg-border-light stroke-title rounded-full")
+                        //-                     div.flex.flex-col 
+                        //-                         p.text-xs.font-semibold Studied Computer Science
+                        //-                         span.text-content3.font-semibold.text-2xs At London University - 2015
+                        //-                 li.flex.items-center.gap-3
+                        //-                     +SVG_ICON("Download", "w-9 h-9 p-2 bg-border-light stroke-title rounded-full")
+                        //-                     div.flex.flex-col 
+                        //-                         p.text-xs.font-semibold Relationship Status
+                        //-                         span.text-content3.font-semibold.text-2xs Single
+                        //-                 li.flex.items-center.gap-3
+                        //-                     +SVG_ICON("Swap", "w-9 h-9 p-2 bg-border-light stroke-title rounded-full")
+                        //-                     div.flex.flex-col 
+                        //-                         p.text-xs.font-semibold Lived In London
+                        //-                         span.text-content3.font-semibold.text-2xs Last 5 Year
+                        //-                 li.flex.items-center.gap-3
+                        //-                     +SVG_ICON("Ticket-Star", "w-9 h-9 p-2 bg-border-light stroke-title rounded-full")
+                        //-                     div.flex.flex-col 
+                        //-                         p.text-xs.font-semibold Blood Group
+                        //-                         span.text-content3.font-semibold.text-2xs O+ Positive
+                        //-             div
+                        //-                 div(class="pt-4 pb-2 border-b border-border-light !border-dashed")
+                        //-                     h3.text-lg.font-bold Social Networks 
+                        //-                 div.flex.flex-col.gap-2.mt-4 
+                        //-                     button.btn.bg-facebook.text-white.flex.items-center.gap-3.text-xs.font-semibold.justify-center 
+                        //-                         i.fa-brands.fa-facebook-f
+                        //-                         | Facebook
+                        //-                     button.btn.bg-twitter.text-white.flex.items-center.gap-3.text-xs.font-semibold.justify-center 
+                        //-                         i.fa-brands.fa-twitter
+                        //-                         | Twitter
+                        //-                     button.btn.bg-danger.text-white.flex.items-center.gap-3.text-xs.font-semibold.justify-center 
+                        //-                         i.fa-brands.fa-dribbble
+                        //-                         | Dribble
 
-                            div.card.gap-0 
-                                div.card-header
-                                    h3.text-lg.font-bold Friends 
-                                div.card-body
-                                    div.accordionWrapper.flush
-                                        div.accordionItem.open
-                                            h4.accordionItemHeading(class="!text-content3 !px-0 !border-dashed flex items-center justify-between") 
-                                                | Close Friends
-                                                +SVG_ICON("Arrow-Down-Circle","w-[1.25rem] h-[1.25rem] !stroke-primary")
-                                            div.accordionItemContent(class="!px-0 !border-none !mb-0")
-                                                ul.flex.flex-col.gap-4
-                                                    li                                 
-                                                        a.flex.items-center.gap-3(href="user-card.html")  
-                                                            div.avatar  
-                                                                div.w-10.rounded-full(class="xl:w-9") 
-                                                                    img(src='../../assets/images/avatar/25.jpg' alt='avatar')
-                                                            div
-                                                                p.text-xs.font-semibold(class="leading-none lg:text-2xs") Carla Packard
-                                                                span.text-content3.font-semibold.text-2xs Alabma, USA
-                                                    li                                 
-                                                        a.flex.items-center.gap-3(href="user-card.html")  
-                                                            div.avatar
-                                                                div.w-10.rounded-full(class="xl:w-9")
-                                                                    img(src='../../assets/images/avatar/15.jpg' alt='avatar')
-                                                            div
-                                                                p.text-xs.font-semibold(class="leading-none lg:text-2xs") Andrew Black
-                                                                span.text-content3.font-semibold.text-2xs Alabma, USA
-                                                    li                                 
-                                                        a.flex.items-center.gap-3(href="user-card.html")  
-                                                            div.avatar
-                                                                div.w-10.rounded-full(class="xl:w-9")
-                                                                    img(src='../../assets/images/avatar/6.jpg' alt='avatar')
-                                                            div
-                                                                p.text-xs.font-semibold(class="leading-none lg:text-2xs") Oliver Dawson
-                                                                span.text-content3.font-semibold.text-2xs Alabma, USA 
-                                                    li                                 
-                                                        a.flex.items-center.gap-3(href="user-card.html")  
-                                                            div.avatar
-                                                                div.w-10.rounded-full(class="xl:w-9")
-                                                                    img(src='../../assets/images/avatar/27.jpg' alt='avatar')
-                                                            div
-                                                                p.text-xs.font-semibold(class="leading-none lg:text-2xs") Robert Lanzel
-                                                                span.text-content3.font-semibold.text-2xs Alabma, USA  
+                        //-     div.card.gap-0 
+                        //-         div.card-header
+                        //-             h3.text-lg.font-bold Friends 
+                        //-         div.card-body
+                        //-             div.accordionWrapper.flush
+                        //-                 div.accordionItem.open
+                        //-                     h4.accordionItemHeading(class="!text-content3 !px-0 !border-dashed flex items-center justify-between") 
+                        //-                         | Close Friends
+                        //-                         +SVG_ICON("Arrow-Down-Circle","w-[1.25rem] h-[1.25rem] !stroke-primary")
+                        //-                     div.accordionItemContent(class="!px-0 !border-none !mb-0")
+                        //-                         ul.flex.flex-col.gap-4
+                        //-                             li                                 
+                        //-                                 a.flex.items-center.gap-3(href="user-card.html")  
+                        //-                                     div.avatar  
+                        //-                                         div.w-10.rounded-full(class="xl:w-9") 
+                        //-                                             img(src='../../assets/images/avatar/25.jpg' alt='avatar')
+                        //-                                     div
+                        //-                                         p.text-xs.font-semibold(class="leading-none lg:text-2xs") Carla Packard
+                        //-                                         span.text-content3.font-semibold.text-2xs Alabma, USA
+                        //-                             li                                 
+                        //-                                 a.flex.items-center.gap-3(href="user-card.html")  
+                        //-                                     div.avatar
+                        //-                                         div.w-10.rounded-full(class="xl:w-9")
+                        //-                                             img(src='../../assets/images/avatar/15.jpg' alt='avatar')
+                        //-                                     div
+                        //-                                         p.text-xs.font-semibold(class="leading-none lg:text-2xs") Andrew Black
+                        //-                                         span.text-content3.font-semibold.text-2xs Alabma, USA
+                        //-                             li                                 
+                        //-                                 a.flex.items-center.gap-3(href="user-card.html")  
+                        //-                                     div.avatar
+                        //-                                         div.w-10.rounded-full(class="xl:w-9")
+                        //-                                             img(src='../../assets/images/avatar/6.jpg' alt='avatar')
+                        //-                                     div
+                        //-                                         p.text-xs.font-semibold(class="leading-none lg:text-2xs") Oliver Dawson
+                        //-                                         span.text-content3.font-semibold.text-2xs Alabma, USA 
+                        //-                             li                                 
+                        //-                                 a.flex.items-center.gap-3(href="user-card.html")  
+                        //-                                     div.avatar
+                        //-                                         div.w-10.rounded-full(class="xl:w-9")
+                        //-                                             img(src='../../assets/images/avatar/27.jpg' alt='avatar')
+                        //-                                     div
+                        //-                                         p.text-xs.font-semibold(class="leading-none lg:text-2xs") Robert Lanzel
+                        //-                                         span.text-content3.font-semibold.text-2xs Alabma, USA  
 
-                                    div.accordionWrapper.flush
-                                        div.accordionItem.open
-                                            h4.accordionItemHeading(class="!text-content3 !px-0 !border-dashed flex items-center justify-between")
-                                                | Recent Chats
-                                                +SVG_ICON("Arrow-Down-Circle","w-[1.25rem] h-[1.25rem] !stroke-primary")
-                                            div.accordionItemContent(class="!px-0 !border-none !mb-0")
-                                                ul.flex.flex-col.gap-4
-                                                    li                                 
-                                                        a.flex.items-center.gap-3(href="user-card.html")  
-                                                            div.avatar  
-                                                                div.w-10.rounded-full(class="xl:w-9") 
-                                                                    img(src='../../assets/images/avatar/25.jpg' alt='avatar')
-                                                            div
-                                                                p.text-xs.font-semibold(class="leading-none lg:text-2xs") Carla Packard
-                                                                span.text-content3.font-semibold.text-2xs Alabma, USA
-                                                    li                                 
-                                                        a.flex.items-center.gap-3(href="user-card.html")  
-                                                            div.avatar
-                                                                div.w-10.rounded-full(class="xl:w-9")
-                                                                    img(src='../../assets/images/avatar/15.jpg' alt='avatar')
-                                                            div
-                                                                p.text-xs.font-semibold(class="leading-none lg:text-2xs") Andrew Black
-                                                                span.text-content3.font-semibold.text-2xs Alabma, USA
+                        //-             div.accordionWrapper.flush
+                        //-                 div.accordionItem.open
+                        //-                     h4.accordionItemHeading(class="!text-content3 !px-0 !border-dashed flex items-center justify-between")
+                        //-                         | Recent Chats
+                        //-                         +SVG_ICON("Arrow-Down-Circle","w-[1.25rem] h-[1.25rem] !stroke-primary")
+                        //-                     div.accordionItemContent(class="!px-0 !border-none !mb-0")
+                        //-                         ul.flex.flex-col.gap-4
+                        //-                             li                                 
+                        //-                                 a.flex.items-center.gap-3(href="user-card.html")  
+                        //-                                     div.avatar  
+                        //-                                         div.w-10.rounded-full(class="xl:w-9") 
+                        //-                                             img(src='../../assets/images/avatar/25.jpg' alt='avatar')
+                        //-                                     div
+                        //-                                         p.text-xs.font-semibold(class="leading-none lg:text-2xs") Carla Packard
+                        //-                                         span.text-content3.font-semibold.text-2xs Alabma, USA
+                        //-                             li                                 
+                        //-                                 a.flex.items-center.gap-3(href="user-card.html")  
+                        //-                                     div.avatar
+                        //-                                         div.w-10.rounded-full(class="xl:w-9")
+                        //-                                             img(src='../../assets/images/avatar/15.jpg' alt='avatar')
+                        //-                                     div
+                        //-                                         p.text-xs.font-semibold(class="leading-none lg:text-2xs") Andrew Black
+                        //-                                         span.text-content3.font-semibold.text-2xs Alabma, USA
                                                 
                                 
 

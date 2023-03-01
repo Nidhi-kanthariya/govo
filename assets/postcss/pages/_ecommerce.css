@@ -161,7 +161,7 @@
           thead {
             tr {
               th {
-                @apply bg-border-light py-3;
+                @apply bg-body py-3;
               }
             }
           }
@@ -180,7 +180,7 @@
         thead {
           tr {
             th {
-              @apply bg-border-light py-3;
+              @apply bg-body py-3;
             }
           }
         }
