@@ -11,6 +11,7 @@
         "Gerhold",
         "Govo",
         "Groshev",
+        "jkanban",
         "kanban",
         "Malikan",
         "Pixelstrap",
@@ -19,5 +20,6 @@
         "swiper",
         "Unstarred",
         "vacay"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }

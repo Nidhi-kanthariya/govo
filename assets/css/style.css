@@ -3245,6 +3245,248 @@ code[class*="language-"],
 .weekly-schedule .fc-timegrid-event-harness > .fc-timegrid-event.common-style.success-light {
   background-color: var(--success-light);
 }
+.kanab-common::-webkit-scrollbar {
+  height: 0.25rem;
+  width: 0.25rem;
+}
+.kanab-common::-webkit-scrollbar-track {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+.kanab-common::-webkit-scrollbar-thumb {
+  height: 0.3125rem;
+  border-radius: 0.625px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+.modal-main .modal .modal-body.modal-content-scroll.kanab-common {
+            /* &::-webkit-scrollbar-thumb {
+              @apply bg-gray-300  rounded-[0.625px] border border-gray-400  h-[0.3125rem];
+            } */
+          }
+.modal-main .modal .modal-body.modal-content-scroll.kanab-common::-webkit-scrollbar {
+  height: 0.25rem;
+  width: 0.25rem;
+}
+.modal-main .modal .modal-body.modal-content-scroll.kanab-common::-webkit-scrollbar-track {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+.kanab-common {
+  overflow: auto;
+}
+.kanab-common .kanban-container {
+  display: block;
+  width: auto !important;
+  min-width: 866px;
+}
+@media (max-width: 991px) {
+  .kanab-common .kanban-container {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+.kanab-common .kanban-container .kanban-board {
+  margin-bottom: 2rem;
+  width: calc(100% / 3 - 30px) !important;
+  overflow: hidden;
+  border-radius: 0.3125rem;
+  letter-spacing: 0.5px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.kanab-common .kanban-container .kanban-board .kanban-board-header {
+  height: auto;
+  width: auto;
+  border-bottom-width: 1px;
+  border-color: var(--light);
+  background-color: var(--primary-light);
+  line-height: 1;
+  color: var(--content);
+}
+.kanab-common .kanban-container .kanban-board .kanban-board-header .kanban-title-board {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.03125rem;
+}
+@media (max-width: 1399px) {
+  .kanab-common .kanban-container .kanban-board .kanban-board-header .kanban-title-board {
+    font-size: 15px;
+  }
+}
+.kanab-common .kanban-container .kanban-board .kanban-drag {
+  background-color: var(--gray-light);
+}
+@media (max-width: 1399px) {
+  .kanab-common .kanban-container .kanban-board .kanban-drag {
+    padding: 15px;
+  }
+}
+.kanab-common .kanban-container .kanban-board .kanban-drag .kanban-item {
+  margin-bottom: 1.25rem;
+  background-color: transparent;
+  padding: 0px;
+}
+.kanab-common .kanban-container .kanban-board .kanban-drag .kanban-item:last-of-type {
+  margin-bottom: 0px !important;
+}
+.kanab-common .kanban-container .kanban-board .kanban-drag .kanban-item .kanban-box {
+  display: contents;
+}
+.kanab-common .kanban-container .kanban-board footer {
+  margin: 0px;
+  padding: 0px;
+}
+.kanab-common.kanab-1 .kanban-container {
+      }
+.kanab-common.kanab-1 .kanban-container .kanban-board,
+    .kanab-common.moving-kanab-1 {
+  overflow: hidden;
+  border-radius: 8px;
+  letter-spacing: 0.5px;
+}
+.kanab-common.kanab-1 .kanban-container .kanban-board .kanban-board-header, .kanab-common.moving-kanab-1 .kanban-board-header {
+  border-bottom-width: 1px;
+  border-color: var(--light);
+  background-color: var(--primary-light);
+}
+.kanab-common.kanab-1 .kanban-container .kanban-board .kanban-board-header .kanban-title-board, .kanab-common.moving-kanab-1 .kanban-board-header .kanban-title-board {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.03125rem;
+  color: var(--dark);
+}
+.kanab-common.kanab-1 .kanban-container .kanban-board .kanban-drag, .kanab-common.moving-kanab-1 .kanban-drag {
+  background-color: var(--gray-light);
+}
+.kanab-common.kanab-1 .kanban-container .kanban-board .kanban-drag .kanban-item, .kanab-common.moving-kanab-1 .kanban-drag .kanban-item {
+  margin-bottom: 1.25rem;
+  background-color: transparent;
+  padding: 0px;
+}
+.kanab-common.kanab-1 .kanban-container .kanban-board .kanban-drag .kanban-item .kanban-box, .kanab-common.moving-kanab-1 .kanban-drag .kanban-item .kanban-box {
+  display: contents;
+}
+.kanab-common.kanab-1 .kanban-container .kanban-board footer, .kanab-common.moving-kanab-1 footer {
+  margin: 0px;
+  padding: 0px;
+}
+.kanab-common.kanab-2 .kanban-container .kanban-board {
+  border-width: 1px;
+  border-color: var(--light);
+}
+.kanab-common.kanab-2 .kanban-container .kanban-board:nth-child(3n + 1) .kanban-board-header {
+  border-color: rgba(var(--secondary),1);
+}
+.kanab-common.kanab-2 .kanban-container .kanban-board:nth-child(3n + 2) .kanban-board-header {
+  border-color: var(--warning);
+}
+.kanab-common.kanab-2 .kanban-container .kanban-board:nth-child(3n + 3) .kanban-board-header {
+  border-color: var(--success);
+}
+.kanab-common.kanab-2 .kanban-container .kanban-board .kanban-drag {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
+}
+.kanab-common.kanab-2 .kanban-container .kanban-board,
+    .kanab-common.moving-kanab-2 {
+  overflow: hidden;
+  border-radius: 8px;
+  letter-spacing: 0.5px;
+}
+.kanab-common.kanab-2 .kanban-container .kanban-board .kanban-board-header, .kanab-common.moving-kanab-2 .kanban-board-header {
+  border-bottom-width: 4px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.kanab-common.kanab-2 .kanban-container .kanban-board .kanban-board-header .kanban-title-board, .kanab-common.moving-kanab-2 .kanban-board-header .kanban-title-board {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.03125rem;
+  color: var(--dark);
+}
+.kanab-common.kanab-2 .kanban-container .kanban-board .kanban-drag, .kanab-common.moving-kanab-2 .kanban-drag {
+  background-color: var(--gray-light);
+}
+.kanab-common.kanab-2 .kanban-container .kanban-board .kanban-drag .kanban-item, .kanab-common.moving-kanab-2 .kanban-drag .kanban-item {
+  margin-bottom: 1.25rem;
+  background-color: transparent;
+  padding: 0px;
+}
+.kanab-common.kanab-2 .kanban-container .kanban-board .kanban-drag .kanban-item .kanban-box, .kanab-common.moving-kanab-2 .kanban-drag .kanban-item .kanban-box {
+  display: contents;
+}
+.kanab-common.kanab-2 .kanban-container .kanban-board footer, .kanab-common.moving-kanab-2 footer {
+  margin: 0px;
+  padding: 0px;
+}
+.kanab-common.kanab-3 .kanban-container .kanban-board {
+  border-width: 1px;
+  border-color: var(--light);
+}
+.kanab-common.kanab-3 .kanban-container .kanban-board .kanban-board-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.kanab-common.kanab-3 .kanban-container .kanban-board .kanban-board-header::before {
+  display: block;
+  height: 1rem;
+  width: 1rem;
+  content: var(--tw-content);
+  border-radius: 9999px;
+}
+.kanab-common.kanab-3 .kanban-container .kanban-board:nth-child(3n + 1) .kanban-board-header::before {
+  content: var(--tw-content);
+  background-color: rgba(var(--secondary),1);
+}
+.kanab-common.kanab-3 .kanban-container .kanban-board:nth-child(3n + 2) .kanban-board-header::before {
+  content: var(--tw-content);
+  background-color: var(--warning);
+}
+.kanab-common.kanab-3 .kanban-container .kanban-board:nth-child(3n + 3) .kanban-board-header::before {
+  content: var(--tw-content);
+  background-color: var(--success);
+}
+.kanab-common.kanab-3 .kanban-container .kanban-board .kanban-drag {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
+}
+.kanab-common.kanab-3 .kanban-container .kanban-board,
+    .kanab-common.moving-kanab-3 {
+  overflow: hidden;
+  border-radius: 8px;
+  letter-spacing: 0.5px;
+}
+.kanab-common.kanab-3 .kanban-container .kanban-board .kanban-board-header, .kanab-common.moving-kanab-3 .kanban-board-header {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.kanab-common.kanab-3 .kanban-container .kanban-board .kanban-board-header .kanban-title-board, .kanab-common.moving-kanab-3 .kanban-board-header .kanban-title-board {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.03125rem;
+  color: var(--dark);
+}
+.kanab-common.kanab-3 .kanban-container .kanban-board .kanban-drag, .kanab-common.moving-kanab-3 .kanban-drag {
+  background-color: var(--gray-light);
+}
+.kanab-common.kanab-3 .kanban-container .kanban-board .kanban-drag .kanban-item, .kanab-common.moving-kanab-3 .kanban-drag .kanban-item {
+  margin-bottom: 1.25rem;
+  background-color: transparent;
+  padding: 0px;
+}
+.kanab-common.kanab-3 .kanban-container .kanban-board .kanban-drag .kanban-item .kanban-box, .kanab-common.moving-kanab-3 .kanban-drag .kanban-item .kanban-box {
+  display: contents;
+}
+.kanab-common.kanab-3 .kanban-container .kanban-board footer, .kanab-common.moving-kanab-3 footer {
+  margin: 0px;
+  padding: 0px;
+}
 .page-header .hide {
   display: none;
 }
@@ -7391,9 +7633,6 @@ code[class*="language-"],
 .stroke-dark {
   stroke: var(--dark);
 }
-.stroke-gray-500 {
-  stroke: #6b7280;
-}
 .stroke-info {
   stroke: var(--info);
 }
@@ -7417,6 +7656,9 @@ code[class*="language-"],
 }
 .stroke-white {
   stroke: #fff;
+}
+.stroke-gray-500 {
+  stroke: #6b7280;
 }
 .stroke-\[4\] {
   stroke-width: 4;
@@ -8237,11 +8479,6 @@ code[class*="language-"],
 .shadow-none {
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-.shadow-xl {
-  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .outline-none {

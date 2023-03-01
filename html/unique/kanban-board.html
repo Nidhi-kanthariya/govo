@@ -17,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
     <!-- Custom Select css-->
     <link rel="stylesheet" href="../../assets/css/vendors/custom-select.css">
+    <!--jkanban css-->
+    <link rel="stylesheet" href="../../assets/css/vendors/jkanban.min.css">
     <!-- App css-->
     <link rel="stylesheet" href="../../assets/css/style.css">
   </head>
@@ -1115,39 +1117,39 @@
         <!-- Sidebar End -->
         <!-- Page Body Start-->
         <div class="page-body">
-          <div class="grid grid-cols-12 gap-card-gaps">
-            <div class="col-span-12">
-              <div class="card">
-                <div class="card-header">
-                  <h3 class="font-bold text-title mb-3">Custom Board</h3>
-                  <div class="divider w-full"></div>
+          <div class="grid grid-cols-12 gap-card"> 
+            <div class="card col-span-12 mb-4">
+              <div class="card-header">
+                <div class="flex justify-between w-full flex-wrap gap-2 items-center">
+                  <h3 class="text-lg font-bold text-title leading-none">Default Demo</h3>
                 </div>
-                <div class="card-body">
-                  <div class="grid grid-cols-12 gap-3"> 
-                    <div class="col-span-4 shadow-xl rounded-b-md">
-                      <div class="h-2 rounded-t-md bg-primary"></div>
-                      <div class="p-3 flex justify-between">
-                        <h3 class="font-bold text-title">Ready</h3><i class="stroke-primary border rounded" data-feather="plus"></i>
-                      </div>
-                    </div>
-                    <div class="col-span-4 shadow-xl rounded-b-md">
-                      <div class="h-2 rounded-t-md bg-danger"></div>
-                      <div class="p-3 flex justify-between">
-                        <h3 class="font-bold text-title">Review</h3><i class="stroke-danger border rounded" data-feather="plus"></i>
-                      </div>
-                    </div>
-                    <div class="col-span-4 shadow-xl rounded-b-md">
-                      <div class="h-2 rounded-t-md bg-warning"></div>
-                      <div class="p-3 flex justify-between">
-                        <h3 class="font-bold text-title">In Progress</h3><i class="stroke-warning border rounded" data-feather="plus"></i>
-                      </div>
-                    </div>
-                  </div>
+              </div>
+              <div class="card-body">
+                <div class="kanab-1 kanab-common"></div>
+              </div>
+            </div>
+            <div class="card col-span-12 mb-4">
+              <div class="card-header">
+                <div class="flex justify-between w-full flex-wrap gap-2 items-center">
+                  <h3 class="text-lg font-bold text-title leading-none">Custom Board</h3>
                 </div>
+              </div>
+              <div class="card-body">
+                <div class="kanab-2 kanab-common"></div>
+              </div>
+            </div>
+            <div class="card col-span-12 mb-4"> 
+              <div class="card-header"> 
+                <div class="flex justify-between w-full flex-wrap gap-2 items-center">
+                  <h3 class="text-lg font-bold text-title leading-none">API</h3>
+                </div>
+              </div>
+              <div class="card-body"> 
+                <div class="kanab-3 kanab-common"> </div>
               </div>
             </div>
           </div>
-          <!-- Page Body End  -->
+          <!-- Page Body End-->
           <div class="page-footer sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap"> 
             <p class="text-xs font-semibold text-center text-content">Copyright 2023 © Govo theme by pixelstrap</p>
             <div class="flex items-center gap-2"> 
@@ -1238,6 +1240,9 @@
   <script src="../../assets/js/custom-select.js"></script>
   <!-- Sidebar Js -->
   <script src="../../assets/js/sidebar.js"></script>
+  <!-- jkanban js    -->
+  <script src="../../assets/js/jkanban.min.js"> </script>
+  <script src="../../assets/js/jkanban-custom.js"></script>
   <!-- customizer js-->
   <script src="../../assets/js/customizer.js"> </script>
   <!-- Custom script   -->
