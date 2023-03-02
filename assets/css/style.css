@@ -5277,6 +5277,40 @@ code[class*="language-"],
             }
         }
     } */
+.product-wrapper-grid.list-view .product-box .card .card-body .user-profile .user-bg img {
+  width: 18.75rem;
+}
+.user-profile .user-bg {
+  position: relative;
+}
+.user-profile .user-bg:before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  opacity: 0.5;
+  --tw-content: '';
+  content: var(--tw-content);
+}
+.user-profile .user-bg .user-detail {
+  position: absolute;
+  top: 4rem;
+  left: 3rem;
+}
+.product-wrapper-grid.list-view .product-box .card .card-body .user-profile .user-profile-detail img {
+  width: 18.75rem;
+}
+.user-profile .user-profile-detail {
+  position: relative;
+  z-index: 1;
+}
+.user-profile .user-profile-detail .tab.tabs-bordered.user-tab.tab-active {
+  border-bottom-width: 1px;
+  font-weight: 600;
+}
 .circle {
   display: inline-block;
   height: 6.25rem;
@@ -5822,6 +5856,9 @@ code[class*="language-"],
 .mt-8 {
   margin-top: 2rem;
 }
+.mt-\[-100px\] {
+  margin-top: -100px;
+}
 .mt-\[12px\] {
   margin-top: 12px;
 }
@@ -5872,9 +5909,6 @@ code[class*="language-"],
 }
 .mt-card-gap {
   margin-top: calc(0.9375rem + (1.875 - 0.9375) * ((100vw - 20rem) / (120 - 20)));
-}
-.mt-\[-100px\] {
-  margin-top: -100px;
 }
 .box-border {
   box-sizing: border-box;
@@ -5941,6 +5975,9 @@ code[class*="language-"],
 }
 .h-20 {
   height: 5rem;
+}
+.h-24 {
+  height: 6rem;
 }
 .h-28 {
   height: 7rem;
@@ -7038,8 +7075,8 @@ code[class*="language-"],
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.\!flex-row {
+  flex-direction: row !important;
 }
 .flex-row-reverse {
   flex-direction: row-reverse;
@@ -7085,6 +7122,9 @@ code[class*="language-"],
 }
 .\!gap-1 {
   gap: 0.25rem !important;
+}
+.\!gap-2 {
+  gap: 0.5rem !important;
 }
 .gap-0 {
   gap: 0px;
@@ -7743,6 +7783,9 @@ code[class*="language-"],
 .p-\[16px\] {
   padding: 16px;
 }
+.p-\[2px\] {
+  padding: 2px;
+}
 .p-\[5px\] {
   padding: 5px;
 }
@@ -8026,6 +8069,9 @@ code[class*="language-"],
 }
 .pb-4 {
   padding-bottom: 1rem;
+}
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 .pb-\[15px\] {
   padding-bottom: 15px;
@@ -8345,6 +8391,9 @@ code[class*="language-"],
 .\!text-content3 {
   color: var(--content3) !important;
 }
+.\!text-danger {
+  color: var(--danger) !important;
+}
 .\!text-dark {
   color: var(--dark) !important;
 }
@@ -8432,9 +8481,6 @@ code[class*="language-"],
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.\!text-danger {
-  color: var(--danger) !important;
 }
 .underline {
   text-decoration-line: underline;
@@ -10270,6 +10316,9 @@ code[class*="language-"],
   ==========================*/
 /*=====================
   Toast CSS
+  ==========================*/
+/*=====================
+    User Profile CSS
   ==========================*/
 /*=====================
   Wow Animation CSS

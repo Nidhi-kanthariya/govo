@@ -6,7 +6,7 @@
   html {
     @apply font-sans text-title text-sm;
   }
-  code{
+  code {
     @apply font-sans;
   }
   .retro-font {
