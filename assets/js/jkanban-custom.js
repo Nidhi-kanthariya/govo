@@ -13,9 +13,7 @@ var kanban1 = new jKanban({
             <div class="kanban-box w-full">  
                   <div class="kanab-item-1 p-5 2xl:p-4 shadow-md bg-white rounded-5 flex flex-col gap-5 2xl:gap-3"> 
                         <div class="flex justify-between"> 
-                              <div>
-                                 <div class="badge border border-primary text-primary rounded">Design</div>
-                              </div>
+                              <div class="badge border border-primary text-primary rounded">Design</div>
                               <div>
                                  <svg class="w-6 h-6 stroke-primary">
                                        <use href="../../assets/svg/_sprite.svg#Plus"></use> 
@@ -32,7 +30,7 @@ var kanban1 = new jKanban({
                            <div class="flex items-center justify-between gap-4">
                               <div class="flex items-center gap-2"> 
                                  <div class="flex items-center gap-1">
-                                    <span class="text-content">25</span> 
+                                    <span class="text-content">25</span>
                                     <svg class="w-5 h-5 stroke-content">
                                        <use href="../../assets/svg/_sprite.svg#Chat"></use>
                                     </svg>
@@ -63,9 +61,7 @@ var kanban1 = new jKanban({
             <div class="kanban-box w-full">  
                <div class="kanab-item-1 p-5 2xl:p-4 shadow-md bg-white rounded-5 flex flex-col gap-5 2xl:gap-3"> 
                   <div class="flex justify-between"> 
-                        <div> 
-                           <div class="badge border border-warning text-warning rounded">Research</div>
-                        </div>  
+                        <div class="badge border border-warning text-warning rounded">Research</div>                      
                         <div> 
                            <svg class="w-6 h-6 stroke-warning">
                                  <use href="../../assets/svg/_sprite.svg#Plus"></use> 
@@ -77,7 +73,7 @@ var kanban1 = new jKanban({
                   </div> 
                   <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                      <div class="flex items-center gap-4">
-                         <span class=text-content ">22 Feb 2019</span> 
+                         <span class="text-content ">22 Feb 2019</span> 
                      </div> 
                      <div class="flex items-center justify-between gap-4">
                         <div class="flex items-center gap-2"> 
@@ -113,9 +109,7 @@ var kanban1 = new jKanban({
             <div class="kanban-box w-full">  
               <div class="kanab-item-1 p-5 2xl:p-4 shadow-md bg-white rounded-5 flex flex-col gap-5 2xl:gap-3"> 
                  <div class="flex justify-between"> 
-                       <div>
-                          <div class="badge border border-danger text-danger rounded">Update</div>
-                       </div>  
+                       <div class="badge border border-danger text-danger rounded">Update</div> 
                        <div> 
                           <svg class="w-6 h-6 stroke-danger">
                                 <use href="../../assets/svg/_sprite.svg#Plus"></use> 
@@ -127,7 +121,7 @@ var kanban1 = new jKanban({
                  </div> 
                  <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                     <div class="flex items-center gap-4">
-                        <span class=text-content ">27 Jun 2020</span> 
+                        <span class="text-content ">27 Jun 2020</span> 
                     </div> 
                     <div class="flex items-center justify-between gap-4">
                        <div class="flex items-center gap-2"> 
@@ -169,9 +163,7 @@ var kanban1 = new jKanban({
            <div class="kanban-box w-full">  
                <div class="kanab-item-1 p-5 2xl:p-4 shadow-md bg-white rounded-5 flex flex-col gap-5 2xl:gap-3"> 
                   <div class="flex justify-between"> 
-                        <div>
-                           <div class="badge border border-info text-info rounded">Reference</div>
-                        </div>   
+                        <div class="badge border border-info text-info rounded">Reference</div>
                         <div>
                            <svg class="w-6 h-6 stroke-info">
                                  <use href="../../assets/svg/_sprite.svg#Plus"></use> 
@@ -183,7 +175,7 @@ var kanban1 = new jKanban({
                   </div> 
                   <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                      <div class="flex items-center gap-4"> 
-                         <span class=text-content ">24 Jun 2020</span> 
+                         <span class="text-content ">24 Jun 2020</span> 
                      </div> 
                      <div class="flex items-center justify-between gap-4">
                         <div class="flex items-center gap-2"> 
@@ -219,9 +211,7 @@ var kanban1 = new jKanban({
                <div class="kanban-box w-full">  
                   <div class="kanab-item-1 p-5 2xl:p-4 shadow-md bg-white rounded-5 flex flex-col gap-5 2xl:gap-3"> 
                      <div class="flex justify-between"> 
-                           <div>
-                              <div class="badge border border-info text-info rounded">Code</div>
-                           </div>   
+                           <div class="badge border border-info text-info rounded">Code</div> 
                            <div>
                               <svg class="w-6 h-6 stroke-info">
                                     <use href="../../assets/svg/_sprite.svg#Plus"></use> 
@@ -233,7 +223,7 @@ var kanban1 = new jKanban({
                      </div>
                      <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                         <div class="flex items-center gap-4"> 
-                            <span class=text-content ">24 Jun 2020</span> 
+                            <span class="text-content ">24 Jun 2020</span> 
                         </div> 
                         <div class="flex items-center justify-between gap-4">
                            <div class="flex items-center gap-2"> 
@@ -275,9 +265,7 @@ var kanban1 = new jKanban({
              <div class="kanban-box w-full">  
                <div class="kanab-item-1 p-5 2xl:p-4 shadow-md bg-white rounded-5 flex flex-col gap-5 2xl:gap-3"> 
                   <div class="flex justify-between"> 
-                        <div>
-                           <div class="badge border border-warning text-warning rounded">Release</div>
-                        </div>
+                        <div class="badge border border-warning text-warning rounded">Release</div>
                         <div> 
                            <svg class="w-6 h-6 stroke-warning">
                                  <use href="../../assets/svg/_sprite.svg#Plus"></use> 
@@ -289,7 +277,7 @@ var kanban1 = new jKanban({
                   </div> 
                   <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                      <div class="flex items-center gap-4">
-                         <span class=text-content ">22 Feb 2019</span> 
+                         <span class="text-content ">22 Feb 2019</span> 
                      </div> 
                      <div class="flex items-center justify-between gap-4">
                         <div class="flex items-center gap-2"> 
@@ -325,9 +313,7 @@ var kanban1 = new jKanban({
             <div class="kanban-box w-full">  
               <div class="kanab-item-1 p-5 2xl:p-4 shadow-md bg-white rounded-5 flex flex-col gap-5 2xl:gap-3"> 
                     <div class="flex justify-between"> 
-                          <div>
-                             <div class="badge border border-primary text-primary rounded">Design</div>
-                          </div>
+                          <div class="badge border border-primary text-primary rounded">Design</div>
                           <div>
                              <svg class="w-6 h-6 stroke-primary">
                                    <use href="../../assets/svg/_sprite.svg#Plus"></use> 
@@ -375,9 +361,7 @@ var kanban1 = new jKanban({
           <div class="kanban-box w-full">  
             <div class="kanab-item-1 p-5 2xl:p-4 shadow-md bg-white rounded-5 flex flex-col gap-5 2xl:gap-3"> 
                   <div class="flex justify-between"> 
-                        <div>
-                           <div class="badge border border-primary text-primary rounded">Creativity</div>  
-                        </div>
+                        <div class="badge border border-primary text-primary rounded">Creativity</div>  
                         <div>
                            <svg class="w-6 h-6 stroke-primary">
                                  <use href="../../assets/svg/_sprite.svg#Plus"></use> 
@@ -389,11 +373,11 @@ var kanban1 = new jKanban({
                   </div>
                   <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                      <div class="flex items-center gap-4"> 
-                         <span class=text-content ">16 Jan 2022</span>
+                         <span class="text-content ">16 Jan 2022</span>
                      </div> 
                      <div class="flex items-center justify-between gap-4">
                         <div class="flex items-center gap-2"> 
-                           <div class="flex items-center gap-1">
+                           <div class="flex items-center gap-1"> 
                               <span class="text-content">134</span> 
                               <svg class="w-5 h-5 stroke-content">
                                  <use href="../../assets/svg/_sprite.svg#Chat"></use>
@@ -1129,7 +1113,7 @@ addBoardDefault.addEventListener('click', function () {
                             `,
         },
       ],
-    },
+    }, 
   ]);
 });
 
