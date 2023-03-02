@@ -101,7 +101,10 @@ html(lang='en')
                                     div
                                         label(for="productImage") Product Images
                                         input(type="file" class="show-preview cursor-pointer" id="productImage")
-                                    
+                                    div.flex.flex-wrap.gap-2.items-center.justify-end 
+                                        a(href="javascript:void(0)").btn.btn-success.py-1.text-white.text-xs.flex.gap-2.items-center Save
+                                        a(href="javascript:void(0)").btn.btn-secondary.py-1.text-white.text-xs.flex.gap-2.items-center Cancel 
+
                         div.col-span-4(class="2lg:col-span-12")
                             div.border-b.border-border-light.pb-3
                                 h5.text-title.font-semibold.mb-3 Publish
@@ -150,9 +153,7 @@ html(lang='en')
                                         label(for="description") Additional 
                                         textarea(placeholder="Enter product description.." row="3" id="description" class="p-[11px] focus:!border-border-light").w-full.border.border-border-light.rounded-5.text-xs.text-content
                                     
-
-
-
+                
                     // Page Body End  
                     +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
             include ../../components/customizer 

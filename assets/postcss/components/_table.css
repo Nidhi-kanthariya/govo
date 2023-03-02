@@ -63,39 +63,39 @@
             @apply last:text-end first:pl-[.3438rem] last:pr-[.3438rem];
           }
         }
-      } 
-      &.table-hover{
+      }
+      &.table-hover {
         tbody {
-        tr {
-          &:last-child{ 
-            td {
+          tr {
+            &:last-child {
+              td {
                 @apply pb-[18px];
               }
             }
           }
         }
       }
-      &.table-action{
-        tr{
-          th{
-            @apply pb-4 ; 
-            &:last-child{
+      &.table-action {
+        tr {
+          th {
+            @apply pb-4;
+            &:last-child {
               @apply text-end;
             }
           }
         }
-        .plus-minus{
+        .plus-minus {
           @apply max-w-max;
-          svg{
+          svg {
             @apply h-6 w-6 p-1;
           }
         }
-        tbody{
-          tr{
-            &:last-child{
-              td{
-                .dropdown{
-                  &.dropdown-bottom{
+        tbody {
+          tr {
+            &:last-child {
+              td {
+                .dropdown {
+                  &.dropdown-bottom {
                     .dropdown-menu {
                       @apply !bottom-full !top-unset !right-0 !left-unset;
                     }
@@ -104,35 +104,35 @@
               }
             }
           }
-          .dropdown{
-            .dropdown-menu{
+          .dropdown {
+            .dropdown-menu {
               @apply p-2;
             }
           }
         }
-        &.invoice{
+        &.invoice {
           thead {
             tr {
               th {
                 @apply last:text-start;
                 &:nth-child(2),
-                &:nth-child(4){
-                    @apply 2md:hidden;
+                &:nth-child(4) {
+                  @apply 2md:hidden;
                 }
               }
             }
           }
           tbody {
             tr {
-              &:last-child{ 
+              &:last-child {
                 td {
                   @apply pb-[18px];
                 }
               }
-              td{
+              td {
                 &:nth-child(2),
-                &:nth-child(4){
-                    @apply 2md:hidden;
+                &:nth-child(4) {
+                  @apply 2md:hidden;
                 }
               }
             }
@@ -140,86 +140,86 @@
         }
       }
     }
-    &.table-bordered{
-      thead{
-        tr{
-          th{
+    &.table-bordered {
+      thead {
+        tr {
+          th {
             @apply px-[40px] pt-[14px] text-center;
           }
         }
       }
-      tbody{
-        tr{
-          td{
+      tbody {
+        tr {
+          td {
             @apply px-[40px] text-center;
           }
           &:last-child {
-            td{
-              @apply pb-[1.125rem]; 
+            td {
+              @apply pb-[1.125rem];
             }
           }
         }
-      }      
+      }
     }
-    &.table-Color{
-      thead{
-        tr{
+    &.table-Color {
+      thead {
+        tr {
           @apply bg-primary-extralight;
-          th{
+          th {
             @apply text-dark;
           }
         }
       }
-      tbody{
-        tr{
-          &:nth-child(odd){
+      tbody {
+        tr {
+          &:nth-child(odd) {
             @apply bg-primary-light;
           }
-          &:nth-child(even){
+          &:nth-child(even) {
             @apply bg-primary-extralight text-dark;
           }
-          &:last-child{ 
+          &:last-child {
             td {
-                @apply pb-[18px];
-              }
+              @apply pb-[18px];
             }
+          }
         }
       }
     }
-    &.table-variant{
-      tbody{
-        tr{
-          &:nth-child(7n+1){
+    &.table-variant {
+      tbody {
+        tr {
+          &:nth-child(7n + 1) {
             @apply bg-primary-extralight text-dark;
           }
-          &:nth-child(7n+2){
+          &:nth-child(7n + 2) {
             @apply bg-secondary-light text-dark;
           }
-          &:nth-child(7n+3){
+          &:nth-child(7n + 3) {
             @apply bg-info-light text-dark;
           }
-          &:nth-child(7n+4){
+          &:nth-child(7n + 4) {
             @apply bg-success-light text-dark;
           }
-          &:nth-child(7n+5){
+          &:nth-child(7n + 5) {
             @apply bg-warning-light text-dark;
           }
-          &:nth-child(7n+6){
-            @apply bg-danger-light text-dark; 
+          &:nth-child(7n + 6) {
+            @apply bg-danger-light text-dark;
           }
-          &:nth-child(7n+7){
+          &:nth-child(7n + 7) {
             @apply bg-light text-dark;
           }
         }
       }
-      &.table-bordered{
-        thead{
-        tr{
-          th{
-            @apply pt-unset;
+      &.table-bordered {
+        thead {
+          tr {
+            th {
+              @apply pt-unset;
+            }
           }
         }
-      }
       }
     }
   }

@@ -327,3 +327,14 @@ todoList?.forEach((el) => {
       this.closest('.col-span-3').style.display = 'none';
     });
   });
+
+  /*=====================
+  13. List-item Remove js
+  ==========================*/
+  const invoiceBox = document.querySelector('.invoice , .cart-main');
+  const invoiceRemove = invoiceBox?.querySelectorAll('.remove-invoice , .remove-cart');
+  invoiceRemove?.forEach((el) => {
+    el.addEventListener('click', function () {
+      this.closest('.invoice-item , .cart-item').style.display = 'none';
+    });
+  });
