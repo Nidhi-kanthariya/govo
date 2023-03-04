@@ -1123,16 +1123,49 @@
           <div class="grid grid-cols-12 gap-card-gap">
             <div class="col-span-12">
               <div class="user-bg card p-0"><img class="w-full h-80" src="../../assets/images/user-app/bg.jpg" alt="">
-                <div class="flex user-detail items-center gap-4">
-                  <div class="avatar rounded-full w-24 h-24 p-[2px] bg-white"><img class="rounded-full" src="../../assets/images/avatar/38.jpg" alt="girl in yellow jacket"></div>
-                  <div class="text-start">
-                    <p class="text-content-white font-semibold text-base">Emayila Sidorshina</p><span class="text-content font-semibold text-2xs">Owner & Founder</span><span class="text-content font-semibold text-2xs mt-2 flex gap-1 items-center"> <i class="w-3 h-3 stroke-content" data-feather="map-pin"></i>Maryland, US</span>
+                <div class="user-detail flex flex-col gap-4">
+                  <div class="flex items-center gap-5">
+                    <div class="avatar rounded-full w-20 h-20 p-[2px] bg-white"><img class="rounded-full" src="../../assets/images/avatar/38.jpg" alt="girl in yellow jacket"></div>
+                    <div class="flex items-center gap-3">
+                      <div class="text-center"> 
+                        <p class="text-white font-semibold text-xs">359 </p><span class="text-white font-medium">Posts</span>
+                      </div>
+                      <div class="text-center"> 
+                        <p class="text-white font-semibold text-xs">4.5K </p><span class="text-white font-medium">Followers</span>
+                      </div>
+                      <div class="text-center"> 
+                        <p class="text-white font-semibold text-xs">2.487 </p><span class="text-white font-medium">Following</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <div> 
+                      <p class="text-content-white font-semibold text-xs">Emayila Sidorshina</p>
+                      <p class="text-content-white font-semibold text-xs">Freelancer</p>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-2"><a class="btn bg-content text-white text-xs py-1" href="edit-profile.html">Edit Profile</a>
+                      <div class="dropdown">
+                        <button class="btn bg-content text-white text-xs py-1">Share Profile</button>
+                        <div class="dropdown-menu !w-fit !top-8 left-0">
+                          <div class="social flex flex-wrap items-center gap-2"><a class="bg-gray-light rounded-full btn !text-facebook" href="https://www.facebook.com/login"><i class="fa-brands fa-facebook-f w-4 h-4"></i></a><a class="bg-gray-light rounded-full btn !text-linkedin" href="https://www.linkedin.com/login"><i class="fa-brands fa-linkedin-in w-4 h-4"></i></a><a class="bg-gray-light rounded-full btn !text-twitter" href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter w-4 h-4"></i></a><a class="bg-gray-light rounded-full btn instagram !text-instagram" href="https://www.instagram.com/accounts/login/">
+                              <svg width="0" height="0">
+                                <radialgradient id="rg" r="150%" cx="30%" cy="107%">
+                                  <stop stop-color="#fdf497" offset="0"></stop>
+                                  <stop stop-color="#fdf497" offset="0.05"></stop>
+                                  <stop stop-color="#fd5949" offset="0.45"></stop>
+                                  <stop stop-color="#d6249f" offset="0.6"></stop>
+                                  <stop stop-color="#285AEB" offset="0.9"></stop>
+                                </radialgradient>
+                              </svg><i class="fa-brands fa-instagram w-4 h-4"></i></a><a class="bg-gray-light rounded-full btn !text-danger" href="https://www.rss.com/"><i class="fa-solid fa-rss w-4 h-4"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="grid grid-cols-12 gap-card-gap user-profile-detail px-body-space mt-[-100px] relative">
+          <div class="grid grid-cols-12 gap-card-gap user-profile-detail px-body-space mt-[-70px] relative 3sm:px-unset">
             <div class="col-span-3 xl:col-span-4 lg:col-span-12">
               <div class="grid grid-cols-12 gap-4 top-0 sticky">                              
                 <div class="col-span-12 lg:col-span-6 2md:col-span-12 lg:order-first">
@@ -1141,12 +1174,6 @@
                       <h3 class="text-lg font-bold">Info  </h3>
                     </div>
                     <div class="card-body flex flex-col gap-3">
-                      <div> 
-                        <p class="text-title text-xs font-semibold capitalize">Name</p><span class="font-medium text-content3">Emayila Sidorshina</span>
-                      </div>
-                      <div> 
-                        <p class="text-title text-xs font-semibold capitalize">Email Id</p><span class="font-medium text-content3">emayiladosidorshina@gmail.com</span>
-                      </div>
                       <div> 
                         <p class="text-title text-xs font-semibold capitalize">Contact No</p><span class="font-medium text-content3">(773) 847-8982 </span>
                       </div>
@@ -1166,40 +1193,21 @@
                     </div>
                     <div class="card-body">
                       <div class="flex flex-wrap gap-2"> 
-                        <div class="badge bg-primary text-white rounded-full">HTML</div>
-                        <div class="badge bg-primary text-white rounded-full">Css</div>
-                        <div class="badge bg-primary text-white rounded-full">JavaScript</div>
-                        <div class="badge bg-primary text-white rounded-full">Bootstrap</div>
-                        <div class="badge bg-primary text-white rounded-full">Tailwindcss</div>
-                        <div class="badge bg-primary text-white rounded-full">Pug </div>
-                        <div class="badge bg-primary text-white rounded-full">Illustrator</div>
+                        <div class="badge badge-xs bg-primary text-white rounded-full">HTML</div>
+                        <div class="badge badge-xs bg-primary text-white rounded-full">Css</div>
+                        <div class="badge badge-xs bg-primary text-white rounded-full">JavaScript</div>
+                        <div class="badge badge-xs bg-primary text-white rounded-full">Bootstrap</div>
+                        <div class="badge badge-xs bg-primary text-white rounded-full">Tailwindcss</div>
+                        <div class="badge badge-xs bg-primary text-white rounded-full">Pug </div>
+                        <div class="badge badge-xs bg-primary text-white rounded-full">Illustrator</div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-span-12 lg:col-span-6 2md:col-span-12 lg:order-last">
-                  <div class="card"> 
-                    <div class="card-header"> 
-                      <h3 class="text-lg font-bold">Social Media </h3>
-                    </div>
-                    <div class="card-body">
-                      <div class="social sm:flex-col flex flex-wrap items-center gap-2"><a class="bg-gray-light rounded-full btn !text-facebook" href="https://www.facebook.com/login"><i class="fa-brands fa-facebook-f w-4 h-4"></i></a><a class="bg-gray-light rounded-full btn !text-linkedin" href="https://www.linkedin.com/login"><i class="fa-brands fa-linkedin-in w-4 h-4"></i></a><a class="bg-gray-light rounded-full btn !text-twitter" href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter w-4 h-4"></i></a><a class="bg-gray-light rounded-full btn instagram !text-instagram" href="https://www.instagram.com/accounts/login/">
-                          <svg width="0" height="0">
-                            <radialgradient id="rg" r="150%" cx="30%" cy="107%">
-                              <stop stop-color="#fdf497" offset="0"></stop>
-                              <stop stop-color="#fdf497" offset="0.05"></stop>
-                              <stop stop-color="#fd5949" offset="0.45"></stop>
-                              <stop stop-color="#d6249f" offset="0.6"></stop>
-                              <stop stop-color="#285AEB" offset="0.9"></stop>
-                            </radialgradient>
-                          </svg><i class="fa-brands fa-instagram w-4 h-4"></i></a><a class="bg-gray-light rounded-full btn !text-danger" href="https://www.rss.com/"><i class="fa-solid fa-rss w-4 h-4"></i></a></div>
                     </div>
                   </div>
                 </div>
                 <div class="col-span-12 lg:col-span-6 2md:col-span-12 lg:order-2">
                   <div class="card"> 
-                    <div class="card-header"> 
-                      <h3 class="text-lg font-bold">Suggestions  </h3>
+                    <div class="card-header flex justify-between items-center gap-1"> 
+                      <h3 class="text-lg font-bold">Suggestions</h3><a class="btn bg-gray-light p-1" href="javascript:void(0)"> <i class="w-4 h-4 stroke-title" data-feather="plus"> </i></a>
                     </div>
                     <div class="card-body">
                       <div class="flex flex-col gap-3"> 
@@ -1227,22 +1235,6 @@
                             </div>
                           </div><a class="btn btn-success btn-outline p-1 group" href="javascript:void(0)"> <i class="w-4 h-4 stroke-success group-hover:stroke-white" data-feather="user-plus"> </i></a>
                         </div>
-                        <div class="flex justify-between items-center">
-                          <div class="flex items-center gap-4 w-full">
-                            <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/user-app/23.png" alt=""></div>
-                            <div class="w-[calc(100%_-_70px)]"> 
-                              <p class="text-title font-semibold text-xs">Werner Barrows</p><span class="text-content3 font-semibold text-2xs">Graphic Designer</span>
-                            </div>
-                          </div><a class="btn btn-success btn-outline p-1 group" href="javascript:void(0)"> <i class="w-4 h-4 stroke-success group-hover:stroke-white" data-feather="user-plus">  </i></a>
-                        </div>
-                        <div class="flex justify-between items-center">
-                          <div class="flex items-center gap-4 w-full">
-                            <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/user-app/21.png" alt=""></div>
-                            <div class="w-[calc(100%_-_70px)]"> 
-                              <p class="text-title font-semibold text-xs">Josue Smith</p><span class="text-content3 font-semibold text-2xs">UI/UX Designer</span>
-                            </div>
-                          </div><a class="btn btn-success btn-outline p-1 group" href="javascript:void(0)"> <i class="w-4 h-4 stroke-success group-hover:stroke-white" data-feather="user-plus">  </i></a>
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -1251,19 +1243,19 @@
             </div>
             <div class="col-span-9 xl:col-span-8 lg:col-span-12 w-full tabs flex flex-col"> 
               <div class="card gap-1">
-                <div class="card-header flex items-center justify-between gap-2">
+                <div class="card-header flex items-center justify-between gap-2 2md:flex-col 2md:items-start">
                   <h3 class="text-lg font-bold">Portfolio </h3>
-                  <div class="tab-links flex items-center justify-end 2md:flex-col border-b border-border-light">
-                    <button class="tab tabs-bordered user-tab flex items-center justify-center tab-active text-content3 !flex-row !gap-2 tab-link" data-tabFilter="1"><i class="fa-solid fa-user w-4 h-4 stroke-title-content3"></i>Profile  </button>
-                    <button class="tab tabs-bordered user-tab flex items-center justify-center text-content3 !flex-row !gap-2 tab-link" data-tabFilter="2"><i class="fa-solid fa-briefcase w-4 h-4 stroke-title-content3"></i>Experience</button>
-                    <button class="tab tabs-bordered user-tab flex items-center justify-center text-content3 !flex-row !gap-2 tab-link" data-tabFilter="3"><i class="fa-regular fa-image w-4 h-4 stroke-title-content3"></i>Photos  </button>
+                  <div class="tab-links flex items-center justify-end 2md:w-full border-b border-border-light sm:flex-col">
+                    <button class="tab tabs-bordered user-tab flex items-center justify-center tab-active text-content3 !flex-row !gap-2 tab-link 2md:w-full" data-tabFilter="1"><i class="fa-solid fa-user w-4 h-4 stroke-title-content3"></i>Profile  </button>
+                    <button class="tab tabs-bordered user-tab flex items-center justify-center text-content3 !flex-row !gap-2 tab-link 2md:w-full" data-tabFilter="2"><i class="fa-solid fa-briefcase w-4 h-4 stroke-title-content3"></i>Experience</button>
+                    <button class="tab tabs-bordered user-tab flex items-center justify-center text-content3 !flex-row !gap-2 tab-link 2md:w-full" data-tabFilter="3"><i class="fa-regular fa-image w-4 h-4 stroke-title-content3"></i>Photos  </button>
                   </div>
                 </div>
                 <div class="card-body"> 
                   <div class="tabs-content">
                     <div class="tab-pan fade active show first:rounded-tl-none rounded-5 border-none !px-1 !pb-0" data-tabContent="1">
                       <div class="flex flex-col gap-4">
-                        <div class="flex items-center gap-4"> 
+                        <div class="flex items-center gap-4 2md:flex-col 2md:items-start"> 
                           <div class="flex user-detail items-center gap-4">
                             <div class="bg-gray-light w-8 h-8 grid place-content-center rounded-full"><i class="fa-solid fa-user-tie"></i></div>
                             <div class="text-start">
@@ -1278,8 +1270,8 @@
                           </div>
                         </div>
                         <div class="flex flex-col gap-2">
-                          <p class="text-content3 text-xs">Emayila Sidorshina here. It will be as straightforward as Occidental—it will even be Occidental. It will appear to be simplified English to an English person, as a dubious Cambridge friend of mine explained to me what Occidental is. The family of European languages includes all of them.</p>
-                          <p class="text-content3 text-xs">Always check to see if your typefaces are compatible with one another, and aim to use no more than three. Use the fonts that you already have in the software you're using to experiment and play around with. This could be the advice that I heard from designers the most frequently. They strongly advise using multiple typefaces in a single design, but refrain from going overboard and</p>
+                          <p class="text-content3 text-xs sm:line-clamp-6">Emayila Sidorshina here. It will be as straightforward as Occidental—it will even be Occidental. It will appear to be simplified English to an English person, as a dubious Cambridge friend of mine explained to me what Occidental is. The family of European languages includes all of them.</p>
+                          <p class="text-content3 text-xs sm:hidden">Always check to see if your typefaces are compatible with one another, and aim to use no more than three. Use the fonts that you already have in the software you're using to experiment and play around with. This could be the advice that I heard from designers the most frequently. They strongly advise using multiple typefaces in a single design, but refrain from going overboard and</p>
                         </div>
                         <div class="flex flex-col gap-3"> 
                           <h5 class="font-semibold text-title">Projects </h5>
@@ -1438,7 +1430,7 @@
                     <div class="tab-pan fade group relative first:rounded-tl-none rounded-5 border-none !px-1 !pb-0" data-tabContent="2">
                       <div class="flex flex-col gap-4"> 
                         <div class="flex items-start user-detail gap-4 border-b border-border-light border-dashed last:border-none pb-5 last:pb-0">
-                          <div class="grid place-content-center bg-gray-light w-20 rounded-full text-xl h-20 p-8">ST</div>
+                          <div class="grid place-content-center bg-gray-light w-20 rounded-full text-xl h-20 p-8"> <i class="fa-solid fa-cubes"></i></div>
                           <div class="text-start">
                             <h5 class="text-title font-semibold">Software Technology</h5>
                             <p class="text-content3 font-semibold text-xs">Senior Web Designer</p><span class="text-content3 font-semibold text-xs">Working</span>
@@ -1449,7 +1441,7 @@
                           </div>
                         </div>
                         <div class="flex items-start user-detail gap-4 border-b border-border-light border-dashed last:border-none pb-5 last:pb-0">
-                          <div class="grid place-content-center bg-gray-light w-20 rounded-full text-xl h-20 p-8">SE</div>
+                          <div class="grid place-content-center bg-gray-light w-20 rounded-full text-xl h-20 p-8"> <i class="fa-solid fa-cubes"></i></div>
                           <div class="text-start">
                             <h5 class="text-title font-semibold">Software Express</h5>
                             <p class="text-content3 font-semibold text-xs">Frontend Engineer        </p><span class="text-content3 font-semibold text-xs">2019 - 2021 / 2 yrs</span>
@@ -1463,7 +1455,7 @@
                           </div>
                         </div>
                         <div class="flex items-start user-detail gap-4 border-b border-border-light border-dashed last:border-none pb-5 last:pb-0">
-                          <div class="grid place-content-center bg-gray-light w-20 rounded-full text-xl h-20 p-8">TI </div>
+                          <div class="grid place-content-center bg-gray-light w-20 rounded-full text-xl h-20 p-8"> <i class="fa-solid fa-cubes"> </i></div>
                           <div class="text-start">
                             <h5 class="text-title font-semibold">Technical Info</h5>
                             <p class="text-content3 font-semibold text-xs">Designer/developer in charge         </p><span class="text-content3 font-semibold text-xs">2016 - 2019 / 3 yrs</span>
@@ -1474,7 +1466,7 @@
                           </div>
                         </div>
                         <div class="flex items-start user-detail gap-4 border-b border-border-light border-dashed last:border-none pb-5 last:pb-0">
-                          <div class="grid place-content-center bg-gray-light w-20 rounded-full text-xl h-20 p-8">FR</div>
+                          <div class="grid place-content-center bg-gray-light w-20 rounded-full text-xl h-20 p-8"> <i class="fa-solid fa-user-graduate"></i></div>
                           <div class="text-start">
                             <h5 class="text-title font-semibold">Freelancer</h5>
                             <p class="text-content3 font-semibold text-xs">Fullstack Engineer        </p><span class="text-content3 font-semibold text-xs">2012 - 2016 / 4 yrs  </span>
@@ -1494,13 +1486,13 @@
                           <div class="flex items-center gap-4 w-full">
                             <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/avatar/38.jpg" alt=""></div>
                             <div class="w-[calc(100%_-_70px)]"> 
-                              <p class="text-title font-semibold text-xs">Emayila Sidorshina</p><span class="text-content3 font-semibold text-2xs">emayiladosidorshina@gmail.com</span>
+                              <p class="text-title font-semibold text-xs">Emayila Sidorshina</p><span class="text-content3 font-semibold text-2xs">Desert</span>
                             </div>
                           </div>
                         </div>
-                        <div><img class="w-full h-60" src="../../assets/images/user-app/bg-2.jpg" alt=""></div>
+                        <div><img class="w-full h-60 sm:h-44" src="../../assets/images/user-app/bg-2.jpg" alt=""></div>
                         <div class="flex items-center gap-1">
-                          <div class="flex flex-wrap items-center gap-2"> <a class="text-content3 text-xs flex items-center gap-1" href="javascript:void(0)"><i class="w-5 h-5 stroke-content3" data-feather="heart"> </i>Likes</a><a class="text-content3 text-xs flex items-center gap-1" href="javascript:void(0)"><i class="w-5 h-5 stroke-content3" data-feather="message-circle"> </i>Comments</a><a class="text-content3 text-xs flex items-center gap-1" href="javascript:void(0)"><i class="w-5 h-5 stroke-content3" data-feather="corner-up-right"> </i>Share</a></div>
+                          <div class="flex flex-wrap items-center gap-2"> <a class="text-content3 text-xs flex items-center gap-1" href="javascript:void(0)"><i class="w-5 h-5 stroke-content3" data-feather="heart"> </i><span class="3sm:hidden leading-none">Likes</span></a><a class="text-content3 text-xs flex items-center gap-1" href="javascript:void(0)"><i class="w-5 h-5 stroke-content3" data-feather="message-circle"> </i><span class="3sm:hidden leading-none">Comments</span></a><a class="text-content3 text-xs flex items-center gap-1" href="javascript:void(0)"><i class="w-5 h-5 stroke-content3" data-feather="corner-up-right"> </i><span class="3sm:hidden leading-none">Share</span></a></div>
                         </div>
                         <div class="flex items-center gap-1">
                           <div class="avatar-group -space-x-5 justify-center items-center">
@@ -1514,10 +1506,10 @@
                               <div class="w-8"><span class="text-xs font-bold text-title">26+ </span></div>
                             </div>
                           </div>
-                          <p class="text-content3 text-xs">Liked by <span>birdie_hoeger</span></p>
+                          <p class="text-content3 text-xs">Liked  <span class="3sm:hidden">by birdie_hoeger</span></p>
                         </div>
                         <div>
-                          <p class="text-content3 text-xs">He's being polite, but I want a change. Consider not throwing sociable kids Mr. Am overcame yourself. She may act totally hastily. My first smile is solid by things fanny. chuckled at how sophisticated Mr. Elegance was. While they eat at home, the sons want to. self-evaluation unsatiable imprudence a he at an. Be in a situation where the principle is perpetually offending allowance. Moreover, greater carriage securing is desired.</p>
+                          <p class="text-content3 text-xs sm:line-clamp-4">He's being polite, but I want a change. Consider not throwing sociable kids Mr. Am overcame yourself. She may act totally hastily. My first smile is solid by things fanny. chuckled at how sophisticated Mr. Elegance was. While they eat at home, the sons want to. self-evaluation unsatiable imprudence a he at an. Be in a situation where the principle is perpetually offending allowance. Moreover, greater carriage securing is desired.</p>
                         </div>
                       </div>
                       <div class="flex flex-col gap-4 border-b border-border-light border-dashed last:border-none pb-5 last:pb-0 pt-5 first:pt-0">
@@ -1525,13 +1517,13 @@
                           <div class="flex items-center gap-4 w-full">
                             <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/avatar/38.jpg" alt=""></div>
                             <div class="w-[calc(100%_-_70px)]"> 
-                              <p class="text-title font-semibold text-xs">Emayila Sidorshina</p><span class="text-content3 font-semibold text-2xs">emayiladosidorshina@gmail.com</span>
+                              <p class="text-title font-semibold text-xs">Emayila Sidorshina</p><span class="text-content3 font-semibold text-2xs">Blue Ridge Mountain    </span>
                             </div>
                           </div>
                         </div>
-                        <div><img class="w-full h-60" src="../../assets/images/user-app/24.jpeg" alt=""></div>
+                        <div><img class="w-full h-60 sm:h-44" src="../../assets/images/user-app/24.jpeg" alt=""></div>
                         <div class="flex items-center gap-1">
-                          <div class="flex flex-wrap items-center gap-2"> <a class="text-content3 text-xs flex items-center gap-1" href="javascript:void(0)"><i class="w-5 h-5 stroke-content3" data-feather="heart"> </i>Likes</a><a class="text-content3 text-xs flex items-center gap-1" href="javascript:void(0)"><i class="w-5 h-5 stroke-content3" data-feather="message-circle"> </i>Comments </a><a class="text-content3 text-xs flex items-center gap-1" href="javascript:void(0)"><i class="w-5 h-5 stroke-content3" data-feather="corner-up-right"> </i>Share</a></div>
+                          <div class="flex flex-wrap items-center gap-2"> <a class="text-content3 text-xs flex items-center gap-1" href="javascript:void(0)"><i class="w-5 h-5 stroke-content3" data-feather="heart"> </i><span class="3sm:hidden leading-none">Likes</span></a><a class="text-content3 text-xs flex items-center gap-1" href="javascript:void(0)"><i class="w-5 h-5 stroke-content3" data-feather="message-circle"> </i><span class="3sm:hidden leading-none">Comments </span></a><a class="text-content3 text-xs flex items-center gap-1" href="javascript:void(0)"><i class="w-5 h-5 stroke-content3" data-feather="corner-up-right"> </i><span class="3sm:hidden leading-none">Share</span></a></div>
                         </div>
                         <div class="flex items-center gap-1">
                           <div class="avatar-group -space-x-5 justify-center items-center">
@@ -1545,10 +1537,10 @@
                               <div class="w-8"><span class="text-xs font-bold text-title">5+ </span></div>
                             </div>
                           </div>
-                          <p class="text-content3 text-xs">Liked by <span>birdie_hoeger  </span></p>
+                          <p class="text-content3 text-xs">Liked  <span class="3sm:hidden">by birdie_hoeger  </span></p>
                         </div>
                         <div>
-                          <p class="text-content3 text-xs">Although he's being courteous, I want a change. Do not toss sociable children. Mr. Am triumphed against himself. She might behave rashly. My initial grin is genuine by things fanny. Mr. Elegance's sophistication made him chuckle. The sons want to eat dinner at home. He at a self-evaluation unsatiable imprudence. Be in a circumstance where the principle consistently violates the allowance. Additional carriage securing is also desired.</p>
+                          <p class="text-content3 text-xs sm:line-clamp-4">Although he's being courteous, I want a change. Do not toss sociable children. Mr. Am triumphed against himself. She might behave rashly. My initial grin is genuine by things fanny. Mr. Elegance's sophistication made him chuckle. The sons want to eat dinner at home. He at a self-evaluation unsatiable imprudence. Be in a circumstance where the principle consistently violates the allowance. Additional carriage securing is also desired.</p>
                         </div>
                       </div>
                       <div class="flex flex-col gap-4 border-b border-border-light border-dashed last:border-none pb-5 last:pb-0 pt-5 first:pt-0">
@@ -1556,13 +1548,13 @@
                           <div class="flex items-center gap-4 w-full">
                             <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/avatar/38.jpg" alt=""></div>
                             <div class="w-[calc(100%_-_70px)]"> 
-                              <p class="text-title font-semibold text-xs">Emayila Sidorshina</p><span class="text-content3 font-semibold text-2xs">emayiladosidorshina@gmail.com</span>
+                              <p class="text-title font-semibold text-xs">Emayila Sidorshina</p><span class="text-content3 font-semibold text-2xs">Aesthetic </span>
                             </div>
                           </div>
                         </div>
-                        <div><img class="w-full h-60" src="../../assets/images/user-app/bg-1.jpg" alt=""></div>
+                        <div><img class="w-full h-60 sm:h-44" src="../../assets/images/user-app/bg-1.jpg" alt=""></div>
                         <div class="flex items-center gap-1">
-                          <div class="flex flex-wrap items-center gap-2"> <a class="text-content3 text-xs flex items-center gap-1" href="javascript:void(0)"><i class="w-5 h-5 stroke-content3" data-feather="heart"> </i>Likes</a><a class="text-content3 text-xs flex items-center gap-1" href="javascript:void(0)"><i class="w-5 h-5 stroke-content3" data-feather="message-circle"> </i>Comments </a><a class="text-content3 text-xs flex items-center gap-1" href="javascript:void(0)"><i class="w-5 h-5 stroke-content3" data-feather="corner-up-right"> </i>Share</a></div>
+                          <div class="flex flex-wrap items-center gap-2"> <a class="text-content3 text-xs flex items-center gap-1" href="javascript:void(0)"><i class="w-5 h-5 stroke-content3" data-feather="heart"> </i><span class="3sm:hidden leading-none">Likes</span></a><a class="text-content3 text-xs flex items-center gap-1" href="javascript:void(0)"><i class="w-5 h-5 stroke-content3" data-feather="message-circle"> </i><span class="3sm:hidden leading-none">Comments </span></a><a class="text-content3 text-xs flex items-center gap-1" href="javascript:void(0)"><i class="w-5 h-5 stroke-content3" data-feather="corner-up-right"> </i><span class="3sm:hidden leading-none">Share</span></a></div>
                         </div>
                         <div class="flex items-center gap-1">
                           <div class="avatar-group -space-x-5 justify-center items-center">
@@ -1576,10 +1568,10 @@
                               <div class="w-8"><span class="text-xs font-bold text-title">15+ </span></div>
                             </div>
                           </div>
-                          <p class="text-content3 text-xs">Liked by <span>birdie_hoeger  </span></p>
+                          <p class="text-content3 text-xs">Liked  <span class="3sm:hidden">by birdie_hoeger  </span></p>
                         </div>
                         <div>
-                          <p class="text-content3 text-xs">Although he's being courteous, I want a change. Do not toss sociable children. Mr. Am triumphed against himself. She might behave rashly. My initial grin is genuine by things fanny. Mr. Elegance's sophistication made him chuckle. The sons want to eat dinner at home. He at a self-evaluation unsatiable imprudence. Be in a circumstance where the principle consistently violates the allowance. Additional carriage securing is also desired.</p>
+                          <p class="text-content3 text-xs sm:line-clamp-4">He's being polite, but I want a change. Social kids shouldn't be thrown out. Mr. Am won the battle with himself. She could act hastily. By things fanny, my initial grin is real. He laughed at the refinement of Mr. Elegance. It's their preference to eat dinner at home. He was being unsatisfactorily imprudent with himself. be in a situation where the allowance is consistently broken by the principle. Furthermore wanted is additional carriage securing.</p>
                         </div>
                       </div>
                     </div>
@@ -1679,6 +1671,9 @@
   <script src="../../assets/js/custom-select.js"></script>
   <!-- Sidebar Js -->
   <script src="../../assets/js/sidebar.js"></script>
+  <!-- swiper slider js-->
+  <script src="../../assets/js/swiper-slider/swiper-bundle.min.js"></script>
+  <script src="../../assets/js/swiper-slider/swiper-slider-page.js"></script>
   <!-- fontAwesome js-->
   <script src="../../assets/js/fontawesome/all.min.js"></script>
   <!-- customizer js-->

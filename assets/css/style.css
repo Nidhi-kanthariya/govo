@@ -5297,7 +5297,7 @@ code[class*="language-"],
 }
 .user-profile .user-bg .user-detail {
   position: absolute;
-  top: 4rem;
+  top: 2.5rem;
   left: 3rem;
 }
 .product-wrapper-grid.list-view .product-box .card .card-body .user-profile .user-profile-detail img {
@@ -5595,6 +5595,9 @@ code[class*="language-"],
 .top-\[6\%\] {
   top: 6%;
 }
+.\!top-8 {
+  top: 2rem !important;
+}
 .isolate {
   isolation: isolate;
 }
@@ -5618,9 +5621,6 @@ code[class*="language-"],
 }
 .z-\[4\] {
   z-index: 4;
-}
-.order-2 {
-  order: 2;
 }
 .col-span-1 {
   grid-column: span 1 / span 1;
@@ -5859,8 +5859,8 @@ code[class*="language-"],
 .mt-8 {
   margin-top: 2rem;
 }
-.mt-\[-100px\] {
-  margin-top: -100px;
+.mt-\[-50px\] {
+  margin-top: -50px;
 }
 .mt-\[12px\] {
   margin-top: 12px;
@@ -5912,6 +5912,9 @@ code[class*="language-"],
 }
 .mt-card-gap {
   margin-top: calc(0.9375rem + (1.875 - 0.9375) * ((100vw - 20rem) / (120 - 20)));
+}
+.mt-\[-70px\] {
+  margin-top: -70px;
 }
 .box-border {
   box-sizing: border-box;
@@ -5979,9 +5982,6 @@ code[class*="language-"],
 .h-20 {
   height: 5rem;
 }
-.h-24 {
-  height: 6rem;
-}
 .h-28 {
   height: 7rem;
 }
@@ -5996,6 +5996,9 @@ code[class*="language-"],
 }
 .h-6 {
   height: 1.5rem;
+}
+.h-60 {
+  height: 15rem;
 }
 .h-7 {
   height: 1.75rem;
@@ -6261,9 +6264,6 @@ code[class*="language-"],
 .h-max {
   height: -moz-max-content;
   height: max-content;
-}
-.h-60 {
-  height: 15rem;
 }
 .max-h-\[120px\] {
   max-height: 120px;
@@ -6661,6 +6661,9 @@ code[class*="language-"],
 .w-max {
   width: -moz-max-content;
   width: max-content;
+}
+.\!w-10 {
+  width: 2.5rem !important;
 }
 .\!min-w-\[145px\] {
   min-width: 145px !important;
@@ -8169,6 +8172,9 @@ code[class*="language-"],
 .pt-4 {
   padding-top: 1rem;
 }
+.pt-5 {
+  padding-top: 1.25rem;
+}
 .pt-\[\.8125rem\] {
   padding-top: .8125rem;
 }
@@ -8192,9 +8198,6 @@ code[class*="language-"],
 }
 .pt-\[8px\] {
   padding-top: 8px;
-}
-.pt-5 {
-  padding-top: 1.25rem;
 }
 .\!text-left {
   text-align: left !important;
@@ -10899,9 +10902,6 @@ code[class*="language-"],
 .hover\:stroke-primary:hover {
   stroke: rgba(var(--primary),1);
 }
-.hover\:stroke-white:hover {
-  stroke: #fff;
-}
 .hover\:px-2:hover {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -12066,14 +12066,14 @@ code[class*="language-"],
   .lg\:order-2 {
     order: 2;
   }
-  .lg\:order-last {
-    order: 9999;
-  }
   .lg\:order-3 {
     order: 3;
   }
   .lg\:order-first {
     order: -9999;
+  }
+  .lg\:order-last {
+    order: 9999;
   }
   .lg\:col-span-1 {
     grid-column: span 1 / span 1;
@@ -12953,6 +12953,9 @@ code[class*="language-"],
   .sm\:h-36 {
     height: 9rem;
   }
+  .sm\:h-44 {
+    height: 11rem;
+  }
   .sm\:h-52 {
     height: 13rem;
   }
@@ -13206,6 +13209,18 @@ code[class*="language-"],
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
   }
+  .sm\:line-clamp-4 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+  .sm\:line-clamp-6 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+  }
   .sm\:last\:border-r:last-child {
     border-right-width: 1px;
   }
@@ -13444,6 +13459,10 @@ code[class*="language-"],
   .\33sm\:px-2 {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+  .\33sm\:px-unset {
+    padding-left: unset;
+    padding-right: unset;
   }
   .\33sm\:py-4 {
     padding-top: 1rem;
