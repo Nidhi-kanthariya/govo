@@ -1,0 +1,113 @@
+- 
+    var USER_SUGGESTION = [
+        {
+            image: "14.png",
+            userName: "Tiana Baumbach",
+            userProfile: "Web Designer",
+        },
+        {
+            image: "13.png",
+            userName: "Ally Kshlerin",
+            userProfile: "Fullstack Developer",
+        },
+        {
+            image: "23.png",
+            userName: "Ally Kshlerin",
+            userProfile: "Fullstack Developer",
+        },
+    ];
+- 
+    var USER_FRIEND = [
+        {
+            image1: "17.png",
+            userName1: "Abdul Volkman",
+            userProfile1: "Web Developer",
+        },
+        {
+            image1: "16.png",
+            userName1: "Ally Kshlerin",
+            userProfile1: "Fullstack Developer",
+        },
+        {
+            image1: "21.png",
+            userName1: "Ally Kshlerin",
+            userProfile1: "Fullstack Developer",
+        },
+    ];
+- 
+    var USER_FOLLOWER = [
+        {
+            image2: "18.png",
+            userName2: "Abdul Volkman",
+            userProfile2: "Web Developer",
+        },
+        {
+            image2: "15.png",
+            userName2: "Tiana Baumbach",
+            userProfile2: "Web Designer",
+        },
+        {
+            image2: "20.png",
+            userName2: "Ally Kshlerin",
+            userProfile2: "Fullstack Developer",
+        },
+    ];
+
+mixin user_suggestion(data)
+    div.card
+        div.card-header.flex.justify-between.items-center.gap-1
+            h6(class="font-bold") Suggestions
+            a(href="javascript:void(0)").btn.bg-gray-light.p-1 
+                i(data-feather="plus" class="w-4 h-4 stroke-title") 
+        div.card-body
+            ul.flex.flex-col.gap-3 
+                each item in data 
+                    li.flex.justify-between.items-center
+                        div.flex.items-center.gap-2.w-full
+                            div.avatar.rounded-full(class="w-10 h-10")
+                                img(src=`../../assets/images/user-app/${item.image}` alt=`${item.title}`)                                                      
+                            div(class="w-[calc(100%_-_52px)]") 
+                                p.text-title(class="font-semibold text-xs")=item.userName
+                                span.text-content3(class="font-semibold text-2xs")=item.userProfile
+                        a(href="javascript:void(0)").btn.btn-success.btn-outline.p-1.group 
+                            i(data-feather="user-plus" class="w-4 h-4 stroke-success group-hover:stroke-white") 
+
+mixin user_friend(data)
+    div.card
+        div.card-header.flex.justify-between.items-center.gap-1 
+            h6(class="font-bold") Friends
+            a(href="javascript:void(0)").btn.bg-gray-light.p-1 
+                i(data-feather="plus" class="w-4 h-4 stroke-title")                         
+        div.card-body
+            ul.flex.flex-col.gap-3 
+                each item in data 
+                    li.flex.justify-between.items-center
+                        div.flex.items-center.gap-2.w-full
+                            div.avatar.rounded-full(class="w-10 h-10")
+                                img(src=`../../assets/images/user-app/${item.image1}` alt=`${item.title1}`)                                                      
+                            div(class="w-[calc(100%_-_52px)]") 
+                                p.text-title(class="font-semibold text-xs")=item.userName1
+                                span.text-content3(class="font-semibold text-2xs")=item.userProfile1
+                        a(href="javascript:void(0)").btn.bg-gray-light.py-1.px-2  Add
+                
+mixin user_follower(data)
+    div.card
+        div.card-header.flex.justify-between.items-center.gap-1 
+            h6(class="font-bold") Followers
+            a(href="javascript:void(0)").btn.bg-gray-light.p-1 
+                i(data-feather="plus" class="w-4 h-4 stroke-title")                       
+        div.card-body
+            ul.flex.flex-col.gap-3 
+                each item in data 
+                    li.flex.justify-between.items-center
+                        div.flex.items-center.gap-2.w-full
+                            div.avatar.rounded-full(class="w-10 h-10")
+                                img(src=`../../assets/images/user-app/${item.image2}` alt=`${item.title2}`)                                                      
+                            div(class="w-[calc(100%_-_52px)]") 
+                                p.text-title(class="font-semibold text-xs")=item.userName2
+                                span.text-content3(class="font-semibold text-2xs")=item.userProfile2
+                        a(href="javascript:void(0)").btn.bg-gray-light.py-1.px-2 Follow
+
+                
+
+

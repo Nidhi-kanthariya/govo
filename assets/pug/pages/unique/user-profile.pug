@@ -45,11 +45,11 @@ html(lang='en')
                             div.user-bg.card.p-0
                                 img(src="../../assets/images/user-app/bg.jpg", alt="" class="w-full h-80")
                                 div.user-detail.flex.flex-col.gap-4
-                                    div.flex.items-center.gap-5
-                                        div.avatar.rounded-full(class="w-20 h-20 p-[2px] bg-white")
+                                    div.flex.items-center.gap-5(class="2sm:gap-2")
+                                        div.avatar.rounded-full(class="w-20 2sm:w-16 2sm:h-16 h-20 p-[2px] bg-white")
                                             img(src='../../assets/images/avatar/38.jpg' alt='girl in yellow jacket' class="rounded-full")
                                         
-                                        div.flex.items-center.gap-3
+                                        div.flex.items-center.gap-3(class="2sm:gap-2")
                                             div.text-center 
                                                 p.text-white.font-semibold.text-xs 359 
                                                 span.text-white.font-medium Posts
@@ -67,15 +67,15 @@ html(lang='en')
                                             a(href="edit-profile.html").btn.bg-content.text-white.text-xs.py-1 Edit Profile
                                             div.dropdown
                                                 button.btn.bg-content.text-white.text-xs.py-1 Share Profile
-                                                div.dropdown-menu(class="!w-fit !top-8 left-0")
+                                                div.dropdown-menu(class="!w-fit !top-8 left-0 !p-2 2sm:-left-24")
                                                     div.social(class="flex flex-wrap items-center gap-2")
-                                                        a(href="https://www.facebook.com/login" class="bg-gray-light rounded-full btn !text-facebook")
+                                                        a(href="https://www.facebook.com/login" class="bg-gray-light rounded-full btn 2sm:p-2 !text-facebook")
                                                             i.fa-brands.fa-facebook-f(class="w-4 h-4")
-                                                        a(href="https://www.linkedin.com/login" class="bg-gray-light rounded-full btn !text-linkedin")
+                                                        a(href="https://www.linkedin.com/login" class="bg-gray-light rounded-full btn 2sm:p-2 !text-linkedin")
                                                             i.fa-brands.fa-linkedin-in(class="w-4 h-4")
-                                                        a(href="https://twitter.com/i/flow/login" class="bg-gray-light rounded-full btn !text-twitter")
+                                                        a(href="https://twitter.com/i/flow/login" class="bg-gray-light rounded-full btn 2sm:p-2 !text-twitter")
                                                             i.fa-brands.fa-twitter(class="w-4 h-4")
-                                                        a(href="https://www.instagram.com/accounts/login/" class="bg-gray-light rounded-full btn instagram !text-instagram")
+                                                        a(href="https://www.instagram.com/accounts/login/" class="bg-gray-light rounded-full btn 2sm:p-2 instagram !text-instagram")
                                                             svg(width='0' height='0')
                                                                 radialgradient#rg(r='150%' cx='30%' cy='107%')
                                                                     stop(stop-color='#fdf497' offset='0')
@@ -84,15 +84,15 @@ html(lang='en')
                                                                     stop(stop-color='#d6249f' offset='0.6')
                                                                     stop(stop-color='#285AEB' offset='0.9')
                                                             i.fa-brands.fa-instagram(class="w-4 h-4")
-                                                        a(href="https://www.rss.com/" class="bg-gray-light rounded-full btn !text-danger")
+                                                        a(href="https://www.rss.com/" class="bg-gray-light rounded-full btn 2sm:p-2 !text-danger")
                                                             i.fa-solid.fa-rss(class="w-4 h-4")
                     div.grid.grid-cols-12.gap-card-gap(class="user-profile-detail px-body-space mt-[-70px] relative 3sm:px-unset")
-                        div.col-span-3(class="xl:col-span-4 lg:col-span-12")
+                        div.col-span-3(class="4xl:col-span-4 lg:col-span-12")
                             div.grid.grid-cols-12.gap-4.top-0.sticky                               
                                 div.col-span-12(class="lg:col-span-6 2md:col-span-12 lg:order-first")
                                     div.card 
                                         div.card-header 
-                                            h3.text-lg.font-bold Info  
+                                            h6.font-bold Info  
                                         div.card-body.flex.flex-col.gap-3
                                             div 
                                                 p.text-title.text-xs.font-semibold.capitalize Contact No
@@ -103,61 +103,20 @@ html(lang='en')
                                             div 
                                                 p.text-title.text-xs.font-semibold.capitalize Member Status
                                                 span.font-medium.text-content3 Active Member
-                                                        
-                                div.col-span-12(class="lg:col-span-6 2md:col-span-12 lg:order-3")
-                                    div.card 
-                                        div.card-header 
-                                            h3.text-lg.font-bold Skills 
-                                        div.card-body
-                                            div.flex.flex-wrap.gap-2 
-                                                div.badge.badge-xs.bg-primary.text-white.rounded-full HTML
-                                                div.badge.badge-xs.bg-primary.text-white.rounded-full Css
-                                                div.badge.badge-xs.bg-primary.text-white.rounded-full JavaScript
-                                                div.badge.badge-xs.bg-primary.text-white.rounded-full Bootstrap
-                                                div.badge.badge-xs.bg-primary.text-white.rounded-full Tailwindcss
-                                                div.badge.badge-xs.bg-primary.text-white.rounded-full Pug 
-                                                div.badge.badge-xs.bg-primary.text-white.rounded-full Illustrator
-                                
+                                                                                        
                                 div.col-span-12(class="lg:col-span-6 2md:col-span-12 lg:order-2")
-                                    div.card 
-                                        div.card-header.flex.justify-between.items-center.gap-1 
-                                            h3.text-lg.font-bold Suggestions
-                                            a(href="javascript:void(0)").btn.bg-gray-light.p-1 
-                                                i(data-feather="plus" class="w-4 h-4 stroke-title") 
-                                        div.card-body
-                                            div.flex.flex-col.gap-3 
-                                                div.flex.justify-between.items-center
-                                                    div.flex.items-center.gap-4.w-full
-                                                        div.avatar.rounded-full(class="w-10 h-10")
-                                                            img(src='../../assets/images/user-app/18.png' alt='')                                                      
-                                                        div(class="w-[calc(100%_-_70px)]") 
-                                                            p.text-title(class="font-semibold text-xs") Abdul Volkman
-                                                            span.text-content3(class="font-semibold text-2xs") Web Developer
-                                                    a(href="javascript:void(0)").btn.btn-success.btn-outline.p-1.group 
-                                                        i(data-feather="user-plus" class="w-4 h-4 stroke-success group-hover:stroke-white") 
-                                                div.flex.justify-between.items-center
-                                                    div.flex.items-center.gap-4.w-full
-                                                        div.avatar.rounded-full(class="w-10 h-10")
-                                                            img(src='../../assets/images/user-app/15.png' alt='')                                                      
-                                                        div(class="w-[calc(100%_-_70px)]") 
-                                                            p.text-title(class="font-semibold text-xs") Tiana Baumbach
-                                                            span.text-content3(class="font-semibold text-2xs") Web Designer
-                                                    a(href="javascript:void(0)").btn.btn-success.btn-outline.p-1.group 
-                                                        i(data-feather="user-plus" class="w-4 h-4 stroke-success group-hover:stroke-white") 
-                                                div.flex.justify-between.items-center
-                                                    div.flex.items-center.gap-4.w-full
-                                                        div.avatar.rounded-full(class="w-10 h-10")
-                                                            img(src='../../assets/images/user-app/19.png' alt='')                                                      
-                                                        div(class="w-[calc(100%_-_70px)]") 
-                                                            p.text-title(class="font-semibold text-xs") Ally Kshlerin
-                                                            span.text-content3(class="font-semibold text-2xs") Fullstack Developer
-                                                    a(href="javascript:void(0)").btn.btn-success.btn-outline.p-1.group 
-                                                        i(data-feather="user-plus" class="w-4 h-4 stroke-success group-hover:stroke-white") 
-    
-                        div.col-span-9(class="xl:col-span-8 lg:col-span-12 w-full tabs flex flex-col") 
+                                    +user_suggestion(USER_SUGGESTION)
+
+                                div.col-span-12(class="lg:col-span-6 2md:col-span-12 lg:order-2")
+                                    +user_friend(USER_FRIEND)
+
+                                div.col-span-12(class="lg:col-span-6 2md:col-span-12 lg:order-2")
+                                    +user_follower(USER_FOLLOWER)
+                                   
+                        div.col-span-9(class="4xl:col-span-8 lg:col-span-12 w-full tabs flex flex-col") 
                             div.card.gap-1
                                 div.card-header.flex.items-center.justify-between.gap-2(class="2md:flex-col 2md:items-start")
-                                    h3.text-lg.font-bold Portfolio 
+                                    h6.font-bold Portfolio 
                                     div.tab-links.flex.items-center.justify-end(class="2md:w-full border-b border-border-light sm:flex-col")
                                         button.tab.tabs-bordered.user-tab.flex.items-center.justify-center.tab-active(data-tabFilter="1" class="text-content3 !flex-row !gap-2 tab-link 2md:w-full")
                                             i.fa-solid.fa-user(class="w-4 h-4 stroke-title-content3")
@@ -189,7 +148,7 @@ html(lang='en')
                                                     p.text-content3.text-xs(class="sm:line-clamp-6") Emayila Sidorshina here. It will be as straightforward as Occidental—it will even be Occidental. It will appear to be simplified English to an English person, as a dubious Cambridge friend of mine explained to me what Occidental is. The family of European languages includes all of them.
                                                     p.text-content3.text-xs(class="sm:hidden") Always check to see if your typefaces are compatible with one another, and aim to use no more than three. Use the fonts that you already have in the software you're using to experiment and play around with. This could be the advice that I heard from designers the most frequently. They strongly advise using multiple typefaces in a single design, but refrain from going overboard and
                                                 div.flex.flex-col.gap-3 
-                                                    h5.font-semibold.text-title Projects 
+                                                    h6.font-semibold.text-title Projects 
                                                     div.grid.grid-cols-12.gap-card-gap 
                                                         div.col-span-4(class="xl:col-span-6 2md:col-span-12")
                                                             div.border.border-border-light.border-dashed.p-4.flex.flex-col.gap-5 
@@ -307,7 +266,7 @@ html(lang='en')
                                                             div.border.border-border-light.border-dashed.p-4.flex.flex-col.gap-5 
                                                                 div.flex.items-start.justify-between 
                                                                     span(class="bg-dark p-3 grid place-content-center rounded-full")
-                                                                        i.fa-solid.fa-file-lines(class="w-6 h-6 text-white")
+                                                                        i.fa-brands.fa-html5(class="w-6 h-6 text-white")
                                                                     span.text-content3.text-2xs 9months Ago
                                                                 div.flex.flex-col.gap-2 
                                                                     div 
@@ -319,13 +278,50 @@ html(lang='en')
                                                                             div.avatar.border-white(class='border-[0.125rem]')
                                                                                 div.w-8
                                                                                     img(src='../../assets/images/user-app/22.png' alt='avatar')                                                                                                                                                               
+                                                                    badge.bg-success-light.text-success.badge-sm.rounded-5.w-max Completed 
+                                                        div.col-span-4(class="xl:col-span-6 2md:col-span-12")
+                                                            div.border.border-border-light.border-dashed.p-4.flex.flex-col.gap-5 
+                                                                div.flex.items-start.justify-between 
+                                                                    span(class="bg-secondary p-3 grid place-content-center rounded-full")
+                                                                        i.fa-solid.fa-baseball-bat-ball(class="w-6 h-6 text-white")
+                                                                    span.text-content3.text-2xs 10months Ago
+                                                                div.flex.flex-col.gap-2 
+                                                                    div 
+                                                                        p.text-title.text-sm.font-semibold.mb-1 Sports Club 
+                                                                        p.text-content3.text-2xs.truncate Design sports website 
+                                                                    div   
+                                                                        p.text-content3.text-xs Team Members                                                                 
+                                                                        div.avatar-group
+                                                                            div.avatar.border-white(class='border-[0.125rem]')
+                                                                                div.w-8
+                                                                                    img(src='../../assets/images/user-app/15.png' alt='avatar')
+                                                                            div.avatar.border-white(class='border-[0.125rem]')
+                                                                                div.w-8
+                                                                                    img(src='../../assets/images/user-app/12.png' alt='avatar')
+                                                                    badge.bg-success-light.text-success.badge-sm.rounded-5.w-max Completed
+                                                        div.col-span-4(class="xl:col-span-6 2md:col-span-12")
+                                                            div.border.border-border-light.border-dashed.p-4.flex.flex-col.gap-5 
+                                                                div.flex.items-start.justify-between 
+                                                                    span(class="bg-info p-3 grid place-content-center rounded-full")
+                                                                        i.fa-solid.fa-file-lines(class="w-6 h-6 text-white")
+                                                                    span.text-content3.text-2xs 11months Ago
+                                                                div.flex.flex-col.gap-2 
+                                                                    div 
+                                                                        p.text-title.text-sm.font-semibold.mb-1 Document Page 
+                                                                        p.text-content3.text-2xs.truncate Design admin document page for ecommerce website 
+                                                                    div   
+                                                                        p.text-content3.text-xs Team Members                                                                 
+                                                                        div.avatar-group
+                                                                            div.avatar.border-white(class='border-[0.125rem]')
+                                                                                div.w-8
+                                                                                    img(src='../../assets/images/user-app/13.png' alt='avatar')                                                                                                                                                               
                                                                     badge.bg-success-light.text-success.badge-sm.rounded-5.w-max Completed  
                                                         
                                         div(data-tabContent="2" class="tab-pan fade group relative first:rounded-tl-none rounded-5 border-none !px-1 !pb-0")
                                             div.flex.flex-col.gap-4 
-                                                div.flex.items-start.user-detail.gap-4(class="border-b border-border-light border-dashed last:border-none pb-5 last:pb-0")
-                                                    div.grid.place-content-center.bg-gray-light.w-20.rounded-full.text-xl.h-20.p-8 
-                                                        i.fa-solid.fa-cubes
+                                                div.flex.items-start.user-detail.gap-4(class="border-b border-border-light border-dashed last:border-none pb-5 last:pb-0 sm:flex-col")
+                                                    div.grid.place-content-center.bg-gray-light.rounded-full.text-xl(class="h-16 min-w-[4rem]")
+                                                        i.fa-brands.fa-html5(class="text-danger")
                                                     div.text-start
                                                         h5.text-title(class="font-semibold") Software Technology
                                                         p.text-content3(class="font-semibold text-xs") Senior Web Designer
@@ -333,9 +329,9 @@ html(lang='en')
                                                         ul.list-disc.pl-5.mt-2 
                                                             li.text-content3.text-xs To accommodate the requirements of projects and enterprises that are designing swiftly, add new features and upgrade infrastructure.
                                                             li.text-content3.text-xs Participate in all phases of agile software development, including design, implementation, and deployment.
-                                                div.flex.items-start.user-detail.gap-4(class="border-b border-border-light border-dashed last:border-none pb-5 last:pb-0")
-                                                    div.grid.place-content-center.bg-gray-light.w-20.rounded-full.text-xl.h-20.p-8 
-                                                        i.fa-solid.fa-cubes
+                                                div.flex.items-start.user-detail.gap-4(class="border-b border-border-light border-dashed last:border-none pb-5 last:pb-0 sm:flex-col")
+                                                    div.grid.place-content-center.bg-gray-light.rounded-full.text-xl(class="h-16 min-w-[4rem]")
+                                                        i.fa-brands.fa-codepen(class="text-info")
                                                     div.text-start
                                                         h5.text-title(class="font-semibold") Software Express
                                                         p.text-content3(class="font-semibold text-xs") Frontend Engineer        
@@ -346,9 +342,9 @@ html(lang='en')
                                                             li.text-content3.text-xs Take the helm of new projects from conception to execution.
                                                             li.text-content3.text-xs Build highly scalable distributed systems that provide satisfying user experiences and quantifiable company growth by working across the entire stack.
                                                             li.text-content3.text-xs While upholding strict standards for the quality of the code and the smart design of the programme, ensure application performance, uptime, and scale.
-                                                div.flex.items-start.user-detail.gap-4(class="border-b border-border-light border-dashed last:border-none pb-5 last:pb-0")
-                                                    div.grid.place-content-center.bg-gray-light.w-20.rounded-full.text-xl.h-20.p-8 
-                                                        i.fa-solid.fa-cubes 
+                                                div.flex.items-start.user-detail.gap-4(class="border-b border-border-light border-dashed last:border-none pb-5 last:pb-0 sm:flex-col")
+                                                    div.grid.place-content-center.bg-gray-light.rounded-full.text-xl(class="h-16 min-w-[4rem]")
+                                                        i.fa-solid.fa-code(class="text-primary")
                                                     div.text-start
                                                         h5.text-title(class="font-semibold") Technical Info
                                                         p.text-content3(class="font-semibold text-xs") Designer/developer in charge         
@@ -356,9 +352,9 @@ html(lang='en')
                                                         ul.list-disc.pl-5.mt-2 
                                                             li.text-content3.text-xs To accommodate the requirements of projects and enterprises that are designing swiftly, add new features and upgrade infrastructure.
                                                             li.text-content3.text-xs The performance, uptime, and scale of the application should be ensured while adhering to tight criteria for the calibre of the code and the clever design of the programme.                                                  
-                                                div.flex.items-start.user-detail.gap-4(class="border-b border-border-light border-dashed last:border-none pb-5 last:pb-0")
-                                                    div.grid.place-content-center.bg-gray-light.w-20.rounded-full.text-xl.h-20.p-8 
-                                                        i.fa-solid.fa-user-graduate
+                                                div.flex.items-start.user-detail.gap-4(class="border-b border-border-light border-dashed last:border-none pb-5 last:pb-0 sm:flex-col")
+                                                    div.grid.place-content-center.bg-gray-light.rounded-full.text-xl(class="h-16 min-w-[4rem]")
+                                                        i.fa-solid.fa-cubes(class="text-dark")
                                                     div.text-start
                                                         h5.text-title(class="font-semibold") Freelancer
                                                         p.text-content3(class="font-semibold text-xs") Fullstack Engineer        
@@ -482,125 +478,8 @@ html(lang='en')
                                                 div
                                                     p.text-content3.text-xs(class="sm:line-clamp-4") He's being polite, but I want a change. Social kids shouldn't be thrown out. Mr. Am won the battle with himself. She could act hastily. By things fanny, my initial grin is real. He laughed at the refinement of Mr. Elegance. It's their preference to eat dinner at home. He was being unsatisfactorily imprudent with himself. be in a situation where the allowance is consistently broken by the principle. Furthermore wanted is additional carriage securing.
                                              
-                                        
-                                        
-                        
-                        //- div.col-span-3(class="gap-card-gap flex flex-col") 
-                        //-     div.card 
-                        //-         div.card-header.pb-2.header-bottom-border(class="!border-dashed")
-                        //-             h3.text-lg.font-bold About Me 
-                        //-         div.card-body
-                        //-             ul.flex.flex-col.gap-4 
-                        //-                 li.flex.items-center.gap-3
-                        //-                     +SVG_ICON("Send", "w-9 h-9 p-2 bg-border-light stroke-title rounded-full")
-                        //-                     div.flex.flex-col 
-                        //-                         p.text-xs.font-semibold UX Designer At Pixelstrap
-                        //-                         span.text-content3.font-semibold.text-2xs Bangalore - 2021
-                        //-                 li.flex.items-center.gap-3
-                        //-                     +SVG_ICON("Buy", "w-9 h-9 p-2 bg-border-light stroke-title rounded-full")
-                        //-                     div.flex.flex-col 
-                        //-                         p.text-xs.font-semibold Studied Computer Science
-                        //-                         span.text-content3.font-semibold.text-2xs At London University - 2015
-                        //-                 li.flex.items-center.gap-3
-                        //-                     +SVG_ICON("Download", "w-9 h-9 p-2 bg-border-light stroke-title rounded-full")
-                        //-                     div.flex.flex-col 
-                        //-                         p.text-xs.font-semibold Relationship Status
-                        //-                         span.text-content3.font-semibold.text-2xs Single
-                        //-                 li.flex.items-center.gap-3
-                        //-                     +SVG_ICON("Swap", "w-9 h-9 p-2 bg-border-light stroke-title rounded-full")
-                        //-                     div.flex.flex-col 
-                        //-                         p.text-xs.font-semibold Lived In London
-                        //-                         span.text-content3.font-semibold.text-2xs Last 5 Year
-                        //-                 li.flex.items-center.gap-3
-                        //-                     +SVG_ICON("Ticket-Star", "w-9 h-9 p-2 bg-border-light stroke-title rounded-full")
-                        //-                     div.flex.flex-col 
-                        //-                         p.text-xs.font-semibold Blood Group
-                        //-                         span.text-content3.font-semibold.text-2xs O+ Positive
-                        //-             div
-                        //-                 div(class="pt-4 pb-2 border-b border-border-light !border-dashed")
-                        //-                     h3.text-lg.font-bold Social Networks 
-                        //-                 div.flex.flex-col.gap-2.mt-4 
-                        //-                     button.btn.bg-facebook.text-white.flex.items-center.gap-3.text-xs.font-semibold.justify-center 
-                        //-                         i.fa-brands.fa-facebook-f
-                        //-                         | Facebook
-                        //-                     button.btn.bg-twitter.text-white.flex.items-center.gap-3.text-xs.font-semibold.justify-center 
-                        //-                         i.fa-brands.fa-twitter
-                        //-                         | Twitter
-                        //-                     button.btn.bg-danger.text-white.flex.items-center.gap-3.text-xs.font-semibold.justify-center 
-                        //-                         i.fa-brands.fa-dribbble
-                        //-                         | Dribble
-
-                        //-     div.card.gap-0 
-                        //-         div.card-header
-                        //-             h3.text-lg.font-bold Friends 
-                        //-         div.card-body
-                        //-             div.accordionWrapper.flush
-                        //-                 div.accordionItem.open
-                        //-                     h4.accordionItemHeading(class="!text-content3 !px-0 !border-dashed flex items-center justify-between") 
-                        //-                         | Close Friends
-                        //-                         +SVG_ICON("Arrow-Down-Circle","w-[1.25rem] h-[1.25rem] !stroke-primary")
-                        //-                     div.accordionItemContent(class="!px-0 !border-none !mb-0")
-                        //-                         ul.flex.flex-col.gap-4
-                        //-                             li                                 
-                        //-                                 a.flex.items-center.gap-3(href="user-card.html")  
-                        //-                                     div.avatar  
-                        //-                                         div.w-10.rounded-full(class="xl:w-9") 
-                        //-                                             img(src='../../assets/images/avatar/25.jpg' alt='avatar')
-                        //-                                     div
-                        //-                                         p.text-xs.font-semibold(class="leading-none lg:text-2xs") Carla Packard
-                        //-                                         span.text-content3.font-semibold.text-2xs Alabma, USA
-                        //-                             li                                 
-                        //-                                 a.flex.items-center.gap-3(href="user-card.html")  
-                        //-                                     div.avatar
-                        //-                                         div.w-10.rounded-full(class="xl:w-9")
-                        //-                                             img(src='../../assets/images/avatar/15.jpg' alt='avatar')
-                        //-                                     div
-                        //-                                         p.text-xs.font-semibold(class="leading-none lg:text-2xs") Andrew Black
-                        //-                                         span.text-content3.font-semibold.text-2xs Alabma, USA
-                        //-                             li                                 
-                        //-                                 a.flex.items-center.gap-3(href="user-card.html")  
-                        //-                                     div.avatar
-                        //-                                         div.w-10.rounded-full(class="xl:w-9")
-                        //-                                             img(src='../../assets/images/avatar/6.jpg' alt='avatar')
-                        //-                                     div
-                        //-                                         p.text-xs.font-semibold(class="leading-none lg:text-2xs") Oliver Dawson
-                        //-                                         span.text-content3.font-semibold.text-2xs Alabma, USA 
-                        //-                             li                                 
-                        //-                                 a.flex.items-center.gap-3(href="user-card.html")  
-                        //-                                     div.avatar
-                        //-                                         div.w-10.rounded-full(class="xl:w-9")
-                        //-                                             img(src='../../assets/images/avatar/27.jpg' alt='avatar')
-                        //-                                     div
-                        //-                                         p.text-xs.font-semibold(class="leading-none lg:text-2xs") Robert Lanzel
-                        //-                                         span.text-content3.font-semibold.text-2xs Alabma, USA  
-
-                        //-             div.accordionWrapper.flush
-                        //-                 div.accordionItem.open
-                        //-                     h4.accordionItemHeading(class="!text-content3 !px-0 !border-dashed flex items-center justify-between")
-                        //-                         | Recent Chats
-                        //-                         +SVG_ICON("Arrow-Down-Circle","w-[1.25rem] h-[1.25rem] !stroke-primary")
-                        //-                     div.accordionItemContent(class="!px-0 !border-none !mb-0")
-                        //-                         ul.flex.flex-col.gap-4
-                        //-                             li                                 
-                        //-                                 a.flex.items-center.gap-3(href="user-card.html")  
-                        //-                                     div.avatar  
-                        //-                                         div.w-10.rounded-full(class="xl:w-9") 
-                        //-                                             img(src='../../assets/images/avatar/25.jpg' alt='avatar')
-                        //-                                     div
-                        //-                                         p.text-xs.font-semibold(class="leading-none lg:text-2xs") Carla Packard
-                        //-                                         span.text-content3.font-semibold.text-2xs Alabma, USA
-                        //-                             li                                 
-                        //-                                 a.flex.items-center.gap-3(href="user-card.html")  
-                        //-                                     div.avatar
-                        //-                                         div.w-10.rounded-full(class="xl:w-9")
-                        //-                                             img(src='../../assets/images/avatar/15.jpg' alt='avatar')
-                        //-                                     div
-                        //-                                         p.text-xs.font-semibold(class="leading-none lg:text-2xs") Andrew Black
-                        //-                                         span.text-content3.font-semibold.text-2xs Alabma, USA
-                                                
-   
-
-
+                                
+                    
                     // Page Body End  
                     +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
             include ../../components/customizer

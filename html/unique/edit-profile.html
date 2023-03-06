@@ -35,7 +35,7 @@
                     <use href="../../assets/svg/_sprite.svg#Category"> </use>
                   </svg>
                 </button>
-                <h1 class="flex items-center gap-1 text-lg font-extrabold leading-none sm:hidden 4xl:text-base">User Profile</h1>
+                <h1 class="flex items-center gap-1 text-lg font-extrabold leading-none sm:hidden 4xl:text-base">Edit Profile</h1>
               </div>
               <div class="right-header flex items-center flex-1 sm:gap-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] gap-[calc(20px_+_(30_-_20)_*_((100vw_-_320px)_/_(1920_-_320)))] xl:gap-[calc(20px_+_(45_-_20)_*_((100vw_-_320px)_/_(1920_-_320)))]  justify-end">
                 <div class="search-box-wrapper transition-all duration-300 max-w-[40%] xl:scale-0 xl:opacity-0 xl:invisible xl:px-body-space xl:max-w-full w-full xl:z-[5] flex-1 xl:absolute xl:left-0">
@@ -841,7 +841,7 @@
                         <li class="px-2"> <span>/</span></li>
                         <li class="breadcrumb-items capitalize">User</li>
                         <li class="px-2"> <span>/</span></li>
-                        <li class="breadcrumb-items capitalize active">User Profile</li>
+                        <li class="breadcrumb-items capitalize active">Edit Profile</li>
                       </ol>
                     </nav>
                   </div>
@@ -1122,172 +1122,61 @@
         <div class="page-body user-profile">
           <div class="grid grid-cols-12 gap-card-gap">
             <div class="col-span-12">
-              <div class="user-bg card p-0"><img class="w-full h-80" src="../../assets/images/user-app/bg.jpg" alt="">
-                <div class="user-detail flex flex-col gap-4">
-                  <div class="flex items-center gap-5 2sm:gap-2">
-                    <div class="avatar rounded-full w-20 2sm:w-16 2sm:h-16 h-20 p-[2px] bg-white"><img class="rounded-full" src="../../assets/images/avatar/38.jpg" alt="girl in yellow jacket"></div>
-                    <div class="flex items-center gap-3 2sm:gap-2">
-                      <div class="text-center"> 
-                        <p class="text-white font-semibold text-xs">359 </p><span class="text-white font-medium">Posts</span>
-                      </div>
-                      <div class="text-center"> 
-                        <p class="text-white font-semibold text-xs">4.5K </p><span class="text-white font-medium">Followers</span>
-                      </div>
-                      <div class="text-center"> 
-                        <p class="text-white font-semibold text-xs">2.487 </p><span class="text-white font-medium">Following</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex flex-col gap-2">
-                    <div> 
-                      <p class="text-content-white font-semibold text-xs">Emayila Sidorshina</p>
-                      <p class="text-content-white font-semibold text-xs">Freelancer</p>
-                    </div>
-                    <div class="flex flex-wrap items-center gap-2"><a class="btn bg-content text-white text-xs py-1" href="edit-profile.html">Edit Profile</a>
-                      <div class="dropdown">
-                        <button class="btn bg-content text-white text-xs py-1">Share Profile</button>
-                        <div class="dropdown-menu !w-fit !top-8 left-0 !p-2 2sm:-left-24">
-                          <div class="social flex flex-wrap items-center gap-2"><a class="bg-gray-light rounded-full btn 2sm:p-2 !text-facebook" href="https://www.facebook.com/login"><i class="fa-brands fa-facebook-f w-4 h-4"></i></a><a class="bg-gray-light rounded-full btn 2sm:p-2 !text-linkedin" href="https://www.linkedin.com/login"><i class="fa-brands fa-linkedin-in w-4 h-4"></i></a><a class="bg-gray-light rounded-full btn 2sm:p-2 !text-twitter" href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter w-4 h-4"></i></a><a class="bg-gray-light rounded-full btn 2sm:p-2 instagram !text-instagram" href="https://www.instagram.com/accounts/login/">
-                              <svg width="0" height="0">
-                                <radialgradient id="rg" r="150%" cx="30%" cy="107%">
-                                  <stop stop-color="#fdf497" offset="0"></stop>
-                                  <stop stop-color="#fdf497" offset="0.05"></stop>
-                                  <stop stop-color="#fd5949" offset="0.45"></stop>
-                                  <stop stop-color="#d6249f" offset="0.6"></stop>
-                                  <stop stop-color="#285AEB" offset="0.9"></stop>
-                                </radialgradient>
-                              </svg><i class="fa-brands fa-instagram w-4 h-4"></i></a><a class="bg-gray-light rounded-full btn 2sm:p-2 !text-danger" href="https://www.rss.com/"><i class="fa-solid fa-rss w-4 h-4"></i></a></div>
+              <div class="user-bg card p-0"><img class="w-full h-80" src="../../assets/images/user-app/bg.jpg" alt=""></div>
+            </div>
+          </div>
+          <div class="grid grid-cols-12 gap-card-gap user-profile-detail px-body-space mt-[-70px] relative 3sm:px-unset">
+            <div class="col-span-3 4xl:col-span-4 lg:col-span-12">
+              <div class="grid grid-cols-12 gap-4 top-0 sticky"> 
+                <div class="col-span-12 lg:col-span-6 2md:col-span-12 lg:order-first">
+                  <div class="card">
+                    <div class="card-body"> 
+                      <div class="user-detail flex flex-col gap-4 items-center">
+                        <div class="flex items-center gap-5 2sm:gap-2">
+                          <div class="avatar rounded-full w-20 2sm:w-16 2sm:h-16 h-20 p-[2px] bg-white"><img class="rounded-full" src="../../assets/images/avatar/38.jpg" alt="girl in yellow jacket"></div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                          <div class="text-center"> 
+                            <p class="text-content-title font-semibold text-base">Emayila Sidorshina</p>
+                            <p class="text-content-title font-semibold text-sm">Freelancer</p>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="grid grid-cols-12 gap-card-gap user-profile-detail px-body-space mt-[-70px] relative 3sm:px-unset">
-            <div class="col-span-3 4xl:col-span-4 lg:col-span-12">
-              <div class="grid grid-cols-12 gap-4 top-0 sticky">                              
                 <div class="col-span-12 lg:col-span-6 2md:col-span-12 lg:order-first">
                   <div class="card"> 
                     <div class="card-header"> 
-                      <h6 class="font-bold">Info  </h6>
+                      <h6 class="font-bold">Social Media  </h6>
                     </div>
-                    <div class="card-body flex flex-col gap-3">
-                      <div> 
-                        <p class="text-title text-xs font-semibold capitalize">Contact No</p><span class="font-medium text-content3">(773) 847-8982 </span>
-                      </div>
-                      <div> 
-                        <p class="text-title text-xs font-semibold capitalize">Registration date</p><span class="font-medium text-content3">Oct, 25,2022</span>
-                      </div>
-                      <div> 
-                        <p class="text-title text-xs font-semibold capitalize">Member Status</p><span class="font-medium text-content3">Active Member</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-span-12 lg:col-span-6 2md:col-span-12 lg:order-2">
-                  <div class="card">
-                    <div class="card-header flex justify-between items-center gap-1">
-                      <h6 class="font-bold">Suggestions</h6><a class="btn bg-gray-light p-1" href="javascript:void(0)"> <i class="w-4 h-4 stroke-title" data-feather="plus"> </i></a>
-                    </div>
-                    <div class="card-body">
-                      <ul class="flex flex-col gap-3"> 
-                        <li class="flex justify-between items-center">
-                          <div class="flex items-center gap-2 w-full">
-                            <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/user-app/14.png" alt="undefined"/></div>
-                            <div class="w-[calc(100%_-_52px)]"> 
-                              <p class="text-title font-semibold text-xs">Tiana Baumbach</p><span class="text-content3 font-semibold text-2xs">Web Designer</span>
-                            </div>
-                          </div><a class="btn btn-success btn-outline p-1 group" href="javascript:void(0)"> <i class="w-4 h-4 stroke-success group-hover:stroke-white" data-feather="user-plus"> </i></a>
-                        </li>
-                        <li class="flex justify-between items-center">
-                          <div class="flex items-center gap-2 w-full">
-                            <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/user-app/13.png" alt="undefined"/></div>
-                            <div class="w-[calc(100%_-_52px)]"> 
-                              <p class="text-title font-semibold text-xs">Ally Kshlerin</p><span class="text-content3 font-semibold text-2xs">Fullstack Developer</span>
-                            </div>
-                          </div><a class="btn btn-success btn-outline p-1 group" href="javascript:void(0)"> <i class="w-4 h-4 stroke-success group-hover:stroke-white" data-feather="user-plus"> </i></a>
-                        </li>
-                        <li class="flex justify-between items-center">
-                          <div class="flex items-center gap-2 w-full">
-                            <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/user-app/23.png" alt="undefined"/></div>
-                            <div class="w-[calc(100%_-_52px)]"> 
-                              <p class="text-title font-semibold text-xs">Ally Kshlerin</p><span class="text-content3 font-semibold text-2xs">Fullstack Developer</span>
-                            </div>
-                          </div><a class="btn btn-success btn-outline p-1 group" href="javascript:void(0)"> <i class="w-4 h-4 stroke-success group-hover:stroke-white" data-feather="user-plus"> </i></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-span-12 lg:col-span-6 2md:col-span-12 lg:order-2">
-                  <div class="card">
-                    <div class="card-header flex justify-between items-center gap-1"> 
-                      <h6 class="font-bold">Friends</h6><a class="btn bg-gray-light p-1" href="javascript:void(0)"> <i class="w-4 h-4 stroke-title" data-feather="plus">                        </i></a>
-                    </div>
-                    <div class="card-body">
-                      <ul class="flex flex-col gap-3"> 
-                        <li class="flex justify-between items-center">
-                          <div class="flex items-center gap-2 w-full">
-                            <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/user-app/17.png" alt="undefined"/></div>
-                            <div class="w-[calc(100%_-_52px)]"> 
-                              <p class="text-title font-semibold text-xs">Abdul Volkman</p><span class="text-content3 font-semibold text-2xs">Web Developer</span>
-                            </div>
-                          </div><a class="btn bg-gray-light py-1 px-2" href="javascript:void(0)"> Add</a>
-                        </li>
-                        <li class="flex justify-between items-center">
-                          <div class="flex items-center gap-2 w-full">
-                            <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/user-app/16.png" alt="undefined"/></div>
-                            <div class="w-[calc(100%_-_52px)]"> 
-                              <p class="text-title font-semibold text-xs">Ally Kshlerin</p><span class="text-content3 font-semibold text-2xs">Fullstack Developer</span>
-                            </div>
-                          </div><a class="btn bg-gray-light py-1 px-2" href="javascript:void(0)"> Add</a>
-                        </li>
-                        <li class="flex justify-between items-center">
-                          <div class="flex items-center gap-2 w-full">
-                            <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/user-app/21.png" alt="undefined"/></div>
-                            <div class="w-[calc(100%_-_52px)]"> 
-                              <p class="text-title font-semibold text-xs">Ally Kshlerin</p><span class="text-content3 font-semibold text-2xs">Fullstack Developer</span>
-                            </div>
-                          </div><a class="btn bg-gray-light py-1 px-2" href="javascript:void(0)"> Add</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-span-12 lg:col-span-6 2md:col-span-12 lg:order-2">
-                  <div class="card">
-                    <div class="card-header flex justify-between items-center gap-1"> 
-                      <h6 class="font-bold">Followers</h6><a class="btn bg-gray-light p-1" href="javascript:void(0)"> <i class="w-4 h-4 stroke-title" data-feather="plus">                      </i></a>
-                    </div>
-                    <div class="card-body">
-                      <ul class="flex flex-col gap-3"> 
-                        <li class="flex justify-between items-center">
-                          <div class="flex items-center gap-2 w-full">
-                            <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/user-app/18.png" alt="undefined"/></div>
-                            <div class="w-[calc(100%_-_52px)]"> 
-                              <p class="text-title font-semibold text-xs">Abdul Volkman</p><span class="text-content3 font-semibold text-2xs">Web Developer</span>
-                            </div>
-                          </div><a class="btn bg-gray-light py-1 px-2" href="javascript:void(0)">Follow</a>
-                        </li>
-                        <li class="flex justify-between items-center">
-                          <div class="flex items-center gap-2 w-full">
-                            <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/user-app/15.png" alt="undefined"/></div>
-                            <div class="w-[calc(100%_-_52px)]"> 
-                              <p class="text-title font-semibold text-xs">Tiana Baumbach</p><span class="text-content3 font-semibold text-2xs">Web Designer</span>
-                            </div>
-                          </div><a class="btn bg-gray-light py-1 px-2" href="javascript:void(0)">Follow</a>
-                        </li>
-                        <li class="flex justify-between items-center">
-                          <div class="flex items-center gap-2 w-full">
-                            <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/user-app/20.png" alt="undefined"/></div>
-                            <div class="w-[calc(100%_-_52px)]"> 
-                              <p class="text-title font-semibold text-xs">Ally Kshlerin</p><span class="text-content3 font-semibold text-2xs">Fullstack Developer</span>
-                            </div>
-                          </div><a class="btn bg-gray-light py-1 px-2" href="javascript:void(0)">Follow</a>
-                        </li>
-                      </ul>
+                    <div class="card-body flex flex-col gap-3 checkout-detail">
+                      <form class="social flex flex-col gap-1 theme-form m-0">
+                        <div class="flex items-center gap-4"><span class="bg-gray-light rounded-full btn !text-facebook"><i class="fa-brands fa-facebook-f w-4 h-4"></i></span>
+                          <input class="!py-2" type="text" id="firstName" value="emayila567" required>
+                        </div>
+                        <div class="flex items-center gap-4"><span class="bg-gray-light rounded-full btn !text-linkedin"><i class="fa-brands fa-linkedin-in w-4 h-4"></i></span>
+                          <input class="!py-2" type="text" id="firstName" value="emayilasidorshina21" required>
+                        </div>
+                        <div class="flex items-center gap-4"><span class="bg-gray-light rounded-full btn !text-twitter"><i class="fa-brands fa-twitter w-4 h-4"></i></span>
+                          <input class="!py-2" type="text" id="firstName" value="Emayila_Sidorshina" required>
+                        </div>
+                        <div class="flex items-center gap-4"><span class="bg-gray-light rounded-full btn instagram !text-instagram">
+                            <svg width="0" height="0">
+                              <radialgradient id="rg" r="150%" cx="30%" cy="107%">
+                                <stop stop-color="#fdf497" offset="0"></stop>
+                                <stop stop-color="#fdf497" offset="0.05"></stop>
+                                <stop stop-color="#fd5949" offset="0.45"></stop>
+                                <stop stop-color="#d6249f" offset="0.6"></stop>
+                                <stop stop-color="#285AEB" offset="0.9"></stop>
+                              </radialgradient>
+                            </svg><i class="fa-brands fa-instagram w-4 h-4"></i></span>
+                          <input class="!py-2" type="text" id="firstName" value="emayila_sidorshina_21" required>
+                        </div>
+                        <div class="flex items-center gap-4"><span class="bg-gray-light rounded-full btn !text-danger"><i class="fa-solid fa-rss w-4 h-4"></i></span>
+                          <input class="!py-2" type="text" id="firstName" value="Sidorshinaemayila12" required>
+                        </div>
+                      </form>
                     </div>
                   </div>
                 </div>
@@ -1295,380 +1184,220 @@
             </div>
             <div class="col-span-9 4xl:col-span-8 lg:col-span-12 w-full tabs flex flex-col"> 
               <div class="card gap-1">
-                <div class="card-header flex items-center justify-between gap-2 2md:flex-col 2md:items-start">
-                  <h6 class="font-bold">Portfolio </h6>
-                  <div class="tab-links flex items-center justify-end 2md:w-full border-b border-border-light sm:flex-col">
-                    <button class="tab tabs-bordered user-tab flex items-center justify-center tab-active text-content3 !flex-row !gap-2 tab-link 2md:w-full" data-tabFilter="1"><i class="fa-solid fa-user w-4 h-4 stroke-title-content3"></i>Profile  </button>
-                    <button class="tab tabs-bordered user-tab flex items-center justify-center text-content3 !flex-row !gap-2 tab-link 2md:w-full" data-tabFilter="2"><i class="fa-solid fa-briefcase w-4 h-4 stroke-title-content3"></i>Experience</button>
-                    <button class="tab tabs-bordered user-tab flex items-center justify-center text-content3 !flex-row !gap-2 tab-link 2md:w-full" data-tabFilter="3"><i class="fa-regular fa-image w-4 h-4 stroke-title-content3"></i>Photos  </button>
+                <div class="card-header flex items-center">
+                  <div class="tab-links flex items-center justify-start w-full 2md:w-full border-b border-border-light sm:flex-col">
+                    <button class="tab tabs-bordered user-tab flex items-center justify-center tab-active text-content3 !flex-row !gap-2 tab-link 2md:w-full" data-tabFilter="1"><i class="fa-solid fa-user w-4 h-4 stroke-title-content3"></i>Personal Detail  </button>
+                    <button class="tab tabs-bordered user-tab flex items-center justify-center text-content3 !flex-row !gap-2 tab-link 2md:w-full" data-tabFilter="2"><i class="fa-solid fa-gear w-4 h-4 stroke-title-content3"></i>Setting</button>
+                    <button class="tab tabs-bordered user-tab flex items-center justify-center text-content3 !flex-row !gap-2 tab-link 2md:w-full" data-tabFilter="3"><i class="fa-solid fa-briefcase w-4 h-4 stroke-title-content3"></i>Experience </button>
+                    <button class="tab tabs-bordered user-tab flex items-center justify-center text-content3 !flex-row !gap-2 tab-link 2md:w-full" data-tabFilter="3"><i class="fa-solid fa-scroll w-4 h-4 stroke-title-content3"></i>Privacy Policy </button>
                   </div>
                 </div>
                 <div class="card-body"> 
-                  <div class="tabs-content">
-                    <div class="tab-pan fade active show first:rounded-tl-none rounded-5 border-none !px-1 !pb-0" data-tabContent="1">
-                      <div class="flex flex-col gap-4">
-                        <div class="flex items-center gap-4 2md:flex-col 2md:items-start"> 
-                          <div class="flex user-detail items-center gap-4">
-                            <div class="bg-gray-light w-8 h-8 grid place-content-center rounded-full"><i class="fa-solid fa-user-tie"></i></div>
-                            <div class="text-start">
-                              <p class="text-title font-semibold text-xs">Designation</p><span class="text-content3 font-semibold text-2xs">Fullstack Developer        </span>
-                            </div>
+                  <div class="tabs-content checkout-detail">
+                    <div class="tab-pan  fade active show first:rounded-tl-none rounded-5 border-none !px-1 !pb-0" data-tabContent="1">
+                      <form class="theme-form flex flex-col gap-4 m-0">
+                        <div class="grid grid-cols-12 gap-5">
+                          <div class="col-span-6 sm:col-span-12">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" value="Emayila" required>
                           </div>
-                          <div class="flex user-detail items-center gap-4">
-                            <div class="bg-gray-light w-8 h-8 grid place-content-center rounded-full"><i class="fa-solid fa-globe"></i></div>
-                            <div class="text-start">
-                              <p class="text-title font-semibold text-xs">Website</p><span class="text-content3 font-semibold text-2xs">www.govo.com                                                         </span>
-                            </div>
+                          <div class="col-span-6 sm:col-span-12">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" value="Emayila" required>
                           </div>
                         </div>
-                        <div class="flex flex-col gap-2">
-                          <p class="text-content3 text-xs sm:line-clamp-6">Emayila Sidorshina here. It will be as straightforward as Occidental—it will even be Occidental. It will appear to be simplified English to an English person, as a dubious Cambridge friend of mine explained to me what Occidental is. The family of European languages includes all of them.</p>
-                          <p class="text-content3 text-xs sm:hidden">Always check to see if your typefaces are compatible with one another, and aim to use no more than three. Use the fonts that you already have in the software you're using to experiment and play around with. This could be the advice that I heard from designers the most frequently. They strongly advise using multiple typefaces in a single design, but refrain from going overboard and</p>
-                        </div>
-                        <div class="flex flex-col gap-3"> 
-                          <h6 class="font-semibold text-title">Projects </h6>
-                          <div class="grid grid-cols-12 gap-card-gap"> 
-                            <div class="col-span-4 xl:col-span-6 2md:col-span-12">
-                              <div class="border border-border-light border-dashed p-4 flex flex-col gap-5"> 
-                                <div class="flex items-start justify-between"> <span class="bg-danger p-3 grid place-content-center rounded-full"><i class="fa-brands fa-figma w-6 h-6 text-white"></i></span><span class="text-content3 text-2xs">3hr Ago </span></div>
-                                <div class="flex flex-col gap-2"> 
-                                  <div> 
-                                    <p class="text-title text-sm font-semibold mb-1">Figma Logo Design </p>
-                                    <p class="text-content3 text-2xs truncate">New Latest figma logo design for membership</p>
-                                  </div>
-                                  <div>  
-                                    <p class="text-content3 text-xs">Team Members                                                                 </p>
-                                    <div class="avatar-group">
-                                      <div class="avatar border-white border-[0.125rem]">
-                                        <div class="w-8"><img src="../../assets/images/user-app/13.png" alt="avatar"></div>
-                                      </div>
-                                      <div class="avatar border-white border-[0.125rem]">
-                                        <div class="w-8"><img src="../../assets/images/user-app/14.png" alt="avatar"></div>
-                                      </div>
-                                      <div class="avatar border-white border-[0.125rem]">
-                                        <div class="w-8"><img src="../../assets/images/user-app/15.png" alt="avatar"></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <badge class="bg-secondary-extralight text-secondary badge-sm rounded-5 w-max">Inprogress  </badge>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-span-4 xl:col-span-6 2md:col-span-12">
-                              <div class="border border-border-light border-dashed p-4 flex flex-col gap-5"> 
-                                <div class="flex items-start justify-between"> <span class="bg-info p-3 grid place-content-center rounded-full"><i class="fa-solid fa-dumbbell w-6 h-6 text-white"></i></span><span class="text-content3 text-2xs">3months Ago</span></div>
-                                <div class="flex flex-col gap-2"> 
-                                  <div> 
-                                    <p class="text-title text-sm font-semibold mb-1">Fitness Club </p>
-                                    <p class="text-content3 text-2xs truncate">Design & Developed Fitness Club website </p>
-                                  </div>
-                                  <div>  
-                                    <p class="text-content3 text-xs">Team Members                                                                 </p>
-                                    <div class="avatar-group">
-                                      <div class="avatar border-white border-[0.125rem]">
-                                        <div class="w-8"><img src="../../assets/images/user-app/17.png" alt="avatar"></div>
-                                      </div>
-                                      <div class="avatar border-white border-[0.125rem]">
-                                        <div class="w-8"><img src="../../assets/images/user-app/18.png" alt="avatar"></div>
-                                      </div>
-                                      <div class="avatar border-white border-[0.125rem]">
-                                        <div class="w-8"><img src="../../assets/images/user-app/19.png" alt="avatar"></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <badge class="bg-success-light text-success badge-sm rounded-5 w-max">Active</badge>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-span-4 xl:col-span-6 2md:col-span-12">
-                              <div class="border border-border-light border-dashed p-4 flex flex-col gap-5"> 
-                                <div class="flex items-start justify-between"> <span class="bg-primary p-3 grid place-content-center rounded-full"><i class="fa-solid fa-file-lines w-6 h-6 text-white"></i></span><span class="text-content3 text-2xs">3months Ago</span></div>
-                                <div class="flex flex-col gap-2"> 
-                                  <div> 
-                                    <p class="text-title text-sm font-semibold mb-1">Landing Page </p>
-                                    <p class="text-content3 text-2xs truncate">Design ecommerce website landing page for vegetable market </p>
-                                  </div>
-                                  <div>  
-                                    <p class="text-content3 text-xs">Team Members                                                                 </p>
-                                    <div class="avatar-group">
-                                      <div class="avatar border-white border-[0.125rem]">
-                                        <div class="w-8"><img src="../../assets/images/user-app/22.png" alt="avatar"></div>
-                                      </div>
-                                      <div class="avatar border-white border-[0.125rem]">
-                                        <div class="w-8"><img src="../../assets/images/user-app/23.png" alt="avatar"></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <badge class="bg-secondary-extralight text-secondary badge-sm rounded-5 w-max">Inprogress  </badge>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-span-4 xl:col-span-6 2md:col-span-12">
-                              <div class="border border-border-light border-dashed p-4 flex flex-col gap-5"> 
-                                <div class="flex items-start justify-between"> <span class="bg-warning p-3 grid place-content-center rounded-full"><i class="fa-solid fa-database w-6 h-6 text-white"></i></span><span class="text-content3 text-2xs">12hr Ago </span></div>
-                                <div class="flex flex-col gap-2"> 
-                                  <div> 
-                                    <p class="text-title text-sm font-semibold mb-1">Web Development </p>
-                                    <p class="text-content3 text-2xs truncate">Create new features and upgrade infrastructure to meet the needs of projects</p>
-                                  </div>
-                                  <div>  
-                                    <p class="text-content3 text-xs">Team Members                                                                 </p>
-                                    <div class="avatar-group">
-                                      <div class="avatar border-white border-[0.125rem]">
-                                        <div class="w-8"><img src="../../assets/images/user-app/12.png" alt="avatar"></div>
-                                      </div>
-                                      <div class="avatar border-white border-[0.125rem]">
-                                        <div class="w-8"><img src="../../assets/images/user-app/6.png" alt="avatar"></div>
-                                      </div>
-                                      <div class="avatar border-white border-[0.125rem]">
-                                        <div class="w-8"><img src="../../assets/images/user-app/20.png" alt="avatar"></div>
-                                      </div>
-                                      <div class="avatar border-white border-[0.125rem]">
-                                        <div class="w-8"><img src="../../assets/images/user-app/23.png" alt="avatar"></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <badge class="bg-secondary-extralight text-secondary badge-sm rounded-5 w-max">Inprogress  </badge>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-span-4 xl:col-span-6 2md:col-span-12">
-                              <div class="border border-border-light border-dashed p-4 flex flex-col gap-5"> 
-                                <div class="flex items-start justify-between"> <span class="bg-success p-3 grid place-content-center rounded-full"><i class="fa-solid fa-stethoscope w-6 h-6 text-white"></i></span><span class="text-content3 text-2xs">7months Ago</span></div>
-                                <div class="flex flex-col gap-2"> 
-                                  <div> 
-                                    <p class="text-title text-sm font-semibold mb-1">Health Club </p>
-                                    <p class="text-content3 text-2xs truncate">Design health & care consulting website </p>
-                                  </div>
-                                  <div>  
-                                    <p class="text-content3 text-xs">Team Members                                                                 </p>
-                                    <div class="avatar-group">
-                                      <div class="avatar border-white border-[0.125rem]">
-                                        <div class="w-8"><img src="../../assets/images/user-app/17.png" alt="avatar"></div>
-                                      </div>
-                                      <div class="avatar border-white border-[0.125rem]">
-                                        <div class="w-8"><img src="../../assets/images/user-app/18.png" alt="avatar"></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <badge class="bg-success-light text-success badge-sm rounded-5 w-max">Completed</badge>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-span-4 xl:col-span-6 2md:col-span-12">
-                              <div class="border border-border-light border-dashed p-4 flex flex-col gap-5"> 
-                                <div class="flex items-start justify-between"> <span class="bg-dark p-3 grid place-content-center rounded-full"><i class="fa-brands fa-html5 w-6 h-6 text-white"></i></span><span class="text-content3 text-2xs">9months Ago</span></div>
-                                <div class="flex flex-col gap-2"> 
-                                  <div> 
-                                    <p class="text-title text-sm font-semibold mb-1">Landing Page </p>
-                                    <p class="text-content3 text-2xs truncate">Design admin  landing page for ecommerce website </p>
-                                  </div>
-                                  <div>  
-                                    <p class="text-content3 text-xs">Team Members                                                                 </p>
-                                    <div class="avatar-group">
-                                      <div class="avatar border-white border-[0.125rem]">
-                                        <div class="w-8"><img src="../../assets/images/user-app/22.png" alt="avatar"></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <badge class="bg-success-light text-success badge-sm rounded-5 w-max">Completed </badge>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-span-4 xl:col-span-6 2md:col-span-12">
-                              <div class="border border-border-light border-dashed p-4 flex flex-col gap-5"> 
-                                <div class="flex items-start justify-between"> <span class="bg-secondary p-3 grid place-content-center rounded-full"><i class="fa-solid fa-baseball-bat-ball w-6 h-6 text-white"></i></span><span class="text-content3 text-2xs">10months Ago</span></div>
-                                <div class="flex flex-col gap-2"> 
-                                  <div> 
-                                    <p class="text-title text-sm font-semibold mb-1">Sports Club </p>
-                                    <p class="text-content3 text-2xs truncate">Design sports website </p>
-                                  </div>
-                                  <div>  
-                                    <p class="text-content3 text-xs">Team Members                                                                 </p>
-                                    <div class="avatar-group">
-                                      <div class="avatar border-white border-[0.125rem]">
-                                        <div class="w-8"><img src="../../assets/images/user-app/15.png" alt="avatar"></div>
-                                      </div>
-                                      <div class="avatar border-white border-[0.125rem]">
-                                        <div class="w-8"><img src="../../assets/images/user-app/12.png" alt="avatar"></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <badge class="bg-success-light text-success badge-sm rounded-5 w-max">Completed</badge>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-span-4 xl:col-span-6 2md:col-span-12">
-                              <div class="border border-border-light border-dashed p-4 flex flex-col gap-5"> 
-                                <div class="flex items-start justify-between"> <span class="bg-info p-3 grid place-content-center rounded-full"><i class="fa-solid fa-file-lines w-6 h-6 text-white"></i></span><span class="text-content3 text-2xs">11months Ago</span></div>
-                                <div class="flex flex-col gap-2"> 
-                                  <div> 
-                                    <p class="text-title text-sm font-semibold mb-1">Document Page </p>
-                                    <p class="text-content3 text-2xs truncate">Design admin document page for ecommerce website </p>
-                                  </div>
-                                  <div>  
-                                    <p class="text-content3 text-xs">Team Members                                                                 </p>
-                                    <div class="avatar-group">
-                                      <div class="avatar border-white border-[0.125rem]">
-                                        <div class="w-8"><img src="../../assets/images/user-app/13.png" alt="avatar"></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <badge class="bg-success-light text-success badge-sm rounded-5 w-max">Completed  </badge>
-                                </div>
-                              </div>
-                            </div>
+                        <div class="grid grid-cols-12 gap-5">
+                          <div class="col-span-6 sm:col-span-12">
+                            <label for="number">Contact No</label>
+                            <input class="rounded" type="Number" id="number" value="7738478982" maxlength="10" pattern="d{10}" required>
+                          </div>
+                          <div class="col-span-6 sm:col-span-12">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" value="emayiladosidorshina@gmail.com" required>
                           </div>
                         </div>
-                      </div>
+                        <div class="grid grid-cols-12 gap-5">
+                          <div class="col-span-6 sm:col-span-12">
+                            <label for="designation">Designation</label>
+                            <input type="text" id="designation" value="Fullstack Developer" required>
+                          </div>
+                          <div class="col-span-6 sm:col-span-12">
+                            <label for="website">Website</label>
+                            <input type="text" id="website" value="www.govo.com" required>
+                          </div>
+                        </div>
+                        <div class="grid grid-cols-12 gap-5">
+                          <div class="col-span-4 2md:col-span-6 sm:col-span-12">
+                            <label for="country">Country</label>
+                            <select class="form-select block w-full px-3 text-xs font-normal text-content3 bg-white bg-clip-padding bg-no-repeat border border-border-light rounded-5 transition ease-in-out m-0 min-w-[150px] py-[9px]" id="country" aria-label="Default select example">
+                              <option selected="">Australia </option>
+                              <option value="1">India</option>
+                              <option value="2">South Korea</option>
+                              <option value="3">Canada</option>
+                              <option value="4">USA</option>
+                              <option value="5">UAE</option>
+                              <option value="6">UK</option>
+                            </select>
+                          </div>
+                          <div class="col-span-4 2md:col-span-6 sm:col-span-12">
+                            <label for="state">State</label>
+                            <input type="text" id="state" value="New South Wales" required>
+                          </div>
+                          <div class="col-span-4 2md:col-span-12">
+                            <label for="postcode">Postcode</label>
+                            <input type="text" id="postcode" value="2179" required>
+                          </div>
+                        </div>
+                        <div> 
+                          <label for="otherNotes">Other Notes </label>
+                          <textarea class="p-[11px] focus:!border-border-light w-full border border-border-light rounded-5 text-xs text-content" placeholder="Enter your address.." row="3" id="otherNotes"></textarea>
+                        </div>
+                        <div class="flex justify-end items-center sm:flex-col gap-3"><a class="btn bg-secondary text-xs text-white flex items-center gap-2 !w-fit sm:!w-full justify-center !m-0 py-2" href="javascript:void(0)" type="button">Update</a><a class="btn btn-primary text-xs text-white flex items-center gap-2 !w-fit sm:!w-full justify-center !m-0 py-2" href="javascript:void(0)" type="button">cancel</a></div>
+                      </form>
                     </div>
                     <div class="tab-pan fade group relative first:rounded-tl-none rounded-5 border-none !px-1 !pb-0" data-tabContent="2">
-                      <div class="flex flex-col gap-4"> 
-                        <div class="flex items-start user-detail gap-4 border-b border-border-light border-dashed last:border-none pb-5 last:pb-0 sm:flex-col">
-                          <div class="grid place-content-center bg-gray-light rounded-full text-xl h-16 min-w-[4rem]"><i class="fa-brands fa-html5 text-danger"></i></div>
-                          <div class="text-start">
-                            <h5 class="text-title font-semibold">Software Technology</h5>
-                            <p class="text-content3 font-semibold text-xs">Senior Web Designer</p><span class="text-content3 font-semibold text-xs">Working</span>
-                            <ul class="list-disc pl-5 mt-2"> 
-                              <li class="text-content3 text-xs">To accommodate the requirements of projects and enterprises that are designing swiftly, add new features and upgrade infrastructure.</li>
-                              <li class="text-content3 text-xs">Participate in all phases of agile software development, including design, implementation, and deployment.</li>
-                            </ul>
+                      <form class="theme-form flex flex-col gap-4 m-0">                       
+                        <h6 class="font-bold">Change Password </h6>
+                        <div class="grid grid-cols-12 gap-5">
+                          <div class="col-span-4 sm:col-span-12">
+                            <label for="oldpassword">Old Password* </label>
+                            <input type="password" id="oldpassword" value="1587845" required>
+                          </div>
+                          <div class="col-span-4 sm:col-span-12">
+                            <label for="newpassword">New Password* </label>
+                            <input type="password" id="newpassword" value="1587845" required>
+                          </div>
+                          <div class="col-span-4 sm:col-span-12">
+                            <label for="confirmpassword">Confirm Password* </label>
+                            <input type="password" id="confirmpassword" value="1587845" required>
                           </div>
                         </div>
-                        <div class="flex items-start user-detail gap-4 border-b border-border-light border-dashed last:border-none pb-5 last:pb-0 sm:flex-col">
-                          <div class="grid place-content-center bg-gray-light rounded-full text-xl h-16 min-w-[4rem]"><i class="fa-brands fa-codepen text-info"></i></div>
-                          <div class="text-start">
-                            <h5 class="text-title font-semibold">Software Express</h5>
-                            <p class="text-content3 font-semibold text-xs">Frontend Engineer        </p><span class="text-content3 font-semibold text-xs">2019 - 2021 / 2 yrs</span>
-                            <ul class="list-disc pl-5 mt-2"> 
-                              <li class="text-content3 text-xs">Create new features and upgrade infrastructure to meet the needs of projects and businesses that are developing quickly.</li>
-                              <li class="text-content3 text-xs">Work using agile development processes, following best practices, and seeking out opportunities for ongoing learning.</li>
-                              <li class="text-content3 text-xs">Take the helm of new projects from conception to execution.</li>
-                              <li class="text-content3 text-xs">Build highly scalable distributed systems that provide satisfying user experiences and quantifiable company growth by working across the entire stack.</li>
-                              <li class="text-content3 text-xs">While upholding strict standards for the quality of the code and the smart design of the programme, ensure application performance, uptime, and scale.</li>
-                            </ul>
+                        <div class="!mb-0"><a class="!text-primary text-xs" href="javascript:void(0)">Forgot Password?</a></div>
+                        <div class="flex justify-end items-center"> <a class="btn bg-primary text-xs text-white flex items-center gap-2 !w-fit sm:!w-full justify-center py-2 !m-0" href="javascript:void(0)" type="button">Change Password</a></div>
+                      </form>
+                      <form class="theme-form flex flex-col gap-4 m-0">   
+                        <div>
+                          <h6 class="font-bold">Verification code</h6><span class="!mb-0 mt-2 !text-start">We have sent the code verification to your email address</span>
+                        </div><span class="mt-0 edit flex items-center gap-2 text-xs !text-primary">User2211@gmail.com <a href="javascript:void(0)"> <i class="w-5 h-5 stroke-primary" data-feather="edit-3"></i></a></span>
+                        <div class="flex items-center gap-2">
+                          <input class="text-center input-otp " placeholder="0" type="tel" required oninput="digitValidate(this)" onkeyup="tabChange(1)" maxlength="1">
+                          <input class="text-center input-otp " placeholder="0" type="tel" required oninput="digitValidate(this)" onkeyup="tabChange(2)" maxlength="1">
+                          <input class="text-center input-otp " placeholder="0" type="tel" required oninput="digitValidate(this)" onkeyup="tabChange(3)" maxlength="1">
+                          <input class="text-center input-otp " placeholder="0" type="tel" required oninput="digitValidate(this)" onkeyup="tabChange(4)" maxlength="1">
+                        </div>
+                        <div class="flex justify-end items-center"> <a class="btn bg-primary text-xs text-white flex items-center gap-2 !w-fit sm:!w-full justify-center py-2 !m-0" href="javascript:void(0)" type="button">Submit</a></div>
+                      </form>
+                      <div> 
+                        <h6 class="font-bold mb-2">Login History </h6>
+                        <div class="flex gap-3 items-center justify-between border-b border-border-light last:border-none pb-3 last:pb-0 pt-3 first:pt-0"> 
+                          <div class="flex items-center gap-4"> <i class="fa-brands fa-windows w-5 h-5 text-primary"></i>
+                            <div> 
+                              <p class="text-title text-xs"> Chrome on Windows</p><span class="text-content3 text-xs">Dubai, 20 Jan 2023 23:07</span>
+                            </div>
+                          </div>
+                          <div> 
+                            <p class="text-content3 text-xs">Logout</p>
                           </div>
                         </div>
-                        <div class="flex items-start user-detail gap-4 border-b border-border-light border-dashed last:border-none pb-5 last:pb-0 sm:flex-col">
-                          <div class="grid place-content-center bg-gray-light rounded-full text-xl h-16 min-w-[4rem]"><i class="fa-solid fa-code text-primary"></i></div>
-                          <div class="text-start">
-                            <h5 class="text-title font-semibold">Technical Info</h5>
-                            <p class="text-content3 font-semibold text-xs">Designer/developer in charge         </p><span class="text-content3 font-semibold text-xs">2016 - 2019 / 3 yrs</span>
-                            <ul class="list-disc pl-5 mt-2"> 
-                              <li class="text-content3 text-xs">To accommodate the requirements of projects and enterprises that are designing swiftly, add new features and upgrade infrastructure.</li>
-                              <li class="text-content3 text-xs">The performance, uptime, and scale of the application should be ensured while adhering to tight criteria for the calibre of the code and the clever design of the programme.                                                  </li>
-                            </ul>
+                        <div class="flex gap-3 items-center justify-between border-b border-border-light last:border-none pb-3 last:pb-0 pt-3 first:pt-0"> 
+                          <div class="flex items-center gap-4"> <i class="fa-brands fa-apple w-5 h-5 text-title"></i>
+                            <div> 
+                              <p class="text-title text-xs"> Chrome on MacOS</p><span class="text-content3 text-xs"> Australia, 16 Jan 2023 15:07</span>
+                            </div>
+                          </div>
+                          <div> 
+                            <p class="text-content3 text-xs">Logout</p>
                           </div>
                         </div>
-                        <div class="flex items-start user-detail gap-4 border-b border-border-light border-dashed last:border-none pb-5 last:pb-0 sm:flex-col">
-                          <div class="grid place-content-center bg-gray-light rounded-full text-xl h-16 min-w-[4rem]"><i class="fa-solid fa-cubes text-dark"></i></div>
-                          <div class="text-start">
-                            <h5 class="text-title font-semibold">Freelancer</h5>
-                            <p class="text-content3 font-semibold text-xs">Fullstack Engineer        </p><span class="text-content3 font-semibold text-xs">2012 - 2016 / 4 yrs  </span>
-                            <ul class="list-disc pl-5 mt-2"> 
-                              <li class="text-content3 text-xs">Take part in the design, execution, and deployment of all areas of agile software development.</li>
-                              <li class="text-content3 text-xs">Use Slack, GitHub comments, papers, and frequent video conferencing to collaborate across time zones.</li>
-                              <li class="text-content3 text-xs">Build end-to-end systems that are architected and guided for speed and size.</li>
-                              <li class="text-content3 text-xs">Collaboration with talented back end engineers, front end engineers, and designers.</li>
-                            </ul>
+                        <div class="flex gap-3 items-center justify-between border-b border-border-light last:border-none pb-3 last:pb-0 pt-3 first:pt-0"> 
+                          <div class="flex items-center gap-4"> <i class="fa-solid fa-mobile-screen w-5 h-5 text-secondary"></i>
+                            <div> 
+                              <p class="text-title text-xs"> Chrome on iPhone</p><span class="text-content3 text-xs"> India, 12 Jan 2023 17:07</span>
+                            </div>
+                          </div>
+                          <div> 
+                            <p class="text-content3 text-xs">Logout</p>
+                          </div>
+                        </div>
+                        <div class="flex gap-3 items-center justify-between border-b border-border-light last:border-none pb-3 last:pb-0 pt-3 first:pt-0"> 
+                          <div class="flex items-center gap-4"> <i class="fa-solid fa-robot w-5 h-5 text-success"></i>
+                            <div> 
+                              <p class="text-title text-xs">Chrome on Android</p><span class="text-content3 text-xs"> Switzerland, 10 Jan 2023 13:07</span>
+                            </div>
+                          </div>
+                          <div> 
+                            <p class="text-content3 text-xs">Logout</p>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div class="tab-pan fade group relative first:rounded-tl-none rounded-5 border-none !px-1 !pb-0" data-tabContent="3">
-                      <div class="flex flex-col gap-4 border-b border-border-light border-dashed last:border-none pb-5 last:pb-0 pt-5 first:pt-0">
-                        <div class="flex flex-col gap-2">
-                          <div class="flex items-center gap-4 w-full">
-                            <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/avatar/38.jpg" alt=""></div>
-                            <div class="w-[calc(100%_-_70px)]"> 
-                              <p class="text-title font-semibold text-xs">Emayila Sidorshina</p><span class="text-content3 font-semibold text-2xs">Desert</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div><img class="w-full h-60 sm:h-44" src="../../assets/images/user-app/bg-2.jpg" alt=""></div>
-                        <div class="flex items-center gap-1">
-                          <div class="flex flex-wrap items-center gap-2"> <a class="text-content3 text-xs flex items-center gap-1" href="javascript:void(0)"><i class="w-5 h-5 stroke-content3" data-feather="heart"> </i><span class="3sm:hidden leading-none">Likes</span></a><a class="text-content3 text-xs flex items-center gap-1" href="javascript:void(0)"><i class="w-5 h-5 stroke-content3" data-feather="message-circle"> </i><span class="3sm:hidden leading-none">Comments</span></a><a class="text-content3 text-xs flex items-center gap-1" href="javascript:void(0)"><i class="w-5 h-5 stroke-content3" data-feather="corner-up-right"> </i><span class="3sm:hidden leading-none">Share</span></a></div>
-                        </div>
-                        <div class="flex items-center gap-1">
-                          <div class="avatar-group -space-x-5 justify-center items-center">
-                            <div class="avatar border-white border-[0.125rem]">
-                              <div class="w-8"><img src="../../assets/images/user-app/20.png" alt="avatar"></div>
-                            </div>
-                            <div class="avatar border-white border-[0.125rem]">
-                              <div class="w-8"><img src="../../assets/images/user-app/21.png" alt="avatar"></div>
-                            </div>
-                            <div class="avatar placeholder bg-gray-light border-white border-[0.125rem]">
-                              <div class="w-8"><span class="text-xs font-bold text-title">26+ </span></div>
-                            </div>
-                          </div>
-                          <p class="text-content3 text-xs">Liked  <span class="3sm:hidden">by birdie_hoeger</span></p>
-                        </div>
+                      <form class="theme-form flex flex-col gap-4 m-0">
                         <div>
-                          <p class="text-content3 text-xs sm:line-clamp-4">He's being polite, but I want a change. Consider not throwing sociable kids Mr. Am overcame yourself. She may act totally hastily. My first smile is solid by things fanny. chuckled at how sophisticated Mr. Elegance was. While they eat at home, the sons want to. self-evaluation unsatiable imprudence a he at an. Be in a situation where the principle is perpetually offending allowance. Moreover, greater carriage securing is desired.</p>
+                          <label for="jobtitle">Job Title</label>
+                          <input type="text" id="jobtitle" placeholder="Enter your first name" required>
                         </div>
-                      </div>
-                      <div class="flex flex-col gap-4 border-b border-border-light border-dashed last:border-none pb-5 last:pb-0 pt-5 first:pt-0">
-                        <div class="flex flex-col gap-2">
-                          <div class="flex items-center gap-4 w-full">
-                            <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/avatar/38.jpg" alt=""></div>
-                            <div class="w-[calc(100%_-_70px)]"> 
-                              <p class="text-title font-semibold text-xs">Emayila Sidorshina</p><span class="text-content3 font-semibold text-2xs">Blue Ridge Mountain    </span>
+                        <div class="grid grid-cols-12 gap-5">
+                          <div class="col-span-6 sm:col-span-12">
+                            <label for="companyName">Company Name</label>
+                            <input type="text" id="companyName" placeholder="Enter your first name" required>
+                          </div>
+                          <div class="col-span-6 sm:col-span-12">
+                            <label for="companyName">Experience Year</label>
+                            <div class="grid grid-cols-12 gap-5">
+                              <div class="col-span-6 sm:col-span-12">
+                                <select class="form-select block w-full px-3 text-xs font-normal text-content3 bg-white bg-clip-padding bg-no-repeat border border-border-light rounded-5 transition ease-in-out m-0 min-w-[150px] py-[9px]" id="sortby" aria-label="Default select example">
+                                  <option selected="">2017</option>
+                                  <option value="1">2018</option>
+                                  <option value="2">2019</option>
+                                  <option value="3">2020</option>
+                                  <option value="4">2021</option>
+                                  <option value="5">2022 </option>
+                                </select>
+                              </div>
+                              <div class="col-span-6 sm:col-span-12">
+                                <select class="form-select block w-full px-3 text-xs font-normal text-content3 bg-white bg-clip-padding bg-no-repeat border border-border-light rounded-5 transition ease-in-out m-0 min-w-[150px] py-[9px]" id="sortby" aria-label="Default select example">
+                                  <option selected="">2017</option>
+                                  <option value="1">2018</option>
+                                  <option value="2">2019</option>
+                                  <option value="3">2020</option>
+                                  <option value="4">2021</option>
+                                  <option value="5">2022</option>
+                                </select>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <div><img class="w-full h-60 sm:h-44" src="../../assets/images/user-app/24.jpeg" alt=""></div>
-                        <div class="flex items-center gap-1">
-                          <div class="flex flex-wrap items-center gap-2"> <a class="text-content3 text-xs flex items-center gap-1" href="javascript:void(0)"><i class="w-5 h-5 stroke-content3" data-feather="heart"> </i><span class="3sm:hidden leading-none">Likes</span></a><a class="text-content3 text-xs flex items-center gap-1" href="javascript:void(0)"><i class="w-5 h-5 stroke-content3" data-feather="message-circle"> </i><span class="3sm:hidden leading-none">Comments </span></a><a class="text-content3 text-xs flex items-center gap-1" href="javascript:void(0)"><i class="w-5 h-5 stroke-content3" data-feather="corner-up-right"> </i><span class="3sm:hidden leading-none">Share</span></a></div>
+                        <div> 
+                          <label for="address">Job Description </label>
+                          <textarea class="p-[11px] focus:!border-border-light w-full border border-border-light rounded-5 text-xs text-content" placeholder="Enter your address.." row="3" id="address">  </textarea>
                         </div>
-                        <div class="flex items-center gap-1">
-                          <div class="avatar-group -space-x-5 justify-center items-center">
-                            <div class="avatar border-white border-[0.125rem]">
-                              <div class="w-8"><img src="../../assets/images/user-app/15.png" alt="avatar"></div>
-                            </div>
-                            <div class="avatar border-white border-[0.125rem]">
-                              <div class="w-8"><img src="../../assets/images/user-app/18.png" alt="avatar"></div>
-                            </div>
-                            <div class="avatar placeholder bg-gray-light border-white border-[0.125rem]">
-                              <div class="w-8"><span class="text-xs font-bold text-title">5+ </span></div>
-                            </div>
+                        <div class="flex justify-end items-center gap-3 sm:flex-col gap-3"><a class="btn bg-secondary text-xs text-white flex items-center gap-2 !w-fit sm:!w-full justify-center !m-0 py-2" href="javascript:void(0)" type="button">Update</a><a class="btn btn-primary text-xs text-white flex items-center gap-2 !w-fit sm:!w-full justify-center !m-0 py-2" href="javascript:void(0)" type="button">Delete </a></div>
+                      </form>
+                    </div>
+                    <div class="tab-pan fade group relative first:rounded-tl-none rounded-5 border-none !px-1 !pb-0" data-tabContent="4">
+                      <form class="theme-form flex flex-col gap-4 m-0">
+                        <div class="grid grid-cols-12 gap-5">
+                          <div class="col-span-6 sm:col-span-12">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" placeholder="Enter your first name" required>
                           </div>
-                          <p class="text-content3 text-xs">Liked  <span class="3sm:hidden">by birdie_hoeger  </span></p>
-                        </div>
-                        <div>
-                          <p class="text-content3 text-xs sm:line-clamp-4">Although he's being courteous, I want a change. Do not toss sociable children. Mr. Am triumphed against himself. She might behave rashly. My initial grin is genuine by things fanny. Mr. Elegance's sophistication made him chuckle. The sons want to eat dinner at home. He at a self-evaluation unsatiable imprudence. Be in a circumstance where the principle consistently violates the allowance. Additional carriage securing is also desired.</p>
-                        </div>
-                      </div>
-                      <div class="flex flex-col gap-4 border-b border-border-light border-dashed last:border-none pb-5 last:pb-0 pt-5 first:pt-0">
-                        <div class="flex flex-col gap-2">
-                          <div class="flex items-center gap-4 w-full">
-                            <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/avatar/38.jpg" alt=""></div>
-                            <div class="w-[calc(100%_-_70px)]"> 
-                              <p class="text-title font-semibold text-xs">Emayila Sidorshina</p><span class="text-content3 font-semibold text-2xs">Aesthetic </span>
-                            </div>
+                          <div class="col-span-6 sm:col-span-12">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" placeholder="Enter your last name" required>
                           </div>
                         </div>
-                        <div><img class="w-full h-60 sm:h-44" src="../../assets/images/user-app/bg-1.jpg" alt=""></div>
-                        <div class="flex items-center gap-1">
-                          <div class="flex flex-wrap items-center gap-2"> <a class="text-content3 text-xs flex items-center gap-1" href="javascript:void(0)"><i class="w-5 h-5 stroke-content3" data-feather="heart"> </i><span class="3sm:hidden leading-none">Likes</span></a><a class="text-content3 text-xs flex items-center gap-1" href="javascript:void(0)"><i class="w-5 h-5 stroke-content3" data-feather="message-circle"> </i><span class="3sm:hidden leading-none">Comments </span></a><a class="text-content3 text-xs flex items-center gap-1" href="javascript:void(0)"><i class="w-5 h-5 stroke-content3" data-feather="corner-up-right"> </i><span class="3sm:hidden leading-none">Share</span></a></div>
-                        </div>
-                        <div class="flex items-center gap-1">
-                          <div class="avatar-group -space-x-5 justify-center items-center">
-                            <div class="avatar border-white border-[0.125rem]">
-                              <div class="w-8"><img src="../../assets/images/user-app/23.png" alt="avatar"></div>
-                            </div>
-                            <div class="avatar border-white border-[0.125rem]">
-                              <div class="w-8"><img src="../../assets/images/user-app/14.png" alt="avatar"></div>
-                            </div>
-                            <div class="avatar placeholder bg-gray-light border-white border-[0.125rem]">
-                              <div class="w-8"><span class="text-xs font-bold text-title">15+ </span></div>
-                            </div>
+                        <div class="grid grid-cols-12 gap-5">
+                          <div class="col-span-6 sm:col-span-12">
+                            <label for="number">Contact No</label>
+                            <input class="rounded" type="Number" id="number" placeholder="Enter your contact no" maxlength="10" pattern="d{10}" required>
                           </div>
-                          <p class="text-content3 text-xs">Liked  <span class="3sm:hidden">by birdie_hoeger  </span></p>
+                          <div class="col-span-6 sm:col-span-12">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Enter your email id" required>
+                          </div>
                         </div>
-                        <div>
-                          <p class="text-content3 text-xs sm:line-clamp-4">He's being polite, but I want a change. Social kids shouldn't be thrown out. Mr. Am won the battle with himself. She could act hastily. By things fanny, my initial grin is real. He laughed at the refinement of Mr. Elegance. It's their preference to eat dinner at home. He was being unsatisfactorily imprudent with himself. be in a situation where the allowance is consistently broken by the principle. Furthermore wanted is additional carriage securing.</p>
-                        </div>
-                      </div>
+                      </form>
                     </div>
                   </div>
                 </div>

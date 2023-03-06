@@ -12,7 +12,7 @@
       }
 
       .user-detail {
-        @apply absolute top-10 left-12;
+        @apply absolute top-10 left-12 2sm:left-4;
       }
     }
 
