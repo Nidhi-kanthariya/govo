@@ -1189,7 +1189,7 @@
                     <button class="tab tabs-bordered user-tab flex items-center justify-center tab-active text-content3 !flex-row !gap-2 tab-link 2md:w-full" data-tabFilter="1"><i class="fa-solid fa-user w-4 h-4 stroke-title-content3"></i>Personal Detail  </button>
                     <button class="tab tabs-bordered user-tab flex items-center justify-center text-content3 !flex-row !gap-2 tab-link 2md:w-full" data-tabFilter="2"><i class="fa-solid fa-gear w-4 h-4 stroke-title-content3"></i>Setting</button>
                     <button class="tab tabs-bordered user-tab flex items-center justify-center text-content3 !flex-row !gap-2 tab-link 2md:w-full" data-tabFilter="3"><i class="fa-solid fa-briefcase w-4 h-4 stroke-title-content3"></i>Experience </button>
-                    <button class="tab tabs-bordered user-tab flex items-center justify-center text-content3 !flex-row !gap-2 tab-link 2md:w-full" data-tabFilter="3"><i class="fa-solid fa-scroll w-4 h-4 stroke-title-content3"></i>Privacy Policy </button>
+                    <button class="tab tabs-bordered user-tab flex items-center justify-center text-content3 !flex-row !gap-2 tab-link 2md:w-full" data-tabFilter="4"><i class="fa-solid fa-scroll w-4 h-4 stroke-title-content3"></i>Privacy Policy </button>
                   </div>
                 </div>
                 <div class="card-body"> 
@@ -1333,71 +1333,67 @@
                     </div>
                     <div class="tab-pan fade group relative first:rounded-tl-none rounded-5 border-none !px-1 !pb-0" data-tabContent="3">
                       <form class="theme-form flex flex-col gap-4 m-0">
-                        <div>
-                          <label for="jobtitle">Job Title</label>
-                          <input type="text" id="jobtitle" placeholder="Enter your first name" required>
-                        </div>
-                        <div class="grid grid-cols-12 gap-5">
-                          <div class="col-span-6 sm:col-span-12">
-                            <label for="companyName">Company Name</label>
-                            <input type="text" id="companyName" placeholder="Enter your first name" required>
-                          </div>
-                          <div class="col-span-6 sm:col-span-12">
-                            <label for="companyName">Experience Year</label>
+                        <div class="flex flex-col gap-4 m-0" id="newForm">
+                          <div class="flex flex-col gap-4 m-0" id="1">
+                            <div>
+                              <label for="jobtitle">Job Title</label>
+                              <input type="text" id="jobtitle" placeholder="Enter your first name" required>
+                            </div>
                             <div class="grid grid-cols-12 gap-5">
                               <div class="col-span-6 sm:col-span-12">
-                                <select class="form-select block w-full px-3 text-xs font-normal text-content3 bg-white bg-clip-padding bg-no-repeat border border-border-light rounded-5 transition ease-in-out m-0 min-w-[150px] py-[9px]" id="sortby" aria-label="Default select example">
-                                  <option selected="">2017</option>
-                                  <option value="1">2018</option>
-                                  <option value="2">2019</option>
-                                  <option value="3">2020</option>
-                                  <option value="4">2021</option>
-                                  <option value="5">2022 </option>
-                                </select>
+                                <label for="companyName">Company Name</label>
+                                <input type="text" id="companyName" placeholder="Enter your first name" required>
                               </div>
                               <div class="col-span-6 sm:col-span-12">
-                                <select class="form-select block w-full px-3 text-xs font-normal text-content3 bg-white bg-clip-padding bg-no-repeat border border-border-light rounded-5 transition ease-in-out m-0 min-w-[150px] py-[9px]" id="sortby" aria-label="Default select example">
-                                  <option selected="">2017</option>
-                                  <option value="1">2018</option>
-                                  <option value="2">2019</option>
-                                  <option value="3">2020</option>
-                                  <option value="4">2021</option>
-                                  <option value="5">2022</option>
-                                </select>
+                                <label for="companyName">Experience Year</label>
+                                <div class="grid grid-cols-12">
+                                  <div class="col-span-5 sm:col-span-12">
+                                    <select class="form-select block w-full px-3 text-xs font-normal text-content3 bg-white bg-clip-padding bg-no-repeat border border-border-light rounded-5 transition ease-in-out m-0 min-w-[150px] py-[9px]" id="sortby" aria-label="Default select example">
+                                      <option selected="">2017</option>
+                                      <option value="1">2018</option>
+                                      <option value="2">2019</option>
+                                      <option value="3">2020</option>
+                                      <option value="4">2021</option>
+                                      <option value="5">2022 </option>
+                                    </select>
+                                  </div>
+                                  <div class="col-auto flex items-center justify-center">to </div>
+                                  <div class="col-span-5 sm:col-span-12">
+                                    <select class="form-select block w-full px-3 text-xs font-normal text-content3 bg-white bg-clip-padding bg-no-repeat border border-border-light rounded-5 transition ease-in-out m-0 min-w-[150px] py-[9px]" id="sortby" aria-label="Default select example">
+                                      <option selected="">2017</option>
+                                      <option value="1">2018</option>
+                                      <option value="2">2019</option>
+                                      <option value="3">2020</option>
+                                      <option value="4">2021</option>
+                                      <option value="5">2022</option>
+                                    </select>
+                                  </div>
+                                </div>
                               </div>
                             </div>
+                            <div> 
+                              <label for="address">Job Description </label>
+                              <textarea class="p-[11px] focus:!border-border-light w-full border border-border-light rounded-5 text-xs text-content" placeholder="Enter your address.." row="3" id="address">  </textarea>
+                            </div>
+                            <div class="text-end"><a class="btn btn-primary text-xs text-white !w-fit sm:!w-full !m-0 py-2" href="javascript:deleteEl(1)" type="button">Delete </a></div>
                           </div>
                         </div>
-                        <div> 
-                          <label for="address">Job Description </label>
-                          <textarea class="p-[11px] focus:!border-border-light w-full border border-border-light rounded-5 text-xs text-content" placeholder="Enter your address.." row="3" id="address">  </textarea>
-                        </div>
-                        <div class="flex justify-end items-center gap-3 sm:flex-col gap-3"><a class="btn bg-secondary text-xs text-white flex items-center gap-2 !w-fit sm:!w-full justify-center !m-0 py-2" href="javascript:void(0)" type="button">Update</a><a class="btn btn-primary text-xs text-white flex items-center gap-2 !w-fit sm:!w-full justify-center !m-0 py-2" href="javascript:void(0)" type="button">Delete </a></div>
+                        <div id="latestForm">   </div>
+                        <div class="flex justify-end items-center gap-3 sm:flex-col gap-3"><a class="btn bg-secondary text-xs text-white !w-fit sm:!w-full !m-0 py-2" href="javascript:void(0)" type="button">Update</a><a class="btn btn-primary text-xs text-white !w-fit sm:!w-full !m-0 py-2" href="javascript:new_form()" type="button">Add </a></div>
                       </form>
                     </div>
                     <div class="tab-pan fade group relative first:rounded-tl-none rounded-5 border-none !px-1 !pb-0" data-tabContent="4">
-                      <form class="theme-form flex flex-col gap-4 m-0">
-                        <div class="grid grid-cols-12 gap-5">
-                          <div class="col-span-6 sm:col-span-12">
-                            <label for="firstName">First Name</label>
-                            <input type="text" id="firstName" placeholder="Enter your first name" required>
+                      <div> 
+                        <h5 class="font-bold">Password Manager </h5>
+                        <div class="flex items-base justify-between gap-2"> 
+                          <div>
+                            <h6 class="font-semibold">Offer to save passwords</h6>
                           </div>
-                          <div class="col-span-6 sm:col-span-12">
-                            <label for="lastName">Last Name</label>
-                            <input type="text" id="lastName" placeholder="Enter your last name" required>
-                          </div>
+                          <label class="inline-flex relative items-center cursor-pointer">
+                            <input class="sr-only peer" type="checkbox"><span class="w-7 h-4 rounded-full peer ring-2 ring-success peer-focus:ring-2 peer-focus:ring-success peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[14px] after:left-[2px] after:bg-success after:rounded-full after:h-3 after:w-3 after:transition-all"></span>
+                          </label>
                         </div>
-                        <div class="grid grid-cols-12 gap-5">
-                          <div class="col-span-6 sm:col-span-12">
-                            <label for="number">Contact No</label>
-                            <input class="rounded" type="Number" id="number" placeholder="Enter your contact no" maxlength="10" pattern="d{10}" required>
-                          </div>
-                          <div class="col-span-6 sm:col-span-12">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="Enter your email id" required>
-                          </div>
-                        </div>
-                      </form>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1500,6 +1496,8 @@
   <script src="../../assets/js/swiper-slider/swiper-slider-page.js"></script>
   <!-- fontAwesome js-->
   <script src="../../assets/js/fontawesome/all.min.js"></script>
+  <!-- userCustom js-->
+  <script src="../../assets/js/user-profile-custom.js"> </script>
   <!-- customizer js-->
   <script src="../../assets/js/customizer.js"> </script>
   <!-- Custom script   -->

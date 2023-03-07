@@ -5660,6 +5660,9 @@ code[class*="language-"],
 .col-span-9 {
   grid-column: span 9 / span 9;
 }
+.col-auto {
+  grid-column: auto;
+}
 .\!m-0 {
   margin: 0px !important;
 }
@@ -7260,6 +7263,9 @@ code[class*="language-"],
   margin-right: calc(0.75rem * var(--tw-space-x-reverse));
   margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
+.self-center {
+  align-self: center;
+}
 .overflow-auto {
   overflow: auto;
 }
@@ -7827,6 +7833,10 @@ code[class*="language-"],
   padding-top: 0.25rem !important;
   padding-bottom: 0.25rem !important;
 }
+.\!py-2 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -8050,10 +8060,6 @@ code[class*="language-"],
 .py-card-gap {
   padding-top: calc(0.9375rem + (1.875 - 0.9375) * ((100vw - 20rem) / (120 - 20)));
   padding-bottom: calc(0.9375rem + (1.875 - 0.9375) * ((100vw - 20rem) / (120 - 20)));
-}
-.\!py-2 {
-  padding-top: 0.5rem !important;
-  padding-bottom: 0.5rem !important;
 }
 .\!pb-0 {
   padding-bottom: 0px !important;
@@ -10665,6 +10671,10 @@ code[class*="language-"],
 .after\:top-\[2px\]::after {
   content: var(--tw-content);
   top: 2px;
+}
+.after\:top-\[14px\]::after {
+  content: var(--tw-content);
+  top: 14px;
 }
 .after\:h-3::after {
   content: var(--tw-content);

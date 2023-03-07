@@ -222,7 +222,7 @@ function toggleItem() {
 ==========================*/
 
 window.addEventListener('load', () => {
-  var countDownDate = new Date('March 5, 2023 15:37:25').getTime();
+  var countDownDate = new Date('October 5, 2023 15:37:25').getTime();
   var x = setInterval(function () {
     var now = new Date().getTime();
     var distance = countDownDate - now;
