@@ -1209,11 +1209,11 @@
                         <div class="border border-border-light p-4"> 
                           <div class="flex justify-between gap-2 items-center mb-4"> 
                             <div class="flex items-center gap-2">
-                              <label class="checkbox checkbox-sm cursor-pointer"> 
-                                <input class="peer" type="checkbox" checked>
-                                <div class="checkbox-indicator peer-checked:!bg-primary rounded-full !border-primary"> <i data-feather="check"></i></div>
-                              </label>
-                              <p>Home </p>
+                              <div class="radio-button radio-sm primary">
+                                <input id="home" type="radio" name="address">
+                                <div class="check"></div>
+                                <label class="text-xs cursor-pointer" for="home">Home </label>
+                              </div>
                             </div>
                             <div class="flex items-center gap-2">
                               <label for="modal-edit"> 
@@ -1238,12 +1238,10 @@
                       <div class="col-span-4 xl:col-span-6 2md:col-span-12">
                         <div class="border border-border-light p-4"> 
                           <div class="flex justify-between gap-2 items-center mb-4"> 
-                            <div class="flex items-center gap-2">
-                              <label class="checkbox checkbox-sm cursor-pointer"> 
-                                <input class="peer" type="checkbox">
-                                <div class="checkbox-indicator peer-checked:!bg-primary rounded-full !border-primary"> <i data-feather="check"></i></div>
-                              </label>
-                              <p>Home</p>
+                            <div class="radio-button radio-sm primary">
+                              <input id="work" type="radio" name="address">
+                              <div class="check"></div>
+                              <label class="text-xs cursor-pointer" for="work">Work</label>
                             </div>
                             <div class="flex items-center gap-2"> 
                               <label for="modal-edit"> 
@@ -1270,12 +1268,10 @@
                     <div class="grid grid-cols-12 gap-card-gap mb-5"> 
                       <div class="col-span-6 2md:col-span-12">
                         <div class="border border-border-light p-4">
-                          <div class="flex items-center gap-2 mb-1">
-                            <label class="checkbox checkbox-sm cursor-pointer"> 
-                              <input class="peer" type="checkbox">
-                              <div class="checkbox-indicator peer-checked:!bg-primary rounded-full !border-primary"> <i data-feather="check"></i></div>
-                            </label>
-                            <p class="text-title font-semibold">Standard Delivery - Free </p>
+                          <div class="radio-button radio-sm primary">
+                            <input id="free" type="radio" name="payment">
+                            <div class="check"></div>
+                            <label class="text-xs cursor-pointer" for="free">Standard Delivery - Free </label>
                           </div>
                           <p class="pl-6 text-content3 text-xs">Estimated 5-7 days shipping</p>
                         </div>
@@ -1283,11 +1279,11 @@
                       <div class="col-span-6 2md:col-span-12">
                         <div class="border border-border-light p-4"> 
                           <div class="flex items-center gap-2 mb-1">
-                            <label class="checkbox checkbox-sm cursor-pointer"> 
-                              <input class="peer" type="checkbox" checked>
-                              <div class="checkbox-indicator peer-checked:!bg-primary rounded-full !border-primary"> <i data-feather="check"></i></div>
-                            </label>
-                            <p class="text-title font-semibold">Express Delivery - $24 </p>
+                            <div class="radio-button radio-sm primary">
+                              <input id="standard" type="radio" name="payment">
+                              <div class="check"></div>
+                              <label class="text-xs cursor-pointer" for="standard">Express Delivery - $24 </label>
+                            </div>
                           </div>
                           <p class="pl-6 text-content3 text-xs">Estimated 1-2 days shipping</p>
                         </div>
@@ -1305,11 +1301,11 @@
                       <div class="flex gap-2 items-center justify-between">
                         <div>
                           <div class="flex items-center gap-2 mb-1">
-                            <label class="checkbox checkbox-sm cursor-pointer"> 
-                              <input class="peer" type="checkbox" checked>
-                              <div class="checkbox-indicator peer-checked:!bg-primary rounded-full !border-primary"> <i data-feather="check"></i></div>
-                            </label>
-                            <p class="text-title font-semibold">PayPal</p>
+                            <div class="radio-button radio-sm primary">
+                              <input id="paypal" type="radio" name="payment-method">
+                              <div class="check"></div>
+                              <label class="text-xs cursor-pointer" for="paypal">PayPal</label>
+                            </div>
                           </div>
                           <p class="pl-6 text-content3 text-xs">You will be taken to the PayPal website to finish your transaction safely</p>
                         </div><img class="h-[30px]" src="../../assets/images/ecommerce/paypal.png" alt="PayPal">
@@ -1319,11 +1315,11 @@
                       <div class="flex gap-2 items-center justify-between mb-5">
                         <div>
                           <div class="flex items-center gap-2 mb-1">
-                            <label class="checkbox checkbox-sm cursor-pointer"> 
-                              <input class="peer" type="checkbox">
-                              <div class="checkbox-indicator peer-checked:!bg-primary rounded-full !border-primary"> <i data-feather="check"></i></div>
-                            </label>
-                            <p class="text-title font-semibold">Credit Card</p>
+                            <div class="radio-button radio-sm primary">
+                              <input id="credit" type="radio" name="payment-method">
+                              <div class="check"></div>
+                              <label class="text-xs cursor-pointer" for="credit">Credit Card</label>
+                            </div>
                           </div>
                           <p class="pl-6 text-content3 text-xs">Transferring money securely through your bank account. Mastercard, Visa, Discover, and Stripe are all accepted</p>
                         </div><img class="h-[30px]" src="../../assets/images/ecommerce/credit-card.png" alt="credit card">
@@ -1353,11 +1349,11 @@
                       <div class="flex gap-2 items-center justify-between">
                         <div>
                           <div class="flex items-center gap-2 mb-1">
-                            <label class="checkbox checkbox-sm cursor-pointer"> 
-                              <input class="peer" type="checkbox">
-                              <div class="checkbox-indicator peer-checked:!bg-primary rounded-full !border-primary"> <i data-feather="check"></i></div>
-                            </label>
-                            <p class="text-title font-semibold">Cash On Delivery</p>
+                            <div class="radio-button radio-sm primary">
+                              <input id="cod" type="radio" name="payment-method">
+                              <div class="check"></div>
+                              <label class="text-xs cursor-pointer" for="cod">Cash On Delivery</label>
+                            </div>
                           </div>
                           <p class="pl-6 text-content3 text-xs">After your order is delivered, make a cash payment</p>
                         </div><img class="h-[30px]" src="../../assets/images/ecommerce/cash-on-delivery.png" alt="cash on delivery">

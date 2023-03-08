@@ -127,11 +127,10 @@ html(lang='en')
                                                 div.border.border-border-light.p-4 
                                                     div.flex.justify-between.gap-2.items-center.mb-4 
                                                         div.flex.items-center.gap-2
-                                                            label.checkbox.checkbox-sm.cursor-pointer  
-                                                                input(type='checkbox' class="peer" checked) 
-                                                                div.checkbox-indicator(class="peer-checked:!bg-primary rounded-full !border-primary")  
-                                                                    i(data-feather="check")
-                                                            p Home 
+                                                            div.radio-button.radio-sm.primary
+                                                                input#home(type='radio' name='address')
+                                                                div.check
+                                                                label(for='home' class="text-xs cursor-pointer") Home 
                                                         div.flex.items-center.gap-2
                                                             label(for='modal-edit') 
                                                                 +SVG_ICON("Edit-Square", "w-4 h-4 stroke-title cursor-pointer") 
@@ -148,12 +147,10 @@ html(lang='en')
                                             div.col-span-4(class="xl:col-span-6 2md:col-span-12")
                                                 div.border.border-border-light.p-4 
                                                     div.flex.justify-between.gap-2.items-center.mb-4 
-                                                        div.flex.items-center.gap-2
-                                                            label.checkbox.checkbox-sm.cursor-pointer  
-                                                                input(type='checkbox' class="peer") 
-                                                                div.checkbox-indicator(class="peer-checked:!bg-primary rounded-full !border-primary")  
-                                                                    i(data-feather="check")
-                                                            p Home
+                                                        div.radio-button.radio-sm.primary
+                                                            input#work(type='radio' name='address')
+                                                            div.check
+                                                            label(for='work' class="text-xs cursor-pointer") Work
                                                         div.flex.items-center.gap-2 
                                                             label(for='modal-edit') 
                                                                 +SVG_ICON("Edit-Square", "w-4 h-4 stroke-title cursor-pointer") 
@@ -171,21 +168,18 @@ html(lang='en')
                                         div.grid.grid-cols-12.gap-card-gap.mb-5 
                                             div.col-span-6(class="2md:col-span-12")
                                                 div.border.border-border-light.p-4
-                                                    div.flex.items-center.gap-2.mb-1
-                                                        label.checkbox.checkbox-sm.cursor-pointer  
-                                                            input(type='checkbox' class="peer") 
-                                                            div.checkbox-indicator(class="peer-checked:!bg-primary rounded-full !border-primary")  
-                                                                i(data-feather="check")
-                                                        p.text-title.font-semibold Standard Delivery - Free 
+                                                    div.radio-button.radio-sm.primary
+                                                        input#free(type='radio' name='payment')
+                                                        div.check
+                                                        label(for='free' class="text-xs cursor-pointer") Standard Delivery - Free 
                                                     p.pl-6.text-content3.text-xs Estimated 5-7 days shipping
                                             div.col-span-6(class="2md:col-span-12")
                                                 div.border.border-border-light.p-4 
                                                     div.flex.items-center.gap-2.mb-1
-                                                        label.checkbox.checkbox-sm.cursor-pointer  
-                                                            input(type='checkbox' class="peer" checked) 
-                                                            div.checkbox-indicator(class="peer-checked:!bg-primary rounded-full !border-primary")  
-                                                                i(data-feather="check")
-                                                        p.text-title.font-semibold Express Delivery - $24 
+                                                        div.radio-button.radio-sm.primary
+                                                            input#standard(type='radio' name='payment')
+                                                            div.check
+                                                            label(for='standard' class="text-xs cursor-pointer") Express Delivery - $24 
                                                     p.pl-6.text-content3.text-xs Estimated 1-2 days shipping
                                         div.flex.justify-between.items-center(class="sm:flex-col sm:gap-3")
                                                 a(href="cart.html").btn.bg-secondary.text-xs.text-white.flex.items-center.gap-2(class="!w-fit sm:!w-full justify-center !m-0" type='button') 
@@ -202,22 +196,20 @@ html(lang='en')
                                             div.flex.gap-2.items-center.justify-between
                                                 div
                                                     div.flex.items-center.gap-2.mb-1
-                                                        label.checkbox.checkbox-sm.cursor-pointer  
-                                                            input(type='checkbox' class="peer" checked) 
-                                                            div.checkbox-indicator(class="peer-checked:!bg-primary rounded-full !border-primary")  
-                                                                i(data-feather="check")
-                                                        p.text-title.font-semibold PayPal
+                                                        div.radio-button.radio-sm.primary
+                                                            input#paypal(type='radio' name='payment-method')
+                                                            div.check
+                                                            label(for='paypal' class="text-xs cursor-pointer") PayPal
                                                     p.pl-6.text-content3.text-xs You will be taken to the PayPal website to finish your transaction safely
                                                 img(class="h-[30px]" src="../../assets/images/ecommerce/paypal.png" alt="PayPal")
                                         div.border.border-border-light.p-4.mb-5 
                                             div.flex.gap-2.items-center.justify-between.mb-5
                                                 div
                                                     div.flex.items-center.gap-2.mb-1
-                                                        label.checkbox.checkbox-sm.cursor-pointer  
-                                                            input(type='checkbox' class="peer") 
-                                                            div.checkbox-indicator(class="peer-checked:!bg-primary rounded-full !border-primary")  
-                                                                i(data-feather="check")
-                                                        p.text-title.font-semibold Credit Card
+                                                        div.radio-button.radio-sm.primary
+                                                            input#credit(type='radio' name='payment-method')
+                                                            div.check
+                                                            label(for='credit' class="text-xs cursor-pointer") Credit Card
                                                     p.pl-6.text-content3.text-xs Transferring money securely through your bank account. Mastercard, Visa, Discover, and Stripe are all accepted
                                                 img(class="h-[30px]" src="../../assets/images/ecommerce/credit-card.png" alt="credit card")
                                             form(action="index.html" class="theme-form flex flex-col gap-4 m-0")
@@ -238,11 +230,10 @@ html(lang='en')
                                             div.flex.gap-2.items-center.justify-between
                                                 div
                                                     div.flex.items-center.gap-2.mb-1
-                                                        label.checkbox.checkbox-sm.cursor-pointer  
-                                                            input(type='checkbox' class="peer") 
-                                                            div.checkbox-indicator(class="peer-checked:!bg-primary rounded-full !border-primary")  
-                                                                i(data-feather="check")
-                                                        p.text-title.font-semibold Cash On Delivery
+                                                        div.radio-button.radio-sm.primary
+                                                            input#cod(type='radio' name='payment-method')
+                                                            div.check
+                                                            label(for='cod' class="text-xs cursor-pointer") Cash On Delivery
                                                     p.pl-6.text-content3.text-xs After your order is delivered, make a cash payment
                                                 img(class="h-[30px]" src="../../assets/images/ecommerce/cash-on-delivery.png" alt="cash on delivery")
                                         div.flex.justify-between.items-center(class="sm:flex-col sm:gap-3")

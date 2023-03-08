@@ -1383,15 +1383,38 @@
                       </form>
                     </div>
                     <div class="tab-pan fade group relative first:rounded-tl-none rounded-5 border-none !px-1 !pb-0" data-tabContent="4">
-                      <div> 
-                        <h5 class="font-bold">Password Manager </h5>
-                        <div class="flex items-base justify-between gap-2"> 
-                          <div>
-                            <h6 class="font-semibold">Offer to save passwords</h6>
+                      <div class="flex flex-col gap-4">
+                        <div class="border-b border-border-light last:border-none pb-5 last:pb-0"> 
+                          <h6 class="font-bold mb-[2px]">Password Manager</h6>
+                          <div class="flex items-base justify-between gap-2 border-b border-border-light last:border-none pb-5 pt-5 first:pt-0 last:pb-0"><span class="font-semibold text-[15px]">Offer to save passwords</span>
+                            <label class="inline-flex relative items-center cursor-pointer">
+                              <input class="sr-only peer" type="checkbox"><span class="w-7 h-4 bg-content rounded-full peer peer-focus:outline-none peer-checked:after:translate-x-full peer-checked:after:content-white after:content-[''] after:absolute after:top-[3px] after:left-[2px] after:bg-white after:border-gray-light after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-primary"></span>
+                            </label>
                           </div>
-                          <label class="inline-flex relative items-center cursor-pointer">
-                            <input class="sr-only peer" type="checkbox"><span class="w-7 h-4 rounded-full peer ring-2 ring-success peer-focus:ring-2 peer-focus:ring-success peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[14px] after:left-[2px] after:bg-success after:rounded-full after:h-3 after:w-3 after:transition-all"></span>
-                          </label>
+                          <div class="border-b border-border-light last:border-none pb-5 pt-5 first:pt-0 last:pb-0"><span class="font-semibold text-[15px]">Auto Sign-in</span>
+                            <div class="flex items-base justify-between gap-2"> 
+                              <p class="text-content3 text-2xs mb-[2px]">Use saved credentials to log in automatically to websites and applications. If it's disabled, you'll always be prompted for confirmation before logging in to a website or app. </p>
+                              <label class="inline-flex relative items-base cursor-pointer">
+                                <input class="sr-only peer" type="checkbox"><span class="w-7 h-4 bg-content rounded-full peer peer-focus:outline-none peer-checked:after:translate-x-full peer-checked:after:content-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-light after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-primary"></span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="border-b border-border-light last:border-none pb-5 last:pb-0"> 
+                          <h6 class="font-bold mb-[2px]">Payment Method</h6>
+                          <div class="border-b border-border-light last:border-none pb-5 pt-5 first:pt-0 last:pb-0"><span class="font-semibold text-[15px]">Save and fill payment methods</span>
+                            <div class="flex items-base justify-between gap-2"> 
+                              <p class="text-content3 text-2xs mb-[2px]">Utilises your saved payment methods to complete payment forms </p>
+                              <label class="inline-flex relative items-base cursor-pointer">
+                                <input class="sr-only peer" type="checkbox"><span class="w-7 h-4 bg-content rounded-full peer peer-focus:outline-none peer-checked:after:translate-x-full peer-checked:after:content-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-light after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-primary"></span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="flex items-base justify-between gap-2 border-b border-border-light last:border-none pb-5 pt-5 first:pt-0 last:pb-0"><span class="font-semibold text-[15px]">Allow sites to check if you have payment methods savedx</span>
+                            <label class="inline-flex relative items-center cursor-pointer">
+                              <input class="sr-only peer" type="checkbox"><span class="w-7 h-4 bg-content rounded-full peer peer-focus:outline-none peer-checked:after:translate-x-full peer-checked:after:content-white after:content-[''] after:absolute after:top-[3px] after:left-[2px] after:bg-white after:border-gray-light after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-primary"></span>
+                            </label>
+                          </div>
                         </div>
                       </div>
                     </div>

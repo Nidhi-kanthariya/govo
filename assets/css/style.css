@@ -1327,6 +1327,131 @@ input:focus {
   height: 0.75rem;
   width: 0.75rem;
 }
+.radio-button input[type=radio] {
+  visibility: hidden;
+  position: absolute;
+}
+.radio-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.radio-button.radio-sm .check {
+  height: 1rem;
+  width: 1rem;
+}
+.radio-button.radio-sm .check:before {
+  top: 3px;
+  left: 3px;
+  height: 8px;
+  width: 8px;
+}
+.radio-button.radio-md .check {
+  height: 1.10rem;
+  width: 1.10rem;
+}
+.radio-button.radio-md .check:before {
+  top: 2px;
+  left: 2px;
+  height: 11px;
+  width: 11px;
+}
+.radio-button.radio-lg .check {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+.radio-button.radio-lg .check:before {
+  top: 3px;
+  left: 3px;
+  height: 12px;
+  width: 12px;
+}
+.radio-button.radio-xl .check {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.radio-button.radio-xl .check:before {
+  top: 3px;
+  left: 3px;
+  height: 1rem;
+  width: 1rem;
+}
+.product-wrapper-grid.list-view .product-box .card .card-body .radio-button .check img {
+  width: 18.75rem;
+}
+.radio-button .check {
+  position: relative;
+  z-index: 5;
+  display: block;
+  height: 1.10rem;
+  width: 1.10rem;
+  border-radius: 9999px;
+    transition: border .25s linear;
+    -webkit-transition: border .25s linear;
+}
+.radio-button .check::before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  margin: auto;
+  display: block;
+  height: 11px;
+  width: 11px;
+  border-radius: 9999px;
+  --tw-content: "";
+  content: var(--tw-content);
+    transition: background 0.25s linear;
+    -webkit-transition: background 0.25s linear;
+}
+.primary input[type=radio]:checked ~ .check, .primary .check {
+  border-width: 1px;
+  border-color: rgba(var(--primary),1);
+}
+.secondary input[type=radio]:checked ~ .check, .secondary .check {
+  border-width: 1px;
+  border-color: rgba(var(--secondary),1);
+}
+.info input[type=radio]:checked ~ .check, .info .check {
+  border-width: 1px;
+  border-color: var(--info);
+}
+.success input[type=radio]:checked ~ .check, .success .check {
+  border-width: 1px;
+  border-color: var(--success);
+}
+.warning input[type=radio]:checked ~ .check, .warning .check {
+  border-width: 1px;
+  border-color: var(--warning);
+}
+.danger input[type=radio]:checked ~ .check, .danger .check {
+  border-width: 1px;
+  border-color: var(--danger);
+}
+.light input[type=radio]:checked ~ .check, .light .check {
+  border-width: 1px;
+  border-color: var(--light);
+}
+.primary input[type=radio]:checked ~ .check::before {
+  background-color: rgba(var(--primary),1);
+}
+.secondary input[type=radio]:checked ~ .check::before {
+  background-color: rgba(var(--secondary),1);
+}
+.info input[type=radio]:checked ~ .check::before {
+  background-color: var(--info);
+}
+.success input[type=radio]:checked ~ .check::before {
+  background-color: var(--success);
+}
+.warning input[type=radio]:checked ~ .check::before {
+  background-color: var(--warning);
+}
+.danger input[type=radio]:checked ~ .check::before {
+  background-color: var(--danger);
+}
+.light input[type=radio]:checked ~ .check::before {
+  background-color: var(--light);
+}
 .accordionItemHeading {
   margin-bottom: 0.5rem;
   width: 100%;
@@ -5627,6 +5752,9 @@ code[class*="language-"],
 .z-\[4\] {
   z-index: 4;
 }
+.col-auto {
+  grid-column: auto;
+}
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -5659,9 +5787,6 @@ code[class*="language-"],
 }
 .col-span-9 {
   grid-column: span 9 / span 9;
-}
-.col-auto {
-  grid-column: auto;
 }
 .\!m-0 {
   margin: 0px !important;
@@ -5920,6 +6045,9 @@ code[class*="language-"],
 }
 .mt-card-gap {
   margin-top: calc(0.9375rem + (1.875 - 0.9375) * ((100vw - 20rem) / (120 - 20)));
+}
+.mb-\[2px\] {
+  margin-bottom: 2px;
 }
 .box-border {
   box-sizing: border-box;
@@ -7263,9 +7391,6 @@ code[class*="language-"],
   margin-right: calc(0.75rem * var(--tw-space-x-reverse));
   margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
-.self-center {
-  align-self: center;
-}
 .overflow-auto {
   overflow: auto;
 }
@@ -8336,6 +8461,9 @@ code[class*="language-"],
   font-size: 0.875rem;
   line-height: 1.4;
   letter-spacing: 0.025rem;
+}
+.text-\[15px\] {
+  font-size: 15px;
 }
 .font-black {
   font-weight: 900;
@@ -10357,6 +10485,13 @@ code[class*="language-"],
     background-color: rgb(209 213 219 / var(--tw-bg-opacity));
   }
 }
+.hover\:primary:hover input[type=radio]:checked ~ .check,.hover\:primary:hover .check {
+  border-width: 1px;
+  border-color: rgba(var(--primary),1);
+}
+.hover\:primary:hover input[type=radio]:checked ~ .check::before {
+  background-color: rgba(var(--primary),1);
+}
 @media (max-width: 1199px) {
               .product-wrapper-grid.list-view .product-box .card .card-body .xl\:relative img {
     width: 18.75rem;
@@ -10668,13 +10803,21 @@ code[class*="language-"],
   content: var(--tw-content);
   top: 0.25rem;
 }
+.after\:top-\[14px\]::after {
+  content: var(--tw-content);
+  top: 14px;
+}
 .after\:top-\[2px\]::after {
   content: var(--tw-content);
   top: 2px;
 }
-.after\:top-\[14px\]::after {
+.after\:top-\[4px\]::after {
   content: var(--tw-content);
-  top: 14px;
+  top: 4px;
+}
+.after\:top-\[3px\]::after {
+  content: var(--tw-content);
+  top: 3px;
 }
 .after\:h-3::after {
   content: var(--tw-content);

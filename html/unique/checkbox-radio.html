@@ -1346,7 +1346,7 @@
                 <div class="card-header pb-2 header-bottom-border">
                   <div class="flex flex-col">
                     <h3 class="text-lg font-bold">Colored Radio</h3>
-                    <p>Set the sizes of checkbox with different colored using  <strong>.radio-* </strong>& <strong>.bg-*  </strong>class. </p>
+                    <p>Set the sizes of checkbox with different colored using  <strong>.radio-* </strong>class. </p>
                     <div class="preview-code tab-links">
                       <button class="p-0 tab tab-lifted tab-active tab-link" data-tabFilter="1">Preview  </button>
                       <button class="p-0 tab tab-lifted tab-link tab-2" data-tabFilter="2">Html</button>
@@ -1356,75 +1356,51 @@
                 <div class="card-body">                                  
                   <div class="tabs-content">
                     <div class="tab-pan active show first:rounded-tl-none rounded-5" data-tabContent="1">
-                      <div class="flex justify-center gap-3 flex-wrap">
-                        <div class="flex items-center gap-2">
-                          <div class="relative radio">
-                            <input class="cursor-pointer peer absolute opacity-0 z-10" id="radio" type="radio">
-                            <div class="border border-primary relative radio-md peer-checked:block top-[0rem] rounded-full"></div>
-                            <div class="bg-transparent rounded-full absolute w-[0.60rem] h-[0.60rem] peer-checked:bg-primary peer-checked:left[0.18rem] peer-checked:top[0.17rem] left-[0.18rem] top-[0.17rem]"></div>
-                          </div>
-                          <p class="m-0">Primary</p>
+                      <div class="flex justify-center gap-3 flex-wrap items-center">
+                        <div class="radio-button radio-md primary">
+                          <input id="primary1" type="radio" name="selector">
+                          <div class="check"></div>
+                          <label class="text-xs cursor-pointer" for="primary1">Primary</label>
                         </div>
-                        <div class="flex items-center gap-2">
-                          <div class="relative radio">
-                            <input class="cursor-pointer peer absolute opacity-0 z-10" id="radio" type="radio" checked="checked">
-                            <div class="border border-secondary relative radio-md peer-checked:block top-[0rem] rounded-full"></div>
-                            <div class="bg-transparent rounded-full absolute w-[0.60rem] h-[0.60rem] peer-checked:bg-secondary peer-checked:left[0.18rem] peer-checked:top[0.17rem] left-[0.18rem] top-[0.17rem]"></div>
-                          </div>
-                          <p class="m-0">Secondary</p>
+                        <div class="radio-button radio-md secondary">
+                          <input id="secondary2" type="radio" name="selector">
+                          <div class="check"></div>
+                          <label class="text-xs cursor-pointer" for="secondary2">Secondary</label>
                         </div>
-                        <div class="flex items-center gap-2">
-                          <div class="relative radio">
-                            <input class="cursor-pointer peer absolute opacity-0 z-10" id="radio" type="radio">
-                            <div class="border border-info relative radio-md peer-checked:block top-[0rem] rounded-full"></div>
-                            <div class="bg-transparent rounded-full absolute w-[0.60rem] h-[0.60rem] peer-checked:bg-info peer-checked:left[0.18rem] peer-checked:top[0.17rem] left-[0.18rem] top-[0.17rem]"></div>
-                          </div>
-                          <p class="m-0">Info</p>
+                        <div class="radio-button radio-md info">
+                          <input id="info2" type="radio" name="selector">
+                          <div class="check"></div>
+                          <label class="text-xs cursor-pointer" for="info2">Info</label>
                         </div>
-                        <div class="flex items-center gap-2">
-                          <div class="relative radio">
-                            <input class="cursor-pointer peer absolute opacity-0 z-10" id="radio" type="radio" checked="checked">
-                            <div class="border border-warning relative radio-md peer-checked:block top-[0rem] rounded-full"></div>
-                            <div class="bg-transparent rounded-full absolute w-[0.60rem] h-[0.60rem] peer-checked:bg-warning peer-checked:left[0.18rem] peer-checked:top[0.17rem] left-[0.18rem] top-[0.17rem]"></div>
-                          </div>
-                          <p class="m-0">Warning</p>
+                        <div class="radio-button radio-md warning">
+                          <input id="warning2" type="radio" name="selector" checked="">
+                          <div class="check"></div>
+                          <label class="text-xs cursor-pointer" for="warning2">Warning</label>
                         </div>
                       </div>
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
                       <button class="btn copyBtn"> <i data-feather="clipboard"></i></button>
-                      <pre class="overflow-auto language-html custom-scroll"><code>&lt;div class="flex flex-wrap justify-center gap-3"&gt;
-  &lt;div class="flex items-center gap-2"&gt; 
-      &lt;div class="relative radio"&gt;
-          &lt;input id="radio" type="radio" class="absolute z-10 opacity-0 cursor-pointer peer"&gt;
-          &lt;div class="border border-primary relative radio-xl peer-checked:block top-[0rem] rounded-full"&gt;&lt;/div&gt;
-          &lt;div class="bg-transparent w-4 h-4 rounded-full absolute peer-checked:bg-primary peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"&gt;&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;p&gt;Primary&lt;/p&gt;
+                      <pre class="overflow-auto language-html custom-scroll"><code>&lt;div class="flex flex-wrap justify-center gap-3 items-center"&gt;
+  &lt;div class="radio-button radio-md primary"&gt;
+     &lt;input id="primary" type="radio" class="selector"&gt;
+     &lt;div class="check"&gt;&lt;/div&gt;
+     &lt;label class="text-xs cursor-pointer" for="primary"&gt; Primary &lt;/label&gt;
   &lt;/div&gt;
-  &lt;div class="flex items-center gap-2"&gt; 
-      &lt;div class="relative radio"&gt;
-          &lt;input id="radio" type="radio" class="absolute z-10 opacity-0 cursor-pointer peer checked='checked'"&gt;
-          &lt;div class="border border-secondary relative radio-xl peer-checked:block top-[0rem] rounded-full"&gt;&lt;/div&gt;
-          &lt;div class="bg-transparent w-3 h-3 rounded-full absolute peer-checked:bg-secondary peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"&gt;&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;p&gt;Secondary&lt;/p&gt;
+  &lt;div class="radio-button radio-md secondary"&gt; 
+     &lt;input id="radio" type="radio" class="selector"&gt;
+     &lt;div class="check"&gt;&lt;/div&gt;
+     &lt;label class="text-xs cursor-pointer" for="secondary"&gt; Secondary &lt;/label&gt;
   &lt;/div&gt;
-  &lt;div class="flex items-center gap-2"&gt; 
-      &lt;div class="relative radio"&gt;
-          &lt;input id="radio" type="radio" class="absolute z-10 opacity-0 cursor-pointer peer"&gt;
-          &lt;div class="border border-info relative radio-xl peer-checked:block top-[0rem] rounded-full"&gt;&lt;/div&gt;
-          &lt;div class="bg-transparent w-4 h-4 rounded-full absolute peer-checked:bg-info peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"&gt;&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;p&gt;Info&lt;/p&gt;
+  &lt;div class="radio-button radio-md info"&gt;
+     &lt;input id="radio" type="radio" class="selector"&gt;
+     &lt;div class="check"&gt;&lt;/div&gt;
+     &lt;label class="text-xs cursor-pointer" for="info"&gt; Info &lt;/label&gt;
   &lt;/div&gt;
-  &lt;div class="flex items-center gap-2"&gt; 
-      &lt;div class="relative radio"&gt;
-          &lt;input id="radio" type="radio" class="absolute z-10 opacity-0 cursor-pointer peer checked='checked'"&gt;
-          &lt;div class="border border-warning relative radio-xl peer-checked:block top-[0rem] rounded-full"&gt;&lt;/div&gt;
-          &lt;div class="bg-transparent w-3 h-3 rounded-full absolute peer-checked:bg-warning peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"&gt;&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;p&gt;Warning&lt;/p&gt;
+  &lt;div class="radio-button radio-md warning"&gt; 
+     &lt;input id="radio" type="radio" class="selector"&gt;
+     &lt;div class="check"&gt;&lt;/div&gt;
+     &lt;label class="text-xs cursor-pointer" for="warning"&gt; Warning&lt;/label&gt;
   &lt;/div&gt; 
 &lt;/div&gt;</code></pre>
                     </div>
@@ -1538,76 +1514,52 @@
                 <div class="card-body">                                  
                   <div class="tabs-content">
                     <div class="tab-pan active show first:rounded-tl-none rounded-5" data-tabContent="1">
-                      <div class="flex justify-center gap-3 flex-wrap">
-                        <div class="flex items-center gap-2">
-                          <div class="relative radio">
-                            <input class="cursor-pointer peer absolute opacity-0 z-10" id="radio" type="radio" checked="checked">
-                            <div class="border border-primary relative radio-xl peer-checked:block top-[0rem] rounded-full"></div>
-                            <div class="bg-transparent w-4 h-4 rounded-full absolute peer-checked:bg-primary peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"></div>
-                          </div>
-                          <p class="m-0">Radio-xl</p>
+                      <div class="flex justify-center gap-3 flex-wrap items-center">
+                        <div class="radio-button radio-xl primary">
+                          <input id="primary" type="radio" name="selector1">
+                          <div class="check"></div>
+                          <label class="text-xs cursor-pointer" for="primary">Primary</label>
                         </div>
-                        <div class="flex items-center gap-2">
-                          <div class="relative radio">
-                            <input class="cursor-pointer peer absolute opacity-0 z-10" id="radio" type="radio" checked="checked">
-                            <div class="border border-primary relative radio-lg peer-checked:block top-[0rem] rounded-full"></div>
-                            <div class="bg-transparent w-3 h-3 rounded-full absolute peer-checked:bg-primary peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"></div>
-                          </div>
-                          <p class="m-0">Radio-lg</p>
+                        <div class="radio-button radio-lg secondary">
+                          <input id="secondary" type="radio" name="selector1" checked="">
+                          <div class="check"></div>
+                          <label class="text-xs cursor-pointer" for="secondary">Secondary</label>
                         </div>
-                        <div class="flex items-center gap-2">
-                          <div class="relative radio">
-                            <input class="cursor-pointer peer absolute opacity-0 z-10" id="radio" type="radio">
-                            <div class="border border-primary relative radio-md peer-checked:block top-[0rem] rounded-full"></div>
-                            <div class="bg-transparent rounded-full absolute w-[0.60rem] h-[0.60rem] peer-checked:bg-primary peer-checked:left[0.18rem] peer-checked:top[0.17rem] left-[0.18rem] top-[0.17rem]"></div>
-                          </div>
-                          <p class="m-0">Radio-md</p>
+                        <div class="radio-button radio-md info">
+                          <input id="info" type="radio" name="selector1">
+                          <div class="check"></div>
+                          <label class="text-xs cursor-pointer" for="info">Info</label>
                         </div>
-                        <div class="flex items-center gap-2">
-                          <div class="relative radio">
-                            <input class="cursor-pointer peer absolute opacity-0 z-10" id="radio" type="radio">
-                            <div class="border border-primary relative radio-sm peer-checked:block top-[0rem] rounded-full"></div>
-                            <div class="bg-transparent rounded-full absolute w-[0.40rem] h-[0.40rem] peer-checked:bg-primary peer-checked:left[0.15rem] peer-checked:top[0.15rem] left-[0.15rem] top-[0.15rem]"></div>
-                          </div>
-                          <p class="m-0">Radio-sm</p>
+                        <div class="radio-button radio-sm warning">
+                          <input id="warning" type="radio" name="selector1">
+                          <div class="check"></div>
+                          <label class="text-xs cursor-pointer" for="warning">Warning</label>
                         </div>
                       </div>
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
                       <button class="btn copyBtn"> <i data-feather="clipboard"></i></button>
-                      <pre class="overflow-auto language-html custom-scroll"><code>&lt;div class="flex flex-wrap justify-center gap-3"&gt;
-  &lt;div class="flex items-center gap-2"&gt; 
-      &lt;div class="relative radio"&gt;
-          &lt;input id="radio" type="radio" class="absolute z-10 opacity-0 cursor-pointer peer"&gt;
-          &lt;div class="border border-primary relative radio-xl peer-checked:block top-[0rem] rounded-full"&gt;&lt;/div&gt;
-          &lt;div class="bg-transparent w-4 h-4 rounded-full absolute peer-checked:bg-primary peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"&gt;&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;p&gt;Radio-xl&lt;/p&gt;
+                      <pre class="overflow-auto language-html custom-scroll"><code>&lt;div class="flex flex-wrap justify-center gap-3 items-center"&gt;
+  &lt;div class="radio-button radio-md primary"&gt;
+     &lt;input id="primary" type="radio" class="selector1"&gt;
+     &lt;div class="check"&gt;&lt;/div&gt;
+     &lt;label class="text-xs cursor-pointer" for="primary"&gt; Primary &lt;/label&gt;
   &lt;/div&gt;
-  &lt;div class="flex items-center gap-2"&gt; 
-      &lt;div class="relative radio"&gt;
-          &lt;input id="radio" type="radio" class="absolute z-10 opacity-0 cursor-pointer peer"&gt;
-          &lt;div class="border border-primary relative radio-xl peer-checked:block top-[0rem] rounded-full"&gt;&lt;/div&gt;
-          &lt;div class="bg-transparent w-3 h-3 rounded-full absolute peer-checked:bg-primary peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"&gt;&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;p&gt;Radio-lg&lt;/p&gt;
+  &lt;div class="radio-button radio-md secondary"&gt; 
+     &lt;input id="radio" type="radio" class="selector1"&gt;
+     &lt;div class="check"&gt;&lt;/div&gt;
+     &lt;label class="text-xs cursor-pointer" for="secondary"&gt; Secondary&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="radio-button radio-md info"&gt;
+     &lt;input id="radio" type="radio" class="selector1"&gt;
+     &lt;div class="check"&gt;&lt;/div&gt;
+     &lt;label class="text-xs cursor-pointer" for="info"&gt; Info &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="radio-button radio-md warning"&gt; 
+     &lt;input id="radio" type="radio" class="selector1"&gt;
+     &lt;div class="check"&gt;&lt;/div&gt;
+     &lt;label class="text-xs cursor-pointer" for="warning"&gt; Warning &lt;/label&gt;
   &lt;/div&gt; 
-  &lt;div class="flex items-center gap-2"&gt; 
-      &lt;div class="relative radio"&gt;
-          &lt;input id="radio" type="radio" class="absolute z-10 opacity-0 cursor-pointer peer"&gt;
-          &lt;div class="border border-primary relative radio-xl peer-checked:block top-[0rem] rounded-full"&gt;&lt;/div&gt;
-          &lt;div class="bg-transparent w-[0.60rem] h-[0.60rem] rounded-full absolute peer-checked:bg-primary peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"&gt;&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;p&gt;Radio-md&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class="flex items-center gap-2"&gt; 
-      &lt;div class="relative radio"&gt;
-          &lt;input id="radio" type="radio" class="absolute z-10 opacity-0 cursor-pointer peer"&gt;
-          &lt;div class="border border-primary relative radio-xl peer-checked:block top-[0rem] rounded-full"&gt;&lt;/div&gt;
-          &lt;div class="bg-transparent w-[0.40rem] h-[0.40rem] rounded-full absolute peer-checked:bg-primary peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"&gt;&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;p&gt;Radio-sm&lt;/p&gt;
-  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                     </div>
                   </div>
@@ -1629,44 +1581,32 @@
                 <div class="card-body">                                  
                   <div class="tabs-content">
                     <div class="tab-pan active show first:rounded-tl-none rounded-5" data-tabContent="1">
-                      <div class="flex justify-center gap-3 flex-wrap">
-                        <div class="flex items-center gap-2">
-                          <div class="relative radio">
-                            <input class="cursor-pointer peer absolute opacity-0 z-10" id="radio" type="radio">
-                            <div class="border border-info relative radio-md peer-checked:block top-[0rem] rounded-full"></div>
-                            <div class="bg-transparent rounded-full absolute w-[0.60rem] h-[0.60rem] peer-checked:bg-info peer-checked:left[0.18rem] peer-checked:top[0.17rem] left-[0.18rem] top-[0.17rem]"></div>
-                          </div>
-                          <p class="m-0">Radio 1</p>
+                      <div class="flex justify-center gap-3 flex-wrap items-center">
+                        <div class="radio-button radio-sm info">
+                          <input id="radio1" type="radio" name="selector3">
+                          <div class="check"></div>
+                          <label class="text-xs cursor-pointer" for="radio1">Radio 1</label>
                         </div>
-                        <div class="flex items-center gap-2">
-                          <div class="relative radio">
-                            <input class="cursor-pointer peer absolute opacity-0 z-10" id="radio" type="radio">
-                            <div class="border border-info relative radio-md peer-checked:block top-[0rem] rounded-full"></div>
-                            <div class="bg-transparent rounded-full absolute w-[0.60rem] h-[0.60rem] peer-checked:bg-info peer-checked:left[0.18rem] peer-checked:top[0.17rem] left-[0.18rem] top-[0.17rem]"></div>
-                          </div>
-                          <p class="m-0">Radio 2</p>
+                        <div class="radio-button radio-sm warning">
+                          <input id="radio2" type="radio" name="selector3">
+                          <div class="check"></div>
+                          <label class="text-xs cursor-pointer" for="radio2">Radio 2</label>
                         </div>
                       </div>
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
                       <button class="btn copyBtn"> <i data-feather="clipboard"></i></button>
-                      <pre class="overflow-auto language-html custom-scroll"><code>&lt;div class="flex flex-wrap justify-center gap-3"&gt;
-  &lt;div class="flex items-center gap-2"&gt; 
-      &lt;div class="relative radio"&gt;
-          &lt;input id="radio" type="radio" class="absolute z-10 opacity-0 cursor-pointer peer"&gt;
-          &lt;div class="border border-primary relative radio-xl peer-checked:block top-[0rem] rounded-full"&gt;&lt;/div&gt;
-          &lt;div class="bg-transparent w-4 h-4 rounded-full absolute peer-checked:bg-primary peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"&gt;&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;p&gt;Radio 1&lt;/p&gt;
+                      <pre class="overflow-auto language-html custom-scroll"><code>&lt;div class="flex flex-wrap justify-center gap-3 items-center"&gt;
+  &lt;div class="radio-button radio-sm info"&gt;
+     &lt;input id="radio1" type="radio" class="selector3"&gt;
+     &lt;div class="check"&gt;&lt;/div&gt;
+     &lt;label class="text-xs cursor-pointer" for="radio1"&gt; Radio 1 &lt;/label&gt;
   &lt;/div&gt;
-  &lt;div class="flex items-center gap-2"&gt; 
-      &lt;div class="relative radio"&gt;
-          &lt;input id="radio" type="radio" class="absolute z-10 opacity-0 cursor-pointer peer"&gt;
-          &lt;div class="border border-primary relative radio-xl peer-checked:block top-[0rem] rounded-full"&gt;&lt;/div&gt;
-          &lt;div class="bg-transparent w-3 h-3 rounded-full absolute peer-checked:bg-primary peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"&gt;&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;p&gt;Radio 2&lt;/p&gt;
-  &lt;/div&gt; 
+  &lt;div class="radio-button radio-sm warning"&gt; 
+     &lt;input id="radio2" type="radio" class="selector3"&gt;
+     &lt;div class="check"&gt;&lt;/div&gt;
+     &lt;label class="text-xs cursor-pointer" for="radio2"&gt; Radio 2 &lt;/label&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                     </div>
                   </div>
@@ -1688,44 +1628,32 @@
                 <div class="card-body">                                  
                   <div class="tabs-content">
                     <div class="tab-pan active show first:rounded-tl-none rounded-5" data-tabContent="1">
-                      <div class="flex justify-center gap-3 flex-wrap">
-                        <div class="flex items-center gap-2">
-                          <div class="relative radio">
-                            <input class="cursor-pointer peer absolute opacity-0 z-10" id="radio" type="radio" checked="checked">
-                            <div class="border border-secondary relative radio-md peer-checked:block top-[0rem] rounded-full"></div>
-                            <div class="bg-transparent rounded-full absolute w-[0.60rem] h-[0.60rem] peer-checked:bg-secondary peer-checked:left[0.18rem] peer-checked:top[0.17rem] left-[0.18rem] top-[0.17rem]"></div>
-                          </div>
-                          <p class="m-0">Radio 1</p>
+                      <div class="flex justify-center gap-3 flex-wrap items-center">
+                        <div class="radio-button radio-sm danger">
+                          <input id="default1" type="radio" name="selector4">
+                          <div class="check"></div>
+                          <label class="text-xs cursor-pointer" for="default1">Radio 1</label>
                         </div>
-                        <div class="flex items-center gap-2">
-                          <div class="relative radio">
-                            <input class="cursor-pointer peer absolute opacity-0 z-10" id="radio" type="radio">
-                            <div class="border border-secondary relative radio-md peer-checked:block top-[0rem] rounded-full"></div>
-                            <div class="bg-transparent rounded-full absolute w-[0.60rem] h-[0.60rem] peer-checked:bg-secondary peer-checked:left[0.18rem] peer-checked:top[0.17rem] left-[0.18rem] top-[0.17rem]"></div>
-                          </div>
-                          <p class="m-0">Radio 2</p>
+                        <div class="radio-button radio-sm success">
+                          <input id="default2" type="radio" name="selector4" checked>
+                          <div class="check"></div>
+                          <label class="text-xs cursor-pointer" for="default2">Radio 2</label>
                         </div>
                       </div>
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
                       <button class="btn copyBtn"> <i data-feather="clipboard"></i></button>
-                      <pre class="overflow-auto language-html custom-scroll"><code>&lt;div class="flex flex-wrap justify-center gap-3"&gt;
-  &lt;div class="flex items-center gap-2"&gt; 
-      &lt;div class="relative radio"&gt;
-          &lt;input id="radio" type="radio" checked="checked" class="absolute z-10 opacity-0 cursor-pointer peer"&gt;
-          &lt;div class="border border-primary relative radio-xl peer-checked:block top-[0rem] rounded-full"&gt;&lt;/div&gt;
-          &lt;div class="bg-transparent w-4 h-4 rounded-full absolute peer-checked:bg-primary peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"&gt;&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;p&gt;Radio 1&lt;/p&gt;
+                      <pre class="overflow-auto language-html custom-scroll"><code>&lt;div class="flex flex-wrap justify-center gap-3 items-center"&gt;
+  &lt;div class="radio-button radio-sm info"&gt;
+     &lt;input id="default1" type="radio" class="selector4"&gt;
+     &lt;div class="check"&gt;&lt;/div&gt;
+     &lt;label class="text-xs cursor-pointer" for="default1"&gt; Radio 1 &lt;/label&gt;
   &lt;/div&gt;
-  &lt;div class="flex items-center gap-2"&gt; 
-      &lt;div class="relative radio"&gt;
-          &lt;input id="radio" type="radio" class="absolute z-10 opacity-0 cursor-pointer peer"&gt;
-          &lt;div class="border border-primary relative radio-xl peer-checked:block top-[0rem] rounded-full"&gt;&lt;/div&gt;
-          &lt;div class="bg-transparent w-3 h-3 rounded-full absolute peer-checked:bg-primary peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"&gt;&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;p&gt;Radio 2&lt;/p&gt;
-  &lt;/div&gt; 
+  &lt;div class="radio-button radio-sm warning"&gt; 
+     &lt;input id="default2" type="radio" class="selector4" checked&gt;
+     &lt;div class="check"&gt;&lt;/div&gt;
+     &lt;label class="text-xs cursor-pointer" for="default2"&gt; Radio 2 &lt;/label&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                     </div>
                   </div>
@@ -1747,44 +1675,32 @@
                 <div class="card-body">                                  
                   <div class="tabs-content">
                     <div class="tab-pan active show first:rounded-tl-none rounded-5" data-tabContent="1">
-                      <div class="flex justify-center gap-3 flex-wrap">
-                        <div class="flex items-center gap-2 opacity-40">
-                          <div class="relative radio">
-                            <input class="peer absolute opacity-0 z-10" id="radio" type="radio" checked="checked" disabled="disabled">
-                            <div class="border border-primary relative radio-md peer-checked:block top-[0rem] rounded-full"></div>
-                            <div class="bg-transparent rounded-full absolute w-[0.60rem] h-[0.60rem] peer-checked:bg-primary peer-checked:left[0.18rem] peer-checked:top[0.17rem] left-[0.18rem] top-[0.17rem]"></div>
-                          </div>
-                          <p class="m-0">Disable Radio</p>
+                      <div class="flex justify-center gap-3 flex-wrap items-center">
+                        <div class="radio-button radio-sm danger">
+                          <input id="disable1" type="radio" name="selector5" disabled>
+                          <div class="check"></div>
+                          <label class="text-xs cursor-pointer" for="disable1">Radio 1</label>
                         </div>
-                        <div class="flex items-center gap-2 opacity-40">
-                          <div class="relative radio">
-                            <input class="peer absolute opacity-0 z-10" id="radio" type="radio" disabled>
-                            <div class="border border-primary relative radio-md peer-checked:block top-[0rem] rounded-full"></div>
-                            <div class="bg-transparent rounded-full absolute w-[0.60rem] h-[0.60rem] peer-checked:bg-primary peer-checked:left[0.18rem] peer-checked:top[0.17rem] left-[0.18rem] top-[0.17rem]"></div>
-                          </div>
-                          <p class="m-0">Disable Radio</p>
+                        <div class="radio-button radio-sm success">
+                          <input id="disable2" type="radio" name="selector5" disabled checked>
+                          <div class="check"></div>
+                          <label class="text-xs cursor-pointer" for="disable2">Radio 2</label>
                         </div>
                       </div>
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
                       <button class="btn copyBtn"> <i data-feather="clipboard"></i></button>
-                      <pre class="overflow-auto language-html custom-scroll"><code>&lt;div class="flex flex-wrap justify-center gap-3"&gt;
-  &lt;div class="flex items-center gap-2 opacity-40"&gt; 
-      &lt;div class="relative radio"&gt;
-          &lt;input id="radio" type="radio" checked="checked" class="absolute z-10 opacity-0 peer" disabled="disabled"&gt;
-          &lt;div class="border border-primary relative radio-xl peer-checked:block top-[0rem] rounded-full"&gt;&lt;/div&gt;
-          &lt;div class="bg-transparent w-4 h-4 rounded-full absolute peer-checked:bg-primary peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"&gt;&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;p&gt;Disable&lt;/p&gt;
+                      <pre class="overflow-auto language-html custom-scroll"><code>&lt;div class="flex flex-wrap justify-center gap-3 items-center"&gt;
+  &lt;div class="radio-button radio-sm info"&gt;
+     &lt;input id="disable1" type="radio" class="selector5" disabled&gt;
+     &lt;div class="check"&gt;&lt;/div&gt;
+     &lt;label class="text-xs cursor-pointer" for="disable1"&gt; Radio 1 &lt;/label&gt;
   &lt;/div&gt;
-  &lt;div class="flex items-center gap-2 opacity-40"&gt; 
-      &lt;div class="relative radio"&gt;
-          &lt;input id="radio" type="radio" class="absolute z-10 opacity-0 peer" disabled&gt;
-          &lt;div class="border border-primary relative radio-xl peer-checked:block top-[0rem] rounded-full"&gt;&lt;/div&gt;
-          &lt;div class="bg-transparent w-3 h-3 rounded-full absolute peer-checked:bg-primary peer-checked:left[0.25rem] peer-checked:top[0.25rem] left-[0.25rem] top-[0.25rem]"&gt;&lt;/div&gt;
-      &lt;/div&gt;
-      &lt;p&gt;Disable Radio&lt;/p&gt;
-  &lt;/div&gt; 
+  &lt;div class="radio-button radio-sm warning"&gt; 
+     &lt;input id="disable2" type="radio" class="selector5" disabled checked&gt;
+     &lt;div class="check"&gt;&lt;/div&gt;
+     &lt;label class="text-xs cursor-pointer" for="disable2"&gt; Radio 2 &lt;/label&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                     </div>
                   </div>
