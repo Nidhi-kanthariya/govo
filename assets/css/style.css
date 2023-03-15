@@ -5947,6 +5947,9 @@ code[class*="language-"],
 .mb-\[20px\] {
   margin-bottom: 20px;
 }
+.mb-\[2px\] {
+  margin-bottom: 2px;
+}
 .ml-5 {
   margin-left: 1.25rem;
 }
@@ -6045,9 +6048,6 @@ code[class*="language-"],
 }
 .mt-card-gap {
   margin-top: calc(0.9375rem + (1.875 - 0.9375) * ((100vw - 20rem) / (120 - 20)));
-}
-.mb-\[2px\] {
-  margin-bottom: 2px;
 }
 .box-border {
   box-sizing: border-box;
@@ -6153,9 +6153,6 @@ code[class*="language-"],
 }
 .h-\[0\.40rem\] {
   height: 0.40rem;
-}
-.h-\[0\.60rem\] {
-  height: 0.60rem;
 }
 .h-\[0\.65rem\] {
   height: 0.65rem;
@@ -6544,9 +6541,6 @@ code[class*="language-"],
 }
 .w-\[0\.40rem\] {
   width: 0.40rem;
-}
-.w-\[0\.60rem\] {
-  width: 0.60rem;
 }
 .w-\[0\.65rem\] {
   width: 0.65rem;
@@ -8413,6 +8407,9 @@ code[class*="language-"],
 .text-\[13px\] {
   font-size: 13px;
 }
+.text-\[15px\] {
+  font-size: 15px;
+}
 .text-\[26px\] {
   font-size: 26px;
 }
@@ -8461,9 +8458,6 @@ code[class*="language-"],
   font-size: 0.875rem;
   line-height: 1.4;
   letter-spacing: 0.025rem;
-}
-.text-\[15px\] {
-  font-size: 15px;
 }
 .font-black {
   font-weight: 900;
@@ -10803,17 +10797,9 @@ code[class*="language-"],
   content: var(--tw-content);
   top: 0.25rem;
 }
-.after\:top-\[14px\]::after {
-  content: var(--tw-content);
-  top: 14px;
-}
 .after\:top-\[2px\]::after {
   content: var(--tw-content);
   top: 2px;
-}
-.after\:top-\[4px\]::after {
-  content: var(--tw-content);
-  top: 4px;
 }
 .after\:top-\[3px\]::after {
   content: var(--tw-content);

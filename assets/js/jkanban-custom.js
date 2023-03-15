@@ -149,8 +149,7 @@ var kanban1 = new jKanban({
                     </div>
                  </div>
               </div>  
-            </div>
-                            `,
+            </div> `,
         },
       ],
     },
@@ -424,85 +423,146 @@ var kanban2 = new jKanban({
       item: [
         {
           title: `
-            <div class="kanban-box">
-                  <div class="kanab-item-1 p-5 2xl:p-4 border border-light bg-white rounded-5 flex flex-col gap-5 2xl:gap-3">
-                        <div class="flex items-center gap-2">
-                        <div class="min-w-3 w-3 min-h-3 h-3 rounded-full bg-primary"></div>
-                        <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark">Final Test For The Design Issues </h5>
-                        </div>
-                        <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
-                           <div class="flex items-center gap-4">
-                           <div class="badge badge-success badge-outline rounded-5">Creativity</div><span class="text-content">48%</span>
+            <div class="kanban-box w-full">
+               <div class="kanab-item-1 p-5 2xl:p-4 shadow-md bg-white rounded-5 flex flex-col gap-5 2xl:gap-3"> 
+                     <div class="flex justify-between"> 
+                           <div class="badge border border-primary text-primary rounded">Technology</div>  
+                           <div>
+                              <svg class="w-6 h-6 stroke-primary">
+                                    <use href="../../assets/svg/_sprite.svg#Plus"></use> 
+                              </svg> 
                            </div>
-                           <div class="flex items-center justify-between gap-4">
-                           <div class="flex items-center gap-1"> <i class="w-5 h-5 stroke-primary" data-feather="message-circle"></i><span class="text-content">7   </span></div>
-                           <div class="avatar">
-                              <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/6.jpg" alt="avatar"></div>
-                           </div>
+                     </div>
+                     <div class="flex items-center gap-2"> 
+                        <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium"> Set user flow</h5>
+                     </div>
+                     <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
+                        <div class="flex items-center gap-4"> 
+                            <span class="text-content ">16 Feb 2023</span>
+                        </div> 
+                        <div class="flex items-center justify-between gap-4">
+                           <div class="flex items-center gap-2"> 
+                              <div class="flex items-center gap-1"> 
+                                 <span class="text-content">121</span> 
+                                 <svg class="w-5 h-5 stroke-content">
+                                    <use href="../../assets/svg/_sprite.svg#Chat"></use>
+                                 </svg>
+                              </div>
+                              <div class="avatar-group -space-x-6"> 
+                                 <div class="avatar">
+                                    <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/13.jpg" alt="avatar"></div>
+                                 </div>
+                                 <div class="avatar">
+                                    <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/15.jpg" alt="avatar"></div>
+                                 </div>
+                                 <div class="avatar">
+                                    <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/18.jpg" alt="avatar"></div>
+                                 </div>
+                                 <div class="avatar">
+                                    <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/19.jpg" alt="avatar"></div>
+                                 </div>
+                              </div>
                            </div>
                         </div>
                      </div>
-                     </div> 
-             </div>
+                  </div> 
+               </div> 
                `,
         },
         {
           title: ` 
-          <div class="kanban-box">
-                  <div class="kanab-item-1 p-5 2xl:p-4 border border-light bg-white rounded-5 flex flex-col gap-5 2xl:gap-3">
+          <div class="kanban-box w-full">
+            <div class="kanab-item-1 p-5 2xl:p-4 shadow-md bg-white rounded-5 flex flex-col gap-5 2xl:gap-3"> 
+                  <div class="flex justify-between"> 
+                        <div class="badge border border-warning text-warning rounded">Testing</div>  
+                        <div>
+                           <svg class="w-6 h-6 stroke-warning">
+                                 <use href="../../assets/svg/_sprite.svg#Plus"></use> 
+                           </svg>
+                        </div>
+                  </div>
+                  <div class="flex items-center gap-2"> 
+                     <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium"> Add web specific content</h5>
+                  </div> 
+                  <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
+                     <div class="flex items-center gap-4"> 
+                         <span class="text-content ">22 Jan 2023</span>
+                     </div> 
+                     <div class="flex items-center justify-between gap-4">
                         <div class="flex items-center gap-2"> 
-                        <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark">Don't use unwanted extra div because is make dome bigger</h5>
-                        </div> 
-                        <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
-                           <div class="flex items-center gap-4">
-                           <div class="badge badge-warning badge-outline rounded-5">code</div><span class="text-content">88%</span>
+                           <div class="flex items-center gap-1"> 
+                              <span class="text-content">361</span> 
+                              <svg class="w-5 h-5 stroke-content">
+                                 <use href="../../assets/svg/_sprite.svg#Chat"></use>
+                              </svg>
                            </div>
-                           <div class="flex items-center justify-between gap-4">
-                           <div class="flex items-center gap-1"> <i class="w-5 h-5 stroke-primary" data-feather="message-circle"></i><span class="text-content">15</span></div>
-                         <div class="avatar-group -space-x-6">
-                         
-                           <div class="avatar">
-                              <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/2.jpg" alt="avatar"></div>
+                           <div class="avatar-group -space-x-6"> 
+                              <div class="avatar">
+                                 <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/21.jpg" alt="avatar"></div>
+                              </div>
+                              <div class="avatar">
+                                 <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/22.jpg" alt="avatar"></div>
+                              </div>
+                              <div class="avatar">
+                                 <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/23.jpg" alt="avatar"></div>
+                              </div>
+                              <div class="avatar">
+                                 <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/24.jpg" alt="avatar"></div>
+                              </div>
                            </div>
-                           <div class="avatar">
-                              <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/2.jpg" alt="avatar"></div>
-                           </div>
-                           <div class="avatar">
-                              <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/2.jpg" alt="avatar"></div>
-                           </div>
-                           <div class="avatar">
-                              <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/2.jpg" alt="avatar"></div>
-                           </div> 
-                           </div>
-                        </div> 
                         </div>
                      </div>
-                  </div> 
-             </div>
-                            `,
+                  </div>
+               </div>
+            </div> 
+          `,
         },
         {
           title: ` 
-          <div class="kanban-box">
-                  <div class="kanab-item-1 p-5 2xl:p-4 border border-light bg-white rounded-5 flex flex-col gap-5 2xl:gap-3">
-                        <div class="flex items-center gap-2">
-                        <div class="min-w-3 w-3 min-h-3 h-3 rounded-full bg-danger"></div>
-                           <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark">Not Proper Responsive ro Some Screen</h5>
+          <div class="kanban-box w-full">
+            <div class="kanab-item-1 p-5 2xl:p-4 shadow-md bg-white rounded-5 flex flex-col gap-5 2xl:gap-3"> 
+                  <div class="flex justify-between"> 
+                        <div class="badge border border-secondary text-secondary rounded">Finish Book</div>  
+                        <div>
+                           <svg class="w-6 h-6 stroke-secondary">
+                                 <use href="../../assets/svg/_sprite.svg#Plus"></use> 
+                           </svg> 
                         </div>
-                        <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between">  
-                           <div class="flex items-center gap-4"> 
-                           <div class="badge badge-error badge-outline rounded-5">Issues</div><span class="text-content">48%</span>
+                  </div>
+                  <div class="flex items-center gap-2"> 
+                     <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium"> Plan Join's birthday</h5>
+                  </div>
+                  <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
+                     <div class="flex items-center gap-4"> 
+                         <span class="text-content ">14 Jan 2023</span>
+                     </div> 
+                     <div class="flex items-center justify-between gap-4">
+                        <div class="flex items-center gap-2"> 
+                           <div class="flex items-center gap-1"> 
+                              <span class="text-content">151</span> 
+                              <svg class="w-5 h-5 stroke-content">
+                                 <use href="../../assets/svg/_sprite.svg#Chat"></use>
+                              </svg>
                            </div>
-                           <div class="flex items-center justify-between gap-4">
-                           <div class="flex items-center gap-1"> <i class="w-5 h-5 stroke-primary" data-feather="message-circle"></i><span class="text-content">34</span></div>
-                           <div class="avatar">
-                              <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/2.jpg" alt="avatar"></div>
-                           </div>
+                           <div class="avatar-group -space-x-6"> 
+                              <div class="avatar">
+                                 <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/25.jpg" alt="avatar"></div>
+                              </div>
+                              <div class="avatar">
+                                 <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/26.jpg" alt="avatar"></div>
+                              </div>
+                              <div class="avatar">
+                                 <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/27.jpg" alt="avatar"></div>
+                              </div>
+                              <div class="avatar">
+                                 <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/28.jpg" alt="avatar"></div>
+                              </div>
                            </div>
                         </div>
                      </div>
-                  </div> 
-             </div>
+                  </div>
+               </div>
+            </div> 
                             `,
         },
       ],
@@ -514,70 +574,98 @@ var kanban2 = new jKanban({
       item: [
         {
           title: `
-               <div class="kanban-box">
-                  <div class="kanab-item-1 p-5 2xl:p-4 border border-light bg-white rounded-5 flex flex-col gap-5 2xl:gap-3">
-                        <div class="flex items-center gap-2">
-                        <div class="min-w-3 w-3 min-h-3 h-3 rounded-full bg-info"></div>
-                           <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark">Testing dark and rtl  </h5>
+          <div class="kanban-box w-full">
+            <div class="kanab-item-1 p-5 2xl:p-4 shadow-md bg-white rounded-5 flex flex-col gap-5 2xl:gap-3"> 
+                  <div class="flex justify-between"> 
+                        <div class="badge border border-info text-info rounded">Finish Book</div>  
+                        <div>
+                           <svg class="w-6 h-6 stroke-info">
+                                 <use href="../../assets/svg/_sprite.svg#Plus"></use> 
+                           </svg>
                         </div>
-                        <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
-                           <div class="flex items-center gap-4">
-                           <div class="badge badge-info badge-outline rounded-5">info</div><span class="text-content">88%</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                     <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium"> Sand rent payment for October</h5>
+                  </div>
+                  <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
+                     <div class="flex items-center gap-4">
+                         <span class="text-content ">23 Jan 2023</span>
+                     </div> 
+                     <div class="flex items-center justify-between gap-4">
+                        <div class="flex items-center gap-2"> 
+                           <div class="flex items-center gap-1"> 
+                              <span class="text-content">611</span> 
+                              <svg class="w-5 h-5 stroke-content">
+                                 <use href="../../assets/svg/_sprite.svg#Chat"></use>
+                              </svg>
                            </div>
-                           <div class="flex items-center justify-between gap-4">
-                           <div class="flex items-center gap-1"> <i class="w-5 h-5 stroke-primary" data-feather="message-circle"></i><span class="text-content">35</span></div>
-                         <div class="avatar-group -space-x-6">
-                         
-                           <div class="avatar">
-                              <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/6.jpg" alt="avatar"></div>
+                           <div class="avatar-group -space-x-6"> 
+                              <div class="avatar">
+                                 <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/30.jpg" alt="avatar"></div>
+                              </div>
+                              <div class="avatar">
+                                 <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/31.jpg" alt="avatar"></div>
+                              </div>
+                              <div class="avatar">
+                                 <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/32.jpg" alt="avatar"></div>
+                              </div>
+                              <div class="avatar">
+                                 <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/33.jpg" alt="avatar"></div>
+                              </div>
                            </div>
-                           
-                           <div class="avatar">
-                              <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/2.jpg" alt="avatar"></div>
-                           </div>
-                           </div>
-                        </div> 
                         </div>
                      </div>
-                  </div> 
-             </div>                  
-
+                  </div>
+               </div>
+            </div> 
                             `,
         },
         {
           title: `
-                 <div class="kanban-box">
-                  <div class="kanab-item-1 p-5 2xl:p-4 border border-light bg-white rounded-5 flex flex-col gap-5 2xl:gap-3">
-                        <div class="flex items-center gap-2">
-                        <div class="min-w-3 w-3 min-h-3 h-3 rounded-full bg-info"></div>
-                           <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark">Working on demo 3 design </h5>
+          <div class="kanban-box w-full">
+            <div class="kanab-item-1 p-5 2xl:p-4 shadow-md bg-white rounded-5 flex flex-col gap-5 2xl:gap-3"> 
+                  <div class="flex justify-between"> 
+                        <div class="badge border border-info text-info rounded">Design System</div>  
+                        <div>
+                           <svg class="w-6 h-6 stroke-info">
+                                 <use href="../../assets/svg/_sprite.svg#Plus"></use> 
+                           </svg>
                         </div>
-                        <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
-                           <div class="flex items-center gap-4">
-                           <div class="badge badge-info badge-outline rounded-5">info</div><span class="text-content">88%</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                     <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium">Research for solve</h5>
+                  </div>
+                  <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
+                     <div class="flex items-center gap-4">
+                         <span class="text-content ">16 Jan 2023</span>
+                     </div> 
+                     <div class="flex items-center justify-between gap-4">
+                        <div class="flex items-center gap-2"> 
+                           <div class="flex items-center gap-1"> 
+                              <span class="text-content">141</span> 
+                              <svg class="w-5 h-5 stroke-content">
+                                 <use href="../../assets/svg/_sprite.svg#Chat"></use>
+                              </svg>
                            </div>
-                           <div class="flex items-center justify-between gap-4">
-                           <div class="flex items-center gap-1"> <i class="w-5 h-5 stroke-primary" data-feather="message-circle"></i><span class="text-content">15</span></div>
-                         <div class="avatar-group -space-x-6">
-                         
-                           <div class="avatar">
-                              <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/6.jpg" alt="avatar"></div>
+                           <div class="avatar-group -space-x-6"> 
+                              <div class="avatar">
+                                 <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/31.jpg" alt="avatar"></div>
+                              </div>
+                              <div class="avatar">
+                                 <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/26.jpg" alt="avatar"></div>
+                              </div>
+                              <div class="avatar">
+                                 <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/1.jpg" alt="avatar"></div>
+                              </div>
+                              <div class="avatar">
+                                 <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/3.jpg" alt="avatar"></div>
+                              </div> 
                            </div>
-                           
-                           <div class="avatar">
-                              <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/3.jpg" alt="avatar"></div>
-                           </div>
-                           
-                           <div class="avatar">
-                              <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/8.jpg" alt="avatar"></div>
-                           </div>
-                           </div>
-                        </div> 
                         </div>
                      </div>
-                  </div> 
-             </div>                      
-
+                  </div>
+               </div>
+            </div> 
                             `,
         },
       ],
@@ -590,109 +678,146 @@ var kanban2 = new jKanban({
       item: [
         {
           title: `
-                <div class="kanban-box">
-                  <div class="kanab-item-1 p-5 2xl:p-4 border border-light bg-white rounded-5 flex flex-col gap-5 2xl:gap-3">
-                        <div class="flex items-center gap-2">
-                        <div class="min-w-3 w-3 min-h-3 h-3 rounded-full bg-warning"></div>
-                           <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark">working demo 2  </h5>
+          <div class="kanban-box w-full">
+            <div class="kanab-item-1 p-5 2xl:p-4 shadow-md bg-white rounded-5 flex flex-col gap-5 2xl:gap-3"> 
+                  <div class="flex justify-between"> 
+                        <div class="badge border border-warning text-warning rounded">Gather team</div>  
+                        <div>
+                           <svg class="w-6 h-6 stroke-warning">
+                                 <use href="../../assets/svg/_sprite.svg#Plus"></use> 
+                           </svg>
                         </div>
-                        <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
-                           <div class="flex items-center gap-4">
-                           <div class="badge badge-warning badge-outline rounded-5">warning</div><span class="text-content">88%</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                     <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium"> Social media campaign</h5>
+                  </div>
+                  <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
+                     <div class="flex items-center gap-4">
+                         <span class="text-content ">26 Otc 2023</span>
+                     </div> 
+                     <div class="flex items-center justify-between gap-4">
+                        <div class="flex items-center gap-2"> 
+                           <div class="flex items-center gap-1"> 
+                              <span class="text-content">141</span> 
+                              <svg class="w-5 h-5 stroke-content">
+                                 <use href="../../assets/svg/_sprite.svg#Chat"></use>
+                              </svg>
                            </div>
-                           <div class="flex items-center justify-between gap-4">
-                           <div class="flex items-center gap-1"> <i class="w-5 h-5 stroke-primary" data-feather="message-circle"></i><span class="text-content">15</span></div>
-                         <div class="avatar-group -space-x-6">
-                         
-                           <div class="avatar">
-                              <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/10.jpg" alt="avatar"></div>
+                           <div class="avatar-group -space-x-6"> 
+                              <div class="avatar">
+                                 <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/2.jpg" alt="avatar"></div>
+                              </div>
+                              <div class="avatar">
+                                 <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/6.jpg" alt="avatar"></div>
+                              </div>
+                              <div class="avatar">
+                                 <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/1.jpg" alt="avatar"></div>
+                              </div>
+                              <div class="avatar">
+                                 <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/6.jpg" alt="avatar"></div>
+                              </div>
                            </div>
-                           
-                           <div class="avatar">
-                              <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/21.jpg" alt="avatar"></div>
-                           </div>
-                           
-                           <div class="avatar">
-                              <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/31.jpg" alt="avatar"></div>
-                           </div>
-                           </div>
-                        </div> 
                         </div>
                      </div>
-                  </div> 
-             </div>                                          
-          
-
+                  </div>
+               </div>
+            </div> 
                             `,
         },
         {
           title: `
-           <div class="kanban-box">
-                  <div class="kanab-item-1 p-5 2xl:p-4 border border-light bg-white rounded-5 flex flex-col gap-5 2xl:gap-3">
-                        <div class="flex items-center gap-2">
-                        <div class="min-w-3 w-3 min-h-3 h-3 rounded-full bg-success"></div>
-                           <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark">Make Responsive demo 2  </h5>
+          <div class="kanban-box w-full">
+            <div class="kanab-item-1 p-5 2xl:p-4 shadow-md bg-white rounded-5 flex flex-col gap-5 2xl:gap-3"> 
+                  <div class="flex justify-between"> 
+                        <div class="badge border border-primary text-primary rounded">HI-FI Design</div>  
+                        <div>
+                           <svg class="w-6 h-6 stroke-primary">
+                                 <use href="../../assets/svg/_sprite.svg#Plus"></use> 
+                           </svg>
                         </div>
-                        <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
-                           <div class="flex items-center gap-4">
-                           <div class="badge badge-success badge-outline rounded-5">success</div><span class="text-content">88%</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                     <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium"> The company design</h5>
+                  </div>
+                  <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
+                     <div class="flex items-center gap-4">
+                         <span class="text-content ">23 Feb 2022</span>
+                     </div> 
+                     <div class="flex items-center justify-between gap-4">
+                        <div class="flex items-center gap-2"> 
+                           <div class="flex items-center gap-1"> 
+                              <span class="text-content">141</span> 
+                              <svg class="w-5 h-5 stroke-content">
+                                 <use href="../../assets/svg/_sprite.svg#Chat"></use>
+                              </svg>
                            </div>
-                           <div class="flex items-center justify-between gap-4">
-                           <div class="flex items-center gap-1"> <i class="w-5 h-5 stroke-primary" data-feather="message-circle"></i><span class="text-content">15</span></div>
-                         <div class="avatar-group -space-x-6">
-                         
-                           <div class="avatar">
-                              <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/2.jpg" alt="avatar"></div>
+                           <div class="avatar-group -space-x-6"> 
+                              <div class="avatar">
+                                 <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/12.jpg" alt="avatar"></div>
+                              </div>
+                              <div class="avatar">
+                                 <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/26.jpg" alt="avatar"></div>
+                              </div>
+                              <div class="avatar">
+                                 <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/3.jpg" alt="avatar"></div>
+                              </div>
+                              <div class="avatar">
+                                 <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/2.jpg" alt="avatar"></div>
+                              </div>
                            </div>
-                           
-                           <div class="avatar">
-                              <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/2.jpg" alt="avatar"></div>
-                           </div>
-                           
-                           <div class="avatar">
-                              <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/2.jpg" alt="avatar"></div>
-                           </div>
-                           </div>
-                        </div> 
                         </div>
                      </div>
-                  </div> 
-             </div>  
+                  </div>
+               </div>
+            </div>
                             `,
         },
         {
           title: `
-           <div class="kanban-box">
-                  <div class="kanab-item-1 p-5 2xl:p-4 border border-light bg-white rounded-5 flex flex-col gap-5 2xl:gap-3">
-                        <div class="flex items-center gap-2">
-                        <div class="min-w-3 w-3 min-h-3 h-3 rounded-full bg-success"></div>
-                           <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark">Working On Dark and Rtl of demo 2  </h5>
+          <div class="kanban-box w-full">
+            <div class="kanab-item-1 p-5 2xl:p-4 shadow-md bg-white rounded-5 flex flex-col gap-5 2xl:gap-3"> 
+                  <div class="flex justify-between"> 
+                        <div class="badge border border-primary text-primary rounded">NFT Design</div>  
+                        <div>
+                           <svg class="w-6 h-6 stroke-primary">
+                                 <use href="../../assets/svg/_sprite.svg#Plus"></use> 
+                           </svg>
                         </div>
-                        <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
-                           <div class="flex items-center gap-4">
-                           <div class="badge badge-success badge-outline rounded-5">success</div><span class="text-content">88%</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                     <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium">Looking for NFT design services?</h5>
+                  </div>
+                  <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
+                     <div class="flex items-center gap-4">
+                         <span class="text-content ">26 Jan 2022</span>
+                     </div> 
+                     <div class="flex items-center justify-between gap-4">
+                        <div class="flex items-center gap-2"> 
+                           <div class="flex items-center gap-1"> 
+                              <span class="text-content">161</span> 
+                              <svg class="w-5 h-5 stroke-content">
+                                 <use href="../../assets/svg/_sprite.svg#Chat"></use>
+                              </svg>
                            </div>
-                           <div class="flex items-center justify-between gap-4">
-                           <div class="flex items-center gap-1"> <i class="w-5 h-5 stroke-primary" data-feather="message-circle"></i><span class="text-content">15</span></div>
-                         <div class="avatar-group -space-x-6">
-                         
-                           <div class="avatar">
-                              <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/2.jpg" alt="avatar"></div>
+                           <div class="avatar-group -space-x-6"> 
+                              <div class="avatar">
+                                 <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/6.jpg" alt="avatar"></div>
+                              </div>
+                              <div class="avatar">
+                                 <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/9.jpg" alt="avatar"></div>
+                              </div>
+                              <div class="avatar">
+                                 <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/10.jpg" alt="avatar"></div>
+                              </div>
+                              <div class="avatar">
+                                 <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/12.jpg" alt="avatar"></div>
+                              </div>
                            </div>
-                           
-                           <div class="avatar">
-                              <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/5.jpg" alt="avatar"></div>
-                           </div>
-                           
-                           <div class="avatar">
-                              <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/7.jpg" alt="avatar"></div>
-                           </div>
-                           </div>
-                        </div> 
                         </div>
                      </div>
-                  </div> 
-             </div>  
+                  </div>
+               </div>
+            </div>
                             `,
         },
       ],
@@ -715,84 +840,157 @@ var kanban3 = new jKanban({
         {
           title: `
             <div class="kanban-box">
-                  <div class="kanab-item-1 p-5 2xl:p-4 border-l-4 border-l-success border border-light bg-white rounded-5 flex flex-col gap-5 2xl:gap-3">
-                        <div class="flex items-center gap-2">
-                        
-                        <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark">Final Test For The Design Issues </h5>
-                        </div>
-                        <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
-                           <div class="flex items-center gap-4">
-                           <div class="badge badge-success badge-outline rounded-5">Ideas</div><span class="text-content">48%</span>
-                           </div>
-                           <div class="flex items-center justify-between gap-4">
-                           <div class="flex items-center gap-1"> <i class="w-5 h-5 stroke-primary" data-feather="message-circle"></i><span class="text-content">7   </span></div>
-                           <div class="avatar">
-                              <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/3.jpg" alt="avatar"></div>
-                           </div>
+                  <div class="border-l-4 border-l-success border border-light bg-white rounded-5 flex flex-col gap-5 2xl:gap-3">
+                     <div class="w-full">
+                        <div class="kanab-item-1 p-5 2xl:p-4  bg-white rounded-5 flex flex-col gap-5 2xl:gap-3"> 
+                              <div class="flex justify-between"> 
+                                    <div class="badge border border-primary text-primary rounded">Research</div>  
+                                    <div>
+                                       <svg class="w-6 h-6 stroke-primary">
+                                             <use href="../../assets/svg/_sprite.svg#Plus"></use> 
+                                       </svg> 
+                                    </div>
+                              </div>
+                              <div class="flex items-center gap-2">
+                                 <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium">Step of Research Design</h5>
+                              </div>
+                              <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
+                                 <div class="flex items-center gap-4">
+                                     <span class="text-content ">23 Feb 2023</span>
+                                 </div> 
+                                 <div class="flex items-center justify-between gap-4">
+                                    <div class="flex items-center gap-2"> 
+                                       <div class="flex items-center gap-1"> 
+                                          <span class="text-content">261</span> 
+                                          <svg class="w-5 h-5 stroke-content">
+                                             <use href="../../assets/svg/_sprite.svg#Chat"></use>
+                                          </svg>
+                                       </div>
+                                    <div class="avatar-group -space-x-6"> 
+                                       <div class="avatar">
+                                          <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/9.jpg" alt="avatar"></div>
+                                       </div>
+                                       <div class="avatar">
+                                          <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/19.jpg" alt="avatar"></div>
+                                       </div>
+                                       <div class="avatar">
+                                          <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/15.jpg" alt="avatar"></div>
+                                       </div>
+                                       <div class="avatar">
+                                          <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/30.jpg" alt="avatar"></div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
                            </div>
                         </div>
                      </div>
-                     </div> 
+                  </div> 
              </div>
                `,
         },
         {
           title: ` 
           <div class="kanban-box">
-                  <div class="kanab-item-1 p-5 2xl:p-4 border-l-4 border-l-warning  border border-light bg-white rounded-5 flex flex-col gap-5 2xl:gap-3">
-                        <div class="flex items-center gap-2"> 
-                           <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark">Don't use unwanted extra div because is make dome bigger</h5>
-                        </div>
-                        <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
-                           <div class="flex items-center gap-4">
-                           <div class="badge badge-warning badge-outline rounded-5">Algorithm</div><span class="text-content">88%</span>
-                           </div>
-                           <div class="flex items-center justify-between gap-4">
-                           <div class="flex items-center gap-1"> <i class="w-5 h-5 stroke-primary" data-feather="message-circle"></i><span class="text-content">15</span></div>
-                         <div class="avatar-group -space-x-6">
-                         
-                           <div class="avatar">
-                              <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/6.jpg" alt="avatar"></div>
-                           </div>
-                           <div class="avatar">
-                              <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/4.jpg" alt="avatar"></div>
-                           </div>
-                           <div class="avatar">
-                              <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/2.jpg" alt="avatar"></div>
-                           </div>
-                           <div class="avatar">
-                              <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/3.jpg" alt="avatar"></div>
-                           </div>
-                           </div>
-                        </div> 
-                        </div>
-                     </div>
-                  </div> 
+          <div class="border-l-4 border-l-warning border border-light bg-white rounded-5 flex flex-col gap-5 2xl:gap-3">
+             <div class="w-full">
+                <div class="kanab-item-1 p-5 2xl:p-4  bg-white rounded-5 flex flex-col gap-5 2xl:gap-3"> 
+                      <div class="flex justify-between"> 
+                            <div class="badge border border-warning text-warning rounded">Code</div>  
+                            <div>
+                               <svg class="w-6 h-6 stroke-warning"> 
+                                     <use href="../../assets/svg/_sprite.svg#Plus"></use> 
+                               </svg> 
+                            </div>
+                      </div>
+                      <div class="flex items-center gap-2">
+                         <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium">Research for Order</h5>
+                      </div>
+                      <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
+                         <div class="flex items-center gap-4">
+                             <span class="text-content ">5 Jan 2023</span>
+                         </div> 
+                         <div class="flex items-center justify-between gap-4">
+                            <div class="flex items-center gap-2"> 
+                               <div class="flex items-center gap-1"> 
+                                  <span class="text-content">21</span> 
+                                  <svg class="w-5 h-5 stroke-content">
+                                     <use href="../../assets/svg/_sprite.svg#Chat"></use>
+                                  </svg>
+                               </div>
+                            <div class="avatar-group -space-x-6"> 
+                               <div class="avatar">
+                                  <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/19.jpg" alt="avatar"></div>
+                               </div>
+                               <div class="avatar">
+                                  <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/20.jpg" alt="avatar"></div>
+                               </div>
+                               <div class="avatar">
+                                  <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/21.jpg" alt="avatar"></div>
+                               </div>
+                               <div class="avatar">
+                                  <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/22.jpg" alt="avatar"></div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
              </div>
+          </div> 
+     </div>
                             `,
         },
         {
           title: ` 
           <div class="kanban-box">
-                  <div class="kanab-item-1 p-5 2xl:p-4 border-l-4 border-l-danger  border border-light bg-white rounded-5 flex flex-col gap-5 2xl:gap-3">
-                        <div class="flex items-center gap-2">
-                        
-                           <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark">Not Proper Responsive ro Some Screen</h5>
-                        </div>
-                        <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between">  
-                           <div class="flex items-center gap-4"> 
-                           <div class="badge badge-error badge-outline rounded-5">Issues</div><span class="text-content">48%</span>
-                           </div>
-                           <div class="flex items-center justify-between gap-4">
-                           <div class="flex items-center gap-1"> <i class="w-5 h-5 stroke-primary" data-feather="message-circle"></i><span class="text-content">34</span></div>
-                           <div class="avatar">
-                              <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/2.jpg" alt="avatar"></div>
-                           </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div> 
+          <div class="border-l-4 border-l-danger border border-light bg-white rounded-5 flex flex-col gap-5 2xl:gap-3">
+             <div class="w-full">
+                <div class="kanab-item-1 p-5 2xl:p-4  bg-white rounded-5 flex flex-col gap-5 2xl:gap-3"> 
+                      <div class="flex justify-between"> 
+                            <div class="badge border border-danger text-danger rounded">Redesign</div>  
+                            <div>
+                               <svg class="w-6 h-6 stroke-danger"> 
+                                     <use href="../../assets/svg/_sprite.svg#Plus"></use> 
+                               </svg> 
+                            </div>
+                      </div>
+                      <div class="flex items-center gap-2">
+                         <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium">Redesign for home page</h5>
+                      </div>
+                      <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
+                         <div class="flex items-center gap-4">
+                             <span class="text-content ">25 Feb 2022</span>
+                         </div>
+                         <div class="flex items-center justify-between gap-4">
+                            <div class="flex items-center gap-2"> 
+                               <div class="flex items-center gap-1"> 
+                                  <span class="text-content">251</span> 
+                                  <svg class="w-5 h-5 stroke-content">
+                                     <use href="../../assets/svg/_sprite.svg#Chat"></use>
+                                  </svg> 
+                               </div>
+                            <div class="avatar-group -space-x-6"> 
+                               <div class="avatar">
+                                  <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/26.jpg" alt="avatar"></div>
+                               </div>
+                               <div class="avatar">
+                                  <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/27.jpg" alt="avatar"></div>
+                               </div>
+                               <div class="avatar">
+                                  <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/28.jpg" alt="avatar"></div>
+                               </div>
+                               <div class="avatar">
+                                  <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/29.jpg" alt="avatar"></div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
              </div>
+          </div> 
+     </div>
                             `,
         },
       ],
@@ -804,34 +1002,54 @@ var kanban3 = new jKanban({
       item: [
         {
           title: `
-               <div class="kanban-box">
-                  <div class="kanab-item-1 p-5 2xl:p-4 border-l-4 border-l-info border border-light bg-white rounded-5 flex flex-col gap-5 2xl:gap-3">
-                        <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center gap-2">
-                       
-                           <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark">Testing dark and rtl  </h5>
-                        </div>
-                        <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
-                           <div class="flex items-center gap-4">
-                           <div class="badge badge-info badge-outline rounded-5">info</div><span class="text-content">88%</span>
-                           </div>
-                           <div class="flex items-center justify-between gap-4">
-                           <div class="flex items-center gap-1"> <i class="w-5 h-5 stroke-primary" data-feather="message-circle"></i><span class="text-content">35</span></div>
-                         <div class="avatar-group -space-x-6">
-                         
-                           <div class="avatar">
-                              <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/5.jpg" alt="avatar"></div>
-                           </div>
-                           
-                           <div class="avatar">
-                              <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/3.jpg" alt="avatar"></div>
-                           </div>
-                           </div>
-                        </div> 
-                        </div>
-                     </div>
-                  </div> 
-             </div>                  
-
+          <div class="kanban-box">
+          <div class="border-l-4 border-l-info border border-light bg-white rounded-5 flex flex-col gap-5 2xl:gap-3">
+             <div class="w-full">
+                <div class="kanab-item-1 p-5 2xl:p-4  bg-white rounded-5 flex flex-col gap-5 2xl:gap-3"> 
+                      <div class="flex justify-between"> 
+                            <div class="badge border border-info text-info rounded">HI-FI</div>  
+                           <div>
+                               <svg class="w-6 h-6 stroke-info"> 
+                                     <use href="../../assets/svg/_sprite.svg#Plus"></use> 
+                               </svg> 
+                            </div>
+                      </div>
+                      <div class="flex items-center gap-2">
+                         <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium">Code html template</h5>
+                      </div>
+                      <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
+                         <div class="flex items-center gap-4">
+                             <span class="text-content ">16 Feb 2022</span>
+                         </div>
+                         <div class="flex items-center justify-between gap-4">
+                            <div class="flex items-center gap-2"> 
+                               <div class="flex items-center gap-1"> 
+                                  <span class="text-content">261</span> 
+                                  <svg class="w-5 h-5 stroke-content">
+                                     <use href="../../assets/svg/_sprite.svg#Chat"></use>
+                                  </svg> 
+                               </div>
+                            <div class="avatar-group -space-x-6"> 
+                               <div class="avatar">
+                                  <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/20.jpg" alt="avatar"></div>
+                               </div>
+                               <div class="avatar">
+                                  <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/21.jpg" alt="avatar"></div>
+                               </div>
+                               <div class="avatar">
+                                  <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/23.jpg" alt="avatar"></div>
+                               </div>
+                               <div class="avatar">
+                                  <div class="rounded-full w-7 h-7"><img src="../../assets/images/avatar/24.jpg" alt="avatar"></div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div> 
+     </div>
                             `,
         },
         {
