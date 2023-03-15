@@ -338,3 +338,47 @@ todoList?.forEach((el) => {
       this.closest('.invoice-item , .cart-item').style.display = 'none';
     });
   });
+
+/*=====================
+Following js
+==========================*/
+
+const followFriend = document.querySelectorAll('.follow-friend');
+followFriend?.forEach((el) => {
+  const followButton = el.querySelector('.follow-btn');
+  followButton.addEventListener('click', function () {
+    followButton.innerHTML = `<btn style="background-color: #44588f; color:white; padding:4px; border-radius:4px">Following<btn>`;
+    followButton.style.padding = "0px";
+  });
+});
+
+
+/*=====================
+Add Friends js
+==========================*/
+
+const addFriend = document.querySelectorAll('.add-friend');
+addFriend?.forEach((el) => {
+  const addButton = el.querySelector('.add-btn');
+  addButton.addEventListener('click', function () {
+    addButton.innerHTML = `<btn style="background-color: #FF6150; color:white; padding:4px; border-radius:4px">Added<btn>`;
+    addButton.style.padding = "0px";
+
+  });
+});
+
+/*=====================
+suggestion js
+==========================*/
+
+const suggest = document.querySelectorAll('.suggest-friend');
+suggest?.forEach((el) => {
+  const suggestButton = el.querySelector('.suggest-btn');
+  suggestButton.addEventListener('click', function () {
+    suggestButton.innerHTML = `<svg class="w-6 h-6 stroke-white bg-primary p-1">
+                                <use href="../../assets/svg/_sprite.svg#Profile"></use> 
+                              </svg>`;
+    suggestButton.style.padding = "0px";
+    
+  });
+});
