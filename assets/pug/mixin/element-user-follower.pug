@@ -57,7 +57,7 @@ mixin user_suggestion(data)
     div.card
         div.card-header.flex.justify-between.items-center.gap-1
             h6(class="font-bold") Suggestions
-            a(href="javascript:void(0)").btn.bg-gray-light.p-1 
+            label.btn.bg-gray-light.p-1.cursor-pointer(for='suggest-modal') 
                 i(data-feather="plus" class="w-4 h-4 stroke-title") 
         div.card-body
             ul.flex.flex-col.gap-3 
@@ -76,7 +76,7 @@ mixin user_friend(data)
     div.card
         div.card-header.flex.justify-between.items-center.gap-1 
             h6(class="font-bold") Friends
-            a(href="javascript:void(0)").btn.bg-gray-light.p-1 
+            label.btn.bg-gray-light.p-1.cursor-pointer(for='add-friend-modal') 
                 i(data-feather="plus" class="w-4 h-4 stroke-title")                         
         div.card-body
             ul.flex.flex-col.gap-3 
@@ -94,8 +94,8 @@ mixin user_follower(data)
     div.card
         div.card-header.flex.justify-between.items-center.gap-1 
             h6(class="font-bold") Followers
-            a(href="javascript:void(0)").btn.bg-gray-light.p-1 
-                i(data-feather="plus" class="w-4 h-4 stroke-title")                       
+            label.btn.bg-gray-light.p-1.cursor-pointer(for='follow-modal') 
+                i(data-feather="plus" class="w-4 h-4 stroke-title")                        
         div.card-body
             ul.flex.flex-col.gap-3 
                 each item in data 

@@ -3612,6 +3612,65 @@ code[class*="language-"],
   margin: 0px;
   padding: 0px;
 }
+.data-map {
+  height: 31.25rem;
+  width: 100%;
+}
+@media (max-width: 1599px) {
+  .data-map {
+    height: 20rem;
+  }
+}
+@media (max-width: 991px) {
+  .data-map {
+    height: 25rem;
+  }
+}
+@media (max-width: 575px) {
+  .data-map {
+    height: 15.625rem;
+  }
+}
+.data-map-glob {
+  height: 40.625rem;
+  width: 100%;
+}
+@media (max-width: 675px) {
+  .data-map-glob {
+    height: 20.25rem;
+  }
+}
+.data-map-glob svg {
+  margin-top: -5%;
+}
+@media (max-width: 991px) {
+  .data-map-glob svg {
+    margin-top: -10%;
+  }
+}
+@media (max-width: 675px) {
+  .data-map-glob svg {
+    margin-top: 5%;
+  }
+}
+.map-js-height {
+  height: 31.25rem;
+}
+@media (max-width: 1399px) {
+  .map-js-height {
+    height: 21.875rem;
+  }
+}
+@media (max-width: 575px) {
+  .map-js-height {
+    height: 16.25rem;
+  }
+}
+.map-js-height .leaflet-control-container .leaflet-top .leaflet-control-zoom a span {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.03125rem;
+}
 .page-header .hide {
   display: none;
 }
@@ -6085,6 +6144,9 @@ code[class*="language-"],
 .hidden {
   display: none;
 }
+.\!h-\[1\.15rem\] {
+  height: 1.15rem !important;
+}
 .\!h-\[400px\] {
   height: 400px !important;
 }
@@ -6394,12 +6456,6 @@ code[class*="language-"],
 .h-max {
   height: -moz-max-content;
   height: max-content;
-}
-.h-\[1\.15rem\] {
-  height: 1.15rem;
-}
-.\!h-\[1\.15rem\] {
-  height: 1.15rem !important;
 }
 .max-h-\[120px\] {
   max-height: 120px;
@@ -6828,6 +6884,9 @@ code[class*="language-"],
 .min-w-\[\.625rem\] {
   min-width: .625rem;
 }
+.min-w-\[1\.15rem\] {
+  min-width: 1.15rem;
+}
 .min-w-\[1\.25rem\] {
   min-width: 1.25rem;
 }
@@ -6991,12 +7050,6 @@ code[class*="language-"],
 .min-w-max {
   min-width: -moz-max-content;
   min-width: max-content;
-}
-.min-w-\[1\.10rem\] {
-  min-width: 1.10rem;
-}
-.min-w-\[1\.15rem\] {
-  min-width: 1.15rem;
 }
 .max-w-2xl {
   max-width: 42rem;
@@ -7235,9 +7288,6 @@ code[class*="language-"],
 .flex-col {
   flex-direction: column;
 }
-.\!flex-col {
-  flex-direction: column !important;
-}
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -7279,6 +7329,9 @@ code[class*="language-"],
 }
 .\!gap-2 {
   gap: 0.5rem !important;
+}
+.\!gap-4 {
+  gap: 1rem !important;
 }
 .gap-0 {
   gap: 0px;
@@ -7382,11 +7435,13 @@ code[class*="language-"],
 .gap-card-space {
   gap: calc(0.9375rem + (1.0625 - 0.9375) * ((100vw - 20rem) / (120 - 20)));
 }
-.\!gap-4 {
-  gap: 1rem !important;
-}
 .gap-y-\[0\.25rem\] {
   row-gap: 0.25rem;
+}
+.-space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(-1rem * var(--tw-space-x-reverse));
+  margin-left: calc(-1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .-space-x-5 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -10431,6 +10486,9 @@ code[class*="language-"],
 /*=====================
   Tooltip CSS
   ==========================*/
+/*=====================
+    Map css
+  ==========================*/
 /* Layout  */
 /*=====================
   Sidebar CSS
@@ -10741,17 +10799,17 @@ code[class*="language-"],
   content: var(--tw-content);
   left: 50%;
 }
+.before\:\!h-3::before {
+  content: var(--tw-content);
+  height: 0.75rem !important;
+}
 .before\:h-\[2px\]::before {
   content: var(--tw-content);
   height: 2px;
 }
-.before\:h-3::before {
+.before\:\!w-3::before {
   content: var(--tw-content);
-  height: 0.75rem;
-}
-.before\:\!h-3::before {
-  content: var(--tw-content);
-  height: 0.75rem !important;
+  width: 0.75rem !important;
 }
 .before\:w-0::before {
   content: var(--tw-content);
@@ -10760,14 +10818,6 @@ code[class*="language-"],
 .before\:w-full::before {
   content: var(--tw-content);
   width: 100%;
-}
-.before\:w-3::before {
-  content: var(--tw-content);
-  width: 0.75rem;
-}
-.before\:\!w-3::before {
-  content: var(--tw-content);
-  width: 0.75rem !important;
 }
 .before\:-translate-x-1\/2::before {
   content: var(--tw-content);
@@ -11544,17 +11594,17 @@ code[class*="language-"],
   .\34xl\:col-span-4 {
     grid-column: span 4 / span 4;
   }
-  .\34xl\:col-span-6 {
-    grid-column: span 6 / span 6;
-  }
-  .\34xl\:col-span-8 {
-    grid-column: span 8 / span 8;
-  }
   .\34xl\:col-span-5 {
     grid-column: span 5 / span 5;
   }
+  .\34xl\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
   .\34xl\:col-span-7 {
     grid-column: span 7 / span 7;
+  }
+  .\34xl\:col-span-8 {
+    grid-column: span 8 / span 8;
   }
   .\34xl\:-mt-\[37px\] {
     margin-top: -37px;
@@ -12958,13 +13008,13 @@ code[class*="language-"],
   .\32md\:min-w-\[65px\] {
     min-width: 65px;
   }
-  .\32md\:min-w-max {
-    min-width: -moz-max-content;
-    min-width: max-content;
-  }
   .\32md\:min-w-fit {
     min-width: -moz-fit-content;
     min-width: fit-content;
+  }
+  .\32md\:min-w-max {
+    min-width: -moz-max-content;
+    min-width: max-content;
   }
   .\32md\:max-w-\[60\%\] {
     max-width: 60%;

@@ -41,6 +41,7 @@
 @import "components/_tooltip.css";
 @import "components/_weekly-shedual.css";
 @import "components/_kanban.css";
+@import "components/_map.css";
 
 /* Layout  */
 @import "layout/_header.css";

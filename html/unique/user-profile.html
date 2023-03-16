@@ -1108,10 +1108,17 @@
                         <use href="../../assets/svg/_sprite.svg#Scan"> </use>
                       </svg><span>Knowledgebase</span></span></a>
                 </li>
-                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="map.html"><span> 
+                <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="javascript:void(0)"><span> 
                       <svg> 
                         <use href="../../assets/svg/_sprite.svg#Location"> </use>
-                      </svg><span>Map</span></span></a>
+                      </svg><span>Map</span></span>
+                    <svg> 
+                      <use href="../../assets/svg/_sprite.svg#Arrow-Right-2"> </use>
+                    </svg></a>
+                  <ul class="sidebar-submenu">
+                    <li> <a href="./maps-js.html">Maps Js</a></li>
+                    <li> <a href="./data-map.html">Data Map</a></li>
+                  </ul>
                 </li>
               </ul>
             </nav>
@@ -1189,7 +1196,8 @@
                 <div class="col-span-12 lg:col-span-6 2md:col-span-12 lg:order-2">
                   <div class="card">
                     <div class="card-header flex justify-between items-center gap-1">
-                      <h6 class="font-bold">Suggestions</h6><a class="btn bg-gray-light p-1" href="javascript:void(0)"> <i class="w-4 h-4 stroke-title" data-feather="plus"> </i></a>
+                      <h6 class="font-bold">Suggestions</h6>
+                      <label class="btn bg-gray-light p-1 cursor-pointer" for="suggest-modal"> <i class="w-4 h-4 stroke-title" data-feather="plus"> </i></label>
                     </div>
                     <div class="card-body">
                       <ul class="flex flex-col gap-3"> 
@@ -1233,7 +1241,8 @@
                 <div class="col-span-12 lg:col-span-6 2md:col-span-12 lg:order-2">
                   <div class="card">
                     <div class="card-header flex justify-between items-center gap-1"> 
-                      <h6 class="font-bold">Friends</h6><a class="btn bg-gray-light p-1" href="javascript:void(0)"> <i class="w-4 h-4 stroke-title" data-feather="plus">                        </i></a>
+                      <h6 class="font-bold">Friends</h6>
+                      <label class="btn bg-gray-light p-1 cursor-pointer" for="add-friend-modal"> <i class="w-4 h-4 stroke-title" data-feather="plus">                        </i></label>
                     </div>
                     <div class="card-body">
                       <ul class="flex flex-col gap-3"> 
@@ -1268,7 +1277,8 @@
                 <div class="col-span-12 lg:col-span-6 2md:col-span-12 lg:order-2">
                   <div class="card">
                     <div class="card-header flex justify-between items-center gap-1"> 
-                      <h6 class="font-bold">Followers</h6><a class="btn bg-gray-light p-1" href="javascript:void(0)"> <i class="w-4 h-4 stroke-title" data-feather="plus">                      </i></a>
+                      <h6 class="font-bold">Followers</h6>
+                      <label class="btn bg-gray-light p-1 cursor-pointer" for="follow-modal"> <i class="w-4 h-4 stroke-title" data-feather="plus">                       </i></label>
                     </div>
                     <div class="card-body">
                       <ul class="flex flex-col gap-3"> 
@@ -1684,12 +1694,12 @@
               </div>
             </div>
           </div>
-          <!-- Page Body End  -->
-          <div class="page-footer sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap"> 
-            <p class="text-xs font-semibold text-center text-content">Copyright 2023 © Govo theme by pixelstrap</p>
-            <div class="flex items-center gap-2"> 
-              <p class="text-xs font-semibold text-center text-content">Hand crafted & made with</p><i class="stroke-danger h-[18px] w-[18px] fill-danger" data-feather="heart"></i>
-            </div>
+        </div>
+        <!-- Page Body End  -->
+        <div class="page-footer sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap"> 
+          <p class="text-xs font-semibold text-center text-content">Copyright 2023 © Govo theme by pixelstrap</p>
+          <div class="flex items-center gap-2"> 
+            <p class="text-xs font-semibold text-center text-content">Hand crafted & made with</p><i class="stroke-danger h-[18px] w-[18px] fill-danger" data-feather="heart"></i>
           </div>
         </div>
       </div>
@@ -1764,6 +1774,186 @@
         <div class="flex items-center gap-2 p-[15px] border-t border-light dark:bg-primaryLight"> 
           <button class="btn btn-ghost flex-1 reset-customizer">Reset  </button>
           <button class="btn btn-primary text-white flex-1">Buy Now</button>
+        </div>
+      </div>
+      <div class="modal-main">
+        <input class="peer" id="suggest-modal" name="suggest-modal" type="checkbox">
+        <label class="modal-overlay peer-checked:block" for="suggest-modal"></label>
+        <div class="modal modal-center peer-checked:opacity-100 peer-checked:visible w-full max-w-sm">
+          <div class="modal-body">
+            <form class="flex flex-col gap-4 !m-0">
+              <div class="modal-img"><img class="w-16" src="../../assets/images/user-app/send-1.gif" alt="send"></div>
+              <h5 class="text-center font-semibold">Add team member or new ones</h5>
+              <div class="search-box relative">
+                <input class="border border-border-light rounded-5 w-full py-[11px] pl-[25px] pr-[55px]  text-xs font-semibold text-title" placeholder="Type to Search..." type="search">
+                <svg class="xl:hidden w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 right-[25px] absolute"> 
+                  <use href="../../assets/svg/_sprite.svg#Search"> </use>
+                </svg><i class="search-close hidden cursor-pointer xl:block w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 right-[25px] absolute" data-feather="x"></i>
+              </div>
+              <ul class="flex flex-col gap-3"> 
+                <li class="flex justify-between items-center suggest-friend">
+                  <div class="flex items-center gap-2 w-full">
+                    <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/user-app/17.png" alt="user"></div>
+                    <div class="w-[calc(100%_-_52px)]"> 
+                      <p class="text-title text-xs font-semibold">Gretchen Harvey</p><span class="text-content3 font-semibold text-2xs">Web Developer</span>
+                    </div>
+                  </div><a class="btn btn-primary btn-outline p-1 group suggest-btn" href="javascript:void(0)">
+                    <svg class="w-4 h-4 stroke-primary group-hover:stroke-white"> 
+                      <use href="../../assets/svg/_sprite.svg#Profile"> </use>
+                    </svg></a>
+                </li>
+                <li class="flex justify-between items-center suggest-friend">
+                  <div class="flex items-center gap-2 w-full">
+                    <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/user-app/16.png" alt="user"></div>
+                    <div class="w-[calc(100%_-_52px)]"> 
+                      <p class="text-title text-xs font-semibold">Raegan Corkery</p><span class="text-content3 font-semibold text-2xs">Fullstack Developer</span>
+                    </div>
+                  </div><a class="btn btn-primary btn-outline p-1 group suggest-btn" href="javascript:void(0)">
+                    <svg class="w-4 h-4 stroke-primary group-hover:stroke-white"> 
+                      <use href="../../assets/svg/_sprite.svg#Profile"> </use>
+                    </svg></a>
+                </li>
+                <li class="flex justify-between items-center suggest-friend">
+                  <div class="flex items-center gap-2 w-full">
+                    <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/user-app/21.png" alt="user"></div>
+                    <div class="w-[calc(100%_-_52px)]"> 
+                      <p class="text-title text-xs font-semibold">Josue Smith</p><span class="text-content3 font-semibold text-2xs">Fullstack Developer</span>
+                    </div>
+                  </div><a class="btn btn-primary btn-outline p-1 group suggest-btn" href="javascript:void(0)">
+                    <svg class="w-4 h-4 stroke-primary group-hover:stroke-white"> 
+                      <use href="../../assets/svg/_sprite.svg#Profile"> </use>
+                    </svg></a>
+                </li>
+                <li class="flex justify-between items-center suggest-friend">
+                  <div class="flex items-center gap-2 w-full">
+                    <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/user-app/18.png" alt="user"></div>
+                    <div class="w-[calc(100%_-_52px)]"> 
+                      <p class="text-title text-xs font-semibold">Abdul Volkman</p><span class="text-content3 font-semibold text-2xs">Web Developer</span>
+                    </div>
+                  </div><a class="btn btn-primary btn-outline p-1 group suggest-btn" href="javascript:void(0)">
+                    <svg class="w-4 h-4 stroke-primary group-hover:stroke-white"> 
+                      <use href="../../assets/svg/_sprite.svg#Profile"> </use>
+                    </svg></a>
+                </li>
+              </ul>
+              <div class="justify-end flex items-center gap-3">
+                <label class="btn bg-gray-light p-2 text-title" for="suggest-modal">Save                                </label>
+                <label class="btn bg-success p-2 text-white" for="suggest-modal">Cancel                                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal-main">
+        <input class="peer" id="add-friend-modal" name="add-friend-modal" type="checkbox">
+        <label class="modal-overlay peer-checked:block" for="add-friend-modal"></label>
+        <div class="modal modal-center peer-checked:opacity-100 peer-checked:visible w-full max-w-sm">
+          <div class="modal-body">
+            <form class="flex flex-col gap-4 !m-0">
+              <div class="modal-img"><img class="w-16" src="../../assets/images/user-app/send-1.gif" alt="send"></div>
+              <h5 class="text-center font-semibold">Add team member or new ones</h5>
+              <div class="search-box relative">
+                <input class="border border-border-light rounded-5 w-full py-[11px] pl-[25px] pr-[55px]  text-xs font-semibold text-title" placeholder="Type to Search..." type="search">
+                <svg class="xl:hidden w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 right-[25px] absolute"> 
+                  <use href="../../assets/svg/_sprite.svg#Search"> </use>
+                </svg><i class="search-close hidden cursor-pointer xl:block w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 right-[25px] absolute" data-feather="x"></i>
+              </div>
+              <ul class="flex flex-col gap-3"> 
+                <li class="flex justify-between items-center add-friend">
+                  <div class="flex items-center gap-2 w-full">
+                    <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/user-app/14.png" alt="user"></div>
+                    <div class="w-[calc(100%_-_52px)]"> 
+                      <p class="text-title text-xs font-semibold">Tiana Baumbach</p><span class="text-content3 font-semibold text-2xs">Web Designer</span>
+                    </div>
+                  </div><a class="add-btn btn bg-gray-light p-2" href="javascript:void(0)"> Add</a>
+                </li>
+                <li class="flex justify-between items-center add-friend">
+                  <div class="flex items-center gap-2 w-full">
+                    <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/user-app/19.png" alt="user"></div>
+                    <div class="w-[calc(100%_-_52px)]"> 
+                      <p class="text-title text-xs font-semibold">Ally Kshlerin</p><span class="text-content3 font-semibold text-2xs">Fullstack Developer</span>
+                    </div>
+                  </div><a class="add-btn btn bg-gray-light p-2" href="javascript:void(0)"> Add</a>
+                </li>
+                <li class="flex justify-between items-center add-friend">
+                  <div class="flex items-center gap-2 w-full">
+                    <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/user-app/23.png" alt="user"></div>
+                    <div class="w-[calc(100%_-_52px)]"> 
+                      <p class="text-title text-xs font-semibold">Werner Barrows</p><span class="text-content3 font-semibold text-2xs">Fullstack Developer</span>
+                    </div>
+                  </div><a class="add-btn btn bg-gray-light p-2" href="javascript:void(0)"> Add</a>
+                </li>
+                <li class="flex justify-between items-center add-friend">
+                  <div class="flex items-center gap-2 w-full">
+                    <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/user-app/15.png" alt="user"></div>
+                    <div class="w-[calc(100%_-_52px)]"> 
+                      <p class="text-title text-xs font-semibold">Tiana Baumbach</p><span class="text-content3 font-semibold text-2xs">Web Designer</span>
+                    </div>
+                  </div><a class="add-btn btn bg-gray-light p-2" href="javascript:void(0)"> Add</a>
+                </li>
+              </ul>
+              <div class="justify-end flex items-center gap-3">
+                <label class="btn bg-gray-light p-2 text-title" for="add-friend-modal">Save                                </label>
+                <label class="btn bg-secondary p-2 text-white" for="add-friend-modal">Cancel                               </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal-main">
+        <input class="peer" id="follow-modal" name="follow-modal" type="checkbox">
+        <label class="modal-overlay peer-checked:block" for="follow-modal"></label>
+        <div class="modal modal-center peer-checked:opacity-100 peer-checked:visible w-full max-w-sm">
+          <div class="modal-body">
+            <form class="flex flex-col gap-4 !m-0">
+              <div class="modal-img"><img class="w-16" src="../../assets/images/user-app/send-1.gif" alt="send"></div>
+              <h5 class="text-center font-semibold">Follow team member or new ones</h5>
+              <div class="search-box relative">
+                <input class="border border-border-light rounded-5 w-full py-[11px] pl-[25px] pr-[55px]  text-xs font-semibold text-title" placeholder="Type to Search..." type="search">
+                <svg class="xl:hidden w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 right-[25px] absolute"> 
+                  <use href="../../assets/svg/_sprite.svg#Search"> </use>
+                </svg><i class="search-close hidden cursor-pointer xl:block w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 right-[25px] absolute" data-feather="x"></i>
+              </div>
+              <ul class="flex flex-col gap-3"> 
+                <li class="flex justify-between items-center follow-friend">
+                  <div class="flex items-center gap-2 w-full">
+                    <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/user-app/20.png" alt="user"></div>
+                    <div class="w-[calc(100%_-_52px)]"> 
+                      <p class="text-title text-xs font-semibold">Patricia Kulas</p><span class="text-content3 font-semibold text-2xs">Fullstack Developer</span>
+                    </div>
+                  </div><a class="follow-btn btn bg-gray-light p-2" href="javascript:void(0)"> Follow</a>
+                </li>
+                <li class="flex justify-between items-center follow-friend">
+                  <div class="flex items-center gap-2 w-full">
+                    <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/user-app/21.png" alt="user"></div>
+                    <div class="w-[calc(100%_-_52px)]"> 
+                      <p class="text-title text-xs font-semibold">Josue Smith</p><span class="text-content3 font-semibold text-2xs">Fullstack Developer</span>
+                    </div>
+                  </div><a class="follow-btn btn bg-gray-light p-2" href="javascript:void(0)"> Follow</a>
+                </li>
+                <li class="flex justify-between items-center follow-friend">
+                  <div class="flex items-center gap-2 w-full">
+                    <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/user-app/16.png" alt="user"></div>
+                    <div class="w-[calc(100%_-_52px)]"> 
+                      <p class="text-title text-xs font-semibold">Raegan Corkery</p><span class="text-content3 font-semibold text-2xs">Fullstack Developer</span>
+                    </div>
+                  </div><a class="follow-btn btn bg-gray-light p-2" href="javascript:void(0)"> Follow</a>
+                </li>
+                <li class="flex justify-between items-center follow-friend">
+                  <div class="flex items-center gap-2 w-full">
+                    <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/user-app/18.png" alt="user"></div>
+                    <div class="w-[calc(100%_-_52px)]"> 
+                      <p class="text-title text-xs font-semibold">Abdul Volkman</p><span class="text-content3 font-semibold text-2xs">Web Developer</span>
+                    </div>
+                  </div><a class="follow-btn btn bg-gray-light p-2" href="javascript:void(0)"> Follow                     </a>
+                </li>
+              </ul>
+              <div class="justify-end flex items-center gap-3">
+                <label class="btn bg-gray-light p-2 text-title" for="follow-modal">Save                                </label>
+                <label class="btn bg-dark p-2 text-white" for="follow-modal">Cancel                                </label>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </main>

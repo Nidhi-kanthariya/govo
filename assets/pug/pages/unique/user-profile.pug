@@ -480,7 +480,167 @@ html(lang='en')
                                              
                                 
                     
-                    // Page Body End  
-                    +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
+                // Page Body End  
+                +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
             include ../../components/customizer
+
+            //- Suggest modal
+            div.modal-main
+                input#suggest-modal(class="peer" name="suggest-modal" type='checkbox')
+                label.modal-overlay(class="peer-checked:block" for='suggest-modal')
+                div.modal.modal-center(class="peer-checked:opacity-100 peer-checked:visible w-full max-w-sm")
+                    div.modal-body
+                        form.flex.flex-col.gap-4(class="!m-0")
+                            div.modal-img
+                                img(class="" src="../../assets/images/user-app/send-1.gif" alt="send" class="w-16")               
+                            h5.text-center.font-semibold Add team member or new ones
+                            div.search-box.relative
+                                input(class="border border-border-light rounded-5 w-full py-[11px] pl-[25px] pr-[55px]  text-xs font-semibold text-title" placeholder="Type to Search..." type="search")       
+                                +SVG_ICON("Search","xl:hidden w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 right-[25px] absolute")
+                                i(data-feather="x" class="search-close hidden cursor-pointer xl:block w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 right-[25px] absolute")
+                            ul.flex.flex-col.gap-3 
+                                li.flex.justify-between.items-center.suggest-friend
+                                    div.flex.items-center.gap-2.w-full
+                                        div.avatar.rounded-full(class="w-10 h-10")
+                                            img(src=`../../assets/images/user-app/17.png` alt=`user`)                                                      
+                                        div(class="w-[calc(100%_-_52px)]") 
+                                            p.text-title(class="text-xs font-semibold") Gretchen Harvey
+                                            span.text-content3(class="font-semibold text-2xs") Web Developer
+                                    a(href="javascript:void(0)").btn.btn-primary.btn-outline.p-1.group.suggest-btn
+                                        +SVG_ICON("Profile", "w-4 h-4 stroke-primary group-hover:stroke-white") 
+                                li.flex.justify-between.items-center.suggest-friend
+                                    div.flex.items-center.gap-2.w-full
+                                        div.avatar.rounded-full(class="w-10 h-10")
+                                            img(src=`../../assets/images/user-app/16.png` alt=`user`)                                                      
+                                        div(class="w-[calc(100%_-_52px)]") 
+                                            p.text-title(class="text-xs font-semibold") Raegan Corkery
+                                            span.text-content3(class="font-semibold text-2xs") Fullstack Developer
+                                    a(href="javascript:void(0)").btn.btn-primary.btn-outline.p-1.group.suggest-btn
+                                        +SVG_ICON("Profile", "w-4 h-4 stroke-primary group-hover:stroke-white") 
+                                li.flex.justify-between.items-center.suggest-friend
+                                    div.flex.items-center.gap-2.w-full
+                                        div.avatar.rounded-full(class="w-10 h-10")
+                                            img(src=`../../assets/images/user-app/21.png` alt=`user`)                                                      
+                                        div(class="w-[calc(100%_-_52px)]") 
+                                            p.text-title(class="text-xs font-semibold") Josue Smith
+                                            span.text-content3(class="font-semibold text-2xs") Fullstack Developer
+                                    a(href="javascript:void(0)").btn.btn-primary.btn-outline.p-1.group.suggest-btn
+                                        +SVG_ICON("Profile", "w-4 h-4 stroke-primary group-hover:stroke-white") 
+                                li.flex.justify-between.items-center.suggest-friend
+                                    div.flex.items-center.gap-2.w-full
+                                        div.avatar.rounded-full(class="w-10 h-10")
+                                            img(src=`../../assets/images/user-app/18.png` alt=`user`)                                                      
+                                        div(class="w-[calc(100%_-_52px)]") 
+                                            p.text-title(class="text-xs font-semibold") Abdul Volkman
+                                            span.text-content3(class="font-semibold text-2xs") Web Developer
+                                    a(href="javascript:void(0)").btn.btn-primary.btn-outline.p-1.group.suggest-btn
+                                        +SVG_ICON("Profile", "w-4 h-4 stroke-primary group-hover:stroke-white") 
+                            div(class="justify-end flex items-center gap-3")
+                                label(for="suggest-modal").btn.bg-gray-light.p-2.text-title Save                                
+                                label(for="suggest-modal").btn.bg-success.p-2.text-white Cancel                                
+
+            //- Add friends modal
+            div.modal-main
+                input#add-friend-modal(class="peer" name="add-friend-modal" type='checkbox')
+                label.modal-overlay(class="peer-checked:block" for='add-friend-modal')
+                div.modal.modal-center(class="peer-checked:opacity-100 peer-checked:visible w-full max-w-sm")
+                    div.modal-body
+                        form.flex.flex-col.gap-4(class="!m-0")
+                            div.modal-img
+                                img(class="" src="../../assets/images/user-app/send-1.gif" alt="send" class="w-16") 
+                            h5.text-center.font-semibold Add team member or new ones
+                            div.search-box.relative
+                                input(class="border border-border-light rounded-5 w-full py-[11px] pl-[25px] pr-[55px]  text-xs font-semibold text-title" placeholder="Type to Search..." type="search")       
+                                +SVG_ICON("Search","xl:hidden w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 right-[25px] absolute")
+                                i(data-feather="x" class="search-close hidden cursor-pointer xl:block w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 right-[25px] absolute")
+                            ul.flex.flex-col.gap-3 
+                                li.flex.justify-between.items-center.add-friend
+                                    div.flex.items-center.gap-2.w-full
+                                        div.avatar.rounded-full(class="w-10 h-10")
+                                            img(src=`../../assets/images/user-app/14.png` alt=`user`)                                                      
+                                        div(class="w-[calc(100%_-_52px)]") 
+                                            p.text-title(class="text-xs font-semibold") Tiana Baumbach
+                                            span.text-content3(class="font-semibold text-2xs") Web Designer
+                                    a(href="javascript:void(0)").add-btn.btn.bg-gray-light.p-2  Add
+                                li.flex.justify-between.items-center.add-friend
+                                    div.flex.items-center.gap-2.w-full
+                                        div.avatar.rounded-full(class="w-10 h-10")
+                                            img(src=`../../assets/images/user-app/19.png` alt=`user`)                                                      
+                                        div(class="w-[calc(100%_-_52px)]") 
+                                            p.text-title(class="text-xs font-semibold") Ally Kshlerin
+                                            span.text-content3(class="font-semibold text-2xs") Fullstack Developer
+                                    a(href="javascript:void(0)").add-btn.btn.bg-gray-light.p-2  Add
+                                li.flex.justify-between.items-center.add-friend
+                                    div.flex.items-center.gap-2.w-full
+                                        div.avatar.rounded-full(class="w-10 h-10")
+                                            img(src=`../../assets/images/user-app/23.png` alt=`user`)                                                      
+                                        div(class="w-[calc(100%_-_52px)]") 
+                                            p.text-title(class="text-xs font-semibold") Werner Barrows
+                                            span.text-content3(class="font-semibold text-2xs") Fullstack Developer
+                                    a(href="javascript:void(0)").add-btn.btn.bg-gray-light.p-2  Add
+                                li.flex.justify-between.items-center.add-friend
+                                    div.flex.items-center.gap-2.w-full
+                                        div.avatar.rounded-full(class="w-10 h-10")
+                                            img(src=`../../assets/images/user-app/15.png` alt=`user`)                                                      
+                                        div(class="w-[calc(100%_-_52px)]") 
+                                            p.text-title(class="text-xs font-semibold") Tiana Baumbach
+                                            span.text-content3(class="font-semibold text-2xs") Web Designer
+                                    a(href="javascript:void(0)").add-btn.btn.bg-gray-light.p-2  Add
+                            div(class="justify-end flex items-center gap-3")
+                                label(for="add-friend-modal").btn.bg-gray-light.p-2.text-title Save                                
+                                label(for="add-friend-modal").btn.bg-secondary.p-2.text-white Cancel                               
+                    
+
+            //- Follow modal
+            div.modal-main
+                input#follow-modal(class="peer" name="follow-modal" type='checkbox')
+                label.modal-overlay(class="peer-checked:block" for='follow-modal')
+                div.modal.modal-center(class="peer-checked:opacity-100 peer-checked:visible w-full max-w-sm")
+                    div.modal-body
+                        form.flex.flex-col.gap-4(class="!m-0")
+                            div.modal-img
+                                img(class="" src="../../assets/images/user-app/send-1.gif" alt="send" class="w-16")
+                            h5.text-center.font-semibold Follow team member or new ones
+                            div.search-box.relative
+                                input(class="border border-border-light rounded-5 w-full py-[11px] pl-[25px] pr-[55px]  text-xs font-semibold text-title" placeholder="Type to Search..." type="search")       
+                                +SVG_ICON("Search","xl:hidden w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 right-[25px] absolute")
+                                i(data-feather="x" class="search-close hidden cursor-pointer xl:block w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 right-[25px] absolute")
+                            ul.flex.flex-col.gap-3 
+                                li.flex.justify-between.items-center.follow-friend
+                                    div.flex.items-center.gap-2.w-full
+                                        div.avatar.rounded-full(class="w-10 h-10")
+                                            img(src=`../../assets/images/user-app/20.png` alt=`user`)                                                      
+                                        div(class="w-[calc(100%_-_52px)]") 
+                                            p.text-title(class="text-xs font-semibold") Patricia Kulas
+                                            span.text-content3(class="font-semibold text-2xs") Fullstack Developer
+                                    a(href="javascript:void(0)").follow-btn.btn.bg-gray-light.p-2  Follow
+                                li.flex.justify-between.items-center.follow-friend
+                                    div.flex.items-center.gap-2.w-full
+                                        div.avatar.rounded-full(class="w-10 h-10")
+                                            img(src=`../../assets/images/user-app/21.png` alt=`user`)                                                      
+                                        div(class="w-[calc(100%_-_52px)]") 
+                                            p.text-title(class="text-xs font-semibold") Josue Smith
+                                            span.text-content3(class="font-semibold text-2xs") Fullstack Developer
+                                    a(href="javascript:void(0)").follow-btn.btn.bg-gray-light.p-2  Follow
+                                li.flex.justify-between.items-center.follow-friend
+                                    div.flex.items-center.gap-2.w-full
+                                        div.avatar.rounded-full(class="w-10 h-10")
+                                            img(src=`../../assets/images/user-app/16.png` alt=`user`)                                                      
+                                        div(class="w-[calc(100%_-_52px)]") 
+                                            p.text-title(class="text-xs font-semibold") Raegan Corkery
+                                            span.text-content3(class="font-semibold text-2xs") Fullstack Developer
+                                    a(href="javascript:void(0)").follow-btn.btn.bg-gray-light.p-2  Follow
+                                li.flex.justify-between.items-center.follow-friend
+                                    div.flex.items-center.gap-2.w-full
+                                        div.avatar.rounded-full(class="w-10 h-10")
+                                            img(src=`../../assets/images/user-app/18.png` alt=`user`)                                                      
+                                        div(class="w-[calc(100%_-_52px)]") 
+                                            p.text-title(class="text-xs font-semibold") Abdul Volkman
+                                            span.text-content3(class="font-semibold text-2xs") Web Developer
+                                    a(href="javascript:void(0)").follow-btn.btn.bg-gray-light.p-2  Follow                     
+                            div(class="justify-end flex items-center gap-3")
+                                label(for="follow-modal").btn.bg-gray-light.p-2.text-title Save                                
+                                label(for="follow-modal").btn.bg-dark.p-2.text-white Cancel                                
+
+
     include ../../layout/footer-files
