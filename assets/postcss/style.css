@@ -51,6 +51,7 @@
 /* Pages */
 @import "pages/_chat-app.css";
 @import "pages/_carousel.css";
+@import "pages/_calendar.css";
 @import "pages/_countdown.css";
 @import "pages/_ecommerce.css";
 @import "pages/_mask.css";

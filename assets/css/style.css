@@ -3654,6 +3654,7 @@ code[class*="language-"],
   }
 }
 .map-js-height {
+  z-index: 1;
   height: 31.25rem;
 }
 @media (max-width: 1399px) {
@@ -3691,6 +3692,10 @@ code[class*="language-"],
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
 }
+[dir="rtl"] .page-sidebar.unique-sidebar {
+  right: 0px;
+  left: unset;
+}
 @media (max-width: 1599px) {
   .page-sidebar.unique-sidebar {
     width: 14.375rem;
@@ -3700,13 +3705,24 @@ code[class*="language-"],
   .page-sidebar.unique-sidebar {
     left: -62.4375rem;
   }
+  [dir="rtl"] .page-sidebar.unique-sidebar {
+    right: -62.4375rem;
+  }
 }
 .page-sidebar.unique-sidebar.hide-show-sidebar {
   left: -62.4375rem;
 }
+[dir="rtl"] .page-sidebar.unique-sidebar.hide-show-sidebar {
+  right: -62.4375rem;
+  left: unset;
+}
 @media (max-width: 1399px) {
   .page-sidebar.unique-sidebar.hide-show-sidebar {
     left: 0px;
+  }
+  [dir="rtl"] .page-sidebar.unique-sidebar.hide-show-sidebar {
+    right: 0px;
+    left: unset;
   }
 }
 .page-sidebar.unique-sidebar .sidebar .logo-wrapper {
@@ -4529,6 +4545,118 @@ code[class*="language-"],
 .carousel-scroll-hide::-webkit-scrollbar {
   height: 0px;
   width: 0px;
+}
+.calander-main {
+  height: 100%;
+}
+.calander-main .calander-sidebar{
+            display: none;
+        }
+.calander-main .calander-body {
+  height: 100%;
+  padding-left: 0px;
+}
+[dir=rtl] .calander-main .calander-body {
+  padding-left: unset;
+  padding-right: 0px;
+}
+[dir=rtl] .calander-main .calander-body.5 {
+  padding-left: unset;
+  padding-right: 0.125rem;
+}
+.calander-main .calander-body .fc {
+  height: 100%;
+}
+.calander-main .calander-body .fc .fc-button-primary, 
+                .calander-main .calander-body .fc .fc-button-primary:hover, 
+                .calander-main .calander-body .fc .fc-button-primary:focus {
+  border-width: 0px;
+  background-color: transparent;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.calander-main .calander-body .fc .fc-daygrid-day.fc-day-today, 
+                    .calander-main .calander-body .fc .fc-daygrid-day.fc-day-past {
+  background-color: transparent;
+}
+.calander-main .calander-body .fc .fc-header-toolbar {
+  border-bottom-width: 1px;
+  border-color: var(--border-light);
+  padding-bottom: 1rem;
+}
+.calander-main .calander-body .fc .fc-header-toolbar .fc-toolbar-chunk .fc-button-group .fc-button-primary {
+  border-style: none;
+  background-image: none;
+  color: var(--title);
+}
+.calander-main .calander-body .fc .fc-header-toolbar .fc-toolbar-chunk .fc-button-group .fc-button-primary span {
+  display: grid;
+  place-content: center;
+  border-radius: 9999px;
+  border-width: 2px;
+  border-color: var(--gray-light);
+  padding: 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1.6875rem;
+  letter-spacing: 0.03125rem;
+}
+.calander-main .calander-body .fc .fc-header-toolbar .fc-toolbar-chunk .fc-today-button {
+  border-radius: 0px;
+  border-style: none;
+  background-color: rgba(var(--primary),1);
+  text-transform: capitalize;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  opacity: 1;
+}
+.calander-main .calander-body .fc .fc-header-toolbar .fc-toolbar-chunk .fc-button-group:last-child .fc-button-primary {
+  border-radius: 0px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--gray-light);
+  font-size: 0.875rem;
+  line-height: 1.4;
+  letter-spacing: 0.025rem;
+  text-transform: capitalize;
+  color: var(--title);
+}
+.calander-main .calander-body .fc .fc-header-toolbar .fc-toolbar-chunk .fc-button-group:last-child .fc-button-primary.fc-button-active {
+  background-color: var(--gray-light);
+}
+.calander-main .calander-body .fc .fc-view-harness .fc-daygrid table.fc-scrollgrid thead tr th .fc-scroller-harness table thead tr th.fc-col-header-cell .fc-scrollgrid-sync-inner {
+  padding: 0.5rem;
+}
+.calander-main .calander-body .fc .fc-view-harness .fc-daygrid table.fc-scrollgrid tbody .fc-daygrid-body-unbalanced .fc-daygrid-day {
+  height: 144px;
+}
+.calander-main .calander-body .fc .fc-view-harness .fc-daygrid table.fc-scrollgrid tbody .fc-daygrid-body-unbalanced .fc-daygrid-day.fc-day-today .fc-daygrid-day-frame .fc-daygrid-day-events {
+  min-height: 6rem;
+  border-right-width: 4px;
+  border-color: rgba(var(--primary),1);
+  background-color: var(--primary-light);
+  color: rgba(var(--primary),1);
+}
+.calander-main .calander-body .fc .fc-view-harness .fc-daygrid table.fc-scrollgrid tbody .fc-daygrid-body-unbalanced table tbody tr:nth-child(1) td:nth-child(4).fc-daygrid-day .fc-daygrid-day-frame .fc-daygrid-day-events {
+  min-height: 6rem;
+  border-right-width: 4px;
+  border-color: rgba(var(--secondary),1);
+  background-color: var(--secondary-extralight);
+  color: rgba(var(--secondary),1);
+}
+.calander-main .calander-body .fc .fc-view-harness .fc-daygrid table.fc-scrollgrid tbody .fc-daygrid-body-unbalanced table tbody tr:nth-child(2) td:last-child.fc-daygrid-day .fc-daygrid-day-frame .fc-daygrid-day-events {
+  min-height: 6rem;
+  border-right-width: 4px;
+  border-color: rgba(var(--secondary),1);
+  background-color: var(--secondary-extralight);
+  color: rgba(var(--secondary),1);
+}
+.calander-main .calander-body .fc .fc-view-harness .fc-daygrid table.fc-scrollgrid tbody .fc-daygrid-body-unbalanced table tbody tr:nth-child(4) td:nth-child(3).fc-daygrid-day .fc-daygrid-day-frame .fc-daygrid-day-events {
+  min-height: 6rem;
+  border-right-width: 4px;
+  border-color: var(--warning);
+  background-color: var(--warning-light);
+  color: var(--warning);
 }
 .timer li {
   width: 3.75rem;
@@ -7587,6 +7715,9 @@ code[class*="language-"],
 .border {
   border-width: 1px;
 }
+.border-0 {
+  border-width: 0px;
+}
 .border-2 {
   border-width: 2px;
 }
@@ -7805,6 +7936,9 @@ code[class*="language-"],
 }
 .bg-warning {
   background-color: var(--warning);
+}
+.bg-warning-light {
+  background-color: var(--warning-light);
 }
 .bg-white {
   --tw-bg-opacity: 1;
@@ -8758,6 +8892,11 @@ code[class*="language-"],
 .shadow-none {
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-sm {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .outline-none {
@@ -10504,6 +10643,9 @@ code[class*="language-"],
     Carousel CSS
  ==========================*/
 /*=====================
+    Calendar CSS
+ ==========================*/
+/*=====================
   Countdown CSS
 ==========================*/
 /*=====================
@@ -12195,6 +12337,11 @@ code[class*="language-"],
   }
   .xl\:pl-\[calc\(7px_\+_\(14_-_7\)_\*_\(\(100vw_-_320px\)_\/_\(1920_-_320\)\)\)\] {
     padding-left: calc(7px + (14 - 7) * ((100vw - 320px) / (1920 - 320)));
+  }
+  .xl\:text-3xs {
+    font-size: 0.75rem;
+    line-height: 1.2;
+    letter-spacing: 0.03125rem;
   }
   .xl\:text-base {
     font-size: 1.125rem;

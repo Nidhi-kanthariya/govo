@@ -109,6 +109,7 @@ const ltrLayout = function () {
   layout = 'ltr';
   document.body.setAttribute('dir', 'ltr');
   radioBtnCheckedFunction(rtlChecked, ltrChecked);
+
 };
 
 /// Rtl Layout Function ///

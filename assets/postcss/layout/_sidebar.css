@@ -5,10 +5,10 @@
   .page-sidebar {
     /* Unique Sidebar */
     &.unique-sidebar {
-      @apply 2xl:-left-[62.4375rem] fixed z-10 top-0 bottom-0 left-0 w-[15.8125rem] 4xl:w-[14.375rem] transition-all duration-300;
+      @apply 2xl:-left-[62.4375rem] rtl:2xl:-right-[62.4375rem] fixed z-10 top-0 bottom-0 left-0 w-[15.8125rem] 4xl:w-[14.375rem] transition-all duration-300 rtl:right-0 rtl:left-unset;
 
       &.hide-show-sidebar {
-        @apply left-[-62.4375rem] 2xl:left-0;
+        @apply left-[-62.4375rem] 2xl:left-0 rtl:right-[-62.4375rem] rtl:2xl:right-0 rtl:left-unset rtl:2xl:left-unset;
       }
       .sidebar {
         .logo-wrapper {

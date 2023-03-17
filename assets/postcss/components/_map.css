@@ -12,7 +12,7 @@
     }
   }
   .map-js-height {
-    @apply h-[31.25rem] 2xl:h-[21.875rem]  sm:h-[16.25rem];
+    @apply h-[31.25rem] 2xl:h-[21.875rem]  sm:h-[16.25rem] z-[1];
     .leaflet-control-container {
       .leaflet-top {
         .leaflet-control-zoom {
