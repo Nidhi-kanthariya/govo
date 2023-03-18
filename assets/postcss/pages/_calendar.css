@@ -5,10 +5,11 @@
     .calander-main {
         @apply h-full;
         .calander-sidebar{
-            display: none;
+            @apply left-unset;
         }
+        
         .calander-body{
-            @apply pl-0 h-full;
+            @apply h-full;
             .fc {
                 @apply h-full;
                 .fc-button-primary, 
@@ -81,56 +82,10 @@
                                 tbody{                                    
                                     .fc-daygrid-body-unbalanced{
                                         .fc-daygrid-day{
-                                            @apply h-[144px];
                                             &.fc-day-today{
                                                 .fc-daygrid-day-frame{
                                                     .fc-daygrid-day-events{
                                                         @apply bg-primary-light border-r-4 border-primary text-primary min-h-[6rem];
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        table{
-                                            tbody{
-                                                tr{
-                                                    &:nth-child(1){
-                                                        td{
-                                                            &:nth-child(4){
-                                                                &.fc-daygrid-day{
-                                                                    .fc-daygrid-day-frame{
-                                                                        .fc-daygrid-day-events{
-                                                                            @apply bg-secondary-extralight border-r-4 border-secondary text-secondary min-h-[6rem];
-                                                                        }
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                    &:nth-child(2){
-                                                        td{
-                                                            &:last-child{
-                                                                &.fc-daygrid-day{
-                                                                    .fc-daygrid-day-frame{
-                                                                        .fc-daygrid-day-events{
-                                                                            @apply bg-secondary-extralight border-r-4 border-secondary text-secondary min-h-[6rem];
-                                                                        }
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                    &:nth-child(4){
-                                                        td{
-                                                            &:nth-child(3){
-                                                                &.fc-daygrid-day{
-                                                                    .fc-daygrid-day-frame{
-                                                                        .fc-daygrid-day-events{
-                                                                            @apply bg-warning-light border-r-4 border-warning text-warning min-h-[6rem];
-                                                                        }
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
                                                     }
                                                 }
                                             }
@@ -143,5 +98,6 @@
                 }
             }
         }
+        
     }
 }

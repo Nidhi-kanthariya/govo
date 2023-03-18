@@ -1126,132 +1126,36 @@
         <!-- Sidebar End -->
         <!-- Page Body Start-->
         <div class="page-body"> 
-          <div class="grid grid-cols-12 card gap-4">
-            <div class="col-span-9 w-full h-full pr-4 border-r lg:col-span-12 lg:border-none lg:pr-0 rtl:lg:pl-0 border-border-light rtl:border-l rtl:pl-4 rtl:pr-unset">
-              <div class="calander-main" id="wrap">
-                <div class="calander-sidebar" id="external-events">
-                  <h4 class="mb-4 font-medium">Draggable Events</h4>
-                  <div id="external-events-list">
-                    <div class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event bg-primary p-3 text-sm mb-3 border-0">
-                      <div class="fc-event-main">Meeting</div>
+          <div class="grid grid-cols-12 gap-card">
+            <div class="card col-span-12">
+              <div class="card-body"> 
+                <div class="calander-main" id="wrap">
+                  <div class="calander-sidebar" id="external-events">
+                    <h4 class="mb-4 text-title font-bold">New Schedule</h4>
+                    <div id="external-events-list">
+                      <div class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event bg-primary p-3 text-sm mb-3 border-0">
+                        <div class="fc-event-main">Meeting</div>
+                      </div>
+                      <div class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event bg-secondary p-3 text-sm mb-3 border-0">
+                        <div class="fc-event-main">Long Event</div>
+                      </div>
+                      <div class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event bg-dark p-3 text-sm mb-3 border-0">
+                        <div class="fc-event-main">Birthday party</div>
+                      </div>
+                      <div class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event bg-danger p-3 text-sm mb-3 border-0">
+                        <div class="fc-event-main">Holiday  </div>
+                      </div>
+                      <div class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event bg-success p-3 text-sm mb-3 border-0">
+                        <div class="fc-event-main">Happy hours</div>
+                      </div>
                     </div>
-                    <div class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event bg-secondary p-3 text-sm mb-3 border-0">
-                      <div class="fc-event-main">Long Event</div>
-                    </div>
-                    <div class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event bg-dark p-3 text-sm mb-3 border-0">
-                      <div class="fc-event-main">Birthday party</div>
-                    </div>
-                    <div class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event bg-danger p-3 text-sm mb-3 border-0">
-                      <div class="fc-event-main">Holiday  </div>
-                    </div>
-                    <div class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event bg-success p-3 text-sm mb-3 border-0">
-                      <div class="fc-event-main">Happy hours</div>
-                    </div>
+                    <p class="flex items-center gap-1">
+                      <input class="h-4" id="drop-remove" type="checkbox">
+                      <label for="drop-remove">remove after drop</label>
+                    </p>
                   </div>
-                  <p class="flex items-center gap-1">
-                    <input class="h-4" id="drop-remove" type="checkbox">
-                    <label for="drop-remove">remove after drop</label>
-                  </p>
-                </div>
-                <div class="calander-body" id="calendar-wrap">
-                  <div id="calendar"></div>
-                </div>
-              </div>
-            </div>
-            <div class="col-span-3 lg:col-span-12">
-              <div> 
-                <button class="btn btn-primary text-white w-full">New Schedule </button>
-                <p class="mt-5 text-content3 text-xs font-semibold">Drag and drop your event or click in the calendar </p>
-                <div class="flex flex-col gap-2 mt-3"> 
-                  <div class="bg-primary-light text-primary font-semibold flex items-center gap-2 p-3"> <span class="bg-primary w-2 h-2 rounded-full"> </span><small class="text-xs">New Template Release</small></div>
-                  <div class="bg-secondary-light text-secondary font-semibold flex items-center gap-2 p-3"> <span class="bg-secondary w-2 h-2 rounded-full"> </span><small class="text-xs">Team meeting</small></div>
-                  <div class="bg-success-light text-success font-semibold flex items-center gap-2 p-3"> <span class="bg-success w-2 h-2 rounded-full"> </span><small class="text-xs">Create New Template</small></div>
-                  <div class="bg-warning-light text-warning font-semibold flex items-center gap-2 p-3"> <span class="bg-warning w-2 h-2 rounded-full"> </span><small class="text-xs">My Event</small></div>
-                </div>
-              </div>
-              <div> 
-                <h4 class="mt-5 mb-4 text-title font-bold">My Schedule</h4>
-                <div class="grid grid-cols-12 gap-4"> 
-                  <div class="col-span-12 lg:col-span-6 2md:col-span-12">
-                    <div class="card shadow-sm border-2 border-light"> 
-                      <div class="card-body flex flex-col gap-4">
-                        <div>
-                          <h4 class="text-xs font-semibold">Design Review </h4>
-                          <p class="text-content3 font-semibold">10.00 AM  - 11.00 AM</p>
-                        </div>
-                        <div class="mt flex gap-2 items-center">
-                          <button class="btn bg-primary-light text-primary text-2xs font-semibold rounded-none p-2 xl:text-3xs">Online Meeting</button>
-                          <button class="btn bg-secondary-extralight text-secondary text-2xs font-semibold rounded-none p-2">Urgent</button>
-                        </div>
-                      </div>
-                      <div class="card-footer"> 
-                        <div class="flex justify-between items-center pt-4 border-t border-dashed border-border-light">
-                          <div class="flex items-center gap-2 w-full">
-                            <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/user-app/15.png" alt="user"></div>
-                            <div class="w-[calc(100%_-_52px)] grid"> 
-                              <p class="text-title text-xs font-semibold truncate">Tiana Baumbach</p><a class="text-primary font-semibold truncate text-2xs" href="javascript:void(0)">View Client Profile</a>
-                            </div>
-                          </div><a href="javascript:void(0)">
-                            <svg class="w-6 h-6 stroke-primary group-hover:stroke-white"> 
-                              <use href="../../assets/svg/_sprite.svg#Arrow-Right-Circle"> </use>
-                            </svg></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-span-12 lg:col-span-6 2md:col-span-12">  
-                    <div class="card shadow-sm border-2 border-light"> 
-                      <div class="card-body flex flex-col gap-4">
-                        <div>
-                          <h4 class="text-xs font-semibold">Brainstorming Uniq Project </h4>
-                          <p class="text-content3 font-semibold">12.30 PM  - 2.00 PM</p>
-                        </div>
-                        <div class="mt flex gap-2 items-center">
-                          <button class="btn bg-primary-light text-primary text-2xs font-semibold rounded-none p-2 xl:text-3xs">Online Meeting</button>
-                          <button class="btn bg-secondary-extralight text-secondary text-2xs font-semibold rounded-none p-2">Urgent</button>
-                        </div>
-                      </div>
-                      <div class="card-footer"> 
-                        <div class="flex justify-between items-center pt-4 border-t border-dashed border-border-light">
-                          <div class="flex items-center gap-2 w-full">
-                            <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/user-app/19.png" alt="user"></div>
-                            <div class="w-[calc(100%_-_52px)] grid"> 
-                              <p class="text-title text-xs font-semibold truncate">Ally Kshlerin</p><a class="text-primary font-semibold truncate text-2xs" href="javascript:void(0)">View Client Profile</a>
-                            </div>
-                          </div><a href="javascript:void(0)">
-                            <svg class="w-6 h-6 stroke-primary group-hover:stroke-white"> 
-                              <use href="../../assets/svg/_sprite.svg#Arrow-Right-Circle"> </use>
-                            </svg></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-span-12">
-                    <div class="card shadow-sm border-2 border-light"> 
-                      <div class="card-body flex flex-col gap-4">
-                        <div>
-                          <h4 class="text-xs font-semibold">Design Review </h4>
-                          <p class="text-content3 font-semibold">2.30 PM  - 4 PM</p>
-                        </div>
-                        <div class="mt flex gap-2 items-center">
-                          <button class="btn bg-primary-light text-primary text-2xs font-semibold rounded-none p-2 xl:text-3xs">Online Meeting</button>
-                          <button class="btn bg-secondary-extralight text-secondary text-2xs font-semibold rounded-none p-2">Urgent</button>
-                        </div>
-                      </div>
-                      <div class="card-footer"> 
-                        <div class="flex justify-between items-center pt-4 border-t border-dashed border-border-light">
-                          <div class="flex items-center gap-2 w-full">
-                            <div class="avatar rounded-full w-10 h-10"><img src="../../assets/images/user-app/16.png" alt="user"></div>
-                            <div class="w-[calc(100%_-_52px)] grid"> 
-                              <p class="text-title text-xs font-semibold truncate">Raegan Corkery</p><a class="text-primary font-semibold truncate text-2xs" href="javascript:void(0)">View Client Profile</a>
-                            </div>
-                          </div><a href="javascript:void(0)">
-                            <svg class="w-6 h-6 stroke-primary group-hover:stroke-white"> 
-                              <use href="../../assets/svg/_sprite.svg#Arrow-Right-Circle"> </use>
-                            </svg></a>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="calander-body" id="calendar-wrap">
+                    <div id="calendar"></div>
                   </div>
                 </div>
               </div>

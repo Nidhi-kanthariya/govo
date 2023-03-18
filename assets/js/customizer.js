@@ -1,7 +1,7 @@
 /*=====================
      04. Dark & Rtl mode js
    ==========================*/
-
+window.location.pathname.includes('rtl.html') && (localStorage.layout = 'rtl')
 /* This is declaring variables. */
 let theme = localStorage.theme || '';
 let layout = localStorage.layout || '';
@@ -240,4 +240,6 @@ window.addEventListener('beforeunload', function () {
   localStorage.monochrome = monochrome;
   localStorage.monochrome = monochrome;
   localStorage.sidebarType = sidebarType;
+  window.location.pathname.includes('rtl.html') && (localStorage.removeItem('layout'))
+
 });

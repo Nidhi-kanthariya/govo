@@ -1,10 +1,10 @@
 var count = 2;
 
 function new_form() {
-    count++;
-    var mainForm = document.createElement("div"),
-        e =
-        `<div class="flex flex-col gap-4 m-0">
+  count++;
+  var mainForm = document.createElement("div"),
+    e =
+      `<div class="flex flex-col gap-4 m-0">
                             <div> 
                               <h6 class="font-bold">Job Detail</h6>
                             </div>
@@ -48,14 +48,15 @@ function new_form() {
                               <label for="address">Job Description </label>
                               <textarea class="p-[11px] focus:!border-border-light w-full border border-border-light rounded-5 text-xs text-content" placeholder="Enter your address.." row="3" id="address">  </textarea>
                             </div>
-                            <div class="text-end"><a class="btn btn-primary text-xs text-white !w-fit !m-0 py-2" href="javascript:deleteEl(1)" type="button">Delete </a></div>
+                            <div class="text-end"><a class="btn btn-primary text-xs text-white !w-fit !m-0 py-2" href="javascript:deleteEl('mainForm'+${count})" type="button">Delete </a></div>
                           </div>`
-    e = (mainForm.innerHTML = document.getElementById("latestForm").innerHTML + e, document.getElementById("newForm").appendChild(mainForm), document.querySelectorAll("[data-trigger]"));
+  mainForm.setAttribute('id', `mainForm${count}`)
+  e = (mainForm.innerHTML = document.getElementById("latestForm").innerHTML + e, document.getElementById("newForm").appendChild(mainForm), document.querySelectorAll("[data-trigger]"));
 }
 
 function deleteEl(mainForm) {
-    mainForm = document.getElementById(mainForm);
-    document.getElementById("newForm").removeChild(mainForm);
+  mainForm = document.getElementById(mainForm);
+  document.getElementById("newForm").removeChild(mainForm);
 }
 
 

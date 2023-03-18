@@ -4549,20 +4549,11 @@ code[class*="language-"],
 .calander-main {
   height: 100%;
 }
-.calander-main .calander-sidebar{
-            display: none;
-        }
+.calander-main .calander-sidebar {
+  left: unset;
+}
 .calander-main .calander-body {
   height: 100%;
-  padding-left: 0px;
-}
-[dir=rtl] .calander-main .calander-body {
-  padding-left: unset;
-  padding-right: 0px;
-}
-[dir=rtl] .calander-main .calander-body.5 {
-  padding-left: unset;
-  padding-right: 0.125rem;
 }
 .calander-main .calander-body .fc {
   height: 100%;
@@ -4627,36 +4618,12 @@ code[class*="language-"],
 .calander-main .calander-body .fc .fc-view-harness .fc-daygrid table.fc-scrollgrid thead tr th .fc-scroller-harness table thead tr th.fc-col-header-cell .fc-scrollgrid-sync-inner {
   padding: 0.5rem;
 }
-.calander-main .calander-body .fc .fc-view-harness .fc-daygrid table.fc-scrollgrid tbody .fc-daygrid-body-unbalanced .fc-daygrid-day {
-  height: 144px;
-}
 .calander-main .calander-body .fc .fc-view-harness .fc-daygrid table.fc-scrollgrid tbody .fc-daygrid-body-unbalanced .fc-daygrid-day.fc-day-today .fc-daygrid-day-frame .fc-daygrid-day-events {
   min-height: 6rem;
   border-right-width: 4px;
   border-color: rgba(var(--primary),1);
   background-color: var(--primary-light);
   color: rgba(var(--primary),1);
-}
-.calander-main .calander-body .fc .fc-view-harness .fc-daygrid table.fc-scrollgrid tbody .fc-daygrid-body-unbalanced table tbody tr:nth-child(1) td:nth-child(4).fc-daygrid-day .fc-daygrid-day-frame .fc-daygrid-day-events {
-  min-height: 6rem;
-  border-right-width: 4px;
-  border-color: rgba(var(--secondary),1);
-  background-color: var(--secondary-extralight);
-  color: rgba(var(--secondary),1);
-}
-.calander-main .calander-body .fc .fc-view-harness .fc-daygrid table.fc-scrollgrid tbody .fc-daygrid-body-unbalanced table tbody tr:nth-child(2) td:last-child.fc-daygrid-day .fc-daygrid-day-frame .fc-daygrid-day-events {
-  min-height: 6rem;
-  border-right-width: 4px;
-  border-color: rgba(var(--secondary),1);
-  background-color: var(--secondary-extralight);
-  color: rgba(var(--secondary),1);
-}
-.calander-main .calander-body .fc .fc-view-harness .fc-daygrid table.fc-scrollgrid tbody .fc-daygrid-body-unbalanced table tbody tr:nth-child(4) td:nth-child(3).fc-daygrid-day .fc-daygrid-day-frame .fc-daygrid-day-events {
-  min-height: 6rem;
-  border-right-width: 4px;
-  border-color: var(--warning);
-  background-color: var(--warning-light);
-  color: var(--warning);
 }
 .timer li {
   width: 3.75rem;
@@ -7936,9 +7903,6 @@ code[class*="language-"],
 }
 .bg-warning {
   background-color: var(--warning);
-}
-.bg-warning-light {
-  background-color: var(--warning-light);
 }
 .bg-white {
   --tw-bg-opacity: 1;

@@ -2,55 +2,41 @@
   Email App js
 ==========================*/
 
-const leftSidebarHeaderToggle = document.querySelector('.left-sidebar-toggle-btn');
-const leftSidebarBtn = document.querySelector('.left-sidebar-toggle');
-const leftSidebar = document.querySelector('.left-sidebar-aside');
-const leftHeaderLogoShowOptions = document.querySelector('.left-sidebar-hide-logo-show');
+const leftSidebarBtn = document.querySelector('.left-sidebar-toggle'); // left sidebar close btn
+const leftSidebar = document.querySelector('.left-sidebar-aside'); // left sidebar 
+const leftHeaderLogoShowOptions = document.querySelector('.left-sidebar-hide-logo-show'); // filter btn parent
+const leftSidebarHeaderToggle = document.getElementsByClassName('left-sidebar-toggle-btn'); // filter btn 
+
 leftSidebarBtn?.addEventListener('click', function (e) {
   leftSidebar.classList.toggle('left-hide-show-sidebar');
-  leftSidebarHeaderToggle.classList.toggle('hide');
+  for (var i = 0; i < leftSidebarHeaderToggle.length; i++) {
+    leftSidebarHeaderToggle[i].classList.toggle('hide');
+  }
   leftHeaderLogoShowOptions?.classList.toggle('hide');
 });
-leftSidebarHeaderToggle?.addEventListener('click', function (e) {
-  leftSidebar.classList.toggle('left-hide-show-sidebar');
-  leftSidebarHeaderToggle.classList.toggle('hide');
-  this.closest('.left-sidebar-hide-logo-show')?.classList.toggle('hide');
-});
 
-// let leftSidebarHeaderToggle = document.querySelectorAll('.left-sidebar-toggle-btn');
-// const leftSidebarBtn = document.querySelector('.left-sidebar-toggle');
-// const leftSidebar = document.querySelector('.left-sidebar-aside');
-// const leftHeaderLogoShowOptions = document.querySelectorAll('.left-sidebar-hide-logo-show');
-// leftSidebarHeaderToggle.forEach((dataItem, index) =>{
-//   dataItem.addEventListener('click', (event) => {
-//   leftSidebar.classList.toggle('left-hide-show-sidebar');
-//   leftSidebarHeaderToggle.classList.toggle('hide');
-//   this.closest('.left-sidebar-hide-logo-show')?.classList.toggle('hide');
-//   });
-// });
-
-// leftSidebarBtn.forEach((dataItem1, index) =>{
-//   dataItem1.addEventListener('click', (event) => {
-//   leftSidebar.classList.toggle('left-hide-show-sidebar');
-//   leftSidebarHeaderToggle.classList.toggle('hide');
-//   leftHeaderLogoShowOptions?.classList.toggle('hide');
-//   });
-// });
+for (var i = 0; i < leftSidebarHeaderToggle.length; i++) {
+  leftSidebarHeaderToggle[i]?.addEventListener('click', function (e) {
+    leftSidebar.classList.toggle('left-hide-show-sidebar');
+    leftSidebarHeaderToggle[i].classList.toggle('hide');
+    this.closest('.left-sidebar-hide-logo-show')?.classList.toggle('hide');
+  });
+}
 
 
 /*=====================
   Email hide/show js
 ==========================*/
 
-const emailList =document.querySelector(".emailList");
-const emailRead =document.querySelector(".emailRead");
+const emailList = document.querySelector(".emailList");
+const emailRead = document.querySelector(".emailRead");
 let listItems = document.querySelectorAll('.btnEmailRead');
 const btnEmail = document.querySelector(".btnEmail");
 
 listItems.forEach((item, index) => {
   item.addEventListener('click', (event) => {
-     emailRead.classList.add("show");
-     emailList.classList.add("hide");
+    emailRead.classList.add("show");
+    emailList.classList.add("hide");
   });
 });
 
