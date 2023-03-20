@@ -1,0 +1,64 @@
+/*=====================
+    Todo App CSS
+  ==========================*/
+@layer components {
+    .todo-app {
+        li {
+            &:nth-child(4n + 1) {
+                .line {
+                    @apply bg-primary;
+                }
+
+                .check-icon {
+                    @apply stroke-primary;
+                }
+            }
+
+            &:nth-child(4n + 2) {
+                .line {
+                    @apply bg-secondary;
+                }
+
+                .check-icon {
+                    @apply stroke-secondary;
+                }
+            }
+
+            &:nth-child(4n + 3) {
+                .line {
+                    @apply bg-info;
+                }
+
+                .check-icon {
+                    @apply stroke-info;
+                }
+            }
+
+            &:nth-child(4n + 4) {
+                .line {
+                    @apply bg-warning;
+                }
+
+                .check-icon {
+                    @apply stroke-warning;
+                }
+            }
+        }
+    }
+
+    .todo-form {
+        @apply opacity-0 invisible -translate-y-4 transition-all;
+
+        &.show {
+            @apply opacity-100 visible translate-y-0 max-h-max transition-all;
+        }
+    }
+
+    .check-custom {
+        input:checked~.check {
+            svg {
+                @apply opacity-100;
+            }
+        }
+    }
+}

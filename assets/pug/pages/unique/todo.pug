@@ -1,0 +1,104 @@
+//- sidebar
+-var sidebar = true;
+
+//- feather
+-var feather= true;
+
+//- fontawesome
+-var fontAwesome=true;
+
+//- custom select
+-var customSelect = true;
+
+//- ecommerce
+-var ecommerce = true;
+
+//- swiper-slider
+-var swiper=true;
+
+//- customizer 
+-var customizer = true;
+
+//- todoApp 
+-var todoApp = true;
+
+//- Breadcrumbs
+-var pageTitle="Todo";
+-var breadcrumb=['Todo'];
+
+//- all JSON  
+include ../../data/all-data
+
+//- all mixin   
+include ../../mixin/mixin
+
+doctype html
+html(lang='en')
+    include ../../layout/header-files
+    body(dir="ltr" class="unique-skin")
+        main.page-wrapper
+            div.page-body-wrapper(class="mb-10 2xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300")
+                include ../../layout/header/unique/header     
+                // Sidebar Start 
+                div.page-sidebar.sidebar-dark.unique-sidebar
+                    include ../../layout/sidebar/unique 
+                // Sidebar End 
+
+                // Page Body Start
+                div.page-body
+                    div.grid.grid-cols-12.gap-card-gap.card
+                        div.col-span-3(class="lg:col-span-12") 
+                            +todo-left-sidebar(TODO_SIDEBAR_DATA)
+
+                        div.col-span-9(class="lg:col-span-12")
+                            div.flex.flex-col.gap-2 
+                                h5.text-title.font-bold.mb-2 Todo List
+                                div
+                                    +todo-app-data(TODO_APP_DATA)
+                                    //- form.todo-form.hidden.theme-form.m-0.flex.flex-col.gap-3(action="javascript:void(0)")
+                                    //-     div
+                                    //-         input(class="dark:bg-mode-200" name="title" id="title" type='text' required placeholder='Enter your title.. ') 
+                                    //-     div
+                                    //-         textarea(placeholder="Enter your description.." name="description" row="4" id="address" class="p-[11px]").w-full.rounded-5.text-xs.text-content
+
+                                    //-     div.flex.items-center.gap-2
+                                    //-         button.btn.btn-outline.btn-primary.todo-form-close(class="3sm:flex-1 !w-auto" type="button") Close  
+                                    //-         button.btn.btn-primary.text-white.addTodo(class="3sm:flex-1 !w-auto" type="submit") Add  
+                                    //- button.btn.btn-primary.gap-1.add-todo-btn.flex.items-center.justify-center.py-1.text-white 
+                                    //-     i(data-feather="plus" class="w-5 h-5 stroke-current")   
+                                    //-     | Add New Task 
+
+
+                // Page Body End  
+                +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
+            include ../../components/customizer   
+
+            div.modal-main
+                input#todo-modal(class="peer" name="todo-modal" type='checkbox')
+                label.modal-overlay(class="peer-checked:block" for='todo-modal')
+                div.modal.modal-bottom-right(class="invisible w-11/12 max-w-xl transition-all duration-1000 translate-y-0 opacity-0 peer-checked:opacity-100 peer-checked:visible peer-checked:-translate-y-9 !right-[2%]")
+                    div.modal-body    
+                        form.todo-form.hidden.theme-form.m-0.flex.flex-col.gap-3(action="javascript:void(0)")
+                            div
+                                input(class="dark:bg-mode-200" name="title" id="title" type='text' required placeholder='Enter your title.. ') 
+                            div
+                                textarea(placeholder="Enter your description.." name="description" row="4" id="address" class="p-[11px]").w-full.rounded-5.text-xs.text-content
+
+                            div.flex.items-center.gap-2
+                                button.btn.btn-outline.btn-primary.todo-form-close(class="3sm:flex-1 !w-auto" type="button") Close  
+                                button.btn.btn-primary.text-white.addTodo(class="3sm:flex-1 !w-auto" type="submit") Add  
+
+
+
+                            //- div.flex.items-center.gap-3
+                            //-     label(for="todo-modal").btn.btn-primary.py-2.px-4.text-white.uppercase Send
+
+
+
+
+    include ../../layout/footer-files
+
+
+
+
+

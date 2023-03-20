@@ -5,11 +5,10 @@
     .calander-main {
         @apply h-full;
         .calander-sidebar{
-            @apply left-unset;
+            @apply left-unset w-[14.375rem] mb-7 lg:w-full;
         }
         
         .calander-body{
-            @apply h-full;
             .fc {
                 @apply h-full;
                 .fc-button-primary, 
@@ -28,12 +27,14 @@
                     @apply border-b border-border-light pb-4;
                     .fc-toolbar-chunk{
                         .fc-button-group{
-                            .fc-button-primary{
+                            &:first-child{
+                                .fc-button-primary{
                                 @apply bg-none border-none text-title; 
                                 
                                 span{
                                     @apply border-2 border-gray-light rounded-full p-3 grid place-content-center text-lg;
                                 }
+                            }
                             }
                         }
                         .fc-today-button{
@@ -66,7 +67,7 @@
                                                             th{
                                                                 &.fc-col-header-cell{
                                                                     .fc-scrollgrid-sync-inner{
-                                                                        @apply p-2;
+                                                                        @apply p-2 sm:p-0;
                                                                     }
                                                                 }
                                                             }
@@ -85,7 +86,18 @@
                                             &.fc-day-today{
                                                 .fc-daygrid-day-frame{
                                                     .fc-daygrid-day-events{
-                                                        @apply bg-primary-light border-r-4 border-primary text-primary min-h-[6rem];
+                                                        @apply bg-primary-light border-r-4 border-primary text-primary;                                                        
+                                                    }
+                                                }
+                                            }
+                                            .fc-daygrid-day-events{
+                                                .fc-h-event {
+                                                    @apply bg-danger-light border-none;
+                                                    .fc-event-main{
+                                                        @apply border-r-4 border-secondary border-solid;
+                                                        .fc-event-main-frame{
+                                                            @apply bg-secondary-extralight text-secondary border-none;
+                                                        }
                                                     }
                                                 }
                                             }
