@@ -11,6 +11,6 @@ table.table.table-bordered
         each bodyData,index in BORDERED_TABLE.body
             tr
                 td(class="min-w-[.625rem]  rounded border border-border-light")=index+1
-                td(class="min-w-[.625rem] rounded  border border-border-light")=bodyData.name
-                td(class="min-w-[1.25rem] rounded  border border-border-light")=bodyData.job
-                td(class="min-w-[.625rem]  rounded border border-border-light")=bodyData.favoriteColor
+                td(class="min-w-[.625rem] rounded  border border-border-light")=bodyData.task
+                td(class="min-w-[1.25rem] rounded  border border-border-light")=bodyData.status
+                td(class="min-w-[.625rem]  rounded border border-border-light")=bodyData.priority
