@@ -105,7 +105,7 @@ gulp.task('browser-sync', async function (done) {
   browsersync.init({
     base: './',
     server: './',
-    startPath: 'html/unique/index.html',
+    startPath: 'html/friendly-layout/index.html',
     host: 'localhost',
     open: true,
     tunnel: false,

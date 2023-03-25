@@ -11229,14 +11229,14 @@ code[class*="language-"],
 .first\:mt-\[20px\]:first-child {
   margin-top: 20px;
 }
+.first\:rounded-br-\[25px\]:first-child {
+  border-bottom-right-radius: 25px;
+}
 .first\:rounded-tl:first-child {
   border-top-left-radius: 0.25rem;
 }
 .first\:rounded-tl-none:first-child {
   border-top-left-radius: 0px;
-}
-.first\:rounded-br-\[25px\]:first-child {
-  border-bottom-right-radius: 25px;
 }
 .first\:rounded-tr-\[25px\]:first-child {
   border-top-right-radius: 25px;
@@ -11256,9 +11256,6 @@ code[class*="language-"],
 .first\:bg-white:first-child {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.first\:stroke-primary:first-child {
-  stroke: rgba(var(--primary),1);
 }
 .first\:pl-0:first-child {
   padding-left: 0px;
@@ -12215,8 +12212,14 @@ code[class*="language-"],
   .\32xl\:items-start {
     align-items: flex-start;
   }
+  .\32xl\:items-center {
+    align-items: center;
+  }
   .\32xl\:justify-start {
     justify-content: flex-start;
+  }
+  .\32xl\:justify-between {
+    justify-content: space-between;
   }
   .\32xl\:gap-2 {
     gap: 0.5rem;
@@ -12389,6 +12392,12 @@ code[class*="language-"],
   }
   .xl\:flex-col {
     flex-direction: column;
+  }
+  .xl\:items-start {
+    align-items: flex-start;
+  }
+  .xl\:justify-start {
+    justify-content: flex-start;
   }
   .xl\:justify-center {
     justify-content: center;
@@ -13234,6 +13243,9 @@ code[class*="language-"],
   .\32md\:block {
     display: block;
   }
+  .\32md\:flex {
+    display: flex;
+  }
   .\32md\:hidden {
     display: none;
   }
@@ -13291,8 +13303,14 @@ code[class*="language-"],
   .\32md\:items-start {
     align-items: flex-start;
   }
+  .\32md\:items-center {
+    align-items: center;
+  }
   .\32md\:justify-center {
     justify-content: center;
+  }
+  .\32md\:justify-between {
+    justify-content: space-between;
   }
   .\32md\:gap-\[30px\] {
     gap: 30px;
@@ -13556,6 +13574,9 @@ code[class*="language-"],
   }
   .sm\:items-start {
     align-items: flex-start;
+  }
+  .sm\:justify-start {
+    justify-content: flex-start;
   }
   .sm\:justify-end {
     justify-content: flex-end;
@@ -13839,6 +13860,9 @@ code[class*="language-"],
   }
   .\32sm\:max-w-\[80\%\] {
     max-width: 80%;
+  }
+  .\32sm\:flex-row {
+    flex-direction: row;
   }
   .\32sm\:flex-row-reverse {
     flex-direction: row-reverse;

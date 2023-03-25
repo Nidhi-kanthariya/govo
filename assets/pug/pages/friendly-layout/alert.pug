@@ -1,42 +1,50 @@
 //- sidebar
 -var sidebar = true;
 
-//- feathet
+//- feather
 -var feather= true;
 
-//- customSelect
+//- custom select
 -var customSelect= true;
 
-//- customizer
+//- customizer  
 -var customizer=true;
 
-//- prism
--var prism=true;
+//- apex-chart
+-var apexChart=true;
+-var friendlyApex=true;
+
+//- data map
+-var dataMap=true;
 
 //- Breadcrumbs
--var pageTitle="Alert";
--var breadcrumb=['Ui Kits','Alert'];
+-var pageTitle="alert ";
+-var breadcrumb=['','friendly'];
 
-//- json
+
+//- all JSON  
 include ../../data/all-data
 
-//- mixin
+//- all mixin   
 include ../../mixin/mixin
-
 doctype html
 html(lang='en')  
   include ../../layout/header-files 
   body(dir="ltr" class="unique-skin") 
     main.page-wrapper
-      div.page-body-wrapper(class="mb-10 2xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300")
-        include ../../layout/header/unique/header     
-        // Sidebar Start 
-        div.page-sidebar.sidebar-dark.unique-sidebar
-          include ../../layout/sidebar/unique
-        // Sidebar End
+      include ../../layout/header/friendly/header     
+      div.page-body-wrapper
+
+        // Sidebar Start       
+        div.page-sidebar.sidebar-dark.unique-sidebar.friendly-sidebar
+          div(class="hidden xl:block")
+            button(class="w-full sidebar-btn flex items-center justify-center py-[11px] px-[12px] bg-sidebar-dark3 rounded-5")
+              +SVG_ICON("Close-Square","w-[24px] h-[24px] stroke-white")  
+          include ../../layout/sidebar/friendly
+        // Sidebar End 
 
         // Page Body Start 
-        div.page-body
+        div.page-body(class="friendly-body xl:!px-body-space2 !pr-body-space2")
           div.grid.grid-cols-12.gap-card-gap
             div.col-span-6(class="2md:col-span-12")
               div.card.tabs
@@ -165,14 +173,14 @@ html(lang='en')
                     div.preview-code.tab-links
                       button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
                       button.p-0.tab.tab-lifted(data-tabFilter="2" class="tab-link tab-2") Html
-                div.card-body                                   
+                div.card-body
                   div.tabs-content
                     div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
                       div.flex.flex-col.flex-wrap.gap-2
                         div.flex.justify-between.items-center.border.border-secondary.text-secondary.px-4.py-3.rounded.w-full(class="lg:flex-col lg:items-start 2xl:justify-between 2xl:items-center 2xl:gap-2 2md:flex-row 2md:items-center sm:flex-col sm:items-start" role='alert')
                           div.flex
                             +SVG_ICON("Check-Square","w-[1.25rem] h-[1.25rem] stroke-secondary mr-2")
-                            p    Accept terms and conditions 
+                            p Accept terms and conditions 
                           div.flex.flex-wrap.gap-2
                             button.btn.btn-secondary.py-2.px-3.btn-rounded.text-white Deny
                             button.btn.btn-secondary.py-2.px-3.btn-rounded.text-white Accept
@@ -209,9 +217,9 @@ html(lang='en')
                     div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
                       div.flex.flex-col.flex-wrap.gap-2
                         div.flex.justify-between.items-center.border.border-primary.text-primary.px-4.py-3.rounded.w-full(class="lg:flex-col lg:justify-start lg:items-start lg:gap-2 2md:flex-row 2md:justify-between 2md:items-center sm:flex-col sm:justify-start sm:items-start" role='alert')
-                          p    Space running out 
+                          p Space running out 
                           div
-                            button.btn.btn-primary.flex.items-center.py-1.px-3.btn-rounded.text-white 
+                            button.btn.btn-primary.flex.items-center.py-1.px-3.btn-rounded.text-white
                               +SVG_ICON("Notification","w-[1.25rem] h-[1.25rem] stroke-white mr-2")
                               p   REMIND ME LATER
                     div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
@@ -306,9 +314,8 @@ html(lang='en')
                           |&lt;/div&gt;
 
 
+          +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
         // Page Body End 
-        +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
-
     include ../../components/customizer
 
-  include ../../layout/footer-files
+    include ../../layout/footer-files 
