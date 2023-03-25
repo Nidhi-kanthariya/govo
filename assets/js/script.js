@@ -121,7 +121,7 @@ plusMinus.forEach((element) => {
   });
   subButton?.addEventListener('click', function () {
     const inputEl = this.parentNode.querySelector("input[type='number']");
-    if (inputEl.value >= 1) {
+    if (inputEl.value >= 2) {
       inputEl.value = Number(inputEl.value) - 1;
     }
   });

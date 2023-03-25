@@ -3,5 +3,20 @@
   ==========================*/
 
 @layer components {
-
+  main{
+    .page-body{
+      .apexcharts{
+        &-canvas {
+        [dir='rtl'] & {
+          direction: ltr;
+        }
+      }
+      }
+      .common-animate-main{
+        .common-animate{
+          animation-duration: 12000ms;
+        }
+      }
+    }
+  }
 }

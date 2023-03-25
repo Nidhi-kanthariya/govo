@@ -9,6 +9,6 @@
 
   code[class*="language-"],
   pre[class*="language-"] { 
-    @apply bg-gray-light leading-tight;
+    @apply bg-gray-light leading-tight rtl:text-start;
   }
 }

@@ -24,7 +24,7 @@
   </head>
   <body class="unique-skin" dir="ltr"> 
     <main class="page-wrapper">
-      <div class="page-body-wrapper mb-10 2xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300">
+      <div class="page-body-wrapper 2xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300">
         <!-- Page Header start-->
         <header class="sticky top-0 z-[4]">
           <div class="page-header w-full transition-all bg-white shadow-header">
@@ -37,12 +37,12 @@
                 </button>
                 <h1 class="flex items-center gap-1 text-lg font-extrabold leading-none sm:hidden 4xl:text-base">Apex Chart</h1>
               </div>
-              <div class="right-header flex items-center flex-1 sm:gap-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] gap-[calc(20px_+_(30_-_20)_*_((100vw_-_320px)_/_(1920_-_320)))] xl:gap-[calc(20px_+_(45_-_20)_*_((100vw_-_320px)_/_(1920_-_320)))]  justify-end">
+              <div class="right-header flex items-center flex-1 sm:gap-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] gap-[calc(16px_+_(20_-_16)_*_((100vw_-_320px)_/_(1920_-_320)))]  justify-end">
                 <div class="search-box-wrapper transition-all duration-300 max-w-[40%] xl:scale-0 xl:opacity-0 xl:invisible xl:px-body-space xl:max-w-full w-full xl:z-[5] flex-1 xl:absolute xl:left-0">
                   <!-- Search Start -->
                   <div class="search-box relative">
-                    <input class="bg-gray-light rounded-5 w-full py-[11px] pl-[25px] pr-[55px]  text-xs font-semibold text-title" placeholder="Type to Search..." type="search">
-                    <svg class="xl:hidden w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 right-[25px] absolute"> 
+                    <input class="bg-gray-light rounded-5 w-full py-[11px] pl-[25px] pr-[55px] rtl:pr-[25px] rtl:pl-[55px] text-xs font-semibold text-title" placeholder="Type to Search..." type="search">
+                    <svg class="xl:hidden w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 right-[25px] rtl:right-unset rtl:left-[25px] absolute"> 
                       <use href="../../assets/svg/_sprite.svg#Search"> </use>
                     </svg><i class="search-close hidden cursor-pointer xl:block w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 right-[25px] absolute" data-feather="x"></i>
                   </div>
@@ -50,14 +50,14 @@
                 </div>
                 <div class="icon-menu">
                   <ul class="flex items center"> 
-                    <li class="hidden xl:flex items-center justify-center px-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] first:pl-0 last:pr-0  last:border-r-none border-r border-border-light">
+                    <li class="hidden xl:flex items-center justify-center px-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] first:pl-0 last:pr-0  last:border-r-none border-r border-border-light rtl:border-l rtl:border-r-0">
                       <button class="search-show">
                         <svg class="w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title"> 
                           <use href="../../assets/svg/_sprite.svg#Search"> </use>
                         </svg>
                       </button>
                     </li>
-                    <li class="flex items-center justify-center xl:pl-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] pl-0 px-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] first:pl-0 last:pr-0  last:border-r-none border-r border-border-light"> 
+                    <li class="flex items-center justify-center px-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] first:pl-0 last:pr-0  last:border-r-none border-r border-border-light rtl:border-l rtl:border-r-0"> 
                       <!-- Notification Start -->
                       <div class="dropdown">
                         <div class="indicator flex"><span class="indicator-item badge bg-success p-0 right-[4px] top-0 border-[2px] border-white w-[8px] h-[8px] rounded-full"></span>
@@ -160,12 +160,12 @@
                       </div>
                       <!-- Notification End -->
                     </li>
-                    <li class="flex items-center justify-center px-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] first:pl-0 last:pr-0  last:border-r-none border-r border-border-light">
+                    <li class="flex items-center justify-center px-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] first:pl-0 last:pr-0  last:border-r-none border-r border-border-light rtl:border-l rtl:border-r-0">
                       <svg class="w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title"> 
                         <use href="../../assets/svg/_sprite.svg#Star"> </use>
                       </svg>
                     </li>
-                    <li class="2md:hidden flex items-center justify-center px-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] first:pl-0 last:pr-0  last:border-r-none border-r border-border-light">
+                    <li class="2md:hidden flex items-center justify-center px-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] first:pl-0 last:pr-0  last:border-r-none border-r border-border-light rtl:border-l rtl:border-r-0">
                       <!-- Message Start -->
                       <div class="dropdown"> 
                         <div class="indicator flex"><span class="indicator-item bg-danger badge p-0 right-[4px] top-0 border-[2px] border-white w-[8px] h-[8px] rounded-full"></span>
@@ -244,7 +244,7 @@
                       </div>
                       <!-- Message End -->
                     </li>
-                    <li class="2md:hidden flex items-center justify-center px-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] first:pl-0 last:pr-0  last:border-r-none border-r border-border-light">
+                    <li class="2md:hidden flex items-center justify-center px-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] first:pl-0 last:pr-0  last:border-r-none border-r border-border-light rtl:border-l rtl:border-r-0">
                       <!-- Cart Start -->
                       <div class="dropdown shopping-bag"> 
                         <svg class="w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title"> 
@@ -345,7 +345,7 @@
                       </div>
                       <!-- Cart Start -->
                     </li>
-                    <li class="flex customizer-btn items-center justify-center px-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] first:pl-0 last:pr-0 last:border-r-none sm:last:pr-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] sm:last:border-r border-r border-border-light">
+                    <li class="flex customizer-btn items-center justify-center px-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] rtl:border-l sm:rtl:last:pl-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] rtl:border-r-0 first:pl-0 last:pr-0 last:border-none sm:last:pr-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] sm:last:border-r sm:last:border-solid border-r border-border-light">
                       <svg class="w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] cursor-pointer transition-all duration-300 group-hover:stroke-primary stroke-title"> 
                         <use href="../../assets/svg/_sprite.svg#Setting"> </use>
                       </svg>
@@ -353,7 +353,7 @@
                   </ul>
                 </div>
                 <ul class="profile-box flex items-center">
-                  <li class="pr-[11px] last:pr-0 sm:pr-0 sm:border-none last:border-none border-r border-border-2 flex items-center"> 
+                  <li class="pr-[11px] rtl:pr-unset rtl:pl-[11px] rtl:last:pl-0 rtl:last:pr-unset last:pr-0 sm:pr-0 sm:border-none last:border-none rtl:border-l rtl:border-r-0 border-r border-border-2 flex items-center"> 
                     <!-- Language Start -->
                     <div class="language-select dropdown group">
                       <button class="flex items-center max-w-[87px] min-w-[87px] gap-[11px]" id="language-select"><img class="w-[35px] h-auto" src="../../assets/images/flag/en.svg" alt="flag"><span class="flex items-center gap-1 text-lg font-bold 4xl:text-base">En</span>
@@ -374,7 +374,7 @@
                     </div>
                     <!-- Language End -->
                   </li>
-                  <li class="flex- pl-[11px] first:pl-0 flex items-center sm:hidden">
+                  <li class="flex- pl-[11px] rtl:pr-[11px] rtl:pl-unset rtl:first:pr-0 first:pl-0 flex items-center sm:hidden ">
                     <!-- Profile Start -->
                     <div class="dropdown"> 
                       <div class="flex items-center gap-[10px] cursor-pointer"> 
@@ -1132,7 +1132,7 @@
                 <div class="card-header pb-2 header-bottom-border">
                   <div class="flex flex-col">
                     <h3 class="text-lg font-bold">Basic Area Chart</h3>
-                    <p>You can use basic area chart using  <strong>areachart   </strong>id. </p>
+                    <p>Set basic area chart using  <strong>areachart   </strong>id. </p>
                     <div class="preview-code tab-links">
                       <button class="p-0 tab tab-lifted tab-active tab-link" data-tabFilter="1">Preview  </button>
                       <button class="p-0 tab tab-lifted tab-link tab-2" data-tabFilter="2">Html</button>
@@ -1157,7 +1157,7 @@
                 <div class="card-header pb-2 header-bottom-border">
                   <div class="flex flex-col">
                     <h3 class="text-lg font-bold">Column Chart</h3>
-                    <p>You can use column chart using  <strong>columnchart   </strong>id. </p>
+                    <p>Add column chart using  <strong>columnchart   </strong>id. </p>
                     <div class="preview-code tab-links">
                       <button class="p-0 tab tab-lifted tab-active tab-link" data-tabFilter="1">Preview  </button>
                       <button class="p-0 tab tab-lifted tab-link tab-2" data-tabFilter="2">Html</button>
@@ -1182,7 +1182,7 @@
                 <div class="card-header pb-2 header-bottom-border">
                   <div class="flex flex-col">
                     <h3 class="text-lg font-bold">Advanced Area Chart</h3>
-                    <p>You can use advanced area chart using  <strong>advancedareachart   </strong>id. </p>
+                    <p>Use advanced area chart adding   <strong>advancedareachart   </strong>id. </p>
                     <div class="preview-code tab-links">
                       <button class="p-0 tab tab-lifted tab-active tab-link" data-tabFilter="1">Preview  </button>
                       <button class="p-0 tab tab-lifted tab-link tab-2" data-tabFilter="2">Html</button>
@@ -1207,7 +1207,7 @@
                 <div class="card-header pb-2 header-bottom-border">
                   <div class="flex flex-col">
                     <h3 class="text-lg font-bold">Rounded Column Chart</h3>
-                    <p>You can set rounded chart using <strong>roundedcolumnchart   </strong>id. </p>
+                    <p>Set rounded chart using <strong>roundedcolumnchart   </strong>id. </p>
                     <div class="preview-code tab-links">
                       <button class="p-0 tab tab-lifted tab-active tab-link" data-tabFilter="1">Preview  </button>
                       <button class="p-0 tab tab-lifted tab-link tab-2" data-tabFilter="2">Html</button>
@@ -1232,7 +1232,7 @@
                 <div class="card-header pb-2 header-bottom-border">
                   <div class="flex flex-col">
                     <h3 class="text-lg font-bold">Spline Area Chart</h3>
-                    <p>You can set chart using  <strong>splineAreaChart1    </strong>&  <strong>splineAreaChart2 </strong>id.       </p>
+                    <p>Set spline area chart using <strong>splineAreaChart1    </strong>&  <strong>splineAreaChart2 </strong>id.       </p>
                     <div class="preview-code tab-links">
                       <button class="p-0 tab tab-lifted tab-active tab-link" data-tabFilter="1">Preview  </button>
                       <button class="p-0 tab tab-lifted tab-link tab-2" data-tabFilter="2">Html</button>
@@ -1261,7 +1261,7 @@
                 <div class="card-header pb-2 header-bottom-border">
                   <div class="flex flex-col">
                     <h3 class="text-lg font-bold">Group Bar Chart</h3>
-                    <p>You can use column chart using  <strong>groupbarchart   </strong>id. </p>
+                    <p>Use group column chart using  <strong>groupbarchart   </strong>id. </p>
                     <div class="preview-code tab-links">
                       <button class="p-0 tab tab-lifted tab-active tab-link" data-tabFilter="1">Preview  </button>
                       <button class="p-0 tab tab-lifted tab-link tab-2" data-tabFilter="2">Html</button>
@@ -1286,7 +1286,7 @@
                 <div class="card-header pb-2 header-bottom-border">
                   <div class="flex flex-col">
                     <h3 class="text-lg font-bold">Line Chart</h3>
-                    <p>You can use line chart using  <strong>linechart   </strong>id. </p>
+                    <p>Add line chart with the help of   <strong>linechart   </strong>id. </p>
                     <div class="preview-code tab-links">
                       <button class="p-0 tab tab-lifted tab-active tab-link" data-tabFilter="1">Preview  </button>
                       <button class="p-0 tab tab-lifted tab-link tab-2" data-tabFilter="2">Html</button>
@@ -1311,7 +1311,7 @@
                 <div class="card-header pb-2 header-bottom-border">
                   <div class="flex flex-col">
                     <h3 class="text-lg font-bold">Bubble Chart</h3>
-                    <p>You can use bubble chart using  <strong>bubblechart   </strong>id. </p>
+                    <p>Set bubble chart using  <strong>bubblechart   </strong>id. </p>
                     <div class="preview-code tab-links">
                       <button class="p-0 tab tab-lifted tab-active tab-link" data-tabFilter="1">Preview  </button>
                       <button class="p-0 tab tab-lifted tab-link tab-2" data-tabFilter="2">Html</button>
@@ -1336,7 +1336,7 @@
                 <div class="card-header pb-2 header-bottom-border">
                   <div class="flex flex-col">
                     <h3 class="text-lg font-bold">CandleStick Chart</h3>
-                    <p>You can use candlstick chart using  <strong>candlestickchart   </strong>id. </p>
+                    <p>Use candlstick chart using  <strong>candlestickchart   </strong>id. </p>
                     <div class="preview-code tab-links">
                       <button class="p-0 tab tab-lifted tab-active tab-link" data-tabFilter="1">Preview  </button>
                       <button class="p-0 tab tab-lifted tab-link tab-2" data-tabFilter="2">Html</button>
@@ -1361,7 +1361,7 @@
                 <div class="card-header pb-2 header-bottom-border">
                   <div class="flex flex-col">
                     <h3 class="text-lg font-bold">BoxPlot Chart</h3>
-                    <p>You can use boxplot chart using  <strong>boxplotchart   </strong>id. </p>
+                    <p>Set boxplot chart using <strong>boxplotchart   </strong>id. </p>
                     <div class="preview-code tab-links">
                       <button class="p-0 tab tab-lifted tab-active tab-link" data-tabFilter="1">Preview  </button>
                       <button class="p-0 tab tab-lifted tab-link tab-2" data-tabFilter="2">Html</button>
@@ -1386,7 +1386,7 @@
                 <div class="card-header pb-2 header-bottom-border">
                   <div class="flex flex-col">
                     <h3 class="text-lg font-bold">Bar Chart</h3>
-                    <p>You can use bar chart using   <strong>barchart    </strong>id. </p>
+                    <p>Add bar chart using  <strong>barchart    </strong>id. </p>
                     <div class="preview-code tab-links">
                       <button class="p-0 tab tab-lifted tab-active tab-link" data-tabFilter="1">Preview  </button>
                       <button class="p-0 tab tab-lifted tab-link tab-2" data-tabFilter="2">Html</button>
@@ -1411,7 +1411,7 @@
                 <div class="card-header pb-2 header-bottom-border">
                   <div class="flex flex-col">
                     <h3 class="text-lg font-bold">Line With Data Label Chart</h3>
-                    <p>You can use line chart with data label using   <strong>linedatalabelchart    </strong>id. </p>
+                    <p>Set line chart with data label with the help of    <strong>linedatalabelchart    </strong>id. </p>
                     <div class="preview-code tab-links">
                       <button class="p-0 tab tab-lifted tab-active tab-link" data-tabFilter="1">Preview  </button>
                       <button class="p-0 tab tab-lifted tab-link tab-2" data-tabFilter="2">Html</button>
@@ -1436,7 +1436,7 @@
                 <div class="card-header pb-2 header-bottom-border">
                   <div class="flex flex-col">
                     <h3 class="text-lg font-bold">Radial Chart </h3>
-                    <p>You can use radial chart using   <strong>radialchart    </strong>id. </p>
+                    <p>Use radial chart using   <strong>radialchart    </strong>id. </p>
                     <div class="preview-code tab-links">
                       <button class="p-0 tab tab-lifted tab-active tab-link" data-tabFilter="1">Preview  </button>
                       <button class="p-0 tab tab-lifted tab-link tab-2" data-tabFilter="2">Html</button>
@@ -1461,7 +1461,7 @@
                 <div class="card-header pb-2 header-bottom-border">
                   <div class="flex flex-col">
                     <h3 class="text-lg font-bold">Polar Area Chart </h3>
-                    <p>You can use radial chart using   <strong>polarareachart    </strong>id. </p>
+                    <p>Use radial chart adding    <strong>polarareachart    </strong>id. </p>
                     <div class="preview-code tab-links">
                       <button class="p-0 tab tab-lifted tab-active tab-link" data-tabFilter="1">Preview  </button>
                       <button class="p-0 tab tab-lifted tab-link tab-2" data-tabFilter="2">Html</button>
@@ -1486,7 +1486,7 @@
                 <div class="card-header pb-2 header-bottom-border">
                   <div class="flex flex-col">
                     <h3 class="text-lg font-bold">Radal Chart </h3>
-                    <p>You can use radal chart using   <strong>radalchart    </strong>id. </p>
+                    <p>Set radal chart using   <strong>radalchart    </strong>id. </p>
                     <div class="preview-code tab-links">
                       <button class="p-0 tab tab-lifted tab-active tab-link" data-tabFilter="1">Preview  </button>
                       <button class="p-0 tab tab-lifted tab-link tab-2" data-tabFilter="2">Html</button>
@@ -1511,7 +1511,7 @@
                 <div class="card-header pb-2 header-bottom-border">
                   <div class="flex flex-col">
                     <h3 class="text-lg font-bold">Range Area Chart</h3>
-                    <p>You can use range area chart using   <strong>rangeareachart    </strong>id. </p>
+                    <p>Use range area chart using <strong>rangeareachart    </strong>id. </p>
                     <div class="preview-code tab-links">
                       <button class="p-0 tab tab-lifted tab-active tab-link" data-tabFilter="1">Preview  </button>
                       <button class="p-0 tab tab-lifted tab-link tab-2" data-tabFilter="2">Html</button>

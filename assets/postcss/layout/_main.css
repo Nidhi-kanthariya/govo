@@ -2,6 +2,9 @@
   Main Css CSS
   ==========================*/
 @layer components {
+  .page-wrapper{
+    @apply overflow-hidden;
+  }
   .page-body-wrapper {
     .page-body {
       @apply mt-main-space px-body-space ml-auto h-full;

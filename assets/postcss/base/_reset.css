@@ -52,7 +52,6 @@
   .dashed-border-vertical {
     @apply bg-dashed-vertical bg-sm-v bg-right bg-repeat-y;
   }
-
   .custom-scroll {
     &::-webkit-scrollbar {
       @apply w-[0.25rem] h-[0.25rem];
@@ -67,7 +66,7 @@
   .customizer-sidebar {
     @apply duration-300 z-10 transition-all fixed min-w-[17.5rem] max-w-[17.5rem]  h-screen -right-full top-0 bottom-0 bg-white border-l border-light;
     &.show {
-      @apply right-0;
+      @apply right-0 rtl:left-0 rtl:right-unset;
     }
   }
   .apex-custom-text {
