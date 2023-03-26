@@ -2233,6 +2233,101 @@ input:focus {
 main .page-body .common-animate-main .common-animate{
           animation-duration: 12000ms;
         }
+main.sidebar-close .page-sidebar {
+  width: calc(65px + (90 - 65) * ((100vw - 320px) / (1920 - 320)));
+  transition-property: all;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+main.sidebar-close .page-header {
+  margin-left: 77px;
+}
+main.sidebar-close .page-body {
+  margin-left: calc(65px + (90 - 65) * ((100vw - 320px) / (1920 - 320)));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+main.sidebar-close.sidebar-icon .page-body-wrapper {
+  width: 100%;
+}
+main.sidebar-close.sidebar-icon .page-sidebar nav ul .title {
+  display: none;
+}
+main.sidebar-close.sidebar-icon .page-sidebar nav ul .sidebar-list a span .sidebar-name {
+  display: none !important;
+}
+main.sidebar-close.sidebar-icon .page-sidebar nav ul .sidebar-list .sidebar-submenu {
+  visibility: hidden;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  z-index: -1;
+  margin: 0px !important;
+  display: block !important;
+  height: 100%;
+  width: 250px;
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 47 62 / var(--tw-bg-opacity));
+  padding-left: 47px !important;
+  padding-top: 1.25rem;
+  opacity: 0;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+main.sidebar-close.sidebar-icon .page-sidebar nav ul .sidebar-list .sidebar-submenu li:hover a {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+main.sidebar-close.sidebar-icon .page-sidebar nav ul .sidebar-list .sidebar-submenu li:hover a::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+main.sidebar-close.sidebar-icon .page-sidebar nav ul .sidebar-list .sidebar-submenu li:not(:first-of-type) {
+  margin-top: 0.75rem;
+}
+.product-wrapper-grid.list-view .product-box .card .card-body main.sidebar-close.sidebar-icon .page-sidebar nav ul .sidebar-list .sidebar-submenu li a img {
+  width: 18.75rem;
+}
+main.sidebar-close.sidebar-icon .page-sidebar nav ul .sidebar-list .sidebar-submenu li a {
+  position: relative;
+  color: var(--content-white);
+}
+main.sidebar-close.sidebar-icon .page-sidebar nav ul .sidebar-list .sidebar-submenu li a:after {
+  position: absolute;
+  left: -18px;
+  top: 50%;
+  height: 2px;
+  width: 0.375rem;
+  --tw-translate-y: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  background-color: var(--content2);
+  --tw-content: "";
+  content: var(--tw-content);
+}
+main.sidebar-close.sidebar-icon .page-sidebar nav ul .sidebar-list .sidebar-submenu li a.active {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+main.sidebar-close.sidebar-icon .page-sidebar nav ul .sidebar-list .sidebar-submenu li a.active::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+main.sidebar-close.sidebar-icon .page-sidebar nav ul .sidebar-list:hover .sidebar-submenu {
+  visibility: visible;
+  --tw-translate-x: 30%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 1;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 .modal-main input[type="checkbox"] {
       display: none;
     }
@@ -7338,6 +7433,9 @@ code[class*="language-"],
 }
 .min-w-\[8\.125rem\] {
   min-width: 8.125rem;
+}
+.min-w-\[8\.625rem\] {
+  min-width: 8.625rem;
 }
 .min-w-\[80px\] {
   min-width: 80px;

@@ -24,8 +24,11 @@ html(lang='en')
                                 p Enter your email id and password for log in to your account
                                 div
                                     input(type="email" placeholder="Enter your id.." required)
-                                div
-                                    input(type="password" placeholder="Password.." required)
+                                div.relative
+                                    input(type='password' id="password" name='password' required='' placeholder="Enter your Password..")
+                                    div.password-icon
+                                        i(data-feather="eye" class="w-4 h-4 stroke-title right-[25px] rtl:right-unset top-1/2 rtl:left-[25px] absolute -translate-y-1/2 ").showHidePassword 
+                                        i(data-feather="eye-off" class="w-4 h-4 stroke-title right-[25px] rtl:right-unset top-1/2 rtl:left-[25px] absolute -translate-y-1/2 ").showHidePassword 
                                 div.flex.justify-between.items-center.gap-1
                                     div.flex.items-center.gap-2
                                         label.checkbox(class="w-[1rem] h-[1rem]")   
