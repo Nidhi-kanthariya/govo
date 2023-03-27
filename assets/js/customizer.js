@@ -62,9 +62,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   /// Fetch Layout (dark & rtl) ///
   if (localStorage.layout === 'rtl') {
+    console.log("localStorage.layout", localStorage.layout);
     document.body.setAttribute('dir', 'rtl');
     radioBtnCheckedFunction(ltrChecked, rtlChecked);
   } else {
+    console.log("localStorage.layout ELSE", localStorage.layout);
     document.body.setAttribute('dir', 'ltr');
     radioBtnCheckedFunction(rtlChecked, ltrChecked);
   }
@@ -120,11 +122,14 @@ const rtlLayout = function () {
 };
 
 const fullSidebar = function () {
+  console.log("full sidebar");
   sidebarType = 'full';
   mainPageWrapper.classList.remove('sidebar-close', 'sidebar-icon');
+  // mainPageWrapper.classList.remove('sidebar-close', 'sidebar-icon');
   radioBtnCheckedFunction(iconSidebarChecked, fullSidebarChecked);
 };
 const iconSidebar = function () {
+  console.log("icon sidebar");
   sidebarType = 'icon';
   mainPageWrapper.classList.add('sidebar-close', 'sidebar-icon');
   radioBtnCheckedFunction(fullSidebarChecked, iconSidebarChecked);
@@ -160,6 +165,7 @@ const resetMonochromeModeFunction = function () {
 };
 
 const resetSidebarType = function () {
+  console.log("reset fun call");
   sidebarType = '';
   mainPageWrapper.classList.remove('sidebar-close', 'sidebar-icon');
   radioBtnCheckedFunction(iconSidebarChecked, fullSidebarChecked);
@@ -215,7 +221,7 @@ modeEvent.addEventListener('click', function (event) {
   if (fullSidebarEl) {
     fullSidebar();
   }
-  if (iconSidebarEl) {
+  else if (iconSidebarEl) {
     iconSidebar();
   }
 });

@@ -2240,7 +2240,16 @@ main.sidebar-close .page-sidebar {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 main.sidebar-close .page-header {
-  margin-left: 77px;
+  margin-left: 4.8125rem;
+  width: calc(100% - 77px);;
+}
+[dir="rtl"] main.sidebar-close .page-header {
+  margin-left: unset;
+  margin-right: 4.8125rem;
+}
+[dir=rtl] [dir="rtl"] main.sidebar-close .page-header {
+  margin-left: unset;
+  margin-right: unset;
 }
 main.sidebar-close .page-body {
   margin-left: calc(65px + (90 - 65) * ((100vw - 320px) / (1920 - 320)));
@@ -12888,12 +12897,6 @@ code[class*="language-"],
   .xl\:flex-col {
     flex-direction: column;
   }
-  .xl\:items-start {
-    align-items: flex-start;
-  }
-  .xl\:justify-start {
-    justify-content: flex-start;
-  }
   .xl\:justify-center {
     justify-content: center;
   }
@@ -13738,9 +13741,6 @@ code[class*="language-"],
   .\32md\:block {
     display: block;
   }
-  .\32md\:flex {
-    display: flex;
-  }
   .\32md\:hidden {
     display: none;
   }
@@ -14358,9 +14358,6 @@ code[class*="language-"],
   }
   .\32sm\:max-w-\[80\%\] {
     max-width: 80%;
-  }
-  .\32sm\:flex-row {
-    flex-direction: row;
   }
   .\32sm\:flex-row-reverse {
     flex-direction: row-reverse;

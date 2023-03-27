@@ -23,7 +23,7 @@
         @apply w-[calc(65px_+_(90_-_65)_*_((100vw_-_320px)_/_(1920_-_320)))] transition-all ease-in-out;
       }
       .page-header{
-        @apply ml-[77px];
+        @apply ml-[4.8125rem] rtl:ml-unset rtl:mr-[4.8125rem] w-[calc(100%_-_77px);];
       }
       .page-body{
         @apply ml-[calc(65px_+_(90_-_65)_*_((100vw_-_320px)_/_(1920_-_320)))] transition-all duration-500;

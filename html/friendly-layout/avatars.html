@@ -1436,9 +1436,10 @@
               </div>
             </li>
             <li>
-              <div class="flex items-center justify-between"> 
-                <label class="leading-none text-dark text-sm font-semibold" for="monochrome">Monochrome Mode</label>
-                <input class="monochrome toggle toggle-primary" id="monochrome" name="monochrome" type="checkbox">
+              <div class="flex items-center justify-between"> <span class="text-sm font-semobold text-title">Monochrome Mode</span>
+                <label class="inline-flex relative items-center cursor-pointer">
+                  <input class="sr-only peer monochrome toggle toggle-primary" name="monochrome" type="checkbox" id="monochrome"><span class="w-7 h-4 bg-content rounded-full peer peer-focus:outline-none peer-checked:after:translate-x-full peer-checked:after:content-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-light after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-primary"></span>
+                </label>
               </div>
             </li>
           </ul>
