@@ -11,7 +11,7 @@
     }
 
     .right-sidebar-aside {
-        @apply z-[3] transition-all duration-1000 !max-w-[23.5625rem] absolute 2xl:right-0 2xl:top-0 2xl:bg-white 2xl:w-[17.1875rem];
+        @apply z-[3] transition-all duration-1000 !max-w-[23.5625rem] absolute 2xl:right-0 2xl:top-0 2xl:bg-white 2xl:w-[17.1875rem] sm:!w-[17.1875rem];
         width: -webkit-fill-available;
         &.right-hide-show-sidebar {
             @apply  !right-[-31.25rem]; 
@@ -150,7 +150,7 @@
         }
 
         .fg-emoji-container {
-            @apply absolute top-unset bottom-[4.6875rem] !left-4 border border-gray-light shadow-lg sm:w-[19.6875rem] 2sm:w-[14.375rem] h-[25.9375rem];
+            @apply absolute top-unset bottom-[4.6875rem] rtl:!right-4 rtl:!left-unset !left-4 border border-gray-light shadow-lg sm:w-[19.6875rem] 2sm:w-[14.375rem] h-[25.9375rem];
         }
     }
 

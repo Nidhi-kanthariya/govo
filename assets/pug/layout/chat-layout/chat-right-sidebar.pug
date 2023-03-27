@@ -1,7 +1,7 @@
 
 // chat right sidebar start
 
-div.border-l.border-gray-light.tabs.flex-col.gap-0.right-sidebar-aside
+div.border-l.border-gray-light.tabs.flex-col.gap-0.right-sidebar-aside(class="rtl:border-l-0 rtl:border-r")
     div.overflow-auto(class="h-full chat-sidebar-scroll custom-scroll carousel-scroll-hide") 
         div.p-4 
             div.flex.items-center.justify-between
@@ -18,7 +18,7 @@ div.border-l.border-gray-light.tabs.flex-col.gap-0.right-sidebar-aside
                 +social-mediadata(SOCIAL_MEDIA_DATA)
 
             div.social-detail.flex.flex-wrap.justify-center.items-center
-                div.following-data.flex.flex-col.justify-center.items-center.gap-1.font-semibold.pr-padding.border-r-2.border-border-light
+                div.following-data.flex.flex-col.justify-center.items-center.gap-1.font-semibold.pr-padding.border-r-2.border-border-light(class=" rtl:border-r-0 rtl:border-l-2")
                     span(class="text-xs leading-5") Following
                     span(class="text-[13px] leading-[18px] text-content") 235k
                 div.follower-data.flex.flex-col.justify-center.items-center.gap-1.font-semibold.pl-padding 

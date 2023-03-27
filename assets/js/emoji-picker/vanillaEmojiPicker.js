@@ -7658,13 +7658,14 @@ const EmojiPicker = function (options) {
 
                     .fg-emoji-picker-search {
                         position: relative;
+                        display: none;
                     }
 
                     .fg-emoji-picker-search input {
                         border: none;
                         box-shadow: 0 0 0 0;
                         outline: none;
-                        width: calc(100% - 30px);
+                        width: calc(100% - 40px);
                         display: block;
                         padding: 10px 15px;
                         background-color: #f3f3f3;
