@@ -4,39 +4,47 @@
 //- feather
 -var feather= true;
 
-//- customSelect
+//- custom select
 -var customSelect= true;
 
-//- customizer
+//- customizer  
 -var customizer=true;
 
-//- prism
--var prism=true;
+//- apex-chart
+-var apexChart=true;
+-var friendlyApex=true;
+
+//- data map
+-var dataMap=true;
 
 //- Breadcrumbs
 -var pageTitle="Avatars";
 -var breadcrumb=['Ui Kits','Avatars'];
 
-//- json
+
+//- all JSON  
 include ../../data/all-data
 
-//- mixin
+//- all mixin   
 include ../../mixin/mixin
-
 doctype html
 html(lang='en')  
   include ../../layout/header-files 
   body(dir="ltr" class="unique-skin") 
     main.page-wrapper
-      div.page-body-wrapper(class="2xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300")
-        include ../../layout/header/unique/header     
-        // Sidebar Start 
-        div.page-sidebar.sidebar-dark.unique-sidebar
-          include ../../layout/sidebar/unique
+      include ../../layout/header/friendly/header     
+      div.page-body-wrapper
+
+        // Sidebar Start       
+        div.page-sidebar.sidebar-dark.unique-sidebar.friendly-sidebar
+          div(class="hidden xl:block")
+            button(class="w-full sidebar-btn flex items-center justify-center py-[11px] px-[12px] bg-sidebar-dark3 rounded-5")
+              +SVG_ICON("Close-Square","w-[24px] h-[24px] stroke-white")  
+          include ../../layout/sidebar/friendly
         // Sidebar End 
 
         // Page Body Start 
-        div.page-body
+        div.page-body(class="friendly-body xl:!px-body-space2 !pr-body-space2")
           div.grid.grid-cols-12.gap-card-gap
             div.col-span-4(class="2xl:col-span-6 2md:col-span-12")
               div.card.tabs
@@ -611,8 +619,11 @@ html(lang='en')
                           |      &lt;/div&gt;
                           |    &lt;/div&gt;
                           |&lt;/div&gt;
+
+
+          +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
+
         // Page Body End 
-        +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
     include ../../components/customizer
 
-  include ../../layout/footer-files
+    include ../../layout/footer-files 
