@@ -1315,13 +1315,13 @@
                       <div> 
                         <div class="flex items-center justify-between">
                           <div>
-                            <h3 class="text-lg font-bold text-title leading-none">Revenue</h3>
+                            <h3 class="text-lg font-bold leading-none text-title">Revenue</h3>
                             <h4 class="flex items-center mt-[12px] text-2xl 5xl:text-lg 4xl:text-base font-extrabold text-title gap-[7px]">$4,875<span class="flex items-center gap-1 text-3xs font-semibold text-success">36.28%
                                 <svg class="w-[6px] h-[6px] -rotate-180 fill-success stroke-success"> 
                                   <use href="../../assets/svg/_sprite.svg#Fill-Arrow"> </use>
                                 </svg></span></h4>
                           </div>
-                          <div class="avatar-group -space-x-6 justify-center">
+                          <div class="avatar-group -space-x-6 justify-center rtl:space-x-5">
                             <div class="avatar w-12 h-12 5xl:w-11 5xl:h-11 border-[2px] border-white">
                               <div><img src="../../assets/images/avatar/1.jpg" alt="avatar"/></div>
                             </div>
@@ -1927,9 +1927,10 @@
               </div>
             </li>
             <li>
-              <div class="flex items-center justify-between"> 
-                <label class="leading-none text-dark text-sm font-semibold" for="monochrome">Monochrome Mode</label>
-                <input class="monochrome toggle toggle-primary" id="monochrome" name="monochrome" type="checkbox">
+              <div class="flex items-center justify-between"> <span class="text-sm font-semobold text-title">Monochrome Mode</span>
+                <label class="inline-flex relative items-center cursor-pointer">
+                  <input class="sr-only peer monochrome toggle toggle-primary" name="monochrome" type="checkbox" id="monochrome"><span class="w-7 h-4 bg-content rounded-full peer peer-focus:outline-none peer-checked:after:translate-x-full peer-checked:after:content-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-light after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-primary"></span>
+                </label>
               </div>
             </li>
           </ul>

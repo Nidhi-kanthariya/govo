@@ -28,7 +28,7 @@
 
             &:before,
             &:after {
-                @apply content-[''] absolute w-[.1875rem] h-[.1875rem] bg-title rounded-full left-[105%];
+                @apply content-[''] absolute w-[.1875rem] h-[.1875rem] bg-title rounded-full left-[105%] rtl:left-unset rtl:right-[105%];
             }
 
             span {

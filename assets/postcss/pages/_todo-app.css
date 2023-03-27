@@ -44,20 +44,52 @@
                 }
             }
         }
-    }
 
-    .todo-form {
-        @apply opacity-0 invisible -translate-y-4 transition-all;
-
-        &.show {
-            @apply opacity-100 visible translate-y-0 max-h-max transition-all;
+        .todo-sublist{
+            li{
+                /* .priority-low{
+                    @apply bg-danger-light capitalize leading-none text-3xs text-danger;
+                }
+                .priority-medium{
+                    @apply bg-warning-light capitalize leading-none text-3xs text-warning;
+                }
+                .priority-high{
+                    @apply bg-primary-light capitalize leading-none text-3xs text-primary;
+                }
+                .status-pending{
+                    @apply bg-secondary-light capitalize leading-none text-3xs text-secondary;
+                }
+                .status-inprogress{
+                    @apply bg-info-light capitalize leading-none text-3xs text-info;
+                }
+                .status-completed{
+                    @apply bg-success-light capitalize leading-none text-3xs text-success;
+                }
+                .status-new{
+                    @apply bg-primary-light capitalize leading-none text-3xs text-primary;
+                } */
+            }
         }
     }
 
+    .todo-form{
+        .priority-list{
+            select{
+                option{
+                    
+                }
+            }
+        }
+    }
     .check-custom {
         input:checked~.check {
             svg {
                 @apply opacity-100;
+            }
+        }
+        &.todo-check-show{
+            h5{
+                @apply line-through;
             }
         }
     }

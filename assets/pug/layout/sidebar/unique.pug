@@ -20,7 +20,7 @@ aside(class="sidebar")
             a(href=`${menuItem.url}`).sidebar-link.sidebar-title
               span 
                 +SVG_ICON(`${menuItem.icon}`) 
-                span= menuItem.title
+                span.sidebar-name= menuItem.title
               if(menuItem.subMenu)
                 +SVG_ICON("Arrow-Right-2")  
             if menuItem.subMenu 

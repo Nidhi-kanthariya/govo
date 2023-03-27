@@ -4,7 +4,7 @@
 //- ================
 
 mixin todo-left-sidebar(data)
-    button(class="hidden lg:flex left-sidebar-toggle")   
+    button(class="justify-end hidden mb-3 lg:flex left-sidebar-toggle absolute right-[-35px] top-0 bg-gray-light p-2 ")   
         i(data-feather="x" class="w-5 h-5 stroke-title")
     label.button-label.btn-primary.flex.gap-2.items-center.justify-center.w-full.text-sm(for='todo-modal') 
         i(data-feather="plus" class="w-[1.125rem] h-[1.125rem] stroke-white")
@@ -33,16 +33,20 @@ mixin todo-app-data(data)
                 div.flex.items-center.justify-center
                     div.check-custom.flex.items-center.justify-center.relative(class="pl-[calc(10px_+_(15_-_10)_*_((100vw_-_320px)_/_(1920_-_320)))] pr-[calc(7px_+_(12_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] py-[3px]")
                         span.absolute.top-0.bottom-0(class="ltr:left-0 rtl:right-0 w-[3px] line h-full rounded-5")
-                        div.relative(class="w-[calc(25px_+_(35_-_25)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(25px_+_(35_-_25)_*_((100vw_-_320px)_/_(1920_-_320)))]")
-                            input(type="checkbox" checked=item.checked  class="w-full h-full relative z-[2] opacity-0") 
+                        div.relative(class="w-5 h-5")
+                            input(type="checkbox" checked=item.checked  class="todo-check w-full h-full relative z-[2] opacity-0") 
                             span.check.absolute.inset-0.flex.items-center.justify-center.rounded-5.w-full.h-full(class="z-[1] p-[3px] bg-gray-200 dark:bg-mode-100")
                                 i(data-feather="check" class=`check-icon w-[calc(16px_+_(22_-_16)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(16px_+_(22_-_16)_*_((100vw_-_320px)_/_(1920_-_320)))] transition-all opacity-0`)
-                    div(class="max-w-[calc(138px_+_(650_-_138)_*_((100vw_-_320px)_/_(1920_-_320)))]")
-                        h5.font-medium.text-dark.truncate(class="text-sm 2xl:text-xs focus:border focus:border-light dark:focus:border-mode-200 focus:outline-none focus:px-2 focus:rounded-5")= item.title
-                        span.font-normal.text-xs.text-gray-500.text-3xs.block.truncate.mt-1= item.subTitle
+                    div(class="max-w-[calc(48px_+_(650_-_48)_*_((100vw_-_320px)_/_(1920_-_320)))] edit-div min-lg:min-w-[calc(66px_+_(650_-_66)_*_((100vw_-_320px)_/_(1920_-_320)))] min-w-[calc(120px_+_(650_-_120)_*_((100vw_-_320px)_/_(1920_-_320)))]")
+                        h5.font-medium.text-dark.truncate(class="text-xs focus:border focus:border-light dark:focus:border-mode-200 focus:outline-none focus:px-2 focus:rounded-5")= item.title
+
                 div  
-                    ul.flex.gap-3
+                    ul.flex.gap-3.todo-sublist
                         li.cursor-pointer 
-                            i.transition-all(data-feather="edit" class="stroke-primary opacity-50 hover:opacity-100 w-[calc(16px_+_(22_-_16)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(16px_+_(22_-_16)_*_((100vw_-_320px)_/_(1920_-_320)))] edit")
+                            div.badge.badge-sm.capitalize.px-3.font-bold.rounded-full.text-primary.bg-primary-extralight(class=`priority-${item.priority} !text-3xs`)=item.priority  
                         li.cursor-pointer 
-                            i.transition-all(data-feather="trash" class="stroke-danger opacity-50 hover:opacity-100 w-[calc(16px_+_(22_-_16)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(16px_+_(22_-_16)_*_((100vw_-_320px)_/_(1920_-_320)))] delete")
+                            div.badge.badge-sm.capitalize.px-3.font-bold.rounded-full.text-success.bg-success-light(class=`status-${item.status} !text-3xs`)=item.status             
+                        li.cursor-pointer 
+                            i.transition-all(data-feather="edit" class="stroke-twitter opacity-50 hover:opacity-100 w-[calc(16px_+_(18_-_16)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(16px_+_(18_-_16)_*_((100vw_-_320px)_/_(1920_-_320)))] edit")
+                        li.cursor-pointer 
+                            i.transition-all(data-feather="trash" class="stroke-danger opacity-50 hover:opacity-100 w-[calc(16px_+_(18_-_16)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(16px_+_(18_-_16)_*_((100vw_-_320px)_/_(1920_-_320)))] delete")

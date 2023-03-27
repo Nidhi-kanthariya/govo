@@ -9,15 +9,15 @@
     }
 
     .offline-status{
-      @apply  absolute h-[14%] w-[10%] right-[-0.3125rem] top-[-0.3125rem] rounded-full bg-danger;
+      @apply  absolute h-[14%] w-[10%] right-[-0.3125rem] rtl:right-unset rtl:left-[-0.3125rem] top-[-0.3125rem] rounded-full bg-danger;
     }
 
     .active-status{
-      @apply absolute h-[10%] w-[10%] right-[0.25rem] bottom-[1rem] rounded-full bg-success;
+      @apply absolute h-[10%] w-[10%] right-[0.25rem] rtl:right-unset rtl:left-[0.25rem] bottom-[1rem] rounded-full bg-success;
     }
 
     .active-process{
-      @apply  absolute left-[50%] top-[-0.75rem] bg-primary text-white py-1 px-2 rounded-full;
+      @apply  absolute left-[50%] rtl:left-unset rtl:right-[50%] top-[-0.75rem] bg-primary text-white py-1 px-2 rounded-full;
     }
 
     .img-indicator{

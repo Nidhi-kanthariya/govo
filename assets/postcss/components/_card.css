@@ -22,7 +22,7 @@
         }
       }
       .preview-code{
-        @apply flex gap-2 absolute top-0 right-0 sm:top-unset sm:right-unset sm:static sm:mt-1;
+        @apply flex gap-2 absolute top-0 right-0 sm:top-unset sm:right-unset sm:static sm:mt-1 rtl:left-0 rtl:right-unset;
       }
     }
     &-body {

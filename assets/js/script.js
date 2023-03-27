@@ -121,7 +121,7 @@ plusMinus.forEach((element) => {
   });
   subButton?.addEventListener('click', function () {
     const inputEl = this.parentNode.querySelector("input[type='number']");
-    if (inputEl.value >= 1) {
+    if (inputEl.value >= 2) {
       inputEl.value = Number(inputEl.value) - 1;
     }
   });
@@ -278,66 +278,86 @@ todoList?.forEach((el) => {
       remove.closest('.todo-item').remove();
     }
     if (edit) {
-      edit.closest('.todo-item').querySelector('h5').setAttribute('contenteditable', true);
-      edit.closest('.todo-item').querySelector('h5').focus();
+      edit.closest('.todo-item').querySelector('.edit-div').setAttribute('contenteditable', true);
+      edit.closest('.todo-item').querySelector('.edit-div').focus();
     }
   });
 });
 
 
-  /*==============================
-    Password Show hide js 
- =====================================*/
- const showHideBtn = document.querySelectorAll('.showHidePassword');
- console.log(showHideBtn)
- let activeEye = 1;
- for (let i = 0; i < showHideBtn.length; ++i) {
-   showHideBtn[i].addEventListener('click', function () {
-     let inputEl = showHideBtn[i].parentNode.querySelector('input');
-     if (inputEl.type === 'password') {
-       inputEl.type = 'text';
-       activeEye = 2;
-     } else {
-       inputEl.type = 'password';
-       activeEye = 1;
-     }
-     showHideBtn[i].src = `../../assets/icons/svg/eye-${activeEye}.svg`;
-   });
- } 
+/*==============================
+  Password Show hide js 
+=====================================*/
+const showHideBtn = document.querySelectorAll('.showHidePassword');
+console.log(showHideBtn)
+let activeEye = 1;
+for (let i = 0; i < showHideBtn.length; ++i) {
+  showHideBtn[i].addEventListener('click', function () {
+    let inputEl = showHideBtn[i].parentNode.querySelector('input');
+    if (inputEl.type === 'password') {
+      inputEl.type = 'text';
+      activeEye = 2;
+    } else {
+      inputEl.type = 'password';
+      activeEye = 1;
+    }
+    showHideBtn[i].src = `../../assets/icons/svg/eye-${activeEye}.svg`;
+  });
+}
 
-
- /*=====================
-  Close alert js
+/*=====================
+Password hide/show js
 ==========================*/
 
-  var alert_del = document.querySelectorAll('.alert-del');
-  alert_del.forEach((x) =>
-    x.addEventListener('click', function () {
-      x.parentElement.classList.add('hidden');
-    })
-  );
+const eye = document.querySelector(".feather-eye");
+const eyeoff = document.querySelector(".feather-eye-off");
+const passwordField = document.querySelector("input[type=password]");
 
-  /*=====================
-  13. Wishlist Remove js
-  ==========================*/
-  const wishlistProduct = document.querySelectorAll('.wishlist-box');
-  wishlistProduct?.forEach((el) => {
-    const deleteButton = el.querySelector('.delete-button');
-    deleteButton.addEventListener('click', function () {
-      this.closest('.col-span-3').style.display = 'none';
-    });
-  });
+eye.addEventListener("click", () => {
+  eye.style.display = "none";
+  eyeoff.style.display = "block";
+  passwordField.type = "text";
+});
 
-  /*=====================
-  13. List-item Remove js
-  ==========================*/
-  const invoiceBox = document.querySelector('.invoice , .cart-main');
-  const invoiceRemove = invoiceBox?.querySelectorAll('.remove-invoice , .remove-cart');
-  invoiceRemove?.forEach((el) => {
-    el.addEventListener('click', function () {
-      this.closest('.invoice-item , .cart-item').style.display = 'none';
-    });
+eyeoff.addEventListener("click", () => {
+  eyeoff.style.display = "none";
+  eye.style.display = "block";
+  passwordField.type = "password";
+});
+
+
+/*=====================
+ Close alert js
+==========================*/
+
+var alert_del = document.querySelectorAll('.alert-del');
+alert_del.forEach((x) =>
+  x.addEventListener('click', function () {
+    x.parentElement.classList.add('hidden');
+  })
+);
+
+/*=====================
+13. Wishlist Remove js
+==========================*/
+const wishlistProduct = document.querySelectorAll('.wishlist-box');
+wishlistProduct?.forEach((el) => {
+  const deleteButton = el.querySelector('.delete-button');
+  deleteButton.addEventListener('click', function () {
+    this.closest('.col-span-3').style.display = 'none';
   });
+});
+
+/*=====================
+13. List-item Remove js
+==========================*/
+const invoiceBox = document.querySelector('.invoice , .cart-main');
+const invoiceRemove = invoiceBox?.querySelectorAll('.remove-invoice , .remove-cart');
+invoiceRemove?.forEach((el) => {
+  el.addEventListener('click', function () {
+    this.closest('.invoice-item , .cart-item').style.display = 'none';
+  });
+});
 
 /*=====================
 Following js
@@ -379,6 +399,10 @@ suggest?.forEach((el) => {
                                 <use href="../../assets/svg/_sprite.svg#Profile"></use> 
                               </svg>`;
     suggestButton.style.padding = "0px";
-    
   });
 });
+
+
+
+
+

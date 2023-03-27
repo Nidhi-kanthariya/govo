@@ -241,5 +241,4 @@ window.addEventListener('beforeunload', function () {
   localStorage.monochrome = monochrome;
   localStorage.sidebarType = sidebarType;
   window.location.pathname.includes('rtl.html') && (localStorage.removeItem('layout'))
-
 });

@@ -62,7 +62,7 @@
     }
     &.dropdown-right{
       .dropdown-menu{
-        @apply left-full top-0;
+        @apply left-full right-unset top-0;
       }
     }
   }

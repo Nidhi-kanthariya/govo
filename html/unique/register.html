@@ -26,7 +26,7 @@
     <main class="page-wrapper">
       <!-- Page Body Start-->
       <div class="page-body h-[100vh]">
-        <div class="!flex items-center justify-center h-full p-[15px] ratio_asos"><img class="bg-img" src="../../assets/images/dotsbg.jpg">
+        <div class="!flex items-center justify-center h-full p-[15px] common-animate-main ratio_asos"><img class="bg-img" src="../../assets/images/dotsbg.jpg">
           <div class=" grid grid-cols-12 gap-0 mx-auto w-full max-w-[70%] xl:max-w-[50%] md:max-w-[70%] sm:max-w-[80%] 2sm:max-w-[100%] xl:flex xl:justify-center lg:grid items-center">
             <div class="relative col-span-5 bg-white 2xl:col-span-6 z-1 xl:col-span-12 rounded-xl max-w-[470px] min-w-[300px] max-h-max">
               <form class="theme-form flex flex-col gap-3 !m-0 p-8 2sm:p-4" action="index.html">
@@ -65,7 +65,7 @@
               </form>
             </div>
             <div class="col-span-7 rounded-lg 4xl:col-span-6 z-1 xl:col-span-12 xl:hidden">
-              <div class="relative flex items-center justify-center object-contain"><img class="w-[100%]" src="../../assets/images/svg/register1.svg" alt="register vector"><img class="animate-ping top-[6%] 4xl:top-[-3%] 2xl:top-[-6%] 4xl:right-[37%] absolute right-[41%] animate__animated animate__infinite animate__shakeY animate__slower" src="../../assets/images/svg/register.svg" alt="register vector"></div>
+              <div class="relative flex items-center justify-center object-contain"><img class="w-[100%]" src="../../assets/images/svg/register1.svg" alt="register vector"><img class="common-animate animate-ping top-[6%] 4xl:top-[-3%] 2xl:top-[-6%] 4xl:right-[37%] absolute right-[41%] animate__animated animate__infinite animate__shakeY animate__slower" src="../../assets/images/svg/register.svg" alt="register vector"></div>
             </div>
           </div>
         </div>
@@ -132,9 +132,10 @@
               </div>
             </li>
             <li>
-              <div class="flex items-center justify-between"> 
-                <label class="leading-none text-dark text-sm font-semibold" for="monochrome">Monochrome Mode</label>
-                <input class="monochrome toggle toggle-primary" id="monochrome" name="monochrome" type="checkbox">
+              <div class="flex items-center justify-between"> <span class="text-sm font-semobold text-title">Monochrome Mode</span>
+                <label class="inline-flex relative items-center cursor-pointer">
+                  <input class="sr-only peer monochrome toggle toggle-primary" name="monochrome" type="checkbox" id="monochrome"><span class="w-7 h-4 bg-content rounded-full peer peer-focus:outline-none peer-checked:after:translate-x-full peer-checked:after:content-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-light after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-primary"></span>
+                </label>
               </div>
             </li>
           </ul>
