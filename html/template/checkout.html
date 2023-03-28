@@ -1127,7 +1127,7 @@
         <!-- Page Body Start-->
         <div class="page-body"> 
           <div class="grid grid-cols-12 gap-4 card checkout-detail"> 
-            <div class="col-span-8 lg:col-span-12 w-full tabs flex flex-col lg:border-none lg:pr-0 rtl:lg:pl-0 border-r border-border-light pr-4 rtl:border-l rtl:pl-4 rtl:pr-unset">
+            <div class="col-span-8 flex flex-col w-full pr-4 border-r lg:col-span-12 tabs lg:border-b lg:border-l-0 rtl:lg:border-r-0 lg:pb-4 rtl:lg:border-l-0 lg:px-0 lg:pr-0 rtl:lg:pl-0 border-border-light rtl:border-l rtl:border-r-0 rtl:pl-4 rtl:pr-unset">
               <div class="mb-1 tab-links flex items-center 2md:flex-col">
                 <button class="tab product-tab w-full items-center text-sm tab-active tab-link" data-tabFilter="1"> <i class="fa-solid fa-user"></i>Billing  </button>
                 <button class="tab product-tab w-full items-center text-sm tab-link" data-tabFilter="2"><i class="fa-solid fa-truck-fast"></i>Shipping</button>
@@ -1139,7 +1139,7 @@
                   <div>
                     <h5 class="text-title font-semibold mb-2">Billing Information </h5>
                     <p class="text-content3 mb-5"> Fill up the following information </p>
-                    <form class="theme-form flex flex-col gap-4 m-0" action="index.html">
+                    <form class="flex flex-col gap-4 m-0 theme-form" action="index.html">
                       <div class="grid grid-cols-12 gap-5">
                         <div class="col-span-6 sm:col-span-12">
                           <label for="firstName">First Name</label>
@@ -1187,7 +1187,7 @@
                         </div>
                       </div>
                       <div class="flex items-center gap-2">
-                        <label class="checkbox checkbox-sm cursor-pointer !mb-0"> 
+                        <label class="checkbox checkbox-sm cursor-pointer !mb-0 cursor-pointer"> 
                           <input class="peer" type="checkbox">
                           <div class="checkbox-indicator peer-checked:!bg-primary !border-primary"> <i data-feather="check"></i></div>
                         </label>
@@ -1197,7 +1197,7 @@
                         <label for="otherNotes">Other Notes </label>
                         <textarea class="p-[11px] focus:!border-border-light w-full border border-border-light rounded-5 text-xs text-content" placeholder="Enter your address.." row="3" id="otherNotes"></textarea>
                       </div>
-                      <div class="flex justify-between items-center sm:flex-col sm:gap-3"><a class="btn bg-secondary text-xs text-white flex items-center gap-2 !w-fit sm:!w-full justify-center !m-0" href="cart.html" type="button"> <i class="w-4 h-4 stroke-white" data-feather="arrow-left"></i> Return to Shopping Cart</a><a class="btn btn-primary text-xs text-white flex items-center gap-2 !w-fit sm:!w-full justify-center !m-0" href="javascript:void(0)" type="button">
+                      <div class="flex justify-between items-center sm:flex-col sm:gap-3"><a class="btn bg-secondary text-xs text-white flex items-center gap-2 py-2 !w-fit sm:!w-full justify-center !m-0" href="cart.html" type="button"> <i class="w-4 h-4 stroke-white" data-feather="arrow-left"></i> Return to Shopping Cart</a><a class="btn btn-primary text-xs text-white flex items-center gap-2 py-2 !w-fit sm:!w-full justify-center !m-0" href="javascript:void(0)" type="button">
                             Proceed to Next<i class="w-4 h-4 stroke-white" data-feather="truck"></i></a></div>
                     </form>
                   </div>
@@ -1295,7 +1295,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="flex justify-between items-center sm:flex-col sm:gap-3"><a class="btn bg-secondary text-xs text-white flex items-center gap-2 !w-fit sm:!w-full justify-center !m-0" href="cart.html" type="button"> <i class="w-4 h-4 stroke-white" data-feather="arrow-left"></i> Return to Shopping Cart</a><a class="btn btn-primary text-xs text-white flex items-center gap-2 !w-fit sm:!w-full justify-center !m-0" href="javascript:void(0)" type="button">
+                    <div class="flex justify-between items-center sm:flex-col sm:gap-3"><a class="btn bg-secondary text-xs text-white flex items-center gap-2 py-2 !w-fit sm:!w-full justify-center !m-0" href="cart.html" type="button"> <i class="w-4 h-4 stroke-white" data-feather="arrow-left"></i> Return to Shopping Cart</a><a class="btn btn-primary text-xs text-white flex items-center gap-2 py-2 !w-fit sm:!w-full justify-center !m-0" href="javascript:void(0)" type="button">
                           Proceed to Next<i class="w-4 h-4 stroke-white" data-feather="truck"></i></a></div>
                   </div>
                 </div>
@@ -1330,7 +1330,7 @@
                           <p class="pl-6 text-content3 text-xs">Transferring money securely through your bank account. Mastercard, Visa, Discover, and Stripe are all accepted</p>
                         </div><img class="h-[30px]" src="../../assets/images/ecommerce/credit-card.png" alt="credit card">
                       </div>
-                      <form class="theme-form flex flex-col gap-4 m-0" action="index.html">
+                      <form class="flex flex-col gap-4 m-0 theme-form" action="index.html">
                         <div>
                           <label for="cardholder">Card holder</label>
                           <input type="text" id="cardholder" placeholder="Enter card holder name" required>
@@ -1365,7 +1365,7 @@
                         </div><img class="h-[30px]" src="../../assets/images/ecommerce/cash-on-delivery.png" alt="cash on delivery">
                       </div>
                     </div>
-                    <div class="flex justify-between items-center sm:flex-col sm:gap-3"><a class="btn bg-secondary text-xs text-white flex items-center gap-2 !w-fit sm:!w-full justify-center !m-0" href="cart.html" type="button"> <i class="w-4 h-4 stroke-white" data-feather="arrow-left"></i> Return to Shopping Cart</a><a class="btn btn-primary text-xs text-white flex items-center gap-2 !w-fit sm:!w-full justify-center !m-0" href="javascript:void(0)" type="button">
+                    <div class="flex justify-between items-center sm:flex-col sm:gap-3"><a class="btn bg-secondary text-xs text-white flex items-center gap-2 py-2 !w-fit sm:!w-full justify-center !m-0" href="cart.html" type="button"> <i class="w-4 h-4 stroke-white" data-feather="arrow-left"></i> Return to Shopping Cart</a><a class="btn btn-primary text-xs text-white flex items-center gap-2 py-2 !w-fit sm:!w-full justify-center !m-0" href="javascript:void(0)" type="button">
                           Proceed to Next<i class="w-4 h-4 stroke-white" data-feather="truck"></i></a></div>
                   </div>
                 </div>
@@ -1378,7 +1378,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-span-4 lg:col-span-12 w-full">
+            <div class="col-span-4 w-full lg:col-span-12">
               <div class="flex flex-col gap-2"> 
                 <h5 class="text-title font-semibold mb-2">Current Cart</h5>
                 <div class="overflow-auto custom-scroll"> 
@@ -1539,7 +1539,7 @@
       <div class="modal-main">
         <input class="peer" id="modal-edit" name="modal-edit" type="checkbox">
         <label class="modal-overlay peer-checked:block" for="modal-edit"></label>
-        <div class="modal modal-center peer-checked:opacity-100 peer-checked:visible w-10/12 max-w-md">
+        <div class="modal modal-center w-10/12 max-w-md peer-checked:opacity-100 peer-checked:visible">
           <div class="modal-header"> 
             <h3 class="text-title font-semibold text-sm">Information </h3>
             <label for="modal-edit"> <i class="w-4 h-4 stroke-content3" data-feather="x"></i></label>
@@ -1576,7 +1576,7 @@
       <div class="modal-main">
         <input class="peer" id="modal-delete" name="modal-delete" type="checkbox">
         <label class="modal-overlay peer-checked:block" for="modal-delete"></label>
-        <div class="modal modal-center peer-checked:opacity-100 peer-checked:visible w-10/12 max-w-md">
+        <div class="modal modal-center w-10/12 max-w-md peer-checked:opacity-100 peer-checked:visible">
           <div class="modal-body text-center">
             <label class="flex justify-end" for="modal-delete"> <i class="w-4 h-4 stroke-content3" data-feather="x"></i></label>
             <div class="modal-img"><img class="w-28" src="../../assets/images/ecommerce/delete.gif" alt="delete gif"></div>

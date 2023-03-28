@@ -44,7 +44,7 @@ html(lang='en')
             // Page Body Start
             div.page-body 
                div.grid.grid-cols-12.gap-4.card.checkout-detail 
-                  div.col-span-8(class="lg:col-span-12 w-full tabs flex flex-col lg:border-none lg:pr-0 rtl:lg:pl-0 border-r border-border-light pr-4 rtl:border-l rtl:pl-4 rtl:pr-unset")
+                  div.col-span-8(class="flex flex-col w-full pr-4 border-r lg:col-span-12 tabs lg:border-b lg:border-l-0 rtl:lg:border-r-0 lg:pb-4 rtl:lg:border-l-0 lg:px-0 lg:pr-0 rtl:lg:pl-0 border-border-light rtl:border-l rtl:border-r-0 rtl:pl-4 rtl:pr-unset")
                      div.mb-1.tab-links.flex.items-center(class="2md:flex-col")
                         button.tab.product-tab.w-full.items-center.text-sm.tab-active(data-tabFilter="1" class="tab-link") 
                            i.fa-solid.fa-user
@@ -63,7 +63,7 @@ html(lang='en')
                            div
                               h5.text-title.font-semibold.mb-2 Billing Information 
                               p.text-content3.mb-5  Fill up the following information 
-                              form(action="index.html" class="theme-form flex flex-col gap-4 m-0")
+                              form(action="index.html" class="flex flex-col gap-4 m-0 theme-form")
                                  div.grid.grid-cols-12.gap-5
                                     div.col-span-6(class="sm:col-span-12")
                                        label(for="firstName") First Name
@@ -99,7 +99,7 @@ html(lang='en')
                                        label(for="postcode") Postcode
                                        input(type="text" id="postcode" placeholder="Enter your postcode" required)
                                  div.flex.items-center.gap-2
-                                    label.checkbox.checkbox-sm.cursor-pointer(class="!mb-0")  
+                                    label.checkbox.checkbox-sm.cursor-pointer(class="!mb-0 cursor-pointer")  
                                        input(type='checkbox' class="peer") 
                                        div.checkbox-indicator(class="peer-checked:!bg-primary !border-primary")  
                                           i(data-feather="check")
@@ -108,10 +108,10 @@ html(lang='en')
                                     label(for="otherNotes") Other Notes 
                                     textarea(placeholder="Enter your address.." row="3" id="otherNotes" class="p-[11px] focus:!border-border-light").w-full.border.border-border-light.rounded-5.text-xs.text-content
                                  div.flex.justify-between.items-center(class="sm:flex-col sm:gap-3")
-                                    a(href="cart.html").btn.bg-secondary.text-xs.text-white.flex.items-center.gap-2(class="!w-fit sm:!w-full justify-center !m-0" type='button') 
+                                    a(href="cart.html").btn.bg-secondary.text-xs.text-white.flex.items-center.gap-2(class="py-2 !w-fit sm:!w-full justify-center !m-0" type='button') 
                                        i(data-feather="arrow-left" class="w-4 h-4 stroke-white")
                                        |  Return to Shopping Cart
-                                    a(href="javascript:void(0)").btn.btn-primary.text-xs.text-white.flex.items-center.gap-2(class="!w-fit sm:!w-full justify-center !m-0" type='button') 
+                                    a(href="javascript:void(0)").btn.btn-primary.text-xs.text-white.flex.items-center.gap-2(class="py-2 !w-fit sm:!w-full justify-center !m-0" type='button') 
                                        |  Proceed to Next
                                        i(data-feather="truck" class="w-4 h-4 stroke-white")
                         div(data-tabContent="2" class="tab-pan fade group relative first:rounded-tl-none rounded-5 border-none !px-1 !pb-0")
@@ -182,10 +182,10 @@ html(lang='en')
                                              label(for='standard' class="text-xs cursor-pointer") Express Delivery - $24 
                                        p.pl-6.text-content3.text-xs Estimated 1-2 days shipping
                               div.flex.justify-between.items-center(class="sm:flex-col sm:gap-3")
-                                 a(href="cart.html").btn.bg-secondary.text-xs.text-white.flex.items-center.gap-2(class="!w-fit sm:!w-full justify-center !m-0" type='button') 
+                                 a(href="cart.html").btn.bg-secondary.text-xs.text-white.flex.items-center.gap-2(class="py-2 !w-fit sm:!w-full justify-center !m-0" type='button') 
                                     i(data-feather="arrow-left" class="w-4 h-4 stroke-white")
                                     |  Return to Shopping Cart
-                                 a(href="javascript:void(0)").btn.btn-primary.text-xs.text-white.flex.items-center.gap-2(class="!w-fit sm:!w-full justify-center !m-0" type='button') 
+                                 a(href="javascript:void(0)").btn.btn-primary.text-xs.text-white.flex.items-center.gap-2(class="py-2 !w-fit sm:!w-full justify-center !m-0" type='button') 
                                     |  Proceed to Next
                                     i(data-feather="truck" class="w-4 h-4 stroke-white")
                         div(data-tabContent="3" class="tab-pan fade group relative first:rounded-tl-none rounded-5 border-none !px-1 !pb-0")
@@ -212,7 +212,7 @@ html(lang='en')
                                              label(for='credit' class="text-xs cursor-pointer") Credit Card
                                        p.pl-6.text-content3.text-xs Transferring money securely through your bank account. Mastercard, Visa, Discover, and Stripe are all accepted
                                     img(class="h-[30px]" src="../../assets/images/ecommerce/credit-card.png" alt="credit card")
-                                 form(action="index.html" class="theme-form flex flex-col gap-4 m-0")
+                                 form(action="index.html" class="flex flex-col gap-4 m-0 theme-form")
                                     div
                                        label(for="cardholder") Card holder
                                        input(type="text" id="cardholder" placeholder="Enter card holder name" required)
@@ -237,10 +237,10 @@ html(lang='en')
                                        p.pl-6.text-content3.text-xs After your order is delivered, make a cash payment
                                     img(class="h-[30px]" src="../../assets/images/ecommerce/cash-on-delivery.png" alt="cash on delivery")
                               div.flex.justify-between.items-center(class="sm:flex-col sm:gap-3")
-                                 a(href="cart.html").btn.bg-secondary.text-xs.text-white.flex.items-center.gap-2(class="!w-fit sm:!w-full justify-center !m-0" type='button') 
+                                 a(href="cart.html").btn.bg-secondary.text-xs.text-white.flex.items-center.gap-2(class="py-2 !w-fit sm:!w-full justify-center !m-0" type='button') 
                                     i(data-feather="arrow-left" class="w-4 h-4 stroke-white")
                                     |  Return to Shopping Cart
-                                 a(href="javascript:void(0)").btn.btn-primary.text-xs.text-white.flex.items-center.gap-2(class="!w-fit sm:!w-full justify-center !m-0" type='button') 
+                                 a(href="javascript:void(0)").btn.btn-primary.text-xs.text-white.flex.items-center.gap-2(class="py-2 !w-fit sm:!w-full justify-center !m-0" type='button') 
                                     |  Proceed to Next
                                     i(data-feather="truck" class="w-4 h-4 stroke-white")
                         div(data-tabContent="4" class="tab-pan fade group relative first:rounded-tl-none rounded-5 border-none !px-1 !pb-0")
@@ -251,7 +251,7 @@ html(lang='en')
                               p.text-dark.font-bold.text-base.text-center Order ID: 
                                  a(href="javascript:void(0)" class="!text-dark").underline.text-base NV1430
 
-                  div.col-span-4(class="lg:col-span-12 w-full")
+                  div.col-span-4(class="w-full lg:col-span-12")
                      div.flex.flex-col.gap-2 
                         h5.text-title.font-semibold.mb-2 Current Cart
                         div.overflow-auto.custom-scroll  
@@ -266,7 +266,7 @@ html(lang='en')
          div.modal-main
             input#modal-edit(class="peer" name="modal-edit" type='checkbox')
             label.modal-overlay(class="peer-checked:block" for='modal-edit')
-            div.modal.modal-center(class="peer-checked:opacity-100 peer-checked:visible w-10/12 max-w-md")
+            div.modal.modal-center(class="w-10/12 max-w-md peer-checked:opacity-100 peer-checked:visible")
                div.modal-header 
                   h3.text-title.font-semibold.text-sm Information 
                   label(for="modal-edit") 
@@ -295,7 +295,7 @@ html(lang='en')
          div.modal-main
             input#modal-delete(class="peer" name="modal-delete" type='checkbox')
             label.modal-overlay(class="peer-checked:block" for='modal-delete')
-            div.modal.modal-center(class="peer-checked:opacity-100 peer-checked:visible w-10/12 max-w-md")
+            div.modal.modal-center(class="w-10/12 max-w-md peer-checked:opacity-100 peer-checked:visible")
                div.modal-body.text-center
                   label(for="modal-delete" class="flex justify-end") 
                      i(data-feather="x" class="w-4 h-4 stroke-content3")

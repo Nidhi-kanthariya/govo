@@ -183,7 +183,7 @@ module.exports = {
         },
         gray: {
           light: 'var(--gray-light)',
-          'extralight':'var(--gray-extralight)',
+          'extralight': 'var(--gray-extralight)',
         },
         border: {
           dark: 'var(--border-dark)',

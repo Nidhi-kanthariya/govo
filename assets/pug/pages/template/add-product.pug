@@ -47,7 +47,7 @@ html(lang='en')
             // Page Body Start
             div.page-body 
                div.grid.grid-cols-12.gap-4.add-product.card
-                  div.col-span-8(class="pr-4 border-r 2lg:col-span-12 lg:border-b lg:border-r-0 lg:pr-0 rtl:lg:pl-0 border-border-light rtl:border-l rtl:pl-4 rtl:pr-unset")
+                  div.col-span-8(class="pr-4 border-r 2lg:col-span-12 2lg:border-b 2lg:pb-4 2lg:border-r-0 border-border-light rtl:border-l rtl:2lg:border-l-0 rtl:border-r-0 rtl:pl-4 rtl:pr-unset")
                      div 
                         h5.text-title.font-semibold.mb-3 Create Product 
                         form(class="flex flex-col gap-4 m-0 theme-form")
@@ -84,8 +84,8 @@ html(lang='en')
                               div.col-span-4(class="2md:col-span-12")
                                  label(for="price") Price 
                                  div.flex.items-center
-                                    span.flex.items-center.justify-center.bg-gray-light.text-title.border.border-border-light.rounded-5.rounded-br-none.rounded-tr-none.font-medium.text-xs(class="!leading-[18px] py-[12px] px-[11px]") $
-                                    input(type="text" id="price" placeholder="300" class="p-[11px]").w-full.rounded-5.border.border-border-light.text-xs.text-content(class="!rounded-bl-none !rounded-tl-none")                                       
+                                    span.flex.items-center.justify-center.bg-gray-light.text-title.border.border-border-light.rounded-5.rounded-br-none.rounded-tr-none.font-medium.text-xs(class="!leading-[18px] py-[12px] px-[11px] rtl:rounded-tr-5 rtl:rounded-br-5 rtl:rounded-tl-none rtl:rounded-bl-none") $
+                                    input(type="text" id="price" placeholder="300" class="p-[11px]").w-full.rounded-5.border.border-border-light.text-xs.text-content(class="!rounded-bl-none !rounded-tl-none rtl:!rounded-tr-none rtl:!rounded-br-none rtl:!rounded-tl-5 rtl:!rounded-bl-5")                                       
                            div.grid.grid-cols-12.gap-5 
                               div.col-span-6(class="2md:col-span-6 sm:col-span-12")
                                  label(for="tax") Tax
@@ -96,8 +96,8 @@ html(lang='en')
                               div.col-span-6(class="2md:col-span-6 sm:col-span-12")
                                  label(for="discount") Discount
                                  div.flex.items-center
-                                    span.flex.items-center.justify-center.bg-gray-light.text-title.border.border-border-light.rounded-5.rounded-br-none.rounded-tr-none.font-medium.text-xs(class="!leading-[18px] py-[12px] px-[11px]") %
-                                    input(type="text" id="discount" placeholder="10" class="p-[11px]").w-full.rounded-5.border.border-border-light.text-xs.text-content(class="!rounded-bl-none !rounded-tl-none")
+                                    span.flex.items-center.justify-center.bg-gray-light.text-title.border.border-border-light.rounded-5.rounded-br-none.rounded-tr-none.font-medium.text-xs(class="!leading-[18px] py-[12px] px-[11px] rtl:rounded-tr-5 rtl:rounded-br-5 rtl:rounded-tl-none rtl:rounded-bl-none") %
+                                    input(type="text" id="discount" placeholder="10" class="p-[11px]").w-full.rounded-5.border.border-border-light.text-xs.text-content(class="!rounded-bl-none !rounded-tl-none rtl:!rounded-tr-none rtl:!rounded-br-none rtl:!rounded-tl-5 rtl:!rounded-bl-5")
                            div
                               label(for="productImage") Product Images
                               input(type="file" class="cursor-pointer show-preview" id="productImage")

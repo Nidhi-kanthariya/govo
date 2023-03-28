@@ -53,14 +53,14 @@
       thead {
         tr {
           th {
-            @apply last:text-end first:pl-[.3438rem] last:pr-[.3438rem];
+            @apply last:text-end first:pl-[.3438rem] last:pr-[.3438rem] rtl:text-right;
           }
         }
       }
       tbody {
         tr {
           td {
-            @apply last:text-end first:pl-[.3438rem] last:pr-[.3438rem];
+            @apply last:text-end first:pl-[.3438rem] last:pr-[.3438rem] rtl:text-right; 
           }
         }
       }

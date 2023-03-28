@@ -2,11 +2,12 @@
      04. Dark & Rtl mode js
    ==========================*/
 window.location.pathname.includes('rtl.html') && (localStorage.layout = 'rtl')
+// window.location.pathname.includes('dark-layout.html') && (localStorage.theme === 'light');
 /* This is declaring variables. */
 let theme = localStorage.theme || '';
 let layout = localStorage.layout || '';
 let sidebarType = localStorage.sidebarType || '';
-let monochrome = localStorage.monochrome || false;
+// let monochrome = localStorage.monochrome || false;
 const lightCheckBox = document.getElementById('light-checked');
 const darkCheckBox = document.getElementById('dark-checked');
 const ltrChecked = document.getElementById('ltr-checked');
@@ -51,34 +52,58 @@ theme, layout, monochrome, and sidebarType. If it finds them, it will set the th
 monochrome, and sidebarType to the values that were found in the local storage. If it does not find
 them, it will set the theme, layout, monochrome, and sidebarType to the default values. */
 document.addEventListener('DOMContentLoaded', function () {
+
+  const pathName = window.location.pathname.split('/').pop();
+
+  // if (pathName === 'dark-layout.html') {
+  //   console.log("if 58");
+  //   darkMode();
+  // } else 
+
+
+  /// Fetch monochromeSwitch Mode ///
+  console.log("localStorage.monochrome", localStorage.getItem('monochrome'));
+  const monochrome = localStorage.getItem('monochrome');
+  // debugger
+  if (monochrome === true) {
+    console.log("local stored");
+    monochromeModeFunction()
+  } else if (pathName === 'monochrome-mode.html') {
+    document.body.classList.add('monochrome-mode');
+  } else if (monochrome === true && pathName != 'monochrome-mode.html') {
+    console.log("95 .....");
+    monochromeModeFunction()
+  } else {
+    localStorage.setItem('monochrome', false);
+    console.log("else called 76");
+    document.body.classList.remove('monochrome-mode');
+    // resetMonochromeModeFunction()
+  }
+
   /// Fetch Dark Mode ///
   if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    console.log("71 .....");
     document.documentElement.classList.add('dark');
     radioBtnCheckedFunction(lightCheckBox, darkCheckBox);
   } else {
+    console.log("75 .....");
     document.documentElement.classList.remove('dark');
     radioBtnCheckedFunction(darkCheckBox, lightCheckBox);
   }
 
   /// Fetch Layout (dark & rtl) ///
   if (localStorage.layout === 'rtl') {
-    console.log("localStorage.layout", localStorage.layout);
+    console.log("82 .....");
     document.body.setAttribute('dir', 'rtl');
     radioBtnCheckedFunction(ltrChecked, rtlChecked);
   } else {
-    console.log("localStorage.layout ELSE", localStorage.layout);
+    console.log("87 .....");
     document.body.setAttribute('dir', 'ltr');
     radioBtnCheckedFunction(rtlChecked, ltrChecked);
   }
 
-  /// Fetch monochromeSwitch Mode ///
-  if (localStorage.monochrome === 'true') {
-    monochromeSwitch.checked = true;
-    document.body.classList.add('monochrome-mode');
-  } else {
-    monochromeSwitch.checked = false;
-    document.body.classList.remove('monochrome-mode');
-  }
+
+
 
   /// Sidebar Type (full & icon) ///
   if (localStorage.sidebarType === 'icon') {
@@ -137,7 +162,8 @@ const iconSidebar = function () {
 
 /// Monochrome Mode ///
 const monochromeModeFunction = function () {
-  monochrome = true;
+  console.log("call 159");
+  localStorage.setItem('monochrome', true);
   document.body.classList.add('monochrome-mode');
 };
 
@@ -159,8 +185,10 @@ const layoutResetFunction = function () {
 
 /// Reset Monochrome Mode ///
 const resetMonochromeModeFunction = function () {
-  monochrome = false;
+  console.log("183 ..............");
+  // monochrome = false;
   monochromeSwitch.checked = false;
+  localStorage.setItem('monochrome', false);
   document.body.classList.remove('monochrome-mode');
 };
 
@@ -241,10 +269,12 @@ reseteCustomizer.addEventListener('click', function () {
 /* This is an event listener that is listening for a beforeunload event. When the beforeunload
 event is fired, it will set the local storage to the values that are listed. */
 window.addEventListener('beforeunload', function () {
+  console.log("call 262");
   localStorage.theme = theme;
   localStorage.layout = layout;
-  localStorage.monochrome = monochrome;
-  localStorage.monochrome = monochrome;
+  // localStorage.monochrome = monochrome;
+  // localStorage.monochrome = monochrome;
   localStorage.sidebarType = sidebarType;
   window.location.pathname.includes('rtl.html') && (localStorage.removeItem('layout'))
+  // window.location.pathname.includes('dark-layout.html') && (localStorage.removeItem('theme'))
 });
