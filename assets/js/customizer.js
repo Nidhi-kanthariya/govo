@@ -2,12 +2,10 @@
      04. Dark & Rtl mode js
    ==========================*/
 window.location.pathname.includes('rtl.html') && (localStorage.layout = 'rtl')
-// window.location.pathname.includes('dark-layout.html') && (localStorage.theme === 'light');
 /* This is declaring variables. */
 let theme = localStorage.theme || '';
 let layout = localStorage.layout || '';
 let sidebarType = localStorage.sidebarType || '';
-// let monochrome = localStorage.monochrome || false;
 const lightCheckBox = document.getElementById('light-checked');
 const darkCheckBox = document.getElementById('dark-checked');
 const ltrChecked = document.getElementById('ltr-checked');
@@ -55,54 +53,40 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const pathName = window.location.pathname.split('/').pop();
 
-  // if (pathName === 'dark-layout.html') {
-  //   console.log("if 58");
-  //   darkMode();
-  // } else 
-
-
   /// Fetch monochromeSwitch Mode ///
-  console.log("localStorage.monochrome", localStorage.getItem('monochrome'));
   const monochrome = localStorage.getItem('monochrome');
   // debugger
-  if (monochrome === true) {
-    console.log("local stored");
+  if (monochrome == 'true') {
     monochromeModeFunction()
   } else if (pathName === 'monochrome-mode.html') {
+    monochromeSwitch.checked = true;
     document.body.classList.add('monochrome-mode');
-  } else if (monochrome === true && pathName != 'monochrome-mode.html') {
-    console.log("95 .....");
+  } else if (monochrome == 'true' && pathName != 'monochrome-mode.html') {
     monochromeModeFunction()
   } else {
     localStorage.setItem('monochrome', false);
-    console.log("else called 76");
+    monochromeSwitch.checked = false;
     document.body.classList.remove('monochrome-mode');
     // resetMonochromeModeFunction()
   }
 
   /// Fetch Dark Mode ///
   if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    console.log("71 .....");
     document.documentElement.classList.add('dark');
     radioBtnCheckedFunction(lightCheckBox, darkCheckBox);
   } else {
-    console.log("75 .....");
     document.documentElement.classList.remove('dark');
     radioBtnCheckedFunction(darkCheckBox, lightCheckBox);
   }
 
   /// Fetch Layout (dark & rtl) ///
   if (localStorage.layout === 'rtl') {
-    console.log("82 .....");
     document.body.setAttribute('dir', 'rtl');
     radioBtnCheckedFunction(ltrChecked, rtlChecked);
   } else {
-    console.log("87 .....");
     document.body.setAttribute('dir', 'ltr');
     radioBtnCheckedFunction(rtlChecked, ltrChecked);
   }
-
-
 
 
   /// Sidebar Type (full & icon) ///
@@ -147,14 +131,11 @@ const rtlLayout = function () {
 };
 
 const fullSidebar = function () {
-  console.log("full sidebar");
   sidebarType = 'full';
   mainPageWrapper.classList.remove('sidebar-close', 'sidebar-icon');
-  // mainPageWrapper.classList.remove('sidebar-close', 'sidebar-icon');
   radioBtnCheckedFunction(iconSidebarChecked, fullSidebarChecked);
 };
 const iconSidebar = function () {
-  console.log("icon sidebar");
   sidebarType = 'icon';
   mainPageWrapper.classList.add('sidebar-close', 'sidebar-icon');
   radioBtnCheckedFunction(fullSidebarChecked, iconSidebarChecked);
@@ -162,7 +143,7 @@ const iconSidebar = function () {
 
 /// Monochrome Mode ///
 const monochromeModeFunction = function () {
-  console.log("call 159");
+  monochromeSwitch.checked = true;
   localStorage.setItem('monochrome', true);
   document.body.classList.add('monochrome-mode');
 };
@@ -185,15 +166,12 @@ const layoutResetFunction = function () {
 
 /// Reset Monochrome Mode ///
 const resetMonochromeModeFunction = function () {
-  console.log("183 ..............");
-  // monochrome = false;
   monochromeSwitch.checked = false;
   localStorage.setItem('monochrome', false);
   document.body.classList.remove('monochrome-mode');
 };
 
 const resetSidebarType = function () {
-  console.log("reset fun call");
   sidebarType = '';
   mainPageWrapper.classList.remove('sidebar-close', 'sidebar-icon');
   radioBtnCheckedFunction(iconSidebarChecked, fullSidebarChecked);
@@ -269,12 +247,8 @@ reseteCustomizer.addEventListener('click', function () {
 /* This is an event listener that is listening for a beforeunload event. When the beforeunload
 event is fired, it will set the local storage to the values that are listed. */
 window.addEventListener('beforeunload', function () {
-  console.log("call 262");
   localStorage.theme = theme;
   localStorage.layout = layout;
-  // localStorage.monochrome = monochrome;
-  // localStorage.monochrome = monochrome;
   localStorage.sidebarType = sidebarType;
   window.location.pathname.includes('rtl.html') && (localStorage.removeItem('layout'))
-  // window.location.pathname.includes('dark-layout.html') && (localStorage.removeItem('theme'))
 });

@@ -49,8 +49,8 @@ html(lang='en')
                                           li(class="px-2 py-1 rounded hover:bg-gray-light") Edit
                                           li(class="px-2 py-1 rounded hover:bg-gray-light") Move to trash
                               div.flex.items-center(class="m-0")
-                                 input(type='Search' placeholder='Search' class="py-[11px] px-[25px]").border.rounded.w-full.text-xs.text-Gray-darker.rounded-tr-none.rounded-br-none 
-                                 button.bg-primary.text-white.rounded.border-none.p-3.rounded-tl-none.rounded-bl-none
+                                 input(type='Search' placeholder='Search' class="py-[11px] px-[25px]").border.rounded.w-full.text-xs.text-Gray-darker.rounded-tr-none.rounded-br-none(class="rounded-br-5 rtl:rounded-bl-none rounded-tr-5 rtl:rounded-tl-none") 
+                                 button.bg-primary.text-white.rounded.border-none.p-3.rounded-tl-none.rounded-bl-none(class="rtl:rounded-bl-5 rtl:rounded-br-none rtl:rounded-tr-none rtl:rounded-tl-5")
                                     +SVG_ICON("Search","w-[20px] h-[20px] stroke-white") 
                         div.card-body 
                            div.overflow-auto.custom-scroll

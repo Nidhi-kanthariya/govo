@@ -11829,6 +11829,9 @@ code[class*="language-"],
 [dir="rtl"] .rtl\:rounded-tr-none {
   border-top-right-radius: 0px;
 }
+[dir="rtl"] .rtl\:rounded-tl-5 {
+  border-top-left-radius: 0.3125rem;
+}
 [dir="rtl"] .rtl\:border-l {
   border-left-width: 1px;
 }
@@ -11864,6 +11867,9 @@ code[class*="language-"],
 }
 [dir="rtl"] .rtl\:pr-unset {
   padding-right: unset;
+}
+[dir="rtl"] .rtl\:\!text-right {
+  text-align: right !important;
 }
 [dir="rtl"] .rtl\:\!text-end {
   text-align: end !important;
@@ -12710,8 +12716,8 @@ code[class*="language-"],
   .lg\:border-l-0 {
     border-left-width: 0px;
   }
-  .lg\:border-none {
-    border-style: none;
+  .lg\:border-r-0 {
+    border-right-width: 0px;
   }
   .lg\:p-3 {
     padding: 0.75rem;
@@ -12721,6 +12727,10 @@ code[class*="language-"],
   }
   .lg\:p-\[0\.75rem\] {
     padding: 0.75rem;
+  }
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .lg\:px-2 {
     padding-left: 0.5rem;
@@ -12746,15 +12756,11 @@ code[class*="language-"],
     padding-top: 5px;
     padding-bottom: 5px;
   }
-  .lg\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
+  .lg\:pb-4 {
+    padding-bottom: 1rem;
   }
   .lg\:pr-0 {
     padding-right: 0px;
-  }
-  .lg\:pb-4 {
-    padding-bottom: 1rem;
   }
   .lg\:text-2xs {
     font-size: 0.8125rem;
@@ -12798,11 +12804,11 @@ code[class*="language-"],
   .lg\:last\:block:last-child {
     display: block;
   }
-  [dir="rtl"] .rtl\:lg\:border-r-0 {
-    border-right-width: 0px;
-  }
   [dir="rtl"] .rtl\:lg\:border-l-0 {
     border-left-width: 0px;
+  }
+  [dir="rtl"] .rtl\:lg\:border-r-0 {
+    border-right-width: 0px;
   }
   [dir="rtl"] .rtl\:lg\:pl-0 {
     padding-left: 0px;
@@ -13628,6 +13634,9 @@ code[class*="language-"],
   .\32sm\:pb-\[170px\] {
     padding-bottom: 170px;
   }
+  .\32sm\:pl-6 {
+    padding-left: 1.5rem;
+  }
   .\32sm\:text-start {
     text-align: start;
   }
@@ -13635,6 +13644,24 @@ code[class*="language-"],
     font-size: 0.8125rem;
     line-height: 1.2;
     letter-spacing: 0.03125rem;
+  }
+  [dir=rtl] .\32sm\:pl-6 {
+    padding-left: unset;
+    padding-right: 1.5rem;
+  }
+  [dir="rtl"] .rtl\:2sm\:pl-unset {
+    padding-left: unset;
+  }
+  [dir="rtl"] .rtl\:2sm\:pr-6 {
+    padding-right: 1.5rem;
+  }
+  [dir=rtl] [dir="rtl"] .rtl\:2sm\:pr-6 {
+    padding-left: 1.5rem;
+    padding-right: unset;
+  }
+  [dir=rtl] [dir="rtl"] .rtl\:2sm\:pl-unset {
+    padding-left: unset;
+    padding-right: unset;
   }
 }
 @media (max-width: 375px) {

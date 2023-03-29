@@ -36,7 +36,7 @@ html(lang='en')
             div.page-body
                div.grid.grid-cols-12.gap-card-gap
                   div.col-span-12
-                     div.card(class="m-auto max-w-5xl invoice-preview overflow-auto custom-scroll") 
+                     div.card(class="max-w-5xl m-auto overflow-auto invoice-preview custom-scroll") 
                         table(class="table equal-space")
                            tbody   
                               tr                               
@@ -90,8 +90,8 @@ html(lang='en')
                                     div.overflow-auto.custom-scroll  
                                        include ../../components/table/checkout-table     
                               tr  
-                                 td(colspan="2" class="!text-left")
-                                    p.text-title.text-xs.font-bold.uppercase(class="!mb-0") Payment Detail
+                                 td(colspan="2" class="!text-left rtl:!text-right")
+                                    p.text-title.text-xs.font-bold.uppercase Payment Detail
                                     p.text-title.text-xs.font-semibold Payment Method: 
                                        span.font-medium.text-content3 Mastercard
                                     p.text-title.text-xs.font-semibold Card Holder: 
@@ -101,7 +101,7 @@ html(lang='en')
                                     p.text-title.text-xs.font-semibold Total Amount: 
                                        span.font-medium.text-content3 $787.6                                     
                               tr 
-                                 td(colspan="2" class="!text-left")
+                                 td(colspan="2" class="!text-left rtl:!text-right")
                                     p.text-title.text-xs.font-bold.uppercase Notes 
                                     p.font-medium.text-content3 All accounts must be settled within seven days of receiving an invoice. to be paid by check, credit card, or online direct deposit. If the account is not paid within seven days, the agreed-upon quoted fee indicated above will be charged to the credits details provided as confirmation of the task completed.
                               tr 

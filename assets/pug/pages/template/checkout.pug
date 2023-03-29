@@ -44,7 +44,7 @@ html(lang='en')
             // Page Body Start
             div.page-body 
                div.grid.grid-cols-12.gap-4.card.checkout-detail 
-                  div.col-span-8(class="flex flex-col w-full pr-4 border-r lg:col-span-12 tabs lg:border-b lg:border-l-0 rtl:lg:border-r-0 lg:pb-4 rtl:lg:border-l-0 lg:px-0 lg:pr-0 rtl:lg:pl-0 border-border-light rtl:border-l rtl:border-r-0 rtl:pl-4 rtl:pr-unset")
+                  div.col-span-8(class="flex flex-col w-full pr-4 border-r lg:col-span-12 tabs lg:border-b lg:border-l-0 lg:border-r-0 lg:pb-4 rtl:lg:border-l-0 lg:px-0 lg:pr-0 rtl:lg:pl-0 border-border-light rtl:border-l rtl:border-r-0 rtl:pl-4 rtl:pr-unset")
                      div.mb-1.tab-links.flex.items-center(class="2md:flex-col")
                         button.tab.product-tab.w-full.items-center.text-sm.tab-active(data-tabFilter="1" class="tab-link") 
                            i.fa-solid.fa-user
@@ -193,7 +193,7 @@ html(lang='en')
                               h5.text-title.font-semibold.mb-2 Payment Information 
                               p.text-content3.mb-5 Fill up the following information to send you the order
                               div.border.border-border-light.p-4.mb-5 
-                                 div.flex.gap-2.items-center.justify-between
+                                 div.flex.gap-2.items-center.justify-between(class="2sm:flex-col 2sm:items-start")
                                     div
                                        div.flex.items-center.gap-2.mb-1
                                           div.radio-button.radio-sm.primary
@@ -201,9 +201,9 @@ html(lang='en')
                                              div.check
                                              label(for='paypal' class="text-xs cursor-pointer") PayPal
                                        p.pl-6.text-content3.text-xs You will be taken to the PayPal website to finish your transaction safely
-                                    img(class="h-[30px]" src="../../assets/images/ecommerce/paypal.png" alt="PayPal")
+                                    img(class="h-[30px]" src="../../assets/images/ecommerce/paypal.png" alt="PayPal" class="2sm:pl-6 rtl:2sm:pl-unset rtl:2sm:pr-6")
                               div.border.border-border-light.p-4.mb-5 
-                                 div.flex.gap-2.items-center.justify-between.mb-5
+                                 div.flex.gap-2.items-center.justify-between.mb-5(class="2sm:flex-col 2sm:items-start")
                                     div
                                        div.flex.items-center.gap-2.mb-1
                                           div.radio-button.radio-sm.primary
@@ -211,7 +211,7 @@ html(lang='en')
                                              div.check
                                              label(for='credit' class="text-xs cursor-pointer") Credit Card
                                        p.pl-6.text-content3.text-xs Transferring money securely through your bank account. Mastercard, Visa, Discover, and Stripe are all accepted
-                                    img(class="h-[30px]" src="../../assets/images/ecommerce/credit-card.png" alt="credit card")
+                                    img(class="h-[30px]" src="../../assets/images/ecommerce/credit-card.png" alt="credit card" class="2sm:pl-6 rtl:2sm:pl-unset rtl:2sm:pr-6")
                                  form(action="index.html" class="flex flex-col gap-4 m-0 theme-form")
                                     div
                                        label(for="cardholder") Card holder
@@ -227,7 +227,7 @@ html(lang='en')
                                           label(for="cvv") CVV
                                           input(type="number" id="cvv" placeholder="Enter your last name" required)                                            
                               div.border.border-border-light.p-4.mb-5 
-                                 div.flex.gap-2.items-center.justify-between
+                                 div.flex.gap-2.items-center.justify-between(class="2sm:flex-col 2sm:items-start")
                                     div
                                        div.flex.items-center.gap-2.mb-1
                                           div.radio-button.radio-sm.primary
@@ -235,7 +235,7 @@ html(lang='en')
                                              div.check
                                              label(for='cod' class="text-xs cursor-pointer") Cash On Delivery
                                        p.pl-6.text-content3.text-xs After your order is delivered, make a cash payment
-                                    img(class="h-[30px]" src="../../assets/images/ecommerce/cash-on-delivery.png" alt="cash on delivery")
+                                    img(class="h-[30px]" src="../../assets/images/ecommerce/cash-on-delivery.png" alt="cash on delivery" class="2sm:pl-6 rtl:2sm:pl-unset rtl:2sm:pr-6")
                               div.flex.justify-between.items-center(class="sm:flex-col sm:gap-3")
                                  a(href="cart.html").btn.bg-secondary.text-xs.text-white.flex.items-center.gap-2(class="py-2 !w-fit sm:!w-full justify-center !m-0" type='button') 
                                     i(data-feather="arrow-left" class="w-4 h-4 stroke-white")
