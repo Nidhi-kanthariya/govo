@@ -57,3 +57,15 @@
   background-repeat: no-repeat;
 }
 
+.welcome-card-main{
+  .bg-img{
+    @apply !block w-full h-[22.5rem] mt-[-10.375rem];
+    background-image: url("../../assets/images/svg/1.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    [dir="rtl"] & {
+      transform: rotateY(180deg);
+    }
+  }
+}

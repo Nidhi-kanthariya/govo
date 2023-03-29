@@ -9,6 +9,9 @@
 
       &.hide-show-sidebar {
         @apply left-[-62.4375rem] 2xl:left-0 rtl:right-[-62.4375rem] rtl:2xl:right-0 rtl:left-unset rtl:2xl:left-unset;
+        ~.page-footer{
+          @apply !w-full;
+        }
       }
       .sidebar {
         .logo-wrapper {

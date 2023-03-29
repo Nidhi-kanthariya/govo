@@ -32,16 +32,16 @@ window.addEventListener('load', () => {
     bgImgEl.parentNode.classList.add('bg-size');
     const bgSrc = bgImgEl.src;
     bgImgEl.style.display = 'none';
-    bgImgEl.parentNode.setAttribute(
-      'style',
-      `
-        background-image: url(${bgSrc});
-        background-size:cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        display: block;
-        `,
-    );
+    // bgImgEl.parentNode.setAttribute(
+    //   'style',
+    //   `
+    //     background-image: url(${bgSrc});
+    //     background-size:cover;
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    //     display: block;
+    //     `,
+    // );
   }
 });
 

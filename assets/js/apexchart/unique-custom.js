@@ -501,7 +501,6 @@ const userPosition = {
       },
     },
     title: {
-      text: 'User',
       offsetX: 0,
       offsetY: -28,
       style: {

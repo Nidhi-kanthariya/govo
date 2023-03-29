@@ -179,18 +179,18 @@ html(lang='en')
                                     div.flex.flex-col.gap-3.form-group
                                        div.flex.flex-col.gap-1
                                           div.flex.items-center.justify-center
-                                             input(type="text" placeholder="Enter name" class="p-[11px]").w-full.rounded-br-none.rounded-tr-none.border.border-border-light.rounded-5.text-xs.text-content
-                                             span.flex.items-center.justify-center.bg-primary.text-white.rounded-5.border-none.rounded-bl-none.rounded-tl-none.font-medium.text-xs(class="py-[12px] px-[11px]") submit
+                                             input(type="text" placeholder="Enter name" class="p-[11px]").w-full.rounded-br-none.rounded-tr-none.border.border-border-light.rounded-5.text-xs.text-content(class="rtl:rounded-br-5 rtl:rounded-bl-none rtl:rounded-tr-5 rtl:rounded-tl-none")
+                                             span.flex.items-center.justify-center.bg-primary.text-white.rounded-5.border-none.rounded-bl-none.rounded-tl-none.font-medium.text-xs(class="py-[12px] px-[11px] rtl:rounded-bl-5 rtl:rounded-br-none rtl:rounded-tr-none rtl:rounded-tl-5") Submit
                                        div.flex.flex-col.gap-1
                                           div.flex.items-center.justify-center
-                                             span.flex.items-center.justify-center.bg-primary.text-white.rounded-5.border-none.rounded-br-none.rounded-tr-none.font-medium.text-xs(class="py-[12px] px-[11px]") Price
+                                             span.flex.items-center.justify-center.bg-primary.text-white.rounded-5.border-none.rounded-br-none.rounded-tr-none.font-medium.text-xs(class="py-[12px] px-[11px] rtl:rounded-br-5 rtl:rounded-bl-none rtl:rounded-tr-5 rtl:rounded-tl-none") Price
                                              input(type="text" placeholder="15" class="p-[11px]").w-full.rounded-none.border.border-border-light.text-xs.text-content
-                                             span.flex.items-center.justify-center.bg-primary.text-white.rounded-5.border-none.rounded-bl-none.rounded-tl-none.font-medium.text-xs(class="py-[12px] px-[11px]")  USD
+                                             span.flex.items-center.justify-center.bg-primary.text-white.rounded-5.border-none.rounded-bl-none.rounded-tl-none.font-medium.text-xs(class="py-[12px] px-[11px] rtl:rounded-bl-5 rtl:rounded-br-none rtl:rounded-tr-none rtl:rounded-tl-5")  USD
                                        div.flex.flex-col.gap-1
                                           div.flex.items-center.justify-center
-                                             span.flex.items-center.justify-center.bg-primary.text-white.rounded-5.border-none.rounded-br-none.rounded-tr-none.font-medium.text-xs(class="py-[12px] px-[11px]") https://
+                                             span.flex.items-center.justify-center.bg-primary.text-white.rounded-5.border-none.rounded-br-none.rounded-tr-none.font-medium.text-xs(class="py-[12px] px-[11px] rtl:rounded-br-5 rtl:rounded-bl-none rtl:rounded-tr-5 rtl:rounded-tl-none") https://
                                              input(type="text" placeholder="url" class="p-[11px]").w-full.rounded-none.border.border-border-light.text-xs.text-content
-                                             span.flex.items-center.justify-center.bg-primary.text-white.rounded-5.border-none.rounded-bl-none.rounded-tl-none.font-medium.text-xs(class="py-[12px] px-[11px]") .com
+                                             span.flex.items-center.justify-center.bg-primary.text-white.rounded-5.border-none.rounded-bl-none.rounded-tl-none.font-medium.text-xs(class="py-[12px] px-[11px] rtl:rounded-bl-5 rtl:rounded-br-none rtl:rounded-tr-none rtl:rounded-tl-5") .com
                               div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
                                  button.btn.copyBtn 
                                     i(data-feather="clipboard")
@@ -200,22 +200,22 @@ html(lang='en')
                                        |   &lt;div class="flex flex-col gap-3 form-group"&gt;
                                        |       &lt;div class="flex flex-col gap-1"&gt;
                                        |           &lt;div class="flex items-center justify-center"&gt; 
-                                       |              &lt;input type="text" placeholder="Enter name" class="p-[11px] w-full rounded-br-none rounded-tr-none border border-border-light rounded-5 text-xs text-content"/&gt;      
-                                       |              &lt;span class="flex items-center justify-center bg-primary text-white rounded-5 border-none rounded-br-none rounded-tr-none font-medium text-xs py-[13px] px-[11px]"&gt;Submit&lt;/span&gt; 
+                                       |              &lt;input type="text" placeholder="Enter name" class="p-[11px] w-full rounded-br-none rounded-tr-none border border-border-light rounded-5 text-xs text-content rtl:rounded-br-5 rtl:rounded-bl-none rtl:rounded-tr-5 rtl:rounded-tl-none"/&gt;      
+                                       |              &lt;span class="flex items-center justify-center bg-primary text-white rounded-5 border-none rounded-br-none rounded-tr-none font-medium text-xs py-[13px] px-[11px] rtl:rounded-bl-5 rtl:rounded-br-none rtl:rounded-tr-none rtl:rounded-tl-5"&gt;Submit&lt;/span&gt; 
                                        |           &lt;/div&gt; 
                                        |       &lt;/div&gt;
                                        |       &lt;div class="flex flex-col gap-1"&gt;
                                        |           &lt;div class="flex items-center justify-center"&gt; 
-                                       |              &lt;span class="flex items-center justify-center bg-primary text-white rounded-5 border-none rounded-br-none rounded-tr-none font-medium text-xs py-[13px] px-[11px]"&gt;Price&lt;/span&gt; 
+                                       |              &lt;span class="flex items-center justify-center bg-primary text-white rounded-5 border-none rounded-br-none rounded-tr-none font-medium text-xs py-[13px] px-[11px] rtl:rounded-bl-5 rtl:rounded-br-none rtl:rounded-tr-none rtl:rounded-tl-5"&gt;Price&lt;/span&gt; 
                                        |              &lt;input type="text" placeholder="15" class="p-[11px] w-full rounded-none border border-border-light text-xs text-content"/&gt;                                                    
-                                       |              &lt;span class="flex items-center justify-center bg-primary text-white rounded-5 border-none rounded-bl-none rounded-tl-none font-medium text-xs py-[13px] px-[11px]"&gt;USD&lt;/span&gt; 
+                                       |              &lt;span class="flex items-center justify-center bg-primary text-white rounded-5 border-none rounded-bl-none rounded-tl-none font-medium text-xs py-[13px] px-[11px] rtl:rounded-br-5 rtl:rounded-bl-none rtl:rounded-tr-5 rtl:rounded-tl-none"&gt;USD&lt;/span&gt; 
                                        |           &lt;/div&gt; 
                                        |       &lt;/div&gt; 
                                        |       &lt;div class="flex flex-col gap-1"&gt;
                                        |           &lt;div class="flex items-center justify-center"&gt; 
-                                       |              &lt;span class="flex items-center justify-center bg-primary text-white rounded-5 border-none rounded-br-none rounded-tr-none font-medium text-xs py-[13px] px-[11px]"&gt;https://&lt;/span&gt; 
+                                       |              &lt;span class="flex items-center justify-center bg-primary text-white rounded-5 border-none rounded-br-none rounded-tr-none font-medium text-xs py-[13px] px-[11px] rtl:rounded-bl-5 rtl:rounded-br-none rtl:rounded-tr-none rtl:rounded-tl-5"&gt;https://&lt;/span&gt; 
                                        |              &lt;input type="text" placeholder="url" class="p-[11px] w-full rounded-none border border-border-light text-xs text-content"/&gt;                                                    
-                                       |              &lt;span class="flex items-center justify-center bg-primary text-white rounded-5 border-none rounded-bl-none rounded-tl-none font-medium text-xs py-[13px] px-[11px]"&gt;.com&lt;/span&gt; 
+                                       |              &lt;span class="flex items-center justify-center bg-primary text-white rounded-5 border-none rounded-bl-none rounded-tl-none font-medium text-xs py-[13px] px-[11px] rtl:rounded-br-5 rtl:rounded-bl-none rtl:rounded-tr-5 rtl:rounded-tl-none"&gt;.com&lt;/span&gt; 
                                        |           &lt;/div&gt; 
                                        |       &lt;/div&gt;   
                                        |    &lt;/div&gt; 
@@ -272,8 +272,8 @@ html(lang='en')
                                     div.flex.flex-col.gap-3.form-group
                                        div.flex.flex-col.gap-1
                                           div.flex.items-center.justify-center
-                                             input(type="text" placeholder="Type to search..." class="p-[11px]").w-full.rounded-5.rounded-br-none.rounded-tr-none.border.border-border-light.text-xs.text-content
-                                             span.flex.items-center.justify-center.bg-primary.text-white.rounded-5.border-none.rounded-bl-none.rounded-tl-none.font-medium.text-xs(class="py-[12px] px-[11px]")  
+                                             input(type="text" placeholder="Type to search..." class="p-[11px] rtl:rounded-bl-5 rtl:rounded-br-none rtl:rounded-tr-none rtl:rounded-tl-5").w-full.rounded-5.rounded-br-none.rounded-tr-none.border.border-border-light.text-xs.text-content
+                                             span.flex.items-center.justify-center.bg-primary.text-white.rounded-5.border-none.rounded-bl-none.rounded-tl-none.font-medium.text-xs(class="py-[12px] px-[11px] rtl:rounded-bl-5 rtl:rounded-br-none rtl:rounded-tr-none rtl:rounded-tl-5")  
                                                 +SVG_ICON("Search", "w-5 h-5 stroke-white")
 
                               div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
@@ -285,8 +285,8 @@ html(lang='en')
                                        |   &lt;div class="flex flex-col gap-3 form-group"&gt;
                                        |       &lt;div class="flex flex-col gap-1"&gt;
                                        |           &lt;div class="flex items-center justify-center"&gt; 
-                                       |              &lt;input type="text" placeholder="Type to search" class="p-[11px] w-full rounded-5 rounded-br-none rounded-tr-none border border-border-light text-xs text-content"/&gt;                                                    
-                                       |              &lt;span class="flex items-center justify-center bg-primary text-white rounded-5 border-none rounded-bl-none rounded-tl-none font-medium text-xs py-[12px] px-[11px]"&gt;
+                                       |              &lt;input type="text" placeholder="Type to search" class="p-[11px] rtl:rounded-bl-5 rtl:rounded-br-none rtl:rounded-tr-none rtl:rounded-tl-5 w-full rounded-5 rounded-br-none rounded-tr-none border border-border-light text-xs text-content"/&gt;                                                    
+                                       |              &lt;span class="flex items-center justify-center bg-primary text-white rounded-5 border-none rounded-bl-none rounded-tl-none font-medium text-xs py-[12px] px-[11px] rtl:rounded-bl-5 rtl:rounded-br-none rtl:rounded-tr-none rtl:rounded-tl-5"&gt;
                                        |                  +SVG_ICON("Search", "w-5 h-5 stroke-white")
                                        |              &lt;/span&gt; 
                                        |           &lt;/div&gt; 
@@ -313,7 +313,7 @@ html(lang='en')
                                        div.flex.flex-col.gap-1
                                           div.flex.items-center.justify-center
                                              input(type="text" placeholder="Leave a message" class="p-[11px]").w-full.rounded-5.border.border-border-light.text-xs.text-content(disabled="disabled")
-                                             span.flex.items-center.justify-center.bg-primary.text-white.rounded-5.border-none.rounded-bl-none.rounded-tl-none.font-medium.text-xs(class="py-[13px] px-[11px]") Send
+                                             span.flex.items-center.justify-center.bg-primary.text-white.rounded-5.border-none.rounded-bl-none.rounded-tl-none.font-medium.text-xs(class="py-[13px] px-[11px] rtl:rounded-bl-5 rtl:rounded-br-none rtl:rounded-tr-none rtl:rounded-tl-5") Send
 
                               div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
                                  button.btn.copyBtn 
@@ -325,7 +325,7 @@ html(lang='en')
                                        |       &lt;div class="flex flex-col gap-1"&gt;
                                        |           &lt;div class="flex items-center justify-center"&gt; 
                                        |              &lt;input type="text" placeholder="Leave a message" class="p-[11px] w-full rounded-none border border-border-light text-xs text-content" disabled="disabled" /&gt;                                                    
-                                       |              &lt;span class="flex items-center justify-center bg-primary text-white rounded-5 border-none rounded-bl-none rounded-tl-none font-medium text-xs py-[13px] px-[11px]"&gt;.com&lt;/span&gt; 
+                                       |              &lt;span class="flex items-center justify-center bg-primary text-white rounded-5 border-none rounded-bl-none rounded-tl-none font-medium text-xs py-[13px] px-[11px] rtl:rounded-bl-5 rtl:rounded-br-none rtl:rounded-tr-none rtl:rounded-tl-5"&gt;.com&lt;/span&gt; 
                                        |           &lt;/div&gt; 
                                        |       &lt;/div&gt;  
                                        |    &lt;/div&gt; 
@@ -348,12 +348,12 @@ html(lang='en')
                                  form
                                     div.flex.flex-col.gap-3.form-group
                                        div.flex.items-center.justify-center
-                                          select(id="select-dept" placeholder="Select Department" class="appearance-none p-[11px] bg-white text-title border border-border-light rounded-5 rounded-tr-none rounded-br-none w-full text-xs")
+                                          select(id="select-dept" placeholder="Select Department" class="appearance-none p-[11px] bg-white text-title border border-border-light rounded-5 rounded-tr-none rounded-br-none w-full text-xs rtl:rounded-bl-5 rtl:rounded-br-none rtl:rounded-tr-none rtl:rounded-tl-5")
                                              option Select Item 
                                              option T-shirts                                                                
                                              option Bottom Wear
                                              option Kitchen items
-                                          span.flex.items-center.justify-center.bg-primary.text-white.rounded-5.border-none.rounded-bl-none.rounded-tl-none.font-medium.text-xs(class="py-[12px] px-[11px]") Search
+                                          span.flex.items-center.justify-center.bg-primary.text-white.rounded-5.border-none.rounded-bl-none.rounded-tl-none.font-medium.text-xs(class="py-[12px] px-[11px] rtl:rounded-bl-5 rtl:rounded-br-none rtl:rounded-tr-none rtl:rounded-tl-5") Search
 
                               div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
                                  button.btn.copyBtn 
@@ -362,13 +362,13 @@ html(lang='en')
                                     code
                                        |&lt;form&gt; 
                                        |   &lt;div class="flex flex-col gap-3 form-group"&gt;
-                                       |       &lt;select id="select-item" class="appearance-none p-[11px] bg-white text-title border border-border-light rounded-5 rounded-tr-none rounded-br-none w-full text-xs"&gt; 
+                                       |       &lt;select id="select-item" class="appearance-none p-[11px] bg-white text-title border border-border-light rounded-5 rounded-tr-none rounded-br-none w-full text-xs rtl:rounded-bl-5 rtl:rounded-br-none rtl:rounded-tr-none rtl:rounded-tl-5"&gt; 
                                        |           &lt;option&gt;Select Item&lt;/option&gt; 
                                        |           &lt;option&gt;T-shirts&lt;/option&gt; 
                                        |           &lt;option&gt;Bottom Wear&lt;/option&gt; 
                                        |           &lt;option&gt;Kitchen items&lt;/option&gt; 
                                        |       &lt;/select&gt; 
-                                       |       &lt;span class="flex items-center justify-center bg-primary text-white rounded-5 border-none rounded-bl-none rounded-tl-none font-medium text-xs py-[12px] px-[11px]"&gt;.com&lt;/span&gt; 
+                                       |       &lt;span class="flex items-center justify-center bg-primary text-white rounded-5 border-none rounded-bl-none rounded-tl-none font-medium text-xs py-[12px] px-[11px] rtl:rounded-bl-5 rtl:rounded-br-none rtl:rounded-tr-none rtl:rounded-tl-5"&gt;.com&lt;/span&gt; 
                                        |    &lt;/div&gt;    
                                        |&lt;/form&gt; 
 
@@ -390,8 +390,8 @@ html(lang='en')
                                     div.flex.flex-col.gap-3.form-group
                                        div.flex.flex-col.gap-1
                                           div.flex.items-center.justify-center
-                                             input(type="text" placeholder="Focused" class="p-[11px]").w-full.rounded-5.rounded-br-none.rounded-tr-none.border.border-primary.bg-primary-light.text-xs.text-content(class="focus:border-1 focus:border-primary focus:bg-primary-light")
-                                             span.flex.items-center.justify-center.bg-primary.text-white.rounded-5.border-none.rounded-bl-none.rounded-tl-none.font-medium.text-xs(class="py-[12px] px-[11px]") Go
+                                             input(type="text" placeholder="Focused" class="p-[11px]").w-full.rounded-5.rounded-br-none.rounded-tr-none.border.border-primary.bg-primary-light.text-xs.text-content(class="focus:border-1 focus:border-primary focus:bg-primary-light rtl:rounded-br-5 rtl:rounded-bl-none rtl:rounded-tr-5 rtl:rounded-tl-none")
+                                             span.flex.items-center.justify-center.bg-primary.text-white.rounded-5.border-none.rounded-bl-none.rounded-tl-none.font-medium.text-xs(class="py-[12px] px-[11px] rtl:rounded-bl-5 rtl:rounded-br-none rtl:rounded-tr-none rtl:rounded-tl-5") Go
 
                               div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
                                  button.btn.copyBtn 
@@ -402,8 +402,8 @@ html(lang='en')
                                        |   &lt;div class="flex flex-col gap-3 form-group"&gt;
                                        |       &lt;div class="flex flex-col gap-1"&gt;
                                        |           &lt;div class="flex items-center justify-center"&gt; 
-                                       |              &lt;input type="text" placeholder="Focused" class="p-[11px] w-full rounded-5 rounded-br-none rounded-tr-none border border-primary bg-primary-light text-xs text-content focus:border-1 focus:border-primary focus:bg-primary-light"/&gt;                                                    
-                                       |              &lt;span class="flex items-center justify-center bg-primary text-white rounded-5 border-none rounded-bl-none rounded-tl-none font-medium text-xs py-[12px] px-[11px]"&gt;Go&lt;/span&gt; 
+                                       |              &lt;input type="text" placeholder="Focused" class="p-[11px] w-full rounded-5 rounded-br-none rounded-tr-none border border-primary bg-primary-light text-xs text-content focus:border-1 focus:border-primary focus:bg-primary-light rtl:rounded-br-5 rtl:rounded-bl-none rtl:rounded-tr-5 rtl:rounded-tl-none"/&gt;                                                    
+                                       |              &lt;span class="flex items-center justify-center bg-primary text-white rounded-5 border-none rounded-bl-none rounded-tl-none font-medium text-xs py-[12px] px-[11px] rtl:rounded-bl-5 rtl:rounded-br-none rtl:rounded-tr-none rtl:rounded-tl-5"&gt;Go&lt;/span&gt; 
                                        |           &lt;/div&gt; 
                                        |       &lt;/div&gt;  
                                        |    &lt;/div&gt; 

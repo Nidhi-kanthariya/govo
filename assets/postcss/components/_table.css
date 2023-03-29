@@ -8,7 +8,7 @@
       @apply border-b border-border-light;
       tr {
         th {
-          @apply py-[.6875rem] px-[.3438rem] pt-0 first:pl-0 last:pr-0 text-xs font-semibold capitalize text-content3;
+          @apply py-[.6875rem] px-[.3438rem] pt-0 first:pl-0 last:pr-0 text-xs font-semibold capitalize text-content3 rtl:text-right;
         }
       }
     }
@@ -16,7 +16,7 @@
       tr {
         @apply border-b border-border-light last:border-none;
         td {
-          @apply 4xl:py-[.9375rem] py-[1.125rem] px-[.3438rem] first:pl-0 last:pr-0 text-xs font-semibold;
+          @apply 4xl:py-[.9375rem] py-[1.125rem] px-[.3438rem] first:pl-0 last:pr-0 text-xs font-semibold rtl:text-right;
         }
         &:last-child {
           td {

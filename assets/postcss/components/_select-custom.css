@@ -4,7 +4,10 @@
 @layer components {
   .select-style-1 {
     .select-selected {
-      @apply pl-[0.875rem] capitalize pr-[1.75rem] py-[0.625rem] bg-gray-light text-3xs font-bold;
+      @apply pl-[0.875rem] capitalize pr-[1.75rem] py-[0.625rem] bg-gray-light text-3xs font-bold rtl:pr-[0.875rem] rtl:pl-[1.75rem];
+      &:after{
+        @apply rtl:left-[.625rem] rtl:right-unset;
+      }
     }
     &.select-bg-transition {
       .select-items,
@@ -38,24 +41,32 @@
 
     .select-xl{
       ~.select-selected{
-          @apply  pl-5 pr-8 py-4 text-[0.875rem];
+          @apply  pl-[0.875rem] pr-[1.75rem] py-4 text-[0.875rem] rtl:pl-[1.75rem] rtl:pr-[0.875rem];
       }
     }
     .select-lg{
       ~.select-selected{
-          @apply  pl-4 pr-7 py-3 text-[0.875rem];
+          @apply  pl-[0.875rem] pr-[1.75rem] py-3 text-[0.875rem] rtl:pl-[1.75rem] rtl:pr-[0.875rem];
       }
     }
     .select-md{
       ~.select-selected{
-          @apply  pl-[0.875rem] pr-[1.75rem] py-[0.625rem] text-[0.875rem];
+          @apply  pl-[0.875rem] pr-[1.75rem] py-[0.625rem] text-[0.875rem] rtl:pl-[1.75rem] rtl:pr-[0.875rem];
       }
     }
     .select-sm{
       ~.select-selected{
-          @apply  pl-2 pr-6 py-2 text-[0.875rem];
+          @apply  pl-[0.875rem] pr-[1.75rem] py-2 text-[0.875rem] rtl:pl-[1.75rem] rtl:pr-[0.875rem];
       }
     }
     
+  }
+  .select-section{
+    .select-selected {
+      @apply min-w-[13.125rem];
+      .select-items{
+        @apply min-w-[13.125rem];
+      }
+    }
   }
 }
