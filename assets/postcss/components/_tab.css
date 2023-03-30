@@ -94,7 +94,7 @@
 
 .tab-lifted {
   &.tab-active {
-    @apply bg-white-light;
+    @apply bg-white-light dark:bg-transparent;
   }
 }
 
@@ -105,7 +105,7 @@
     @apply mt-[-0.3125rem] hidden pt-[0.9375rem] text-start;
 
     &.active {
-      @apply block bg-white-light;
+      @apply block bg-white-light dark:bg-transparent;
     }
 
     &.fade {

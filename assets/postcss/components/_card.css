@@ -3,11 +3,11 @@
   ==========================*/
 @layer components {
   .card {
-    @apply bg-white shadow-card p-card-space rounded-card flex flex-col gap-card-space;
+    @apply bg-white shadow-card p-card-space rounded-card flex flex-col gap-card-space dark:bg-sidebar-dark;
     &-header {
       @apply relative;
       &.header-bottom-border {
-        @apply border-b border-border-light;
+        @apply border-b border-border-light dark:border-border-dark;
       }
       &-2 {
         @apply border-b border-gray-300 flex justify-between items-center;

@@ -10,7 +10,7 @@
         .breadcrumb-items {
           @apply items-center flex font-semibold whitespace-nowrap;
           a {
-            @apply h-7 flex items-center justify-center relative bg-gray-extralight w-[1.875rem];
+            @apply h-7 flex items-center justify-center relative bg-gray-extralight w-[1.875rem] ;
             svg {
               @apply w-4 h-4 stroke-primary;
             }

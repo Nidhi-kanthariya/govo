@@ -15,7 +15,7 @@
       }
       .sidebar {
         .logo-wrapper {
-          @apply border-b border-border-dark px-[1.4375rem] 4xl:px-[1.125rem] flex items-center justify-between py-[1.0625rem];
+          @apply border-b border-border-dark px-[1.4375rem] 4xl:px-[1.125rem] flex items-center justify-between pt-[1.0625rem] pb-5;
           img {
             @apply w-[5.6875rem] 4xl:w-[4.6875rem] h-auto;
           }

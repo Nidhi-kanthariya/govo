@@ -6,20 +6,9 @@
     @apply overflow-hidden;
   }
   .page-body-wrapper {
+    @apply sm:mb-20 mb-14;
     .page-body {
-      @apply mt-main-space px-body-space ml-auto h-full;
-    }
-    .friendly-body {
-      width: calc(100% - (theme('spacing.body-space2') + 7.5rem));
-      @screen 5xl {
-        width: calc(100% - (theme('spacing.body-space2') + 6.6875rem));
-      }
-      @screen 3xl {
-        width: calc(100% - (theme('spacing.body-space2') + 5.75rem));
-      }
-      @screen xl {
-        @apply w-full;
-      }
+      @apply py-main-space px-body-space ml-auto h-full dark:bg-sidebar-dark2;
     }
   }
 }

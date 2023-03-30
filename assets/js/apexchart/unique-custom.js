@@ -255,7 +255,7 @@ const SellOverview = {
     },
   ],
   chart: {
-    height: 341,
+    height: 320,
     width: '100%',
     type: 'area',
     offsetY: 0,

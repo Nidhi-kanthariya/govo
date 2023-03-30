@@ -5,7 +5,7 @@
   .dropdown {
     @apply relative inline-block w-fit;
     .dropdown-menu {
-      @apply rounded-5 z-[3] min-w-max opacity-0 duration-300 invisible  transition-[opacity,top]  border border-border-light absolute p-[0.9375rem] top-0 right-0 rtl:right-unset rtl:left-0 shadow-lg bg-white w-full;
+      @apply dark:bg-sidebar-dark dark:text-white rounded-5 z-[3] min-w-max opacity-0 duration-300 invisible  transition-[opacity,top]  border border-border-light absolute p-[0.9375rem] top-0 right-0 rtl:right-unset rtl:left-0 shadow-lg bg-white w-full;
       > ul {
         @apply flex flex-col gap-2;
         > li {
@@ -14,7 +14,7 @@
           }
           &:hover {
             > a {
-              @apply text-primary;
+              @apply text-primary no-underline;
               svg + svg {
                 @apply stroke-primary;
               }

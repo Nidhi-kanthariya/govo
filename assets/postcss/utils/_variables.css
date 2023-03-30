@@ -54,6 +54,9 @@
 html[class="dark"] {
   --White: #1f2f3e;
   --black: #fff;
+  --light: #44588f;
+  --dark: #d8ecff;
+  --title: #ffffff
 }
 
 /* Unique Skin */
@@ -65,53 +68,4 @@ html[class="dark"] {
   --secondary: 255, 97, 80; /*#FF6150*/
   --secondary-light: rgba(var(--secondary), 0.3);
   --secondary-extralight: rgba(var(--secondary), 0.08);
-}
-
-/* Minimal Skin */
-.minimal-skin {
-  --primary: 43, 95, 96; /*#2B5F60*/
-  --primary-light: rgba(var(--primary), 0.08);
-
-  --secondary: 212, 209, 170; /*#D4D1AA*/
-  --secondary-light: rgba(var(--secondary), 0.3);
-
-  --content: #848789;
-}
-
-/* Material Skin */
-.material-skin {
-  --primary: 127, 85, 218;
-  --primary-light: rgba(var(--primary), 0.08);
-
-  --secondary: 255, 141, 175;
-  --secondary-light: rgba(var(--secondary), 0.3);
-}
-
-/* Crypto Skin */
-.crypto-skin {
-  --primary: 99, 98, 231;
-  --primary-light: rgba(var(--primary), 0.08);
-
-  --secondary: 236, 185, 14;
-  --secondary-light: rgba(var(--secondary), 0.3);
-}
-
-/* Crypto Skin */
-.advanced-skin {
-  --primary: 121, 94, 189;
-  --primary-light: rgba(var(--primary), 0.08);
-
-  --secondary: 240, 126, 181;
-  --secondary-light: rgba(var(--secondary), 0.3);
-}
-
-/* retro Skin */
-.retro-skin {
-  --primary: 49, 50, 45;
-  --primary-light: rgba(var(--primary), 0.08);
-
-  --secondary: 238, 231, 214;
-  --secondary-light: rgba(var(--secondary), 0.3);
-
-  --border-light: #d6d6d6;
 }
