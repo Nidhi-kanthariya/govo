@@ -64,6 +64,8 @@ html(lang='en')
                      div.grid.grid-cols-2.gap-card-gap  
                         div.col-span-2(class="lg:col-span-1 2md:col-span-2")
                            div.card
+                              div.card-header
+                                 +card-header("Earnings","setting", HISTORY_DROPDOWN)
                               div.card-body
                                  +widget2(EARNINGS_WIDGET)
                         div.col-span-2(class="lg:col-span-1 2md:col-span-2")

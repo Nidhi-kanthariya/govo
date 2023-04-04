@@ -351,11 +351,11 @@ wishlistProduct?.forEach((el) => {
 /*=====================
 13. List-item Remove js
 ==========================*/
-const invoiceBox = document.querySelector('.invoice , .cart-main');
-const invoiceRemove = invoiceBox?.querySelectorAll('.remove-invoice , .remove-cart');
+const invoiceBox = document.querySelector('.invoice , .cart-main, .user-info');
+const invoiceRemove = invoiceBox?.querySelectorAll('.remove-invoice , .remove-cart, .remove-user');
 invoiceRemove?.forEach((el) => {
   el.addEventListener('click', function () {
-    this.closest('.invoice-item , .cart-item').style.display = 'none';
+    this.closest('.invoice-item , .cart-item, .user-item').style.display = 'none';
   });
 });
 
@@ -396,7 +396,7 @@ suggest?.forEach((el) => {
   const suggestButton = el.querySelector('.suggest-btn');
   suggestButton.addEventListener('click', function () {
     suggestButton.innerHTML = `<svg class="w-6 h-6 stroke-white bg-primary p-1">
-                                <use href="../../assets/svg/_sprite.svg#Profile"></use> 
+                                <use href="../../assets/svg/sprite.svg#Profile"></use> 
                               </svg>`;
     suggestButton.style.padding = "0px";
   });

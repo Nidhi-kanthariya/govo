@@ -58,14 +58,12 @@
 }
 
 .welcome-card-main{
-  .bg-img{
-    @apply !block w-full h-[22.5rem] mt-[-10.375rem];
-    background-image: url("../../assets/images/svg/1.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    [dir="rtl"] & {
-      transform: rotateY(180deg);
+  &.common-animate-main{
+    .bg-img{
+      @apply absolute bottom-0 left-0 right-0 top-0 !block h-full;
+      .welcome-card-animate{
+        animation-duration: 40000ms;
+      }
     }
   }
 }

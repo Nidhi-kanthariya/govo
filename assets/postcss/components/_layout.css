@@ -19,7 +19,7 @@
       }
     }
     .page-footer{
-      @apply dark:bg-sidebar-dark dark:text-white;
+      @apply dark:bg-sidebar-dark dark:text-white z-[4];
     }
     &.sidebar-close {
       .page-sidebar{

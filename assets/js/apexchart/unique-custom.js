@@ -102,7 +102,7 @@ const earningChart = {
   chart: {
     type: 'radialBar',
 
-    offsetY: 10,
+    offsetY: 0,
     height: 280,
     sparkline: {
       enabled: true,
