@@ -116,4 +116,18 @@
       }
     }
   }
+
+
+  /* Custom scroll */
+  .custom-scroll {
+    &::-webkit-scrollbar {
+      @apply w-[4px] h-[4px];
+    }
+    &::-webkit-scrollbar-track {
+      @apply bg-sidebar-dark2;
+    }
+    &::-webkit-scrollbar-thumb {
+      @apply bg-sidebar-dark h-[5px];
+    }
+  }
 }

@@ -23,7 +23,7 @@
         }
       }
       &.dropdown-sub-menu {
-        @apply right-unset translate-x-full  group-hover:top-[-60%] left-[1.25rem];
+        @apply right-unset translate-x-full  group-hover:top-[-80%] left-[1.25rem];
       }
     }
     &.on-hover-show {
