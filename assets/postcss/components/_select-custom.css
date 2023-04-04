@@ -4,7 +4,7 @@
 @layer components {
   .select-style-1 {
     .select-selected {
-      @apply pl-[0.875rem] capitalize pr-[1.75rem] py-[0.625rem] bg-gray-light text-3xs font-bold rtl:pr-[0.875rem] rtl:pl-[1.75rem];
+      @apply pl-[0.875rem] capitalize pr-[1.75rem] py-[0.625rem] bg-gray-light text-3xs font-bold rtl:pr-[0.875rem] rtl:pl-[1.75rem] ;
       &:after{
         @apply rtl:left-[.625rem] rtl:right-unset;
       }
@@ -66,6 +66,13 @@
       @apply min-w-[13.125rem];
       .select-items{
         @apply min-w-[13.125rem];
+      }
+    }
+  }
+  .card-header{
+    &.transaction-history{
+      .select-style-1 {
+        @apply  min-w-[6.25rem] max-w-[6.25rem];
       }
     }
   }

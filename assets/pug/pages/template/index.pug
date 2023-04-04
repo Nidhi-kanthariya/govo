@@ -43,19 +43,21 @@ html(lang='en')
                      include ../../components/welcome-card  
                   div.col-span-6(class="4xl:col-span-8 lg:col-span-12 lg:-order-1")
                      div.card
-                        div.card-header
+                        div.card-header.transaction-history 
                            +card-header("Transaction History","select", HISTORY_DROPDOWN)
-                        div.card-body
-                           div.overflow-auto.custom-scroll  
+                        div.card-body  
+                           div.overflow-auto.custom-scroll
                               include ../../components/table/transaction-history
                   div.col-span-3(class="4xl:col-span-4 lg:col-span-12")
                      div.grid.grid-cols-2.gap-card-gap  
                         div.col-span-2(class="lg:col-span-1 2md:col-span-2")
-                           div.card
+                           div.card 
                               div.card-body
                                  +widget1(REVENUE_WIDGET)
                         div.col-span-2(class="lg:col-span-1 2md:col-span-2")
                            div.card
+                              div.card-header
+                                 +card-header("Earnings","setting", HISTORY_DROPDOWN)
                               div.card-body
                                  +widget2(EARNINGS_WIDGET) 
                   div.col-span-6(class="4xl:col-span-8 lg:col-span-12 lg:-order-1")
