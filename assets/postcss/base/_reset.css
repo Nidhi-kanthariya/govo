@@ -119,15 +119,46 @@
 
 
   /* Custom scroll */
-  .custom-scroll {
-    &::-webkit-scrollbar {
-      @apply w-[4px] h-[4px];
+  .page-sidebar{
+    &.sidebar-dark {
+
+      .custom-scroll {
+        &::-webkit-scrollbar {
+          @apply w-[4px] h-[4px];
+        }
+        &::-webkit-scrollbar-track {
+          @apply bg-sidebar-dark2;
+        }
+        &::-webkit-scrollbar-thumb {
+          @apply bg-sidebar-dark h-[5px];
+        }
+      }
     }
-    &::-webkit-scrollbar-track {
-      @apply bg-sidebar-dark2;
+  }
+
+  .post-media{
+    &.post-liked{
+      .post-like{
+        @apply fill-danger stroke-danger;
+        animation: liked 0.1s ease-in-out;
+      }
     }
-    &::-webkit-scrollbar-thumb {
-      @apply bg-sidebar-dark h-[5px];
+    &.post-disliked{
+      .post-dislike{
+        @apply fill-border-dark stroke-border-dark;
+        animation: liked 0.1s ease-in-out;
+      }
+    }
+  }
+  @keyframes liked{
+    00%{
+      transform: scale(0);
+    }
+    45%{
+      transform: scale(0.7);
+    }
+    100%{
+      transform: scale(1);
     }
   }
 }

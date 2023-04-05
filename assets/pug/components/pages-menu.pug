@@ -6,7 +6,7 @@ ul(class="flex flex-col gap-3")
          a(href=`${pagesMenu.url}` class="flex items-center gap-2")
             span.flex.items-center.gap-2
                +SVG_ICON(`${pagesMenu.icon}`,"w-5 h-5 stroke-title")
-               small.leading-none(class="text-xs")= pagesMenu.title
+               small(class="text-xs leading-7")= pagesMenu.title
             if(pagesMenu.menu)
                +SVG_ICON("Arrow-Right-2","w-4 h-4 stroke-title ml-auto")
          if(pagesMenu.menu)
