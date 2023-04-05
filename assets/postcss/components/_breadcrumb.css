@@ -10,7 +10,7 @@
         .breadcrumb-items {
           @apply items-center flex font-semibold whitespace-nowrap;
           a {
-            @apply h-7 flex items-center justify-center relative bg-gray-extralight w-[1.875rem] ;
+            @apply h-7 flex items-center justify-center relative bg-gray-extralight w-[1.875rem];
             svg {
               @apply w-4 h-4 stroke-primary;
             }
@@ -53,24 +53,24 @@
         }
       }
     }
-    &-style-3{
-      nav{
+    &-style-3 {
+      nav {
         @apply w-full text-success;
-        .breadcrumb-list{
-          .breadcrumb-items{
+        .breadcrumb-list {
+          .breadcrumb-items {
             @apply whitespace-nowrap;
-            a{
-              @apply font-extrabold bg-transparent; 
+            a {
+              @apply font-extrabold bg-transparent;
             }
-            &.active{
+            &.active {
               @apply font-light;
             }
           }
         }
       }
     }
-    &-style-4{
-      nav{
+    &-style-4 {
+      nav {
         @apply w-full text-title;
         .breadcrumb-list {
           .breadcrumb-items {
@@ -85,21 +85,21 @@
         }
       }
     }
-    &-style-5{
-      nav{
+    &-style-5 {
+      nav {
         @apply text-secondary;
-        .breadcrumb-list{
+        .breadcrumb-list {
           @apply gap-2;
-          .breadcrumb-items{
+          .breadcrumb-items {
             @apply whitespace-nowrap;
-            a{
+            a {
               @apply bg-transparent w-auto;
             }
           }
-          li{
+          li {
             @apply relative;
-            small{
-              &:before{
+            small {
+              &:before {
                 @apply absolute content-[''] w-2 h-2 bg-secondary -top-1 left-1  rounded-full 2sm:left-0;
               }
             }
@@ -107,15 +107,15 @@
         }
       }
     }
-    &-style-6{
-      nav{
+    &-style-6 {
+      nav {
         @apply w-full text-info;
-        .breadcrumb-list{
-          .breadcrumb-items{
+        .breadcrumb-list {
+          .breadcrumb-items {
             @apply flex items-center whitespace-nowrap;
             a {
-            @apply flex items-center justify-center bg-transparent w-[1.875rem];
-          }
+              @apply flex items-center justify-center bg-transparent w-[1.875rem];
+            }
           }
         }
       }

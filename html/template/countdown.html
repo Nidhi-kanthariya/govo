@@ -26,7 +26,7 @@
     <main class="page-wrapper">
       <div class="page-body-wrapper 2xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300">
         <!-- Page Header start-->
-        <header class="fixed top-0 z-[4] 2xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto">
+        <header class="sticky top-0 z-[4]">
           <div class="page-header w-full transition-all bg-white shadow-header dark:bg-sidebar-dark">
             <div class="py-[11px] sm:py-[17px] flex items-center xl:relative justify-between px-body-space">
               <div class="left-header flex items-center gap-2">
@@ -1143,7 +1143,7 @@
                   <div class="tabs-content">
                     <div class="tab-pan active show first:rounded-tl-none rounded-5 sm:!p-2" data-tabContent="1">
                       <div class="flex flex-wrap gap-2 justify-center items-center">
-                        <div class="bg-gray-light p-4 sm:p-2">
+                        <div class="bg-gray-light p-4 sm:p-2 dark:bg-sidebar-dark2">
                           <ul class="timer countdown-1 flex flex-wrap gap-2 justify-center items-center sm:gap-1">
                             <li><span class="seconds time-value"></span><span class="timer-label">Sec</span></li>
                           </ul>
@@ -1151,8 +1151,8 @@
                       </div>
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
-                      <button class="btn copyBtn"> <i data-feather="clipboard"></i></button>
-                      <pre class="overflow-auto language-html custom-scroll"><code>&lt;div class="flex flex-wrap items-center justify-center gap-2"&gt;
+                      <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white"> <i data-feather="clipboard"></i></button>
+                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-wrap items-center justify-center gap-2"&gt;
    &lt;div class="p-4 bg-gray-light sm:p-2"&gt;
       &lt;ul class="flex flex-wrap items-center justify-center gap-2 timer countdown-1 sm:gap-1"&gt;
         &lt;li&gt;
@@ -1183,7 +1183,7 @@
                   <div class="tabs-content">
                     <div class="tab-pan active show first:rounded-tl-none rounded-5 sm:!p-2" data-tabContent="1">
                       <div class="flex flex-wrap gap-2 items-center justify-center">
-                        <div class="bg-gray-light p-4 sm:p-2">
+                        <div class="bg-gray-light p-4 sm:p-2 dark:bg-sidebar-dark2">
                           <ul class="timer countdown-1 flex flex-wrap gap-2 justify-center items-center2 sm:gap-1">
                             <li><span class="minutes time-value"></span><span class="timer-label">Min</span></li>
                             <li><span class="seconds time-value"></span><span class="timer-label">Sec</span></li>
@@ -1192,8 +1192,8 @@
                       </div>
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
-                      <button class="btn copyBtn"> <i data-feather="clipboard"></i></button>
-                      <pre class="overflow-auto language-html custom-scroll"><code>&lt;div class="flex flex-wrap items-center justify-center gap-2"&gt;
+                      <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white">  <i data-feather="clipboard"></i></button>
+                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-wrap items-center justify-center gap-2"&gt;
    &lt;div class="p-4 bg-gray-light sm:p-2"&gt;
       &lt;ul class="flex flex-wrap items-center justify-center gap-2 timer countdown-1 sm:gap-1"&gt;
         &lt;li"&gt;
@@ -1228,29 +1228,29 @@
                   <div class="tabs-content">
                     <div class="tab-pan active show first:rounded-tl-none rounded-5 sm:!p-2" data-tabContent="1">
                       <div class="flex flex-wrap gap-2 justify-center items-center">
-                        <div class="bg-gray-light p-4 sm:p-2">
+                        <div class="bg-gray-light p-4 sm:p-2 dark:bg-sidebar-dark2">
                           <ul class="timer countdown flex flex-wrap gap-2 justify-center items-center sm:gap-1">
-                            <li><span class="hours time-value"></span><span class="timer-label">Hours</span></li>
-                            <li><span class="minutes time-value"></span><span class="timer-label">Min</span></li>
-                            <li><span class="seconds time-value"></span><span class="timer-label">Sec</span></li>
+                            <li class="dark:bg-sidebar-dark"><span class="hours time-value"></span><span class="timer-label">Hours</span></li>
+                            <li class="dark:bg-sidebar-dark"><span class="minutes time-value"></span><span class="timer-label">Min</span></li>
+                            <li class="dark:bg-sidebar-dark"><span class="seconds time-value"></span><span class="timer-label">Sec</span></li>
                           </ul>
                         </div>
                       </div>
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
-                      <button class="btn copyBtn"> <i data-feather="clipboard"></i></button>
-                      <pre class="overflow-auto language-html custom-scroll"><code>&lt;div class="flex flex-wrap items-center justify-center gap-2"&gt;
+                      <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white">  <i data-feather="clipboard"></i></button>
+                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-wrap items-center justify-center gap-2"&gt;
    &lt;div class="p-4 bg-gray-light sm:p-2"&gt;
       &lt;ul class="flex flex-wrap items-center justify-center gap-2 timer countdown sm:gap-1"&gt;
-        &lt;li&gt;
+        &lt;li class="dark:bg-sidebar-dark"&gt;
           &lt;span class="hour time-value"&gt;&lt;/span&gt;
           &lt;span class="timer-label"&gt; Hours &lt;/span&gt;
         &lt;/li&gt;
-        &lt;li&gt;
+        &lt;li class="dark:bg-sidebar-dark"&gt;
           &lt;span class="minutes time-value"&gt;&lt;/span&gt;
           &lt;span class="timer-label"&gt; Min &lt;/span&gt;
         &lt;/li&gt;
-        &lt;li&gt;
+        &lt;li class="dark:bg-sidebar-dark"&gt;
           &lt;span class="seconds time-value"&gt;&lt;/span&gt;
           &lt;span class="timer-label"&gt; Sec &lt;/span&gt;
         &lt;/li&gt;
@@ -1278,15 +1278,15 @@
                   <div class="tabs-content">
                     <div class="tab-pan active show first:rounded-tl-none rounded-5 sm:!p-2" data-tabContent="1">
                       <div class="flex flex-wrap gap-4 justify-center items-center">
-                        <div class="bg-gray-light p-4 sm:p-2">
+                        <div class="bg-gray-light p-4 sm:p-2 dark:bg-sidebar-dark2">
                           <ul class="timer countdown flex flex-wrap gap-2 justify-center items-center sm:gap-1">
-                            <li><span class="days time-value"></span><span class="timer-label">Days</span></li>
-                            <li><span class="hours time-value"></span><span class="timer-label">Hours</span></li>
-                            <li><span class="minutes time-value"></span><span class="timer-label">Min</span></li>
-                            <li><span class="seconds time-value"></span><span class="timer-label">Sec</span></li>
+                            <li class="dark:bg-sidebar-dark"><span class="days time-value"></span><span class="timer-label">Days</span></li>
+                            <li class="dark:bg-sidebar-dark"><span class="hours time-value"></span><span class="timer-label">Hours</span></li>
+                            <li class="dark:bg-sidebar-dark"><span class="minutes time-value"></span><span class="timer-label">Min</span></li>
+                            <li class="dark:bg-sidebar-dark"><span class="seconds time-value"></span><span class="timer-label">Sec</span></li>
                           </ul>
                         </div>
-                        <div class="bg-gray-light p-4 sm:p-2">
+                        <div class="bg-gray-light p-4 sm:p-2 dark:bg-sidebar-dark2">
                           <ul class="timer countdown-1 flex flex-wrap gap-2 justify-center items-center sm:gap-1">
                             <li><span class="days time-value"></span><span class="timer-label">Days</span></li>
                             <li><span class="hours time-value"></span><span class="timer-label">Hours</span></li>
@@ -1297,24 +1297,24 @@
                       </div>
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
-                      <button class="btn copyBtn"> <i data-feather="clipboard"></i></button>
-                      <pre class="overflow-auto language-html custom-scroll"><code>&lt;div class="flex flex-wrap items-center justify-center gap-2"&gt;
+                      <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white">  <i data-feather="clipboard"></i></button>
+                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-wrap items-center justify-center gap-2"&gt;
    &lt;!-- Countdown style start --&gt;
    &lt;div class="p-4 bg-gray-light sm:p-2"&gt;
       &lt;ul class="flex flex-wrap items-center justify-center gap-2 timer countdown sm:gap-1"&gt;
-        &lt;li&gt;
+        &lt;li class="dark:bg-sidebar-dark"&gt;
           &lt;span class="days time-value"&gt;&lt;/span&gt;
           &lt;span class="timer-label"&gt; Days &lt;/span&gt;
         &lt;/li&gt;
-        &lt;li&gt;
+        &lt;li class="dark:bg-sidebar-dark"&gt;
           &lt;span class="hour time-value"&gt;&lt;/span&gt;
           &lt;span class="timer-label"&gt; Hours &lt;/span&gt;
         &lt;/li&gt;
-        &lt;li&gt;
+        &lt;li class="dark:bg-sidebar-dark"&gt;
           &lt;span class="minutes time-value"&gt;&lt;/span&gt;
           &lt;span class="timer-label"&gt; Min &lt;/span&gt;
         &lt;/li&gt;
-        &lt;li&gt;
+        &lt;li class="dark:bg-sidebar-dark"&gt;
           &lt;span class="seconds time-value"&gt;&lt;/span&gt;
           &lt;span class="timer-label"&gt; Sec &lt;/span&gt;
         &lt;/li&gt;
@@ -1364,7 +1364,7 @@
                   <div class="tabs-content">
                     <div class="tab-pan active show first:rounded-tl-none rounded-5 sm:!p-2" data-tabContent="1">
                       <div class="flex flex-wrap gap-4 justify-center items-center">
-                        <div class="bg-gray-light p-4 sm:p-2">
+                        <div class="bg-gray-light p-4 sm:p-2 dark:bg-sidebar-dark2">
                           <ul class="timer countdown-3 flex flex-wrap gap-2 justify-center items-center sm:gap-1">
                             <li><span class="days time-value"></span><span class="timer-label">d</span></li>
                             <li><span class="hours time-value"></span><span class="timer-label">h</span></li>
@@ -1372,7 +1372,7 @@
                             <li><span class="seconds time-value"></span><span class="timer-label">s</span></li>
                           </ul>
                         </div>
-                        <div class="bg-gray-light p-4 sm:p-2">
+                        <div class="bg-gray-light p-4 sm:p-2 dark:bg-sidebar-dark2">
                           <ul class="timer countdown-4 flex flex-wrap gap-2 justify-center items-center sm:gap-1">
                             <li><span class="days time-value"></span><span class="timer-label">Days</span></li>
                             <li><span class="hours time-value"></span><span class="timer-label">Hours</span></li>
@@ -1383,8 +1383,8 @@
                       </div>
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
-                      <button class="btn copyBtn"> <i data-feather="clipboard"></i></button>
-                      <pre class="overflow-auto language-html custom-scroll"><code>&lt;div class="flex flex-wrap items-center justify-center gap-2"&gt;
+                      <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white">  <i data-feather="clipboard"></i></button>
+                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-wrap items-center justify-center gap-2"&gt;
    &lt;!-- Countdown-3 style start --&gt;
    &lt;div class="p-4 bg-gray-light sm:p-2"&gt;
       &lt;ul class="flex flex-wrap items-center justify-center gap-2 timer countdown-3 sm:gap-1"&gt;
@@ -1458,19 +1458,19 @@
                             <li><span class="timer-label">Sec</span><span class="seconds time-value"></span></li>
                           </ul>
                         </div>
-                        <div class="bg-gray-light p-4 sm:p-2">
+                        <div class="bg-gray-light p-4 sm:p-2 dark:bg-sidebar-dark2">
                           <ul class="timer countdown-6 flex flex-wrap gap-2 justify-center items-center sm:!gap-1">
-                            <li><span class="days time-value"></span><span class="timer-label">Days</span></li>
-                            <li><span class="hours time-value"></span><span class="timer-label">Hours</span></li>
-                            <li><span class="minutes time-value"></span><span class="timer-label">Min</span></li>
-                            <li><span class="seconds time-value"></span><span class="timer-label">Sec</span></li>
+                            <li class="dark:bg-sidebar-dark"><span class="dark:bg-sidebar-dark2 days time-value"> </span><span class="timer-label">Days</span></li>
+                            <li class="dark:bg-sidebar-dark"><span class="dark:bg-sidebar-dark2 hours time-value"> </span><span class="timer-label">Hours</span></li>
+                            <li class="dark:bg-sidebar-dark"><span class="dark:bg-sidebar-dark2 minutes time-value"> </span><span class="timer-label">Min</span></li>
+                            <li class="dark:bg-sidebar-dark"><span class="dark:bg-sidebar-dark2 seconds time-value"> </span><span class="timer-label">Sec</span></li>
                           </ul>
                         </div>
                       </div>
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
-                      <button class="btn copyBtn"> <i data-feather="clipboard"></i></button>
-                      <pre class="overflow-auto language-html custom-scroll"><code>&lt;div class="flex flex-wrap items-center justify-center gap-2"&gt;
+                      <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white">  <i data-feather="clipboard"></i></button>
+                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-wrap items-center justify-center gap-2"&gt;
    &lt;!-- Countdown-5 style start --&gt;
    &lt;div class="p-4 bg-primary sm:p-2"&gt;
       &lt;ul class="flex flex-wrap items-center justify-center gap-2 timer countdown-5 sm:gap-1"&gt;
@@ -1496,24 +1496,24 @@
    &lt;!-- Countdown-6 style start --&gt;
    &lt;div class="p-4 bg-gray-light sm:p-2"&gt;
       &lt;ul class="flex flex-wrap items-center justify-center gap-2 timer countdown-6 sm:gap-1"&gt;
-        &lt;li&gt;
+        &lt;li class="dark:bg-sidebar-dark"&gt;
           &lt;span class="days time-value"&gt;&lt;/span&gt;
           &lt;span class="timer-label"&gt; Days &lt;/span&gt;
         &lt;/li&gt;
-        &lt;li&gt;
+        &lt;li class="dark:bg-sidebar-dark"&gt;
           &lt;span class="hour time-value"&gt;&lt;/span&gt;
           &lt;span class="timer-label"&gt; Hours &lt;/span&gt;
         &lt;/li&gt;
-        &lt;li&gt;
+        &lt;li class="dark:bg-sidebar-dark"&gt;
           &lt;span class="minutes time-value"&gt;&lt;/span&gt;
           &lt;span class="timer-label"&gt; Min &lt;/span&gt;
         &lt;/li&gt;
-        &lt;li&gt;
+        &lt;li class="dark:bg-sidebar-dark"&gt;
           &lt;span class="seconds time-value"&gt;&lt;/span&gt;
           &lt;span class="timer-label"&gt; Sec &lt;/span&gt;
         &lt;/li&gt;
       &lt;/ul&gt;  
-   &lt;/div&gt;  
+   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                     </div>
                   </div>
@@ -1532,11 +1532,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="card-body">                                  
+                <div class="card-body">               
                   <div class="tabs-content">
                     <div class="tab-pan active show first:rounded-tl-none rounded-5 sm:!p-2" data-tabContent="1">
                       <div class="flex flex-wrap gap-2 justify-center items-center">
-                        <div class="bg-gray-light p-4 sm:p-2">
+                        <div class="bg-gray-light p-4 sm:p-2 dark:bg-sidebar-dark2">
                           <ul class="timer flex flex-col flex-wrap gap-2 justify-center items-center">
                             <li class="flex flex-col gap-1 justify-center items-center font-bold"><span class="days time-value leading-none text-[1.25rem]"></span><span class="timer-label">Days</span></li>
                             <ul class="timer countdown-7 flex flex-wrap gap-2 items-center justify-center sm:gap-1">
@@ -1549,8 +1549,8 @@
                       </div>
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
-                      <button class="btn copyBtn"> <i data-feather="clipboard"></i></button>
-                      <pre class="overflow-auto language-html custom-scroll"><code>&lt;div class="flex flex-wrap items-center justify-center gap-2"&gt;
+                      <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white">  <i data-feather="clipboard"></i></button>
+                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-wrap items-center justify-center gap-2"&gt;
    &lt;div class="p-4 bg-gray-light sm:p-2"&gt;
       &lt;ul class="flex flex-col items-center justify-center gap-2 timer"&gt;
         &lt;li class="flex flex-col items-center justify-center gap-1 font-bold"&gt;

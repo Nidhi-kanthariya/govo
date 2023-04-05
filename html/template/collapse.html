@@ -26,7 +26,7 @@
     <main class="page-wrapper">
       <div class="page-body-wrapper 2xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300">
         <!-- Page Header start-->
-        <header class="fixed top-0 z-[4] 2xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto">
+        <header class="sticky top-0 z-[4]">
           <div class="page-header w-full transition-all bg-white shadow-header dark:bg-sidebar-dark">
             <div class="py-[11px] sm:py-[17px] flex items-center xl:relative justify-between px-body-space">
               <div class="left-header flex items-center gap-2">
@@ -1157,8 +1157,8 @@
                       </div>
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
-                      <button class="btn copyBtn"> <i data-feather="clipboard"></i></button>
-                      <pre class="overflow-auto language-html custom-scroll"><code>&lt;div class="flex flex-col flex-wrap gap-2"&gt;
+                      <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark2 dark:hover:text-white"> <i data-feather="clipboard"></i></button>
+                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-col flex-wrap gap-2"&gt;
    &lt;div class="accordionWrapper"&gt;
     &lt;div class="accordionItem open"&gt;
        &lt;h4 class="accordionItemHeading bg-primary"&gt;Open Accordions &lt;/h4&gt;
@@ -1187,7 +1187,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card-body">                                  
+                <div class="card-body">                     
                   <div class="tabs-content">
                     <div class="tab-pan active show first:rounded-tl-none rounded-5" data-tabContent="1">
                       <div class="flex flex-col flex-wrap gap-2">
@@ -1221,8 +1221,8 @@
                       </div>
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
-                      <button class="btn copyBtn"> <i data-feather="clipboard"></i></button>
-                      <pre class="overflow-auto language-html custom-scroll"><code>&lt;div class="flex flex-col flex-wrap gap-2"&gt;
+                      <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark2 dark:hover:text-white"><i data-feather="clipboard"></i></button>
+                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-col flex-wrap gap-2"&gt;
    &lt;div class="accordionWrapper"&gt;
     &lt;div class="accordionItem close"&gt;
        &lt;h4 class="accordionItemHeading bg-primary"&gt; Close Accordions &lt;/h4&gt;
@@ -1268,13 +1268,13 @@
                     </div>
                   </div>
                 </div>
-                <div class="card-body">                                  
+                <div class="card-body">           
                   <div class="tabs-content">
                     <div class="tab-pan active show first:rounded-tl-none rounded-5" data-tabContent="1">
                       <div class="flex flex-col flex-wrap gap-2">
                         <div class="accordionWrapper default">
                           <div class="accordionItem open">
-                            <h4 class="accordionItemHeading bg-gray-light text-title flex justify-between">Open Accordions
+                            <h4 class="accordionItemHeading bg-gray-light text-title flex justify-between dark:bg-sidebar-dark2">Open Accordions
                               <div class="collapse-icon">
                                 <svg class="w-[1.25rem] h-[1.25rem] stroke-title"> 
                                   <use href="../../assets/svg/sprite.svg#Arrow-Down-2"> </use>
@@ -1287,7 +1287,7 @@
                             </div>
                           </div>
                           <div class="accordionItem close">
-                            <h4 class="accordionItemHeading bg-gray-light text-title flex justify-between">Close Items
+                            <h4 class="accordionItemHeading bg-gray-light text-title flex justify-between dark:bg-sidebar-dark2">Close Items
                               <div class="collapse-icon">
                                 <svg class="w-[1.25rem] h-[1.25rem] stroke-title"> 
                                   <use href="../../assets/svg/sprite.svg#Arrow-Down-2"> </use>
@@ -1304,7 +1304,7 @@
                             </div>
                           </div>
                           <div class="accordionItem close">
-                            <h4 class="accordionItemHeading bg-gray-light text-title flex justify-between">Close Accordions
+                            <h4 class="accordionItemHeading bg-gray-light text-title flex justify-between dark:bg-sidebar-dark2">Close Accordions
                               <div class="collapse-icon">
                                 <svg class="w-[1.25rem] h-[1.25rem] stroke-title"> 
                                   <use href="../../assets/svg/sprite.svg#Arrow-Down-2"> </use>
@@ -1319,8 +1319,8 @@
                       </div>
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
-                      <button class="btn copyBtn"> <i data-feather="clipboard"></i></button>
-                      <pre class="overflow-auto language-html custom-scroll"><code>&lt;div class="flex flex-col flex-wrap gap-2"&gt;
+                      <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark2 dark:hover:text-white"><i data-feather="clipboard"></i></button>
+                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-col flex-wrap gap-2"&gt;
    &lt;div class="accordionWrapper"&gt;
     &lt;div class="accordionItem open"&gt;
        &lt;h4 class="flex justify-between accordionItemHeading bg-gray-light text-title"&gt; Open Accordions &lt;/h4&gt;
@@ -1367,7 +1367,7 @@
                 <div class="card-header pb-2 header-bottom-border">
                   <div class="flex flex-col">
                     <h3 class="text-lg font-bold">Flush Collapse</h3>
-                    <p>  Set background color for collapses using  <strong> .bg-* </strong>  class.</p>
+                    <p>  Set background color for collapses using  <strong> .bg-*</strong>  class.</p>
                     <div class="preview-code tab-links">
                       <button class="p-0 tab tab-lifted tab-active tab-link" data-tabFilter="1">Preview  </button>
                       <button class="p-0 tab tab-lifted tab-link tab-2" data-tabFilter="2">Html</button>
@@ -1407,8 +1407,8 @@
                       </div>
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
-                      <button class="btn copyBtn"> <i data-feather="clipboard"></i></button>
-                      <pre class="overflow-auto language-html custom-scroll"><code>&lt;div class="flex flex-col flex-wrap gap-2"&gt;
+                      <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark2 dark:hover:text-white"><i data-feather="clipboard"></i></button>
+                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-col flex-wrap gap-2"&gt;
    &lt;div class="accordionWrapper"&gt;
     &lt;div class="accordionItem open"&gt;
        &lt;h4 class="accordionItemHeading"&gt; Accordions &lt;/h4&gt;
@@ -1475,8 +1475,8 @@
                       </div>
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
-                      <button class="btn copyBtn"> <i data-feather="clipboard"></i></button>
-                      <pre class="overflow-auto language-html custom-scroll"><code>&lt;div class="flex flex-col flex-wrap gap-2"&gt;
+                      <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark2 dark:hover:text-white"><i data-feather="clipboard"></i></button>
+                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-col flex-wrap gap-2"&gt;
    &lt;div class="accordionWrapper"&gt;
     &lt;div class="accordionItem close"&gt;
        &lt;h4 class="accordionItemHeading bg-secondary"&gt; Close Accordions &lt;/h4&gt;
@@ -1544,8 +1544,8 @@
                       </div>
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
-                      <button class="btn copyBtn"> <i data-feather="clipboard"></i></button>
-                      <pre class="overflow-auto language-html custom-scroll"><code>&lt;div class="flex flex-col flex-wrap gap-2"&gt;
+                      <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark2 dark:hover:text-white"><i data-feather="clipboard"></i></button>
+                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-col flex-wrap gap-2"&gt;
    &lt;div class="accordionWrapper"&gt;
     &lt;div class="accordionItem close"&gt;
        &lt;h4 class="flex justify-between accordionItemHeading bg-primary"&gt; Close Accordions &lt;/h4&gt;
@@ -1636,8 +1636,8 @@
                       </div>
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
-                      <button class="btn copyBtn"> <i data-feather="clipboard"></i></button>
-                      <pre class="overflow-auto language-html custom-scroll"><code>&lt;div class="flex flex-col flex-wrap gap-2"&gt;
+                      <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark2 dark:hover:text-white"><i data-feather="clipboard"></i></button>
+                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-col flex-wrap gap-2"&gt;
    &lt;div class="accordionWrapper"&gt;
     &lt;div class="accordionItem open "&gt;
        &lt;h4 class="accordionItemHeading flex flex-row-reverse justify-end items-center btn border border-primary !text-primary"&gt; Open Accordions &lt;/h4&gt;
@@ -1742,8 +1742,8 @@
                       </div>
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
-                      <button class="btn copyBtn"> <i data-feather="clipboard"></i></button>
-                      <pre class="overflow-auto language-html custom-scroll"><code>&lt;div class="flex flex-col flex-wrap gap-2"&gt;
+                      <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark2 dark:hover:text-white"><i data-feather="clipboard"></i></button>
+                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-col flex-wrap gap-2"&gt;
    &lt;div class="accordionWrapper"&gt;
     &lt;div class="accordionItem open"&gt;
        &lt;h4 class="flex justify-between accordionItemHeading bg-secondary"&gt; Open Accordions &lt;/h4&gt;
@@ -1778,7 +1778,7 @@
          &lt;p&gt; To expand, click on it. &lt;/p&gt;
        &lt;/div&gt;
     &lt;/div&gt;
-   &lt;/div&gt; 
+   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                     </div>
                   </div>
