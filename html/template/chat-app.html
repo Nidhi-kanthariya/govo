@@ -1009,13 +1009,13 @@
             <div class="col-span-3 2xl:col-span-4">
               <!-- Chat left sidebar Start -->
               <div class="border-r border-gray-light h-full tabs flex flex-col gap-0 left-sidebar-aside">
-                <div class="h-full overflow-auto custom-scroll chat-sidebar-scroll carousel-scroll-hide">
-                  <div class="p-4 pb-0">
+                <div class="h-full overflow-auto custom-scroll chat-sidebar-scroll carousel-scroll-hide"> 
+                  <div class="p-4 pb-0 dark:bg-sidebar-dark">
                     <div class="flex items-center justify-between">
-                      <h4 class="text-xl font-extrabold"> Messages</h4><i class="block p-2 w-11 h-9 stroke-primary bg-gray-light lg:hidden" data-feather="plus"></i><i class="hidden h-6 cursor-pointer stroke-title left-sidebar-toggle lg:block" data-feather="chevrons-left"></i>
+                      <h4 class="text-xl font-extrabold dark:text-white">Messages</h4><i class="block p-2 w-11 h-9 stroke-primary bg-gray-light lg:hidden" data-feather="plus"></i><i class="hidden h-6 cursor-pointer stroke-title left-sidebar-toggle lg:block" data-feather="chevrons-left"></i>
                     </div>
                   </div>
-                  <div class="p-4 pb-0">
+                  <div class="p-4 pb-0 dark:bg-sidebar-dark">
                     <div class="swiper basicSlider">
                       <ul class="recent-chat items-center swiper-wrapper">
                         <li class="recent-chat-item flex flex-col gap-2 items-center justify-center swiper-slide">
@@ -1045,30 +1045,30 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="p-4 pb-0">
+                  <div class="p-4 pb-0 dark:bg-sidebar-dark">
                     <div class="search-box relative w-full max-w-[480px] rounded-5 overflow-hidden">
-                      <input class="bg-transparent w-full py-[11px] pl-[25px] pr-[55px] text-xs font-semibold text-title border border-gray-light" placeholder="Type to Search..." type="search">
+                      <input class="bg-transparent w-full py-[11px] pl-[25px] pr-[55px] text-xs font-semibold text-title border border-gray-light dark:border-gray-dark dark:bg-sidebar-dark2 " placeholder="Type to Search..." type="search">
                       <svg class="w-6 h-6 stroke-title top-1/2 -translate-y-1/2 right-[25px] absolute cursor-pointer"> 
                         <use href="../../assets/svg/sprite.svg#Search"> </use>
                       </svg>
                     </div>
                   </div>
-                  <div class="p-4 pb-0 tab-links flex justify-between mb-1">
-                    <button class="tab tab-lifted w-full pb-3 border-b border-gray-light tab-active font-semibold text-sm tab-link leading-[22px]" data-tabFilter="1"> 
+                  <div class="p-4 pb-0 tab-links flex justify-between mb-1 dark:bg-sidebar-dark">
+                    <button class="tab tab-lifted w-full pb-3 border-b border-gray-light tab-active font-semibold text-sm tab-link leading-[22px] dark:border-b dark:border-border-dark" data-tabFilter="1"> 
                       <p>Chat</p>
                     </button>
-                    <button class="tab tab-lifted w-full pb-3 border-b border-gray-light font-semibold text-sm tab-link leading-[22px]" data-tabFilter="2"> 
+                    <button class="tab tab-lifted w-full pb-3 border-b border-gray-light font-semibold text-sm tab-link leading-[22px] dark:border-b dark:border-border-dark" data-tabFilter="2"> 
                       <p>Story</p>
                     </button>
-                    <button class="tab tab-lifted w-full pb-3 border-b border-gray-light font-semibold text-sm tab-link leading-[22px]" data-tabFilter="3"> 
+                    <button class="tab tab-lifted w-full pb-3 border-b border-gray-light font-semibold text-sm tab-link leading-[22px] dark:border-b dark:border-border-dark" data-tabFilter="3"> 
                       <p>Call</p>
                     </button>
                   </div>
-                  <div class="tabs-content">
+                  <div class="tabs-content dark:bg-sidebar-dark">
                     <div class="tab-pan !p-0 !pb-4 !border-0 active show first:rounded-tl-none rounded-5" data-tabContent="1">                                    
                       <div class="p-4 overflow-auto max-h-[639px] custom-scroll">
                         <ul class="flex flex-col gap-4"> 
-                          <li class="flex items-start justify-between pt-[13px] border-t border-gray-light first:pt-0 first:mt-0 first:border-none">
+                          <li class="flex items-start justify-between pt-[13px] border-t border-gray-light  first:pt-0 first:mt-0 first:border-none">
                             <div class="flex items-center gap-3 w-[calc(100%_-_59px)] xl:gap-2">
                               <div class="indicator"><span class="chat-status status-offline"></span>
                                 <div class="avatar">
@@ -1082,7 +1082,7 @@
                             <div class="flex flex-col items-end gap-1">     <span class="text-content text-3xs">17:21</span><span class="leading-none p-1 badge bg-primary rounded-full text-3xs flex items-center justify-center min-w-[22px] min-h-[22px]">3</span>
                             </div>
                           </li>
-                          <li class="flex items-start justify-between pt-[13px] border-t border-gray-light first:pt-0 first:mt-0 first:border-none">
+                          <li class="flex items-start justify-between pt-[13px] border-t border-gray-light  first:pt-0 first:mt-0 first:border-none">
                             <div class="flex items-center gap-3 w-[calc(100%_-_59px)] xl:gap-2">
                               <div class="indicator"><span class="chat-status status-online"></span>
                                 <div class="avatar">
@@ -1096,7 +1096,7 @@
                             <div class="flex flex-col items-end gap-1">     <span class="text-content text-3xs">11:56</span><span class="leading-none p-1 badge bg-primary rounded-full text-3xs flex items-center justify-center min-w-[22px] min-h-[22px]">2</span>
                             </div>
                           </li>
-                          <li class="flex items-start justify-between pt-[13px] border-t border-gray-light first:pt-0 first:mt-0 first:border-none">
+                          <li class="flex items-start justify-between pt-[13px] border-t border-gray-light  first:pt-0 first:mt-0 first:border-none">
                             <div class="flex items-center gap-3 w-[calc(100%_-_59px)] xl:gap-2">
                               <div class="indicator"><span class="chat-status status-offline"></span>
                                 <div class="avatar">
@@ -1110,7 +1110,7 @@
                             <div class="flex flex-col items-end gap-1">     <span class="text-content text-3xs">11:20</span>
                             </div>
                           </li>
-                          <li class="flex items-start justify-between pt-[13px] border-t border-gray-light first:pt-0 first:mt-0 first:border-none">
+                          <li class="flex items-start justify-between pt-[13px] border-t border-gray-light  first:pt-0 first:mt-0 first:border-none">
                             <div class="flex items-center gap-3 w-[calc(100%_-_59px)] xl:gap-2">
                               <div class="indicator"><span class="chat-status status-offline"></span>
                                 <div class="avatar">
@@ -1124,7 +1124,7 @@
                             <div class="flex flex-col items-end gap-1">     <span class="text-content text-3xs">03:14</span>
                             </div>
                           </li>
-                          <li class="flex items-start justify-between pt-[13px] border-t border-gray-light first:pt-0 first:mt-0 first:border-none">
+                          <li class="flex items-start justify-between pt-[13px] border-t border-gray-light  first:pt-0 first:mt-0 first:border-none">
                             <div class="flex items-center gap-3 w-[calc(100%_-_59px)] xl:gap-2">
                               <div class="indicator"><span class="chat-status status-offline"></span>
                                 <div class="avatar">
@@ -1138,7 +1138,7 @@
                             <div class="flex flex-col items-end gap-1">     <span class="text-content text-3xs">Thus</span>
                             </div>
                           </li>
-                          <li class="flex items-start justify-between pt-[13px] border-t border-gray-light first:pt-0 first:mt-0 first:border-none">
+                          <li class="flex items-start justify-between pt-[13px] border-t border-gray-light  first:pt-0 first:mt-0 first:border-none">
                             <div class="flex items-center gap-3 w-[calc(100%_-_59px)] xl:gap-2">
                               <div class="indicator"><span class="chat-status status-online"></span>
                                 <div class="avatar">
@@ -1152,7 +1152,7 @@
                             <div class="flex flex-col items-end gap-1">     <span class="text-content text-3xs">17:21</span>
                             </div>
                           </li>
-                          <li class="flex items-start justify-between pt-[13px] border-t border-gray-light first:pt-0 first:mt-0 first:border-none">
+                          <li class="flex items-start justify-between pt-[13px] border-t border-gray-light  first:pt-0 first:mt-0 first:border-none">
                             <div class="flex items-center gap-3 w-[calc(100%_-_59px)] xl:gap-2">
                               <div class="indicator"><span class="chat-status status-offline"></span>
                                 <div class="avatar">
@@ -1166,7 +1166,7 @@
                             <div class="flex flex-col items-end gap-1">     <span class="text-content text-3xs">17:21</span>
                             </div>
                           </li>
-                          <li class="flex items-start justify-between pt-[13px] border-t border-gray-light first:pt-0 first:mt-0 first:border-none">
+                          <li class="flex items-start justify-between pt-[13px] border-t border-gray-light  first:pt-0 first:mt-0 first:border-none">
                             <div class="flex items-center gap-3 w-[calc(100%_-_59px)] xl:gap-2">
                               <div class="indicator"><span class="chat-status status-online"></span>
                                 <div class="avatar">
@@ -1180,7 +1180,7 @@
                             <div class="flex flex-col items-end gap-1">     <span class="text-content text-3xs">17:21</span>
                             </div>
                           </li>
-                          <li class="flex items-start justify-between pt-[13px] border-t border-gray-light first:pt-0 first:mt-0 first:border-none">
+                          <li class="flex items-start justify-between pt-[13px] border-t border-gray-light  first:pt-0 first:mt-0 first:border-none">
                             <div class="flex items-center gap-3 w-[calc(100%_-_59px)] xl:gap-2">
                               <div class="indicator"><span class="chat-status status-offline"></span>
                                 <div class="avatar">
@@ -1194,7 +1194,7 @@
                             <div class="flex flex-col items-end gap-1">     <span class="text-content text-3xs">17:21</span>
                             </div>
                           </li>
-                          <li class="flex items-start justify-between pt-[13px] border-t border-gray-light first:pt-0 first:mt-0 first:border-none">
+                          <li class="flex items-start justify-between pt-[13px] border-t border-gray-light  first:pt-0 first:mt-0 first:border-none">
                             <div class="flex items-center gap-3 w-[calc(100%_-_59px)] xl:gap-2">
                               <div class="indicator"><span class="chat-status status-offline"></span>
                                 <div class="avatar">
@@ -2003,7 +2003,7 @@
                     <use href="../../assets/svg/sprite.svg#Add-User"> </use>
                   </svg>
                 </li>
-                <li> <i class="p-2 bg-white rounded-full w-9 h-9 stroke-title" data-feather="pause"></i></li>
+                <li><i class="p-2 bg-white rounded-full w-9 h-9 stroke-title" data-feather="pause"></i></li>
               </ul>
             </div>
           </div>
