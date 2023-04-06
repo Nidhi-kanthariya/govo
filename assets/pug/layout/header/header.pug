@@ -1,7 +1,7 @@
 // Page Header start
-header.sticky.top-0(class="z-[4]")
+header.fixed.top-0(class="z-[4] xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto")
   div.page-header(class="w-full transition-all bg-white shadow-header dark:bg-sidebar-dark")
-    div(class="py-[11px] sm:py-[17px] flex items-center xl:relative justify-between px-body-space")
+    div(class="py-[11px] flex items-center xl:relative justify-between px-body-space")
       div.left-header.flex.items-center.gap-2
         button.sidebar-toggle.hide  
           +SVG_ICON("Category","w-6 4xl:w-5 h-6 4xl:h-5 stroke-title")
@@ -34,7 +34,7 @@ header.sticky.top-0(class="z-[4]")
         ul.profile-box.flex.items-center
           li(class="cursor-pointer pr-[11px] rtl:pr-unset rtl:pl-[11px] rtl:last:pl-0 rtl:last:pr-unset last:pr-0 sm:pr-0 sm:border-none last:border-none rtl:border-l rtl:border-r-0 border-r border-border-2 flex items-center") 
             include ./language-dropdown    
-          li(class="cursor-pointer flex- pl-[11px] rtl:pr-[11px] rtl:pl-unset rtl:first:pr-0 first:pl-0 flex items-center sm:hidden ")
+          li(class="cursor-pointer flex- pl-[11px] rtl:pr-[11px] rtl:pl-unset rtl:first:pr-0 first:pl-0 flex items-center")
             include ./profile-box    
     include ./sub-header    
 // Page Header end

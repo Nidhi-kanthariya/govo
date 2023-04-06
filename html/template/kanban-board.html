@@ -24,11 +24,11 @@
   </head>
   <body class="unique-skin" dir="ltr">
     <main class="page-wrapper">
-      <div class="page-body-wrapper 2xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300">
+      <div class="page-body-wrapper xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300">
         <!-- Page Header start-->
-        <header class="sticky top-0 z-[4]">
+        <header class="fixed top-0 z-[4] xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto">
           <div class="page-header w-full transition-all bg-white shadow-header dark:bg-sidebar-dark">
-            <div class="py-[11px] sm:py-[17px] flex items-center xl:relative justify-between px-body-space">
+            <div class="py-[11px] flex items-center xl:relative justify-between px-body-space">
               <div class="left-header flex items-center gap-2">
                 <button class="sidebar-toggle hide"> 
                   <svg class="w-6 4xl:w-5 h-6 4xl:h-5 stroke-title"> 
@@ -358,7 +358,7 @@
                   <li class="cursor-pointer pr-[11px] rtl:pr-unset rtl:pl-[11px] rtl:last:pl-0 rtl:last:pr-unset last:pr-0 sm:pr-0 sm:border-none last:border-none rtl:border-l rtl:border-r-0 border-r border-border-2 flex items-center"> 
                     <!-- Language Start -->
                     <div class="language-select dropdown group">
-                      <button class="flex items-center max-w-[87px] min-w-[87px] gap-[11px]" id="language-select"><img class="w-[35px] h-auto" src="../../assets/images/flag/en.svg" alt="flag"><span class="flex items-center gap-1 text-lg font-bold 4xl:text-base dark:text-white">En</span>
+                      <button class="flex items-center max-w-[87px] min-w-[87px] md:min-w-[47px] gap-[11px]" id="language-select"><img class="w-[35px] sm:w-[30px] h-auto" src="../../assets/images/flag/en.svg" alt="flag"><span class="flex items-center gap-1 text-lg font-bold 4xl:text-base dark:text-white md:hidden">En</span>
                         <svg class="w-[6px] h-[4px] stroke-title group-hover:rotate-180 duration-300 transition-all dark:stroke-white"> 
                           <use href="../../assets/svg/sprite.svg#Fill-Arrow"> </use>
                         </svg>
@@ -376,7 +376,7 @@
                     </div>
                     <!-- Language End -->
                   </li>
-                  <li class="cursor-pointer flex- pl-[11px] rtl:pr-[11px] rtl:pl-unset rtl:first:pr-0 first:pl-0 flex items-center sm:hidden ">
+                  <li class="cursor-pointer flex- pl-[11px] rtl:pr-[11px] rtl:pl-unset rtl:first:pr-0 first:pl-0 flex items-center">
                     <!-- Profile Start -->
                     <div class="dropdown"> 
                       <div class="flex items-center gap-[10px] cursor-pointer"> 
@@ -419,100 +419,33 @@
               </div>
             </div>
             <!-- Sub Header Start -->
-            <div class="md:hidden py-[14px] border-t border-border-light px-body-space dark:border-border-dark"> 
-              <div class="relative flex items-center justify-between"> 
-                <ul class="flex items-center 2md:shadow-lg 2md:border 2md:border-border-light 2md:z-[5] 2md:p-4 2md:absolute 2md:top-[38px] 2md:rounded-5 2md:left-0 2md:items-start 2md:bg-white 2md:flex-col gap-[calc(8px_+_(31_-_8)_*_((100vw_-_320px)_/_(1920_-_320)))]"> 
+            <div class="py-[14px] border-t border-border-light px-body-space dark:border-border-dark"> 
+              <div class="relative flex items-center justify-between lg:justify-start">
+                <ul class="flex items-center lg:hidden 2md:shadow-lg 2md:border 2md:border-border-light 2md:z-[5] 2md:p-4 2md:absolute 2md:top-[38px] 2md:rounded-5 2md:left-0 2md:items-start 2md:bg-white 2md:flex-col gap-[calc(8px_+_(31_-_8)_*_((100vw_-_320px)_/_(1920_-_320)))]"> 
                   <li class="dropdown on-hover-show cursor-pointer pb-[6px] transition-all relative group before:bg-primary before:absolute before:-translate-x-1/2 before:bottom-0 before:left-1/2 before:w-full before:h-[2px]"> <span class="text-xs font-bold transition-all text-primary">General</span>
-                    <div class="dropdown-menu !min-w-[890px] lg:!min-w-[660px] !left-0 !right-unset !p-0"> 
+                    <div class="dropdown-menu !min-w-[320px] !left-0 !right-unset !p-0"> 
                       <!-- General menu-->
                       <div class="grid grid-cols-12 gap-2">
-                        <div class="col-span-8">
-                          <ul class="columns-2 gap-[10px] p-[15px]"> 
-                            <li class="p-2 rounded-5 transition-all duration-300 hover:bg-gray-light"><a class="flex items-center gap-2" href="index.html"> 
+                        <div class="col-span-12">
+                          <ul class="gap-[10px] p-[15px]"> 
+                            <li class="p-2 transition-all duration-300 rounded-5 hover:bg-gray-light"><a class="flex items-center gap-2" href="index.html"> 
                                 <div class="p-2 rounded-5  border border-primary">
                                   <svg class="w-5 h-5 stroke-primary"> 
                                     <use href="../../assets/svg/sprite.svg#Home"> </use>
                                   </svg>
                                 </div>
                                 <div>
-                                  <h4 class="text-xs font-semibold text-title capitalize line-clamp-1">Unique Dashboard</h4><span class="text-xs font-medium text-content line-clamp-1">Over view of all</span>
+                                  <h4 class="text-xs font-semibold capitalize text-title line-clamp-1">Unique Dashboard</h4><span class="text-xs font-medium text-content line-clamp-1">Over view of all</span>
                                 </div></a></li>
-                            <li class="p-2 rounded-5 transition-all duration-300 hover:bg-gray-light"><a class="flex items-center gap-2" href="friendly.html"> 
+                            <li class="p-2 transition-all duration-300 rounded-5 hover:bg-gray-light"><a class="flex items-center gap-2" href="index.html"> 
                                 <div class="p-2 rounded-5  border border-primary">
                                   <svg class="w-5 h-5 stroke-primary"> 
-                                    <use href="../../assets/svg/sprite.svg#3-User"> </use>
+                                    <use href="../../assets/svg/sprite.svg#Home"> </use>
                                   </svg>
                                 </div>
                                 <div>
-                                  <h4 class="text-xs font-semibold text-title capitalize line-clamp-1">Friendly Dashboard</h4><span class="text-xs font-medium text-content line-clamp-1">Social connectivity</span>
+                                  <h4 class="text-xs font-semibold capitalize text-title line-clamp-1">Unique Dashboard</h4><span class="text-xs font-medium text-content line-clamp-1">Over view of all</span>
                                 </div></a></li>
-                            <li class="p-2 rounded-5 transition-all duration-300 hover:bg-gray-light"><a class="flex items-center gap-2" href="minimal.html"> 
-                                <div class="p-2 rounded-5  border border-primary">
-                                  <svg class="w-5 h-5 stroke-primary"> 
-                                    <use href="../../assets/svg/sprite.svg#Ticket"> </use>
-                                  </svg>
-                                </div>
-                                <div>
-                                  <h4 class="text-xs font-semibold text-title capitalize line-clamp-1">Minimal Dashboard</h4><span class="text-xs font-medium text-content line-clamp-1">Minimal over view </span>
-                                </div></a></li>
-                            <li class="p-2 rounded-5 transition-all duration-300 hover:bg-gray-light"><a class="flex items-center gap-2" href="material.html"> 
-                                <div class="p-2 rounded-5  border border-primary">
-                                  <svg class="w-5 h-5 stroke-primary"> 
-                                    <use href="../../assets/svg/sprite.svg#Calendar"> </use>
-                                  </svg>
-                                </div>
-                                <div>
-                                  <h4 class="text-xs font-semibold text-title capitalize line-clamp-1">Material Dashboard</h4><span class="text-xs font-medium text-content line-clamp-1">Material design</span>
-                                </div></a></li>
-                            <li class="p-2 rounded-5 transition-all duration-300 hover:bg-gray-light"><a class="flex items-center gap-2" href="shopping-place.html"> 
-                                <div class="p-2 rounded-5  border border-primary">
-                                  <svg class="w-5 h-5 stroke-primary"> 
-                                    <use href="../../assets/svg/sprite.svg#Bag"> </use>
-                                  </svg>
-                                </div>
-                                <div>
-                                  <h4 class="text-xs font-semibold text-title capitalize line-clamp-1">Shopping Place Dashboard</h4><span class="text-xs font-medium text-content line-clamp-1">Ecommerce shop place</span>
-                                </div></a></li>
-                            <li class="p-2 rounded-5 transition-all duration-300 hover:bg-gray-light"><a class="flex items-center gap-2" href="retro.html"> 
-                                <div class="p-2 rounded-5  border border-primary">
-                                  <svg class="w-5 h-5 stroke-primary"> 
-                                    <use href="../../assets/svg/sprite.svg#Activity"> </use>
-                                  </svg>
-                                </div>
-                                <div>
-                                  <h4 class="text-xs font-semibold text-title capitalize line-clamp-1">Retro Dashboard</h4><span class="text-xs font-medium text-content line-clamp-1">Monochrome mode eye friendly</span>
-                                </div></a></li>
-                            <li class="p-2 rounded-5 transition-all duration-300 hover:bg-gray-light"><a class="flex items-center gap-2" href="crypto.html"> 
-                                <div class="p-2 rounded-5  border border-primary">
-                                  <svg class="w-5 h-5 stroke-primary"> 
-                                    <use href="../../assets/svg/sprite.svg#Graph"> </use>
-                                  </svg>
-                                </div>
-                                <div>
-                                  <h4 class="text-xs font-semibold text-title capitalize line-clamp-1">Crypto Dashboard</h4><span class="text-xs font-medium text-content line-clamp-1">Crypto curacy analysis</span>
-                                </div></a></li>
-                            <li class="p-2 rounded-5 transition-all duration-300 hover:bg-gray-light"><a class="flex items-center gap-2" href="advanced.html"> 
-                                <div class="p-2 rounded-5  border border-primary">
-                                  <svg class="w-5 h-5 stroke-primary"> 
-                                    <use href="../../assets/svg/sprite.svg#Upload"> </use>
-                                  </svg>
-                                </div>
-                                <div>
-                                  <h4 class="text-xs font-semibold text-title capitalize line-clamp-1">Advanced Dashboard</h4><span class="text-xs font-medium text-content line-clamp-1">Mordent analysis</span>
-                                </div></a></li>
-                          </ul>
-                        </div>
-                        <div class="col-span-4 bg-gray-light p-[15px]">
-                          <h4 class="text-base font-semibold text-title mb-3">More Dashboard                     </h4>
-                          <ul class="flex flex-col gap-2">
-                            <li><a href="reports.html"><span class="transition-all duration-300 hover:text-primary text-xs font-semibold text-title capitalize">
-                                    Reports Dashboard</span></a></li>
-                            <li><a href="support.html"><span class="transition-all duration-300 hover:text-primary text-xs font-semibold text-title capitalize">
-                                    Support Dashboard</span></a></li>
-                            <li><a href="elegance.html"> <span class="transition-all duration-300 hover:text-primary text-xs font-semibold text-title capitalize">
-                                      Elegance Dashboard</span></a></li>
-                            <li><a href="project.html"><span class="transition-all duration-300 hover:text-primary text-xs font-semibold text-title capitalize">
-                                      Project Dashboard </span></a></li>
                           </ul>
                         </div>
                       </div>
@@ -521,142 +454,79 @@
                   <li class="dropdown on-hover-show cursor-pointer pb-[6px] transition-all duration-300 relative group before:bg-primary before:absolute before:-translate-x-1/2 before:bottom-0 before:left-1/2 hover:before:w-full before:h-[2px] before:w-0 "> <span class="text-xs font-bold transition-all duration-300 text-content group-hover:text-primary">Components</span>
                     <div class="dropdown-menu !min-w-[220px] !left-0 !right-unset"> 
                       <!-- Componant menu-->
-                      <ul class="flex flex-col gap-3"> 
-                        <li class="w-full dropdown on-hover-show group"><a class="flex items-center gap-2 justify-between" href="javascript:void(0)"><span class="flex items-center gap-2">
+                      <ul class="flex flex-col gap-4"> 
+                        <li class="w-full dropdown on-hover-show group"><a class="flex items-center justify-between gap-2" href="javascript:void(0)"><span class="flex items-center gap-2">
                               <svg class="w-5 h-5 stroke-title"> 
                                 <use href="../../assets/svg/sprite.svg#Folder"> </use>
-                              </svg>Ui Kits</span>
+                              </svg><small class="text-xs leading-7">Ui Kits</small></span>
                             <svg class="w-4 h-4 stroke-title ml-auto"> 
                               <use href="../../assets/svg/sprite.svg#Arrow-Right-2"> </use>
                             </svg></a>
                           <div class="dropdown-menu dropdown-sub-menu">
                             <ul class="flex flex-col gap-2"> 
-                              <li><a href="typography.html">Typography</a></li>
-                              <li><a href="avatar.html">Avatar</a></li>
-                              <li><a href="buttons.html">Buttons</a></li>
-                              <li><a href="badge.html">Badges</a></li>
-                              <li><a href="progress.html">Progress</a></li>
-                              <li><a href="modal.html">Modal</a></li>
-                              <li><a href="alert.html">Alert</a></li>
-                              <li><a href="dropdown.html">Dropdown</a></li>
-                              <li><a href="collapse.html">Collapse</a></li>
-                              <li><a href="tooltip.html">Tooltip</a></li>
-                              <li><a href="divider.html">Divider</a></li>
+                              <li><a href="./alert.html">Alert</a></li>
+                              <li><a href="./avatars.html">Avatars</a></li>
+                              <li><a href="./badge.html">Badge</a></li>
+                              <li><a href="./button.html">Button</a></li>
+                              <li><a href="./collapse.html">Collapse</a></li>
+                              <li><a href="./divider.html">Divider</a></li>
+                              <li><a href="./dropdown.html">Dropdown</a></li>
+                              <li><a href="./modal.html">Modal</a></li>
+                              <li><a href="./progress.html">Progress</a></li>
+                              <li><a href="./tooltip.html">Tooltip</a></li>
+                              <li><a href="./typography.html">Typography</a></li>
                             </ul>
                           </div>
                         </li>
-                        <li class="w-full dropdown on-hover-show group"><a class="flex items-center gap-2 justify-between" href="javascript:void(0)"><span class="flex items-center gap-2">
+                        <li class="w-full dropdown on-hover-show group"><a class="flex items-center justify-between gap-2" href="javascript:void(0)"><span class="flex items-center gap-2">
                               <svg class="w-5 h-5 stroke-title"> 
                                 <use href="../../assets/svg/sprite.svg#Ticket-Star"> </use>
-                              </svg>Bonus Ui</span>
+                              </svg><small class="text-xs leading-7">Bonus Ui</small></span>
                             <svg class="w-4 h-4 stroke-title ml-auto"> 
                               <use href="../../assets/svg/sprite.svg#Arrow-Right-2"> </use>
                             </svg></a>
                           <div class="dropdown-menu dropdown-sub-menu">
                             <ul class="flex flex-col gap-2"> 
-                              <li><a href="breadcrumb.html">Breadcrumbs</a></li>
-                              <li><a href="pagination.html">Pagination</a></li>
-                              <li><a href="carousel.html">Carousel</a></li>
-                              <li><a href="countdown.html">Countdown</a></li>
-                              <li><a href="radial-progress.html">Radial progress</a></li>
-                              <li><a href="swap.html">Swap</a></li>
-                              <li><a href="indicator.html">Indicator</a></li>
-                              <li><a href="mask.html">Mask</a></li>
-                              <li><a href="stack.html">Stack</a></li>
-                              <li><a href="toast.html">Toast</a></li>
-                              <li><a href="steps.html">Steps</a></li>
-                              <li><a href="tabs.html">Tabs</a></li>
-                              <li><a href="rating.html">Rating</a></li>
+                              <li><a href="./breadcrumb.html">Breadcrumb</a></li>
+                              <li><a href="./carousel.html">Carousel</a></li>
+                              <li><a href="./countdown.html">Countdown</a></li>
+                              <li><a href="./indicator.html">Indicator</a></li>
+                              <li><a href="./mask.html">Mask</a></li>
+                              <li><a href="./pagination.html">Pagination</a></li>
+                              <li><a href="./radial-progress.html">Radial Progress</a></li>
+                              <li><a href="./rating.html">Rating</a></li>
+                              <li><a href="./stack.html">Stack</a></li>
+                              <li><a href="./steps.html">Steps</a></li>
+                              <li><a href="./swap.html">Swap</a></li>
+                              <li><a href="./swiper-slider.html">Swiper Slider</a></li>
+                              <li><a href="./tabs.html">Tabs</a></li>
                             </ul>
                           </div>
                         </li>
-                        <li class="w-full dropdown on-hover-show group"><a class="flex items-center gap-2 justify-between" href="javascript:void(0)"><span class="flex items-center gap-2">
-                              <svg class="w-5 h-5 stroke-title"> 
-                                <use href="../../assets/svg/sprite.svg#Plus"> </use>
-                              </svg>Form Components</span>
-                            <svg class="w-4 h-4 stroke-title ml-auto"> 
-                              <use href="../../assets/svg/sprite.svg#Arrow-Right-2"> </use>
-                            </svg></a>
-                          <div class="dropdown-menu dropdown-sub-menu">
-                            <ul class="flex flex-col gap-2"> 
-                              <li><a href="input-textarea.html">Input and Textarea</a></li>
-                              <li><a href="checkbox-radio.html">Checkbox and Radio</a></li>
-                              <li><a href="select.html">Select</a></li>
-                              <li><a href="switch.html">Switch</a></li>
-                              <li><a href="range.html">Range</a></li>
-                              <li><a href="input-group.html">Input Group </a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        <li class="w-full dropdown on-hover-show group"><a class="flex items-center gap-2 justify-between" href="javascript:void(0)"><span class="flex items-center gap-2">
-                              <svg class="w-5 h-5 stroke-title"> 
-                                <use href="../../assets/svg/sprite.svg#Edit-Square"> </use>
-                              </svg>Builders</span>
-                            <svg class="w-4 h-4 stroke-title ml-auto"> 
-                              <use href="../../assets/svg/sprite.svg#Arrow-Right-2"> </use>
-                            </svg></a>
-                          <div class="dropdown-menu dropdown-sub-menu">
-                            <ul class="flex flex-col gap-2"> 
-                              <li><a href="form-builder1.html">Form Builder 1</a></li>
-                              <li><a href="form-builder2.html">Form Builder 2</a></li>
-                              <li><a href="form-builder2.html">Form Builder 2</a></li>
-                              <li><a href="form-builder3.html">Form Builder 3</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        <li class="w-full dropdown on-hover-show group"><a class="flex items-center gap-2 justify-between" href="javascript:void(0)"><span class="flex items-center gap-2">
-                              <svg class="w-5 h-5 stroke-title"> 
-                                <use href="../../assets/svg/sprite.svg#Scan"> </use>
-                              </svg>Animation</span>
-                            <svg class="w-4 h-4 stroke-title ml-auto"> 
-                              <use href="../../assets/svg/sprite.svg#Arrow-Right-2"> </use>
-                            </svg></a>
-                          <div class="dropdown-menu dropdown-sub-menu">
-                            <ul class="flex flex-col gap-2"> 
-                              <li><a href="animate.html">Animate</a></li>
-                              <li><a href="scroll-reveal.html">Scroll Reveal</a></li>
-                              <li><a href="aos.html">AOS animation</a></li>
-                              <li><a href="tilt.html">Tilt Animation</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        <li class="w-full dropdown on-hover-show group"><a class="flex items-center gap-2 justify-between" href="javascript:void(0)"><span class="flex items-center gap-2">
+                        <li class="w-full dropdown on-hover-show group"><a class="flex items-center justify-between gap-2" href="javascript:void(0)"><span class="flex items-center gap-2">
                               <svg class="w-5 h-5 stroke-title"> 
                                 <use href="../../assets/svg/sprite.svg#Danger-Circle"> </use>
-                              </svg>Icons</span>
+                              </svg><small class="text-xs leading-7">Icons</small></span>
                             <svg class="w-4 h-4 stroke-title ml-auto"> 
                               <use href="../../assets/svg/sprite.svg#Arrow-Right-2"> </use>
                             </svg></a>
                           <div class="dropdown-menu dropdown-sub-menu">
                             <ul class="flex flex-col gap-2"> 
-                              <li><a href="fontawesome-icon.html">Fontawesome Icon</a></li>
-                              <li><a href="iconly-icon.html">Iconly Icons</a></li>
-                              <li><a href="feather.html">Feather Icons</a></li>
-                              <li><a href="thimify-icon.html">Thimify Icon</a></li>
-                              <li><a href="whether-icon.html">Whether Icon</a></li>
+                              <li><a href="./feather.html">Feather</a></li>
+                              <li><a href="./fontawesome.html">Font Awesome</a></li>
+                              <li><a href="./iconly.html">Iconly</a></li>
                             </ul>
                           </div>
                         </li>
-                        <li class="w-full dropdown on-hover-show group"><a class="flex items-center gap-2 justify-between" href="javascript:void(0)"><span class="flex items-center gap-2">
+                        <li class="w-full "><a class="flex items-center justify-between gap-2" href="apex-chart.html"><span class="flex items-center gap-2">
                               <svg class="w-5 h-5 stroke-title"> 
                                 <use href="../../assets/svg/sprite.svg#Chart"> </use>
-                              </svg>Chart</span>
-                            <svg class="w-4 h-4 stroke-title ml-auto"> 
-                              <use href="../../assets/svg/sprite.svg#Arrow-Right-2"> </use>
-                            </svg></a>
-                          <div class="dropdown-menu dropdown-sub-menu">
-                            <ul class="flex flex-col gap-2"> 
-                              <li><a href="apex-chart.html">Apex Chart</a></li>
-                              <li><a href="echarts.html">Echarts</a></li>
-                              <li><a href="google-chart.html">Google Chart</a></li>
-                              <li><a href="sparkline-chart.html">Sparkline Chart</a></li>
-                              <li><a href="flot-chart.html">Flot Chart</a></li>
-                              <li><a href="knob-chart.html">Knob Chart</a></li>
-                              <li><a href="morris-chart.html">Morris Chart</a></li>
-                              <li><a href="chatjs-chart.html">Chatjs Chart</a></li>
-                              <li><a href="peity-chart.html">Peity Chart</a></li>
-                            </ul>
-                          </div>
+                              </svg><small class="text-xs leading-7">Apex Chart</small></span></a>
+                        </li>
+                        <li class="w-full "><a class="flex items-center justify-between gap-2" href="wow-animation.html"><span class="flex items-center gap-2">
+                              <svg class="w-5 h-5 stroke-title"> 
+                                <use href="../../assets/svg/sprite.svg#Scan"> </use>
+                              </svg><small class="text-xs leading-7">Wow Animation</small></span></a>
                         </li>
                       </ul>
                     </div>
@@ -667,169 +537,176 @@
                       <ul class="flex flex-col gap-3"> 
                         <li class="w-full dropdown on-hover-show group"><a class="flex items-center gap-2" href="javascript:void(0)"><span class="flex items-center gap-2">
                               <svg class="w-5 h-5 stroke-title"> 
-                                <use href="../../assets/svg/sprite.svg#Message"> </use>
-                              </svg>Email App</span>
+                                <use href="../../assets/svg/sprite.svg#Chat"> </use>
+                              </svg><small class="text-xs leading-7">Chat</small></span>
                             <svg class="w-4 h-4 stroke-title ml-auto"> 
                               <use href="../../assets/svg/sprite.svg#Arrow-Right-2"> </use>
                             </svg></a>
                           <div class="dropdown-menu dropdown-sub-menu">
                             <ul class="flex flex-col gap-2"> 
-                              <li><a href="email.html">Email</a></li>
-                              <li><a href="email-read.html">Email Read</a></li>
-                              <li><a href="email-compose.html">Email Compose</a></li>
+                              <li><a href="chat-app.html">Chat App</a></li>
+                              <li><a href="video-app.html">Video App</a></li>
                             </ul>
                           </div>
                         </li>
+                        <li class="w-full "><a class="flex items-center gap-2" href="calendar.html"><span class="flex items-center gap-2">
+                              <svg class="w-5 h-5 stroke-title"> 
+                                <use href="../../assets/svg/sprite.svg#Calendar"> </use>
+                              </svg><small class="text-xs leading-7">Calendar</small></span></a>
+                        </li>
                         <li class="w-full dropdown on-hover-show group"><a class="flex items-center gap-2" href="javascript:void(0)"><span class="flex items-center gap-2">
                               <svg class="w-5 h-5 stroke-title"> 
-                                <use href="../../assets/svg/sprite.svg#Buy"> </use>
-                              </svg>Ecommerce</span>
+                                <use href="../../assets/svg/sprite.svg#Bag"> </use>
+                              </svg><small class="text-xs leading-7">Ecommerce</small></span>
                             <svg class="w-4 h-4 stroke-title ml-auto"> 
                               <use href="../../assets/svg/sprite.svg#Arrow-Right-2"> </use>
                             </svg></a>
                           <div class="dropdown-menu dropdown-sub-menu">
                             <ul class="flex flex-col gap-2"> 
-                              <li><a href="shop.html">Shop</a></li>
-                              <li><a href="product.html">Product</a></li>
+                              <li><a href="add-product.html">Add Product</a></li>
                               <li><a href="cart.html">Cart</a></li>
                               <li><a href="checkout.html">Checkout</a></li>
                               <li><a href="invoice.html">Invoice</a></li>
                               <li><a href="invoice-preview.html">Invoice Preview</a></li>
+                              <li><a href="invoice-create.html">Invoice Create</a></li>
+                              <li><a href="product.html">Product</a></li>
+                              <li><a href="shop.html">Shop</a></li>
                               <li><a href="wishlist.html">Wishlist</a></li>
                             </ul>
                           </div>
                         </li>
+                        <li class="w-full "><a class="flex items-center gap-2" href="email.html"><span class="flex items-center gap-2">
+                              <svg class="w-5 h-5 stroke-title"> 
+                                <use href="../../assets/svg/sprite.svg#Message"> </use>
+                              </svg><small class="text-xs leading-7">Email</small></span></a>
+                        </li>
+                        <li class="w-full "><a class="flex items-center gap-2" href="kanban-board.html"><span class="flex items-center gap-2">
+                              <svg class="w-5 h-5 stroke-title"> 
+                                <use href="../../assets/svg/sprite.svg#Paper"> </use>
+                              </svg><small class="text-xs leading-7">Kanban Board</small></span></a>
+                        </li>
+                        <li class="w-full "><a class="flex items-center gap-2" href="todo.html"><span class="flex items-center gap-2">
+                              <svg class="w-5 h-5 stroke-title"> 
+                                <use href="../../assets/svg/sprite.svg#Time-Circle"> </use>
+                              </svg><small class="text-xs leading-7">Todo</small></span></a>
+                        </li>
                         <li class="w-full dropdown on-hover-show group"><a class="flex items-center gap-2" href="javascript:void(0)"><span class="flex items-center gap-2">
                               <svg class="w-5 h-5 stroke-title"> 
-                                <use href="../../assets/svg/sprite.svg#Paper-Plus"> </use>
-                              </svg>Project</span>
+                                <use href="../../assets/svg/sprite.svg#2-User"> </use>
+                              </svg><small class="text-xs leading-7">User</small></span>
                             <svg class="w-4 h-4 stroke-title ml-auto"> 
                               <use href="../../assets/svg/sprite.svg#Arrow-Right-2"> </use>
                             </svg></a>
                           <div class="dropdown-menu dropdown-sub-menu">
                             <ul class="flex flex-col gap-2"> 
-                              <li><a href="project-list.html">Project List</a></li>
-                              <li><a href="project-create.html">Project Create</a></li>
-                              <li><a href="target.html">Target</a></li>
-                              <li><a href="budget.html">Budget</a></li>
-                              <li><a href="user.html">User</a></li>
-                              <li><a href="activity.html">Activity</a></li>
+                              <li><a href="user-card.html">User Cards</a></li>
+                              <li><a href="user-profile.html">User Profile</a></li>
                             </ul>
                           </div>
                         </li>
-                        <li class="w-full "><a class="flex items-center gap-2" href="chat-app.html"><span class="flex items-center gap-2">
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropdown on-hover-show cursor-pointer pb-[6px] transition-all duration-300 relative group before:bg-primary before:absolute before:-translate-x-1/2 before:bottom-0 before:left-1/2 hover:before:w-full before:h-[2px] before:w-0 "> <span class="text-xs font-bold transition-all duration-300 text-content group-hover:text-primary">Forms & Table</span>
+                    <div class="dropdown-menu !min-w-[190px] !left-0 !right-unset"> 
+                      <!-- App Menu -->
+                      <ul class="flex flex-col gap-3"> 
+                        <li class="w-full dropdown on-hover-show group"><a class="flex items-center gap-2" href="javascript:void(0)"><span class="flex items-center gap-2">
                               <svg class="w-5 h-5 stroke-title"> 
-                                <use href="../../assets/svg/sprite.svg#Chat"> </use>
-                              </svg>Chat App</span></a>
+                                <use href="../../assets/svg/sprite.svg#Paper"> </use>
+                              </svg><small class="text-xs leading-7">Forms</small></span>
+                            <svg class="w-4 h-4 stroke-title ml-auto"> 
+                              <use href="../../assets/svg/sprite.svg#Arrow-Right-2"> </use>
+                            </svg></a>
+                          <div class="dropdown-menu dropdown-sub-menu">
+                            <ul class="flex flex-col gap-2"> 
+                              <li><a href="./checkbox-radio.html">Checkbox &amp; Radio</a></li>
+                              <li><a href="./form-validation.html">Form Validation</a></li>
+                              <li><a href="./input-textarea.html">Input &amp; Textarea</a></li>
+                              <li><a href="./select.html">Select</a></li>
+                              <li><a href="./switch.html">Switch</a></li>
+                            </ul>
+                          </div>
                         </li>
-                        <li class="w-full "><a class="flex items-center gap-2" href="tasks.html"><span class="flex items-center gap-2">
+                        <li class="w-full "><a class="flex items-center gap-2" href="table.html"><span class="flex items-center gap-2">
                               <svg class="w-5 h-5 stroke-title"> 
-                                <use href="../../assets/svg/sprite.svg#Check-Circle"> </use>
-                              </svg>Tasks</span></a>
-                        </li>
-                        <li class="w-full "><a class="flex items-center gap-2" href="social-App.html"><span class="flex items-center gap-2">
-                              <svg class="w-5 h-5 stroke-title"> 
-                                <use href="../../assets/svg/sprite.svg#3-User"> </use>
-                              </svg>Social App</span></a>
-                        </li>
-                        <li class="w-full "><a class="flex items-center gap-2" href="social-App.html"><span class="flex items-center gap-2">
-                              <svg class="w-5 h-5 stroke-title"> 
-                                <use href="../../assets/svg/sprite.svg#Check-List"> </use>
-                              </svg>Todo App</span></a>
-                        </li>
-                        <li class="w-full "><a class="flex items-center gap-2" href="to-do-app.html"><span class="flex items-center gap-2">
-                              <svg class="w-5 h-5 stroke-title"> 
-                                <use href="../../assets/svg/sprite.svg#Video"> </use>
-                              </svg>Video Chat</span></a>
+                                <use href="../../assets/svg/sprite.svg#Graph"> </use>
+                              </svg><small class="text-xs leading-7">Tables</small></span></a>
                         </li>
                       </ul>
                     </div>
                   </li>
                   <li class="dropdown on-hover-show cursor-pointer pb-[6px] transition-all duration-300 relative group before:bg-primary before:absolute before:-translate-x-1/2 before:bottom-0 before:left-1/2 hover:before:w-full before:h-[2px] before:w-0 "> <span class="text-xs font-bold transition-all duration-300 text-content group-hover:text-primary">Pages</span>
                     <div class="dropdown-menu !min-w-[190px] !left-0 !right-unset"> 
-                      <!-- App Menu -->
+                      <!-- Page Menu -->
                       <ul class="flex flex-col gap-3"> 
                         <li class="w-full dropdown on-hover-show group"><a class="flex items-center gap-2" href="javascript:void(0)"><span class="flex items-center gap-2">
                               <svg class="w-5 h-5 stroke-title"> 
-                                <use href="../../assets/svg/sprite.svg#Message"> </use>
-                              </svg>Email App</span>
+                                <use href="../../assets/svg/sprite.svg#Folder"> </use>
+                              </svg><small class="text-xs leading-7">Other Pages</small></span>
                             <svg class="w-4 h-4 stroke-title ml-auto"> 
                               <use href="../../assets/svg/sprite.svg#Arrow-Right-2"> </use>
                             </svg></a>
                           <div class="dropdown-menu dropdown-sub-menu">
                             <ul class="flex flex-col gap-2"> 
-                              <li><a href="email.html">Email</a></li>
-                              <li><a href="email-read.html">Email Read</a></li>
-                              <li><a href="email-compose.html">Email Compose</a></li>
+                              <li><a href="./coming-soon.html">Coming Soon</a></li>
+                              <li><a href="./error.html">Error</a></li>
+                              <li><a href="./forgot-password.html">Forgot Password</a></li>
+                              <li><a href="./login.html">Login</a></li>
+                              <li><a href="./otp.html">Otp</a></li>
+                              <li><a href="./register.html">Register</a></li>
+                              <li><a href="./reset-password.html">Reset Password</a></li>
                             </ul>
                           </div>
                         </li>
-                        <li class="w-full dropdown on-hover-show group"><a class="flex items-center gap-2" href="javascript:void(0)"><span class="flex items-center gap-2">
+                        <li class="w-full "><a class="flex items-center gap-2" href="sample-page.html"><span class="flex items-center gap-2">
                               <svg class="w-5 h-5 stroke-title"> 
-                                <use href="../../assets/svg/sprite.svg#Buy"> </use>
-                              </svg>Ecommerce</span>
-                            <svg class="w-4 h-4 stroke-title ml-auto"> 
-                              <use href="../../assets/svg/sprite.svg#Arrow-Right-2"> </use>
-                            </svg></a>
-                          <div class="dropdown-menu dropdown-sub-menu">
-                            <ul class="flex flex-col gap-2"> 
-                              <li><a href="shop.html">Shop</a></li>
-                              <li><a href="product.html">Product</a></li>
-                              <li><a href="cart.html">Cart</a></li>
-                              <li><a href="checkout.html">Checkout</a></li>
-                              <li><a href="invoice.html">Invoice</a></li>
-                              <li><a href="invoice-preview.html">Invoice Preview</a></li>
-                              <li><a href="wishlist.html">Wishlist</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        <li class="w-full dropdown on-hover-show group"><a class="flex items-center gap-2" href="javascript:void(0)"><span class="flex items-center gap-2">
-                              <svg class="w-5 h-5 stroke-title"> 
-                                <use href="../../assets/svg/sprite.svg#Paper-Plus"> </use>
-                              </svg>Project</span>
-                            <svg class="w-4 h-4 stroke-title ml-auto"> 
-                              <use href="../../assets/svg/sprite.svg#Arrow-Right-2"> </use>
-                            </svg></a>
-                          <div class="dropdown-menu dropdown-sub-menu">
-                            <ul class="flex flex-col gap-2"> 
-                              <li><a href="project-list.html">Project List</a></li>
-                              <li><a href="project-create.html">Project Create</a></li>
-                              <li><a href="target.html">Target</a></li>
-                              <li><a href="budget.html">Budget</a></li>
-                              <li><a href="user.html">User</a></li>
-                              <li><a href="activity.html">Activity</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        <li class="w-full "><a class="flex items-center gap-2" href="chat-app.html"><span class="flex items-center gap-2">
-                              <svg class="w-5 h-5 stroke-title"> 
-                                <use href="../../assets/svg/sprite.svg#Chat"> </use>
-                              </svg>Chat App</span></a>
-                        </li>
-                        <li class="w-full "><a class="flex items-center gap-2" href="tasks.html"><span class="flex items-center gap-2">
-                              <svg class="w-5 h-5 stroke-title"> 
-                                <use href="../../assets/svg/sprite.svg#Check-Circle"> </use>
-                              </svg>Tasks</span></a>
-                        </li>
-                        <li class="w-full "><a class="flex items-center gap-2" href="social-App.html"><span class="flex items-center gap-2">
-                              <svg class="w-5 h-5 stroke-title"> 
-                                <use href="../../assets/svg/sprite.svg#3-User"> </use>
-                              </svg>Social App</span></a>
-                        </li>
-                        <li class="w-full "><a class="flex items-center gap-2" href="social-App.html"><span class="flex items-center gap-2">
-                              <svg class="w-5 h-5 stroke-title"> 
-                                <use href="../../assets/svg/sprite.svg#Check-List"> </use>
-                              </svg>Todo App</span></a>
-                        </li>
-                        <li class="w-full "><a class="flex items-center gap-2" href="to-do-app.html"><span class="flex items-center gap-2">
-                              <svg class="w-5 h-5 stroke-title"> 
-                                <use href="../../assets/svg/sprite.svg#Video"> </use>
-                              </svg>Video Chat</span></a>
+                                <use href="../../assets/svg/sprite.svg#Paper"> </use>
+                              </svg><small class="text-xs leading-7">Sample Page</small></span></a>
                         </li>
                       </ul>
                     </div>
                   </li>
-                  <li class="dropdown on-hover-show cursor-pointer pb-[6px] transition-all duration-300 relative group before:bg-primary before:absolute before:-translate-x-1/2 before:bottom-0 before:left-1/2 hover:before:w-full before:h-[2px] before:w-0 "> <span class="text-xs font-bold transition-all duration-300 text-content group-hover:text-primary">Miscellaneous</span></li>
+                  <li class="dropdown on-hover-show cursor-pointer pb-[6px] transition-all duration-300 relative group before:bg-primary before:absolute before:-translate-x-1/2 before:bottom-0 before:left-1/2 hover:before:w-full before:h-[2px] before:w-0 "> <span class="text-xs font-bold transition-all duration-300 text-content group-hover:text-primary">Miscellaneous</span>
+                    <div class="dropdown-menu !min-w-[190px] !left-0 !right-unset"> 
+                      <!-- Miscellaneous Menu -->
+                      <ul class="flex flex-col gap-3"> 
+                        <li class="w-full dropdown on-hover-show group"><a class="flex items-center gap-2" href="javascript:void(0)"><span class="flex items-center gap-2">
+                              <svg class="w-5 h-5 stroke-title"> 
+                                <use href="../../assets/svg/sprite.svg#Folder"> </use>
+                              </svg><small class="leading-7 text-xs">Blog</small></span>
+                            <svg class="w-4 h-4 stroke-title ml-auto"> 
+                              <use href="../../assets/svg/sprite.svg#Arrow-Right-2"> </use>
+                            </svg></a>
+                          <div class="dropdown-menu dropdown-sub-menu">
+                            <ul class="flex flex-col gap-2"> 
+                              <li><a href="./blog-grid.html">Blog Grid</a></li>
+                              <li><a href="./blog-detail.html">Blog Detail</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="w-full "><a class="flex items-center gap-2" href="knowledgebase.html"><span class="flex items-center gap-2">
+                              <svg class="w-5 h-5 stroke-title"> 
+                                <use href="../../assets/svg/sprite.svg#Scan"> </use>
+                              </svg><small class="leading-7 text-xs">Knowledgebase</small></span></a>
+                        </li>
+                        <li class="w-full dropdown on-hover-show group"><a class="flex items-center gap-2" href="javascript:void(0)"><span class="flex items-center gap-2">
+                              <svg class="w-5 h-5 stroke-title"> 
+                                <use href="../../assets/svg/sprite.svg#Location"> </use>
+                              </svg><small class="leading-7 text-xs">Map</small></span>
+                            <svg class="w-4 h-4 stroke-title ml-auto"> 
+                              <use href="../../assets/svg/sprite.svg#Arrow-Right-2"> </use>
+                            </svg></a>
+                          <div class="dropdown-menu dropdown-sub-menu">
+                            <ul class="flex flex-col gap-2"> 
+                              <li><a href="./maps-js.html">Maps Js</a></li>
+                              <li><a href="./data-map.html">Data Map</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
                 </ul>
                 <div class="flex items-center gap-[14px]">
                   <!-- Breadcrumbs Start -->
@@ -1157,7 +1034,7 @@
             </div>
           </div>
           <!-- Page Body End-->
-          <div class="page-footer fixed bottom-0 2xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300 sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap"> 
+          <div class="page-footer 3sm:!px-[10px] fixed bottom-0 xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300 sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap"> 
             <p class="text-xs font-semibold text-center text-content">Copyright 2023 © Govo theme by pixelstrap</p>
             <div class="flex items-center gap-2"> 
               <p class="text-xs font-semibold text-center text-content">Hand crafted & made with</p><i class="stroke-danger h-[18px] w-[18px] fill-danger" data-feather="heart"></i>

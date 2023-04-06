@@ -29,7 +29,7 @@ html(lang='en')
    include ../../layout/header-files
    body(dir="ltr" class="unique-skin")
       main.page-wrapper
-         div.page-body-wrapper(class="2xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300")
+         div.page-body-wrapper(class="xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300")
             include ../../layout/header/header     
             // Sidebar Start 
             div.page-sidebar.sidebar-dark.unique-sidebar
@@ -55,7 +55,7 @@ html(lang='en')
                               div.card-body
                                  +widget1(REVENUE_WIDGET)
                         div.col-span-2(class="lg:col-span-1 2md:col-span-2")
-                           div.card
+                           div.card 
                               div.card-header
                                  +card-header("Earnings","setting", HISTORY_DROPDOWN)
                               div.card-body
@@ -79,7 +79,7 @@ html(lang='en')
                            div.card
                               div.card-header
                                  +card-header("Advertising","setting", HISTORY_DROPDOWN)
-                              div.card-body 
+                              div.card-body
                                  +product-list(ADVERTISE_CARD)
                   div.col-span-3(class="4xl:col-span-4 lg:col-span-6 lg:-order-1 2md:col-span-12")
                      div.card 
@@ -120,7 +120,7 @@ html(lang='en')
                         div.card-header
                            +card-header("Open Invoices","setting", HISTORY_DROPDOWN)
                         div.card-body
-                           div.overflow-auto.custom-scroll  
+                           div.overflow-auto.custom-scroll 
                               include ../../components/table/open-invoice
                   div.col-span-3(class="4xl:col-span-4 lg:col-span-6 lg:-order-1 2md:col-span-12")
                      div.card 

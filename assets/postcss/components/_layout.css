@@ -5,6 +5,7 @@
 @layer components {
   main{
     .page-body{
+      @apply lg:mt-[calc(125px_+_(90_-_125)_*_((100vw_-_320px)_/_(1920_-_320)))] mt-[7.5rem] md:mt-[6.875rem];
       .apexcharts{
         &-canvas {
         [dir='rtl'] & {
@@ -37,6 +38,9 @@
       &.sidebar-icon {
         .page-body-wrapper {
           @apply w-full;
+          header{
+            @apply w-full;
+          }
         }
         .page-sidebar {
           nav {

@@ -403,6 +403,23 @@ suggest?.forEach((el) => {
 });
 
 
+/*=====================
+Fill svg js
+==========================*/
 
-
+const postMedia = document.querySelector('.post-media');
+const postLike = document.querySelectorAll('.post-like');
+const postDisLike = document.querySelectorAll('.post-dislike');
+postLike?.forEach((el) => {
+  el.addEventListener('click', function () {
+    this.closest('.post-media')?.classList.add('post-liked');
+    this.closest('.post-media')?.classList.remove('post-disliked');
+  });
+});
+postDisLike?.forEach((el) => {
+  el.addEventListener('click', function () {
+    this.closest('.post-media')?.classList.add('post-disliked');
+    this.closest('.post-media')?.classList.remove('post-liked');
+  });
+});
 

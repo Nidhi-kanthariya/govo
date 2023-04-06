@@ -25,7 +25,7 @@ html(lang='en')
    include ../../layout/header-files 
    body(dir="ltr" class="unique-skin") 
       main.page-wrapper
-         div.page-body-wrapper(class="2xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300")
+         div.page-body-wrapper(class="xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300")
             include ../../layout/header/header     
             // Sidebar Start 
             div.page-sidebar.sidebar-dark.unique-sidebar
@@ -116,8 +116,8 @@ html(lang='en')
 
                            div(class="p-3 border first:rounded-tl-none border-light rounded-5")
                               div(class="mb-[1.125rem]")
-                                 h2(class="mb-2 font-bold") Subscribe
-                                 p(class="text-xs text-content") "To get more detail for new types of blogs"
+                                 h2(class="mb-2 font-bold") Subscriber
+                                 p(class="text-xs text-content") " To get more detail for new types of blogs "
                               form(class="m-0 theme-form")
                                  input(type="email" id="Email" placeholder="Enter your email" Name="Email" required)
                                  button(class="w-full lg:!w-auto p-2 !mb-0 text-white rounded bg-primary hover:drop-shadow-lg") Get Started
@@ -143,10 +143,10 @@ html(lang='en')
                                        div(class="w-[calc(100%_-_3.125rem)]")
                                           h3.text-xs.font-bold.text-primary(class="leading-none lg:text-2xs") Rita Sines
                                           span.text-content.block.mt-1(class="sm:line-clamp-1") War taught me that not everything is glamorous.
-                                    div.flex.justify-center.items-center.gap-2(class="text-content sm:ml-11")
-                                       i(data-feather="thumbs-up" class="w-[1.125rem] cursor-pointer")
+                                    div.flex.justify-center.items-center.gap-2(class="text-content sm:ml-11 sm:mt-1 post-media")
+                                       i(data-feather="thumbs-up" class="w-[1.125rem] cursor-pointer post-like")
                                        span 120
-                                       i(data-feather="thumbs-down" class="w-[1.125rem] cursor-pointer")
+                                       i(data-feather="thumbs-down" class="w-[1.125rem] cursor-pointer post-dislike")
                                        span 26
                                        i(data-feather="share-2" class="w-[1.125rem] cursor-pointer")
 
@@ -167,7 +167,7 @@ html(lang='en')
                                              span.text-content.block.mt-1(class="md:line-clamp-2 sm:line-clamp-1") Best seller signature waist cut pockets cotton-mix navy blue tailoring elegant cashmere. Leather detail shoulder contrasting color contour stunning silhouette working peplum. Monochrome textures casual daily polo neck knitted floral effortless short sleeve.
                                              div.flex.justify-start.items-center.gap-1
                                                 i(data-feather="corner-up-right" class="w-[.75rem]").text-content
-                                                span.text-content Replay
+                                                span.text-content Reply
                                     div(class="mt-3 divider")
                                     div(class="pt-[1rem] ml-[3.125rem] sm:ml-unset first:pt-0 first:mt-0 first:border-none")                                 
                                        div.flex.items-start.gap-3(class="w-[calc(100%_-_0rem)] xl:gap-2")  
@@ -181,7 +181,7 @@ html(lang='en')
                                              span.text-content.block.mt-1(class="md:line-clamp-2 sm:line-clamp-1") My aim is to make the poor look rich and the rich look poor.
                                              div.flex.justify-start.items-center.gap-1
                                                 i(data-feather="corner-up-right" class="w-[.75rem]").text-content
-                                                span.text-content Replay
+                                                span.text-content Reply
                                     div(class="mt-3 divider")
                                     div(class="pt-[1rem] first:pt-0 first:mt-0 first:border-none")                   
                                        div.flex.items-start.gap-3(class="w-[calc(100%_-_0rem)] xl:gap-2")  
@@ -195,7 +195,7 @@ html(lang='en')
                                              span.text-content.block.mt-1(class="md:line-clamp-2 sm:line-clamp-1") Wow, is this a fake Facebook Post? Damn it looks so real! Use the settings to the left to begin - You can also add comments & emoticons.
                                              div.flex.justify-start.items-center.gap-1
                                                 i(data-feather="corner-up-right" class="w-[.75rem]").text-content
-                                                span.text-content Replay
+                                                span.text-content Reply
 
                   div.col-span-12
                      div.card.p-4
