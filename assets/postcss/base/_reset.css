@@ -137,12 +137,18 @@
   }
 
   .post-media{
-    &.post-liked{
-      .post-like{
+    &.post-liked, &.wish-liked{
+      .post-like, .wish-like{
         @apply fill-danger stroke-danger;
         animation: liked 0.1s ease-in-out;
       }
     }
+    /* &.wish-liked{
+      .wish-like{
+        @apply fill-danger stroke-danger;
+        animation: liked 0.1s ease-in-out;
+      }
+    } */
     &.post-disliked{
       .post-dislike{
         @apply fill-border-dark stroke-border-dark;
