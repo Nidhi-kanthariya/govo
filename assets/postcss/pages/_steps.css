@@ -37,35 +37,16 @@
         &:after {
           @apply bg-secondary text-white;
         }
-      }
-
-      &.step-info {
-        &:before,
-        &:after {
-          @apply bg-info text-white;
+        &.roman-step{
+            counter-reset: my-sec-counter;
+            .step{
+                &:after{
+                    /* counter-reset: my-sec-counter; */
+                    counter-increment: my-sec-counter;
+                    content: counter(my-sec-counter, upper-roman);
+                }
+            }
         }
-      }
-
-      &.step-success {
-        &:before,
-        &:after {
-          @apply bg-success text-white;
-        }
-      }
-
-      &.step-warning {
-        &:before,
-        &:after {
-          @apply bg-warning text-white;
-        }
-      }
-
-      &.step-danger {
-        &:before,
-        &:after {
-          @apply bg-danger text-white;
-        }
-      }
     }
 
     &.responsive-vertical {

@@ -55,14 +55,84 @@ html(lang='en')
                       div.flex.flex-wrap.gap-2
                         div.w-full.tabs.flex-col
                           div.mb-1.tab-links.flex
-                            button.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Title 1 
-                            button.tab.tab-lifted(data-tabFilter="2" class="tab-link") Title 2  
+                            button.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Web Designer 
+                            button.tab.tab-lifted(data-tabFilter="2" class="tab-link") UX Designer  
                           div.tabs-content
                             div(data-tabContent="1" class="tab-pan fade active show first:rounded-tl-none rounded-5")
-                              p.text-xs.text-gray-500  Tabs are used to navigate and display different content around the website. We use tabs to manage space and to make the website more attractive.
-                                |   Tabs are used to navigate and display different content around the website. We use tabs to manage space and to make the website more attractive.
+                              div.flex.flex-wrap.items-center.gap-4 
+                                div.flex.items-center.gap-2  
+                                  div.avatar  
+                                    div.w-10.rounded-full(class="xl:w-9") 
+                                      img(src='../../assets/images/avatar/25.jpg' alt='avatar')
+                                  div.flex.flex-col.gap-1
+                                    h3.text-xs.font-bold(class="leading-none lg:text-2xs") Angela R. Lear
+                                    span.text-content.text-3xs 239-664-7751 
+                                div.flex.items-center.gap-2  
+                                  div.avatar  
+                                    div.w-10.rounded-full(class="xl:w-9") 
+                                      img(src='../../assets/images/avatar/15.jpg' alt='avatar')
+                                  div.flex.flex-col.gap-1
+                                    h3.text-xs.font-bold(class="leading-none lg:text-2xs")  Marjorie W. Martin
+                                    span.text-content.text-3xs 440-494-0729
+                                div.flex.items-center.gap-2  
+                                  div.avatar  
+                                    div.w-10.rounded-full(class="xl:w-9") 
+                                      img(src='../../assets/images/avatar/6.jpg' alt='avatar')
+                                  div.flex.flex-col.gap-1
+                                    h3.text-xs.font-bold(class="leading-none lg:text-2xs") Russell P. Renfrew
+                                    span.text-content.text-3xs 718-740-8438
+                                div.flex.items-center.gap-2  
+                                  div.avatar  
+                                    div.w-10.rounded-full(class="xl:w-9") 
+                                      img(src='../../assets/images/avatar/27.jpg' alt='avatar')
+                                  div.flex.flex-col.gap-1
+                                    h3.text-xs.font-bold(class="leading-none lg:text-2xs") Kevin A. Ek
+                                    span.text-content.text-3xs 218-793-6609
+                                div.flex.items-center.gap-2  
+                                  div.avatar  
+                                    div.w-10.rounded-full(class="xl:w-9") 
+                                      img(src='../../assets/images/avatar/26.jpg' alt='avatar')
+                                  div.flex.flex-col.gap-1
+                                    h3.text-xs.font-bold(class="leading-none lg:text-2xs") Carolyn A. Sutton
+                                    span.text-content.text-3xs 314-445-1451
                             div(data-tabContent="2" class="relative tab-pan fade group first:rounded-tl-none rounded-5")
-                              p.text-xs.text-gray-500 We use tabs to manage space and to make the website more attractive. Tabs are used to navigate and display different content around the website. We use tabs to manage space and to make the website more attractive.
+                              div.flex.flex-wrap.items-center.gap-4 
+                                div.flex.items-center.gap-2  
+                                  div.avatar  
+                                    div.w-10.rounded-full(class="xl:w-9") 
+                                      img(src='../../assets/images/avatar/31.jpg' alt='avatar')
+                                  div.flex.flex-col.gap-1
+                                    h3.text-xs.font-bold(class="leading-none lg:text-2xs") Emily T. Hooper
+                                    span.text-content.text-3xs 258-664-7751 
+                                div.flex.items-center.gap-2  
+                                  div.avatar  
+                                    div.w-10.rounded-full(class="xl:w-9") 
+                                      img(src='../../assets/images/avatar/34.jpg' alt='avatar')
+                                  div.flex.flex-col.gap-1
+                                    h3.text-xs.font-bold(class="leading-none lg:text-2xs")  Ann J. Strickland
+                                    span.text-content.text-3xs 440-851-0729
+                                div.flex.items-center.gap-2  
+                                  div.avatar  
+                                    div.w-10.rounded-full(class="xl:w-9") 
+                                      img(src='../../assets/images/avatar/22.jpg' alt='avatar')
+                                  div.flex.flex-col.gap-1
+                                    h3.text-xs.font-bold(class="leading-none lg:text-2xs") Natasha W. Watson
+                                    span.text-content.text-3xs 698-740-8438
+                                div.flex.items-center.gap-2  
+                                  div.avatar  
+                                    div.w-10.rounded-full(class="xl:w-9") 
+                                      img(src='../../assets/images/avatar/13.jpg' alt='avatar')
+                                  div.flex.flex-col.gap-1
+                                    h3.text-xs.font-bold(class="leading-none lg:text-2xs") Thomas A. Leroy
+                                    span.text-content.text-3xs 218-793-7845
+                                div.flex.items-center.gap-2  
+                                  div.avatar  
+                                    div.w-10.rounded-full(class="xl:w-9") 
+                                      img(src='../../assets/images/avatar/8.jpg' alt='avatar')
+                                  div.flex.flex-col.gap-1
+                                    h3.text-xs.font-bold(class="leading-none lg:text-2xs") Mark S. Ward
+                                    span.text-content.text-3xs 314-4874-1451
+
                     div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white")   
                         i(data-feather="clipboard")
@@ -71,15 +141,39 @@ html(lang='en')
                           |&lt;div class="flex flex-wrap gap-2"&gt;
                           |   &lt;div class="w-full .tabs flex-col"&gt;
                           |       &lt;div class="flex mb-1 tab-links"&gt;
-                          |           &lt;button class="tab tab-lifted tab-active tab-link" data-tabFilter="1"&gt; Title 1 &lt;/button&gt;
-                          |           &lt;button class="tab tab-lifted tab-link" data-tabFilter="2"&gt; Title 2 &lt;/button&gt;
+                          |           &lt;button class="tab tab-lifted tab-active tab-link" data-tabFilter="1"&gt; Web Designer &lt;/button&gt;
+                          |           &lt;button class="tab tab-lifted tab-link" data-tabFilter="2"&gt; UX Designer &lt;/button&gt;
                           |       &lt;/div&gt;
                           |       &lt;div class="tabs-content"&gt;
                           |           &lt;div data-tabContent="1" class="tab-pan fade active show first:rounded-tl -none rounded-5"&gt; 
-                          |               &lt;p class="text-xs text-gray-500"&gt; Tabs are used ...attractive.&lt;/p&gt;  
+                          |               &lt;div class="flex flex-wrap gap-4"&gt;
+                          |                   &lt;div class="flex flex-wrap gap-2"&gt;
+                          |                       &lt;div class="avatar"&gt;
+                          |                           &lt;div class="w-10 rounded-full xl:w-9"&gt;
+                          |                               &lt;img src="../../image.jpg" alt="avatar"/&gt;
+                          |                           &lt;/div&gt;
+                          |                       &lt;/div&gt;
+                          |                       &lt;div class="flex flex-col gap-1"&gt;
+                          |                           &lt;h3 class="text-xs font-bold leading-none lg:text-2xs"&gt;Mark S. Ward&lt;/h3&gt;
+                          |                           &lt;span class="text-content text-3xs"&gt;314-4874-1451&lt;/span&gt;
+                          |                       &lt;/div&gt;                      
+                          |                   &lt;/div&gt;                 
+                          |               &lt;/div&gt;
                           |           &lt;/div&gt;
                           |           &lt;div data-tabContent="2" class="relative tab-pan fade group first:rounded-tl-none rounded-5"&gt; 
-                          |               &lt;p class="text-xs text-gray-500"&gt; We use tabs to ...attractive.&lt;/p&gt;  
+                          |               &lt;div class="flex flex-wrap gap-4"&gt;
+                          |                   &lt;div class="flex flex-wrap gap-2"&gt;
+                          |                       &lt;div class="avatar"&gt;
+                          |                           &lt;div class="w-10 rounded-full xl:w-9"&gt;
+                          |                               &lt;img src="../../image.jpg" alt="avatar"/&gt;
+                          |                           &lt;/div&gt;
+                          |                       &lt;/div&gt;
+                          |                       &lt;div class="flex flex-col gap-1"&gt;
+                          |                           &lt;h3 class="text-xs font-bold leading-none lg:text-2xs"&gt;Mark S. Ward&lt;/h3&gt;
+                          |                           &lt;span class="text-content text-3xs"&gt;314-4874-1451&lt;/span&gt;
+                          |                       &lt;/div&gt;                      
+                          |                   &lt;/div&gt;                 
+                          |               &lt;/div&gt;                
                           |           &lt;/div&gt;
                           |       &lt;/div&gt;
                           |   &lt;/div&gt; 
@@ -89,7 +183,7 @@ html(lang='en')
               div.card.tabs
                 div.card-header.pb-2.header-bottom-border
                   div.flex.flex-col
-                    h3.text-lg.font-bold rounded Tab 
+                    h3.text-lg.font-bold Rounded Tab 
                     p   Set tabs with border using  
                       strong  .rounded-bg 
                       |   class.            
@@ -102,16 +196,21 @@ html(lang='en')
                       div.flex.flex-wrap.gap-2
                         div.w-full.tabs.flex-col
                           div.mb-1.tab-links.flex
-                            button.tab.tab-lifted.rounded-bg(data-tabFilter="1" class="tab-link") Description 1  
-                            button.tab.tab-lifted.rounded-bg.tab-active(data-tabFilter="2" class="tab-link") Description 2  
+                            button.tab.tab-lifted.rounded-bg(data-tabFilter="1" class="tab-link") About Us  
+                            button.tab.tab-lifted.rounded-bg.tab-active(data-tabFilter="2" class="tab-link") Contact Us  
                           div.tabs-content
                             div(data-tabContent="1" class="tab-pan fade group first:rounded-tl-none rounded-5 border-none !px-1 !pb-0")
-                              p.text-xs.text-gray-500  Tabs are used to navigate and display different content around the website. We use tabs to manage space and to make the website more attractive.
-                                |    Tabs are used to navigate and display different content around the website. We use tabs to manage space and to make the website more attractive.
-                                |    Tabs are used to navigate and display different content around the website. 
+                              p.text-xs.text-gray-500  Creating a website that will be valuable to its audience and be seen by them is the ultimate goal of all web design projects. It is vital to get friends with Google's mechanisms and algorithms in order to do that. A beautiful website serves no purpose if it appears on the tenth page of search results since no one will ever find it that way. Now let's talk about Google's Website Ranking.
                             div(data-tabContent="2" class="tab-pan fade active show relative first:rounded-tl-none rounded-5 border-none !px-1 !pb-0")
-                              p.text-xs.text-gray-500 We use tabs to manage space and to make the website more attractive. Tabs are used to navigate and display different content around the website.
-                                |    We use tabs to manage space and to make the website more attractive. abs are used to navigate and display different content around the website. 
+                              p.text-xs.text-gray-500 construct a web page in a professional manner. Completely adaptable and simple Drag-n-Drop Nicepage editor. Change the text and photos, as well as the colors, fonts, header and footer, layout, and other design components.
+                                span.text-title.font-semibold Visit Us: 
+                                  small.text-content3 4 Marigold Close, Glenmore Park, New South Wales, 2745 Australia- 2745
+                                span.text-title.font-semibold Mail Us: 
+                                  small.text-content3 SamuelMario@armyspy.com
+                                span.text-title.font-semibold Contact: 
+                                  small.text-content3 (02) 4733 6337
+
+
                     div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white")   
                         i(data-feather="clipboard")
@@ -120,8 +219,8 @@ html(lang='en')
                           |&lt;div class="flex flex-wrap gap-2"&gt;
                           |    &lt;div class="flex-col w-full tabs"&gt;
                           |       &lt;div class="flex mb-1 tab-links"&gt;
-                          |           &lt;button class="tab tab-lifted rounded-bg tab-link" data-tabFilter="1"&gt; Description 1 &lt;/button&gt;
-                          |           &lt;button class="tab tab-lifted rounded-bg tab-active tab-link" data-tabFilter="2"&gt; Description 2 &lt;/button&gt;
+                          |           &lt;button class="tab tab-lifted rounded-bg tab-link" data-tabFilter="1"&gt; About Us &lt;/button&gt;
+                          |           &lt;button class="tab tab-lifted rounded-bg tab-active tab-link" data-tabFilter="2"&gt; Contact Us &lt;/button&gt;
                           |       &lt;/div&gt;
                           |       &lt;div class="tabs-content"&gt;
                           |           &lt;div data-tabContent="1" class="tab-pan fade active show first:rounded-tl-none rounded-5 border-none !px-0 !pb-0"&gt; 
@@ -138,7 +237,7 @@ html(lang='en')
               div.card.tabs
                 div.card-header.pb-2.header-bottom-border
                   div.flex.flex-col
-                    h3.text-lg.font-bold With Bordered
+                    h3.text-lg.font-bold Border Tabs
                     p   Set bordered tabs using 
                       strong  .tabs-bordered 
                       |   class.
@@ -192,7 +291,7 @@ html(lang='en')
               div.card.tabs
                 div.card-header.pb-2.header-bottom-border
                   div.flex.flex-col
-                    h3.text-lg.font-bold With Boxed
+                    h3.text-lg.font-bold With Active Tabs
                     p   Add boxed tabs using 
                       strong  .tabs-boxed 
                       |   class.
@@ -518,7 +617,7 @@ html(lang='en')
               div.card.tabs
                 div.card-header.pb-2.header-bottom-border
                   div.flex.flex-col
-                    h3.text-lg.font-bold Tabs With Icons
+                    h3.text-lg.font-bold Tabs with Icons
                     p   Adding icons inside the tabs with the help of 
                       strong .tabs 
                       | class.

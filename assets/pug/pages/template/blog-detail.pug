@@ -7,6 +7,9 @@
 //- customSelect
 -var customSelect= true;
 
+//- emailApp
+-var emailApp = true;
+
 //- customizer
 -var customizer=true;
 
@@ -36,8 +39,10 @@ html(lang='en')
             div.page-body
                div.grid.grid-cols-12.gap-card-gap
                   div.col-span-3(class="4xl:col-span-4 lg:col-span-12")
-                     div.card
+                     div.card.left-sidebar-aside(class="z-[4]")
                         div.card-header.border-b-0
+                           button(class="justify-end hidden mb-3 lg:flex left-sidebar-toggle absolute right-[-50px] top-[-16px] bg-gray-light p-2 ")   
+                              i(data-feather="x" class="w-5 h-5 stroke-title")
                            div.search-box.relative
                               input(class="rounded-full bg-gray-light w-full py-[.6875rem] pl-[1.5625rem] pr-[3.4375rem] text-xs font-semibold text-title" placeholder="Type to Search..." type="search")       
                               +SVG_ICON("Search","w-6 h-6 stroke-title top-1/2 -translate-y-1/2 right-[1.5625rem] absolute")
@@ -126,6 +131,9 @@ html(lang='en')
                      div.grid.grid-cols-12.gap-card-gap
                         div.col-span-12(class="lg:col-span-12")
                            div.card.p-6(class="sm:p-4")
+                              div.card-header 
+                                 span.left-sidebar-hide-logo-show(class="items-center justify-end hidden lg:flex")
+                                    +SVG_ICON("Category","w-5 h-5 stroke-title cursor-pointer hover:stroke-primary ml-auto left-sidebar-toggle-btn lg:block hidden")
                               div.card-body
                                  div.bg-white.rounded-lg
                                     img.rounded-t-lg(src='../../assets/images/blog/blog-details.svg' alt='blog-details.svg')

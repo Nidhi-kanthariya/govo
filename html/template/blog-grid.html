@@ -36,7 +36,7 @@
                 <h1 class="flex items-center gap-1 text-lg font-extrabold leading-none sm:hidden 4xl:text-base">Blog Grid</h1>
               </div>
               <div class="right-header flex items-center flex-1 sm:gap-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] gap-[calc(16px_+_(20_-_16)_*_((100vw_-_320px)_/_(1920_-_320)))]  justify-end">
-                <div class="search-box-wrapper transition-all duration-300 max-w-[40%] xl:scale-0 xl:opacity-0 xl:invisible xl:px-body-space xl:max-w-full w-full xl:z-[5] flex-1 xl:absolute xl:left-0">
+                <div class="search-box-wrapper transition-all duration-300 max-w-[40%] 2xl:scale-0 2xl:opacity-0 2xl:invisible 2xl:px-body-space 2xl:max-w-full w-full 2xl:z-[5] flex-1 2xl:absolute 2xl:left-0">
                   <!-- Search Start -->
                   <div class="search-box relative">
                     <input class="bg-gray-light dark:bg-sidebar-dark2 rounded-5 w-full py-[11px] pl-[25px] pr-[55px] rtl:pr-[25px] rtl:pl-[55px] text-xs font-semibold text-title" placeholder="Type to Search..." type="search">
@@ -48,7 +48,7 @@
                 </div>
                 <div class="icon-menu">
                   <ul class="flex items center"> 
-                    <li class="cursor-pointer hidden xl:flex items-center justify-center px-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] first:pl-0 last:pr-0  last:border-r-none border-r border-border-light dark:border-border-dark rtl:border-l rtl:border-r-0">
+                    <li class="cursor-pointer hidden 2xl:flex items-center justify-center px-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] first:pl-0 last:pr-0  last:border-r-none border-r border-border-light dark:border-border-dark rtl:border-l rtl:border-r-0">
                       <button class="search-show">
                         <svg class="w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title dark:stroke-white"> 
                           <use href="../../assets/svg/sprite.svg#Search"> </use>
@@ -1002,9 +1002,10 @@
         <!-- Page Body Start -->
         <div class="page-body">
           <div class="grid grid-cols-12 gap-card-gap">
-            <div class="col-span-3 xl:col-span-4 lg:col-span-12">
-              <div class="card sticky top-0">
+            <div class="col-span-3 2xl:col-span-4 lg:col-span-12">
+              <div class="card sticky top-0 left-sidebar-aside z-[4] lg:!absolute">
                 <div class="card-header border-b-0">
+                  <button class="justify-end hidden mb-3 lg:flex left-sidebar-toggle absolute right-[-50px] top-[-16px] bg-gray-light p-2 ">  <i class="w-5 h-5 stroke-title" data-feather="x"></i></button>
                   <div class="search-box relative">
                     <input class="rounded-full bg-gray-light w-full py-[.6875rem] pl-[1.5625rem] pr-[3.4375rem] text-xs font-semibold text-title" placeholder="Type to Search..." type="search">
                     <svg class="w-6 h-6 stroke-title top-1/2 -translate-y-1/2 right-[1.5625rem] absolute"> 
@@ -1083,229 +1084,241 @@
                 </div>
               </div>
             </div>
-            <div class="col-span-9 xl:col-span-8 lg:col-span-12">
-              <div class="grid grid-cols-12 gap-card-gap w-full masonryComponent">
-                <div class="col-span-4 2lg:col-span-6 sm:col-span-12 masonryItem">
-                  <div class="card p-0 group">
-                    <div class="blog-img overflow-hidden card-image rounded-tr-[0.625rem] rounded-tl-[0.625rem]"><img class="duration-700 ease-in scale-100 group-hover:scale-125" src="../../assets/images/blog/blog-contains.webp" alt="blog-img"></div>
-                    <div class="card-body px-3 flex flex-col gap-4 pb-3">
-                      <div class="flex justify-between items-center">
-                        <div class="flex items-start justify-between gap-2 items-center pt-[13px] first:pt-0 first:mt-0 first:border-none"> 
-                          <div class="avatar">
-                            <div class="w-10 rounded-full xl:w-9"><img src="../../assets/images/avatar/20.jpg" alt="avatar"></div>
-                          </div>
-                          <div><a href="blog-grid.html">
-                              <p class="text-title font-bold">Mitchel P. Lawyer</p></a><span class="text-content">Feb 6,2023</span></div>
-                        </div><i class="h-5 stroke-content" data-feather="more-vertical"></i>
-                      </div>
-                      <div>
-                        <h5 class="mb-2 font-bold">Cracking The Code </h5>
-                        <p class="text-content">
-                          Lining hemline knee burgundy satin finish concealed small buttons rayon. Wardrobe stylish fitted long sleeves pleats the  <a class="text-secondary hover:underline decoration-1" href="blog-detail.html">Read more...</a></p>
-                      </div>
-                      <div>
-                        <div class="divider w-full"></div>
-                        <div class="flex items-center justify-between mt-3"><span class="text-content">8k views</span><i class="h-5 stroke-secondary" data-feather="heart"></i></div>
-                      </div>
-                    </div>
+            <div class="col-span-9 2xl:col-span-8 lg:col-span-12">
+              <div class="grid grid-cols-12 gap-card-gap">
+                <div class="col-span-12 hidden lg:block">
+                  <div class="card"> 
+                    <div class="card-body"> <span class="left-sidebar-hide-logo-show items-center justify-end hidden lg:flex">
+                        <svg class="w-5 h-5 stroke-title cursor-pointer hover:stroke-primary ml-auto left-sidebar-toggle-btn lg:block hidden"> 
+                          <use href="../../assets/svg/sprite.svg#Category"> </use>
+                        </svg></span></div>
                   </div>
                 </div>
-                <div class="col-span-4 2lg:col-span-6 sm:col-span-12 masonryItem"> 
-                  <div class="card p-0 group">
-                    <div class="blog-img overflow-hidden rounded-tr-[0.625rem] rounded-tl-[0.625rem]"><img class="duration-700 ease-in scale-100 group-hover:scale-125" src="../../assets/images/blog/robot.webp" alt="blog-img"></div>
-                    <div class="card-body px-3 flex flex-col gap-4 pb-3">
-                      <div class="flex justify-between items-center">
-                        <div class="flex items-start justify-between gap-2 items-center pt-[13px] first:pt-0 first:mt-0 first:border-none">
-                          <div class="avatar"> 
-                            <div class="w-10 rounded-full xl:w-9"><img src="../../assets/images/avatar/21.jpg" alt="avatar"></div>
+                <div class="col-span-12">
+                  <div class="grid grid-cols-12 gap-card-gap w-full masonryComponent">
+                    <div class="col-span-4 2lg:col-span-6 sm:col-span-12 masonryItem">
+                      <div class="card p-0 group">
+                        <div class="blog-img overflow-hidden card-image rounded-tr-[0.625rem] rounded-tl-[0.625rem]"><img class="duration-700 ease-in scale-100 group-hover:scale-125" src="../../assets/images/blog/blog-contains.webp" alt="blog-img"></div>
+                        <div class="card-body px-3 flex flex-col gap-4 pb-3">
+                          <div class="flex justify-between items-center">
+                            <div class="flex items-start justify-between gap-2 items-center pt-[13px] first:pt-0 first:mt-0 first:border-none"> 
+                              <div class="avatar">
+                                <div class="w-10 rounded-full xl:w-9"><img src="../../assets/images/avatar/20.jpg" alt="avatar"></div>
+                              </div>
+                              <div><a href="blog-grid.html">
+                                  <p class="text-title font-bold">Mitchel P. Lawyer</p></a><span class="text-content">Feb 6,2023</span></div>
+                            </div><i class="h-5 stroke-content" data-feather="more-vertical"></i>
                           </div>
-                          <div><a href="blog-grid.html">
-                              <p class="text-title font-bold">Amy A. Servants</p></a><span class="text-content">Feb 2,2023</span></div>
-                        </div><i class="h-5 stroke-content" data-feather="more-vertical"></i>
-                      </div>
-                      <div> 
-                        <h5 class="mb-2 font-bold">Take The Stress Out Of Code</h5>
-                        <p class="text-content">
-                          This could be used to hide someone's trueinvasion of the Soviet Union was given the code name of Barbarossa  <a class="text-secondary hover:underline decoration-1" href="blog-detail.html">Read more...</a></p>
-                      </div>
-                      <div>
-                        <div class="divider w-full"> </div>
-                        <div class="flex items-center justify-between mt-3"> <span class="text-content">2k views</span><i class="h-5 stroke-secondary" data-feather="heart"></i></div>
+                          <div>
+                            <h5 class="mb-2 font-bold">Cracking The Code </h5>
+                            <p class="text-content">
+                              Lining hemline knee burgundy satin finish concealed small buttons rayon. Wardrobe stylish fitted long sleeves pleats the  <a class="text-secondary hover:underline decoration-1" href="blog-detail.html">Read more...</a></p>
+                          </div>
+                          <div>
+                            <div class="divider w-full"></div>
+                            <div class="flex items-center justify-between mt post-media"><span class="text-content">8k views</span><i class="h-5 stroke-secondary wish-like" data-feather="heart"></i></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-span-4 2lg:col-span-6 sm:col-span-12 masonryItem"> 
-                  <div class="card p-0 group">
-                    <div class="blog-img overflow-hidden rounded-tr-[0.625rem] rounded-tl-[0.625rem]"><img class="duration-700 ease-in scale-100 group-hover:scale-125" src="../../assets/images/blog/blog-contains3.webp" alt="blog-contains3"></div>
-                    <div class="card-body px-3 flex flex-col gap-4 pb-3">
-                      <div class="flex justify-between items-center">
-                        <div class="flex items-start justify-between gap-2 items-center pt-[13px] first:pt-0 first:mt-0 first:border-none">
-                          <div class="avatar"> 
-                            <div class="w-10 rounded-full xl:w-9"><img src="../../assets/images/avatar/38.jpg" alt="avatar"></div>
+                    <div class="col-span-4 2lg:col-span-6 sm:col-span-12 masonryItem"> 
+                      <div class="card p-0 group">
+                        <div class="blog-img overflow-hidden rounded-tr-[0.625rem] rounded-tl-[0.625rem]"><img class="duration-700 ease-in scale-100 group-hover:scale-125" src="../../assets/images/blog/robot.webp" alt="blog-img"></div>
+                        <div class="card-body px-3 flex flex-col gap-4 pb-3">
+                          <div class="flex justify-between items-center">
+                            <div class="flex items-start justify-between gap-2 items-center pt-[13px] first:pt-0 first:mt-0 first:border-none">
+                              <div class="avatar"> 
+                                <div class="w-10 rounded-full xl:w-9"><img src="../../assets/images/avatar/21.jpg" alt="avatar"></div>
+                              </div>
+                              <div><a href="blog-grid.html">
+                                  <p class="text-title font-bold">Amy A. Servants</p></a><span class="text-content">Feb 2,2023</span></div>
+                            </div><i class="h-5 stroke-content" data-feather="more-vertical"></i>
                           </div>
-                          <div><a href="blog-grid.html">
-                              <p class="text-title font-bold">Keith K. Levitt </p></a><span class="text-content">Jan 30,2023</span></div>
-                        </div><i class="h-5 stroke-content" data-feather="more-vertical"></i>
-                      </div>
-                      <div> 
-                        <h5 class="mb-2 font-bold">Why I Hate</h5>
-                        <p class="text-content">
-                          We’ll show you how Duads BI lets you use all ofconnections to inject data into R and then visualize and interact with the   <a class="text-secondary hover:underline decoration-1" href="blog-detail.html">Read more...</a></p>
-                      </div>
-                      <div>
-                        <div class="divider w-full"> </div>
-                        <div class="flex items-center justify-between mt-3"> <span class="text-content">12k views</span><i class="h-5 stroke-secondary" data-feather="heart"></i></div>
+                          <div> 
+                            <h5 class="mb-2 font-bold">Take The Stress Out Of Code</h5>
+                            <p class="text-content">
+                              This could be used to hide someone's trueinvasion of the Soviet Union was given the code name of Barbarossa  <a class="text-secondary hover:underline decoration-1" href="blog-detail.html">Read more...</a></p>
+                          </div>
+                          <div>
+                            <div class="divider w-full"> </div>
+                            <div class="flex items-center justify-between mt-3 post-media"><span class="text-content">2k views</span><i class="h-5 stroke-secondary wish-like" data-feather="heart"></i></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-span-4 2lg:col-span-6 sm:col-span-12 masonryItem"> 
-                  <div class="card p-0 group">
-                    <div class="blog-img overflow-hidden rounded-tr-[0.625rem] rounded-tl-[0.625rem]"><img class="duration-700 ease-in scale-100 group-hover:scale-125" src="../../assets/images/blog/blog-contains5.webp" alt="blog-contains5"></div>
-                    <div class="card-body px-3 flex flex-col gap-4 pb-3">
-                      <div class="flex justify-between items-center">
-                        <div class="flex items-start justify-between gap-2 items-center pt-[13px] first:pt-0 first:mt-0 first:border-none">
-                          <div class="avatar"> 
-                            <div class="w-10 rounded-full xl:w-9"><img src="../../assets/images/avatar/20.jpg" alt="avatar"></div>
+                    <div class="col-span-4 2lg:col-span-6 sm:col-span-12 masonryItem"> 
+                      <div class="card p-0 group">
+                        <div class="blog-img overflow-hidden rounded-tr-[0.625rem] rounded-tl-[0.625rem]"><img class="duration-700 ease-in scale-100 group-hover:scale-125" src="../../assets/images/blog/blog-contains3.webp" alt="blog-contains3"></div>
+                        <div class="card-body px-3 flex flex-col gap-4 pb-3">
+                          <div class="flex justify-between items-center">
+                            <div class="flex items-start justify-between gap-2 items-center pt-[13px] first:pt-0 first:mt-0 first:border-none">
+                              <div class="avatar"> 
+                                <div class="w-10 rounded-full xl:w-9"><img src="../../assets/images/avatar/38.jpg" alt="avatar"></div>
+                              </div>
+                              <div><a href="blog-grid.html">
+                                  <p class="text-title font-bold">Keith K. Levitt </p></a><span class="text-content">Jan 30,2023</span></div>
+                            </div><i class="h-5 stroke-content" data-feather="more-vertical"></i>
                           </div>
-                          <div><a href="blog-grid.html">
-                              <p class="text-title font-bold">Mitchel P. Lawyer  </p></a><span class="text-content">Jan 25,2023  </span></div>
-                        </div><i class="h-5 stroke-content" data-feather="more-vertical"></i>
-                      </div>
-                      <div> 
-                        <h5 class="mb-2 font-bold">Take The Stress Out Of Code</h5>
-                        <p class="text-content">
-                           We’ll show you how Duads BI lets you use all ofconnections to inject data into R and then visualize and interact with the<a class="text-secondary hover:underline decoration-1" href="blog-detail.html">Read more...</a></p>
-                      </div>
-                      <div>
-                        <div class="divider w-full"> </div>
-                        <div class="flex items-center justify-between mt-3"> <span class="text-content">25k views</span><i class="h-5 stroke-secondary" data-feather="heart"></i></div>
+                          <div> 
+                            <h5 class="mb-2 font-bold">Why I Hate</h5>
+                            <p class="text-content">
+                              We’ll show you how Duads BI lets you use all ofconnections to inject data into R and then visualize and interact with the   <a class="text-secondary hover:underline decoration-1" href="blog-detail.html">Read more...</a></p>
+                          </div>
+                          <div>
+                            <div class="divider w-full"> </div>
+                            <div class="flex items-center justify-between mt-3 post-media"><span class="text-content">12k views</span><i class="h-5 stroke-secondary wish-like" data-feather="heart"></i></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-span-4 2lg:col-span-6 sm:col-span-12 masonryItem"> 
-                  <div class="card p-0 group">
-                    <div class="blog-img overflow-hidden rounded-tr-[0.625rem] rounded-tl-[0.625rem]"><img class="duration-700 ease-in scale-100 group-hover:scale-125" src="../../assets/images/blog/blog-contains6.webp" alt="blog-contains6"></div>
-                    <div class="card-body px-3 flex flex-col gap-4 pb-3">
-                      <div class="flex justify-between items-center">
-                        <div class="flex items-start justify-between gap-2 items-center pt-[13px] first:pt-0 first:mt-0 first:border-none">
-                          <div class="avatar"> 
-                            <div class="w-10 rounded-full xl:w-9"><img src="../../assets/images/avatar/21.jpg" alt="avatar"></div>
+                    <div class="col-span-4 2lg:col-span-6 sm:col-span-12 masonryItem"> 
+                      <div class="card p-0 group">
+                        <div class="blog-img overflow-hidden rounded-tr-[0.625rem] rounded-tl-[0.625rem]"><img class="duration-700 ease-in scale-100 group-hover:scale-125" src="../../assets/images/blog/blog-contains5.webp" alt="blog-contains5"></div>
+                        <div class="card-body px-3 flex flex-col gap-4 pb-3">
+                          <div class="flex justify-between items-center">
+                            <div class="flex items-start justify-between gap-2 items-center pt-[13px] first:pt-0 first:mt-0 first:border-none">
+                              <div class="avatar"> 
+                                <div class="w-10 rounded-full xl:w-9"><img src="../../assets/images/avatar/20.jpg" alt="avatar"></div>
+                              </div>
+                              <div><a href="blog-grid.html">
+                                  <p class="text-title font-bold">Mitchel P. Lawyer  </p></a><span class="text-content">Jan 25,2023  </span></div>
+                            </div><i class="h-5 stroke-content" data-feather="more-vertical"></i>
                           </div>
-                          <div><a href="blog-grid.html">
-                              <p class="text-title font-bold">Katherine W. McWilliams  </p></a><span class="text-content">Jan 5,2023</span></div>
-                        </div><i class="h-5 stroke-content" data-feather="more-vertical"></i>
-                      </div>
-                      <div> 
-                        <h5 class="mb-2 font-bold">The Death Of Avoid It Code </h5>
-                        <p class="text-content">
-                           Are you wondering how to get a text short code and get started with reaching your customers in new SMS into your short steps.  <a class="text-secondary hover:underline decoration-1" href="blog-detail.html">Read more...</a></p>
-                      </div>
-                      <div>
-                        <div class="divider w-full"> </div>
-                        <div class="flex items-center justify-between mt-3"> <span class="text-content">18k views</span><i class="h-5 stroke-secondary" data-feather="heart"></i></div>
+                          <div> 
+                            <h5 class="mb-2 font-bold">Take The Stress Out Of Code</h5>
+                            <p class="text-content">
+                               We’ll show you how Duads BI lets you use all ofconnections to inject data into R and then visualize and interact with the<a class="text-secondary hover:underline decoration-1" href="blog-detail.html">Read more...</a></p>
+                          </div>
+                          <div>
+                            <div class="divider w-full"> </div>
+                            <div class="flex items-center justify-between mt-3 post-media"><span class="text-content">25k views</span><i class="h-5 stroke-secondary wish-like" data-feather="heart"></i></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-span-4 2lg:col-span-6 sm:col-span-12 masonryItem"> 
-                  <div class="card p-0 group">
-                    <div class="blog-img overflow-hidden rounded-tr-[0.625rem] rounded-tl-[0.625rem]"><img class="duration-700 ease-in scale-100 group-hover:scale-125" src="../../assets/images/blog/blog-contains7.webp" alt="blog-contains7"></div>
-                    <div class="card-body px-3 flex flex-col gap-4 pb-3">
-                      <div class="flex justify-between items-center">
-                        <div class="flex items-start justify-between gap-2 items-center pt-[13px] first:pt-0 first:mt-0 first:border-none">
-                          <div class="avatar"> 
-                            <div class="w-10 rounded-full xl:w-9"><img src="../../assets/images/avatar/38.jpg" alt="avatar"></div>
+                    <div class="col-span-4 2lg:col-span-6 sm:col-span-12 masonryItem"> 
+                      <div class="card p-0 group">
+                        <div class="blog-img overflow-hidden rounded-tr-[0.625rem] rounded-tl-[0.625rem]"><img class="duration-700 ease-in scale-100 group-hover:scale-125" src="../../assets/images/blog/blog-contains6.webp" alt="blog-contains6"></div>
+                        <div class="card-body px-3 flex flex-col gap-4 pb-3">
+                          <div class="flex justify-between items-center">
+                            <div class="flex items-start justify-between gap-2 items-center pt-[13px] first:pt-0 first:mt-0 first:border-none">
+                              <div class="avatar"> 
+                                <div class="w-10 rounded-full xl:w-9"><img src="../../assets/images/avatar/21.jpg" alt="avatar"></div>
+                              </div>
+                              <div><a href="blog-grid.html">
+                                  <p class="text-title font-bold">Katherine W. McWilliams  </p></a><span class="text-content">Jan 5,2023</span></div>
+                            </div><i class="h-5 stroke-content" data-feather="more-vertical"></i>
                           </div>
-                          <div><a href="blog-grid.html">
-                              <p class="text-title font-bold">Mitchel P. Lawyer  </p></a><span class="text-content">Jan 1,2023</span></div>
-                        </div><i class="h-5 stroke-content" data-feather="more-vertical"></i>
-                      </div>
-                      <div> 
-                        <h5 class="mb-2 font-bold">The Biggest Lie In The Code </h5>
-                        <p class="text-content">
-                           I think programming plays a huge role in our lives,and every kid should definitely be taught programming at some point during their education <a class="text-secondary hover:underline decoration-1" href="blog-detail.html">Read more...</a></p>
-                      </div>
-                      <div>
-                        <div class="divider w-full"> </div>
-                        <div class="flex items-center justify-between mt-3"> <span class="text-content">6k views</span><i class="h-5 stroke-secondary" data-feather="heart"></i></div>
+                          <div> 
+                            <h5 class="mb-2 font-bold">The Death Of Avoid It Code </h5>
+                            <p class="text-content">
+                               Are you wondering how to get a text short code and get started with reaching your customers in new SMS into your short steps.  <a class="text-secondary hover:underline decoration-1" href="blog-detail.html">Read more...</a></p>
+                          </div>
+                          <div>
+                            <div class="divider w-full"> </div>
+                            <div class="flex items-center justify-between mt-3 post-media"><span class="text-content">18k views</span><i class="h-5 stroke-secondary wish-like" data-feather="heart"></i></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-span-4 2lg:col-span-6 sm:col-span-12 masonryItem"> 
-                  <div class="card p-0 group">
-                    <div class="blog-img overflow-hidden rounded-tr-[0.625rem] rounded-tl-[0.625rem]"><img class="duration-700 ease-in scale-100 group-hover:scale-125" src="../../assets/images/blog/blog-contains8.webp" alt="blog-contains8"></div>
-                    <div class="card-body px-3 flex flex-col gap-4 pb-3">
-                      <div class="flex justify-between items-center">
-                        <div class="flex items-start justify-between gap-2 items-center pt-[13px] first:pt-0 first:mt-0 first:border-none">
-                          <div class="avatar"> 
-                            <div class="w-10 rounded-full xl:w-9"><img src="../../assets/images/avatar/20.jpg" alt="avatar"></div>
+                    <div class="col-span-4 2lg:col-span-6 sm:col-span-12 masonryItem"> 
+                      <div class="card p-0 group">
+                        <div class="blog-img overflow-hidden rounded-tr-[0.625rem] rounded-tl-[0.625rem]"><img class="duration-700 ease-in scale-100 group-hover:scale-125" src="../../assets/images/blog/blog-contains7.webp" alt="blog-contains7"></div>
+                        <div class="card-body px-3 flex flex-col gap-4 pb-3">
+                          <div class="flex justify-between items-center">
+                            <div class="flex items-start justify-between gap-2 items-center pt-[13px] first:pt-0 first:mt-0 first:border-none">
+                              <div class="avatar"> 
+                                <div class="w-10 rounded-full xl:w-9"><img src="../../assets/images/avatar/38.jpg" alt="avatar"></div>
+                              </div>
+                              <div><a href="blog-grid.html">
+                                  <p class="text-title font-bold">Mitchel P. Lawyer  </p></a><span class="text-content">Jan 1,2023</span></div>
+                            </div><i class="h-5 stroke-content" data-feather="more-vertical"></i>
                           </div>
-                          <div><a href="blog-grid.html">
-                              <p class="text-title font-bold">Anna G. Proas  </p></a><span class="text-content">Dec 31, 2022</span></div>
-                        </div><i class="h-5 stroke-content" data-feather="more-vertical"></i>
-                      </div>
-                      <div> 
-                        <h5 class="mb-2 font-bold">Old School Coded </h5>
-                        <p class="text-content">
-                           In particular I learned about our mental and physical limits,the nature of stress and anxiety, and most importantly, how to take care of myself so that I could stop this happening again.<a class="text-secondary hover:underline decoration-1" href="blog-detail.html">Read more...</a></p>
-                      </div>
-                      <div>
-                        <div class="divider w-full"> </div>
-                        <div class="flex items-center justify-between mt-3"> <span class="text-content">25k views</span><i class="h-5 stroke-secondary" data-feather="heart"></i></div>
+                          <div> 
+                            <h5 class="mb-2 font-bold">The Biggest Lie In The Code </h5>
+                            <p class="text-content">
+                               I think programming plays a huge role in our lives,and every kid should definitely be taught programming at some point during their education <a class="text-secondary hover:underline decoration-1" href="blog-detail.html">Read more...</a></p>
+                          </div>
+                          <div>
+                            <div class="divider w-full"> </div>
+                            <div class="flex items-center justify-between mt-3 post-media"><span class="text-content">6k views</span><i class="h-5 stroke-secondary wish-like" data-feather="heart"></i></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-span-4 2lg:col-span-6 sm:col-span-12 masonryItem"> 
-                  <div class="card p-0 group">
-                    <div class="blog-img overflow-hidden rounded-tr-[0.625rem] rounded-tl-[0.625rem]"><img class="duration-700 ease-in scale-100 group-hover:scale-125" src="../../assets/images/blog/blog-contains9.webp" alt="blog-contains9"></div>
-                    <div class="card-body px-3 flex flex-col gap-4 pb-3">
-                      <div class="flex justify-between items-center">
-                        <div class="flex items-start justify-between gap-2 items-center pt-[13px] first:pt-0 first:mt-0 first:border-none">
-                          <div class="avatar"> 
-                            <div class="w-10 rounded-full xl:w-9"><img src="../../assets/images/avatar/21.jpg" alt="avatar"></div>
+                    <div class="col-span-4 2lg:col-span-6 sm:col-span-12 masonryItem"> 
+                      <div class="card p-0 group">
+                        <div class="blog-img overflow-hidden rounded-tr-[0.625rem] rounded-tl-[0.625rem]"><img class="duration-700 ease-in scale-100 group-hover:scale-125" src="../../assets/images/blog/blog-contains8.webp" alt="blog-contains8"></div>
+                        <div class="card-body px-3 flex flex-col gap-4 pb-3">
+                          <div class="flex justify-between items-center">
+                            <div class="flex items-start justify-between gap-2 items-center pt-[13px] first:pt-0 first:mt-0 first:border-none">
+                              <div class="avatar"> 
+                                <div class="w-10 rounded-full xl:w-9"><img src="../../assets/images/avatar/20.jpg" alt="avatar"></div>
+                              </div>
+                              <div><a href="blog-grid.html">
+                                  <p class="text-title font-bold">Anna G. Proas  </p></a><span class="text-content">Dec 31, 2022</span></div>
+                            </div><i class="h-5 stroke-content" data-feather="more-vertical"></i>
                           </div>
-                          <div><a href="blog-grid.html">
-                              <p class="text-title font-bold">Ronald M. Spelean  </p></a><span class="text-content">Dec 27, 2022 </span></div>
-                        </div><i class="h-5 stroke-content" data-feather="more-vertical"></i>
-                      </div>
-                      <div> 
-                        <h5 class="mb-2 font-bold">Take The Stress Out Of Code </h5>
-                        <p class="text-content">
-                           Complexity can often come through making the quick fix, taking the shortcut and creating technical debt. Technical debt is another name for complexity because technical debt makes code  and more difficult to work with.  <a class="text-secondary hover:underline decoration-1" href="blog-detail.html">Read more...</a></p>
-                      </div>
-                      <div>
-                        <div class="divider w-full"> </div>
-                        <div class="flex items-center justify-between mt-3"> <span class="text-content">7k views</span><i class="h-5 stroke-secondary" data-feather="heart"></i></div>
+                          <div> 
+                            <h5 class="mb-2 font-bold">Old School Coded </h5>
+                            <p class="text-content">
+                               In particular I learned about our mental and physical limits,the nature of stress and anxiety, and most importantly, how to take care of myself so that I could stop this happening again.<a class="text-secondary hover:underline decoration-1" href="blog-detail.html">Read more...</a></p>
+                          </div>
+                          <div>
+                            <div class="divider w-full"> </div>
+                            <div class="flex items-center justify-between mt-3 post-media"><span class="text-content">25k views</span><i class="h-5 stroke-secondary wish-like" data-feather="heart"></i></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-span-4 2lg:col-span-6 sm:col-span-12 masonryItem"> 
-                  <div class="card p-0 group">
-                    <div class="blog-img overflow-hidden rounded-tr-[0.625rem] rounded-tl-[0.625rem]"><img class="duration-700 ease-in scale-100 group-hover:scale-125" src="../../assets/images/blog/blog-contains10.webp" alt="blog-contains10"></div>
-                    <div class="card-body px-3 flex flex-col gap-4 pb-3">
-                      <div class="flex justify-between items-center">
-                        <div class="flex items-start justify-between gap-2 items-center pt-[13px] first:pt-0 first:mt-0 first:border-none">
-                          <div class="avatar"> 
-                            <div class="w-10 rounded-full xl:w-9"><img src="../../assets/images/avatar/38.jpg" alt="avatar"></div>
+                    <div class="col-span-4 2lg:col-span-6 sm:col-span-12 masonryItem"> 
+                      <div class="card p-0 group">
+                        <div class="blog-img overflow-hidden rounded-tr-[0.625rem] rounded-tl-[0.625rem]"><img class="duration-700 ease-in scale-100 group-hover:scale-125" src="../../assets/images/blog/blog-contains9.webp" alt="blog-contains9"></div>
+                        <div class="card-body px-3 flex flex-col gap-4 pb-3">
+                          <div class="flex justify-between items-center">
+                            <div class="flex items-start justify-between gap-2 items-center pt-[13px] first:pt-0 first:mt-0 first:border-none">
+                              <div class="avatar"> 
+                                <div class="w-10 rounded-full xl:w-9"><img src="../../assets/images/avatar/21.jpg" alt="avatar"></div>
+                              </div>
+                              <div><a href="blog-grid.html">
+                                  <p class="text-title font-bold">Ronald M. Spelean  </p></a><span class="text-content">Dec 27, 2022 </span></div>
+                            </div><i class="h-5 stroke-content" data-feather="more-vertical"></i>
                           </div>
-                          <div><a href="blog-grid.html">
-                              <p class="text-title font-bold">Shannon T. Clemons    </p></a><span class="text-content">Dec 5, 2022</span></div>
-                        </div><i class="h-5 stroke-content" data-feather="more-vertical"></i>
+                          <div> 
+                            <h5 class="mb-2 font-bold">Take The Stress Out Of Code </h5>
+                            <p class="text-content">
+                               Complexity can often come through making the quick fix, taking the shortcut and creating technical debt. Technical debt is another name for complexity because technical debt makes code  and more difficult to work with.  <a class="text-secondary hover:underline decoration-1" href="blog-detail.html">Read more...</a></p>
+                          </div>
+                          <div>
+                            <div class="divider w-full"> </div>
+                            <div class="flex items-center justify-between mt-3 post-media"><span class="text-content">7k views</span><i class="h-5 stroke-secondary wish-like" data-feather="heart"></i></div>
+                          </div>
+                        </div>
                       </div>
-                      <div> 
-                        <h5 class="mb-2 font-bold">Myths About Code</h5>
-                        <p class="text-content">
-                           No! All of the paragraphs in the  are written by humans,not computers. thought about using computers to generate the paragraphs, but they weren't very. <a class="text-secondary hover:underline decoration-1" href="blog-detail.html">Read more...</a></p>
-                      </div>
-                      <div>
-                        <div class="divider w-full"> </div>
-                        <div class="flex items-center justify-between mt-3"> <span class="text-content">28k views</span><i class="h-5 stroke-secondary" data-feather="heart"></i></div>
+                    </div>
+                    <div class="col-span-4 2lg:col-span-6 sm:col-span-12 masonryItem"> 
+                      <div class="card p-0 group">
+                        <div class="blog-img overflow-hidden rounded-tr-[0.625rem] rounded-tl-[0.625rem]"><img class="duration-700 ease-in scale-100 group-hover:scale-125" src="../../assets/images/blog/blog-contains10.webp" alt="blog-contains10"></div>
+                        <div class="card-body px-3 flex flex-col gap-4 pb-3">
+                          <div class="flex justify-between items-center">
+                            <div class="flex items-start justify-between gap-2 items-center pt-[13px] first:pt-0 first:mt-0 first:border-none">
+                              <div class="avatar"> 
+                                <div class="w-10 rounded-full xl:w-9"><img src="../../assets/images/avatar/38.jpg" alt="avatar"></div>
+                              </div>
+                              <div><a href="blog-grid.html">
+                                  <p class="text-title font-bold">Shannon T. Clemons    </p></a><span class="text-content">Dec 5, 2022</span></div>
+                            </div><i class="h-5 stroke-content" data-feather="more-vertical"></i>
+                          </div>
+                          <div> 
+                            <h5 class="mb-2 font-bold">Myths About Code</h5>
+                            <p class="text-content">
+                               No! All of the paragraphs in the  are written by humans,not computers. thought about using computers to generate the paragraphs, but they weren't very. <a class="text-secondary hover:underline decoration-1" href="blog-detail.html">Read more...</a></p>
+                          </div>
+                          <div>
+                            <div class="divider w-full"> </div>
+                            <div class="flex items-center justify-between mt-3 post-media"><span class="text-content">28k views</span><i class="h-5 stroke-secondary wish-like" data-feather="heart"></i></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1405,6 +1418,8 @@
   <script src="../../assets/js/custom-select.js"></script>
   <!-- Sidebar Js -->
   <script src="../../assets/js/sidebar.js"></script>
+  <!-- emailApp js-->
+  <script src="../../assets/js/email-app/email-app-page.js"></script>
   <!-- macy js-->
   <script src="../../assets/js/macy.min.js"></script>
   <script src="../../assets/js/macy.js"></script>

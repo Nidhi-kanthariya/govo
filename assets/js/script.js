@@ -409,6 +409,7 @@ Fill svg js
 
 const postMedia = document.querySelector('.post-media');
 const postLike = document.querySelectorAll('.post-like');
+const wishLike = document.querySelectorAll('.wish-like');
 const postDisLike = document.querySelectorAll('.post-dislike');
 postLike?.forEach((el) => {
   el.addEventListener('click', function () {
@@ -420,6 +421,11 @@ postDisLike?.forEach((el) => {
   el.addEventListener('click', function () {
     this.closest('.post-media')?.classList.add('post-disliked');
     this.closest('.post-media')?.classList.remove('post-liked');
+  });
+});
+wishLike?.forEach((el) => {
+  el.addEventListener('click', function () {
+    this.closest('.post-media')?.classList.toggle('wish-liked');
   });
 });
 

@@ -56,7 +56,7 @@
 
   .countdown-4 {
     li {
-      @apply flex gap-2 sm:gap-0 items-end w-[4.375rem];
+      @apply flex gap-2 sm:gap-0 items-end w-[4.375rem] sm:!w-[3.25rem];
     }
 
     span {
@@ -67,20 +67,26 @@
   .countdown-5 {
     li {
       @apply flex flex-col gap-2 items-center justify-center;
+      span {
+        /* @apply dark:last; */
+      }
     }
 
     span {
-      @apply first:font-bold first:text-xs first:text-white last:p-4 last:sm:p-2 last:text-xl last:sm:text-sm last:font-bold last:shadow-lg last:rounded last:bg-white last:leading-none;
+      @apply first:font-bold first:text-xs first:text-white last:p-4 last:sm:p-2 last:text-xl last:sm:text-sm last:font-bold last:shadow-lg last:rounded last:bg-white last:leading-none last:grid last:place-content-center;
     }
   }
 
   .countdown-6 {
     li {
       @apply flex flex-col items-center justify-center leading-none shadow-lg;
+      span {
+        /* @apply dark:first; */
+      }
     }
 
     span {
-      @apply last:font-bold last:text-[.75rem] last:text-white last:bg-primary last:w-full last:p-1 text-center first:leading-none first:text-xl first:sm:text-sm first:font-bold first:bg-white first:p-4 first:sm:p-2 first:w-full;
+      @apply first:grid first:place-content-center last:font-bold last:text-[.75rem] last:text-white last:bg-primary last:w-full last:p-1 text-center first:leading-none first:text-xl first:sm:text-sm first:font-bold first:bg-white first:p-4 first:sm:p-2 first:w-full;
     }
   }
 

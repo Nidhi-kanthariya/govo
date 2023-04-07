@@ -81,7 +81,7 @@ html(lang='en')
               div.card.tabs
                 div.card-header.pb-2.header-bottom-border
                   div.flex.flex-col
-                    h3.text-lg.font-bold With Different icon
+                    h3.text-lg.font-bold With Different Icon
                     p  Set swap with the help of   
                       strong .swap 
                       | class.
@@ -144,43 +144,98 @@ html(lang='en')
                       button.p-0.tab.tab-lifted(data-tabFilter="2" class="tab-link tab-2") Html
                 div.tabs-content
                   div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
-                    div.text-center
-                      label.swap.swap-flip(class="text-[3.125rem] sm:text-[2.5rem]")
-                        input(type='checkbox' class="mb-0.5")
-                        span.text-3xl.swap-on(class="mb-[-0.5rem]") 😈
-                        span.text-3xl.swap-off(class="mb-[-0.5rem]") 😇
+                    div.flex.gap-4.items-center.justify-center
+                      div.text-center
+                        label.swap.swap-flip(class="text-[3.125rem] sm:text-[2.5rem]")
+                          input(type='checkbox' class="mb-0.5")
+                          span.text-3xl.swap-on(class="mb-[-0.5rem]") 😈
+                          span.text-3xl.swap-off(class="mb-[-0.5rem]") 😇 
+                      div.text-center
+                        label.swap.swap-flip(class="text-[3.125rem] sm:text-[2.5rem]")
+                          input(type='checkbox' class="mb-0.5")
+                          span.text-3xl.swap-on(class="mb-[-0.5rem]") 😔
+                          span.text-3xl.swap-off(class="mb-[-0.5rem]") 🙂
+                      div.text-center
+                        label.swap.swap-flip(class="text-[3.125rem] sm:text-[2.5rem]")
+                          input(type='checkbox' class="mb-0.5")
+                          span.text-3xl.swap-on(class="mb-[-0.5rem]") 😸
+                          span.text-3xl.swap-off(class="mb-[-0.5rem]") 😹 
+                      div.text-center
+                        label.swap.swap-flip(class="text-[3.125rem] sm:text-[2.5rem]")
+                          input(type='checkbox' class="mb-0.5")
+                          span.text-3xl.swap-on(class="mb-[-0.5rem]") ✌🏻
+                          span.text-3xl.swap-off(class="mb-[-0.5rem]") 🤞🏻 
                   div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
                     button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white")  
                       i(data-feather="clipboard")
                     pre(class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2")
                       code(class="dark:bg-sidebar-dark2")
-                        |&lt;div class="text-center"&gt;
-                        |    &lt;label class="swap swap-flip text-[3.125rem]"&gt;
-                        |        &lt;input class="mb-0.5" type="checkbox"&gt;
-                        |        &lt;span class="text-3xl swap-on mb-[-0.5rem]"&gt;😈&lt;/span&gt;
-                        |        &lt;span class="text-3xl swap-off mb-[-0.5rem]"&gt;😇&lt;/span&gt;
-                        |    &lt;/label&gt; 
+                        |&lt;div class="flex items-center justify-center gap-4"&gt;
+                        |   &lt;div class="text-center"&gt;
+                        |       &lt;label class="swap swap-flip text-[3.125rem]"&gt;
+                        |           &lt;input class="mb-0.5" type="checkbox"&gt;
+                        |           &lt;span class="text-3xl swap-on mb-[-0.5rem]"&gt;😈&lt;/span&gt;
+                        |           &lt;span class="text-3xl swap-off mb-[-0.5rem]"&gt;😇&lt;/span&gt;
+                        |       &lt;/label&gt; 
+                        |   &lt;/div&gt;
+                        |   &lt;div class="text-center"&gt;
+                        |       &lt;label class="swap swap-flip text-[3.125rem]"&gt;
+                        |           &lt;input class="mb-0.5" type="checkbox"&gt;
+                        |           &lt;span class="text-3xl swap-on mb-[-0.5rem]"&gt;😔&lt;/span&gt;
+                        |           &lt;span class="text-3xl swap-off mb-[-0.5rem]"&gt;🙂&lt;/span&gt;
+                        |       &lt;/label&gt; 
+                        |   &lt;/div&gt;
+                        |   &lt;div class="text-center"&gt;
+                        |       &lt;label class="swap swap-flip text-[3.125rem]"&gt;
+                        |           &lt;input class="mb-0.5" type="checkbox"&gt;
+                        |           &lt;span class="text-3xl swap-on mb-[-0.5rem]"&gt;😸&lt;/span&gt;
+                        |           &lt;span class="text-3xl swap-off mb-[-0.5rem]"&gt;😹&lt;/span&gt;
+                        |       &lt;/label&gt; 
+                        |   &lt;/div&gt;
+                        |   &lt;div class="text-center"&gt;
+                        |       &lt;label class="swap swap-flip text-[3.125rem]"&gt;
+                        |           &lt;input class="mb-0.5" type="checkbox"&gt;
+                        |           &lt;span class="text-3xl swap-on mb-[-0.5rem]"&gt;✌🏻&lt;/span&gt;
+                        |           &lt;span class="text-3xl swap-off mb-[-0.5rem]"&gt;🤞🏻&lt;/span&gt;
+                        |       &lt;/label&gt; 
+                        |   &lt;/div&gt;                       
                         |&lt;/div&gt;                       
             div.col-span-6(class="2md:col-span-12")
               div.card.tabs
                 div.card-header.pb-2.header-bottom-border
                   div.flex.flex-col
-                    h3.text-lg.font-bold With Like/Dislike 
+                    h3.text-lg.font-bold With Icons 
                     p  Set any icons with 
-                      strong .swap-rotate 
+                      strong .swap-flip 
                       | class.
                     div.preview-code.tab-links
                       button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
                       button.p-0.tab.tab-lifted(data-tabFilter="2" class="tab-link tab-2") Html
                 div.tabs-content
                   div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
-                    div.text-center
-                      label.swap.swap-rotate
-                        input(type='checkbox' class="mb-0.5")
-                        span.text-3xl.swap-on(class="mb-[-0.25rem]")
-                          img(src='../../assets/images/icons/Like.svg' alt='like icon')
-                        span.text-3xl.swap-off(class="mb-[-0.25rem]")
-                          img(src='../../assets/images/icons/Like.svg' alt='like icon')
+                    div.flex.gap-4.items-center.justify-center
+                      div.text-center
+                        label.swap.swap-flip(class="text-[3.125rem] sm:text-[2.5rem]")
+                          input(type='checkbox' class="mb-0.5")
+                          span.text-3xl.swap-on(class="mb-[-0.5rem]") ★
+                          span.text-3xl.swap-off(class="mb-[-0.5rem]") ☆
+                      div.text-center
+                        label.swap.swap-flip(class="text-[3.125rem] sm:text-[2.5rem]")
+                          input(type='checkbox' class="mb-0.5")
+                          span.text-3xl.swap-on(class="mb-[-0.5rem]") ☛
+                          span.text-3xl.swap-off(class="mb-[-0.5rem]") ☚
+                      div.text-center
+                        label.swap.swap-flip(class="text-[3.125rem] sm:text-[2.5rem]")
+                          input(type='checkbox' class="mb-0.5")
+                          span.text-3xl.swap-on(class="mb-[-0.5rem]") ✶
+                          span.text-3xl.swap-off(class="mb-[-0.5rem]") ✹
+                    //- div.text-center
+                    //-   label.swap.swap-rotate
+                    //-     input(type='checkbox' class="mb-0.5")
+                    //-     span.text-3xl.swap-on(class="mb-[-0.25rem]")
+                    //-       img(src='../../assets/images/icons/Like.svg' alt='like icon')
+                    //-     span.text-3xl.swap-off(class="mb-[-0.25rem]")
+                    //-       img(src='../../assets/images/icons/Like.svg' alt='like icon')
                   div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
                     button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white")  
                       i(data-feather="clipboard")
