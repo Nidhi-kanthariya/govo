@@ -76,7 +76,7 @@
           .breadcrumb-items {
             @apply font-medium whitespace-nowrap;
             a {
-              @apply bg-gray-light border dark:border-light;
+              @apply bg-gray-light border dark:border-border-dark dark:border;
               svg {
                 @apply stroke-title;
               }

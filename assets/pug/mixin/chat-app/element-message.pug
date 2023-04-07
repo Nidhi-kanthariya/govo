@@ -6,7 +6,7 @@
 mixin message-data(type,data)
   ul.flex.flex-col.gap-4 
     each dataItem in data 
-      li.flex.items-start.justify-between(class="pt-[13px] border-t border-gray-light first:pt-0 first:mt-0 first:border-none")
+      li.flex.items-start.justify-between(class="pt-[13px] border-t border-gray-light  first:pt-0 first:mt-0 first:border-none")
         div.flex.items-center.gap-3(class="w-[calc(100%_-_59px)] xl:gap-2")
           div.indicator
             span.chat-status(class=`status-${dataItem.status}`)
