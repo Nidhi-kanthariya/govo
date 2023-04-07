@@ -1,19 +1,19 @@
 
 // Chat left sidebar Start 
 
-div.border-r.border-gray-light.h-full.tabs.flex.flex-col.gap-0.left-sidebar-aside
-  div(class="h-full overflow-auto custom-scroll chat-sidebar-scroll carousel-scroll-hide") 
+div.border-r.border-gray-light.h-full.tabs.flex.flex-col.gap-0.left-sidebar-aside(class="dark:border dark:border-border-dark")
+  div(class="h-full overflow-auto custom-scroll chat-sidebar-scroll carousel-scroll-hide")
     div.p-4.pb-0(class="dark:bg-sidebar-dark")
       div.flex.items-center.justify-between
         h4.text-xl.font-extrabold(class="dark:text-white") Messages
-        i(data-feather="plus" class="block p-2 w-11 h-9 stroke-primary bg-gray-light lg:hidden")
+        i(data-feather="plus" class="block p-2 w-11 h-9 stroke-primary bg-gray-light dark:bg-sidebar-dark2 lg:hidden")
         i(data-feather="chevrons-left" class="hidden h-6 cursor-pointer stroke-title left-sidebar-toggle lg:block")
     div.p-4.pb-0(class="dark:bg-sidebar-dark")
       div.swiper.basicSlider
         +recent-chat(BIO_DATA)
     div.p-4.pb-0(class="dark:bg-sidebar-dark")
       div.search-box.relative(class="w-full max-w-[480px] rounded-5 overflow-hidden")
-        input(class="bg-transparent w-full py-[11px] pl-[25px] pr-[55px] text-xs font-semibold text-title border border-gray-light dark:border-gray-dark dark:bg-sidebar-dark2 " placeholder="Type to Search..." type="search")       
+        input(class="bg-transparent w-full py-[11px] pl-[25px] pr-[55px] text-xs font-semibold text-title border border-gray-light  dark:bg-sidebar-dark2  dark:border dark:border-border-dark " placeholder="Type to Search..." type="search")       
         +SVG_ICON("Search","w-6 h-6 stroke-title top-1/2 -translate-y-1/2 right-[25px] absolute cursor-pointer")
     div.p-4.pb-0.tab-links.flex.justify-between.mb-1(class="dark:bg-sidebar-dark")
       button.tab.tab-lifted.w-full.pb-3.border-b.border-gray-light.tab-active.font-semibold.text-sm(data-tabFilter="1" class="tab-link leading-[22px] dark:border-b dark:border-border-dark") 

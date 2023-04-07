@@ -44,25 +44,24 @@ html(lang='en')
           include ../../layout/unique
         // Sidebar End 
 
-        // Page Body Start 
+        // Page Body Start
         div.page-body
-          div.grid.grid-cols-12.border.border-gray-light.bg-white.rounded.h-full.gap-0.relative.overflow-hidden.chatting-app
+          div(class="dark:border dark:border-border-dark").grid.grid-cols-12.border.border-gray-light.bg-white.rounded.h-full.gap-0.relative.overflow-hidden.chatting-app
             div.col-span-3(class="2xl:col-span-4")
               include ../../layout/chat-layout/chat-left-sidebar
-            div.col-span-6(class="chat-main 2xl:col-span-8 lg:col-span-12") 
+            div.col-span-6(class="chat-main 2xl:col-span-8 lg:col-span-12 dark:bg-sidebar-dark") 
               div.relative.main-wrapper(class="lg:h-[920px] sm:h-[670px]") 
-                div.p-4.pb-0
+                div.p-4.pb-0 
                   include ../../layout/chat-layout/chat-main-header
-                div.h-full.relative
+                div.h-full.relative(class="dark:bg-sidebar-dark")
                   include ../../layout/chat-layout/chat-main
-                div.p-4.pt-0.absolute.bottom-0.left-0.right-0.mx-4.right-sidebar(class="lg:mb-5")
+                div.p-4.pt-0.absolute.bottom-0.left-0.right-0.mx-4.right-sidebar(class="lg:mb-5") 
                   include ../../layout/chat-layout/chat-main-footer
-            div.col-span-3(class="2xl:col-span-4")
-              include ../../layout/chat-layout/chat-right-sidebar
+            div.col-span-3(class="2xl:col-span-4 dark:bg-sidebar-dark")
+              include ../../layout/chat-layout/chat-right-sidebar 
         // Page Body End 
         +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
     include ../../components/customizer
-
     //- Voice call modal
     div.modal-main
       input#voice-call-modal(class="peer" name="voice-call-modal" type='checkbox')
@@ -81,7 +80,6 @@ html(lang='en')
                 li  
                   label(for="voice-call-modal")
                     +SVG_ICON("Call","w-[4rem] h-[4rem] p-[12px] stroke-white bg-danger rounded-full rotate-[132deg]")
-
     //- Accept call modal
     div.modal-main
       input#accept-call-modal(class="peer" name="accept-call-modal" type='checkbox')
@@ -111,7 +109,7 @@ html(lang='en')
                 li
                   i(data-feather="pause" ,class="p-2 bg-white rounded-full w-9 h-9 stroke-title")
     //- Video call modal
-    div.modal-main 
+    div.modal-main
       input#video-call-modal(class="peer" name="video-call-modal" type='checkbox')
       label.modal-overlay(class="peer-checked:block" for='video-call-modal')
       div.modal.modal-center(class="!min-w-[850px] lg:!min-w-[600px] 2md:!min-w-[450px] sm:!min-w-[300px] !h-[715px] lg:!h-[692px] 2md:!h-[400px] 2sm:!min-w-[200px] 2sm:!h-[250px] peer-checked:opacity-100 peer-checked:visible rounded-none")
