@@ -1,5 +1,5 @@
 mixin icon-box(iconPackage,iconName,type,path,classes,iconStyle)
-  div(class="flex flex-col items-center justify-center gap-4 px-3 py-5 border icon-box rounded-5 border-border-light 3sm:px-2 3sm:py-4  dark:border-border-dark") 
+  div(class="flex flex-col items-center justify-center gap-4 px-3 py-5 border cursor-pointer icon-box rounded-5 border-border-light 3sm:px-2 3sm:py-4 dark:border-border-dark hover:translate-y-[-5px] hover:transition-all hover:ease translate-y-0") 
     if(iconPackage === "feather")
       i(data-feather=`${iconName}` class="w-6 h-6")
     if(iconPackage === "iconly")

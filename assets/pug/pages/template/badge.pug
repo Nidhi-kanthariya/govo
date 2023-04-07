@@ -49,42 +49,6 @@ html(lang='en')
                     div.preview-code.tab-links
                       button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
                       button.p-0.tab.tab-lifted(data-tabFilter="2" class="tab-link tab-2") Html
-                div.card-body
-                  div.tabs-content
-                    div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
-                      div.flex.flex-wrap.gap-2 
-                        div.badge.bg-primary.text-white.rounded-full Primary
-                        div.badge.bg-secondary.text-white.rounded-full Secondary
-                        div.badge.bg-info.text-white.rounded-full Info
-                        div.badge.bg-success.text-white.rounded-full Success
-                        div.badge.bg-warning.text-white.rounded-full Warning
-                        div.badge.bg-danger.text-white.rounded-full Danger
-                        div.badge.bg-light.text-title.rounded-full Light
-                    div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
-                      button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white")
-                        i(data-feather="clipboard")
-                      pre(class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2")
-                        code(class="dark:bg-sidebar-dark2")
-                          |&lt;div class="flex flex-wrap gap-2"&gt;
-                          |    &lt;div class="text-white rounded-full badge bg-primary"&gt;Primary&lt;/div&gt; 
-                          |    &lt;div class="text-white rounded-full badge bg-secondary"&gt;Secondary&lt;/div&gt;
-                          |    &lt;div class="text-white rounded-full badge bg-info"&gt;Info&lt;/div&gt; 
-                          |    &lt;div class="text-white rounded-full badge bg-success"&gt;Success&lt;/div&gt; 
-                          |    &lt;div class="text-white rounded-full badge bg-warning"&gt;Warning&lt;/div&gt; 
-                          |    &lt;div class="text-white rounded-full badge bg-danger"&gt;Danger&lt;/div&gt;
-                          |    &lt;div class="rounded-full badge bg-light text-title"&gt;Light&lt;/div&gt; 
-                          |&lt;/div&gt; 
-            div.col-span-6(class="2md:col-span-12")
-              div.card.tabs
-                div.card-header.pb-2.header-bottom-border
-                  div.flex.flex-col
-                    h3.text-lg.font-bold Rounded
-                    p Use the  
-                      strong .rounded 
-                      |  utility class to set the rounded badge.
-                    div.preview-code.tab-links
-                      button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
-                      button.p-0.tab.tab-lifted(data-tabFilter="2" class="tab-link tab-2") Html
                 div.card-body                                   
                   div.tabs-content
                     div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
@@ -114,6 +78,43 @@ html(lang='en')
               div.card.tabs
                 div.card-header.pb-2.header-bottom-border
                   div.flex.flex-col
+                    h3.text-lg.font-bold Rounded
+                    p Use the  
+                      strong .rounded 
+                      |  utility class to set the rounded badge.
+                    div.preview-code.tab-links
+                      button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
+                      button.p-0.tab.tab-lifted(data-tabFilter="2" class="tab-link tab-2") Html
+                div.card-body
+                  div.tabs-content
+                    div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
+                      div.flex.flex-wrap.gap-2 
+                        div.badge.bg-primary.text-white.rounded-full Primary
+                        div.badge.bg-secondary.text-white.rounded-full Secondary
+                        div.badge.bg-info.text-white.rounded-full Info
+                        div.badge.bg-success.text-white.rounded-full Success
+                        div.badge.bg-warning.text-white.rounded-full Warning
+                        div.badge.bg-danger.text-white.rounded-full Danger
+                        div.badge.bg-light.text-title.rounded-full Light
+                    div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
+                      button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white")
+                        i(data-feather="clipboard")
+                      pre(class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2")
+                        code(class="dark:bg-sidebar-dark2")
+                          |&lt;div class="flex flex-wrap gap-2"&gt;
+                          |    &lt;div class="text-white rounded-full badge bg-primary"&gt;Primary&lt;/div&gt; 
+                          |    &lt;div class="text-white rounded-full badge bg-secondary"&gt;Secondary&lt;/div&gt;
+                          |    &lt;div class="text-white rounded-full badge bg-info"&gt;Info&lt;/div&gt; 
+                          |    &lt;div class="text-white rounded-full badge bg-success"&gt;Success&lt;/div&gt; 
+                          |    &lt;div class="text-white rounded-full badge bg-warning"&gt;Warning&lt;/div&gt; 
+                          |    &lt;div class="text-white rounded-full badge bg-danger"&gt;Danger&lt;/div&gt;
+                          |    &lt;div class="rounded-full badge bg-light text-title"&gt;Light&lt;/div&gt; 
+                          |&lt;/div&gt; 
+
+            div.col-span-6(class="2md:col-span-12")
+              div.card.tabs
+                div.card-header.pb-2.header-bottom-border
+                  div.flex.flex-col
                     h3.text-lg.font-bold Outlined
                     p  Use the 
                       strong .border 
@@ -125,26 +126,26 @@ html(lang='en')
                   div.tabs-content
                     div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
                       div.flex.flex-wrap.gap-2 
-                        div.badge.border.border-primary.text-primary.rounded Primary
-                        div.badge.border.border-secondary.text-secondary.rounded Secondary
-                        div.badge.border.border-info.text-info.rounded Info
-                        div.badge.border.border-success.text-success.rounded Success
-                        div.badge.border.border-warning.text-warning.rounded Warning
-                        div.badge.border.border-danger.text-danger.rounded Danger
-                        div.badge.border.border-light.text-title.rounded Light 
+                        div.badge.border.border-primary.text-primary.rounded(class="hover:translate-y-[-5px] hover:transition-all hover:ease translate-y-0") Primary
+                        div.badge.border.border-secondary.text-secondary.rounded(class="hover:translate-y-[-5px] hover:transition-all hover:ease translate-y-0") Secondary
+                        div.badge.border.border-info.text-info.rounded(class="hover:translate-y-[-5px] hover:transition-all hover:ease translate-y-0") Info
+                        div.badge.border.border-success.text-success.rounded(class="hover:translate-y-[-5px] hover:transition-all hover:ease translate-y-0") Success
+                        div.badge.border.border-warning.text-warning.rounded(class="hover:translate-y-[-5px] hover:transition-all hover:ease translate-y-0") Warning
+                        div.badge.border.border-danger.text-danger.rounded(class="hover:translate-y-[-5px] hover:transition-all hover:ease translate-y-0") Danger
+                        div.badge.border.border-light.text-title.rounded(class="hover:translate-y-[-5px] hover:transition-all hover:ease translate-y-0") Light 
                     div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white")
                         i(data-feather="clipboard")
                       pre(class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2")
                         code(class="dark:bg-sidebar-dark2")
                           |&lt;div class="flex flex-wrap gap-2"&gt; 
-                          |    &lt;div class="border rounded badge border-primary text-primary"&gt;Primary&lt;/div&gt; 
-                          |    &lt;div class="border rounded badge border-secondary text-secondary"&gt;Secondary&lt;/div&gt;
-                          |    &lt;div class="border rounded badge border-info text-info"&gt;Info&lt;/div&gt; 
-                          |    &lt;div class="border rounded badge border-success text-success"&gt;Success&lt;/div&gt; 
-                          |    &lt;div class="border rounded badge border-warning text-warning"&gt;Warning&lt;/div&gt; 
-                          |    &lt;div class="border rounded badge border-danger text-danger"&gt;Danger&lt;/div&gt;
-                          |    &lt;div class="border rounded badge border-light text-title"&gt;Light&lt;/div&gt; 
+                          |    &lt;div class="border rounded badge hover:translate-y-[-5px] hover:transition-all hover:ease translate-y-0 border-primary text-primary"&gt;Primary&lt;/div&gt; 
+                          |    &lt;div class="border rounded badge hover:translate-y-[-5px] hover:transition-all hover:ease translate-y-0 border-secondary text-secondary"&gt;Secondary&lt;/div&gt;
+                          |    &lt;div class="border rounded badge hover:translate-y-[-5px] hover:transition-all hover:ease translate-y-0 border-info text-info"&gt;Info&lt;/div&gt; 
+                          |    &lt;div class="border rounded badge hover:translate-y-[-5px] hover:transition-all hover:ease translate-y-0 border-success text-success"&gt;Success&lt;/div&gt; 
+                          |    &lt;div class="border rounded badge hover:translate-y-[-5px] hover:transition-all hover:ease translate-y-0 border-warning text-warning"&gt;Warning&lt;/div&gt; 
+                          |    &lt;div class="border rounded badge hover:translate-y-[-5px] hover:transition-all hover:ease translate-y-0 border-danger text-danger"&gt;Danger&lt;/div&gt;
+                          |    &lt;div class="border rounded badge hover:translate-y-[-5px] hover:transition-all hover:ease translate-y-0 border-light text-title"&gt;Light&lt;/div&gt; 
                           |&lt;/div&gt;
             div.col-span-6(class="2md:col-span-12")
               div.card.tabs
@@ -186,7 +187,7 @@ html(lang='en')
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white") 
                         i(data-feather="clipboard")
                       pre(class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2")
-                        code(class="dark:bg-sidebar-dark2 dark:bg-sidebar-dark")
+                        code(class="dark:bg-sidebar-dark2")
                           |&lt;div class="flex flex-wrap gap-2"&gt; 
                           |    &lt;div class="flex flex-wrap items-center gap-2 text-white rounded-full badge bg-primary badge-md"&gt;; 
                           |      &lt;div class="w-1 h-1 bg-current rounded-full"&gt;&lt;/div&gt;
@@ -251,7 +252,7 @@ html(lang='en')
               div.card.tabs
                 div.card-header.pb-2.header-bottom-border
                   div.flex.flex-col
-                    h3.text-lg.font-bold With Icon
+                    h3.text-lg.font-bold With Icons
                     p Set badge with icon using 
                       strong  .badge 
                       | class.
@@ -332,7 +333,7 @@ html(lang='en')
                       div.flex.flex-wrap.flex-col.gap-1
                         p.text-sm.flex.items-center.gap-2 Here, the latest news 
                           span.badge.badge-xs.bg-primary.rounded-full News
-                        p.text-sm.flex.items-center.gap-2 click on, for new update
+                        p.text-sm.flex.items-center.gap-2 Click on, for new update
                           span.badge.badge-sm.bg-primary.rounded-full Update
                     div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white")
@@ -350,5 +351,5 @@ html(lang='en')
         // Page Body End 
         +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
 
-include ../../components/customizer
-include ../../layout/footer-files
+      include ../../components/customizer
+  include ../../layout/footer-files
