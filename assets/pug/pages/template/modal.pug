@@ -85,7 +85,7 @@ html(lang='en')
               div.card.tabs
                 div.card-header.pb-2.header-bottom-border
                   div.flex.flex-col
-                    h3.text-lg.font-bold Sizes  
+                    h3.text-lg.font-bold Modal Sizes  
                     p Use different size of modal to show more information.
                     div.preview-code.tab-links
                       button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
@@ -421,7 +421,7 @@ html(lang='en')
               div.card.tabs
                 div.card-header.pb-2.header-bottom-border
                   div.flex.flex-col
-                    h3.text-lg.font-bold With footer  
+                    h3.text-lg.font-bold Modal Footer  
                     p Add footer in modal to create the modal-footer.
                     div.preview-code.tab-links
                       button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
@@ -624,282 +624,282 @@ html(lang='en')
                           |   &lt;/div&gt;
         // Page Body End 
         +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
-include ../../components/customizer
+      include ../../components/customizer
 
-//- Modal with checkbox
-div.modal-main(class="dark:bg-sidebar-dark")
-  input#modal-1(class="peer" name="modal-1" type='checkbox')
-  label.modal-overlay(class="peer-checked:block" for='modal-1')
-  div.modal(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] dark:bg-sidebar-dark2")
-    div.modal-header 
-      h3 Hurry !!
-      label(for='modal-1') 
-        i(data-feather="x" class="w-4 h-4 stroke-dark")
-    div.modal-body.text-center
-      p.text-lg.font-bold Up to 
-        span.text-xl.text-secondary 85% OFF
-        |  , Hurry Up Online Shopping
-      div.modal-img
-        img(class="" src="../../assets/images/modal/online-shopping.gif" alt="shopping" class="w-52")
-      label(for="modal-1").bg-primary.text-white.py-1.px-2.rounded.text-end.inline-block
-        a(href="shop.html") Explore More
-//- Small size modal
-div.modal-main
-  input#modal-2(class="peer" name="modal-2" type='checkbox')
-  label.modal-overlay(class="peer-checked:block" for='modal-2')
-  div.modal(class="peer-checked:opacity-100 peer-checked:visible w-[15.625rem]  dark:bg-sidebar-dark2")
-    div.modal-header
-      h3 Web Design
-      label(for='modal-2') 
-        i(data-feather="x" class="w-4 h-4 stroke-dark")
-    div.modal-body(class="h-[12.5rem]")
-      p 
-      | We build specialized websites for companies, list them on digital directories, and set up a sales funnel to boost ROI.
+      //- Modal with checkbox
+      div.modal-main(class="dark:bg-sidebar-dark")
+        input#modal-1(class="peer" name="modal-1" type='checkbox')
+        label.modal-overlay(class="peer-checked:block" for='modal-1')
+        div.modal(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] dark:bg-sidebar-dark2")
+          div.modal-header 
+            h3 Hurry !!
+            label(for='modal-1') 
+              i(data-feather="x" class="w-4 h-4 stroke-dark")
+          div.modal-body.text-center
+            p.text-lg.font-bold Up to 
+              span.text-xl.text-secondary 85% OFF
+              |  , Hurry Up Online Shopping
+            div.modal-img
+              img(class="" src="../../assets/images/modal/online-shopping.gif" alt="shopping" class="w-52")
+            label(for="modal-1").bg-primary.text-white.py-1.px-2.rounded.text-end.inline-block
+              a(href="shop.html") Explore More
+      //- Small size modal
+      div.modal-main
+        input#modal-2(class="peer" name="modal-2" type='checkbox')
+        label.modal-overlay(class="peer-checked:block" for='modal-2')
+        div.modal(class="peer-checked:opacity-100 peer-checked:visible w-[15.625rem]  dark:bg-sidebar-dark2")
+          div.modal-header
+            h3 Web Design
+            label(for='modal-2') 
+              i(data-feather="x" class="w-4 h-4 stroke-dark")
+          div.modal-body(class="h-[12.5rem]")
+            p 
+            | We build specialized websites for companies, list them on digital directories, and set up a sales funnel to boost ROI.
 
-//- large size modal
-div.modal-main
-  input#modal-3(class="peer" name="modal-3" type='checkbox')
-  label.modal-overlay(class="peer-checked:block" for='modal-3')
-  div.modal(class="w-11/12 max-w-2xl peer-checked:opacity-100 peer-checked:visible dark:bg-sidebar-dark2")
-    div.modal-header
-      h3 Start with your goals
-      label(for='modal-3') 
-        i(data-feather="x" class="w-4 h-4 stroke-dark")
-    div.modal-body(class="h-[12.5rem]")
-      p 
-      | No matter how talented you are as a content writer or creator, you will always fail if you don't have a clear set of goals. First of all, without goals, there is no way to determine your success. Additionally, you lack direction.
-      | Together with your team, respond to the following questions to make sure they are:
-      ul.mt-1 
-        li.flex.gap-2.items-center 
-          +SVG_ICON("Arrow-Right","w-[1.125rem] h-[1.125rem] stroke-title")
-          | What must you achieve, and by when?
-        li.flex.gap-2.items-center 
-          +SVG_ICON("Arrow-Right","w-[1.125rem] h-[1.125rem] stroke-title")
-          | How will you evaluate your level of success?
-        li.flex.gap-2.items-center 
-          +SVG_ICON("Arrow-Right","w-[1.125rem] h-[1.125rem] stroke-title")
-          | Can you accomplish it with the available resources?
-        li.flex.gap-2.items-center 
-          +SVG_ICON("Arrow-Right","w-[1.125rem] h-[1.125rem] stroke-title")
-          | Does it advance your core business aims?
+      //- large size modal
+      div.modal-main
+        input#modal-3(class="peer" name="modal-3" type='checkbox')
+        label.modal-overlay(class="peer-checked:block" for='modal-3')
+        div.modal(class="w-11/12 max-w-2xl peer-checked:opacity-100 peer-checked:visible dark:bg-sidebar-dark2")
+          div.modal-header
+            h3 Start with your goals
+            label(for='modal-3') 
+              i(data-feather="x" class="w-4 h-4 stroke-dark")
+          div.modal-body(class="h-[12.5rem]")
+            p 
+            | No matter how talented you are as a content writer or creator, you will always fail if you don't have a clear set of goals. First of all, without goals, there is no way to determine your success. Additionally, you lack direction.
+            | Together with your team, respond to the following questions to make sure they are:
+            ul.mt-1 
+              li.flex.gap-2.items-center 
+                +SVG_ICON("Arrow-Right","w-[1.125rem] h-[1.125rem] stroke-title")
+                | What must you achieve, and by when?
+              li.flex.gap-2.items-center 
+                +SVG_ICON("Arrow-Right","w-[1.125rem] h-[1.125rem] stroke-title")
+                | How will you evaluate your level of success?
+              li.flex.gap-2.items-center 
+                +SVG_ICON("Arrow-Right","w-[1.125rem] h-[1.125rem] stroke-title")
+                | Can you accomplish it with the available resources?
+              li.flex.gap-2.items-center 
+                +SVG_ICON("Arrow-Right","w-[1.125rem] h-[1.125rem] stroke-title")
+                | Does it advance your core business aims?
 
-//- Extralarge size modal
-div.modal-main
-  input#modal-4(class="peer" name="modal-4" type='checkbox')
-  label.modal-overlay(class="peer-checked:block" for='modal-4')
-  div.modal(class="w-11/12 max-w-5xl peer-checked:opacity-100 peer-checked:visible dark:bg-sidebar-dark2")
-    div.modal-header
-      h3 UX Designer
-      label(for='modal-4') 
-        i(data-feather="x" class="w-4 h-4 stroke-dark")
-    div.modal-body(class="h-[12.5rem]")
-      p 
-      | The capacity to comprehend and experience other people's feelings is known as empathy. A positive consumer experience is prioritized by UX. The finest UX designers spend time studying individuals and their tendencies because of this. Designers may produce goods that genuinely engage and excite customers by having a thorough understanding of the end consumers.
-      ul.mt-1 
-        li.flex.gap-2.items-center 
-          +SVG_ICON("Arrow-Right","w-[1.125rem] h-[1.125rem] stroke-title")
-          | What must you achieve, and by when?
-        li.flex.gap-2.items-center 
-          +SVG_ICON("Arrow-Right","w-[1.125rem] h-[1.125rem] stroke-title")
-          | How will you evaluate your level of success?
-        li.flex.gap-2.items-center 
-          +SVG_ICON("Arrow-Right","w-[1.125rem] h-[1.125rem] stroke-title")
-          | Can you accomplish it with the available resources?
-        li.flex.gap-2.items-center 
-          +SVG_ICON("Arrow-Right","w-[1.125rem] h-[1.125rem] stroke-title")
-          | Does it advance your core business aims?
+      //- Extralarge size modal
+      div.modal-main
+        input#modal-4(class="peer" name="modal-4" type='checkbox')
+        label.modal-overlay(class="peer-checked:block" for='modal-4')
+        div.modal(class="w-11/12 max-w-5xl peer-checked:opacity-100 peer-checked:visible dark:bg-sidebar-dark2")
+          div.modal-header
+            h3 UX Designer
+            label(for='modal-4') 
+              i(data-feather="x" class="w-4 h-4 stroke-dark")
+          div.modal-body(class="h-[12.5rem]")
+            p 
+            | The capacity to comprehend and experience other people's feelings is known as empathy. A positive consumer experience is prioritized by UX. The finest UX designers spend time studying individuals and their tendencies because of this. Designers may produce goods that genuinely engage and excite customers by having a thorough understanding of the end consumers.
+            ul.mt-1 
+              li.flex.gap-2.items-center 
+                +SVG_ICON("Arrow-Right","w-[1.125rem] h-[1.125rem] stroke-title")
+                | What must you achieve, and by when?
+              li.flex.gap-2.items-center 
+                +SVG_ICON("Arrow-Right","w-[1.125rem] h-[1.125rem] stroke-title")
+                | How will you evaluate your level of success?
+              li.flex.gap-2.items-center 
+                +SVG_ICON("Arrow-Right","w-[1.125rem] h-[1.125rem] stroke-title")
+                | Can you accomplish it with the available resources?
+              li.flex.gap-2.items-center 
+                +SVG_ICON("Arrow-Right","w-[1.125rem] h-[1.125rem] stroke-title")
+                | Does it advance your core business aims?
 
-//- Modal with footer
-div.modal-main
-  input#modal-5(class="peer" name="modal-5" type='checkbox')
-  label.modal-overlay(class="peer-checked:block" for='modal-5')
-  div.modal(class="w-[18.75rem] peer-checked:opacity-100 peer-checked:visible dark:bg-sidebar-dark2")
-    div.modal-header
-      h3 Cookies
-      label(for='modal-5') 
-        i(data-feather="x" class="w-4 h-4 stroke-dark")
-    div.modal-body
-      p Accept the all cookies 
-      div.modal-img
-        img(class="" src="../../assets/images/modal/cookies-sendcookie.gif" alt="whatsapp" class="w-52")               
-    div.modal-footer
-      label(for="modal-5").btn.btn-primary.p-2.text-white Accept
+      //- Modal with footer
+      div.modal-main
+        input#modal-5(class="peer" name="modal-5" type='checkbox')
+        label.modal-overlay(class="peer-checked:block" for='modal-5')
+        div.modal(class="w-[18.75rem] peer-checked:opacity-100 peer-checked:visible dark:bg-sidebar-dark2")
+          div.modal-header
+            h3 Cookies
+            label(for='modal-5') 
+              i(data-feather="x" class="w-4 h-4 stroke-dark")
+          div.modal-body
+            p Accept the all cookies 
+            div.modal-img
+              img(class="" src="../../assets/images/modal/cookies-sendcookie.gif" alt="whatsapp" class="w-52")               
+          div.modal-footer
+            label(for="modal-5").btn.btn-primary.p-2.text-white Accept
 
-//- Centered modal
-div.modal-main
-  input#modal-6(class="peer" name="modal-6" type='checkbox')
-  label.modal-overlay(class="peer-checked:block" for='modal-6')
-  div.modal.modal-center(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] dark:bg-sidebar-dark2")
-    div.modal-body.text-center
-      div.modal-img
-        img(class="" src="../../assets/images/modal/danger.gif" alt="danger" class="w-14")
-      h3.text-lg.font-bold.mb-2 Ohh! Something went wrong!
-      p.mb-3 Attackers on malicious activity may trick you into doing something dangerous like installing software or revealing your personal information.
-      label(for="modal-6").btn.btn-danger.p-2.text-white Close
+      //- Centered modal
+      div.modal-main
+        input#modal-6(class="peer" name="modal-6" type='checkbox')
+        label.modal-overlay(class="peer-checked:block" for='modal-6')
+        div.modal.modal-center(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] dark:bg-sidebar-dark2")
+          div.modal-body.text-center
+            div.modal-img
+              img(class="" src="../../assets/images/modal/danger.gif" alt="danger" class="w-14")
+            h3.text-lg.font-bold.mb-2 Ohh! Something went wrong!
+            p.mb-3 Attackers on malicious activity may trick you into doing something dangerous like installing software or revealing your personal information.
+            label(for="modal-6").btn.btn-danger.p-2.text-white Close
 
-//- Scrollable modal
-div.modal-main
-  input#modal-7(class="peer" name="modal-7" type='checkbox')
-  label.modal-overlay(class="peer-checked:block" for='modal-7')
-  div.modal(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] dark:bg-sidebar-dark2 ")
-    div.modal-header
-      h3 Wed Designer
-      label(for='modal-7') 
-        i(data-feather="x" class="w-4 h-4 stroke-dark")
-    div.modal-body.modal-content-scroll(class="h-[25rem]")
-      div.flex.items-center.mb-3.gap-3 
-        +SVG_ICON("Arrow-Right","w-[2.5rem] h-[2.5rem] stroke-title")
-        p For a site to be successful, a designer must be able to communicate their ideas.
-      div.flex.items-center.mb-3.gap-3 
-        +SVG_ICON("Arrow-Right","w-[2.5rem] h-[2.5rem] stroke-title")
-        p Most businesses employ a certain font or typography so that clients can quickly distinguish them from their rivals.
-      div.flex.items-center.mb-3.gap-3 
-        +SVG_ICON("Arrow-Right","w-[2.5rem] h-[2.5rem] stroke-title")
-        p We build specialized websites for companies, list them on digital directories, and set up a sales funnel to boost ROI.
-      div.flex.items-center.mb-3.gap-3 
-        +SVG_ICON("Arrow-Right","w-[2.5rem] h-[2.5rem] stroke-title")
-        p  Chat with a firm about what they want, and inquire about the target audience.
-      div.flex.items-center.mb-3.gap-3 
-        +SVG_ICON("Arrow-Right","w-[2.5rem] h-[2.5rem] stroke-title")
-        p firms may more easily and precisely communicate their brands through typography.
-    div.modal-footer
-      label(for="modal-7").btn.btn-primary.text-white.p-2(class="!text-end") Close
+      //- Scrollable modal
+      div.modal-main
+        input#modal-7(class="peer" name="modal-7" type='checkbox')
+        label.modal-overlay(class="peer-checked:block" for='modal-7')
+        div.modal(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] dark:bg-sidebar-dark2 ")
+          div.modal-header
+            h3 Wed Designer
+            label(for='modal-7') 
+              i(data-feather="x" class="w-4 h-4 stroke-dark")
+          div.modal-body.modal-content-scroll(class="h-[25rem]")
+            div.flex.items-center.mb-3.gap-3 
+              +SVG_ICON("Arrow-Right","w-[2.5rem] h-[2.5rem] stroke-title")
+              p For a site to be successful, a designer must be able to communicate their ideas.
+            div.flex.items-center.mb-3.gap-3 
+              +SVG_ICON("Arrow-Right","w-[2.5rem] h-[2.5rem] stroke-title")
+              p Most businesses employ a certain font or typography so that clients can quickly distinguish them from their rivals.
+            div.flex.items-center.mb-3.gap-3 
+              +SVG_ICON("Arrow-Right","w-[2.5rem] h-[2.5rem] stroke-title")
+              p We build specialized websites for companies, list them on digital directories, and set up a sales funnel to boost ROI.
+            div.flex.items-center.mb-3.gap-3 
+              +SVG_ICON("Arrow-Right","w-[2.5rem] h-[2.5rem] stroke-title")
+              p  Chat with a firm about what they want, and inquire about the target audience.
+            div.flex.items-center.mb-3.gap-3 
+              +SVG_ICON("Arrow-Right","w-[2.5rem] h-[2.5rem] stroke-title")
+              p firms may more easily and precisely communicate their brands through typography.
+          div.modal-footer
+            label(for="modal-7").btn.btn-primary.text-white.p-2(class="!text-end") Close
 
-//- Form modal
-div.modal-main
-  input#modal-8(class="peer" name="modal-8" type='checkbox')
-  label.modal-overlay(class="peer-checked:block" for='modal-8')
-  div.modal(class="max-w-sm peer-checked:opacity-100 peer-checked:visible dark:bg-sidebar-dark2")
-    div.modal-body
-      form.theme-form.flex.flex-col.gap-3
-        h3 Log in to account
-        p Hello, enter your email id and password for log in to your account
-        div
-          input(type="email" placeholder="Enter your id.." class="dark:bg-sidebar-dark")
-        div
-          input(type="password" placeholder="Password.." class="dark:bg-sidebar-dark")
-        div.flex.justify-between.items-center.gap-1
-          div.flex.items-center.gap-2
-            label.checkbox(class="w-[1rem] h-[1rem]")   
-              input(type='checkbox' class="peer") 
-              div.checkbox-indicator(class="peer-checked:!bg-primary !border-primary")  
-                i(data-feather="check")
-            span Remember Me
-          div(class="!mb-0")
-            a(href="forgot-password.html") Forgot Password? 
-        div(class="!mb-0")
-          button.btn.btn-primary.text-white(a href="index.html") Sign in
-        div
-          h4 Or Sign in with
-        div.social
-          a(href="https://www.linkedin.com/login" class="flex items-center justify-center gap-1 btn !text-linkedin")
-            img(src='../../assets/images/social/linkd2.svg' alt='linkedin')
-            | Linkedin
-          a(href="https://twitter.com/i/flow/login" class="flex items-center justify-center gap-1 btn !text-twitter")
-            img(src='../../assets/images/social/tw2.svg' alt='twitter')
-            | Twitter 
-          a(href="https://www.facebook.com/" class="flex items-center justify-center gap-1 btn !text-facebook") 
-            img(src='../../assets/images/social/fb2.svg' alt='facebook')
-            | Facebook  
-        div.text-center
-          span Don't have an account? 
-            a(href="register.html") Create Now
+      //- Form modal
+      div.modal-main
+        input#modal-8(class="peer" name="modal-8" type='checkbox')
+        label.modal-overlay(class="peer-checked:block" for='modal-8')
+        div.modal(class="max-w-sm peer-checked:opacity-100 peer-checked:visible dark:bg-sidebar-dark2")
+          div.modal-body
+            form.theme-form.flex.flex-col.gap-3
+              h3 Log in to account
+              p Hello, enter your email id and password for log in to your account
+              div
+                input(type="email" placeholder="Enter your id.." class="dark:bg-sidebar-dark")
+              div
+                input(type="password" placeholder="Password.." class="dark:bg-sidebar-dark")
+              div.flex.justify-between.items-center.gap-1
+                div.flex.items-center.gap-2
+                  label.checkbox(class="w-[1rem] h-[1rem]")   
+                    input(type='checkbox' class="peer") 
+                    div.checkbox-indicator(class="peer-checked:!bg-primary !border-primary")  
+                      i(data-feather="check")
+                  span Remember Me
+                div(class="!mb-0")
+                  a(href="forgot-password.html") Forgot Password? 
+              div(class="!mb-0")
+                button.btn.btn-primary.text-white(a href="index.html") Sign in
+              div
+                h4 Or Sign in with
+              div.social
+                a(href="https://www.linkedin.com/login" class="flex items-center justify-center gap-1 btn !text-linkedin")
+                  img(src='../../assets/images/social/linkd2.svg' alt='linkedin')
+                  | Linkedin
+                a(href="https://twitter.com/i/flow/login" class="flex items-center justify-center gap-1 btn !text-twitter")
+                  img(src='../../assets/images/social/tw2.svg' alt='twitter')
+                  | Twitter 
+                a(href="https://www.facebook.com/" class="flex items-center justify-center gap-1 btn !text-facebook") 
+                  img(src='../../assets/images/social/fb2.svg' alt='facebook')
+                  | Facebook  
+              div.text-center
+                span Don't have an account? 
+                  a(href="register.html") Create Now
 
-//- Tooltip & popover modal
-div.modal-main
-  input#modal-9(class="peer" name="modal-9" type='checkbox')
-  label.modal-overlay(class="peer-checked:block" for='modal-9')
-  div.modal(class="w-[18.75rem] peer-checked:opacity-100 peer-checked:visible dark:bg-sidebar-dark2")
-    div.modal-header
-      h3 Modal Title
-      label(for='modal-9') 
-        i(data-feather="x" class="w-4 h-4 stroke-dark")
-    div.modal-body
-      p.leading- Here, you can see that inside the
-        label.button-label.btn-secondary(data-tw-tooltip="Tooltip") popover
-        |   modal, you can set the tooltip.
+      //- Tooltip & popover modal
+      div.modal-main
+        input#modal-9(class="peer" name="modal-9" type='checkbox')
+        label.modal-overlay(class="peer-checked:block" for='modal-9')
+        div.modal(class="w-[18.75rem] peer-checked:opacity-100 peer-checked:visible dark:bg-sidebar-dark2")
+          div.modal-header
+            h3 Modal Title
+            label(for='modal-9') 
+              i(data-feather="x" class="w-4 h-4 stroke-dark")
+          div.modal-body
+            p.leading- Here, you can see that inside the
+              label.button-label.btn-secondary(data-tw-tooltip="Tooltip") popover
+              |   modal, you can set the tooltip.
 
-//- Top-left modal
-div.modal-main
-  input#modal-10(class="peer" name="modal-10" type='checkbox')
-  label.modal-overlay(class="peer-checked:block" for='modal-10')
-  div.modal.modal-top-left(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] dark:bg-sidebar-dark2")
-    div.modal-body.text-center
-      ul.modal-img
-        li
-          img(class="" src="../../assets/images/modal/whatsapp.gif" alt="whatsapp" class="w-52")
-        li
-          img(class="" src="../../assets/images/modal/instagram.gif" alt="instagram" class="w-52")
-        li
-          img(class="" src="../../assets/images/modal/facebook.gif" alt="facebook" class="w-52")
-      p.my-3 Remove your complete account from your phone or tablet to sign out of the Gmail app.
-      label(for="modal-10").btn.btn-primary.p-2.text-white Create an account
+      //- Top-left modal
+      div.modal-main
+        input#modal-10(class="peer" name="modal-10" type='checkbox')
+        label.modal-overlay(class="peer-checked:block" for='modal-10')
+        div.modal.modal-top-left(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] dark:bg-sidebar-dark2")
+          div.modal-body.text-center
+            ul.modal-img
+              li
+                img(class="" src="../../assets/images/modal/whatsapp.gif" alt="whatsapp" class="w-52")
+              li
+                img(class="" src="../../assets/images/modal/instagram.gif" alt="instagram" class="w-52")
+              li
+                img(class="" src="../../assets/images/modal/facebook.gif" alt="facebook" class="w-52")
+            p.my-3 Remove your complete account from your phone or tablet to sign out of the Gmail app.
+            label(for="modal-10").btn.btn-primary.p-2.text-white Create an account
 
-//- Top-center modal
-div.modal-main
-  input#modal-11(class="peer" name="modal-11" type='checkbox')
-  label.modal-overlay(class="peer-checked:block" for='modal-11')
-  div.modal.modal-top-center(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] dark:bg-sidebar-dark2")
-    div.modal-body.text-center
-      ul.modal-img
-        li
-          img(class="" src="../../assets/images/modal/whatsapp.gif" alt="whatsapp" class="w-52")
-        li
-          img(class="" src="../../assets/images/modal/instagram.gif" alt="instagram" class="w-52")
-        li
-          img(class="" src="../../assets/images/modal/facebook.gif" alt="facebook" class="w-52")
-      p.my-3 Remove your complete account from your phone or tablet to sign out of the Gmail app.
-      label(for="modal-11").btn.btn-primary.p-2.text-white Create an account
+      //- Top-center modal
+      div.modal-main
+        input#modal-11(class="peer" name="modal-11" type='checkbox')
+        label.modal-overlay(class="peer-checked:block" for='modal-11')
+        div.modal.modal-top-center(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] dark:bg-sidebar-dark2")
+          div.modal-body.text-center
+            ul.modal-img
+              li
+                img(class="" src="../../assets/images/modal/whatsapp.gif" alt="whatsapp" class="w-52")
+              li
+                img(class="" src="../../assets/images/modal/instagram.gif" alt="instagram" class="w-52")
+              li
+                img(class="" src="../../assets/images/modal/facebook.gif" alt="facebook" class="w-52")
+            p.my-3 Remove your complete account from your phone or tablet to sign out of the Gmail app.
+            label(for="modal-11").btn.btn-primary.p-2.text-white Create an account
 
-//- Top-right modal
-div.modal-main
-  input#modal-14(class="peer" name="modal-14" type='checkbox')
-  label.modal-overlay(class="peer-checked:block" for='modal-14')
-  div.modal.modal-top-right(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] dark:bg-sidebar-dark2")
-    div.modal-body.text-center
-      ul.modal-img
-        li
-          img(class="" src="../../assets/images/modal/whatsapp.gif" alt="whatsapp" class="w-52")
-        li
-          img(class="" src="../../assets/images/modal/instagram.gif" alt="instagram" class="w-52")
-        li
-          img(class="" src="../../assets/images/modal/facebook.gif" alt="facebook" class="w-52")
-      p.my-3 Remove your complete account from your phone or tablet to sign out of the Gmail app.
-      label(for="modal-14").btn.btn-primary.p-2.text-white  Create an account
+      //- Top-right modal
+      div.modal-main
+        input#modal-14(class="peer" name="modal-14" type='checkbox')
+        label.modal-overlay(class="peer-checked:block" for='modal-14')
+        div.modal.modal-top-right(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] dark:bg-sidebar-dark2")
+          div.modal-body.text-center
+            ul.modal-img
+              li
+                img(class="" src="../../assets/images/modal/whatsapp.gif" alt="whatsapp" class="w-52")
+              li
+                img(class="" src="../../assets/images/modal/instagram.gif" alt="instagram" class="w-52")
+              li
+                img(class="" src="../../assets/images/modal/facebook.gif" alt="facebook" class="w-52")
+            p.my-3 Remove your complete account from your phone or tablet to sign out of the Gmail app.
+            label(for="modal-14").btn.btn-primary.p-2.text-white  Create an account
 
-//- Bottom-left modal
-div.modal-main
-  input#modal-12(class="peer" name="modal-12" type='checkbox')
-  label.modal-overlay(class="peer-checked:block" for='modal-12')
-  div.modal.modal-bottom-left(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] dark:bg-sidebar-dark2")
-    div.modal-body.text-center
-      div.modal-img
-        img(class="" src="../../assets/images/modal/success.gif" alt="success" class="w-28")
-      h3.text-lg.font-bold.leading-none.mt-1 Success Message
-      p.my-2 Now, you can access your account.
-      label(for="modal-12").btn.btn-success.py-2px-3.text-white Close
+      //- Bottom-left modal
+      div.modal-main
+        input#modal-12(class="peer" name="modal-12" type='checkbox')
+        label.modal-overlay(class="peer-checked:block" for='modal-12')
+        div.modal.modal-bottom-left(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] dark:bg-sidebar-dark2")
+          div.modal-body.text-center
+            div.modal-img
+              img(class="" src="../../assets/images/modal/success.gif" alt="success" class="w-28")
+            h3.text-lg.font-bold.leading-none.mt-1 Success Message
+            p.my-2 Now, you can access your account.
+            label(for="modal-12").btn.btn-success.py-2px-3.text-white Close
 
-//- Bottom-center modal
-div.modal-main
-  input#modal-13(class="peer" name="modal-13" type='checkbox')
-  label.modal-overlay(class="peer-checked:block" for='modal-13')
-  div.modal.modal-bottom-center(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] dark:bg-sidebar-dark2")
-    div.modal-body.text-center
-      div.modal-img
-        img(class="" src="../../assets/images/modal/success.gif" alt="success" class="w-28")
-      h3.text-lg.font-bold.leading-none.mt-1 Success Message
-      p.my-2 Now, you can access your account.
-      label(for="modal-13").btn.btn-success.py-2px-3.text-white Close
+      //- Bottom-center modal
+      div.modal-main
+        input#modal-13(class="peer" name="modal-13" type='checkbox')
+        label.modal-overlay(class="peer-checked:block" for='modal-13')
+        div.modal.modal-bottom-center(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] dark:bg-sidebar-dark2")
+          div.modal-body.text-center
+            div.modal-img
+              img(class="" src="../../assets/images/modal/success.gif" alt="success" class="w-28")
+            h3.text-lg.font-bold.leading-none.mt-1 Success Message
+            p.my-2 Now, you can access your account.
+            label(for="modal-13").btn.btn-success.py-2px-3.text-white Close
 
-//- Bottom-right modal
-div.modal-main
-  input#modal-15(class="peer" name="modal-15" type='checkbox')
-  label.modal-overlay(class="peer-checked:block" for='modal-15')
-  div.modal.modal-bottom-right(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] dark:bg-sidebar-dark2")
-    div.modal-body.text-center
-      div.modal-img
-        img(class="" src="../../assets/images/modal/success.gif" alt="success" class="w-28")
-      h3.text-lg.font-bold.leading-none.mt-1 Success Message
-      p.my-2 Now, you can access your account.
-      label(for="modal-15").btn.btn-success.py-2px-3.text-white Close
-include ../../layout/footer-files
+      //- Bottom-right modal
+      div.modal-main
+        input#modal-15(class="peer" name="modal-15" type='checkbox')
+        label.modal-overlay(class="peer-checked:block" for='modal-15')
+        div.modal.modal-bottom-right(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] dark:bg-sidebar-dark2")
+          div.modal-body.text-center
+            div.modal-img
+              img(class="" src="../../assets/images/modal/success.gif" alt="success" class="w-28")
+            h3.text-lg.font-bold.leading-none.mt-1 Success Message
+            p.my-2 Now, you can access your account.
+            label(for="modal-15").btn.btn-success.py-2px-3.text-white Close
+  include ../../layout/footer-files

@@ -22,7 +22,7 @@
 
       &:before,
       &:after {
-        @apply bg-gray-100 dark:bg-border-dark text-dark leading-none;
+        @apply bg-gray-100 dark:bg-light text-dark leading-none;
       }
 
       &.step-primary {
