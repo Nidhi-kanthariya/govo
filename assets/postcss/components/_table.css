@@ -60,7 +60,7 @@
       tbody {
         tr {
           td {
-            @apply last:text-end first:pl-[.3438rem] last:pr-[.3438rem] rtl:text-right; 
+            @apply last:text-end first:pl-[.3438rem] last:pr-[.3438rem] rtl:text-right;
           }
         }
       }
@@ -199,7 +199,7 @@
             @apply bg-info-light text-dark;
           }
           &:nth-child(7n + 4) {
-            @apply bg-success-light text-dark;
+            @apply bg-success-light text-dark dark:bg-sidebar-dark2;
           }
           &:nth-child(7n + 5) {
             @apply bg-warning-light text-dark;

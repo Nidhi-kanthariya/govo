@@ -130,8 +130,8 @@ html(lang='en')
                         i(data-feather='paperclip' class="w-4 h-4 stroke-title")
                         span.text-sm.font-semibold.text-content3.uppercase Attachment (60 MB)
                       div.flex.items-center.gap-1
-                        button.btn.btn-light.text-xs.py-2.text-chart-dark View All
-                        button.btn.btn-light.text-xs.py-2.text-primary Download All
+                        button(class="dark:bg-sidebar-dark2").btn.btn-light.text-xs.py-2.text-chart-dark View All
+                        button(class="dark:bg-sidebar-dark2").btn.btn-light.text-xs.py-2.text-primary Download All
                     div.flex.gap-4.items-center.flex-wrap
                       img(class="max-w-[180px] h-[115px] object-cover" src=`../../assets/images/email-app/1.png` alt=`flower`) 
                       img(class="max-w-[180px] h-[115px] object-cover" src=`../../assets/images/email-app/2.png` alt=`emoji`) 
@@ -151,33 +151,33 @@ html(lang='en')
       div.modal-main
         input#modal-16(class="peer" name="modal-16" type='checkbox')
         label.modal-overlay(class="peer-checked:block" for='modal-16')
-        div.modal.modal-bottom-right(class="invisible w-11/12 max-w-xl transition-all duration-1000 translate-y-0 opacity-0 peer-checked:opacity-100 peer-checked:visible peer-checked:-translate-y-9 !right-[2%]")
+        div.modal.modal-bottom-right(class="invisible dark:bg-sidebar-dark2 w-11/12 max-w-xl transition-all duration-1000 translate-y-0 opacity-0 peer-checked:opacity-100 peer-checked:visible peer-checked:-translate-y-9 !right-[2%]")
           div.modal-header 
             h3 New Message
-            label(for='modal-16') 
+            label(for='modal-16')
               i(data-feather="x" class="w-4 h-4 stroke-title")
           div.modal-body(class="2sm:!py-2") 
             form
-              div.border-b.border-border-light.py-3.flex.items-center(class="leading-7 2sm:flex-col 2sm:items-start")
+              div.border-b.border-border-light.py-3.flex.items-center(class="leading-7 dark:border-border-dark dark:border-b 2sm:flex-col 2sm:items-start")
                 div(class="min-w-[70px]")
                   label(for="toSend" class="min-w-[70px]") To 
-                span.text-xs.text-content.font-semibold.bg-gray-light.flex.items-center.gap-2.px-4.py-1.rounded-3xl 
+                span(class="dark:bg-sidebar-dark2").text-xs.text-content.font-semibold.bg-gray-light.flex.items-center.gap-2.px-4.py-1.rounded-3xl 
                   |   degose5197@weepm.com
                   +SVG_ICON("Close-Square", "w-4 h-4 stroke-title alert-del")
-              div.border-b.border-border-light.py-3.flex.items-center(class="leading-7 2sm:flex-col 2sm:items-start")
+              div.border-b.border-border-light.py-3.flex.items-center(class="leading-7 dark:border-border-dark dark:border-b 2sm:flex-col 2sm:items-start")
                 div(class="min-w-[70px]")
                   label(for="toReceive" class="min-w-[70px]") From 
                 span.text-xs.text-content.font-semibold.bg-primary-light.flex.items-center.gap-2.px-4.py-1.rounded-3xl 
                   |   degose5197@weepm.com
                   +SVG_ICON("Close-Square", "w-4 h-4 stroke-title alert-del")
-              div.border-b.border-border-light.py-3.flex.items-center(class="leading-7 2sm:flex-col 2sm:items-start")
+              div.border-b.border-border-light.py-3.flex.items-center(class="leading-7 dark:border-border-dark dark:border-b 2sm:flex-col 2sm:items-start")
                 div(class="min-w-[70px]")
                   label(for="toSend" class="min-w-[70px]") Subject 
                 input(type="text" class="w-full text-xs font-semibold bg-transparent text-content3" value="Here’s the secret on how we can help raw succeed")
               div.py-3.flex.items-center
-                textarea(placeholder="Message.." row="10" id="reply" class="py-1 pl-[8px] pr-[55px] min-h-max").w-full.rounded-5.text-xs.text-content
+                textarea(placeholder="Message.." row="10" id="reply" class="dark:bg-sidebar-dark2 py-1 pl-[8px] pr-[55px] min-h-max").w-full.rounded-5.text-xs.text-content
               div
-                input(type="file" class="email-dropzone")
+                input(type="file" class="email-dropzone dark:bg-sidebar-dark2")
           div.modal-footer
             div.flex.items-center.justify-between.gap-2
               ul.flex.items-center.gap-3

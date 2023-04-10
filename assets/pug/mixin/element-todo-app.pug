@@ -11,11 +11,11 @@ mixin todo-left-sidebar(data)
     | New Task
   div(class="mt-4 bg-gray-light dark:bg-sidebar-dark2 lg:h-full")
     ul.flex.flex-col.gap-0
-      li.pl-3.pr-2.rounded-5(class="rtl:pl-2 rtl:rounded-tr-none rtl:rounded-br-none dark:hover:bg-sidebar-dark rtl:rounded-tl-[25px] rtl:rounded-bl-[25px] hover:rounded-tr-[25px] hover:rounded-br-[25px] rtl:hover:rounded-tr-none rtl:hover:rounded-br-none rtl:hover:rounded-tl-[25px] rtl:hover:rounded-bl-[25px] py-[0.6rem] first:text-primary last:mb-4 hover:bg-white dark:hover:bg-mode-200 mr-4 first:mt-[20px] hover:rounded-tr-[25px] hover:rounded-br-[25px] first:bg-white first:rounded-tr-[25px] first:rounded-br-[25px]")
+      li.pl-3.pr-2.rounded-5(class="rtl:pl-2 rtl:rounded-tr-none rtl:rounded-br-none  dark:bg-sidebar-dark  dark:hover:bg-sidebar-dark rtl:rounded-tl-[25px] rtl:rounded-bl-[25px] hover:rounded-tr-[25px] hover:rounded-br-[25px] rtl:hover:rounded-tr-none rtl:hover:rounded-br-none rtl:hover:rounded-tl-[25px] rtl:hover:rounded-bl-[25px] py-[0.6rem] first:text-primary last:mb-4 hover:bg-white dark:hover:bg-mode-200 mr-4 first:mt-[20px] hover:rounded-tr-[25px] hover:rounded-br-[25px] first:bg-white first:rounded-tr-[25px] first:rounded-br-[25px]")
         a(href="javascript:void(0)" class="flex items-center justify-between")
           span.flex.items-center.gap-2
             +SVG_ICON(`Message`,"w-[1.125rem] h-[1.125rem] stroke-primary")
-            small.text-xs.font-medium(class="text-primary") Index
+            small.text-xs.font-medium(class="text-primary ") Index
           h6.text-sm(class="text-primary") (30)
       each item in TODO_SIDEBAR_DATA  
         li.pl-3.pr-2.rounded-5(class="rtl:pl-2 hover:rounded-tr-[25px] hover:rounded-br-[25px] dark:hover:bg-sidebar-dark rtl:hover:rounded-tr-none rtl:hover:rounded-br-none rtl:hover:rounded-tl-[25px] rtl:hover:rounded-bl-[25px] py-[0.6rem] first:text-primary last:mb-4 hover:bg-white dark:hover:bg-mode-200 mr-4 first:mt-[20px] hover:rounded-tr-[25px] hover:rounded-br-[25px] first:bg-white first:rounded-tr-[25px] first:rounded-br-[25px]")
@@ -39,14 +39,13 @@ mixin todo-app-data(data)
                 i(data-feather="check" class=`check-icon w-[calc(16px_+_(22_-_16)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(16px_+_(22_-_16)_*_((100vw_-_320px)_/_(1920_-_320)))] transition-all opacity-0`)
           div(class="max-w-[calc(48px_+_(650_-_48)_*_((100vw_-_320px)_/_(1920_-_320)))] edit-div min-lg:min-w-[calc(66px_+_(650_-_66)_*_((100vw_-_320px)_/_(1920_-_320)))] min-w-[calc(120px_+_(650_-_120)_*_((100vw_-_320px)_/_(1920_-_320)))]")
             h5.font-medium.text-dark.truncate(class="text-xs focus:border focus:border-light dark:focus:border-mode-200 focus:outline-none focus:px-2 focus:rounded-5")= item.title
-
         div  
           ul.flex.gap-3.todo-sublist
-            li.cursor-pointer 
+            li.cursor-pointer  
               div.badge.badge-sm.capitalize.px-3.font-bold.rounded-full.text-primary.bg-primary-extralight(class=`priority-${item.priority} !text-3xs`)=item.priority  
             li.cursor-pointer 
-              div.badge.badge-sm.capitalize.px-3.font-bold.rounded-full.text-success.bg-success-light(class=`status-${item.status} !text-3xs`)=item.status             
-            li.cursor-pointer 
+              div(class="dark:bg-sidebar-dark2").badge.badge-sm.capitalize.px-3.font-bold.rounded-full.text-success.bg-success-light(class=`status-${item.status} !text-3xs`)=item.status             
+            li.cursor-pointer
               i.transition-all(data-feather="edit" class="stroke-twitter opacity-50 hover:opacity-100 w-[calc(16px_+_(18_-_16)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(16px_+_(18_-_16)_*_((100vw_-_320px)_/_(1920_-_320)))] edit")
-            li.cursor-pointer 
+            li.cursor-pointer
               i.transition-all(data-feather="trash" class="stroke-danger opacity-50 hover:opacity-100 w-[calc(16px_+_(18_-_16)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(16px_+_(18_-_16)_*_((100vw_-_320px)_/_(1920_-_320)))] delete")
