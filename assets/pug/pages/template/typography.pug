@@ -171,7 +171,6 @@ html(lang='en')
                         p(class="text-success") This is success heading 4, you can add using <code class="font-black">.text-success</code> class.      
                         p(class="text-warning") This is warning heading 5, you can add using <code class="font-black">.text-warning</code> class.      
                         p(class="text-danger") This is danger heading 6, you can add using <code class="font-black">.text-danger</code> class.
-                        p(class="text-light") This is light heading 6, you can add using <code class="font-black">.text-light</code> class.  
                     div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white") 
                         i(data-feather="clipboard")
@@ -189,9 +188,7 @@ html(lang='en')
                           |    &lt;p class="text-warning"&gt; This is warning heading 5, you can add using
                           |        &lt;code class="font-black"&gt;.text-warning&lt;/code&gt;&lt;/p&gt; 
                           |    &lt;p class="text-danger"&gt; This is danger heading 6, you can add using
-                          |        &lt;code class="font-black"&gt;.text-danger&lt;/code&gt;&lt;/p&gt;
-                          |    &lt;p class="text-light"&gt; This is light heading 6, you can add using
-                          |        &lt;code class="font-black"&gt;.text-light&lt;/code&gt;&lt;/p&gt;                                   
+                          |        &lt;code class="font-black"&gt;.text-danger&lt;/code&gt;&lt;/p&gt;                                
                           |&lt;/div&gt; 
             div.col-span-6(class="2md:col-span-12")
               div.card.tabs
@@ -211,8 +208,6 @@ html(lang='en')
                         p
                           | <del>This line of text is meant to be treated as deleted text.</del>
                         p 
-                          | <s>This line of text is meant to be treated as no longer accurate.</s> 
-                        p 
                           | <u>This line of text will render as underlined</u>
                         p 
                           | <small>This line of text is meant to be treated as fine print.</small>
@@ -228,7 +223,6 @@ html(lang='en')
                           |&lt;div class="flex flex-col gap-2"&gt; 
                           |   &lt;p&gt; You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt;text.&lt;/p&gt; 
                           |   &lt;p&gt;&lt;del&gt;This line of text is meant to be treated as deleted text.&lt;/del&gt;&lt;/p&gt;
-                          |   &lt;p&gt;&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;/s&gt;&lt;/p&gt;
                           |   &lt;p&gt;&lt;u&gt;This line of text will render as underlined.&lt;/u&gt;&lt;/p&gt;
                           |   &lt;p&gt;&lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;&lt;/p&gt;
                           |   &lt;p&gt;&lt;strong&gt;This line rendered as bold text.&lt;/strong&gt;&lt;/p&gt;
@@ -336,7 +330,7 @@ html(lang='en')
                     p For list-styling you can use Description list using    
                       strong dl 
                       | and 
-                      strong dt
+                      strong dt.
                     div.preview-code.tab-links
                       button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview
                       button.p-0.tab.tab-lifted(data-tabFilter="2" class="tab-link tab-2") Html
@@ -439,13 +433,13 @@ html(lang='en')
                     div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
                       div.flex.flex-col.gap-2
                         blockquote.text-start(class="p-2 border-l-4 border-primary bg-primary-light text-primary")
-                          p.mb-1  The <code>blockquote</code> tag specifies a section that is quoted from another source.
+                          p.mb-1  The only journey that is impossible is the one you never set out on.
                           .blockquote-footer
-                            cite(title='Source Title') - Source Title
+                            cite(title='Source Title') - Tony Robbins
                         blockquote.text-end(class="p-2 border-r-4 border-secondary bg-secondary-extralight text-secondary")
-                          p.mb-1  The <code>blockquote</code> tag specifies a section that is quoted from another source.
+                          p.mb-1  Live in the sunshine, swim the sea, drink the wild air.
                           .blockquote-footer
-                            cite(title='Source Title') - Source Title
+                            cite(title='Source Title') - Ralph Waldo Emerson
                     div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white") 
                         i(data-feather="clipboard")
@@ -453,12 +447,12 @@ html(lang='en')
                         code(class="dark:bg-sidebar-dark2") 
                           |&lt;div class="flex flex-col gap-2"&gt; 
                           |   &lt;blockquote class="p-2 border-l-4 text-start border-primary bg-primary-light text-primary"&gt;
-                          |       &lt;p class="mb-1"&gt;The <code>blockquote</code> tag specifies a section that is quoted from another source.&lt;/p&gt;
-                          |   &lt;blockquote-footer&gt;&lt;cite title="Source Title"&gt;&lt;cite&gt;&lt;/blockquote-footer&gt; 
+                          |       &lt;p class="mb-1"&gt;The only journey that is impossible is the one you never set out on.&lt;/p&gt;
+                          |   &lt;blockquote-footer&gt;&lt;cite title="Source Title"&gt;&lt; - Tony Robbins&gt;&lt;/blockquote-footer&gt; 
                           |   &lt;/blockquote&gt; 
                           |   &lt;blockquote class="p-2 border-l-4 text-end border-secondary bg-secondary-extralight text-secondary"&gt;
-                          |       &lt;p class="mb-1"&gt;The <code>blockquote</code> tag specifies a section that is quoted from another source.&lt;/p&gt;
-                          |   &lt;blockquote-footer&gt;&lt;cite title="Source Title"&gt;&lt;cite&gt;&lt;/blockquote-footer&gt; 
+                          |       &lt;p class="mb-1"&gt;Live in the sunshine, swim the sea, drink the wild air.&lt;/p&gt;
+                          |   &lt;blockquote-footer&gt;&lt;cite title="Source Title"&gt;&lt; - Ralph Waldo Emerson&gt;&lt;/blockquote-footer&gt; 
                           |   &lt;/blockquote&gt;                               
                           |&lt;/div&gt;
 

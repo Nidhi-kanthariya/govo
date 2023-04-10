@@ -38,7 +38,7 @@ html(lang='en')
           include ../../layout/unique 
         // Sidebar End 
 
-        // Page Body Start 
+        // Page Body Start
         div.page-body
           div.grid.grid-cols-12.email-main(class="lg:gap-0 gap-card-gap")
             div.col-span-3(class="xl:col-span-4") 
@@ -47,10 +47,10 @@ html(lang='en')
             div.col-span-9(class="xl:col-span-8 lg:col-span-12 email-main-sec")
               // Email Start
               div.card.email-input-aside(class="emailList")
-                div(class="flex items-center justify-between pb-3 pl-2 border-b 2xl:p-card-spacing border-border-light  dark:border-b dark:border-border-dark  2sm:flex-col-reverse 2sm:gap-4 2sm:items-start ")
+                div(class="flex items-center justify-between pb-3 pl-2 border-b 2xl:p-card-spacing border-border-light dark:border-b dark:border-border-dark 2sm:flex-col-reverse 2sm:gap-4 2sm:items-start ")
                   div.flex.gap-2.items-center
                     div.flex.items-center.gap-1 
-                      label.checkbox(class="w-[18px] h-[18px]")
+                      label.checkbox(class="w-[18px] h-[18px]")  
                         input(type='checkbox' class="peer") 
                         div.checkbox-indicator(class="peer-checked:!bg-primary peer-checked:!border-primary !border-content3")  
                           i(data-feather="check")
@@ -130,8 +130,8 @@ html(lang='en')
                         i(data-feather='paperclip' class="w-4 h-4 stroke-title")
                         span.text-sm.font-semibold.text-content3.uppercase Attachment (60 MB)
                       div.flex.items-center.gap-1
-                        button(class="dark:bg-sidebar-dark2").btn.btn-light.text-xs.py-2.text-chart-dark View All
-                        button(class="dark:bg-sidebar-dark2").btn.btn-light.text-xs.py-2.text-primary Download All
+                        button.btn.btn-light.text-xs.py-2.text-chart-dark View All
+                        button.btn.btn-light.text-xs.py-2.text-primary Download All
                     div.flex.gap-4.items-center.flex-wrap
                       img(class="max-w-[180px] h-[115px] object-cover" src=`../../assets/images/email-app/1.png` alt=`flower`) 
                       img(class="max-w-[180px] h-[115px] object-cover" src=`../../assets/images/email-app/2.png` alt=`emoji`) 
@@ -152,11 +152,11 @@ html(lang='en')
         input#modal-16(class="peer" name="modal-16" type='checkbox')
         label.modal-overlay(class="peer-checked:block" for='modal-16')
         div.modal.modal-bottom-right(class="invisible w-11/12 max-w-xl transition-all duration-1000 translate-y-0 opacity-0 peer-checked:opacity-100 peer-checked:visible peer-checked:-translate-y-9 !right-[2%]")
-          div.modal-header(class="dark:bg-sidebar-dark2")
+          div.modal-header 
             h3 New Message
-            label(for='modal-16')
+            label(for='modal-16') 
               i(data-feather="x" class="w-4 h-4 stroke-title")
-          div.modal-body(class="2sm:!py-2 dark:bg-sidebar-dark2")
+          div.modal-body(class="2sm:!py-2") 
             form
               div.border-b.border-border-light.py-3.flex.items-center(class="leading-7 2sm:flex-col 2sm:items-start")
                 div(class="min-w-[70px]")
@@ -178,13 +178,13 @@ html(lang='en')
                 textarea(placeholder="Message.." row="10" id="reply" class="py-1 pl-[8px] pr-[55px] min-h-max").w-full.rounded-5.text-xs.text-content
               div
                 input(type="file" class="email-dropzone")
-          div.modal-footer(class="dark:bg-sidebar-dark2")
+          div.modal-footer
             div.flex.items-center.justify-between.gap-2
               ul.flex.items-center.gap-3
                 li.leading-none.border-r.border-border-light.pr-2 
                   label(for="modal-16")
                     +SVG_ICON("Delete", "w-6 h-6 stroke-title cursor-pointer")
-                li.leading-none
+                li.leading-none 
                   div.dropdown.dropdown-top
                     i(data-feather="more-vertical" class="w-5 h-5 cursor-pointer stroke-title")
                     div.dropdown-menu(class="!w-fit !p-1")
@@ -194,4 +194,6 @@ html(lang='en')
                         li(class="px-2 py-1 leading-none rounded hover:bg-gray-light") Check spelling 
               div.flex.items-center.gap-3
                 label(for="modal-16").btn.btn-primary.py-2.px-4.text-white.uppercase Send
+
+
   include ../../layout/footer-files

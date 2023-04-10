@@ -52,7 +52,7 @@ html(lang='en')
                     div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
                       div.flex.flex-col.flex-wrap.gap-2
                         div.flex.items-center.flex-wrap.gap-2
-                          button.btn.btn-primary.text-white(data-tw-tooltip="Always top") Default Top
+                          button.btn.btn-primary.text-white(data-tw-tooltip="Surprise!!! I appreciate your hovering...") Please hover over me, it's magic... 
                     div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white") 
                         i(data-feather="clipboard")
@@ -60,7 +60,7 @@ html(lang='en')
                         code(class="dark:bg-sidebar-dark2")
                           |&lt;div class="flex flex-col flex-wrap gap-2"&gt;
                           |   &lt;div class="flex flex-wrap items-center gap-2"&gt;
-                          |       &lt;button class="text-white btn btn-primary" data-tw-tooltip="Always top"&gt;Default Top&lt;/button&gt;
+                          |       &lt;button class="text-white btn btn-primary" data-tw-tooltip="Surprise!!! I appreciate your hovering..."&gt;Please hover over me, it's magic... &lt;/button&gt;
                           |   &lt;/div&gt; 
                           |&lt;/div&gt;
             div.col-span-6(class="2md:col-span-12")
@@ -77,7 +77,7 @@ html(lang='en')
                     div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
                       div.flex.flex-col.flex-wrap.gap-2
                         div.flex.items-center.flex-wrap.gap-2
-                          button.btn.bg-primary-light(data-tw-tooltip="Focused" class="hover:bg-primary hover:text-white focus:bg-primary focus:border-primary focus:text-white") Focused
+                          button.btn.bg-warning-light(data-tw-tooltip="Focused" class="hover:bg-warning hover:text-white focus:bg-warning focus:border-warning focus:text-white") Focused
                     div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white") 
                         i(data-feather="clipboard")
@@ -85,7 +85,7 @@ html(lang='en')
                         code(class="dark:bg-sidebar-dark2")
                           |&lt;div class="flex flex-col flex-wrap gap-2"&gt;
                           |   &lt;div class="flex flex-wrap items-center gap-2"&gt;
-                          |       &lt;button class="btn bg-primary-light" data-tw-tooltip="Focused" class="hover:bg-primary hover:text-white focus:bg-primary focus:border-primary focus:text-white&gt;Focused&lt;/button&gt;
+                          |       &lt;button class="btn bg-warning-light" data-tw-tooltip="Focused" class="hover:bg-warning hover:text-white focus:bg-warning focus:border-warning focus:text-white&gt;Focused&lt;/button&gt;
                           |   &lt;/div&gt; 
                           |&lt;/div&gt;
             div.col-span-6(class="2md:col-span-12")
@@ -136,10 +136,10 @@ html(lang='en')
                     div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
                       div.flex.flex-col.flex-wrap.gap-2
                         div.flex.items-center.flex-wrap.gap-2
-                          button.btn.border.border-primary(data-tw-tooltip="Top tooltip" data-flow="top") Top Tooltip
-                          button.btn.border.border-primary(data-tw-tooltip="Left tooltip" data-flow="left") Left Tooltip
-                          button.btn.border.border-primary(data-tw-tooltip="Right tooltip" data-flow="right") Right Tooltip
-                          button.btn.border.border-primary(data-tw-tooltip="Bottom tooltip" data-flow="bottom") Bottom Tooltip
+                          button.btn.btn-outline.btn-secondary(data-tw-tooltip="Top tooltip" data-flow="top" class="dark:bg-sidebar-dark2") Top Tooltip
+                          button.btn.btn-outline.btn-warning(data-tw-tooltip="Left tooltip" data-flow="left" class="dark:bg-sidebar-dark2") Left Tooltip
+                          button.btn.btn-outline.btn-info(data-tw-tooltip="Right tooltip" data-flow="right" class="dark:bg-sidebar-dark2") Right Tooltip
+                          button.btn.btn-outline.btn-success(data-tw-tooltip="Bottom tooltip" data-flow="bottom" class="dark:bg-sidebar-dark2") Bottom Tooltip
                     div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white") 
                         i(data-feather="clipboard")
@@ -147,10 +147,10 @@ html(lang='en')
                         code(class="dark:bg-sidebar-dark2")
                           |&lt;div class="flex flex-col flex-wrap gap-2"&gt;
                           |   &lt;div class="flex flex-wrap items-center gap-2"&gt;
-                          |       &lt;button class="border btn border-primary" data-tw-tooltip="Top tooltip" data-flow="top"&gt;Top Tooltip&lt;/button&gt;
-                          |       &lt;button class="border btn border-primary" data-tw-tooltip="Left tooltip" data-flow="left"&gt;Left Tooltip&lt;/button&gt;
-                          |       &lt;button class="border btn border-primary" data-tw-tooltip="Right tooltip" data-flow="right"&gt;Right Tooltip&lt;/button&gt;
-                          |       &lt;button class="border btn border-primary" data-tw-tooltip="Bottom tooltip" data-flow="bottom"&gt;Bottom Tooltip&lt;/button&gt;
+                          |       &lt;button class="btn btn-outline btn-secondary" data-tw-tooltip="Top tooltip" data-flow="top" class="dark:bg-sidebar-dark2"&gt;Top Tooltip&lt;/button&gt;
+                          |       &lt;button class="btn btn-outline btn-warning" data-tw-tooltip="Left tooltip" data-flow="left" class="dark:bg-sidebar-dark2"&gt;Left Tooltip&lt;/button&gt;
+                          |       &lt;button class="btn btn-outline btn-info" data-tw-tooltip="Right tooltip" data-flow="right" class="dark:bg-sidebar-dark2"&gt;Right Tooltip&lt;/button&gt;
+                          |       &lt;button class="btn btn-outline btn-success" data-tw-tooltip="Bottom tooltip" data-flow="bottom" class="dark:bg-sidebar-dark2"&gt;Bottom Tooltip&lt;/button&gt;
                           |   &lt;/div&gt; 
                           |&lt;/div&gt;; 
             div.col-span-6(class="2md:col-span-12")

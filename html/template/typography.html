@@ -26,7 +26,7 @@
     <main class="page-wrapper">
       <div class="page-body-wrapper xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300">
         <!-- Page Header start-->
-        <header class="fixed top-0 z-[4] xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto">
+        <header class="fixed top-0 z-[6] xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto">
           <div class="page-header w-full transition-all bg-white shadow-header dark:bg-sidebar-dark">
             <div class="py-[11px] flex items-center xl:relative justify-between px-body-space">
               <div class="left-header flex items-center gap-2">
@@ -380,7 +380,7 @@
                     <!-- Profile Start -->
                     <div class="dropdown"> 
                       <div class="flex items-center gap-[10px] cursor-pointer"> 
-                        <div><img class="w-[calc(35px_+_(40_-_35)_*_((100vw_-_320px)_/_(1920_-_320)))] h-auto rounded-full" src="../../assets/images/avatar/1.jpg" alt="avatar"></div>
+                        <div><img class="w-[calc(35px_+_(40_-_35)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(35px_+_(40_-_35)_*_((100vw_-_320px)_/_(1920_-_320)))] rounded-full" src="../../assets/images/avatar/1.jpg" alt="avatar"></div>
                         <div class="md:hidden">
                           <h4 class="text-xs font-bold dark:text-white"> Helen Walter</h4><span class="flex items-center gap-1 font-semibold text-3xs text-content">Admin
                             <svg class="w-[6px] h-[4px]  dark:stroke-white"> 
@@ -1143,7 +1143,6 @@
                         <p class="text-success">This is success heading 4, you can add using <code class="font-black">.text-success</code> class.      </p>
                         <p class="text-warning">This is warning heading 5, you can add using <code class="font-black">.text-warning</code> class.      </p>
                         <p class="text-danger">This is danger heading 6, you can add using <code class="font-black">.text-danger</code> class.</p>
-                        <p class="text-light">This is light heading 6, you can add using <code class="font-black">.text-light</code> class.  </p>
                       </div>
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
@@ -1160,9 +1159,7 @@
    &lt;p class="text-warning"&gt; This is warning heading 5, you can add using
        &lt;code class="font-black"&gt;.text-warning&lt;/code&gt;&lt;/p&gt; 
    &lt;p class="text-danger"&gt; This is danger heading 6, you can add using
-       &lt;code class="font-black"&gt;.text-danger&lt;/code&gt;&lt;/p&gt;
-   &lt;p class="text-light"&gt; This is light heading 6, you can add using
-       &lt;code class="font-black"&gt;.text-light&lt;/code&gt;&lt;/p&gt;                                   
+       &lt;code class="font-black"&gt;.text-danger&lt;/code&gt;&lt;/p&gt;                                
 &lt;/div&gt; </code></pre>
                     </div>
                   </div>
@@ -1189,8 +1186,6 @@
                           You can use the mark tag to <mark>highlight</mark> text.</p>
                         <p><del>This line of text is meant to be treated as deleted text.</del></p>
                         <p>
-                           <s>This line of text is meant to be treated as no longer accurate.</s> </p>
-                        <p>
                            <u>This line of text will render as underlined</u></p>
                         <p>
                            <small>This line of text is meant to be treated as fine print.</small></p>
@@ -1205,7 +1200,6 @@
                       <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2"> &lt;div class="flex flex-col gap-2"&gt; 
   &lt;p&gt; You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt;text.&lt;/p&gt; 
   &lt;p&gt;&lt;del&gt;This line of text is meant to be treated as deleted text.&lt;/del&gt;&lt;/p&gt;
-  &lt;p&gt;&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;/s&gt;&lt;/p&gt;
   &lt;p&gt;&lt;u&gt;This line of text will render as underlined.&lt;/u&gt;&lt;/p&gt;
   &lt;p&gt;&lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;&lt;/p&gt;
   &lt;p&gt;&lt;strong&gt;This line rendered as bold text.&lt;/strong&gt;&lt;/p&gt;
@@ -1327,7 +1321,7 @@
                 <div class="card-header pb-2 header-bottom-border">
                   <div class="flex flex-col">
                     <h3 class="text-lg font-bold">Description List</h3>
-                    <p>For list-styling you can use Description list using    <strong>dl </strong>and <strong>dt</strong></p>
+                    <p>For list-styling you can use Description list using    <strong>dl </strong>and <strong>dt.</strong></p>
                     <div class="preview-code tab-links">
                       <button class="p-0 tab tab-lifted tab-active tab-link" data-tabFilter="1">Preview</button>
                       <button class="p-0 tab tab-lifted tab-link tab-2" data-tabFilter="2">Html</button>
@@ -1444,15 +1438,15 @@
                     <div class="tab-pan active show first:rounded-tl-none rounded-5" data-tabContent="1">
                       <div class="flex flex-col gap-2">
                         <blockquote class="text-start p-2 border-l-4 border-primary bg-primary-light text-primary">
-                          <p class="mb-1"> The <code>blockquote</code> tag specifies a section that is quoted from another source.</p>
+                          <p class="mb-1"> The only journey that is impossible is the one you never set out on.</p>
                           <div class="blockquote-footer">
-                            <cite title="Source Title">- Source Title</cite>
+                            <cite title="Source Title">- Tony Robbins</cite>
                           </div>
                         </blockquote>
                         <blockquote class="text-end p-2 border-r-4 border-secondary bg-secondary-extralight text-secondary">
-                          <p class="mb-1"> The <code>blockquote</code> tag specifies a section that is quoted from another source.</p>
+                          <p class="mb-1"> Live in the sunshine, swim the sea, drink the wild air.</p>
                           <div class="blockquote-footer">
-                            <cite title="Source Title">- Source Title</cite>
+                            <cite title="Source Title">- Ralph Waldo Emerson</cite>
                           </div>
                         </blockquote>
                       </div>
@@ -1461,12 +1455,12 @@
                       <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white"> <i data-feather="clipboard"></i></button>
                       <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2"> &lt;div class="flex flex-col gap-2"&gt; 
   &lt;blockquote class="p-2 border-l-4 text-start border-primary bg-primary-light text-primary"&gt;
-      &lt;p class="mb-1"&gt;The <code>blockquote</code> tag specifies a section that is quoted from another source.&lt;/p&gt;
-  &lt;blockquote-footer&gt;&lt;cite title="Source Title"&gt;&lt;cite&gt;&lt;/blockquote-footer&gt; 
+      &lt;p class="mb-1"&gt;The only journey that is impossible is the one you never set out on.&lt;/p&gt;
+  &lt;blockquote-footer&gt;&lt;cite title="Source Title"&gt;&lt; - Tony Robbins&gt;&lt;/blockquote-footer&gt; 
   &lt;/blockquote&gt; 
   &lt;blockquote class="p-2 border-l-4 text-end border-secondary bg-secondary-extralight text-secondary"&gt;
-      &lt;p class="mb-1"&gt;The <code>blockquote</code> tag specifies a section that is quoted from another source.&lt;/p&gt;
-  &lt;blockquote-footer&gt;&lt;cite title="Source Title"&gt;&lt;cite&gt;&lt;/blockquote-footer&gt; 
+      &lt;p class="mb-1"&gt;Live in the sunshine, swim the sea, drink the wild air.&lt;/p&gt;
+  &lt;blockquote-footer&gt;&lt;cite title="Source Title"&gt;&lt; - Ralph Waldo Emerson&gt;&lt;/blockquote-footer&gt; 
   &lt;/blockquote&gt;                               
 &lt;/div&gt;</code></pre>
                     </div>

@@ -101,15 +101,15 @@ html(lang='en')
                     div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
                       div.flex.flex-col.gap-2
                         div.progress-bar(class="dark:bg-border-dark")
-                          div(class="bg-primary text-[0.5625rem] font-bold text-center" style="width:0%") 0% 
+                          div(class="leading-[1.2] bg-primary text-[0.5625rem] font-bold text-center" style="width:0%") 0% 
                         div.progress-bar(class="dark:bg-border-dark")
-                          div(class="bg-secondary text-[0.5625rem] font-bold text-center text-white" style="width:10%") 10%
+                          div(class="leading-[1.2] bg-secondary text-[0.5625rem] font-bold text-center text-white" style="width:10%") 10%
                         div.progress-bar(class="dark:bg-border-dark")
-                          div(class="bg-info text-[0.5625rem] font-bold text-center text-white" style="width:40%") 40%
+                          div(class="leading-[1.2] bg-info text-[0.5625rem] font-bold text-center text-white" style="width:40%") 40%
                         div.progress-bar(class="dark:bg-border-dark")
-                          div(class="bg-success text-[0.5625rem] font-bold text-center" style="width:70%") 70%
+                          div(class="leading-[1.2] bg-success text-[0.5625rem] font-bold text-center" style="width:70%") 70%
                         div.progress-bar(class="dark:bg-border-dark")
-                          div(class="bg-warning text-[0.5625rem] font-bold text-center text-white" style="width:100%") 100%
+                          div(class="leading-[1.2] bg-warning text-[0.5625rem] font-bold text-center text-white" style="width:100%") 100%
                     div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white")
                         i(data-feather="clipboard")
@@ -117,19 +117,19 @@ html(lang='en')
                         code(class="dark:bg-sidebar-dark2")
                           |&lt;div class="flex flex-col gap-2"&gt;
                           |    &lt;div class="progress-bar dark:bg-border-dark"&gt;
-                          |        &lt;div class="bg-primary text-[0.5625rem] font-bold text-center" style="width:0%"&gt;&lt;/div&gt;
+                          |        &lt;div class="leading-[1.2] bg-primary text-[0.5625rem] font-bold text-center" style="width:0%"&gt;&lt;/div&gt;
                           |    &lt;/div&gt;
                           |     &lt;div class="progress-bar dark:bg-border-dark"&gt;
-                          |        &lt;div class="bg-secondary text-[0.5625rem] font-bold text-center" style="width:10%"&gt;&lt;/div&gt;
+                          |        &lt;div class="leading-[1.2] bg-secondary text-[0.5625rem] font-bold text-center" style="width:10%"&gt;&lt;/div&gt;
                           |    &lt;/div&gt;
                           |     &lt;div class="progress-bar dark:bg-border-dark"&gt;
-                          |        &lt;div class="bg-info text-[0.5625rem] font-bold text-center" style="width:40%"&gt;&lt;/div&gt;
+                          |        &lt;div class="leading-[1.2] bg-info text-[0.5625rem] font-bold text-center" style="width:40%"&gt;&lt;/div&gt;
                           |    &lt;/div&gt;
                           |     &lt;div class="progress-bar dark:bg-border-dark"&gt;
-                          |        &lt;div class="bg-success text-[0.5625rem] font-bold text-center" style="width:70%"&gt;&lt;/div&gt;
+                          |        &lt;div class="leading-[1.2] bg-success text-[0.5625rem] font-bold text-center" style="width:70%"&gt;&lt;/div&gt;
                           |    &lt;/div&gt;
                           |     &lt;div class="progress-bar dark:bg-border-dark"&gt;
-                          |        &lt;div class="bg-warning text-[0.5625rem] font-bold text-center" style="width:100%"&gt;&lt;/div&gt;
+                          |        &lt;div class="leading-[1.2] bg-warning text-[0.5625rem] font-bold text-center" style="width:100%"&gt;&lt;/div&gt;
                           |    &lt;/div&gt;
                           |&lt;/div&gt;
             div.col-span-6(class="2md:col-span-12")  
@@ -230,32 +230,32 @@ html(lang='en')
                         i(data-feather="clipboard")
                       pre(class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2")
                         code(class="dark:bg-sidebar-dark2")
-                        |&lt;div class="flex flex-col gap-3"&gt;
-                        |    &lt;div class="flex flex-col gap-1"&gt;
-                        |        &lt;div class="text-xs font-medium text-content3"&gt;Primary&lt;/div&gt;
-                        |        &lt;div class="progress-bar dark:bg-border-dark"&gt;
-                        |            &lt;div class="bg-primary" style="width:20%"&gt;&lt;/div&gt;
-                        |        &lt;/div&gt;
-                        |    &lt;/div&gt;
-                        |    &lt;div class="flex flex-col gap-1"&gt;
-                        |        &lt;div class="text-xs font-medium text-content3"&gt;Secondary&lt;/div&gt;
-                        |        &lt;div class="progress-bar dark:bg-border-dark"&gt;
-                        |            &lt;div class="bg-secondary" style="width:40%"&gt;&lt;/div&gt;
-                        |        &lt;/div&gt;
-                        |    &lt;/div&gt;
-                        |    &lt;div class="flex flex-col gap-1"&gt;
-                        |        &lt;div class="text-xs font-medium text-content3"&gt;Info&lt;/div&gt;
-                        |        &lt;div class="progress-bar dark:bg-border-dark"&gt;
-                        |            &lt;div class="bg-info" style="width:60%"&gt;&lt;/div&gt;
-                        |        &lt;/div&gt;
-                        |    &lt;/div&gt;
-                        |    &lt;div class="flex flex-col gap-1"&gt;
-                        |        &lt;div class="text-xs font-medium text-content3"&gt;Success&lt;/div&gt;
-                        |        &lt;div class="progress-bar dark:bg-border-dark"&gt;
-                        |            &lt;div class="bg-success" style="width:80%"&gt;&lt;/div&gt;
-                        |        &lt;/div&gt;
-                        |    &lt;/div&gt;
-                        |&lt;/div&gt;
+                          |&lt;div class="flex flex-col gap-3"&gt;
+                          |    &lt;div class="flex flex-col gap-1"&gt;
+                          |        &lt;div class="text-xs font-medium text-content3"&gt;Primary&lt;/div&gt;
+                          |        &lt;div class="progress-bar dark:bg-border-dark"&gt;
+                          |            &lt;div class="bg-primary" style="width:20%"&gt;&lt;/div&gt;
+                          |        &lt;/div&gt;
+                          |    &lt;/div&gt;
+                          |    &lt;div class="flex flex-col gap-1"&gt;
+                          |        &lt;div class="text-xs font-medium text-content3"&gt;Secondary&lt;/div&gt;
+                          |        &lt;div class="progress-bar dark:bg-border-dark"&gt;
+                          |            &lt;div class="bg-secondary" style="width:40%"&gt;&lt;/div&gt;
+                          |        &lt;/div&gt;
+                          |    &lt;/div&gt;
+                          |    &lt;div class="flex flex-col gap-1"&gt;
+                          |        &lt;div class="text-xs font-medium text-content3"&gt;Info&lt;/div&gt;
+                          |        &lt;div class="progress-bar dark:bg-border-dark"&gt;
+                          |            &lt;div class="bg-info" style="width:60%"&gt;&lt;/div&gt;
+                          |        &lt;/div&gt;
+                          |    &lt;/div&gt;
+                          |    &lt;div class="flex flex-col gap-1"&gt;
+                          |        &lt;div class="text-xs font-medium text-content3"&gt;Success&lt;/div&gt;
+                          |        &lt;div class="progress-bar dark:bg-border-dark"&gt;
+                          |            &lt;div class="bg-success" style="width:80%"&gt;&lt;/div&gt;
+                          |        &lt;/div&gt;
+                          |    &lt;/div&gt;
+                          |&lt;/div&gt;
             div.col-span-6(class="2md:col-span-12")  
               div.card.tabs
                 div.card-header.pb-2.header-bottom-border
@@ -283,6 +283,11 @@ html(lang='en')
                           div.flex
                             div(class="bg-light" style="width:45%")
                             div(class="bg-warning" style="width:22%")
+                        div.progress-bar.progress-lg.multi-bar(class="dark:bg-border-dark")
+                          div.flex
+                            div(class="bg-info" style="width:45%")
+                            div(class="bg-warning !rounded-none" style="width:22%")
+                            div(class="bg-secondary" style="width:15%")
                     div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white")
                         i(data-feather="clipboard")
@@ -307,6 +312,13 @@ html(lang='en')
                           |        &lt;div class="flex"&gt;
                           |           &lt;div class="bg-light rounded-l-2xl" style="width:45%"&gt;&lt;/div&gt;
                           |           &lt;div class="bg-warning" style="width:22%"&gt;&lt;/div&gt;
+                          |        &lt;/div&gt;
+                          |    &lt;/div&gt;
+                          |    &lt;div class="progress-bar progress-lg multi-bar dark:bg-border-dark"&gt;
+                          |        &lt;div class="flex"&gt;
+                          |           &lt;div class="bg-light" style="width:45%"&gt;&lt;/div&gt;
+                          |           &lt;div class="bg-warning !rounded-none" style="width:22%"&gt;&lt;/div&gt;
+                          |           &lt;div class="bg-danger" style="width:15%"&gt;&lt;/div&gt;
                           |        &lt;/div&gt;
                           |    &lt;/div&gt;
                           |&lt;/div&gt;
