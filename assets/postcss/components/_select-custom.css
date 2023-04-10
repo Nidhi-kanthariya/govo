@@ -12,7 +12,7 @@
     &.select-bg-transition {
       .select-items,
       .select-selected {
-        @apply bg-white-light  text-white;
+        @apply bg-white-light text-white dark:text-white;
       }
       .select-selected {
         @apply after:border-t-white;
