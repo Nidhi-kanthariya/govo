@@ -12,7 +12,7 @@ mixin widget1(data)
          div.avatar-group.-space-x-6(class="justify-center")
             each avatarBox in data.avatarGroup
                div.avatar.w-12.h-12(class="5xl:w-11 5xl:h-11 border-[2px] border-white hover:translate-y-[-5px] hover:transition-all hover:ease translate-y-0")
-                  div
+                  div.h-12
                      img(src=`../../assets/images/avatar/${avatarBox}.jpg` alt="avatar") 
             if(data.placeholder)
                div.avatar.placeholder.w-12.h-12(class="5xl:w-11 5xl:h-11 border-[2px] bg-gray-light border-white hover:translate-y-[-5px] hover:transition-all hover:ease translate-y-0")

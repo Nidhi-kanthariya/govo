@@ -38,10 +38,10 @@ html(lang='en')
                   div.col-span-12
                      div.card 
                         div.card-header.pb-4
-                           div.flex.gap-2.justify-between(class="items-center 3sm:flex-col") 
+                           div.flex.gap-2.justify-between(class="items-center 3sm:flex-col 3sm:items-end") 
                               div.flex.item-center.gap-2 
                                  div.dropdown
-                                    button.btn.border.border-border-light.flex.gap-1.text-content.items-center Action
+                                    button.btn.border.border-border-light.flex.gap-1.text-content.items-center(class="!p-[0.7rem]") Action
                                        +SVG_ICON("Arrow-Down-2","w-[20px] h-[20px] stroke-content")
                                     div.dropdown-menu(class="!w-36 !top-11 left-0 !p-2")
                                        ul.flex.flex-col.cursor-pointer(class="!gap-0")
@@ -56,7 +56,7 @@ html(lang='en')
                            div.overflow-auto.custom-scroll
                               include ../../components/table/invoice-table 
                         div.card-footer
-                           div.flex.justify-between.items-center.flex-wrap(class="sm:flex-col")
+                           div.flex.justify-between.items-center.flex-wrap(class="sm:flex-col sm:items-end")
                               div.flex.items-center
                                  button.btn.border.border-border-light.rounded-none.flex.items-center.gap-2(class="hover:bg-primary group hover:text-white") 
                                     +SVG_ICON("Arrow-Left-2" ,"w-4 h-4 stroke-title group-hover:stroke-white") 
