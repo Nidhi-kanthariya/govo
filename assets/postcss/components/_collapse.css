@@ -23,7 +23,7 @@
   .accordionWrapper {
     &.flush {
       .accordionItemHeading {
-        @apply bg-transparent text-title rounded-none font-bold;
+        @apply bg-transparent text-title rounded-none font-bold hover:bg-light;
       }
 
       .accordionItemContent,
