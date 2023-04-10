@@ -22,8 +22,8 @@ mixin email-data(data)
               div.checkbox-indicator(class="star peer-checked:!border-warning border-content3 overflow-hidden")
                 i(data-feather="star")
           div.flex.items-center(class="gap-[9px] cursor-pointer" class="btnEmailRead")
-            div.avatar.w-10
-              div.rounded-full
+            div.avatar
+              div.rounded-full.h-10.w-10
                 img(src=`../../assets/images/avatar/${dataItem.image}`, alt=`${dataItem.title}`)
             div(class="w-[calc(100%_-_40px)]")
               h4.text-xs.font-medium.truncate.text-title(class="leading-none whitespace-normal lg:text-2xs line-clamp-1")=dataItem.title 
