@@ -1406,8 +1406,8 @@
                     <div class="flex items-center justify-between sm:items-start sm:gap-2 sm:flex-col">
                       <div class="flex items-center gap-1"><i class="w-4 h-4 stroke-title" data-feather="paperclip"></i><span class="text-sm font-semibold text-content3 uppercase">Attachment (60 MB)</span></div>
                       <div class="flex items-center gap-1">
-                        <button class="btn btn-light text-xs py-2 text-chart-dark">View All</button>
-                        <button class="btn btn-light text-xs py-2 text-primary">Download All</button>
+                        <button class="btn btn-light text-xs py-2 text-chart-dark dark:bg-sidebar-dark2">View All</button>
+                        <button class="btn btn-light text-xs py-2 text-primary dark:bg-sidebar-dark2">Download All</button>
                       </div>
                     </div>
                     <div class="flex gap-4 items-center flex-wrap"><img class="max-w-[180px] h-[115px] object-cover" src="../../assets/images/email-app/1.png" alt="flower"><img class="max-w-[180px] h-[115px] object-cover" src="../../assets/images/email-app/2.png" alt="emoji"><img class="max-w-[180px] h-[115px] object-cover" src="../../assets/images/email-app/3.png" alt="marble"></div>
@@ -1507,78 +1507,78 @@
           <button class="btn btn-primary text-white flex-1">Buy Now</button>
         </div>
       </div>
-      <div class="modal-main">
-        <input class="peer" id="modal-16" name="modal-16" type="checkbox">
-        <label class="modal-overlay peer-checked:block" for="modal-16"></label>
-        <div class="modal modal-bottom-right invisible w-11/12 max-w-xl transition-all duration-1000 translate-y-0 opacity-0 peer-checked:opacity-100 peer-checked:visible peer-checked:-translate-y-9 !right-[2%]">
-          <div class="modal-header"> 
-            <h3>New Message</h3>
-            <label for="modal-16"> <i class="w-4 h-4 stroke-title" data-feather="x"></i></label>
-          </div>
-          <div class="modal-body 2sm:!py-2"> 
-            <form>
-              <div class="border-b border-border-light py-3 flex items-center leading-7 2sm:flex-col 2sm:items-start">
-                <div class="min-w-[70px]">
-                  <label class="min-w-[70px]" for="toSend">To </label>
-                </div><span class="text-xs text-content font-semibold bg-gray-light flex items-center gap-2 px-4 py-1 rounded-3xl">
-                     degose5197@weepm.com
-                  <svg class="w-4 h-4 stroke-title alert-del"> 
-                    <use href="../../assets/svg/sprite.svg#Close-Square"> </use>
-                  </svg></span>
+    </main>
+    <div class="modal-main">
+      <input class="peer" id="modal-16" name="modal-16" type="checkbox">
+      <label class="modal-overlay peer-checked:block" for="modal-16"></label>
+      <div class="modal modal-bottom-right invisible dark:bg-sidebar-dark2 w-11/12 max-w-xl transition-all duration-1000 translate-y-0 opacity-0 peer-checked:opacity-100 peer-checked:visible peer-checked:-translate-y-9 !right-[2%]">
+        <div class="modal-header"> 
+          <h3>New Message</h3>
+          <label for="modal-16"><i class="w-4 h-4 stroke-title" data-feather="x"></i></label>
+        </div>
+        <div class="modal-body 2sm:!py-2"> 
+          <form>
+            <div class="border-b border-border-light py-3 flex items-center leading-7 dark:border-border-dark dark:border-b 2sm:flex-col 2sm:items-start">
+              <div class="min-w-[70px]">
+                <label class="min-w-[70px]" for="toSend">To </label>
+              </div><span class="dark:bg-sidebar-dark2 text-xs text-content font-semibold bg-gray-light flex items-center gap-2 px-4 py-1 rounded-3xl">
+                   degose5197@weepm.com
+                <svg class="w-4 h-4 stroke-title alert-del"> 
+                  <use href="../../assets/svg/sprite.svg#Close-Square"> </use>
+                </svg></span>
+            </div>
+            <div class="border-b border-border-light py-3 flex items-center leading-7 dark:border-border-dark dark:border-b 2sm:flex-col 2sm:items-start">
+              <div class="min-w-[70px]">
+                <label class="min-w-[70px]" for="toReceive">From </label>
+              </div><span class="text-xs text-content font-semibold bg-primary-light flex items-center gap-2 px-4 py-1 rounded-3xl">
+                   degose5197@weepm.com
+                <svg class="w-4 h-4 stroke-title alert-del"> 
+                  <use href="../../assets/svg/sprite.svg#Close-Square"> </use>
+                </svg></span>
+            </div>
+            <div class="border-b border-border-light py-3 flex items-center leading-7 dark:border-border-dark dark:border-b 2sm:flex-col 2sm:items-start">
+              <div class="min-w-[70px]">
+                <label class="min-w-[70px]" for="toSend">Subject </label>
               </div>
-              <div class="border-b border-border-light py-3 flex items-center leading-7 2sm:flex-col 2sm:items-start">
-                <div class="min-w-[70px]">
-                  <label class="min-w-[70px]" for="toReceive">From </label>
-                </div><span class="text-xs text-content font-semibold bg-primary-light flex items-center gap-2 px-4 py-1 rounded-3xl">
-                     degose5197@weepm.com
-                  <svg class="w-4 h-4 stroke-title alert-del"> 
-                    <use href="../../assets/svg/sprite.svg#Close-Square"> </use>
-                  </svg></span>
-              </div>
-              <div class="border-b border-border-light py-3 flex items-center leading-7 2sm:flex-col 2sm:items-start">
-                <div class="min-w-[70px]">
-                  <label class="min-w-[70px]" for="toSend">Subject </label>
-                </div>
-                <input class="w-full text-xs font-semibold bg-transparent text-content3" type="text" value="Here’s the secret on how we can help raw succeed">
-              </div>
-              <div class="py-3 flex items-center">
-                <textarea class="py-1 pl-[8px] pr-[55px] min-h-max w-full rounded-5 text-xs text-content" placeholder="Message.." row="10" id="reply"></textarea>
-              </div>
-              <div>
-                <input class="email-dropzone" type="file">
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <div class="flex items-center justify-between gap-2">
-              <ul class="flex items-center gap-3">
-                <li class="leading-none border-r border-border-light pr-2"> 
-                  <label for="modal-16">
-                    <svg class="w-6 h-6 stroke-title cursor-pointer"> 
-                      <use href="../../assets/svg/sprite.svg#Delete"> </use>
-                    </svg>
-                  </label>
-                </li>
-                <li class="leading-none"> 
-                  <div class="dropdown dropdown-top"><i class="w-5 h-5 cursor-pointer stroke-title" data-feather="more-vertical"></i>
-                    <div class="dropdown-menu !w-fit !p-1">
-                      <ul class="flex flex-col cursor-pointer text-start !gap-1">
-                        <li class="px-2 py-1 leading-none rounded hover:bg-gray-light">Plain text mode </li>
-                        <li class="px-2 py-1 leading-none rounded hover:bg-gray-light">Print</li>
-                        <li class="px-2 py-1 leading-none rounded hover:bg-gray-light">Check spelling </li>
-                      </ul>
-                    </div>
+              <input class="w-full text-xs font-semibold bg-transparent text-content3" type="text" value="Here’s the secret on how we can help raw succeed">
+            </div>
+            <div class="py-3 flex items-center">
+              <textarea class="dark:bg-sidebar-dark2 py-1 pl-[8px] pr-[55px] min-h-max w-full rounded-5 text-xs text-content" placeholder="Message.." row="10" id="reply"></textarea>
+            </div>
+            <div>
+              <input class="email-dropzone dark:bg-sidebar-dark2" type="file">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <div class="flex items-center justify-between gap-2">
+            <ul class="flex items-center gap-3">
+              <li class="leading-none border-r border-border-light pr-2"> 
+                <label for="modal-16">
+                  <svg class="w-6 h-6 stroke-title cursor-pointer"> 
+                    <use href="../../assets/svg/sprite.svg#Delete"> </use>
+                  </svg>
+                </label>
+              </li>
+              <li class="leading-none"> 
+                <div class="dropdown dropdown-top"><i class="w-5 h-5 cursor-pointer stroke-title" data-feather="more-vertical"></i>
+                  <div class="dropdown-menu !w-fit !p-1">
+                    <ul class="flex flex-col cursor-pointer text-start !gap-1">
+                      <li class="px-2 py-1 leading-none rounded hover:bg-gray-light">Plain text mode </li>
+                      <li class="px-2 py-1 leading-none rounded hover:bg-gray-light">Print</li>
+                      <li class="px-2 py-1 leading-none rounded hover:bg-gray-light">Check spelling </li>
+                    </ul>
                   </div>
-                </li>
-              </ul>
-              <div class="flex items-center gap-3">
-                <label class="btn btn-primary py-2 px-4 text-white uppercase" for="modal-16">Send</label>
-              </div>
+                </div>
+              </li>
+            </ul>
+            <div class="flex items-center gap-3">
+              <label class="btn btn-primary py-2 px-4 text-white uppercase" for="modal-16">Send</label>
             </div>
           </div>
         </div>
       </div>
-    </main>
+    </div>
   </body>
   <!-- Feather Icon Js -->
   <script src="../../assets/js/feather.min.js"></script>
