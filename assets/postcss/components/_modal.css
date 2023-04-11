@@ -93,7 +93,7 @@
 
     .avatar {
       img {
-        @apply object-fill;
+        @apply object-cover;
       }
     }
   }

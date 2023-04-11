@@ -1012,7 +1012,7 @@
                 <div class="h-full overflow-auto custom-scroll chat-sidebar-scroll carousel-scroll-hide">
                   <div class="p-4 pb-0 dark:bg-sidebar-dark">
                     <div class="flex items-center justify-between">
-                      <h4 class="text-xl font-extrabold dark:text-white">Messages</h4><i class="block p-2 w-11 h-9 stroke-primary bg-gray-light dark:bg-sidebar-dark2 lg:hidden" data-feather="plus"></i><i class="hidden h-6 cursor-pointer stroke-title left-sidebar-toggle lg:block" data-feather="chevrons-left"></i>
+                      <h4 class="text-xl font-extrabold dark:text-white">Messages</h4><i class="block w-8 h-8 p-2 scale-100 stroke-primary bg-gray-light hover:scale-110 dark:bg-sidebar-dark2 lg:hidden" data-feather="plus"></i><i class="hidden h-6 cursor-pointer stroke-title left-sidebar-toggle lg:block" data-feather="chevrons-left"></i>
                     </div>
                   </div>
                   <div class="p-4 pb-0 dark:bg-sidebar-dark">
@@ -1126,7 +1126,7 @@
                           </li>
                           <li class="flex items-start justify-between pt-[13px] border-t border-gray-light dark:border-t dark:border-border-dark first:pt-0 first:mt-0 first:border-none">
                             <div class="flex items-center gap-3 w-[calc(100%_-_59px)] xl:gap-2">
-                              <div class="indicator"><span class="chat-status status-offline"></span>
+                              <div class="indicator"><span class="chat-status status-online"></span>
                                 <div class="avatar"> 
                                   <div class="w-10 rounded-full h-10 xl:w-9 xl:h-9"><img src="../../assets/images/avatar/6.jpg" alt="Janis Evans"/></div>
                                 </div>
@@ -1504,19 +1504,21 @@
                   <!-- chat main header start-->
                   <div class="border-b border-gray-light pb-4 flex items-center justify-between dark:border-b dark:border-border-dark">
                     <div> 
-                      <div class="flex items-center gap-3" sm:gap-1> 
-                        <div class="avatar">
-                          <div class="w-10 rounded-full h-10 xl:h-9 xl:w-9"><img src="../../assets/images/avatar/2.jpg" alt="avatar"></div>
+                      <div class="flex items-center gap-3" sm:gap-1>
+                        <div class="indicator"><span class="chat-status status-offline"></span>
+                          <div class="avatar"> 
+                            <div class="w-10 rounded-full h-10 overflow-hidden xl:h-9 xl:w-9"><img src="../../assets/images/avatar/2.jpg" alt="avatar"></div>
+                          </div>
                         </div>
                         <div>
-                          <h4 class="text-sm font-semibold text-title leading-none 3sm:text-2xs 3sm:leading-none">Dmitriy Groshev </h4>
-                          <div class="flex items-center gap-1 mt-1"><span class="text-content">Last seen today 15:24 </span></div>
+                          <h4 class="text-sm font-semibold text-title leading-none 3sm:text-2xs 3sm:leading-none line-clamp-1 min-w-[100px]">Dmitriy Groshev </h4>
+                          <div class="flex items-center gap-1 mt-1"><span class="text-content">Today 15:24 </span></div>
                         </div>
                       </div>
                     </div>
                     <div class="flex items-center justify-end gap-6 lg:gap-4 sm:gap-1"> 
                       <label for="voice-call-modal"> 
-                        <svg class="w-5 h-5 stroke-title cursor-pointer hover:stroke-primary lg:hidden block"> 
+                        <svg class="w-5 h-5 stroke-title cursor-pointer hover:stroke-primary lg:hidden block call-start-btn"> 
                           <use href="../../assets/svg/sprite.svg#Calling"> </use>
                         </svg>
                       </label>
@@ -1550,7 +1552,10 @@
                       </div><span class="left-sidebar-hide-logo-show hidden lg:block">
                         <svg class="w-5 h-5 stroke-title cursor-pointer hover:stroke-primary  left-sidebar-toggle-btn lg:block hidden"> 
                           <use href="../../assets/svg/sprite.svg#Chat"> </use>
-                        </svg></span><span class="right-sidebar-hide-logo-show"><i class="w-5 h-5 cursor-pointer stroke-title hover:stroke-primary right-sidebar-toggle-btn" data-feather="chevrons-left"></i></span>
+                        </svg></span><span class="right-sidebar-hide-logo-show">
+                        <svg class="w-5 h-5 cursor-pointer stroke-title hover:stroke-primary right-sidebar-toggle-btn"> 
+                          <use href="../../assets/svg/sprite.svg#Arrow-Left-Square"> </use>
+                        </svg></span>
                     </div>
                   </div>
                   <!-- chat main header end-->
@@ -1608,11 +1613,11 @@
                           </svg></a></span></div>
                     <div class="social-media">
                       <ul class="list-inline flex flex-wrap gap-2">
-                        <li class="list-inline-item bg-white rounded-full dark:dark:bg-sidebar-dark"><a href="https://www.facebook.com/"><img class="w-6 h-6 p-[6px]" src="../../assets/images/social/fb3.svg" alt="facebook"/></a></li>
-                        <li class="list-inline-item bg-white rounded-full dark:dark:bg-sidebar-dark"><a href="https://www.google.com/"><img class="w-6 h-6 p-[6px]" src="../../assets/images/social/google2.svg" alt="google"/></a></li>
-                        <li class="list-inline-item bg-white rounded-full dark:dark:bg-sidebar-dark"><a href="https://www.twitter.com/"><img class="w-6 h-6 p-[6px]" src="../../assets/images/social/tw3.svg" alt="twitter"/></a></li>
-                        <li class="list-inline-item bg-white rounded-full dark:dark:bg-sidebar-dark"><a href="https://www.instagram.com/"><img class="w-6 h-6 p-[6px]" src="../../assets/images/social/insta3.svg" alt="instagram"/></a></li>
-                        <li class="list-inline-item bg-white rounded-full dark:dark:bg-sidebar-dark"><a href="https://www.rss.com/"><img class="w-6 h-6 p-[6px]" src="../../assets/images/social/rss.svg" alt="rss"/></a></li>
+                        <li class="list-inline-item bg-white rounded-full dark:dark:bg-sidebar-dark hover:translate-y-[-4px] hover:transition-all hover:ease translate-y-0"><a href="https://www.facebook.com/"><img class="w-6 h-6 p-[6px]" src="../../assets/images/social/fb3.svg" alt="facebook"/></a></li>
+                        <li class="list-inline-item bg-white rounded-full dark:dark:bg-sidebar-dark hover:translate-y-[-4px] hover:transition-all hover:ease translate-y-0"><a href="https://www.google.com/"><img class="w-6 h-6 p-[6px]" src="../../assets/images/social/google2.svg" alt="google"/></a></li>
+                        <li class="list-inline-item bg-white rounded-full dark:dark:bg-sidebar-dark hover:translate-y-[-4px] hover:transition-all hover:ease translate-y-0"><a href="https://www.twitter.com/"><img class="w-6 h-6 p-[6px]" src="../../assets/images/social/tw3.svg" alt="twitter"/></a></li>
+                        <li class="list-inline-item bg-white rounded-full dark:dark:bg-sidebar-dark hover:translate-y-[-4px] hover:transition-all hover:ease translate-y-0"><a href="https://www.instagram.com/"><img class="w-6 h-6 p-[6px]" src="../../assets/images/social/insta3.svg" alt="instagram"/></a></li>
+                        <li class="list-inline-item bg-white rounded-full dark:dark:bg-sidebar-dark hover:translate-y-[-4px] hover:transition-all hover:ease translate-y-0"><a href="https://www.rss.com/"><img class="w-6 h-6 p-[6px]" src="../../assets/images/social/rss.svg" alt="rss"/></a></li>
                       </ul>
                     </div>
                     <div class="social-detail flex flex-wrap justify-center items-center">
@@ -1633,7 +1638,7 @@
                   </div>
                   <div class="tabs-content">
                     <div class="tab-pan !p-0 !border-0 active show first:rounded-tl-none rounded-5" data-tabContent="1">                                    
-                      <div class="p-4 overflow-auto max-h-[288px] md:max-h-screen custom-scroll">
+                      <div class="px-4 pb-4 mt-4 overflow-auto max-h-[268px] md:max-h-screen custom-scroll">
                         <div class="grid grid-cols-12 gap-4 pswp-gallery" id="my-gallery">
                           <div class="col-span-12"><a href="../../assets/images/chat-app/1.jpg" data-pswp-width="1000" data-pswp-height="500" target="_blank"><img class="w-full max-h-[120px] rounded-[10px]" src="../../assets/images/chat-app/1.jpg" alt="image-1"></a></div>
                           <div class="col-span-6"><a href="../../assets/images/chat-app/2.jpg" data-pswp-width="1000" data-pswp-height="500" target="_blank"><img class="w-full max-h-[120px] rounded-[10px]" src="../../assets/images/chat-app/2.jpg" alt="image-1"></a></div>
@@ -1643,7 +1648,7 @@
                       </div>
                     </div>
                     <div class="tab-pan !p-0 !border-0 first:rounded-tl-none rounded-5" data-tabContent="2">
-                      <div class="p-4 overflow-auto max-h-[288px] md:max-h-screen custom-scroll">
+                      <div class="p-4 overflow-auto max-h-[268px] md:max-h-screen custom-scroll">
                         <ul class="flex flex-col gap-1"> 
                           <li class="pt-[13px] first:pt-0 first:mt-0 first:border-none flex justify-between">
                             <div class="flex items-center gap-3 w-[calc(100%_-_59px)] xl:gap-2">
@@ -1711,7 +1716,7 @@
                       </div>
                     </div>
                     <div class="tab-pan !p-0 !border-0 first:rounded-tl-none rounded-5" data-tabContent="3">
-                      <div class="p-4 overflow-auto max-h-[288px] md:max-h-screen custom-scroll">
+                      <div class="p-4 overflow-auto max-h-[268px] md:max-h-screen custom-scroll">
                         <ul class="flex flex-col gap-1"> 
                           <li class="pt-[13px] first:pt-0 first:mt-0 first:border-none"> 
                             <div class="flex items-center gap-3 w-[calc(100%_-_59px)] xl:gap-2">

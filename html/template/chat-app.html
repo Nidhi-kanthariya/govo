@@ -1012,7 +1012,7 @@
                 <div class="h-full overflow-auto custom-scroll chat-sidebar-scroll carousel-scroll-hide">
                   <div class="p-4 pb-0 dark:bg-sidebar-dark">
                     <div class="flex items-center justify-between">
-                      <h4 class="text-xl font-extrabold dark:text-white">Messages</h4><i class="block p-2 w-11 h-9 stroke-primary bg-gray-light dark:bg-sidebar-dark2 lg:hidden" data-feather="plus"></i><i class="hidden h-6 cursor-pointer stroke-title left-sidebar-toggle lg:block" data-feather="chevrons-left"></i>
+                      <h4 class="text-xl font-extrabold dark:text-white">Messages</h4><i class="block w-8 h-8 p-2 scale-100 stroke-primary bg-gray-light hover:scale-110 dark:bg-sidebar-dark2 lg:hidden" data-feather="plus"></i><i class="hidden h-6 cursor-pointer stroke-title left-sidebar-toggle lg:block" data-feather="chevrons-left"></i>
                     </div>
                   </div>
                   <div class="p-4 pb-0 dark:bg-sidebar-dark">
@@ -1126,7 +1126,7 @@
                           </li>
                           <li class="flex items-start justify-between pt-[13px] border-t border-gray-light dark:border-t dark:border-border-dark first:pt-0 first:mt-0 first:border-none">
                             <div class="flex items-center gap-3 w-[calc(100%_-_59px)] xl:gap-2">
-                              <div class="indicator"><span class="chat-status status-offline"></span>
+                              <div class="indicator"><span class="chat-status status-online"></span>
                                 <div class="avatar"> 
                                   <div class="w-10 rounded-full h-10 xl:w-9 xl:h-9"><img src="../../assets/images/avatar/6.jpg" alt="Janis Evans"/></div>
                                 </div>
@@ -1504,19 +1504,21 @@
                   <!-- chat main header start-->
                   <div class="border-b border-gray-light pb-4 flex items-center justify-between dark:border-b dark:border-border-dark">
                     <div> 
-                      <div class="flex items-center gap-3" sm:gap-1> 
-                        <div class="avatar">
-                          <div class="w-10 rounded-full h-10 xl:h-9 xl:w-9"><img src="../../assets/images/avatar/2.jpg" alt="avatar"></div>
+                      <div class="flex items-center gap-3" sm:gap-1>
+                        <div class="indicator"><span class="chat-status status-offline"></span>
+                          <div class="avatar"> 
+                            <div class="w-10 rounded-full h-10 overflow-hidden xl:h-9 xl:w-9"><img src="../../assets/images/avatar/2.jpg" alt="avatar"></div>
+                          </div>
                         </div>
                         <div>
-                          <h4 class="text-sm font-semibold text-title leading-none 3sm:text-2xs 3sm:leading-none">Dmitriy Groshev </h4>
-                          <div class="flex items-center gap-1 mt-1"><span class="text-content">Last seen today 15:24 </span></div>
+                          <h4 class="text-sm font-semibold text-title leading-none 3sm:text-2xs 3sm:leading-none line-clamp-1 min-w-[100px]">Dmitriy Groshev </h4>
+                          <div class="flex items-center gap-1 mt-1"><span class="text-content">Today 15:24 </span></div>
                         </div>
                       </div>
                     </div>
                     <div class="flex items-center justify-end gap-6 lg:gap-4 sm:gap-1"> 
                       <label for="voice-call-modal"> 
-                        <svg class="w-5 h-5 stroke-title cursor-pointer hover:stroke-primary lg:hidden block"> 
+                        <svg class="w-5 h-5 stroke-title cursor-pointer hover:stroke-primary lg:hidden block call-start-btn"> 
                           <use href="../../assets/svg/sprite.svg#Calling"> </use>
                         </svg>
                       </label>
@@ -1550,7 +1552,10 @@
                       </div><span class="left-sidebar-hide-logo-show hidden lg:block">
                         <svg class="w-5 h-5 stroke-title cursor-pointer hover:stroke-primary  left-sidebar-toggle-btn lg:block hidden"> 
                           <use href="../../assets/svg/sprite.svg#Chat"> </use>
-                        </svg></span><span class="right-sidebar-hide-logo-show"><i class="w-5 h-5 cursor-pointer stroke-title hover:stroke-primary right-sidebar-toggle-btn" data-feather="chevrons-left"></i></span>
+                        </svg></span><span class="right-sidebar-hide-logo-show">
+                        <svg class="w-5 h-5 cursor-pointer stroke-title hover:stroke-primary right-sidebar-toggle-btn"> 
+                          <use href="../../assets/svg/sprite.svg#Arrow-Left-Square"> </use>
+                        </svg></span>
                     </div>
                   </div>
                   <!-- chat main header end-->
@@ -1565,7 +1570,7 @@
                           <div class="content">
                             <div class="flex gap-2 items-center content-detail"><span class="timer">5:27 PM</span><span class="sender-receiver-name">Josephin Water</span></div>
                             <p>Hii i am Josephin, can you help me to find best chat app?</p>
-                            <p>it should from elite auther</p>
+                            <p>it should from elite author</p>
                           </div>
                         </div>
                       </div>
@@ -1577,7 +1582,7 @@
                           <div class="content">
                             <div class="flex gap-2 items-center content-detail flex-row-reverse"><span class="timer">5:27 PM</span><span class="sender-receiver-name">Dmitriy Groshev    </span></div>
                             <p>Hi i am Dmitriy Groshev</p>
-                            <p>Your personal assistant to helo you</p>
+                            <p>Your personal assistant to help you</p>
                           </div>
                         </div>
                       </div>
@@ -1587,9 +1592,9 @@
                         <div class="message-content">
                           <div class="avatar rounded-xl w-[50px] sm:w-[40px] h-[55px] sm:h-[40px]"><img src="../../assets/images/avatar/3.jpg" alt="avatar"></div>
                           <div class="content">
-                            <div class="flex gap-2 items-center content-detail"><span class="timer">5:27 PM</span><span class="sender-receiver-name">Josephin Water    </span></div>
+                            <div class="flex gap-2 items-center content-detail"><span class="timer">5:28 PM</span><span class="sender-receiver-name">Josephin Water    </span></div>
                             <p>Hii i am josephin, can you help me to find best chat app?</p>
-                            <p>it should from elite auther</p>
+                            <p>it should from elite author</p>
                           </div>
                         </div>
                       </div>
@@ -1599,9 +1604,9 @@
                         <div class="message-content">
                           <div class="avatar rounded-xl w-[50px] sm:w-[40px] h-[55px] sm:h-[40px]"><img src="../../assets/images/avatar/2.jpg" alt="avatar"></div>
                           <div class="content">
-                            <div class="flex gap-2 items-center content-detail flex-row-reverse"><span class="timer">5:27 PM</span><span class="sender-receiver-name">Dmitriy Groshev    </span></div>
-                            <p>Sure, backy is best theme for chating project, you can check it here.</p>
-                            <p>it should from elite auther</p>
+                            <div class="flex gap-2 items-center content-detail flex-row-reverse"><span class="timer">5:29 PM</span><span class="sender-receiver-name">Dmitriy Groshev    </span></div>
+                            <p>Sure, backy is best theme for chatting project, you can check it here.</p>
+                            <p>it should from elite author</p>
                           </div>
                         </div>
                       </div>
@@ -1612,8 +1617,8 @@
                 <div class="p-4 pt-0 absolute bottom-0 left-0 right-0 mx-4 right-sidebar lg:mb-5"> 
                   <!-- chat main footer start-->
                   <div class="flex items-stretch w-full emoji-picker-insert">
-                    <button class="bg-white emoji-btn second-btn px-3 text-2xl 3sm:leading-none 3sm:text-xs dark:bg-sidebar-dark">&#128515;</button>
-                    <input class="text-sm two sm:text-xs sm:leading-[1.5] 3sm:leading-[14px] w-full max-w-full h-[50px] px-3 dark:bg-sidebar-dark" placeholder="Your Message" rows="1" name="">
+                    <button class="bg-white emoji-btn second-btn px-3 text-2xl sm:px-2 3sm:leading-none 3sm:text-xs dark:bg-sidebar-dark">&#128515;</button>
+                    <input class="text-sm two sm:text-xs sm:leading-[1.5] 3sm:leading-[14px] w-full max-w-full h-[50px] sm:h-[40px] px-3 dark:bg-sidebar-dark" placeholder="Your Message" rows="1" name="">
                     <div class="chat-setting flex gap-2 items-center bg-white dark:bg-sidebar-dark">
                       <div class="dropdown dropdown-left dropdown-top group"><i class="w-6 h-6 cursor-pointer stroke-title" data-feather="paperclip"></i>
                         <div class="dropdown-menu text-left rtl:!right-0 group-hover:!-top-[110px] !-top-[110px] !bottom-[45px]">
@@ -1627,7 +1632,7 @@
                       <svg class="w-8 h-8 stroke-title cursor-pointer"> 
                         <use href="../../assets/svg/sprite.svg#Voice-2"> </use>
                       </svg>
-                      <button class="bg-primary w-[70px] h-[50px] flex justify-center items-center">
+                      <button class="bg-primary w-[70px] h-[50px] sm:h-[40px] flex justify-center items-center">
                         <svg class="w-8 h-8 stroke-white cursor-pointer p-1"> 
                           <use href="../../assets/svg/sprite.svg#Send"> </use>
                         </svg>
@@ -1654,11 +1659,11 @@
                           </svg></a></span></div>
                     <div class="social-media">
                       <ul class="list-inline flex flex-wrap gap-2">
-                        <li class="list-inline-item bg-white rounded-full dark:dark:bg-sidebar-dark"><a href="https://www.facebook.com/"><img class="w-6 h-6 p-[6px]" src="../../assets/images/social/fb3.svg" alt="facebook"/></a></li>
-                        <li class="list-inline-item bg-white rounded-full dark:dark:bg-sidebar-dark"><a href="https://www.google.com/"><img class="w-6 h-6 p-[6px]" src="../../assets/images/social/google2.svg" alt="google"/></a></li>
-                        <li class="list-inline-item bg-white rounded-full dark:dark:bg-sidebar-dark"><a href="https://www.twitter.com/"><img class="w-6 h-6 p-[6px]" src="../../assets/images/social/tw3.svg" alt="twitter"/></a></li>
-                        <li class="list-inline-item bg-white rounded-full dark:dark:bg-sidebar-dark"><a href="https://www.instagram.com/"><img class="w-6 h-6 p-[6px]" src="../../assets/images/social/insta3.svg" alt="instagram"/></a></li>
-                        <li class="list-inline-item bg-white rounded-full dark:dark:bg-sidebar-dark"><a href="https://www.rss.com/"><img class="w-6 h-6 p-[6px]" src="../../assets/images/social/rss.svg" alt="rss"/></a></li>
+                        <li class="list-inline-item bg-white rounded-full dark:dark:bg-sidebar-dark hover:translate-y-[-4px] hover:transition-all hover:ease translate-y-0"><a href="https://www.facebook.com/"><img class="w-6 h-6 p-[6px]" src="../../assets/images/social/fb3.svg" alt="facebook"/></a></li>
+                        <li class="list-inline-item bg-white rounded-full dark:dark:bg-sidebar-dark hover:translate-y-[-4px] hover:transition-all hover:ease translate-y-0"><a href="https://www.google.com/"><img class="w-6 h-6 p-[6px]" src="../../assets/images/social/google2.svg" alt="google"/></a></li>
+                        <li class="list-inline-item bg-white rounded-full dark:dark:bg-sidebar-dark hover:translate-y-[-4px] hover:transition-all hover:ease translate-y-0"><a href="https://www.twitter.com/"><img class="w-6 h-6 p-[6px]" src="../../assets/images/social/tw3.svg" alt="twitter"/></a></li>
+                        <li class="list-inline-item bg-white rounded-full dark:dark:bg-sidebar-dark hover:translate-y-[-4px] hover:transition-all hover:ease translate-y-0"><a href="https://www.instagram.com/"><img class="w-6 h-6 p-[6px]" src="../../assets/images/social/insta3.svg" alt="instagram"/></a></li>
+                        <li class="list-inline-item bg-white rounded-full dark:dark:bg-sidebar-dark hover:translate-y-[-4px] hover:transition-all hover:ease translate-y-0"><a href="https://www.rss.com/"><img class="w-6 h-6 p-[6px]" src="../../assets/images/social/rss.svg" alt="rss"/></a></li>
                       </ul>
                     </div>
                     <div class="social-detail flex flex-wrap justify-center items-center">
@@ -1679,7 +1684,7 @@
                   </div>
                   <div class="tabs-content">
                     <div class="tab-pan !p-0 !border-0 active show first:rounded-tl-none rounded-5" data-tabContent="1">                                    
-                      <div class="p-4 overflow-auto max-h-[288px] md:max-h-screen custom-scroll">
+                      <div class="px-4 pb-4 mt-4 overflow-auto max-h-[268px] md:max-h-screen custom-scroll">
                         <div class="grid grid-cols-12 gap-4 pswp-gallery" id="my-gallery">
                           <div class="col-span-12"><a href="../../assets/images/chat-app/1.jpg" data-pswp-width="1000" data-pswp-height="500" target="_blank"><img class="w-full max-h-[120px] rounded-[10px]" src="../../assets/images/chat-app/1.jpg" alt="image-1"></a></div>
                           <div class="col-span-6"><a href="../../assets/images/chat-app/2.jpg" data-pswp-width="1000" data-pswp-height="500" target="_blank"><img class="w-full max-h-[120px] rounded-[10px]" src="../../assets/images/chat-app/2.jpg" alt="image-1"></a></div>
@@ -1689,7 +1694,7 @@
                       </div>
                     </div>
                     <div class="tab-pan !p-0 !border-0 first:rounded-tl-none rounded-5" data-tabContent="2">
-                      <div class="p-4 overflow-auto max-h-[288px] md:max-h-screen custom-scroll">
+                      <div class="p-4 overflow-auto max-h-[268px] md:max-h-screen custom-scroll">
                         <ul class="flex flex-col gap-1"> 
                           <li class="pt-[13px] first:pt-0 first:mt-0 first:border-none flex justify-between">
                             <div class="flex items-center gap-3 w-[calc(100%_-_59px)] xl:gap-2">
@@ -1757,7 +1762,7 @@
                       </div>
                     </div>
                     <div class="tab-pan !p-0 !border-0 first:rounded-tl-none rounded-5" data-tabContent="3">
-                      <div class="p-4 overflow-auto max-h-[288px] md:max-h-screen custom-scroll">
+                      <div class="p-4 overflow-auto max-h-[268px] md:max-h-screen custom-scroll">
                         <ul class="flex flex-col gap-1"> 
                           <li class="pt-[13px] first:pt-0 first:mt-0 first:border-none"> 
                             <div class="flex items-center gap-3 w-[calc(100%_-_59px)] xl:gap-2">
@@ -1935,26 +1940,26 @@
         <button class="btn btn-primary text-white flex-1">Buy Now</button>
       </div>
     </div>
-    <div class="modal-main">
+    <div class="modal-main accept-call-start">
       <input class="peer" id="voice-call-modal" name="voice-call-modal" type="checkbox">
       <label class="modal-overlay peer-checked:block" for="voice-call-modal"></label>
       <div class="modal modal-center max-w-[450px] 2md:!w-full peer-checked:opacity-100 peer-checked:visible rounded-xl">
-        <div class="modal-body !p-0 min-h-[500px]">
-          <div class="voicecall relative"><img class="h-[500px] w-[450px] opacity-70" src="../../assets/images/chat-app/12.jpg" alt="girl">
+        <div class="modal-body !p-0 min-h-[500px] 2sm:min-h-[400px]">
+          <div class="voicecall relative"><img class="h-[500px] w-[450px] 2sm:h-[400px] opacity-70" src="../../assets/images/chat-app/12.jpg" alt="girl">
             <div class="voicecall-content flex flex-col gap-3 absolute items-center bottom-[10%] left-0 right-0">
               <h3 class="font-bold text-white m-0 text-xl3">Dmitriy Groshev</h3>
               <spa class="text-white font-semibold">LOG ANGELINA CALIFORNIA </spa>
               <ul class="flex gap-3 flex-wrap items-center justify-center">
-                <li>
+                <li class="cursor-pointer call-start-show">
                   <label for="accept-call-modal">
-                    <svg class="w-[4rem] h-[4rem] p-[12px] stroke-white bg-success rounded-full relative"> 
+                    <svg class="w-[4rem] h-[4rem] 2lg:w-[3.5rem] 2lg:h-[3.5rem] sm:w-[3rem] sm:h-[3rem] p-[12px] stroke-white bg-success rounded-full relative"> 
                       <use href="../../assets/svg/sprite.svg#Calling"> </use>
                     </svg>
                   </label>
                 </li>
-                <li> 
+                <li class="cursor-pointer"> 
                   <label for="voice-call-modal">
-                    <svg class="w-[4rem] h-[4rem] p-[12px] stroke-white bg-danger rounded-full rotate-[132deg]"> 
+                    <svg class="w-[4rem] h-[4rem] 2lg:w-[3.5rem] 2lg:h-[3.5rem] sm:w-[3rem] sm:h-[3rem] p-[12px] stroke-white bg-danger rounded-full rotate-[132deg]"> 
                       <use href="../../assets/svg/sprite.svg#Call"> </use>
                     </svg>
                   </label>
@@ -1965,21 +1970,27 @@
         </div>
       </div>
     </div>
-    <div class="modal-main">
+    <div class="modal-main accept-call-end">
       <input class="peer" id="accept-call-modal" name="accept-call-modal" type="checkbox">
       <label class="modal-overlay peer-checked:block" for="accept-call-modal"></label>
       <div class="modal modal-center max-w-[450px] 2md:!w-full peer-checked:opacity-100 peer-checked:visible rounded-xl">
-        <div class="modal-body !p-0 min-h-[500px]">
-          <div class="voicecall relative"><img class="h-[500px] w-[450px] opacity-70" src="../../assets/images/chat-app/12.jpg" alt="girl">
+        <div class="modal-body !p-0 min-h-[500px] 2sm:min-h-[400px]">
+          <div class="voicecall relative"><img class="h-[500px] w-[450px] 2sm:h-[400px] opacity-70" src="../../assets/images/chat-app/12.jpg" alt="girl">
             <div class="voicecall-content flex flex-col gap-3 absolute items-center bottom-[10%] left-0 right-0">
               <h3 class="font-bold text-white m-0 text-xl3">Dmitriy Groshev</h3><span class="text-white font-semibold">LOG ANGELINA CALIFORNIA </span>
               <ul class="flex gap-3 flex-wrap items-center justify-center">
-                <li> 
-                  <svg class="w-9 h-9 p-2 stroke-title bg-white rounded-full dark:bg-sidebar-dark2"> 
-                    <use href="../../assets/svg/sprite.svg#Voice-2"> </use>
-                  </svg>
+                <li class="leading-none"> 
+                  <label class="swap">
+                    <input type="checkbox"><span class="text-3xl swap-on">
+                      <svg class="w-9 h-9 p-2 stroke-title bg-white rounded-full dark:bg-sidebar-dark2"> 
+                        <use href="../../assets/svg/sprite.svg#Voice"> </use>
+                      </svg></span><span class="text-3xl swap-off">
+                      <svg class="w-9 h-9 p-2 stroke-title bg-white rounded-full dark:bg-sidebar-dark2"> 
+                        <use href="../../assets/svg/sprite.svg#Voice-2"> </use>
+                      </svg></span>
+                  </label>
                 </li>
-                <li> 
+                <li class="leading-none"> 
                   <label class="swap">
                     <input type="checkbox"><span class="text-3xl swap-on">
                       <svg class="w-9 h-9 p-2 stroke-title bg-white rounded-full dark:bg-sidebar-dark2"> 
@@ -1990,19 +2001,23 @@
                       </svg></span>
                   </label>
                 </li>
-                <li>
+                <li class="leading-none call-end">
                   <label for="voice-call-modal">
                     <svg class="w-[4rem] h-[4rem] p-[12px] cursor-pointer stroke-white bg-danger rounded-full  rotate-[132deg] relative"> 
                       <use href="../../assets/svg/sprite.svg#Call"> </use>
                     </svg>
                   </label>
                 </li>
-                <li>
+                <li class="leading-none">
                   <svg class="w-9 h-9 p-2 stroke-title bg-white rounded-full dark:bg-sidebar-dark2"> 
                     <use href="../../assets/svg/sprite.svg#Add-User"> </use>
                   </svg>
                 </li>
-                <li><i class="p-2 bg-white rounded-full dark:bg-sidebar-dark2 w-9 h-9 stroke-title" data-feather="pause"></i></li>
+                <li class="leading-none"> 
+                  <label class="swap">
+                    <input type="checkbox"><span class="text-3xl swap-on"><i class="p-2 bg-white rounded-full dark:bg-sidebar-dark2 w-9 h-9 stroke-title" data-feather="play"></i></span><span class="text-3xl swap-off"><i class="p-2 bg-white rounded-full dark:bg-sidebar-dark2 w-9 h-9 stroke-title" data-feather="pause"></i></span>
+                  </label>
+                </li>
               </ul>
             </div>
           </div>
@@ -2018,7 +2033,7 @@
             <label id="callminutes">00</label><span>:</span>
             <label id="callseconds">00</label>
           </div>
-          <div class="avatar rounded-none relative !min-w-[850px] !h-[400px] lg:!min-w-[600px] 2md:!min-w-[450px] sm:!min-w-[300px] 2sm:!min-w-[200px] 2sm:!h-[250px]"><img src="../../assets/images/chat-app/8.jpg" alt="avatar"></div>
+          <div class="avatar rounded-none relative !min-w-[850px] !h-[400px] lg:!min-w-[600px] 2md:!min-w-[450px] sm:!min-w-[300px] 2sm:!min-w-[340px] 3sm:!min-w-[280px]  2sm:!h-[300px]"><img src="../../assets/images/chat-app/8.jpg" alt="avatar"></div>
           <div class="video-setting flex justify-center items-center gap-2 py-4 2md:absolute 2md:bottom-[5%] 2md:left-0 2md:right-0 dark:bg-sidebar-dark2">
             <label class="swap">
               <input type="checkbox"><span class="text-3xl swap-on">
@@ -2029,12 +2044,20 @@
                   <use href="../../assets/svg/sprite.svg#Volume-Up"> </use>
                 </svg></span>
             </label>
-            <svg class="w-[50px] h-[50px] lg:w-[35px] lg:h-[35px] lg:p-[0.5rem] stroke-title cursor-pointer p-[0.90rem] bg-gray-light rounded-full dark:bg-sidebar-dark"> 
-              <use href="../../assets/svg/sprite.svg#Voice-2"> </use>
-            </svg>
-            <svg class="w-[60px] h-[60px] lg:w-[50px] lg:h-[50px] lg:p-[0.75rem] stroke-white cursor-pointer p-4 bg-danger rounded-full"> 
-              <use href="../../assets/svg/sprite.svg#Calling"> </use>
-            </svg>
+            <label class="swap">
+              <input type="checkbox"><span class="text-3xl swap-on">
+                <svg class="w-[50px] h-[50px] lg:w-[35px] lg:h-[35px] lg:p-[0.5rem] stroke-title cursor-pointer p-[0.90rem] bg-gray-light rounded-full dark:bg-sidebar-dark"> 
+                  <use href="../../assets/svg/sprite.svg#Voice"> </use>
+                </svg></span><span class="text-3xl swap-off">
+                <svg class="w-[50px] h-[50px] lg:w-[35px] lg:h-[35px] lg:p-[0.5rem] stroke-title cursor-pointer p-[0.90rem] bg-gray-light rounded-full dark:bg-sidebar-dark"> 
+                  <use href="../../assets/svg/sprite.svg#Voice-2"> </use>
+                </svg></span>
+            </label>
+            <label for="video-call-modal">
+              <svg class="w-[60px] h-[60px] lg:w-[50px] lg:h-[50px] lg:p-[0.75rem] stroke-white cursor-pointer p-4 bg-danger rounded-full"> 
+                <use href="../../assets/svg/sprite.svg#Calling"> </use>
+              </svg>
+            </label>
             <svg class="w-[50px] h-[50px] lg:w-[35px] lg:h-[35px] lg:p-[0.5rem] stroke-title cursor-pointer p-[0.90rem] bg-gray-light rounded-full dark:bg-sidebar-dark"> 
               <use href="../../assets/svg/sprite.svg#Video"> </use>
             </svg>
