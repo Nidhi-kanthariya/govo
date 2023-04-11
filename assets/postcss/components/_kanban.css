@@ -6,7 +6,7 @@
       .kanban-board {
         @apply mb-8 transition-all tracking-[0.5px]  rounded-5 !w-[calc(100%_/_3_-_30px)] overflow-hidden;
         .kanban-board-header {
-          @apply h-auto w-auto leading-none bg-primary-light border-b border-light text-content;
+          @apply h-auto w-auto leading-none bg-primary-light border-b border-light text-content mb-0;
           .kanban-title-board {
             @apply 2xl:text-[15px]  text-sm;
           }

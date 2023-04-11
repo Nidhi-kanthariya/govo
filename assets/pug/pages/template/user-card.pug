@@ -14,8 +14,8 @@
 -var customizer = true;
 
 //- Breadcrumbs
--var pageTitle="User Card";
--var breadcrumb=['User','User Card'];
+-var pageTitle="User Cards";
+-var breadcrumb=['User','User Cards'];
 
 //- all JSON  
 include ../../data/all-data
@@ -64,8 +64,8 @@ html(lang='en')
             h3.text-title.font-medium Invite Members
             label(for="modal-invite-user")
               i(data-feather="x" class="w-4 h-4 stroke-title")
-          div.modal-body
-            form(class="theme-form flex flex-col gap-4 m-0")
+          div.modal-body(class="dark:bg-sidebar-dark2")
+            form(class="flex flex-col gap-4 m-0 theme-form")
               div.flex.gap-2.items-center
                 input(type="email" id="email" placeholder="Enter email id.." required class="dark:bg-sidebar-dark")
                 label(for="modal-invite-user" class="!text-white").btn.btn-primary.px-2.py-3 Send                             

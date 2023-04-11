@@ -63,7 +63,7 @@
   .invoice-preview {
     form {
       label {
-        @apply mb-2 text-content3 font-semibold text-xs inline-block;
+        @apply mb-2 text-content3 font-bold text-xs inline-block;
       }
       input,
       textarea {
@@ -71,6 +71,9 @@
       }
       a {
         @apply text-white;
+      }
+      select{
+        @apply appearance-none;
       }
     }
     table {
@@ -85,10 +88,34 @@
       }
     }
   }
+  .checkout-detail{
+    .table{
+      tbody{
+        tr{
+          &:last-child{
+            td{
+              @apply !pb-0;
+            }
+          }
+        }
+      }
+    }
+  }
   .invoice-preview {
     form {
       label {
         @apply text-title text-xs font-bold uppercase;
+      }
+    }
+    .table{
+      tbody{
+        tr{
+          &:last-child{
+            td{
+              @apply pb-0;
+            }
+          }
+        }
       }
     }
   }

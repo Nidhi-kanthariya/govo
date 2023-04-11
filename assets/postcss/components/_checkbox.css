@@ -16,16 +16,16 @@
     }
 
     &.checkbox-xl{
-      @apply w-[1.75rem] h-[1.75rem];
+      @apply min-w-[1.75rem] h-[1.75rem];
     }
     &.checkbox-lg{
-      @apply w-[1.5rem] h-[1.5rem];
+      @apply min-w-[1.5rem] h-[1.5rem];
     }
     &.checkbox-md{
-      @apply w-[1.25rem] h-[1.25rem];
+      @apply min-w-[1.25rem] h-[1.25rem];
     }
     &.checkbox-sm{
-      @apply w-[.9375rem] h-[.9375rem];
+      @apply min-w-[.9375rem] h-[.9375rem];
     }
   }
 

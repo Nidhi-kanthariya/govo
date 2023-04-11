@@ -4,8 +4,8 @@ var kanban1 = new jKanban({
       {
          id: '_todo',
          title: 'Todo Taks',
-         gutter: '15px',
-         widthBoard: '250px',
+         gutter: '.9375rem',
+         widthBoard: '15.625rem',
          responsive: '700',
          item: [
             {
@@ -19,7 +19,7 @@ var kanban1 = new jKanban({
                            </svg>
                      </div>
                      <div class="flex items-center gap-2"> 
-                        <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium"> Design landing page for support team Don't because is make dome bigger </h5>
+                        <h5 class="w-[calc(100%_-_.75rem)] 2xl:text-xs text-sm text-dark font-medium"> Design landing page for support team Don't because is make dome bigger </h5>
                      </div>
                      <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                         <div class="flex items-center gap-4">
@@ -65,7 +65,7 @@ var kanban1 = new jKanban({
                         </svg> 
                   </div> 
                   <div class="flex items-center gap-2"> 
-                     <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium"> Final Test For the Design Issues</h5>
+                     <h5 class="w-[calc(100%_-_.75rem)] 2xl:text-xs text-sm text-dark font-medium"> Final Test For the Design Issues</h5>
                   </div> 
                   <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                      <div class="flex items-center gap-4">
@@ -111,7 +111,7 @@ var kanban1 = new jKanban({
                         </svg>
                  </div> 
                  <div class="flex items-center gap-2"> 
-                    <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium">  Research for solve problem in smooth way & update now </h5>
+                    <h5 class="w-[calc(100%_-_.75rem)] 2xl:text-xs text-sm text-dark font-medium">  Research for solve problem in smooth way & update now </h5>
                  </div> 
                  <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                     <div class="flex items-center gap-4">
@@ -162,7 +162,7 @@ var kanban1 = new jKanban({
                         </svg>
                   </div> 
                   <div class="flex items-center gap-2"> 
-                     <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium">  How to manage event planing  </h5>
+                     <h5 class="w-[calc(100%_-_.75rem)] 2xl:text-xs text-sm text-dark font-medium">  How to manage event planing  </h5>
                   </div> 
                   <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                      <div class="flex items-center gap-4"> 
@@ -208,7 +208,7 @@ var kanban1 = new jKanban({
                            </svg> 
                      </div> 
                      <div class="flex items-center gap-2"> 
-                        <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium"> Refresh company website </h5>
+                        <h5 class="w-[calc(100%_-_.75rem)] 2xl:text-xs text-sm text-dark font-medium"> Refresh company website </h5>
                      </div>
                      <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                         <div class="flex items-center gap-4"> 
@@ -260,7 +260,7 @@ var kanban1 = new jKanban({
                         </svg>
                   </div> 
                   <div class="flex items-center gap-2"> 
-                     <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium"> test paid ad perfomance fix system</h5>
+                     <h5 class="w-[calc(100%_-_.75rem)] 2xl:text-xs text-sm text-dark font-medium"> test paid ad perfomance fix system</h5>
                   </div> 
                   <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                      <div class="flex items-center gap-4">
@@ -306,7 +306,7 @@ var kanban1 = new jKanban({
                            </svg>
                     </div>
                     <div class="flex items-center gap-2"> 
-                       <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium"> Gather key resources </h5>
+                       <h5 class="w-[calc(100%_-_.75rem)] 2xl:text-xs text-sm text-dark font-medium"> Gather key resources </h5>
                     </div>
                     <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                        <div class="flex items-center gap-4"> 
@@ -352,7 +352,7 @@ var kanban1 = new jKanban({
                         </svg>
                   </div>
                   <div class="flex items-center gap-2"> 
-                     <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium"> Finalize project scope </h5>
+                     <h5 class="w-[calc(100%_-_.75rem)] 2xl:text-xs text-sm text-dark font-medium"> Finalize project scope </h5>
                   </div>
                   <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                      <div class="flex items-center gap-4"> 
@@ -394,7 +394,7 @@ var kanban1 = new jKanban({
 
 var kanban2 = new jKanban({
    element: '.kanab-2',
-   gutter: '15px',
+   gutter: '.9375rem',
    click: function (el) {
       alert(el.innerHTML);
    },
@@ -416,7 +416,7 @@ var kanban2 = new jKanban({
                            </svg>
                      </div>
                      <div class="flex items-center gap-2"> 
-                        <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium"> Set user flow</h5>
+                        <h5 class="w-[calc(100%_-_.75rem)] 2xl:text-xs text-sm text-dark font-medium"> Set user flow</h5>
                      </div>
                      <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                         <div class="flex items-center gap-4"> 
@@ -462,7 +462,7 @@ var kanban2 = new jKanban({
                         </svg>
                   </div>
                   <div class="flex items-center gap-2"> 
-                     <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium"> Add web specific content</h5>
+                     <h5 class="w-[calc(100%_-_.75rem)] 2xl:text-xs text-sm text-dark font-medium"> Add web specific content</h5>
                   </div> 
                   <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                      <div class="flex items-center gap-4"> 
@@ -508,7 +508,7 @@ var kanban2 = new jKanban({
                         </svg> 
                   </div>
                   <div class="flex items-center gap-2"> 
-                     <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium"> Plan Join's birthday</h5>
+                     <h5 class="w-[calc(100%_-_.75rem)] 2xl:text-xs text-sm text-dark font-medium"> Plan Join's birthday</h5>
                   </div>
                   <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                      <div class="flex items-center gap-4"> 
@@ -561,7 +561,7 @@ var kanban2 = new jKanban({
                         </svg>
                   </div>
                   <div class="flex items-center gap-2">
-                     <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium"> Sand rent payment for October</h5>
+                     <h5 class="w-[calc(100%_-_.75rem)] 2xl:text-xs text-sm text-dark font-medium"> Sand rent payment for October</h5>
                   </div>
                   <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                      <div class="flex items-center gap-4">
@@ -607,7 +607,7 @@ var kanban2 = new jKanban({
                         </svg>
                   </div>
                   <div class="flex items-center gap-2">
-                     <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium">Research for solve</h5>
+                     <h5 class="w-[calc(100%_-_.75rem)] 2xl:text-xs text-sm text-dark font-medium">Research for solve</h5>
                   </div>
                   <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                      <div class="flex items-center gap-4">
@@ -661,7 +661,7 @@ var kanban2 = new jKanban({
                         </svg>
                   </div>
                   <div class="flex items-center gap-2">
-                     <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium"> Social media campaign</h5>
+                     <h5 class="w-[calc(100%_-_.75rem)] 2xl:text-xs text-sm text-dark font-medium"> Social media campaign</h5>
                   </div>
                   <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                      <div class="flex items-center gap-4">
@@ -707,7 +707,7 @@ var kanban2 = new jKanban({
                         </svg>
                   </div>
                   <div class="flex items-center gap-2">
-                     <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium"> The company design</h5>
+                     <h5 class="w-[calc(100%_-_.75rem)] 2xl:text-xs text-sm text-dark font-medium"> The company design</h5>
                   </div>
                   <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                      <div class="flex items-center gap-4">
@@ -753,7 +753,7 @@ var kanban2 = new jKanban({
                         </svg>
                   </div>
                   <div class="flex items-center gap-2">
-                     <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium">Looking for NFT design services?</h5>
+                     <h5 class="w-[calc(100%_-_.75rem)] 2xl:text-xs text-sm text-dark font-medium">Looking for NFT design services?</h5>
                   </div>
                   <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                      <div class="flex items-center gap-4">
@@ -795,7 +795,7 @@ var kanban2 = new jKanban({
 
 var kanban3 = new jKanban({
    element: '.kanab-3',
-   gutter: '15px',
+   gutter: '.9375rem',
    click: function (el) {
       alert(el.innerHTML);
    },
@@ -817,7 +817,7 @@ var kanban3 = new jKanban({
                                     </svg>
                               </div>
                               <div class="flex items-center gap-2">
-                                 <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium">Step of Research Design</h5>
+                                 <h5 class="w-[calc(100%_-_.75rem)] 2xl:text-xs text-sm text-dark font-medium">Step of Research Design</h5>
                               </div>
                               <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                                  <div class="flex items-center gap-4">
@@ -865,7 +865,7 @@ var kanban3 = new jKanban({
                            </svg>
                       </div>
                       <div class="flex items-center gap-2">
-                         <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium">Research for Order</h5>
+                         <h5 class="w-[calc(100%_-_.75rem)] 2xl:text-xs text-sm text-dark font-medium">Research for Order</h5>
                       </div>
                       <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                          <div class="flex items-center gap-4">
@@ -913,7 +913,7 @@ var kanban3 = new jKanban({
                            </svg>
                       </div>
                       <div class="flex items-center gap-2">
-                         <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium">Redesign for home page</h5>
+                         <h5 class="w-[calc(100%_-_.75rem)] 2xl:text-xs text-sm text-dark font-medium">Redesign for home page</h5>
                       </div>
                       <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                          <div class="flex items-center gap-4">
@@ -968,7 +968,7 @@ var kanban3 = new jKanban({
                            </svg> 
                       </div>
                       <div class="flex items-center gap-2">
-                         <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium">Form Builder Making</h5>
+                         <h5 class="w-[calc(100%_-_.75rem)] 2xl:text-xs text-sm text-dark font-medium">Form Builder Making</h5>
                       </div>
                       <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                          <div class="flex items-center gap-4">
@@ -1016,7 +1016,7 @@ var kanban3 = new jKanban({
                            </svg>
                       </div>
                       <div class="flex items-center gap-2">
-                         <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium">Here, let's explore the purposes of marketing</h5>
+                         <h5 class="w-[calc(100%_-_.75rem)] 2xl:text-xs text-sm text-dark font-medium">Here, let's explore the purposes of marketing</h5>
                       </div>
                       <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                          <div class="flex items-center gap-4">
@@ -1072,7 +1072,7 @@ var kanban3 = new jKanban({
                            </svg>
                       </div>
                       <div class="flex items-center gap-2">
-                         <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium">The 4 types of project prototyping are prototypes</h5>
+                         <h5 class="w-[calc(100%_-_.75rem)] 2xl:text-xs text-sm text-dark font-medium">The 4 types of project prototyping are prototypes</h5>
                       </div>
                       <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                          <div class="flex items-center gap-4">
@@ -1121,7 +1121,7 @@ var kanban3 = new jKanban({
                            </svg> 
                       </div>
                       <div class="flex items-center gap-2">
-                         <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium">Experiments and processes</h5>
+                         <h5 class="w-[calc(100%_-_.75rem)] 2xl:text-xs text-sm text-dark font-medium">Experiments and processes</h5>
                       </div>
                       <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                          <div class="flex items-center gap-4">
@@ -1169,7 +1169,7 @@ var kanban3 = new jKanban({
                            </svg>
                       </div>
                       <div class="flex items-center gap-2">
-                         <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark font-medium">Application Concept</h5>
+                         <h5 class="w-[calc(100%_-_.75rem)] 2xl:text-xs text-sm text-dark font-medium">Application Concept</h5>
                       </div>
                       <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                          <div class="flex items-center gap-4">
@@ -1217,7 +1217,7 @@ toDoButton.addEventListener('click', function () {
      <div class="kanban-box">
                   <div class="kanab-item-1 p-5 2xl:p-4  border border-light bg-white rounded-5 flex flex-col gap-5 2xl:gap-3">
                         <div class="flex items-center gap-2">
-                           <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark">Don't use unwanted extra div because is make dome bigger</h5>
+                           <h5 class="w-[calc(100%_-_.75rem)] 2xl:text-xs text-sm text-dark">Don't use unwanted extra div because is make dome bigger</h5>
                         </div>
                         <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                            <div class="flex items-center gap-4">
@@ -1260,7 +1260,7 @@ addBoardDefault.addEventListener('click', function () {
            <div class="kanban-box"> 
                   <div class="kanab-item-1 p-5 2xl:p-4  border border-light bg-white rounded-5 flex flex-col gap-5 2xl:gap-3">
                         <div class="flex items-center gap-2">
-                           <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark">Don't use unwanted extra div because is make dome bigger</h5>
+                           <h5 class="w-[calc(100%_-_.75rem)] 2xl:text-xs text-sm text-dark">Don't use unwanted extra div because is make dome bigger</h5>
                         </div>
                         <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                            <div class="flex items-center gap-4">
@@ -1300,7 +1300,7 @@ addBoardDefault.addEventListener('click', function () {
            <div class="kanban-box">
                   <div class="kanab-item-1 p-5 2xl:p-4  border border-light bg-white rounded-5 flex flex-col gap-5 2xl:gap-3">
                         <div class="flex items-center gap-2">
-                           <h5 class="w-[calc(100%_-_12px)] 2xl:text-xs text-sm text-dark">Don't use unwanted extra div because is make dome bigger</h5>
+                           <h5 class="w-[calc(100%_-_.75rem)] 2xl:text-xs text-sm text-dark">Don't use unwanted extra div because is make dome bigger</h5>
                         </div>
                         <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                            <div class="flex items-center gap-4">
@@ -1339,5 +1339,5 @@ addBoardDefault.addEventListener('click', function () {
 feather.replace();
 var removeBoard = document.getElementById('removeBoard');
 removeBoard.addEventListener('click', function () {
-   kanban3.removeBoard('_done');
+   kanban48pxoveBoard('_done');
 });

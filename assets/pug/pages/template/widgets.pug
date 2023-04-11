@@ -13,9 +13,6 @@
 //- apex-chart
 -var apexChart=true;
 -var uniqueApex=true; 
--var friendlyApex=true;
--var materialApex=true;
--var minimalApex=true;
 
 //- Chart Js
 -var chartJs=true;
@@ -49,7 +46,7 @@ html(lang='en')
                      div(class="grid grid-cols-2 gap-card-gap")
                         each data in WIDGET3_DATA
                            div.col-span-1(class="md:col-span-2")
-                              div.card
+                              div.card.svg-shake
                                  +widget3(data)
                   div.col-span-4(class="xl:col-span-6 xl3:col-span-12")
                      div.card.gap-0
