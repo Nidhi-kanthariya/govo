@@ -6,7 +6,7 @@
     .select-selected {
       @apply pl-[0.875rem] capitalize pr-[1.75rem] py-[0.625rem] bg-gray-light dark:bg-sidebar-dark2 text-3xs font-bold rtl:pr-[0.875rem] rtl:pl-[1.75rem];
       &:after {
-        @apply rtl:left-[.625rem] rtl:right-unset dark:border-border-light dark:border-t-4 dark:border-solid dark:border-4 dark:border-b-transparent dark:border-l-transparent dark:border-r-transparent;
+        @apply top-1/2 -translate-y-1/2 rtl:left-[.625rem] rtl:right-unset dark:border-border-light dark:border-t-4 dark:border-solid dark:border-4 dark:border-b-transparent dark:border-l-transparent dark:border-r-transparent;
       }
     }
     &.select-bg-transition {
@@ -59,10 +59,31 @@
         @apply pl-[0.875rem] pr-[1.75rem] py-2 text-[0.875rem] rtl:pl-[1.75rem] rtl:pr-[0.875rem];
       }
     }
+    &.rounded{
+      .select-selected, .select-items{
+        @apply rounded-xl;
+      }
+    }
   }
+
+  .select-style-2{
+    .select-selected {
+      @apply pl-[0.875rem] capitalize pr-[1.75rem] py-[0.625rem] bg-success-light border border-success text-success dark:bg-sidebar-dark2 text-3xs font-bold rtl:pr-[0.875rem] rtl:pl-[1.75rem];
+      &:after {
+        @apply top-1/2 -translate-y-1/2 rtl:left-[.625rem] border-success border-t-4 border-b-transparent border-l-transparent border-r-transparent rtl:right-unset dark:border-border-light dark:border-t-4 dark:border-solid dark:border-4 dark:border-b-transparent dark:border-l-transparent dark:border-r-transparent;
+      }
+    }
+    .select-items{
+      @apply bg-success-light p-[0.75rem];
+      > div {
+        @apply hover:text-primary transition-all  px-0 first:pt-0 last:pb-0 py-[0.25rem] text-xs text-success;
+      }
+    }
+  }
+
   .select-section {
     .select-selected {
-      @apply min-w-[13.125rem];
+      @apply min-w-[13.125rem];      
       .select-items {
         @apply min-w-[13.125rem];
       }

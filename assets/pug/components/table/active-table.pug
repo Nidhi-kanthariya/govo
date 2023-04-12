@@ -3,20 +3,11 @@
 //- ====================
 
 
-table.table.equal-space
+table.table.equal-space.active-table
   thead 
     tr
       each userHead,index in ACTIVE_TABLE.header
-        if(index===0)
-          th
-            div(class="flex items-center gap-2")
-              label.checkbox(class="w-[15px] h-[15px]")
-                input(type='checkbox peer')
-                div.checkbox-indicator(class="bg-white peer-checked:bg-primary")
-                  i(data-feather="check")
-              =  userHead
-        else 
-          th=  userHead
+        th=  userHead
   tbody
     each bodyData,index in ACTIVE_TABLE.body
       tr(class="hover:bg-gray-light dark:hover:bg-sidebar-dark2")
