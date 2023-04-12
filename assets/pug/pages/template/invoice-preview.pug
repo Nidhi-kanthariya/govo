@@ -33,12 +33,12 @@ html(lang='en')
         // Sidebar End 
 
         // Page Body Start
-        div.page-body
+        div.page-body 
           div.grid.grid-cols-12.gap-card-gap
             div.col-span-12
               div.card(class="max-w-5xl m-auto overflow-auto invoice-preview custom-scroll") 
                 table(class="table equal-space")
-                  tbody   
+                  tbody
                     tr
                       td(class="min-w-[220px]")
                         img(src='../../assets/images/logo/logo-dark.png' alt='logo' class="w-20")
@@ -57,8 +57,8 @@ html(lang='en')
                     tr
                       td(colspan="2")
                         table(class="table equal-space")
-                          tbody   
-                            tr 
+                          tbody    
+                            tr
                               td(class="min-w-[120px]")
                                 p.text-title.text-xs.font-bold.uppercase Invoice No
                                 span.font-medium.text-content3 go157864
@@ -68,18 +68,18 @@ html(lang='en')
                                 small.font-medium.text-content3.text-2xs 2:45PM 
                               td(class="min-w-[150px]")
                                 p.text-title.text-xs.font-bold.uppercase payment Status
-                                div.badge.bg-success-light.text-success.rounded.inline-block Paid
-                              td(class="min-w-[130px]")
+                                div(class="dark:bg-sidebar-dark2").badge.bg-success-light.text-success.rounded.inline-block Paid
+                              td(class="min-w-[130px]") 
                                 p.text-title.text-xs.font-bold.uppercase Total Amount
                                 span.font-medium.text-content3 $787.6
                     tr
-                      td(class="min-w-[220px]") 
+                      td(class="min-w-[220px]")
                         p.text-title.text-xs.font-bold.uppercase(class="!mb-0") Shipping Address 
                         p.text-title.text-xs.font-bold(class="last:!mb-0") 	Vilma Gerhold
                         p.font-medium.text-content3(class="last:!mb-0") 14300 Gallant Fox Ln, Bowie
                         p.font-medium.text-content3(class="last:!mb-0") Maryland, 20715, US
                         p.font-medium.text-content3(class="last:!mb-0") (301) 464-0110
-                      td(class="min-w-[220px]") 
+                      td(class="min-w-[220px]")
                         p.text-title.text-xs.font-bold.uppercase(class="!mb-0") Billing Address 
                         p.text-title.text-xs.font-bold(class="last:!mb-0") 	Vilma Gerhold
                         p.font-medium.text-content3(class="last:!mb-0") 14300 Gallant Fox Ln, Bowie

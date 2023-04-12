@@ -80,7 +80,7 @@
       }
 
       &.product-tab {
-        @apply bg-primary-light border-none text-title items-center flex gap-2 flex-row p-4;
+        @apply bg-primary-light border-none text-title items-center flex gap-2 flex-row p-4 dark:text-white;
         svg {
           @apply p-2 bg-primary rounded-full text-white w-4 h-4;
         }
