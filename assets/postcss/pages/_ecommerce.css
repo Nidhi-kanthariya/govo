@@ -45,7 +45,7 @@
     &.list-view {
       .product-box {
         .card {
-          @apply hover:scale-100; 
+          @apply hover:scale-100;
           .card-body {
             @apply flex gap-3;
             .relative {
@@ -72,7 +72,7 @@
       a {
         @apply text-white;
       }
-      select{
+      select {
         @apply appearance-none;
       }
     }
@@ -88,12 +88,12 @@
       }
     }
   }
-  .checkout-detail{
-    .table{
-      tbody{
-        tr{
-          &:last-child{
-            td{
+  .checkout-detail {
+    .table {
+      tbody {
+        tr {
+          &:last-child {
+            td {
               @apply !pb-0;
             }
           }
@@ -107,11 +107,11 @@
         @apply text-title text-xs font-bold uppercase;
       }
     }
-    .table{
-      tbody{
-        tr{
-          &:last-child{
-            td{
+    .table {
+      tbody {
+        tr {
+          &:last-child {
+            td {
               @apply pb-0;
             }
           }
@@ -188,7 +188,7 @@
           thead {
             tr {
               th {
-                @apply bg-body py-3;
+                @apply bg-body py-3 dark:bg-sidebar-dark2;
               }
             }
           }
@@ -207,7 +207,7 @@
         thead {
           tr {
             th {
-              @apply bg-body py-3;
+              @apply bg-body py-3 dark:bg-sidebar-dark2;
             }
           }
         }
