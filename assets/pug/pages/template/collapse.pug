@@ -49,14 +49,14 @@ html(lang='en')
                     div.preview-code.tab-links
                       button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
                       button.p-0.tab.tab-lifted(data-tabFilter="2" class="tab-link tab-2") Html
-                div.card-body                                   
+                div.card-body              
                   div.tabs-content
                     div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
                       div.flex.flex-col.flex-wrap.gap-2
                         div.accordionWrapper
-                          div.accordionItem.open
+                          div.accordionItem.open 
                             h4.accordionItemHeading.bg-primary Who creates websites?
-                            div.accordionItemContent
+                            div(class="dark:bg-sidebar-dark2").accordionItemContent
                               p
                                 | Web design increases accessibility for all potential users while 
                                 strong.text-danger identifying the objectives 
@@ -95,11 +95,11 @@ html(lang='en')
                         div.accordionWrapper
                           div.accordionItem.close
                             h4.accordionItemHeading.bg-primary What is Tailwind Css
-                            div.accordionItemContent
+                            div(class="dark:bg-sidebar-dark2").accordionItemContent
                               p In essence, Tailwind CSS is a utility-first CSS framework for quickly creating unique user experiences. It is a low-level CSS framework that is extremely adaptable and provides all the building blocks required to create custom designs without requiring you to struggle to overcome obnoxious opinionated styles.
                           div.accordionItem.close
                             h4.accordionItemHeading.bg-primary Why Tailwind CSS?
-                            div.accordionItemContent
+                            div(class="dark:bg-sidebar-dark2").accordionItemContent
                               p.flex.gap-2.items-center 
                                 +SVG_ICON("Arrow-Right", "min-w-[16px] w-4 h-4 !stroke-title")
                                 |  Quicker UI construction procedure 
@@ -108,11 +108,11 @@ html(lang='en')
                                 |  Because it is a utility-first CSS framework, we may create custom designs using utility classes rather than writing CSS as in the conventional method. 
                           div.accordionItem.close
                             h4.accordionItemHeading.bg-primary Advantages of Tailwind CSS
-                            div.accordionItemContent
+                            div(class="dark:bg-sidebar-dark2").accordionItemContent 
                               p.flex.gap-2.items-center 
                                 +SVG_ICON("Arrow-Right", "min-w-[16px] w-4 h-4 !stroke-title")
                                 |  The names of CSS classes and IDs are no longer amusing.
-                              p.flex.gap-2.items-center 
+                              p.flex.gap-2.items-center  
                                 +SVG_ICON("Arrow-Right", "min-w-[16px] w-4 h-4 !stroke-title")
                                 |  Minimum number of lines in a CSS file.
                               p.flex.gap-2.items-center 
@@ -130,13 +130,13 @@ html(lang='en')
                           |    &lt;div class="accordionWrapper"&gt;
                           |     &lt;div class="accordionItem close"&gt;
                           |        &lt;h4 class="accordionItemHeading bg-primary"&gt; What is Tailwind Css &lt;/h4&gt;
-                          |        &lt;div class="accordionItemContent"&gt;
+                          |        &lt;div class="accordionItemContent dark:bg-sidebar-dark2"&gt;
                           |          &lt;p&gt; In essence, Tailwind CSS... &lt;/p&gt;
                           |        &lt;/div&gt;
                           |     &lt;/div&gt;
                           |     &lt;div class="accordionItem close"&gt;
                           |        &lt;h4 class="accordionItemHeading bg-primary"&gt; Why Tailwind CSS? &lt;/h4&gt;
-                          |        &lt;div class="accordionItemContent"&gt;
+                          |        &lt;div class="accordionItemContent dark:bg-sidebar-dark2"&gt;
                           |           &lt;p class="text-xs text-content3"&gt; 
                           |               +SVG_ICON("Arrow-Right", "min-w-[16px] w-4 h-4 !stroke-title")
                           |               Quicker UI construction procedure
@@ -149,7 +149,7 @@ html(lang='en')
                           |     &lt;/div&gt;
                           |     &lt;div class="accordionItem close"&gt;
                           |        &lt;h4 class="accordionItemHeading bg-primary"&gt;Advantages of Tailwind CSS&lt;/h4&gt;
-                          |        &lt;div class="accordionItemContent"&gt;
+                          |        &lt;div class="accordionItemContent dark:bg-sidebar-dark2"&gt;
                           |           &lt;p class="text-xs text-content3"&gt; 
                           |               +SVG_ICON("Arrow-Right", "min-w-[16px] w-4 h-4 !stroke-title")
                           |               The names of CSS..
@@ -161,7 +161,7 @@ html(lang='en')
                           |           &lt;p class="text-xs text-content3"&gt; 
                           |               +SVG_ICON("Arrow-Right", "min-w-[16px] w-4 h-4 !stroke-title")
                           |               To produce the components..
-                          |           &lt;/p&gt;  
+                          |           &lt;/p&gt;
                           |           &lt;p class="flex items-center gap-2"&gt; 
                           |               +SVG_ICON("Arrow-Right", "min-w-[16px] w-4 h-4 !stroke-title")
                           |               Creates a responsive website.
@@ -256,17 +256,17 @@ html(lang='en')
                     div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
                       div.flex.flex-col.flex-wrap.gap-2
                         div.accordionWrapper.flush
-                          div.accordionItem.open
+                          div.accordionItem.open 
                             h4.accordionItemHeading How should my profile be set up?
-                            div.accordionItemContent
+                            div(class="dark:bg-sidebar-dark2").accordionItemContent
                               p On the anniversary of your initial paid sign-up date, your SlickText service is renewed. The billing date won't change if you upgrade in the middle of your billing cycle. However, upgrading compels a prorated payment to be applied to your account right away.
                           div.accordionItem.close
                             h4.accordionItemHeading What are my project options?
-                            div.accordionItemContent
+                            div(class="dark:bg-sidebar-dark2").accordionItemContent
                               p Your bill will renew based on the date you upgraded to a premium plan if you initially signed up for a free account with Slicktext and later switched to one. In your SlickText account, under Plan Options, you may examine all of your bills.
                           div.accordionItem.close
                             h4.accordionItemHeading How do I change my voice settings?
-                            div.accordionItemContent
+                            div(class="dark:bg-sidebar-dark2").accordionItemContent
                               p No, we are unable to give you this information. An anonymous, private action is unsubscribing from a list. This stops additional harassing. Providing this information is viewed negatively, and any additional communication after they choose not to receive it would be deemed a violation of their consent.
                     div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark2 dark:hover:text-white")
@@ -280,7 +280,7 @@ html(lang='en')
                           |        &lt;div class="accordionItemContent"&gt;
                           |          &lt;p&gt;On the anniversary of your..&lt;/p&gt;
                           |        &lt;/div&gt;
-                          |     &lt;/div&gt;
+                          |     &lt;/div&gt; 
                           |     &lt;div class="accordionItem close"&gt;
                           |        &lt;h4 class="accordionItemHeading"&gt; What are my project options? &lt;/h4&gt;
                           |        &lt;div class="accordionItemContent"&gt;
@@ -313,11 +313,11 @@ html(lang='en')
                         div.accordionWrapper
                           div.accordionItem.close
                             h4.accordionItemHeading.bg-secondary User interface design: what is it?
-                            div.accordionItemContent
+                            div(class="dark:bg-sidebar-dark2").accordionItemContent
                               p The technique that designers use to create user interfaces in software or computerized devices with a focus on aesthetics or style is known as user interface (UI) design. Designers strive to produce user-friendly and enjoyable interfaces. Graphical user interfaces and other types, such as voice-controlled interfaces, are referred to as "UI design."
                           div.accordionItem.open
                             h4.accordionItemHeading.bg-warning Digital marketing: What is it?
-                            div.accordionItemContent
+                            div(class="dark:bg-sidebar-dark2").accordionItemContent
                               p You may have heard of the fascinating career opportunity of digital marketing. According to Pew Research, people' continuous internet usage has climbed by 5% over the past three years. This indicates that there has been a significant change in how people communicate, purchase, sell, and conduct business, and that online marketing is a successful strategy moving ahead.
                     div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark2 dark:hover:text-white")
@@ -328,13 +328,13 @@ html(lang='en')
                           |    &lt;div class="accordionWrapper"&gt;
                           |     &lt;div class="accordionItem close"&gt;
                           |        &lt;h4 class="accordionItemHeading bg-secondary"&gt;User interface design: what is it? &lt;/h4&gt;
-                          |        &lt;div class="accordionItemContent"&gt;
+                          |        &lt;div class="accordionItemContent dark:bg-sidebar-dark2"&gt;
                           |          &lt;p&gt;  The technique that designers... &lt;/p&gt;
                           |        &lt;/div&gt;
                           |     &lt;/div&gt;
                           |     &lt;div class="accordionItem close"&gt;
                           |        &lt;h4 class="accordionItemHeading bg-warning"&gt; Digital marketing: What is it? &lt;/h4&gt;
-                          |        &lt;div class="accordionItemContent"&gt;
+                          |        &lt;div class="accordionItemContent dark:bg-sidebar-dark2"&gt;
                           |          &lt;p&gt; You may have heard of... &lt;/p&gt;
                           |        &lt;/div&gt;
                           |     &lt;/div&gt;
@@ -360,15 +360,15 @@ html(lang='en')
                             h4.accordionItemHeading.flex.justify-between.bg-primary Maintain Contact
                               div.collapse-icon
                                 +SVG_ICON("Arrow-Down-2","w-[1.25rem] h-[1.25rem] stroke-white")
-                            div.accordionItemContent
+                            div(class="dark:bg-sidebar-dark2").accordionItemContent
                               p These systems are primarily used to block access to content that has been identified as being inappropriate for users under a certain age (either voluntarily or in accordance with local laws), such as alcohol and tobacco advertising, internet pornography or other adult-oriented content, objectionable video games, or to comply with online privacy laws that govern the gathering of personal information from minors.
                           div.accordionItem.open
                             h4.accordionItemHeading.flex.justify-between.bg-primary Talks to Others
                               div.collapse-icon
                                 +SVG_ICON("Arrow-Down-2","w-[1.25rem] h-[1.25rem] stroke-white")
-                            div.accordionItemContent
+                            div(class="dark:bg-sidebar-dark2").accordionItemContent
                               p You get the same features in Chat and Chat in Gmail, but the integrated Gmail experience provides a central location to communicate with friends, family, or coworkers between emails. 
-                              p 
+                              p
                                 span.text-title.font-bold.mt-1 Chat:  
                                 | Use when you prefer a dedicated chat experience and don't mind switching between different apps.
                     div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
@@ -383,7 +383,7 @@ html(lang='en')
                           |          &lt;div class="collapse-icon"&gt;
                           |            +SVG_ICON("Arrow-Down-2","w-[1.25rem] h-[1.25rem] stroke-white")
                           |          &lt;/div&gt;
-                          |        &lt;div class="accordionItemContent"&gt;
+                          |        &lt;div class="accordionItemContent dark:bg-sidebar-dark2"&gt;
                           |          &lt;p&gt;These systems are primarily...&lt;/p&gt;
                           |        &lt;/div&gt;
                           |     &lt;/div&gt;
@@ -392,7 +392,7 @@ html(lang='en')
                           |          &lt;div class="collapse-icon"&gt;
                           |            +SVG_ICON("Arrow-Down-2","w-[1.25rem] h-[1.25rem] stroke-white")
                           |          &lt;/div&gt;
-                          |        &lt;div class="accordionItemContent"&gt;
+                          |        &lt;div class="accordionItemContent dark:bg-sidebar-dark2"&gt;
                           |          &lt;p&gt;You get the same features...&lt;/p&gt;
                           |          &lt;p&gt; &lt;span class="mt-1 font-bold text-title"&gt; Chat: &lt;/span&gt;Use when you...&lt;/p&gt;
                           |        &lt;/div&gt;
@@ -404,7 +404,7 @@ html(lang='en')
                 div.card-header.pb-2.header-bottom-border
                   div.flex.flex-col
                     h3.text-lg.font-bold Collapse with Icons
-                    p   Use icons with collapse using  
+                    p   Use icons with collapse using
                       strong  .close 
                       |   class.
                     div.preview-code.tab-links
@@ -419,7 +419,7 @@ html(lang='en')
                             h4.accordionItemHeading.flex.flex-row-reverse.justify-end.items-center.btn.border.border-primary(class="!text-primary") Who creates websites?
                               div
                                 +SVG_ICON("Swap","w-[1.25rem] h-[1.25rem] !stroke-primary mr-2 ")
-                            div.accordionItemContent.border-1.border-primary
+                            div(class="dark:bg-sidebar-dark2").accordionItemContent.border-1.border-primary
                               p
                                 | Web design increases accessibility for all potential users while 
                                 strong.text-danger identifying the objectives 
@@ -428,18 +428,18 @@ html(lang='en')
                             h4.accordionItemHeading.flex.flex-row-reverse.justify-end.items-center.btn.border.border-secondary(class="!text-secondary") What purpose does web design serve?
                               div
                                 +SVG_ICON("Swap","w-[1.25rem] h-[1.25rem] !stroke-secondary mr-2 ")
-                            div.accordionItemContent.border-1.border-secondary
+                            div(class="dark:bg-sidebar-dark2").accordionItemContent.border-1.border-secondary
                               p Companies can create or maintain a strong brand identity for their company through web design. When a website consistently conveys a company's identity, it is simpler to navigate and visitors are better able to associate the visual components of a brand with a particular organisation and its goods or services.
                           div.accordionItem.close
                             h4.accordionItemHeading.flex.flex-row-reverse.justify-end.items-center.btn.border.border-info(class="!text-info") What components make up web design?
-                              div
+                              div 
                                 +SVG_ICON("Swap","w-[1.25rem] h-[1.25rem] !stroke-info mr-2 ")
-                            div.accordionItemContent.border-1.border-info
+                            div(class="dark:bg-sidebar-dark2").accordionItemContent.border-1.border-info
                               p.flex.gap-2.items-center 
                                 +SVG_ICON("Arrow-Right", "min-w-[16px] w-4 h-4 !stroke-title")
-                                |  Layout
+                                |  Layout 
                               p.flex.gap-2.items-center 
-                                +SVG_ICON("Arrow-Right", "min-w-[16px] w-4 h-4 !stroke-title")
+                                +SVG_ICON("Arrow-Right", "min-w-[16px] w-4 h-4 !stroke-title") 
                                 |  Images
                               p.flex.gap-2.items-center 
                                 +SVG_ICON("Arrow-Right", "min-w-[16px] w-4 h-4 !stroke-title")
@@ -540,19 +540,19 @@ html(lang='en')
                             h4.accordionItemHeading.flex.justify-between.bg-secondary How should my profile be set up?
                               div.collapse-icon
                                 +SVG_ICON("Swap","w-[1.25rem] h-[1.25rem] stroke-white")
-                            div.accordionItemContent
+                            div(class="dark:bg-sidebar-dark2").accordionItemContent
                               p On the anniversary of your initial paid sign-up date, your SlickText service is renewed. The billing date won't change if you upgrade in the middle of your billing cycle. However, upgrading compels a prorated payment to be applied to your account right away.
-                          div.accordionItem.close
+                          div.accordionItem.close 
                             h4.accordionItemHeading.flex.justify-between.bg-secondary What are my project options?
-                              div.collapse-icon
+                              div.collapse-icon 
                                 +SVG_ICON("Arrow-Down-Circle","w-[1.25rem] h-[1.25rem] stroke-white")
-                            div.accordionItemContent
+                            div(class="dark:bg-sidebar-dark2").accordionItemContent
                               p Your bill will renew based on the date you upgraded to a premium plan if you initially signed up for a free account with Slicktext and later switched to one. In your SlickText account, under Plan Options, you may examine all of your bills.
-                          div.accordionItem.close
+                          div.accordionItem.close 
                             h4.accordionItemHeading.flex.justify-between.bg-secondary How do I change my voice settings? 
-                              div.collapse-icon
+                              div.collapse-icon  
                                 +SVG_ICON("Arrow-Down-2","w-[1.25rem] h-[1.25rem] stroke-white")
-                            div.accordionItemContent
+                            div(class="dark:bg-sidebar-dark2").accordionItemContent
                               p No, we are unable to give you this information. An anonymous, private action is unsubscribing from a list. This stops additional harassing. Providing this information is viewed negatively, and any additional communication after they choose not to receive it would be deemed a violation of their consent.
                     div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark2 dark:hover:text-white")
@@ -560,8 +560,8 @@ html(lang='en')
                       pre(class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2")
                         code(class="dark:bg-sidebar-dark2")
                           |&lt;div class="flex flex-col flex-wrap gap-2"&gt;
-                          |    &lt;div class="accordionWrapper"&gt;
-                          |     &lt;div class="accordionItem open"&gt;
+                          |    &lt;div class="accordionWrapper"&gt; 
+                          |     &lt;div class="accordionItem open"&gt; 
                           |        &lt;h4 class="flex justify-between accordionItemHeading bg-secondary"&gt; How should my profile be set up? &lt;/h4&gt;
                           |          &lt;div class="collapse-icon"&gt;
                           |            +SVG_ICON("Swap","w-[1.25rem] h-[1.25rem] stroke-white")
