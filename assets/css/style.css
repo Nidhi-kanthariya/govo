@@ -12459,12 +12459,6 @@ header {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-:is(.dark .dark\:text-content2) {
-  color: var(--content2);
-}
-:is(.dark .dark\:text-dark) {
-  color: var(--dark);
-}
 :is(.dark .dark\:hover\:bg-primary:hover) {
   background-color: rgba(var(--primary),1);
 }
