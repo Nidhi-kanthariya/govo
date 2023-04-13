@@ -95,7 +95,7 @@ html(lang='en')
                 div.card-body                                   
                   div.tabs-content
                     div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
-                      div.flex.items-center.flex-col.flex-wrap.gap-2(class="my-2")
+                      div.flex.items-center.flex-col.flex-wrap.gap-2
                         div.custom-select.select-style-1.select-bg-white(class="dark:select-bg-sidebar-dark2")
                           select 
                             option(disabled='' selected='') Pick your favorite Simpson
@@ -124,7 +124,48 @@ html(lang='en')
               div.card.tabs
                 div.card-header.pb-2.header-bottom-border
                   div.flex.flex-col
-                    h3.text-lg.font-bold Primary Select
+                    h3.text-lg.font-bold Rounded Select
+                    p To set the rounded select use 
+                      strong .custom-select
+                      | & 
+                      strong .select-style-1
+                      | class.
+                    div.preview-code.tab-links
+                      button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
+                      button.p-0.tab.tab-lifted(data-tabFilter="2" class="tab-link tab-2") Html
+                div.card-body                                   
+                  div.tabs-content
+                    div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
+                      div.flex.items-center.flex-col.flex-wrap.gap-2
+                        div.custom-select.select-style-1.rounded
+                          select
+                            option(disabled='' selected='') Pick your favorite Simpson
+                            option(value="") Homer
+                            option(value="") Marge
+                            option(value="") Bart
+                            option(value="") Lisa
+                            option(value="") Maggie
+                    div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
+                      button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white") 
+                        i(data-feather="clipboard")
+                      pre(class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2")
+                        code(class="dark:bg-sidebar-dark2")
+                          |&lt;div class="custom-select select-style-1"&gt;
+                          |   &lt;select&gt;
+                          |      &lt;option disabled selected&gt;Pick your favorite Simpson&lt;/option&gt;
+                          |      &lt;option&gt;Homer&lt;/option&gt;
+                          |      &lt;option&gt;Marge&lt;/option&gt; 
+                          |      &lt;option&gt;Bart&lt;/option&gt; 
+                          |      &lt;option&gt;Lisa&lt;/option&gt; 
+                          |      &lt;option&gt;Maggie&lt;/option&gt;
+                          |    &lt;/select&gt;
+                          |&lt;/div&gt;
+
+            div.col-span-4(class="lg:col-span-6 md:col-span-12")
+              div.card.tabs
+                div.card-header.pb-2.header-bottom-border
+                  div.flex.flex-col
+                    h3.text-lg.font-bold Bordered Select
                     p To set the custom select use 
                       strong .custom-select   
                       | & 
@@ -157,52 +198,52 @@ html(lang='en')
                           |    &lt;/select&gt;
                           |&lt;/div&gt;
 
-            div.col-span-4(class="lg:col-span-6 md:col-span-12")
-              div.card.tabs
-                div.card-header.pb-2.header-bottom-border
-                  div.flex.flex-col
-                    h3.text-lg.font-bold Secondary Select
-                    p To set the custom select use 
-                      strong .custom-select   
-                      | & 
-                      strong .select-style-1  
-                      | class.
-                    div.preview-code.tab-links
-                      button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
-                      button.p-0.tab.tab-lifted(data-tabFilter="2" class="tab-link tab-2") Html
-                div.card-body                                   
-                  div.tabs-content
-                    div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
-                      div.flex.items-center.flex-col.flex-wrap.gap-2
-                        div.custom-select.select-style-1.border.border-secondary.w-full.max-w-xs.select-bg-white(class="dark:bg-dark-dense")
-                          select
-                            option(selected value="") Last 7 Days 
-                            option(value="") Last 2 Weeks 
-                            option(value="") Last 1 Month 
-                            option(value="") Last 3 Month
-                    div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
-                      button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white") 
-                        i(data-feather="clipboard")
-                      pre(class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2")
-                        code(class="dark:bg-sidebar-dark2")
-                          |&lt;div class="w-full max-w-xs border custom-select select-style-1 border-secondary select-bg-white dark:bg-dark-dense"&gt;
-                          |   &lt;select&gt;
-                          |      &lt;option disabled selected&gt;Last 7 Days &lt;/option&gt;
-                          |      &lt;option&gt;Last 2 Weeks &lt;/option&gt;
-                          |      &lt;option&gt;Last 1 Month&lt;/option&gt; 
-                          |      &lt;option&gt;Last 3 Month &lt;/option&gt; 
-                          |    &lt;/select&gt;
-                          |&lt;/div&gt;
+            //- div.col-span-4(class="lg:col-span-6 md:col-span-12")
+            //-   div.card.tabs
+            //-     div.card-header.pb-2.header-bottom-border
+            //-       div.flex.flex-col
+            //-         h3.text-lg.font-bold Secondary Select
+            //-         p To set the custom select use 
+            //-           strong .custom-select   
+            //-           | & 
+            //-           strong .select-style-1  
+            //-           | class.
+            //-         div.preview-code.tab-links
+            //-           button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
+            //-           button.p-0.tab.tab-lifted(data-tabFilter="2" class="tab-link tab-2") Html
+            //-     div.card-body                                   
+            //-       div.tabs-content
+            //-         div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
+            //-           div.flex.items-center.flex-col.flex-wrap.gap-2
+            //-             div.custom-select.select-style-1.border.border-secondary.w-full.max-w-xs.select-bg-white(class="dark:bg-dark-dense")
+            //-               select
+            //-                 option(selected value="") Last 7 Days 
+            //-                 option(value="") Last 2 Weeks 
+            //-                 option(value="") Last 1 Month 
+            //-                 option(value="") Last 3 Month
+            //-         div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
+            //-           button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white") 
+            //-             i(data-feather="clipboard")
+            //-           pre(class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2")
+            //-             code(class="dark:bg-sidebar-dark2")
+            //-               |&lt;div class="w-full max-w-xs border custom-select select-style-1 border-secondary select-bg-white dark:bg-dark-dense"&gt;
+            //-               |   &lt;select&gt;
+            //-               |      &lt;option disabled selected&gt;Last 7 Days &lt;/option&gt;
+            //-               |      &lt;option&gt;Last 2 Weeks &lt;/option&gt;
+            //-               |      &lt;option&gt;Last 1 Month&lt;/option&gt; 
+            //-               |      &lt;option&gt;Last 3 Month &lt;/option&gt; 
+            //-               |    &lt;/select&gt;
+            //-               |&lt;/div&gt;
 
             div.col-span-4(class="lg:col-span-12")
               div.card.tabs
                 div.card-header.pb-2.header-bottom-border6
                   div.flex.flex-col
-                    h3.text-lg.font-bold Info Select
-                    p To set the custom select use 
+                    h3.text-lg.font-bold Colored Select
+                    p To set the colored select use 
                       strong .custom-select   
                       | & 
-                      strong .select-style-1  
+                      strong .select-style-2  
                       | class.
                     div.preview-code.tab-links
                       button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
@@ -211,7 +252,7 @@ html(lang='en')
                   div.tabs-content
                     div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
                       div.flex.items-center.flex-col.flex-wrap.gap-2
-                        div.custom-select.select-style-1.border.border-info.w-full.max-w-xs.select-bg-white(class="dark:bg-dark-dense")
+                        div.custom-select.select-style-2.w-full.max-w-xs.select-bg-white(class="dark:bg-dark-dense")
                           select
                             option(selected value="") Last 7 Days 
                             option(value="") Last 2 Weeks 
@@ -222,7 +263,7 @@ html(lang='en')
                         i(data-feather="clipboard")
                       pre(class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2")
                         code(class="dark:bg-sidebar-dark2")
-                          |&lt;div class="w-full max-w-xs border custom-select select-style-1 border-info select-bg-white dark:bg-dark-dense"&gt;
+                          |&lt;div class="w-full max-w-xs border custom-select select-style-2 border-info select-bg-white dark:bg-dark-dense"&gt;
                           |   &lt;select&gt;
                           |      &lt;option disabled selected&gt;Last 7 Days &lt;/option&gt;
                           |      &lt;option&gt;Last 2 Weeks &lt;/option&gt;
@@ -248,28 +289,29 @@ html(lang='en')
                       div.flex.items-center.flex-col.flex-wrap.gap-2
                         div.custom-select.select-style-1.border.border-success.w-full.max-w-xs.select-bg-white(class="dark:bg-dark-dense")
                           select.select-xl
-                            option(disabled='' selected='')  Extra Large
-                            option Large Apple
-                            option Large Orange
-                            option Large Tomato
+                            option(disabled='' selected='')  Your favorite season
+                            option Winter
+                            option Summer
+                            option Spring
+                            option Autumn
                         div.custom-select.select-style-1.border.border-success.w-full.max-w-xs.select-bg-white(class="dark:bg-dark-dense")
                           select.select-lg
-                            option(disabled='' selected='') Large 
-                            option Large Apple
-                            option Large Orange
-                            option Large Tomato
+                            option(disabled='' selected='') Type of event 
+                            option Birthday
+                            option Marriage
+                            option Farewell
                         div.custom-select.select-style-1.border.border-success.w-full.max-w-xs.select-bg-white(class="dark:bg-dark-dense")
                           select.select-md
-                            option(disabled='' selected='') Medium 
-                            option Large Apple
-                            option Large Orange
-                            option Large Tomato
+                            option(disabled='' selected='') Placeholder  
+                            option One
+                            option Two
+                            option Three
                         div.custom-select.select-style-1.border.border-success.w-full.max-w-xs.select-bg-white(class="dark:bg-dark-dense")
                           select.select-sm
-                            option(disabled='' selected='') Small 
-                            option Large Apple
-                            option Large Orange
-                            option Large Tomato
+                            option(disabled='' selected='') Payment options 
+                            option Credit Card
+                            option PayPal
+                            option Cash On Delivery
 
                     div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white") 

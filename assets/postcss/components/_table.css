@@ -65,11 +65,31 @@
         }
       }
       &.table-hover {
+        thead{
+          tr{
+            th{
+              &:first-child{
+                @apply pl-4;
+              }
+              &:last-child{
+                @apply pr-4;
+              }
+            }
+          }
+        }
         tbody {
           tr {
             &:last-child {
               td {
                 @apply pb-[18px];
+              }
+            }
+            td{
+              &:first-child{
+                @apply pl-4;
+              }
+              &:last-child{
+                @apply pr-4;
               }
             }
           }
@@ -141,6 +161,37 @@
                   @apply pr-4;
                 }
               }
+            }
+          }
+        }
+      }
+      &.active-table{
+        thead{
+          tr{
+            th{
+              &:first-child{
+              @apply pl-4;
+            }
+            &:last-child{
+              @apply pr-4;
+            }
+            }
+          }
+        }
+        tbody{
+          tr{
+            &:last-child{
+              td{
+                @apply pb-[18px];
+              }
+            }
+            td{
+              &:first-child{
+              @apply pl-4;
+            }
+            &:last-child{
+              @apply pr-4;
+            }
             }
           }
         }

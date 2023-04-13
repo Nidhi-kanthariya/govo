@@ -1131,8 +1131,118 @@
               <div class="card tabs">
                 <div class="card-header pb-2 header-bottom-border">
                   <div class="flex flex-col">
+                    <h3 class="text-lg font-bold">Custom Switch</h3>
+                    <p>Here, the Square switch that you can use. </p>
+                    <div class="preview-code tab-links">
+                      <button class="p-0 tab tab-lifted tab-active tab-link" data-tabFilter="1">Preview  </button>
+                      <button class="p-0 tab tab-lifted tab-link tab-2" data-tabFilter="2">Html</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">                  
+                  <div class="tabs-content">
+                    <div class="tab-pan active show first:rounded-tl-none rounded-5" data-tabContent="1">
+                      <div class="flex justify-between items-center gap-5">
+                        <div class="flex justify-between items-center gap-3"><span class="text-xs font-medium text-content">Square Switch</span>
+                          <label class="inline-flex relative items-center cursor-pointer">
+                            <input class="sr-only peer" type="checkbox" checked=""><span class="w-11 h-6 bg-content rounded-5 peer peer-focus:outline-none peer-checked:after:translate-x-full peer-checked:after:content-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-light after:border after:rounded-5 after:h-5 after:w-5 after:transition-all peer-checked:bg-warning"></span>
+                          </label>
+                        </div>
+                        <div class="flex justify-between items-center gap-3"><span class="text-xs font-medium text-content">Flat Switch</span>
+                          <label class="inline-flex relative items-center cursor-pointer">
+                            <input class="sr-only peer" type="checkbox" checked=""><span class="w-11 h-6 bg-content rounded-none peer peer-focus:outline-none peer-checked:after:translate-x-full peer-checked:after:content-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-light after:border after:rounded-none after:h-5 after:w-5 after:transition-all peer-checked:bg-info"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
+                      <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white"><i data-feather="clipboard"></i></button>
+                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex items-center justify-between gap-5"&gt;
+  &lt;div class="flex items-center justify-between"&gt; 
+      &lt;span class="gap-3 text-xs font-medium text-content"&gt;Square Switch&lt;/span&gt;
+      &lt;label class="relative inline-flex items-center cursor-pointer"&gt;
+          &lt;input type="checkbox" class="sr-only peer checked=""/&gt;
+          &lt;span class="w-11 h-6 bg-content rounded-5 peer peer-focus:outline-none 
+              peer-checked:after:translate-x-full peer-checked:after:content-white after:content-[''] after:absolute after:top-[2px] 
+              after:left-[2px] after:bg-white after:border-gray-light after:border after:rounded-5 after:h-5 after:w-5 after:transition-all peer-checked:bg-warning"&gt;&lt;/span&gt;
+      &lt;/label&gt;
+  &lt;/div&gt; 
+  &lt;div class="flex items-center justify-between"&gt; 
+      &lt;span class="gap-3 text-xs font-medium text-content"&gt;Flat Switch&lt;/span&gt;
+      &lt;label class="relative inline-flex items-center cursor-pointer"&gt;
+          &lt;input type="checkbox" class="sr-only peer checked=""/&gt;
+          &lt;span class="w-11 h-6 bg-content rounded-none peer peer-focus:outline-none 
+              peer-checked:after:translate-x-full peer-checked:after:content-white after:content-[''] after:absolute after:top-[2px] 
+              after:left-[2px] after:bg-white after:border-gray-light after:border after:rounded-none after:h-5 after:w-5 after:transition-all peer-checked:bg-info"&gt;&lt;/span&gt;
+      &lt;/label&gt;
+  &lt;/div&gt; 
+&lt;/div&gt;</code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-6 md:col-span-12">
+              <div class="card tabs">
+                <div class="card-header pb-2 header-bottom-border">
+                  <div class="flex flex-col">
+                    <h3 class="text-lg font-bold">Variation of Switches</h3>
+                    <p>Here, the Square switch that you can use. </p>
+                    <div class="preview-code tab-links">
+                      <button class="p-0 tab tab-lifted tab-active tab-link" data-tabFilter="1">Preview  </button>
+                      <button class="p-0 tab tab-lifted tab-link tab-2" data-tabFilter="2">Html</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">                  
+                  <div class="tabs-content">
+                    <div class="tab-pan active show first:rounded-tl-none rounded-5" data-tabContent="1">
+                      <div class="flex justify-between items-center gap-5">
+                        <div class="flex justify-between items-center gap-3"><span class="text-xs font-medium text-content">Skewed</span>
+                          <div class="tg-list-item">
+                            <input class="tgl tgl-skewed" id="cb3" type="checkbox">
+                            <label class="tgl-btn" data-tg-off="OFF" data-tg-on="ON" for="cb3"></label>
+                          </div>
+                        </div>
+                        <div class="flex justify-between items-center gap-3"><span class="text-xs font-medium text-content">Flip</span>
+                          <div class="tg-list-item">
+                            <input class="tgl tgl-flip" id="cb5" type="checkbox">
+                            <label class="tgl-btn" data-tg-off="Nope" data-tg-on="Yeah!" for="cb5">  </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
+                      <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white"><i data-feather="clipboard"></i></button>
+                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex items-center justify-between gap-5"&gt;
+  &lt;div class="flex items-center justify-between"&gt; 
+      &lt;span class="text-xs font-medium text-content"&gt;Skewed&lt;/span&gt;
+      &lt;div class="tg-list-item"&gt;
+          &lt;input type="checkbox" class="tgl tgl-skewed" id="cb3" checked=""/&gt;
+          &lt;label class="tgl-btn" data-tg-off = "OFF" data-tg-on = "ON"  for = "cb3"&gt;
+          &lt;/label&gt;
+      &lt;/div&gt;
+  &lt;/div&gt; 
+  &lt;div class="flex items-center justify-between"&gt; 
+      &lt;span class="text-xs font-medium text-content"&gt;Flip&lt;/span&gt;
+      &lt;div class="tg-list-item"&gt;
+          &lt;input type="checkbox" class="tgl tgl-flip" id="cb5" checked=""/&gt;
+          &lt;label class="tgl-btn" data-tg-off = "Nope" data-tg-on = "Yeah!"  for = "cb5"&gt;
+          &lt;/label&gt;
+      &lt;/div&gt;
+  &lt;/div&gt; 
+&lt;/div&gt;</code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-6 md:col-span-12">
+              <div class="card tabs">
+                <div class="card-header pb-2 header-bottom-border">
+                  <div class="flex flex-col">
                     <h3 class="text-lg font-bold">Colored Switch</h3>
-                    <p>Here, the colored switch that you can use with <strong>bg-* </strong>class.</p>
+                    <p>Here, the colored switch that you can use with  <strong>bg-* </strong>class.</p>
                     <div class="preview-code tab-links">
                       <button class="p-0 tab tab-lifted tab-active tab-link" data-tabFilter="1">Preview  </button>
                       <button class="p-0 tab tab-lifted tab-link tab-2" data-tabFilter="2">Html</button>
@@ -1229,7 +1339,7 @@
                 <div class="card-header pb-2 header-bottom-border">
                   <div class="flex flex-col">
                     <h3 class="text-lg font-bold">Colored Outline</h3>
-                    <p>Here, the colored switch that you can use with <strong>bg-* </strong>class.</p>
+                    <p>Here, the colored switch that you can use with  <strong>bg-*  </strong>class.</p>
                     <div class="preview-code tab-links">
                       <button class="p-0 tab tab-lifted tab-active tab-link" data-tabFilter="1">Preview  </button>
                       <button class="p-0 tab tab-lifted tab-link tab-2" data-tabFilter="2">Html</button>
