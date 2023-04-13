@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="../../assets/css/vendors/custom-select.css">
     <!-- prism css-->
     <link rel="stylesheet" href="../../assets/css/vendors/prism.css">
+    <!-- fontAwesome CSS-->
+    <link rel="stylesheet" href="../../assets/css/vendors/fontawesome/all.css">
     <!-- App css-->
     <link rel="stylesheet" href="../../assets/css/style.css">
   </head>
@@ -1008,7 +1010,7 @@
               <div class="card tabs">
                 <div class="card-header pb-2 header-bottom-border">
                   <div class="flex flex-col">
-                    <h3 class="text-lg font-bold">Checked Checkbox</h3>
+                    <h3 class="text-lg font-bold">Default Checks</h3>
                     <p>Here, the checked checkbox that you can use. </p>
                     <div class="preview-code tab-links">
                       <button class="p-0 tab tab-lifted tab-active tab-link" data-tabFilter="1">Preview  </button>
@@ -1019,7 +1021,7 @@
                 <div class="card-body">                                  
                   <div class="tabs-content">
                     <div class="tab-pan active show first:rounded-tl-none rounded-5" data-tabContent="1">
-                      <div class="flex justify-center gap-2 flex-wrap">
+                      <div class="flex gap-2 flex-col">
                         <div class="flex items-center gap-2">
                           <label class="checkbox checkbox-md cursor-pointer"> 
                             <input class="peer" type="checkbox" checked>
@@ -1027,11 +1029,18 @@
                           </label>
                           <p>Remember Me</p>
                         </div>
+                        <div class="flex items-center gap-2">
+                          <label class="checkbox checkbox-md cursor-pointer"> 
+                            <input class="peer" type="checkbox">
+                            <div class="checkbox-indicator peer-checked:!bg-primary !border-primary"> <i data-feather="check"></i></div>
+                          </label>
+                          <p>Save It</p>
+                        </div>
                       </div>
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
                       <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white"><i data-feather="clipboard"></i></button>
-                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-wrap justify-center gap-2"&gt;
+                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-col gap-2"&gt;
   &lt;div class="flex items-center gap-2"&gt; 
       &lt;label class="cursor-pointer checkbox checkbox-md"&gt;
           &lt;input type="checkbox" class="peer" checked=""/&gt;
@@ -1040,49 +1049,15 @@
           &lt;/div&gt;
       &lt;/label&gt;
       &lt;p&gt;Remember Me&lt;/p&gt;
-  &lt;/div&gt; 
-&lt;/div&gt;</code></pre>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-span-4 lg:col-span-6 md:col-span-12">
-              <div class="card tabs">
-                <div class="card-header pb-2 header-bottom-border">
-                  <div class="flex flex-col">
-                    <h3 class="text-lg font-bold">Default </h3>
-                    <p>Set the default checkbox inside the project. </p>
-                    <div class="preview-code tab-links">
-                      <button class="p-0 tab tab-lifted tab-active tab-link" data-tabFilter="1">Preview  </button>
-                      <button class="p-0 tab tab-lifted tab-link tab-2" data-tabFilter="2">Html</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body">                                  
-                  <div class="tabs-content">
-                    <div class="tab-pan active show first:rounded-tl-none rounded-5" data-tabContent="1">
-                      <div class="flex justify-center gap-2 flex-wrap">
-                        <div class="flex items-center gap-2">
-                          <label class="checkbox checkbox-md cursor-pointer"> 
-                            <input class="peer" type="checkbox">
-                            <div class="checkbox-indicator peer-checked:!bg-secondary !border-secondary"> <i data-feather="check"></i></div>
-                          </label>
-                          <p>Default</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
-                      <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white"><i data-feather="clipboard"></i></button>
-                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-wrap justify-center gap-2"&gt;
+  &lt;/div&gt;
   &lt;div class="flex items-center gap-2"&gt; 
       &lt;label class="cursor-pointer checkbox checkbox-md"&gt;
-          &lt;input type="checkbox" class="peer"&gt;
-          &lt;div class="checkbox-indicator peer-checked:!bg-secondary !border-secondary"&gt;
+          &lt;input type="checkbox" class="peer" checked=""/&gt;
+          &lt;div class="checkbox-indicator peer-checked:!bg-primary !border-primary"&gt;
              &lt;i data-feather="check"&gt;&lt;/i&gt;
           &lt;/div&gt;
       &lt;/label&gt;
-      &lt;p&gt;Default&lt;/p&gt;
+      &lt;p&gt;Save It&lt;/p&gt;
   &lt;/div&gt; 
 &lt;/div&gt;</code></pre>
                     </div>
@@ -1094,7 +1069,7 @@
               <div class="card tabs">
                 <div class="card-header pb-2 header-bottom-border">
                   <div class="flex flex-col">
-                    <h3 class="text-lg font-bold">Disabled Checked</h3>
+                    <h3 class="text-lg font-bold">Disabled Checks</h3>
                     <p>Set the disabled checkbox, use <strong>.disabled  </strong>class. </p>
                     <div class="preview-code tab-links">
                       <button class="p-0 tab tab-lifted tab-active tab-link" data-tabFilter="1">Preview  </button>
@@ -1105,19 +1080,26 @@
                 <div class="card-body">                                  
                   <div class="tabs-content">
                     <div class="tab-pan active show first:rounded-tl-none rounded-5" data-tabContent="1">
-                      <div class="flex justify-center gap-2 flex-wrap">
+                      <div class="flex gap-2 flex-col">
                         <div class="flex items-center gap-2 opacity-40">
                           <label class="checkbox checkbox-md cursor-pointer"> 
                             <input class="peer" type="checkbox" disabled>
                             <div class="checkbox-indicator peer-checked:!bg-warning !border-warning"> <i data-feather="check"></i></div>
                           </label>
-                          <p>Disabled Checked</p>
+                          <p>Disabled Checkbox</p>
+                        </div>
+                        <div class="flex items-center gap-2 opacity-40">
+                          <label class="checkbox checkbox-md cursor-pointer"> 
+                            <input class="peer" type="checkbox" disabled checked>
+                            <div class="checkbox-indicator peer-checked:!bg-warning !border-warning"> <i data-feather="check"></i></div>
+                          </label>
+                          <p>Disabled Checked Checkbox</p>
                         </div>
                       </div>
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
                       <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white"><i data-feather="clipboard"></i></button>
-                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-wrap justify-center gap-2"&gt;
+                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-col gap-2"&gt;
   &lt;div class="flex items-center gap-2 opacity-40"&gt; 
       &lt;label class="cursor-pointer checkbox checkbox-md"&gt;
           &lt;input type="checkbox" class="peer" disabled&gt;
@@ -1125,7 +1107,75 @@
              &lt;i data-feather="check"&gt;&lt;/i&gt;
           &lt;/div&gt;
       &lt;/label&gt;
-      &lt;p&gt;Disabled Checked&lt;/p&gt;
+      &lt;p&gt;Disabled Checkbox&lt;/p&gt;
+  &lt;/div&gt; 
+  &lt;div class="flex items-center gap-2 opacity-40"&gt; 
+      &lt;label class="cursor-pointer checkbox checkbox-md"&gt;
+          &lt;input type="checkbox" class="peer" disabled&gt;
+          &lt;div class="checkbox-indicator peer-checked:!bg-warning !border-warning"&gt;
+             &lt;i data-feather="check"&gt;&lt;/i&gt;
+          &lt;/div&gt;
+      &lt;/label&gt;
+      &lt;p&gt;Disabled Checked Checkbox&lt;/p&gt;
+  &lt;/div&gt; 
+&lt;/div&gt;</code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-4 lg:col-span-6 md:col-span-12">
+              <div class="card tabs">
+                <div class="card-header pb-2 header-bottom-border">
+                  <div class="flex flex-col">
+                    <h3 class="text-lg font-bold">Right Checks </h3>
+                    <p>Set the default checkbox inside the project. </p>
+                    <div class="preview-code tab-links">
+                      <button class="p-0 tab tab-lifted tab-active tab-link" data-tabFilter="1">Preview  </button>
+                      <button class="p-0 tab tab-lifted tab-link tab-2" data-tabFilter="2">Html</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">                                  
+                  <div class="tabs-content">
+                    <div class="tab-pan active show first:rounded-tl-none rounded-5" data-tabContent="1">
+                      <div class="flex gap-2 flex-col">
+                        <div class="flex items-center gap-2">
+                          <p>Reverse Checkbox</p>
+                          <label class="checkbox checkbox-md cursor-pointer"> 
+                            <input class="peer" type="checkbox">
+                            <div class="checkbox-indicator peer-checked:!bg-secondary !border-secondary"> <i data-feather="check"></i></div>
+                          </label>
+                        </div>
+                        <div class="flex items-center gap-2">
+                          <p>Reverse Checked Checkbox</p>
+                          <label class="checkbox checkbox-md cursor-pointer"> 
+                            <input class="peer" type="checkbox" checked>
+                            <div class="checkbox-indicator peer-checked:!bg-secondary !border-secondary"> <i data-feather="check"></i></div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
+                      <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white"><i data-feather="clipboard"></i></button>
+                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-col gap-2"&gt;
+  &lt;div class="flex items-center gap-2"&gt; 
+      &lt;p&gt;Reverse Checkbox&lt;/p&gt;
+      &lt;label class="cursor-pointer checkbox checkbox-md"&gt;
+          &lt;input type="checkbox" class="peer"&gt;
+          &lt;div class="checkbox-indicator peer-checked:!bg-secondary !border-secondary"&gt;
+             &lt;i data-feather="check"&gt;&lt;/i&gt;
+          &lt;/div&gt;
+      &lt;/label&gt;
+  &lt;/div&gt; 
+  &lt;div class="flex items-center gap-2"&gt; 
+      &lt;p&gt;Reverse Checked Checkbox&lt;/p&gt;
+      &lt;label class="cursor-pointer checkbox checkbox-md"&gt;
+          &lt;input type="checkbox" class="peer" checked&gt;
+          &lt;div class="checkbox-indicator peer-checked:!bg-secondary !border-secondary"&gt;
+             &lt;i data-feather="check"&gt;&lt;/i&gt;
+          &lt;/div&gt;
+      &lt;/label&gt;
   &lt;/div&gt; 
 &lt;/div&gt;</code></pre>
                     </div>
@@ -1148,35 +1198,132 @@
                 <div class="card-body">                                  
                   <div class="tabs-content">
                     <div class="tab-pan active show first:rounded-tl-none rounded-5" data-tabContent="1">
-                      <div class="flex justify-center gap-3 flex-wrap">
+                      <div class="flex gap-2 flex-col">
                         <div class="flex items-center gap-2">
                           <label class="checkbox checkbox-md cursor-pointer">  
                             <input class="peer" type="checkbox" checked="checked">
                             <div class="checkbox-indicator peer-checked:!bg-warning !border-warning"> <i data-feather="check"> </i></div>
                           </label>
-                          <p>Warning</p>
+                          <p>Warning - checkbox-solid-warning</p>
                         </div>
                         <div class="flex items-center gap-2"> 
                           <label class="checkbox checkbox-md cursor-pointer">  
                             <input class="peer" type="checkbox">
                             <div class="checkbox-indicator peer-checked:!bg-info !border-info"> <i data-feather="check"></i></div>
                           </label>
-                          <p>Info </p>
+                          <p>Info - checkbox-solid-info</p>
                         </div>
                         <div class="flex items-center gap-2"> 
                           <label class="checkbox checkbox-md cursor-pointer">  
                             <input class="peer" type="checkbox" checked="checked">
                             <div class="checkbox-indicator peer-checked:!bg-danger !border-danger"> <i data-feather="check"></i></div>
                           </label>
-                          <p>Danger</p>
+                          <p>Danger - checkbox-solid-danger</p>
                         </div>
                         <div class="flex items-center gap-2"> 
                           <label class="checkbox checkbox-md cursor-pointer">
                             <input class="peer" type="checkbox">
                             <div class="checkbox-indicator peer-checked:!bg-success !border-success"> <i data-feather="check"></i></div>
                           </label>
-                          <p>Success</p>
+                          <p>Success - checkbox-solid-success</p>
                         </div>
+                      </div>
+                    </div>
+                    <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
+                      <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white"><i data-feather="clipboard"></i></button>
+                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-col gap-2"&gt;
+  &lt;div class="flex items-center gap-2"&gt; 
+      &lt;label checkbox checkbox-md cursor-pointer"&gt;
+          &lt;input type= 'checkbox'class="peer"&gt;
+          &lt;div checkbox-indicator class="peer-checked:!bg-warning !border-warning"&gt;
+              &lt;i data-feather="check"&gt;&lt;/i&gt;
+          &lt;/div&gt; 
+      &lt;/label&gt;
+      &lt;p&gt;Warning - checkbox-solid-warning&lt;/p&gt;
+  &lt;/div&gt; 
+  &lt;div class="flex items-center gap-2"&gt; 
+      &lt;label checkbox checkbox-md cursor-pointer"&gt;
+          &lt;input type= 'checkbox'class="peer" checked='checked'/&gt;
+          &lt;div checkbox-indicator class="peer-checked:!bg-info !border-info"&gt;
+              &lt;i data-feather="check"&gt;&lt;/i&gt;
+          &lt;/div&gt; 
+      &lt;/label&gt;
+      &lt;p&gt;Info - checkbox-solid-info&lt;/p&gt;
+  &lt;/div&gt; 
+  &lt;div class="flex items-center gap-2"&gt; 
+      &lt;label checkbox checkbox-md cursor-pointer"&gt;
+          &lt;input type= 'checkbox'class="peer" checked='checked'/&gt;
+          &lt;div checkbox-indicator class="peer-checked:!bg-danger !border-danger"&gt;
+              &lt;i data-feather="check"&gt;&lt;/i&gt;
+          &lt;/div&gt; 
+      &lt;/label&gt;
+      &lt;p&gt;Danger - checkbox-solid-danger&lt;/p&gt;
+  &lt;/div&gt; 
+  &lt;div class="flex items-center gap-2"&gt; 
+      &lt;label checkbox checkbox-md cursor-pointer"&gt;
+          &lt;input type= 'checkbox'class="peer"/&gt;
+          &lt;div checkbox-indicator class="peer-checked:!bg-success !border-success"&gt;
+              &lt;i data-feather="check"&gt;&lt;/i&gt;
+          &lt;/div&gt; 
+      &lt;/label&gt;
+      &lt;p&gt;Success - checkbox-solid-success&lt;/p&gt;
+  &lt;/div&gt; 
+&lt;/div&gt;</code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-6 md:col-span-12">
+              <div class="card tabs">
+                <div class="card-header pb-2 header-bottom-border">
+                  <div class="flex flex-col">
+                    <h3 class="text-lg font-bold">Icon Checks</h3>
+                    <p>Add the sizes of checkbox with different colored using  <strong>.checkbox-* </strong>& <strong>.bg-*  </strong>class. </p>
+                    <div class="preview-code tab-links">
+                      <button class="p-0 tab tab-lifted tab-active tab-link" data-tabFilter="1">Preview  </button>
+                      <button class="p-0 tab tab-lifted tab-link tab-2" data-tabFilter="2">Html</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">                                  
+                  <div class="tabs-content">
+                    <div class="tab-pan active show first:rounded-tl-none rounded-5" data-tabContent="1">
+                      <div class="main-icon-checkbox checkbox-primary checkbox"> 
+                        <ul class="checkbox-wrapper">
+                          <li> 
+                            <input class="form-check-input" id="checkbox-icon" type="checkbox">
+                            <label class="form-check-label" for="checkbox-icon"><i data-feather="sliders"></i><span>Sliders</span></label>
+                          </li>
+                          <li> 
+                            <input class="form-check-input" id="checkbox-icon1" type="checkbox" checked="">
+                            <label class="form-check-label" for="checkbox-icon1"><i data-feather="user"></i><span>User </span></label>
+                          </li>
+                          <li> 
+                            <input class="form-check-input" id="checkbox-icon2" type="checkbox">
+                            <label class="form-check-label" for="checkbox-icon2"><i data-feather="tag"></i><span>Tags</span></label>
+                          </li>
+                          <li> 
+                            <input class="form-check-input" id="checkbox-icon3" type="checkbox">
+                            <label class="form-check-label" for="checkbox-icon3"><i data-feather="loader"></i><span>Loader </span></label>
+                          </li>
+                          <li> 
+                            <input class="form-check-input" id="checkbox-icon4" type="checkbox">
+                            <label class="form-check-label" for="checkbox-icon4"><i data-feather="eye-off"></i><span>Hidden</span></label>
+                          </li>
+                          <li> 
+                            <input class="form-check-input" id="checkbox-icon5" type="checkbox">
+                            <label class="form-check-label" for="checkbox-icon5"><i data-feather="folder"></i><span>Folder</span></label>
+                          </li>
+                          <li> 
+                            <input class="form-check-input" id="checkbox-icon6" type="checkbox">
+                            <label class="form-check-label" for="checkbox-icon6"><i data-feather="map-pin"></i><span>Map</span></label>
+                          </li>
+                          <li> 
+                            <input class="form-check-input" id="checkbox-icon7" type="checkbox">
+                            <label class="form-check-label" for="checkbox-icon7"><i data-feather="wifi"></i><span>Network</span></label>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
@@ -1264,7 +1411,7 @@
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
                       <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white"><i data-feather="clipboard"></i></button>
-                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-wrap justify-center gap-3 items-center"&gt;
+                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-wrap items-center justify-center gap-3"&gt;
   &lt;div class="radio-button radio-md primary"&gt;
      &lt;input id="primary" type="radio" class="selector"&gt;
      &lt;div class="check"&gt;&lt;/div&gt;
@@ -1422,7 +1569,7 @@
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
                       <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white"><i data-feather="clipboard"></i></button>
-                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-wrap justify-center gap-3 items-center"&gt;
+                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-wrap items-center justify-center gap-3"&gt;
   &lt;div class="radio-button radio-md primary"&gt;
      &lt;input id="primary" type="radio" class="selector1"&gt;
      &lt;div class="check"&gt;&lt;/div&gt;
@@ -1479,7 +1626,7 @@
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
                       <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white"><i data-feather="clipboard"></i></button>
-                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-wrap justify-center gap-3 items-center"&gt;
+                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-wrap items-center justify-center gap-3"&gt;
   &lt;div class="radio-button radio-sm info"&gt;
      &lt;input id="radio1" type="radio" class="selector3"&gt;
      &lt;div class="check"&gt;&lt;/div&gt;
@@ -1526,7 +1673,7 @@
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
                       <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white"><i data-feather="clipboard"></i></button>
-                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-wrap justify-center gap-3 items-center"&gt;
+                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-wrap items-center justify-center gap-3"&gt;
   &lt;div class="radio-button radio-sm info"&gt;
      &lt;input id="default1" type="radio" class="selector4"&gt;
      &lt;div class="check"&gt;&lt;/div&gt;
@@ -1573,7 +1720,7 @@
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
                       <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white"><i data-feather="clipboard"></i></button>
-                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-wrap justify-center gap-3 items-center"&gt;
+                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-wrap items-center justify-center gap-3"&gt;
   &lt;div class="radio-button radio-sm info"&gt;
      &lt;input id="disable1" type="radio" class="selector5" disabled&gt;
      &lt;div class="check"&gt;&lt;/div&gt;
@@ -1685,6 +1832,8 @@
   <script src="../../assets/js/prism.js"></script>
   <!-- Sidebar Js -->
   <script src="../../assets/js/sidebar.js"></script>
+  <!-- fontAwesome js-->
+  <script src="../../assets/js/fontawesome/all.min.js"></script>
   <!-- customizer js-->
   <script src="../../assets/js/customizer.js"> </script>
   <!-- Custom script   -->
