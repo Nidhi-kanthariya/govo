@@ -429,26 +429,34 @@ wishLike?.forEach((el) => {
   });
 });
 
-// const acceptCallEnd = document.querySelector('.accept-call-end');
-// const acceptCallStart = document.querySelector('.accept-call-start');
-// const CallStartBtn = document.getElementsByClassName('call-start-btn');
-// const CallStartShow = document.querySelector('.call-start-show');
-// const CallEnd = document.querySelector('.call-end');
-// CallEnd.addEventListener('click', function () {
-//   this.closest('.accept-call-end')?.classList.add('hide');
-// });
-// CallStartBtn.addEventListener('click', function () {
-//   acceptCallStart?.classList.add('show');
-// });
-
-// CallStartShow.addEventListener('click', function () {
-//   acceptCallStart?.classList.add('show');
-//   acceptCallEnd.classList.remove('hide');
+const acceptCallEnd = document.querySelector('.accept-call-end');
+const acceptCallStart = document.querySelector('.accept-call-start');
+const CallStartBtn = document.getElementsByClassName('call-start-btn');
+const CallStartShow = document.querySelector('.call-start-show');
+const CallEnd = document.querySelector('.call-end');
+CallEnd.addEventListener('click', function () {
+  this.closest('.accept-call-end')?.classList.add('hide');
+  acceptCallStart?.classList.remove('show');
+  CallStartShow?.classList.remove('show');
+});
+// acceptCallStart.addEventListener('click', function () {
+//   acceptCallEnd?.classList.remove('hide');
 // });
 
-// // for (var i = 0; i < acceptCallStart.length; i++) {
-// CallStartBtn[i]?.addEventListener('click', function (e) {
-//   acceptCallEnd.classList.remove('hide');
-//   // acceptCallStart.classList.add('show');
-// });
-// // }
+CallStartShow.addEventListener('click', function () {
+  acceptCallStart?.classList.remove('show');
+  acceptCallEnd.classList.add('show');
+});
+
+for (var i = 0; i < CallStartBtn.length; i++) {
+  CallStartBtn[i]?.addEventListener('click', function (e) {
+    acceptCallEnd.classList.remove('hide');
+    acceptCallStart.classList.add('show');
+  });
+}
+
+// for (var i = 0; i < acceptCallStart.length; i++) {
+//   acceptCallStart[i]?.addEventListener('click', function () {
+//     acceptCallEnd?.classList.remove('hide');
+//   });
+// }

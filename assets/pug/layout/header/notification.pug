@@ -17,9 +17,11 @@ div.dropdown
          each chat in NOTIFICATION
             li.flex.items-center.gap-3(class="px-2 py-3 transition-all duration-300 border-b last:border-b-0 border-border-light hover:bg-gray-light rounded-5")
                a.flex.items-center(href="./chat.html" class="gap-[12px]")
-                  div.rounded-full(class="relative ")
-                     img(class="rounded-full w-9 min-w-[2.25rem] min-h-[2.25rem] h-auto object-cover" src=`../../assets/images/avatar/${chat.avatar}` alt=`${chat.name}`) 
-                     div.indicator(class=`absolute border-[2px] border-white top-[-2px] right-[-2px] w-3 h-3 rounded-full bg-${chat.status}`)
+                  div.indicator
+                     span.chat-status(class=`status-${chat.status}`)
+                     div.avatar 
+                        div.w-10.rounded-full.h-10(class="xl:w-9 xl:h-9")
+                           img(src=`../../assets/images/avatar/${chat.avatar}`, alt=`${chat.name}`)
                   div
                      h4(class="text-xs font-semibold line-clamp-1 text-title" )= chat.name
                      p(class="text-xs font-semibold line-clamp-1 text-content")= chat.subTitle

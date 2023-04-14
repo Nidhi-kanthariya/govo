@@ -180,6 +180,21 @@
         @apply !hidden;
       }
     }
+    &.hide-hide{
+      .modal, 
+      .modal-overlay{
+        @apply hidden;
+      }
+      &.hide{
+      .modal, 
+      .modal-overlay{
+        @apply !hidden;
+      }
+      &.show{
+        @apply block visible;
+      }
+    }
+    }
   }
   .accept-call-start{
      &.show{

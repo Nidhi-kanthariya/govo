@@ -86,6 +86,39 @@
               }
             }
           }
+          .logo-wrapper{
+            @apply justify-center;
+            a{
+              .full-sidebar{
+                @apply hidden;
+              }
+              .icon-sidebar{
+                @apply block !w-8;
+              }
+            }
+            .sidebar-btn{
+              @apply hidden;
+            }
+          }
+          .search-wrapper {
+            .search-box {
+              .search{
+                @apply pl-7;
+              }
+            }
+          }
+        }
+      }
+    }
+    .page-sidebar{
+      .logo-wrapper{
+        a{
+          .full-sidebar{
+            @apply block;
+          }
+          .icon-sidebar{
+            @apply hidden;
+          }
         }
       }
     }
