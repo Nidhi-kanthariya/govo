@@ -783,7 +783,7 @@ const recentStatistics1 = {
   },
   markers: {
     size: 5,
-    colors: '#fff',
+    colors: 'var(--body)',
     strokeColors: 'rgba(var(--secondary), 1)',
     strokeWidth: 2,
   },
@@ -828,7 +828,7 @@ const recentStatistics2 = {
   },
   markers: {
     size: 5,
-    colors: '#fff',
+    colors: 'var(--body)',
     strokeColors: 'rgba(var(--primary), 1)',
     strokeWidth: 2,
   },
@@ -861,7 +861,7 @@ const recentStatisticsOption = (data) => {
       show: true,
       borderColor: 'var(--border-light)',
       strokeDashArray: 0,
-      position: 'back',
+      position: 'back', 
       padding: {
         top: 0,
         right: -2,

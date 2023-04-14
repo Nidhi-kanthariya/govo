@@ -59,6 +59,7 @@ html[class='dark'] {
   --title: #fff;
   --border-light: #2c4050;
   --apex-tooltip: #17232e;
+  --body: #00232e;
 }
 html[class='dark'] {
   .apexcharts-tooltip {
@@ -66,9 +67,12 @@ html[class='dark'] {
       background: var(--apex-tooltip);
       border: var(--border-light);
       box-shadow: none;
+      .apexcharts-tooltip-title {
+        background: var(--apex-tooltip);
+        color: var(--black);
+        border-bottom-color: var(--border-light);
+      }
     }
-    background: var(--apex-tooltip);
-    border: var(--border-light);
   }
 }
 /* Unique Skin */

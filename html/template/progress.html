@@ -69,18 +69,20 @@
                           <div class="flex items-center justify-between pb-[15px] border-b border-border-light"> 
                             <h4 class="text-base font-bold text-title">Notification</h4>
                             <button class="font-medium text-primary text-3xs">
-                               Mark All As Read </button>
+                               Mark All As Read</button>
                           </div>
-                          <div class="search-box relative mt-4">
-                            <input class="bg-gray-light border border-border-light w-full py-[8px] pl-[15px] pr-[30px] rounded-5 text-xs font-medium text-title" placeholder="Type to Search..." type="search">
+                          <div class="search-box relative mt-4"> 
+                            <input class="bg-gray-light border dark:bg-sidebar-dark2 dark:border-border-dark border-border-light w-full py-[8px] pl-[15px] pr-[30px] rounded-5 text-xs font-medium text-title" placeholder="Type to Search..." type="search">
                             <svg class="w-4 h-4 stroke-title top-1/2 -translate-y-1/2 right-[15px] absolute"> 
                               <use href="../../assets/svg/sprite.svg#Search"> </use>
                             </svg>
                           </div>
                           <ul class="mt-4 flex flex-col max-h-[232px] overflow-auto custom-scroll"> 
-                            <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 border-border-light hover:bg-gray-light rounded-5"><a class="flex items-center gap-[12px]" href="./chat.html">
-                                <div class="rounded-full relative "><img class="rounded-full w-9 min-w-[2.25rem] min-h-[2.25rem] h-auto object-cover" src="../../assets/images/avatar/2.jpg" alt="Dmitriy Groshev">
-                                  <div class="indicator absolute border-[2px] border-white top-[-2px] right-[-2px] w-3 h-3 rounded-full bg-success"></div>
+                            <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 dark:hover:bg-sidebar-dark2 border-border-light hover:bg-gray-light rounded-5"><a class="flex items-center gap-[12px]" href="./chat.html">
+                                <div class="indicator"><span class="chat-status status-online"></span>
+                                  <div class="avatar"> 
+                                    <div class="w-10 rounded-full h-10 xl:w-9 xl:h-9"><img src="../../assets/images/avatar/2.jpg" alt="Dmitriy Groshev"></div>
+                                  </div>
                                 </div>
                                 <div>
                                   <h4 class="text-xs font-semibold line-clamp-1 text-title">Dmitriy Groshev</h4>
@@ -89,20 +91,24 @@
                               <div class="flex flex-col items-end gap-1 ml-auto"><span class="font-normal text-3xs text-content">17:12</span><span class="leading-none p-1 badge bg-primary rounded-full text-3xs flex items-center justify-center min-w-[22px] min-h-[22px]">3</span>
                               </div>
                             </li>
-                            <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 border-border-light hover:bg-gray-light rounded-5"><a class="flex items-center gap-[12px]" href="./chat.html">
-                                <div class="rounded-full relative "><img class="rounded-full w-9 min-w-[2.25rem] min-h-[2.25rem] h-auto object-cover" src="../../assets/images/avatar/3.jpg" alt="Sufiya Elija">
-                                  <div class="indicator absolute border-[2px] border-white top-[-2px] right-[-2px] w-3 h-3 rounded-full bg-danger"></div>
+                            <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 dark:hover:bg-sidebar-dark2 border-border-light hover:bg-gray-light rounded-5"><a class="flex items-center gap-[12px]" href="./chat.html">
+                                <div class="indicator"><span class="chat-status status-offline"></span>
+                                  <div class="avatar"> 
+                                    <div class="w-10 rounded-full h-10 xl:w-9 xl:h-9"><img src="../../assets/images/avatar/3.jpg" alt="Sufiya Elija"></div>
+                                  </div>
                                 </div>
                                 <div>
                                   <h4 class="text-xs font-semibold line-clamp-1 text-title">Sufiya Elija</h4>
                                   <p class="text-xs font-semibold line-clamp-1 text-content">I need job, Please help me.</p>
                                 </div></a>
-                              <div class="flex flex-col items-end gap-1 ml-auto"><span class="font-normal text-3xs text-content">Fri</span>
+                              <div class="flex flex-col items-end gap-1 ml-auto"><span class="font-normal text-3xs text-content">Fri</span><span class="leading-none p-1 badge bg-primary rounded-full text-3xs flex items-center justify-center min-w-[22px] min-h-[22px]">32</span>
                               </div>
                             </li>
-                            <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 border-border-light hover:bg-gray-light rounded-5"><a class="flex items-center gap-[12px]" href="./chat.html">
-                                <div class="rounded-full relative "><img class="rounded-full w-9 min-w-[2.25rem] min-h-[2.25rem] h-auto object-cover" src="../../assets/images/avatar/5.jpg" alt="Janis Evans">
-                                  <div class="indicator absolute border-[2px] border-white top-[-2px] right-[-2px] w-3 h-3 rounded-full bg-success"></div>
+                            <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 dark:hover:bg-sidebar-dark2 border-border-light hover:bg-gray-light rounded-5"><a class="flex items-center gap-[12px]" href="./chat.html">
+                                <div class="indicator"><span class="chat-status status-online"></span>
+                                  <div class="avatar"> 
+                                    <div class="w-10 rounded-full h-10 xl:w-9 xl:h-9"><img src="../../assets/images/avatar/5.jpg" alt="Janis Evans"></div>
+                                  </div>
                                 </div>
                                 <div>
                                   <h4 class="text-xs font-semibold line-clamp-1 text-title">Janis Evans</h4>
@@ -111,9 +117,11 @@
                               <div class="flex flex-col items-end gap-1 ml-auto"><span class="font-normal text-3xs text-content">8:22</span><span class="leading-none p-1 badge bg-primary rounded-full text-3xs flex items-center justify-center min-w-[22px] min-h-[22px]">12</span>
                               </div>
                             </li>
-                            <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 border-border-light hover:bg-gray-light rounded-5"><a class="flex items-center gap-[12px]" href="./chat.html">
-                                <div class="rounded-full relative "><img class="rounded-full w-9 min-w-[2.25rem] min-h-[2.25rem] h-auto object-cover" src="../../assets/images/avatar/4.jpg" alt="Mukrani Pabelo">
-                                  <div class="indicator absolute border-[2px] border-white top-[-2px] right-[-2px] w-3 h-3 rounded-full bg-success"></div>
+                            <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 dark:hover:bg-sidebar-dark2 border-border-light hover:bg-gray-light rounded-5"><a class="flex items-center gap-[12px]" href="./chat.html">
+                                <div class="indicator"><span class="chat-status status-online"></span>
+                                  <div class="avatar"> 
+                                    <div class="w-10 rounded-full h-10 xl:w-9 xl:h-9"><img src="../../assets/images/avatar/4.jpg" alt="Mukrani Pabelo"></div>
+                                  </div>
                                 </div>
                                 <div>
                                   <h4 class="text-xs font-semibold line-clamp-1 text-title">Mukrani Pabelo</h4>
@@ -122,20 +130,24 @@
                               <div class="flex flex-col items-end gap-1 ml-auto"><span class="font-normal text-3xs text-content">03:14</span><span class="leading-none p-1 badge bg-primary rounded-full text-3xs flex items-center justify-center min-w-[22px] min-h-[22px]">10</span>
                               </div>
                             </li>
-                            <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 border-border-light hover:bg-gray-light rounded-5"><a class="flex items-center gap-[12px]" href="./chat.html">
-                                <div class="rounded-full relative "><img class="rounded-full w-9 min-w-[2.25rem] min-h-[2.25rem] h-auto object-cover" src="../../assets/images/avatar/2.jpg" alt="Josephin Water">
-                                  <div class="indicator absolute border-[2px] border-white top-[-2px] right-[-2px] w-3 h-3 rounded-full bg-danger"></div>
+                            <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 dark:hover:bg-sidebar-dark2 border-border-light hover:bg-gray-light rounded-5"><a class="flex items-center gap-[12px]" href="./chat.html">
+                                <div class="indicator"><span class="chat-status status-offline"></span>
+                                  <div class="avatar"> 
+                                    <div class="w-10 rounded-full h-10 xl:w-9 xl:h-9"><img src="../../assets/images/avatar/2.jpg" alt="Josephin Water"></div>
+                                  </div>
                                 </div>
                                 <div>
                                   <h4 class="text-xs font-semibold line-clamp-1 text-title">Josephin Water</h4>
                                   <p class="text-xs font-semibold line-clamp-1 text-content">You’ve got some kind of a stom...</p>
                                 </div></a>
-                              <div class="flex flex-col items-end gap-1 ml-auto"><span class="font-normal text-3xs text-content">Thu</span>
+                              <div class="flex flex-col items-end gap-1 ml-auto"><span class="font-normal text-3xs text-content">Thu</span><span class="leading-none p-1 badge bg-primary rounded-full text-3xs flex items-center justify-center min-w-[22px] min-h-[22px]">2</span>
                               </div>
                             </li>
-                            <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 border-border-light hover:bg-gray-light rounded-5"><a class="flex items-center gap-[12px]" href="./chat.html">
-                                <div class="rounded-full relative "><img class="rounded-full w-9 min-w-[2.25rem] min-h-[2.25rem] h-auto object-cover" src="../../assets/images/avatar/5.jpg" alt="Janis Evans">
-                                  <div class="indicator absolute border-[2px] border-white top-[-2px] right-[-2px] w-3 h-3 rounded-full bg-success"></div>
+                            <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 dark:hover:bg-sidebar-dark2 border-border-light hover:bg-gray-light rounded-5"><a class="flex items-center gap-[12px]" href="./chat.html">
+                                <div class="indicator"><span class="chat-status status-online"></span>
+                                  <div class="avatar"> 
+                                    <div class="w-10 rounded-full h-10 xl:w-9 xl:h-9"><img src="../../assets/images/avatar/5.jpg" alt="Janis Evans"></div>
+                                  </div>
                                 </div>
                                 <div>
                                   <h4 class="text-xs font-semibold line-clamp-1 text-title">Janis Evans</h4>
@@ -144,15 +156,17 @@
                               <div class="flex flex-col items-end gap-1 ml-auto"><span class="font-normal text-3xs text-content">8:22</span><span class="leading-none p-1 badge bg-primary rounded-full text-3xs flex items-center justify-center min-w-[22px] min-h-[22px]">12</span>
                               </div>
                             </li>
-                            <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 border-border-light hover:bg-gray-light rounded-5"><a class="flex items-center gap-[12px]" href="./chat.html">
-                                <div class="rounded-full relative "><img class="rounded-full w-9 min-w-[2.25rem] min-h-[2.25rem] h-auto object-cover" src="../../assets/images/avatar/3.jpg" alt="Sufiya Elija">
-                                  <div class="indicator absolute border-[2px] border-white top-[-2px] right-[-2px] w-3 h-3 rounded-full bg-danger"></div>
+                            <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 dark:hover:bg-sidebar-dark2 border-border-light hover:bg-gray-light rounded-5"><a class="flex items-center gap-[12px]" href="./chat.html">
+                                <div class="indicator"><span class="chat-status status-offline"></span>
+                                  <div class="avatar"> 
+                                    <div class="w-10 rounded-full h-10 xl:w-9 xl:h-9"><img src="../../assets/images/avatar/3.jpg" alt="Sufiya Elija"></div>
+                                  </div>
                                 </div>
                                 <div>
                                   <h4 class="text-xs font-semibold line-clamp-1 text-title">Sufiya Elija</h4>
                                   <p class="text-xs font-semibold line-clamp-1 text-content">I need job, Please help me.</p>
                                 </div></a>
-                              <div class="flex flex-col items-end gap-1 ml-auto"><span class="font-normal text-3xs text-content">Fri</span>
+                              <div class="flex flex-col items-end gap-1 ml-auto"><span class="font-normal text-3xs text-content">Fri</span><span class="leading-none p-1 badge bg-primary rounded-full text-3xs flex items-center justify-center min-w-[22px] min-h-[22px]">32</span>
                               </div>
                             </li>
                           </ul>
@@ -181,63 +195,63 @@
                             <div class="badge leading-none p-1 badge bg-primary rounded-full text-3xs flex items-center justify-center min-w-[22px] min-h-[22px]">25</div>
                           </div>
                           <ul class="mt-[15px] flex flex-col max-h-[232px] overflow-auto custom-scroll"> 
-                            <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 border-border-light dark:border-border-dark hover:bg-gray-light rounded-5"><a class="flex items-center gap-[12px]" href="./message.html">
+                            <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 border-border-light dark:border-border-dark hover:bg-gray-light dark:hover:bg-sidebar-dark2 rounded-5"><a class="flex items-center gap-[12px]" href="./message.html">
                                 <div class="rounded-full relative shadow-lg bg-success flex items-center justify-center rounded-full p-2">
                                   <svg class="w-5 h-5 stroke-white"> 
                                     <use href="../../assets/svg/sprite.svg#Chat"> </use>
                                   </svg>
                                 </div>
-                                <div>
+                                <div> 
                                   <h4 class="text-xs font-semibold line-clamp-1 text-title">New Review Receive</h4>
                                   <p class="text-xs font-semibold line-clamp-1 text-content">15 min ago</p>
                                 </div></a></li>
-                            <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 border-border-light dark:border-border-dark hover:bg-gray-light rounded-5"><a class="flex items-center gap-[12px]" href="./message.html">
+                            <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 border-border-light dark:border-border-dark hover:bg-gray-light dark:hover:bg-sidebar-dark2 rounded-5"><a class="flex items-center gap-[12px]" href="./message.html">
                                 <div class="rounded-full relative shadow-lg bg-danger flex items-center justify-center rounded-full p-2">
                                   <svg class="w-5 h-5 stroke-white"> 
                                     <use href="../../assets/svg/sprite.svg#Scan"> </use>
                                   </svg>
                                 </div>
-                                <div>
+                                <div> 
                                   <h4 class="text-xs font-semibold line-clamp-1 text-title">Transaction $250 Success</h4>
                                   <p class="text-xs font-semibold line-clamp-1 text-content">2 hours ago</p>
                                 </div></a></li>
-                            <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 border-border-light dark:border-border-dark hover:bg-gray-light rounded-5"><a class="flex items-center gap-[12px]" href="./message.html">
+                            <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 border-border-light dark:border-border-dark hover:bg-gray-light dark:hover:bg-sidebar-dark2 rounded-5"><a class="flex items-center gap-[12px]" href="./message.html">
                                 <div class="rounded-full relative shadow-lg bg-warning flex items-center justify-center rounded-full p-2">
                                   <svg class="w-5 h-5 stroke-white"> 
                                     <use href="../../assets/svg/sprite.svg#Buy"> </use>
                                   </svg>
                                 </div>
-                                <div>
+                                <div> 
                                   <h4 class="text-xs font-semibold line-clamp-1 text-title">Order Place Success</h4>
                                   <p class="text-xs font-semibold line-clamp-1 text-content">2 week ago</p>
                                 </div></a></li>
-                            <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 border-border-light dark:border-border-dark hover:bg-gray-light rounded-5"><a class="flex items-center gap-[12px]" href="./message.html">
+                            <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 border-border-light dark:border-border-dark hover:bg-gray-light dark:hover:bg-sidebar-dark2 rounded-5"><a class="flex items-center gap-[12px]" href="./message.html">
                                 <div class="rounded-full relative shadow-lg bg-info flex items-center justify-center rounded-full p-2">
                                   <svg class="w-5 h-5 stroke-white"> 
                                     <use href="../../assets/svg/sprite.svg#Lock"> </use>
                                   </svg>
                                 </div>
-                                <div>
+                                <div> 
                                   <h4 class="text-xs font-semibold line-clamp-1 text-title">Netflix Subscription Expires</h4>
                                   <p class="text-xs font-semibold line-clamp-1 text-content">4 days ago</p>
                                 </div></a></li>
-                            <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 border-border-light dark:border-border-dark hover:bg-gray-light rounded-5"><a class="flex items-center gap-[12px]" href="./message.html">
+                            <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 border-border-light dark:border-border-dark hover:bg-gray-light dark:hover:bg-sidebar-dark2 rounded-5"><a class="flex items-center gap-[12px]" href="./message.html">
                                 <div class="rounded-full relative shadow-lg bg-danger flex items-center justify-center rounded-full p-2">
                                   <svg class="w-5 h-5 stroke-white"> 
                                     <use href="../../assets/svg/sprite.svg#Discount"> </use>
                                   </svg>
                                 </div>
-                                <div>
+                                <div> 
                                   <h4 class="text-xs font-semibold line-clamp-1 text-title">Congratulations You Won $2500</h4>
                                   <p class="text-xs font-semibold line-clamp-1 text-content">12 days ago</p>
                                 </div></a></li>
-                            <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 border-border-light dark:border-border-dark hover:bg-gray-light rounded-5"><a class="flex items-center gap-[12px]" href="./message.html">
+                            <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 border-border-light dark:border-border-dark hover:bg-gray-light dark:hover:bg-sidebar-dark2 rounded-5"><a class="flex items-center gap-[12px]" href="./message.html">
                                 <div class="rounded-full relative shadow-lg bg-success flex items-center justify-center rounded-full p-2">
                                   <svg class="w-5 h-5 stroke-white"> 
                                     <use href="../../assets/svg/sprite.svg#Upload"> </use>
                                   </svg>
                                 </div>
-                                <div>
+                                <div> 
                                   <h4 class="text-xs font-semibold line-clamp-1 text-title">Latest Updates On You Phone</h4>
                                   <p class="text-xs font-semibold line-clamp-1 text-content">25 days ago</p>
                                 </div></a></li>
@@ -254,14 +268,14 @@
                         </svg>
                         <div class="dropdown-menu !min-w-[320px]">
                           <div class="flex items-center justify-between pb-[15px] border-b border-border-light dark:border-border-dark"> 
-                            <h4 class="text-base font-bold text-title">Cart Items<span class="text-sm font-bold text-content"> (25)</span></h4>
-                            <button class="p-2 transition-all duration-300 rounded-full bg-gray-light group hover:bg-primary">
+                            <h4 class="text-base font-bold text-title">Cart Items<span class="text-sm font-bold text-content">(25) </span></h4>
+                            <button class="p-2 transition-all duration-300 rounded-full bg-gray-light dark:bg-sidebar-dark2 group hover:bg-primary dark:hover:bg-primary">
                               <svg class="w-[18px] h-[18px] transition-all duration-300 group-hover:stroke-white stroke-title"> 
                                 <use href="../../assets/svg/sprite.svg#Delete"> </use>
                               </svg>
                             </button>
                           </div>
-                          <ul class="flex flex-col max-h-[232px] overflow-auto custom-scroll px-1"> 
+                          <ul class="flex flex-col max-h-[232px] overflow-auto custom-scroll px-1">
                             <li class="cart-item flex items-center gap-3 py-3 transition-all duration-300 border-b last:border-b-0 border-border-light dark:border-border-dark rounded-5"><a class="flex items-center gap-[12px]" href="./product.html">
                                 <div class="rounded-full relative "><img class="rounded-full min-w-[2.25rem] min-h-[2.25rem] w-full h-auto object-cover" src="../../assets/images/product/1.jpg" alt="Flower Pot"></div>
                                 <div>
@@ -338,9 +352,9 @@
                               </div>
                             </li>
                           </ul>
-                          <div class="pt-[15px] border-t border-light">
-                            <div class="flex items-center justify-between mb-[15px]">
-                              <h4 class="text-sm font-semibold">Bag Total</h4><span class="text-sm font-semibold">$250.00 </span>
+                          <div class="pt-[15px] border-t border-light dark:border-border-dark dark:border-t">
+                            <div class="flex items-center justify-between mb-[15px]"> 
+                              <h4 class="text-sm font-semibold">Bag Total </h4><span class="text-sm font-semibold">$250.00 </span>
                             </div><a class="block w-full py-2 text-sm font-semibold leading-none text-white btn btn-primary" href="checkout.html">Proceed to Checkout </a>
                           </div>
                         </div>
@@ -725,8 +739,8 @@
                     </nav>
                   </div>
                   <!-- Breadcrumbs End -->
-                  <div class="custom-select select-style-1 lg:hidden">
-                    <select>
+                  <div class="custom-select select-style-1 lg:hidden dark:text-title">
+                    <select class="dark:text-title">
                       <option selected value="">Last 7 Days </option>
                       <option value="">Last 2 Weeks </option>
                       <option value="">Last 1 Month </option>
