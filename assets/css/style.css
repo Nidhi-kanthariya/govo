@@ -67,6 +67,7 @@ html[class='dark'] .apexcharts-tooltip.apexcharts-theme-light {
     }
 html[class='dark'] .apexcharts-tooltip {
     background: var(--apex-tooltip);
+    border: var(--border-light);
 }
 /* Unique Skin */
 .unique-skin {

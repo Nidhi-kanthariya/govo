@@ -68,6 +68,7 @@ html[class='dark'] {
       box-shadow: none;
     }
     background: var(--apex-tooltip);
+    border: var(--border-light);
   }
 }
 /* Unique Skin */
