@@ -751,7 +751,7 @@ const recentStatisticsOption = (data) => {
         grid: {
             show: true,
             borderColor: 'var(--border-light)',
-            strokeDashArray: 0,
+            strokeDashArray: 0, 
             position: 'back',
             padding: {
                 top: 0,

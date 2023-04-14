@@ -8,13 +8,13 @@ div(class="bg-white customizer-sidebar dark:bg-sidebar-dark2 dark:border-border-
   div(class="py-[4px] dark:bg-mode-200")
     div(class="px-[15px] py-7  h-[calc(100vh_-_139px)] overflow-auto ")
       ul.flex.flex-col.gap-7.mode-event
-        li
+        li 
           div
             h5.leading-none.text-dark(class="text-sm font-semibold") Template Mode
             span.leading-none.text-content.text-xs(class="font-medium") Choose template mode dark & light
           div.mt-2
             ul.flex.items-center.gap-3(class="flex-wrap") 
-              li.relative 
+              li.relative
                 input(class="absolute invisible opacity-0 peer" checked id="light-checked" type="radio" name="mode")
                 i(data-feather="check-circle" class="stroke-primary z-[10] transition-all scale-0 opacity-0 absolute peer-checked:opacity-100 peer-checked:scale-100 top-2 right-2 w-4 h-4")
                 label(for="light-checked" class="block overflow-hidden border shadow-md mode-theme-light border-light rounded-5") 

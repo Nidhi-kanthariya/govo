@@ -16,7 +16,7 @@
       @apply rounded-3xl py-[0.3rem] px-[0.5rem];
 
       &.tab-active {
-        @apply bg-info text-white;
+        @apply bg-info dark:bg-info text-white;
       }
     }
   }
