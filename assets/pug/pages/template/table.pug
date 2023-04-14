@@ -46,6 +46,14 @@ html(lang='en')
                 div.card-body
                   div.overflow-auto.custom-scroll  
                     include ../../components/table/default-table
+            div.col-span-6(class="lg:col-span-12")
+              div.card
+                div.card-header.border-b-0
+                  div.flex.flex-col
+                    h3.text-lg.font-medium Icons Table
+                div.card-body
+                  div.overflow-auto.custom-scroll   
+                    include ../../components/table/icon-table
 
             div.col-span-6(class="lg:col-span-12")
               div.card
@@ -64,6 +72,15 @@ html(lang='en')
                 div.card-body
                   div.overflow-auto.custom-scroll   
                     include ../../components/table/hoverable-table
+
+            div.col-span-6(class="lg:col-span-12")
+              div.card
+                div.card-header.border-b-0
+                  div.flex.flex-col
+                    h3.text-lg.font-medium Head Option
+                div.card-body
+                  div.overflow-auto.custom-scroll   
+                    include ../../components/table/head-table
 
             div.col-span-6(class="lg:col-span-12")
               div.card

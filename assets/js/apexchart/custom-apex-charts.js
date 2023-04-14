@@ -1187,7 +1187,6 @@ const bubblechart = {
 const bubblechartEl = new ApexCharts(document.querySelector('#bubblechart'), bubblechart);
 bubblechartEl.render();
 
-
 /*=======/ CandleStick Chart /=======*/
 const candlestickchart = {
     chart: {
@@ -1784,11 +1783,12 @@ const boxplotchart = {
         padding: {
             top: -20,
             right: -20,
-            bottom: -10,
+            bottom: 10,
         },
     },
 
     xaxis: {
+        type: 'datetime',
         labels: {
             style: {
                 ...fontCommon,
@@ -1842,7 +1842,7 @@ const boxplotchart = {
             xaxis: {
                 labels: {
                     show: true,
-                    rotate: -30,
+                    // rotate: -30,
                     rotateAlways: true,
                     minHeight: 48,
                 },

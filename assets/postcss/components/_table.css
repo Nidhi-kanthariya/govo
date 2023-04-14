@@ -187,13 +187,46 @@
             }
             td{
               &:first-child{
-              @apply pl-4;
-            }
-            &:last-child{
-              @apply pr-4;
-            }
+                @apply pl-4;
+              }
+              &:last-child{
+                @apply pr-4;
+              }
             }
           }
+        }
+      }
+      &.head-table{
+        thead{
+          @apply bg-title;
+          tr{
+            &:first-child{
+              th{
+                @apply pt-[18px];
+              }
+            }
+            th{
+              @apply text-white;
+              &:first-child{
+                @apply pl-4;
+              }
+              &:last-child{
+                @apply pr-4;
+              }
+            }
+          }
+        }
+        tbody{
+          tr{
+              td{
+                &:first-child{
+                @apply pl-4;
+              }
+                &:last-child{
+                  @apply pr-4;
+                }
+              }
+            }
         }
       }
     }

@@ -1,7 +1,7 @@
 //- sidebar
 -var sidebar = true;
 
-//- feathet
+//- feather
 -var feather= true;
 
 //- customSelect
@@ -12,6 +12,9 @@
 
 //- prism
 -var prism=true;
+
+//- fontAwesome
+-var fontAwesome=true;
 
 //- Breadcrumbs
 -var pageTitle="Checkbox & Radio";
@@ -42,7 +45,7 @@ html(lang='en')
               div.card.tabs
                 div.card-header.pb-2.header-bottom-border
                   div.flex.flex-col
-                    h3.text-lg.font-bold Checked Checkbox
+                    h3.text-lg.font-bold Default Checks
                     p Here, the checked checkbox that you can use. 
                     div.preview-code.tab-links
                       button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
@@ -50,19 +53,25 @@ html(lang='en')
                 div.card-body                                   
                   div.tabs-content
                     div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
-                      div.flex.justify-center.gap-2.flex-wrap
+                      div.flex.gap-2.flex-col
                         div.flex.items-center.gap-2
                           label.checkbox.checkbox-md.cursor-pointer  
                             input(type='checkbox' class="peer" checked) 
                             div.checkbox-indicator(class="peer-checked:!bg-primary !border-primary")  
                               i(data-feather="check")
                           p Remember Me
+                        div.flex.items-center.gap-2
+                          label.checkbox.checkbox-md.cursor-pointer  
+                            input(type='checkbox' class="peer") 
+                            div.checkbox-indicator(class="peer-checked:!bg-primary !border-primary")  
+                              i(data-feather="check")
+                          p Save It
                     div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white")
                         i(data-feather="clipboard")
                       pre(class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2")
                         code(class="dark:bg-sidebar-dark2")
-                          |&lt;div class="flex flex-wrap justify-center gap-2"&gt;
+                          |&lt;div class="flex flex-col gap-2"&gt;
                           |   &lt;div class="flex items-center gap-2"&gt; 
                           |       &lt;label class="cursor-pointer checkbox checkbox-md"&gt;
                           |           &lt;input type="checkbox" class="peer" checked=""/&gt;
@@ -71,42 +80,15 @@ html(lang='en')
                           |           &lt;/div&gt;
                           |       &lt;/label&gt;
                           |       &lt;p&gt;Remember Me&lt;/p&gt;
-                          |   &lt;/div&gt; 
-                          |&lt;/div&gt;
-
-            div.col-span-4(class="lg:col-span-6 md:col-span-12")
-              div.card.tabs
-                div.card-header.pb-2.header-bottom-border
-                  div.flex.flex-col
-                    h3.text-lg.font-bold Default 
-                    p Set the default checkbox inside the project. 
-                    div.preview-code.tab-links
-                      button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
-                      button.p-0.tab.tab-lifted(data-tabFilter="2" class="tab-link tab-2") Html
-                div.card-body                                   
-                  div.tabs-content
-                    div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
-                      div.flex.justify-center.gap-2.flex-wrap
-                        div.flex.items-center.gap-2
-                          label.checkbox.checkbox-md.cursor-pointer 
-                            input(type='checkbox' class="peer") 
-                            div.checkbox-indicator(class="peer-checked:!bg-secondary !border-secondary")  
-                              i(data-feather="check")
-                          p Default
-                    div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
-                      button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white")
-                        i(data-feather="clipboard")
-                      pre(class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2")
-                        code(class="dark:bg-sidebar-dark2")
-                          |&lt;div class="flex flex-wrap justify-center gap-2"&gt;
+                          |   &lt;/div&gt;
                           |   &lt;div class="flex items-center gap-2"&gt; 
                           |       &lt;label class="cursor-pointer checkbox checkbox-md"&gt;
-                          |           &lt;input type="checkbox" class="peer"&gt;
-                          |           &lt;div class="checkbox-indicator peer-checked:!bg-secondary !border-secondary"&gt;
+                          |           &lt;input type="checkbox" class="peer" checked=""/&gt;
+                          |           &lt;div class="checkbox-indicator peer-checked:!bg-primary !border-primary"&gt;
                           |              &lt;i data-feather="check"&gt;&lt;/i&gt;
                           |           &lt;/div&gt;
                           |       &lt;/label&gt;
-                          |       &lt;p&gt;Default&lt;/p&gt;
+                          |       &lt;p&gt;Save It&lt;/p&gt;
                           |   &lt;/div&gt; 
                           |&lt;/div&gt;
 
@@ -114,7 +96,7 @@ html(lang='en')
               div.card.tabs
                 div.card-header.pb-2.header-bottom-border
                   div.flex.flex-col
-                    h3.text-lg.font-bold Disabled Checked
+                    h3.text-lg.font-bold Disabled Checks
                     p Set the disabled checkbox, use 
                       strong .disabled  
                       | class. 
@@ -124,19 +106,25 @@ html(lang='en')
                 div.card-body                                   
                   div.tabs-content
                     div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
-                      div.flex.justify-center.gap-2.flex-wrap
+                      div.flex.gap-2.flex-col
                         div.flex.items-center.gap-2.opacity-40
                           label.checkbox.checkbox-md.cursor-pointer  
                             input(type='checkbox' class="peer" disabled) 
                             div.checkbox-indicator(class="peer-checked:!bg-warning !border-warning")  
                               i(data-feather="check")
-                          p Disabled Checked
+                          p Disabled Checkbox
+                        div.flex.items-center.gap-2.opacity-40
+                          label.checkbox.checkbox-md.cursor-pointer  
+                            input(type='checkbox' class="peer" disabled checked) 
+                            div.checkbox-indicator(class="peer-checked:!bg-warning !border-warning")  
+                              i(data-feather="check")
+                          p Disabled Checked Checkbox
                     div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white")
                         i(data-feather="clipboard")
                       pre(class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2")
                         code(class="dark:bg-sidebar-dark2")
-                          |&lt;div class="flex flex-wrap justify-center gap-2"&gt;
+                          |&lt;div class="flex flex-col gap-2"&gt;
                           |   &lt;div class="flex items-center gap-2 opacity-40"&gt; 
                           |       &lt;label class="cursor-pointer checkbox checkbox-md"&gt;
                           |           &lt;input type="checkbox" class="peer" disabled&gt;
@@ -144,7 +132,67 @@ html(lang='en')
                           |              &lt;i data-feather="check"&gt;&lt;/i&gt;
                           |           &lt;/div&gt;
                           |       &lt;/label&gt;
-                          |       &lt;p&gt;Disabled Checked&lt;/p&gt;
+                          |       &lt;p&gt;Disabled Checkbox&lt;/p&gt;
+                          |   &lt;/div&gt; 
+                          |   &lt;div class="flex items-center gap-2 opacity-40"&gt; 
+                          |       &lt;label class="cursor-pointer checkbox checkbox-md"&gt;
+                          |           &lt;input type="checkbox" class="peer" disabled&gt;
+                          |           &lt;div class="checkbox-indicator peer-checked:!bg-warning !border-warning"&gt;
+                          |              &lt;i data-feather="check"&gt;&lt;/i&gt;
+                          |           &lt;/div&gt;
+                          |       &lt;/label&gt;
+                          |       &lt;p&gt;Disabled Checked Checkbox&lt;/p&gt;
+                          |   &lt;/div&gt; 
+                          |&lt;/div&gt;
+
+            div.col-span-4(class="lg:col-span-6 md:col-span-12")
+              div.card.tabs
+                div.card-header.pb-2.header-bottom-border
+                  div.flex.flex-col
+                    h3.text-lg.font-bold Right Checks 
+                    p Set the default checkbox inside the project. 
+                    div.preview-code.tab-links
+                      button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
+                      button.p-0.tab.tab-lifted(data-tabFilter="2" class="tab-link tab-2") Html
+                div.card-body                                   
+                  div.tabs-content
+                    div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
+                      div.flex.gap-2.flex-col
+                        div.flex.items-center.gap-2
+                          p Reverse Checkbox
+                          label.checkbox.checkbox-md.cursor-pointer 
+                            input(type='checkbox' class="peer") 
+                            div.checkbox-indicator(class="peer-checked:!bg-secondary !border-secondary")  
+                              i(data-feather="check")
+                        div.flex.items-center.gap-2
+                          p Reverse Checked Checkbox
+                          label.checkbox.checkbox-md.cursor-pointer 
+                            input(type='checkbox' class="peer" checked) 
+                            div.checkbox-indicator(class="peer-checked:!bg-secondary !border-secondary")  
+                              i(data-feather="check")
+                    div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
+                      button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white")
+                        i(data-feather="clipboard")
+                      pre(class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2")
+                        code(class="dark:bg-sidebar-dark2")
+                          |&lt;div class="flex flex-col gap-2"&gt;
+                          |   &lt;div class="flex items-center gap-2"&gt; 
+                          |       &lt;p&gt;Reverse Checkbox&lt;/p&gt;
+                          |       &lt;label class="cursor-pointer checkbox checkbox-md"&gt;
+                          |           &lt;input type="checkbox" class="peer"&gt;
+                          |           &lt;div class="checkbox-indicator peer-checked:!bg-secondary !border-secondary"&gt;
+                          |              &lt;i data-feather="check"&gt;&lt;/i&gt;
+                          |           &lt;/div&gt;
+                          |       &lt;/label&gt;
+                          |   &lt;/div&gt; 
+                          |   &lt;div class="flex items-center gap-2"&gt; 
+                          |       &lt;p&gt;Reverse Checked Checkbox&lt;/p&gt;
+                          |       &lt;label class="cursor-pointer checkbox checkbox-md"&gt;
+                          |           &lt;input type="checkbox" class="peer" checked&gt;
+                          |           &lt;div class="checkbox-indicator peer-checked:!bg-secondary !border-secondary"&gt;
+                          |              &lt;i data-feather="check"&gt;&lt;/i&gt;
+                          |           &lt;/div&gt;
+                          |       &lt;/label&gt;
                           |   &lt;/div&gt; 
                           |&lt;/div&gt;
 
@@ -164,31 +212,135 @@ html(lang='en')
                 div.card-body                                   
                   div.tabs-content
                     div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
-                      div.flex.justify-center.gap-3.flex-wrap
+                      div.flex.gap-2.flex-col
                         div.flex.items-center.gap-2
                           label.checkbox.checkbox-md.cursor-pointer   
                             input(type='checkbox' checked='checked' class="peer") 
                             div.checkbox-indicator(class="peer-checked:!bg-warning !border-warning")  
                               i(data-feather="check") 
-                          p Warning
+                          p Warning - checkbox-solid-warning
                         div.flex.items-center.gap-2  
                           label.checkbox.checkbox-md.cursor-pointer   
                             input(type='checkbox' class="peer") 
                             div.checkbox-indicator(class="peer-checked:!bg-info !border-info")  
                               i(data-feather="check")
-                          p Info 
+                          p Info - checkbox-solid-info
                         div.flex.items-center.gap-2 
                           label.checkbox.checkbox-md.cursor-pointer   
                             input(type='checkbox' checked='checked' class="peer") 
                             div.checkbox-indicator(class="peer-checked:!bg-danger !border-danger")  
                               i(data-feather="check")
-                          p Danger
+                          p Danger - checkbox-solid-danger
                         div.flex.items-center.gap-2 
                           label.checkbox.checkbox-md.cursor-pointer
                             input(type='checkbox' class="peer") 
                             div.checkbox-indicator(class="peer-checked:!bg-success !border-success")  
                               i(data-feather="check")
-                          p Success
+                          p Success - checkbox-solid-success
+                    div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
+                      button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white")
+                        i(data-feather="clipboard")
+                      pre(class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2")
+                        code(class="dark:bg-sidebar-dark2")
+                          |&lt;div class="flex flex-col gap-2"&gt;
+                          |   &lt;div class="flex items-center gap-2"&gt; 
+                          |       &lt;label checkbox checkbox-md cursor-pointer"&gt;
+                          |           &lt;input type= 'checkbox'class="peer"&gt;
+                          |           &lt;div checkbox-indicator class="peer-checked:!bg-warning !border-warning"&gt;
+                          |               &lt;i data-feather="check"&gt;&lt;/i&gt;
+                          |           &lt;/div&gt; 
+                          |       &lt;/label&gt;
+                          |       &lt;p&gt;Warning - checkbox-solid-warning&lt;/p&gt;
+                          |   &lt;/div&gt; 
+                          |   &lt;div class="flex items-center gap-2"&gt; 
+                          |       &lt;label checkbox checkbox-md cursor-pointer"&gt;
+                          |           &lt;input type= 'checkbox'class="peer" checked='checked'/&gt;
+                          |           &lt;div checkbox-indicator class="peer-checked:!bg-info !border-info"&gt;
+                          |               &lt;i data-feather="check"&gt;&lt;/i&gt;
+                          |           &lt;/div&gt; 
+                          |       &lt;/label&gt;
+                          |       &lt;p&gt;Info - checkbox-solid-info&lt;/p&gt;
+                          |   &lt;/div&gt; 
+                          |   &lt;div class="flex items-center gap-2"&gt; 
+                          |       &lt;label checkbox checkbox-md cursor-pointer"&gt;
+                          |           &lt;input type= 'checkbox'class="peer" checked='checked'/&gt;
+                          |           &lt;div checkbox-indicator class="peer-checked:!bg-danger !border-danger"&gt;
+                          |               &lt;i data-feather="check"&gt;&lt;/i&gt;
+                          |           &lt;/div&gt; 
+                          |       &lt;/label&gt;
+                          |       &lt;p&gt;Danger - checkbox-solid-danger&lt;/p&gt;
+                          |   &lt;/div&gt; 
+                          |   &lt;div class="flex items-center gap-2"&gt; 
+                          |       &lt;label checkbox checkbox-md cursor-pointer"&gt;
+                          |           &lt;input type= 'checkbox'class="peer"/&gt;
+                          |           &lt;div checkbox-indicator class="peer-checked:!bg-success !border-success"&gt;
+                          |               &lt;i data-feather="check"&gt;&lt;/i&gt;
+                          |           &lt;/div&gt; 
+                          |       &lt;/label&gt;
+                          |       &lt;p&gt;Success - checkbox-solid-success&lt;/p&gt;
+                          |   &lt;/div&gt; 
+                          |&lt;/div&gt;
+
+            div.col-span-6(class="md:col-span-12")
+              div.card.tabs
+                div.card-header.pb-2.header-bottom-border
+                  div.flex.flex-col
+                    h3.text-lg.font-bold Icon Checks
+                    p Add the sizes of checkbox with different colored using  
+                      strong .checkbox-* 
+                      | & 
+                      strong .bg-*  
+                      | class. 
+                    div.preview-code.tab-links
+                      button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
+                      button.p-0.tab.tab-lifted(data-tabFilter="2" class="tab-link tab-2") Html
+                div.card-body                                   
+                  div.tabs-content
+                    div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
+                      div.main-icon-checkbox.checkbox-primary.checkbox  
+                        ul.checkbox-wrapper
+                          li 
+                            input#checkbox-icon.form-check-input(type='checkbox')
+                            label.form-check-label(for='checkbox-icon')
+                              i(data-feather="sliders")
+                              span Sliders
+                          li 
+                            input#checkbox-icon1.form-check-input(type='checkbox' checked='')
+                            label.form-check-label(for='checkbox-icon1')
+                              i(data-feather="user")
+                              span User 
+                          li 
+                            input#checkbox-icon2.form-check-input(type='checkbox')
+                            label.form-check-label(for='checkbox-icon2')
+                              i(data-feather="tag")
+                              span Tags
+                          li 
+                            input#checkbox-icon3.form-check-input(type='checkbox')
+                            label.form-check-label(for='checkbox-icon3')
+                              i(data-feather="loader")
+                              span Loader 
+                          li 
+                            input#checkbox-icon4.form-check-input(type='checkbox')
+                            label.form-check-label(for='checkbox-icon4')
+                              i(data-feather="eye-off")
+                              span Hidden
+                          li 
+                            input#checkbox-icon5.form-check-input(type='checkbox')
+                            label.form-check-label(for='checkbox-icon5')
+                              i(data-feather="folder")
+                              span Folder
+                          li 
+                            input#checkbox-icon6.form-check-input(type='checkbox')
+                            label.form-check-label(for='checkbox-icon6')
+                              i(data-feather="map-pin")
+                              span Map
+                          li 
+                            input#checkbox-icon7.form-check-input(type='checkbox')
+                            label.form-check-label(for='checkbox-icon7')
+                              i(data-feather="wifi")
+                              span Network
+
+
                     div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white")
                         i(data-feather="clipboard")
@@ -270,7 +422,7 @@ html(lang='en')
                         i(data-feather="clipboard")
                       pre(class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2")
                         code(class="dark:bg-sidebar-dark2")
-                          |&lt;div class="flex flex-wrap justify-center gap-3 items-center"&gt;
+                          |&lt;div class="flex flex-wrap items-center justify-center gap-3"&gt;
                           |   &lt;div class="radio-button radio-md primary"&gt;
                           |      &lt;input id="primary" type="radio" class="selector"&gt;
                           |      &lt;div class="check"&gt;&lt;/div&gt;
@@ -412,7 +564,7 @@ html(lang='en')
                         i(data-feather="clipboard")
                       pre(class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2")
                         code(class="dark:bg-sidebar-dark2")
-                          |&lt;div class="flex flex-wrap justify-center gap-3 items-center"&gt;
+                          |&lt;div class="flex flex-wrap items-center justify-center gap-3"&gt;
                           |   &lt;div class="radio-button radio-md primary"&gt;
                           |      &lt;input id="primary" type="radio" class="selector1"&gt;
                           |      &lt;div class="check"&gt;&lt;/div&gt;
@@ -461,7 +613,7 @@ html(lang='en')
                         i(data-feather="clipboard")
                       pre(class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2")
                         code(class="dark:bg-sidebar-dark2")
-                          |&lt;div class="flex flex-wrap justify-center gap-3 items-center"&gt;
+                          |&lt;div class="flex flex-wrap items-center justify-center gap-3"&gt;
                           |   &lt;div class="radio-button radio-sm info"&gt;
                           |      &lt;input id="radio1" type="radio" class="selector3"&gt;
                           |      &lt;div class="check"&gt;&lt;/div&gt;
@@ -501,7 +653,7 @@ html(lang='en')
                         i(data-feather="clipboard")
                       pre(class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2")
                         code(class="dark:bg-sidebar-dark2")
-                          |&lt;div class="flex flex-wrap justify-center gap-3 items-center"&gt;
+                          |&lt;div class="flex flex-wrap items-center justify-center gap-3"&gt;
                           |   &lt;div class="radio-button radio-sm info"&gt;
                           |      &lt;input id="default1" type="radio" class="selector4"&gt;
                           |      &lt;div class="check"&gt;&lt;/div&gt;
@@ -543,7 +695,7 @@ html(lang='en')
                         i(data-feather="clipboard")
                       pre(class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2")
                         code(class="dark:bg-sidebar-dark2")
-                          |&lt;div class="flex flex-wrap justify-center gap-3 items-center"&gt;
+                          |&lt;div class="flex flex-wrap items-center justify-center gap-3"&gt;
                           |   &lt;div class="radio-button radio-sm info"&gt;
                           |      &lt;input id="disable1" type="radio" class="selector5" disabled&gt;
                           |      &lt;div class="check"&gt;&lt;/div&gt;
