@@ -19,7 +19,7 @@ div.dropdown
           a.flex.items-center(href="./chat.html" class="gap-[12px]")
             div.indicator
               span.chat-status(class=`status-${chat.status}`)
-              div.avatar 
+              div.avatar
                 div.w-10.rounded-full.h-10(class="xl:w-9 xl:h-9")
                   img(src=`../../assets/images/avatar/${chat.avatar}`, alt=`${chat.name}`)
             div
@@ -27,7 +27,7 @@ div.dropdown
               p(class="text-xs font-semibold line-clamp-1 text-content")= chat.subTitle
           div(class="flex flex-col items-end gap-1 ml-auto")
             span(class="font-normal text-3xs text-content")= chat.time
-            if (chat.status !== "danger") 
+            if (chat.status !== "danger")
               span(class="leading-none p-1 badge bg-primary rounded-full text-3xs flex items-center justify-center min-w-[22px] min-h-[22px]")= chat.notif
 // Notification End 
 
