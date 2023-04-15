@@ -2008,7 +2008,7 @@ const barchart = {
             padding: 4,
             opacity: 0.9,
             borderWidth: 1,
-            borderColor: '#fff',
+            borderColor: 'var(--border-light)',
         },
         offsetX: 21,
         offsetY: -6,
