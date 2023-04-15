@@ -7,7 +7,7 @@ const areachart = {
     series: [{
         name: 'series1',
         data: [310, 280, 350, 310, 570, 590, 650, 550],
-    },],
+    }, ],
     chart: {
         height: 300,
         width: '100%',
@@ -28,25 +28,25 @@ const areachart = {
             opacityFrom: 0.8,
             opacityTo: 0.4,
             colorStops: [{
-                offset: 0,
-                color: 'rgba(var(--primary),0.5)',
-                opacity: 1,
-            },
-            {
-                offset: 20,
-                color: 'rgba(var(--primary),0.3)',
-                opacity: 1,
-            },
-            {
-                offset: 60,
-                color: 'rgba(var(--primary),0.1)',
-                opacity: 1,
-            },
-            {
-                offset: 100,
-                color: 'rgba(var(--primary), 0)',
-                opacity: 1,
-            },
+                    offset: 0,
+                    color: 'rgba(var(--primary),0.5)',
+                    opacity: 1,
+                },
+                {
+                    offset: 20,
+                    color: 'rgba(var(--primary),0.3)',
+                    opacity: 1,
+                },
+                {
+                    offset: 60,
+                    color: 'rgba(var(--primary),0.1)',
+                    opacity: 1,
+                },
+                {
+                    offset: 100,
+                    color: 'rgba(var(--primary), 0)',
+                    opacity: 1,
+                },
             ],
         },
     },
@@ -129,29 +129,29 @@ const areachart = {
     },
 
     responsive: [{
-        breakpoint: 675,
-        options: {
-            chart: {
-                height: 280,
+            breakpoint: 675,
+            options: {
+                chart: {
+                    height: 280,
+                },
             },
         },
-    },
-    {
-        breakpoint: 425,
-        options: {
-            chart: {
-                height: 260,
+        {
+            breakpoint: 425,
+            options: {
+                chart: {
+                    height: 260,
+                },
             },
         },
-    },
-    {
-        breakpoint: 375,
-        options: {
-            chart: {
-                height: 220,
+        {
+            breakpoint: 375,
+            options: {
+                chart: {
+                    height: 220,
+                },
             },
         },
-    },
     ],
 };
 
@@ -163,7 +163,7 @@ areachartEl.render();
 const columnchart = {
     series: [{
         data: [45, 25, 55, 47, 89, 47, 70, 38, 92, 44, 38, 70],
-    },],
+    }, ],
     chart: {
         type: 'bar',
         width: '100%',
@@ -209,44 +209,44 @@ const columnchart = {
         },
     },
     responsive: [{
-        breakpoint: 675,
-        options: {
-            plotOptions: {
-                bar: {
-                    columnWidth: '55%',
-                    borderRadius: 5,
+            breakpoint: 675,
+            options: {
+                plotOptions: {
+                    bar: {
+                        columnWidth: '55%',
+                        borderRadius: 5,
+                    },
                 },
             },
         },
-    },
-    {
-        breakpoint: 425,
-        options: {
-            chart: {
-                height: 260,
-            },
-            plotOptions: {
-                bar: {
-                    columnWidth: '70%',
-                    borderRadius: 5,
+        {
+            breakpoint: 425,
+            options: {
+                chart: {
+                    height: 260,
+                },
+                plotOptions: {
+                    bar: {
+                        columnWidth: '70%',
+                        borderRadius: 5,
+                    },
                 },
             },
         },
-    },
-    {
-        breakpoint: 375,
-        options: {
-            chart: {
-                height: 220,
-            },
-            plotOptions: {
-                bar: {
-                    columnWidth: '70%',
-                    borderRadius: 5,
+        {
+            breakpoint: 375,
+            options: {
+                chart: {
+                    height: 220,
+                },
+                plotOptions: {
+                    bar: {
+                        columnWidth: '70%',
+                        borderRadius: 5,
+                    },
                 },
             },
         },
-    },
     ],
 };
 
@@ -258,7 +258,7 @@ const advancedareachart = {
     series: [{
         name: 'series1',
         data: [200, 570, 200, 300, 280, 530, 440, 440, 630, 400, 450, 560, 350, 200],
-    },],
+    }, ],
     chart: {
         height: 300,
         width: '100%',
@@ -279,34 +279,33 @@ const advancedareachart = {
             opacityFrom: 0.8,
             opacityTo: 0.4,
             colorStops: [{
-                offset: 0,
-                color: 'rgba(var(--secondary),0.5)',
-                opacity: 1,
-            },
-            {
-                offset: 20,
-                color: 'rgba(var(--secondary),0.3)',
-                opacity: 1,
-            },
-            {
-                offset: 60,
-                color: 'rgba(var(--secondary),0.1)',
-                opacity: 1,
-            },
-            {
-                offset: 100,
-                color: 'rgba(var(--secondary), 0)',
-                opacity: 1,
-            },
+                    offset: 0,
+                    color: 'rgba(var(--secondary),0.5)',
+                    opacity: 1,
+                },
+                {
+                    offset: 20,
+                    color: 'rgba(var(--secondary),0.3)',
+                    opacity: 1,
+                },
+                {
+                    offset: 60,
+                    color: 'rgba(var(--secondary),0.1)',
+                    opacity: 1,
+                },
+                {
+                    offset: 100,
+                    color: 'rgba(var(--secondary), 0)',
+                    opacity: 1,
+                },
             ],
         },
     },
     markers: {
         size: 7,
-        colors: '#fff',
+        colors: 'var(--body)',
         strokeColors: 'rgba(var(--secondary), 1)',
         strokeWidth: 3,
-
         hover: {
             size: 9,
             strokeWidth: 20,
@@ -382,47 +381,47 @@ const advancedareachart = {
     },
 
     responsive: [{
-        breakpoint: 675,
-        options: {
-            chart: {
-                height: 280,
-            },
-        },
-    },
-    {
-        breakpoint: 425,
-        options: {
-            chart: {
-                height: 260,
-            },
-            markers: {
-                size: 5,
-                strokeWidth: 2,
-                hover: {
-                    size: 7,
-                },
-            },
-            xaxis: {
-                labels: {
-                    show: true,
-                    rotate: -45,
-                    rotateAlways: true,
-                    hideOverlappingLabels: true,
-                    showDuplicates: false,
-                    maxHeight: 30,
-                    offsetX: 3,
+            breakpoint: 675,
+            options: {
+                chart: {
+                    height: 280,
                 },
             },
         },
-    },
-    {
-        breakpoint: 375,
-        options: {
-            chart: {
-                height: 220,
+        {
+            breakpoint: 425,
+            options: {
+                chart: {
+                    height: 260,
+                },
+                markers: {
+                    size: 5,
+                    strokeWidth: 2,
+                    hover: {
+                        size: 7,
+                    },
+                },
+                xaxis: {
+                    labels: {
+                        show: true,
+                        rotate: -45,
+                        rotateAlways: true,
+                        hideOverlappingLabels: true,
+                        showDuplicates: false,
+                        maxHeight: 30,
+                        offsetX: 3,
+                    },
+                },
             },
         },
-    },
+        {
+            breakpoint: 375,
+            options: {
+                chart: {
+                    height: 220,
+                },
+            },
+        },
     ],
 };
 
@@ -433,55 +432,55 @@ advancedareachartEl.render();
 const roundedcolumnchart = {
     series: [{
         data: [{
-            x: 'Jan',
-            y: [210, 400],
-        },
-        {
-            x: 'Feb',
-            y: [300, 490],
-        },
-        {
-            x: 'Mar',
-            y: [350, 500],
-        },
-        {
-            x: 'Apr',
-            y: [210, 390],
-        },
-        {
-            x: 'May',
-            y: [280, 400],
-        },
-        {
-            x: 'Jun',
-            y: [110, 250],
-        },
-        {
-            x: 'Jul',
-            y: [210, 400],
-        },
-        {
-            x: 'Aug',
-            y: [290, 390],
-        },
-        {
-            x: 'Sep',
-            y: [250, 490],
-        },
-        {
-            x: 'Oct',
-            y: [210, 390],
-        },
-        {
-            x: 'Nov',
-            y: [190, 310],
-        },
-        {
-            x: 'Dec',
-            y: [250, 450],
-        },
+                x: 'Jan',
+                y: [210, 400],
+            },
+            {
+                x: 'Feb',
+                y: [300, 490],
+            },
+            {
+                x: 'Mar',
+                y: [350, 500],
+            },
+            {
+                x: 'Apr',
+                y: [210, 390],
+            },
+            {
+                x: 'May',
+                y: [280, 400],
+            },
+            {
+                x: 'Jun',
+                y: [110, 250],
+            },
+            {
+                x: 'Jul',
+                y: [210, 400],
+            },
+            {
+                x: 'Aug',
+                y: [290, 390],
+            },
+            {
+                x: 'Sep',
+                y: [250, 490],
+            },
+            {
+                x: 'Oct',
+                y: [210, 390],
+            },
+            {
+                x: 'Nov',
+                y: [190, 310],
+            },
+            {
+                x: 'Dec',
+                y: [250, 450],
+            },
         ],
-    },],
+    }, ],
     chart: {
         type: 'rangeBar',
         height: 300,
@@ -559,79 +558,79 @@ const roundedcolumnchart = {
         },
     },
     responsive: [{
-        breakpoint: 675,
-        options: {
-            chart: {
-                height: 280,
-            },
-        },
-    },
-    {
-        breakpoint: 425,
-        options: {
-            chart: {
-                height: 260,
-            },
-            xaxis: {
-                labels: {
-                    maxHeight: 30,
-                    offsetX: 0,
-                    offsetY: 0,
-                    rotate: -45,
-                    rotateAlways: true,
-                    style: {
-                        fontSize: '14px',
-                    },
+            breakpoint: 675,
+            options: {
+                chart: {
+                    height: 280,
                 },
             },
-            yaxis: {
-                labels: {
-                    show: true,
-                    align: 'right',
-                    minWidth: 0,
-                    maxWidth: 34,
-                    style: {
-                        ...fontCommon,
-                        fontSize: '14px',
+        },
+        {
+            breakpoint: 425,
+            options: {
+                chart: {
+                    height: 260,
+                },
+                xaxis: {
+                    labels: {
+                        maxHeight: 30,
+                        offsetX: 0,
+                        offsetY: 0,
+                        rotate: -45,
+                        rotateAlways: true,
+                        style: {
+                            fontSize: '14px',
+                        },
                     },
+                },
+                yaxis: {
+                    labels: {
+                        show: true,
+                        align: 'right',
+                        minWidth: 0,
+                        maxWidth: 34,
+                        style: {
+                            ...fontCommon,
+                            fontSize: '14px',
+                        },
 
-                    formatter: (value) => {
-                        return `${value}k`;
+                        formatter: (value) => {
+                            return `${value}k`;
+                        },
                     },
                 },
             },
         },
-    },
-    {
-        breakpoint: 375,
-        options: {
-            chart: {
-                height: 220,
-            },
-            xaxis: {
-                labels: {
-                    maxHeight: 34,
-                    rotate: -70,
+        {
+            breakpoint: 375,
+            options: {
+                chart: {
+                    height: 220,
                 },
-            },
-            yaxis: {
-                labels: {
-                    show: true,
-                    align: 'right',
-                    minWidth: 0,
-                    maxWidth: 31,
-                    style: {
-                        ...fontCommon,
-                        fontSize: '13px',
+                xaxis: {
+                    labels: {
+                        maxHeight: 34,
+                        rotate: -70,
                     },
+                },
+                yaxis: {
+                    labels: {
+                        show: true,
+                        align: 'right',
+                        minWidth: 0,
+                        maxWidth: 31,
+                        style: {
+                            ...fontCommon,
+                            fontSize: '13px',
+                        },
 
-                    formatter: (value) => {
-                        return `${value}k`;
+                        formatter: (value) => {
+                            return `${value}k`;
+                        },
                     },
                 },
             },
         },
-    },
     ],
 };
 
@@ -644,7 +643,7 @@ const splineAreaChart1 = {
     series: [{
         name: 'series1',
         data: [0, 20, 70, 25, 100, 45, 25],
-    },],
+    }, ],
     colors: ['rgba(var(--secondary),1'],
     fill: {
         type: 'gradient',
@@ -653,31 +652,31 @@ const splineAreaChart1 = {
             opacityFrom: 0.8,
             opacityTo: 0.4,
             colorStops: [{
-                offset: 0,
-                color: 'rgba(var(--secondary),0.5)',
-                opacity: 1,
-            },
-            {
-                offset: 20,
-                color: 'rgba(var(--secondary),0.3)',
-                opacity: 1,
-            },
-            {
-                offset: 60,
-                color: 'rgba(var(--secondary),0.1)',
-                opacity: 1,
-            },
-            {
-                offset: 100,
-                color: 'rgba(var(--secondary), 0)',
-                opacity: 1,
-            },
+                    offset: 0,
+                    color: 'rgba(var(--secondary),0.5)',
+                    opacity: 1,
+                },
+                {
+                    offset: 20,
+                    color: 'rgba(var(--secondary),0.3)',
+                    opacity: 1,
+                },
+                {
+                    offset: 60,
+                    color: 'rgba(var(--secondary),0.1)',
+                    opacity: 1,
+                },
+                {
+                    offset: 100,
+                    color: 'rgba(var(--secondary), 0)',
+                    opacity: 1,
+                },
             ],
         },
     },
     markers: {
         size: 5,
-        colors: '#fff',
+        colors: 'var(--body)',
         strokeColors: 'rgba(var(--secondary), 1)',
         strokeWidth: 2,
     },
@@ -686,7 +685,7 @@ const splineAreaChart2 = {
     series: [{
         name: 'series1',
         data: [0, 50, 40, 90, 60, 120, 150],
-    },],
+    }, ],
     colors: ['rgba(var(--primary),1'],
     fill: {
         type: 'gradient',
@@ -695,31 +694,31 @@ const splineAreaChart2 = {
             opacityFrom: 0.8,
             opacityTo: 0.4,
             colorStops: [{
-                offset: 0,
-                color: 'rgba(var(--primary),0.5)',
-                opacity: 1,
-            },
-            {
-                offset: 20,
-                color: 'rgba(var(--primary),0.3)',
-                opacity: 1,
-            },
-            {
-                offset: 60,
-                color: 'rgba(var(--primary),0.1)',
-                opacity: 1,
-            },
-            {
-                offset: 100,
-                color: 'rgba(var(--primary), 0)',
-                opacity: 1,
-            },
+                    offset: 0,
+                    color: 'rgba(var(--primary),0.5)',
+                    opacity: 1,
+                },
+                {
+                    offset: 20,
+                    color: 'rgba(var(--primary),0.3)',
+                    opacity: 1,
+                },
+                {
+                    offset: 60,
+                    color: 'rgba(var(--primary),0.1)',
+                    opacity: 1,
+                },
+                {
+                    offset: 100,
+                    color: 'rgba(var(--primary), 0)',
+                    opacity: 1,
+                },
             ],
         },
     },
     markers: {
         size: 5,
-        colors: '#fff',
+        colors: 'var(--body)',
         strokeColors: 'rgba(var(--primary), 1)',
         strokeWidth: 2,
     },
@@ -751,7 +750,7 @@ const recentStatisticsOption = (data) => {
         grid: {
             show: true,
             borderColor: 'var(--border-light)',
-            strokeDashArray: 0, 
+            strokeDashArray: 0,
             position: 'back',
             padding: {
                 top: 0,
@@ -818,29 +817,29 @@ const recentStatisticsOption = (data) => {
         },
 
         responsive: [{
-            breakpoint: 675,
-            options: {
-                chart: {
-                    height: 280,
+                breakpoint: 675,
+                options: {
+                    chart: {
+                        height: 280,
+                    },
                 },
             },
-        },
-        {
-            breakpoint: 425,
-            options: {
-                chart: {
-                    height: 260,
+            {
+                breakpoint: 425,
+                options: {
+                    chart: {
+                        height: 260,
+                    },
                 },
             },
-        },
-        {
-            breakpoint: 376,
-            options: {
-                chart: {
-                    height: 220,
+            {
+                breakpoint: 376,
+                options: {
+                    chart: {
+                        height: 220,
+                    },
                 },
             },
-        },
         ],
     };
 };
@@ -854,13 +853,13 @@ splineAreaChartE2.render();
 /*=======/ Line Chart /=======*/
 const linechart = {
     series: [{
-        name: 'series1',
-        data: [42.5, 40, 36, 32, 28, 25, 22, 20, 18, 16.5, 15.5, 15, 15, 16, 18, 20, 23, 26, 30, 34, 38, 41.5, 45, 48, 51, 54, 56, 58, 59, 59, 58, 56.5, 54.5, 51.5, 48, 44],
-    },
-    {
-        name: 'series2',
-        data: [57, 58, 58, 57.5, 56.5, 55, 52.5, 50, 47, 43.5, 40, 36, 32, 28, 24, 20, 17, 15, 14.0, 14, 15, 17, 20, 24, 28, 32, 36, 40, 44, 48, 51.5, 54.5, 56.6, 58, 58.5, 58],
-    },
+            name: 'series1',
+            data: [42.5, 40, 36, 32, 28, 25, 22, 20, 18, 16.5, 15.5, 15, 15, 16, 18, 20, 23, 26, 30, 34, 38, 41.5, 45, 48, 51, 54, 56, 58, 59, 59, 58, 56.5, 54.5, 51.5, 48, 44],
+        },
+        {
+            name: 'series2',
+            data: [57, 58, 58, 57.5, 56.5, 55, 52.5, 50, 47, 43.5, 40, 36, 32, 28, 24, 20, 17, 15, 14.0, 14, 15, 17, 20, 24, 28, 32, 36, 40, 44, 48, 51.5, 54.5, 56.6, 58, 58.5, 58],
+        },
     ],
     chart: {
         height: 300,
@@ -1004,50 +1003,49 @@ const linechart = {
     legend: {
         show: false,
     },
-    responsive: [{
-    },
-    {
-        breakpoint: 675,
-        options: {
-            chart: {
-                height: 280,
-            },
-        },
-    },
-    {
-        breakpoint: 425,
-        options: {
-            chart: {
-                height: 240,
-            },
-            markers: {
-                size: 4,
-                strokeWidth: 1,
-                radius: 1,
-                hover: {
-                    size: 5,
-                    strokeWidth: 1,
+    responsive: [{},
+        {
+            breakpoint: 675,
+            options: {
+                chart: {
+                    height: 280,
                 },
             },
         },
-    },
-    {
-        breakpoint: 375,
-        options: {
-            chart: {
-                height: 220,
-            },
-            markers: {
-                size: 3,
-                strokeWidth: 1,
-                radius: 1,
-                hover: {
+        {
+            breakpoint: 425,
+            options: {
+                chart: {
+                    height: 240,
+                },
+                markers: {
                     size: 4,
                     strokeWidth: 1,
+                    radius: 1,
+                    hover: {
+                        size: 5,
+                        strokeWidth: 1,
+                    },
                 },
             },
         },
-    },
+        {
+            breakpoint: 375,
+            options: {
+                chart: {
+                    height: 220,
+                },
+                markers: {
+                    size: 3,
+                    strokeWidth: 1,
+                    radius: 1,
+                    hover: {
+                        size: 4,
+                        strokeWidth: 1,
+                    },
+                },
+            },
+        },
     ],
 };
 
@@ -1083,33 +1081,33 @@ const bubblechart = {
         enabled: false,
     },
     series: [{
-        name: 'Product1',
-        data: generateData(new Date('11 Feb 2017 GMT').getTime(), 20, {
-            min: 10,
-            max: 60,
-        }),
-    },
-    {
-        name: 'Product2',
-        data: generateData(new Date('11 Feb 2017 GMT').getTime(), 20, {
-            min: 10,
-            max: 60,
-        }),
-    },
-    {
-        name: 'Product3',
-        data: generateData(new Date('11 Feb 2017 GMT').getTime(), 20, {
-            min: 10,
-            max: 60,
-        }),
-    },
-    {
-        name: 'Product4',
-        data: generateData(new Date('11 Feb 2017 GMT').getTime(), 20, {
-            min: 10,
-            max: 60,
-        }),
-    },
+            name: 'Product1',
+            data: generateData(new Date('11 Feb 2017 GMT').getTime(), 20, {
+                min: 10,
+                max: 60,
+            }),
+        },
+        {
+            name: 'Product2',
+            data: generateData(new Date('11 Feb 2017 GMT').getTime(), 20, {
+                min: 10,
+                max: 60,
+            }),
+        },
+        {
+            name: 'Product3',
+            data: generateData(new Date('11 Feb 2017 GMT').getTime(), 20, {
+                min: 10,
+                max: 60,
+            }),
+        },
+        {
+            name: 'Product4',
+            data: generateData(new Date('11 Feb 2017 GMT').getTime(), 20, {
+                min: 10,
+                max: 60,
+            }),
+        },
     ],
     fill: {
         type: 'gradient',
@@ -1158,29 +1156,29 @@ const bubblechart = {
         },
     },
     responsive: [{
-        breakpoint: 675,
-        options: {
-            chart: {
-                height: 280,
+            breakpoint: 675,
+            options: {
+                chart: {
+                    height: 280,
+                },
             },
         },
-    },
-    {
-        breakpoint: 425,
-        options: {
-            chart: {
-                height: 250,
+        {
+            breakpoint: 425,
+            options: {
+                chart: {
+                    height: 250,
+                },
             },
         },
-    },
-    {
-        breakpoint: 375,
-        options: {
-            chart: {
-                height: 220,
+        {
+            breakpoint: 375,
+            options: {
+                chart: {
+                    height: 220,
+                },
             },
         },
-    },
     ],
 };
 
@@ -1206,247 +1204,247 @@ const candlestickchart = {
     },
     series: [{
         data: [{
-            x: new Date(1538778600000),
-            y: [6629.81, 6650.5, 6623.04, 6633.33],
-        },
-        {
-            x: new Date(1538780400000),
-            y: [6632.01, 6643.59, 6620, 6630.11],
-        },
-        {
-            x: new Date(1538782200000),
-            y: [6630.71, 6648.95, 6623.34, 6635.65],
-        },
-        {
-            x: new Date(1538784000000),
-            y: [6635.65, 6651, 6629.67, 6638.24],
-        },
-        {
-            x: new Date(1538785800000),
-            y: [6638.24, 6640, 6620, 6624.47],
-        },
-        {
-            x: new Date(1538787600000),
-            y: [6624.53, 6636.03, 6621.68, 6624.31],
-        },
-        {
-            x: new Date(1538789400000),
-            y: [6624.61, 6632.2, 6617, 6626.02],
-        },
-        {
-            x: new Date(1538791200000),
-            y: [6627, 6627.62, 6584.22, 6603.02],
-        },
-        {
-            x: new Date(1538793000000),
-            y: [6605, 6608.03, 6598.95, 6604.01],
-        },
-        {
-            x: new Date(1538794800000),
-            y: [6604.5, 6614.4, 6602.26, 6608.02],
-        },
-        {
-            x: new Date(1538796600000),
-            y: [6608.02, 6610.68, 6601.99, 6608.91],
-        },
-        {
-            x: new Date(1538798400000),
-            y: [6608.91, 6618.99, 6608.01, 6612],
-        },
-        {
-            x: new Date(1538800200000),
-            y: [6612, 6615.13, 6605.09, 6612],
-        },
-        {
-            x: new Date(1538802000000),
-            y: [6612, 6624.12, 6608.43, 6622.95],
-        },
-        {
-            x: new Date(1538803800000),
-            y: [6623.91, 6623.91, 6615, 6615.67],
-        },
-        {
-            x: new Date(1538805600000),
-            y: [6618.69, 6618.74, 6610, 6610.4],
-        },
-        {
-            x: new Date(1538807400000),
-            y: [6611, 6622.78, 6610.4, 6614.9],
-        },
-        {
-            x: new Date(1538809200000),
-            y: [6614.9, 6626.2, 6613.33, 6623.45],
-        },
-        {
-            x: new Date(1538811000000),
-            y: [6623.48, 6627, 6618.38, 6620.35],
-        },
-        {
-            x: new Date(1538812800000),
-            y: [6619.43, 6620.35, 6610.05, 6615.53],
-        },
-        {
-            x: new Date(1538814600000),
-            y: [6615.53, 6617.93, 6610, 6615.19],
-        },
-        {
-            x: new Date(1538816400000),
-            y: [6615.19, 6621.6, 6608.2, 6620],
-        },
-        {
-            x: new Date(1538818200000),
-            y: [6619.54, 6625.17, 6614.15, 6620],
-        },
-        {
-            x: new Date(1538820000000),
-            y: [6620.33, 6634.15, 6617.24, 6624.61],
-        },
-        {
-            x: new Date(1538821800000),
-            y: [6625.95, 6626, 6611.66, 6617.58],
-        },
-        {
-            x: new Date(1538823600000),
-            y: [6619, 6625.97, 6595.27, 6598.86],
-        },
-        {
-            x: new Date(1538825400000),
-            y: [6598.86, 6598.88, 6570, 6587.16],
-        },
-        {
-            x: new Date(1538827200000),
-            y: [6588.86, 6600, 6580, 6593.4],
-        },
-        {
-            x: new Date(1538829000000),
-            y: [6593.99, 6598.89, 6585, 6587.81],
-        },
-        {
-            x: new Date(1538830800000),
-            y: [6587.81, 6592.73, 6567.14, 6578],
-        },
-        {
-            x: new Date(1538832600000),
-            y: [6578.35, 6581.72, 6567.39, 6579],
-        },
-        {
-            x: new Date(1538834400000),
-            y: [6579.38, 6580.92, 6566.77, 6575.96],
-        },
-        {
-            x: new Date(1538836200000),
-            y: [6575.96, 6589, 6571.77, 6588.92],
-        },
-        {
-            x: new Date(1538838000000),
-            y: [6588.92, 6594, 6577.55, 6589.22],
-        },
-        {
-            x: new Date(1538839800000),
-            y: [6589.3, 6598.89, 6589.1, 6596.08],
-        },
-        {
-            x: new Date(1538841600000),
-            y: [6597.5, 6600, 6588.39, 6596.25],
-        },
-        {
-            x: new Date(1538843400000),
-            y: [6598.03, 6600, 6588.73, 6595.97],
-        },
-        {
-            x: new Date(1538845200000),
-            y: [6595.97, 6602.01, 6588.17, 6602],
-        },
-        {
-            x: new Date(1538847000000),
-            y: [6602, 6607, 6596.51, 6599.95],
-        },
-        {
-            x: new Date(1538848800000),
-            y: [6600.63, 6601.21, 6590.39, 6591.02],
-        },
-        {
-            x: new Date(1538850600000),
-            y: [6591.02, 6603.08, 6591, 6591],
-        },
-        {
-            x: new Date(1538852400000),
-            y: [6591, 6601.32, 6585, 6592],
-        },
-        {
-            x: new Date(1538854200000),
-            y: [6593.13, 6596.01, 6590, 6593.34],
-        },
-        {
-            x: new Date(1538856000000),
-            y: [6593.34, 6604.76, 6582.63, 6593.86],
-        },
-        {
-            x: new Date(1538857800000),
-            y: [6593.86, 6604.28, 6586.57, 6600.01],
-        },
-        {
-            x: new Date(1538859600000),
-            y: [6601.81, 6603.21, 6592.78, 6596.25],
-        },
-        {
-            x: new Date(1538861400000),
-            y: [6596.25, 6604.2, 6590, 6602.99],
-        },
-        {
-            x: new Date(1538863200000),
-            y: [6602.99, 6606, 6584.99, 6587.81],
-        },
-        {
-            x: new Date(1538865000000),
-            y: [6587.81, 6595, 6583.27, 6591.96],
-        },
-        {
-            x: new Date(1538866800000),
-            y: [6591.97, 6596.07, 6585, 6588.39],
-        },
-        {
-            x: new Date(1538868600000),
-            y: [6587.6, 6598.21, 6587.6, 6594.27],
-        },
-        {
-            x: new Date(1538870400000),
-            y: [6596.44, 6601, 6590, 6596.55],
-        },
-        {
-            x: new Date(1538872200000),
-            y: [6598.91, 6605, 6596.61, 6600.02],
-        },
-        {
-            x: new Date(1538874000000),
-            y: [6600.55, 6605, 6589.14, 6593.01],
-        },
-        {
-            x: new Date(1538875800000),
-            y: [6593.15, 6605, 6592, 6603.06],
-        },
-        {
-            x: new Date(1538877600000),
-            y: [6603.07, 6604.5, 6599.09, 6603.89],
-        },
-        {
-            x: new Date(1538879400000),
-            y: [6604.44, 6604.44, 6600, 6603.5],
-        },
-        {
-            x: new Date(1538881200000),
-            y: [6603.5, 6603.99, 6597.5, 6603.86],
-        },
-        {
-            x: new Date(1538883000000),
-            y: [6603.85, 6605, 6600, 6604.07],
-        },
-        {
-            x: new Date(1538884800000),
-            y: [6604.98, 6606, 6604.07, 6606],
-        },
+                x: new Date(1538778600000),
+                y: [6629.81, 6650.5, 6623.04, 6633.33],
+            },
+            {
+                x: new Date(1538780400000),
+                y: [6632.01, 6643.59, 6620, 6630.11],
+            },
+            {
+                x: new Date(1538782200000),
+                y: [6630.71, 6648.95, 6623.34, 6635.65],
+            },
+            {
+                x: new Date(1538784000000),
+                y: [6635.65, 6651, 6629.67, 6638.24],
+            },
+            {
+                x: new Date(1538785800000),
+                y: [6638.24, 6640, 6620, 6624.47],
+            },
+            {
+                x: new Date(1538787600000),
+                y: [6624.53, 6636.03, 6621.68, 6624.31],
+            },
+            {
+                x: new Date(1538789400000),
+                y: [6624.61, 6632.2, 6617, 6626.02],
+            },
+            {
+                x: new Date(1538791200000),
+                y: [6627, 6627.62, 6584.22, 6603.02],
+            },
+            {
+                x: new Date(1538793000000),
+                y: [6605, 6608.03, 6598.95, 6604.01],
+            },
+            {
+                x: new Date(1538794800000),
+                y: [6604.5, 6614.4, 6602.26, 6608.02],
+            },
+            {
+                x: new Date(1538796600000),
+                y: [6608.02, 6610.68, 6601.99, 6608.91],
+            },
+            {
+                x: new Date(1538798400000),
+                y: [6608.91, 6618.99, 6608.01, 6612],
+            },
+            {
+                x: new Date(1538800200000),
+                y: [6612, 6615.13, 6605.09, 6612],
+            },
+            {
+                x: new Date(1538802000000),
+                y: [6612, 6624.12, 6608.43, 6622.95],
+            },
+            {
+                x: new Date(1538803800000),
+                y: [6623.91, 6623.91, 6615, 6615.67],
+            },
+            {
+                x: new Date(1538805600000),
+                y: [6618.69, 6618.74, 6610, 6610.4],
+            },
+            {
+                x: new Date(1538807400000),
+                y: [6611, 6622.78, 6610.4, 6614.9],
+            },
+            {
+                x: new Date(1538809200000),
+                y: [6614.9, 6626.2, 6613.33, 6623.45],
+            },
+            {
+                x: new Date(1538811000000),
+                y: [6623.48, 6627, 6618.38, 6620.35],
+            },
+            {
+                x: new Date(1538812800000),
+                y: [6619.43, 6620.35, 6610.05, 6615.53],
+            },
+            {
+                x: new Date(1538814600000),
+                y: [6615.53, 6617.93, 6610, 6615.19],
+            },
+            {
+                x: new Date(1538816400000),
+                y: [6615.19, 6621.6, 6608.2, 6620],
+            },
+            {
+                x: new Date(1538818200000),
+                y: [6619.54, 6625.17, 6614.15, 6620],
+            },
+            {
+                x: new Date(1538820000000),
+                y: [6620.33, 6634.15, 6617.24, 6624.61],
+            },
+            {
+                x: new Date(1538821800000),
+                y: [6625.95, 6626, 6611.66, 6617.58],
+            },
+            {
+                x: new Date(1538823600000),
+                y: [6619, 6625.97, 6595.27, 6598.86],
+            },
+            {
+                x: new Date(1538825400000),
+                y: [6598.86, 6598.88, 6570, 6587.16],
+            },
+            {
+                x: new Date(1538827200000),
+                y: [6588.86, 6600, 6580, 6593.4],
+            },
+            {
+                x: new Date(1538829000000),
+                y: [6593.99, 6598.89, 6585, 6587.81],
+            },
+            {
+                x: new Date(1538830800000),
+                y: [6587.81, 6592.73, 6567.14, 6578],
+            },
+            {
+                x: new Date(1538832600000),
+                y: [6578.35, 6581.72, 6567.39, 6579],
+            },
+            {
+                x: new Date(1538834400000),
+                y: [6579.38, 6580.92, 6566.77, 6575.96],
+            },
+            {
+                x: new Date(1538836200000),
+                y: [6575.96, 6589, 6571.77, 6588.92],
+            },
+            {
+                x: new Date(1538838000000),
+                y: [6588.92, 6594, 6577.55, 6589.22],
+            },
+            {
+                x: new Date(1538839800000),
+                y: [6589.3, 6598.89, 6589.1, 6596.08],
+            },
+            {
+                x: new Date(1538841600000),
+                y: [6597.5, 6600, 6588.39, 6596.25],
+            },
+            {
+                x: new Date(1538843400000),
+                y: [6598.03, 6600, 6588.73, 6595.97],
+            },
+            {
+                x: new Date(1538845200000),
+                y: [6595.97, 6602.01, 6588.17, 6602],
+            },
+            {
+                x: new Date(1538847000000),
+                y: [6602, 6607, 6596.51, 6599.95],
+            },
+            {
+                x: new Date(1538848800000),
+                y: [6600.63, 6601.21, 6590.39, 6591.02],
+            },
+            {
+                x: new Date(1538850600000),
+                y: [6591.02, 6603.08, 6591, 6591],
+            },
+            {
+                x: new Date(1538852400000),
+                y: [6591, 6601.32, 6585, 6592],
+            },
+            {
+                x: new Date(1538854200000),
+                y: [6593.13, 6596.01, 6590, 6593.34],
+            },
+            {
+                x: new Date(1538856000000),
+                y: [6593.34, 6604.76, 6582.63, 6593.86],
+            },
+            {
+                x: new Date(1538857800000),
+                y: [6593.86, 6604.28, 6586.57, 6600.01],
+            },
+            {
+                x: new Date(1538859600000),
+                y: [6601.81, 6603.21, 6592.78, 6596.25],
+            },
+            {
+                x: new Date(1538861400000),
+                y: [6596.25, 6604.2, 6590, 6602.99],
+            },
+            {
+                x: new Date(1538863200000),
+                y: [6602.99, 6606, 6584.99, 6587.81],
+            },
+            {
+                x: new Date(1538865000000),
+                y: [6587.81, 6595, 6583.27, 6591.96],
+            },
+            {
+                x: new Date(1538866800000),
+                y: [6591.97, 6596.07, 6585, 6588.39],
+            },
+            {
+                x: new Date(1538868600000),
+                y: [6587.6, 6598.21, 6587.6, 6594.27],
+            },
+            {
+                x: new Date(1538870400000),
+                y: [6596.44, 6601, 6590, 6596.55],
+            },
+            {
+                x: new Date(1538872200000),
+                y: [6598.91, 6605, 6596.61, 6600.02],
+            },
+            {
+                x: new Date(1538874000000),
+                y: [6600.55, 6605, 6589.14, 6593.01],
+            },
+            {
+                x: new Date(1538875800000),
+                y: [6593.15, 6605, 6592, 6603.06],
+            },
+            {
+                x: new Date(1538877600000),
+                y: [6603.07, 6604.5, 6599.09, 6603.89],
+            },
+            {
+                x: new Date(1538879400000),
+                y: [6604.44, 6604.44, 6600, 6603.5],
+            },
+            {
+                x: new Date(1538881200000),
+                y: [6603.5, 6603.99, 6597.5, 6603.86],
+            },
+            {
+                x: new Date(1538883000000),
+                y: [6603.85, 6605, 6600, 6604.07],
+            },
+            {
+                x: new Date(1538884800000),
+                y: [6604.98, 6606, 6604.07, 6606],
+            },
         ],
-    },],
+    }, ],
     xaxis: {
         type: 'datetime',
         labels: {
@@ -1468,33 +1466,33 @@ const candlestickchart = {
         },
     },
     grid: {
-        borderColor: 'var(--light)',
+        borderColor: 'var( --border-light)',
     },
     colors: ['#000000'],
     responsive: [{
-        breakpoint: 675,
-        options: {
-            chart: {
-                height: 280,
+            breakpoint: 675,
+            options: {
+                chart: {
+                    height: 280,
+                },
             },
         },
-    },
-    {
-        breakpoint: 425,
-        options: {
-            chart: {
-                height: 260,
+        {
+            breakpoint: 425,
+            options: {
+                chart: {
+                    height: 260,
+                },
             },
         },
-    },
-    {
-        breakpoint: 375,
-        options: {
-            chart: {
-                height: 220,
+        {
+            breakpoint: 375,
+            options: {
+                chart: {
+                    height: 220,
+                },
             },
         },
-    },
     ],
 };
 
@@ -1505,13 +1503,13 @@ candlestickchartEl.render();
 
 const groupbarchart = {
     series: [{
-        name: 'Good',
-        data: [170, 250, 350, 150, 230, 120, 330, 350, 280, 300, 250, 110],
-    },
-    {
-        name: 'Very Good',
-        data: [290, 180, 120, 290, 370, 250, 230, 200, 140, 220, 220, 330],
-    },
+            name: 'Good',
+            data: [170, 250, 350, 150, 230, 120, 330, 350, 280, 300, 250, 110],
+        },
+        {
+            name: 'Very Good',
+            data: [290, 180, 120, 290, 370, 250, 230, 200, 140, 220, 220, 330],
+        },
     ],
     colors: ['rgba(var(--primary),1)', 'rgba(var(--secondary),1)'],
     chart: {
@@ -1557,7 +1555,7 @@ const groupbarchart = {
     stroke: {
         show: true,
         width: 1,
-        colors: ['#fff'],
+        colors: ['var(--border-light)'],
     },
     tooltip: {
         shared: true,
@@ -1595,41 +1593,41 @@ const groupbarchart = {
         show: false,
     },
     responsive: [{
-        breakpoint: 675,
-        options: {
-            chart: {
-                height: 280,
-            },
-            plotOptions: {
-                bar: {
-                    borderRadius: 8,
-                    columnWidth: '55%',
+            breakpoint: 675,
+            options: {
+                chart: {
+                    height: 280,
+                },
+                plotOptions: {
+                    bar: {
+                        borderRadius: 8,
+                        columnWidth: '55%',
+                    },
                 },
             },
         },
-    },
-    {
-        breakpoint: 425,
-        options: {
-            chart: {
-                height: 260,
-            },
-        },
-    },
-    {
-        breakpoint: 375,
-        options: {
-            chart: {
-                height: 220,
-            },
-            plotOptions: {
-                bar: {
-                    borderRadius: 5,
-                    columnWidth: '65%',
+        {
+            breakpoint: 425,
+            options: {
+                chart: {
+                    height: 260,
                 },
             },
         },
-    },
+        {
+            breakpoint: 375,
+            options: {
+                chart: {
+                    height: 220,
+                },
+                plotOptions: {
+                    bar: {
+                        borderRadius: 5,
+                        columnWidth: '65%',
+                    },
+                },
+            },
+        },
     ],
 };
 
@@ -1666,34 +1664,34 @@ const radialchart = {
     labels: ['Apples', 'Oranges', 'Bananas', 'Berries'],
     colors: ['rgba(var(--primary),1)', 'rgba(var(--secondary), 1)', 'var(--success)', 'var(--warning)'],
     responsive: [{
-        breakpoint: 675,
-        options: {
-            chart: {
-                height: 280,
-            },
-        },
-    },
-    {
-        breakpoint: 425,
-        options: {
-            chart: {
-                height: 260,
-            },
-            plotOptions: {
-                radar: {
-                    size: 50,
+            breakpoint: 675,
+            options: {
+                chart: {
+                    height: 280,
                 },
             },
         },
-    },
-    {
-        breakpoint: 375,
-        options: {
-            chart: {
-                height: 220,
+        {
+            breakpoint: 425,
+            options: {
+                chart: {
+                    height: 260,
+                },
+                plotOptions: {
+                    radar: {
+                        size: 50,
+                    },
+                },
             },
         },
-    },
+        {
+            breakpoint: 375,
+            options: {
+                chart: {
+                    height: 220,
+                },
+            },
+        },
     ],
 };
 
@@ -1707,39 +1705,39 @@ const boxplotchart = {
         name: 'box',
         type: 'boxPlot',
         data: [{
-            x: 'Jan 2015',
-            y: [23, 30, 33, 36, 43],
-        },
-        {
-            x: 'Jan 2016',
-            y: [13, 24, 29, 33, 37],
-        },
-        {
-            x: 'Jan 2017',
-            y: [28, 33, 37, 42, 46],
-        },
-        {
-            x: 'Jan 2018',
-            y: [12, 15, 20, 25, 30],
-        },
-        {
-            x: 'Jan 2019',
-            y: [24, 32, 38, 42, 48],
-        },
-        {
-            x: 'Jan 2020',
-            y: [13, 17, 22, 25, 31],
-        },
-        {
-            x: 'Jan 2021',
-            y: [35, 37, 40, 42, 45],
-        },
-        {
-            x: 'Jan 2022',
-            y: [19, 24, 28, 34, 38],
-        },
+                x: 'Jan 2015',
+                y: [23, 30, 33, 36, 43],
+            },
+            {
+                x: 'Jan 2016',
+                y: [13, 24, 29, 33, 37],
+            },
+            {
+                x: 'Jan 2017',
+                y: [28, 33, 37, 42, 46],
+            },
+            {
+                x: 'Jan 2018',
+                y: [12, 15, 20, 25, 30],
+            },
+            {
+                x: 'Jan 2019',
+                y: [24, 32, 38, 42, 48],
+            },
+            {
+                x: 'Jan 2020',
+                y: [13, 17, 22, 25, 31],
+            },
+            {
+                x: 'Jan 2021',
+                y: [35, 37, 40, 42, 45],
+            },
+            {
+                x: 'Jan 2022',
+                y: [19, 24, 28, 34, 38],
+            },
         ],
-    },],
+    }, ],
     chart: {
         type: 'boxPlot',
         height: 300,
@@ -1777,16 +1775,14 @@ const boxplotchart = {
             return '<ul class="boxChartTooltip">' + '<li><b>Price</b>: ' + dataY + '</li>' + '<li><b>Date</b>: ' + dataX + '</li>' + '</ul>';
         },
     },
-
     grid: {
-        borderColor: 'var(--light)',
+        borderColor: 'var(--border-light)',
         padding: {
             top: -20,
             right: -20,
             bottom: 10,
         },
     },
-
     xaxis: {
         type: 'datetime',
         labels: {
@@ -1825,87 +1821,87 @@ const boxplotchart = {
         },
     },
     responsive: [{
-        breakpoint: 1400,
-        options: {
-            chart: {
-                offsetY: 0,
-                offsetX: 0,
-            },
-            grid: {
-                padding: {
-                    top: -20,
-                    right: 0,
-                    left: 0,
-                    bottom: -10,
+            breakpoint: 1400,
+            options: {
+                chart: {
+                    offsetY: 0,
+                    offsetX: 0,
                 },
-            },
-            xaxis: {
-                labels: {
-                    show: true,
-                    // rotate: -30,
-                    rotateAlways: true,
-                    minHeight: 48,
+                grid: {
+                    padding: {
+                        top: -20,
+                        right: 0,
+                        left: 0,
+                        bottom: -10,
+                    },
                 },
-            },
-        },
-    },
-    {
-        breakpoint: 768,
-        options: {
-            chart: {
-                offsetY: 0,
-                offsetX: 0,
-            },
-            grid: {
-                padding: {
-                    top: -20,
-                    right: 0,
-                    left: 0,
-                    bottom: -10,
-                },
-            },
-            xaxis: {
-                labels: {
-                    show: true,
-                    rotate: 0,
-                    rotateAlways: false,
-                    minHeight: 48,
+                xaxis: {
+                    labels: {
+                        show: true,
+                        // rotate: -30,
+                        rotateAlways: true,
+                        minHeight: 48,
+                    },
                 },
             },
         },
-    },
-    {
-        breakpoint: 675,
-        options: {
-            chart: {
-                height: 280,
-            },
-        },
-    },
-    {
-        breakpoint: 425,
-        options: {
-            chart: {
-                height: 174,
-            },
-            xaxis: {
-                labels: {
-                    show: true,
-                    rotate: -25,
-                    rotateAlways: true,
-                    minHeight: 45,
+        {
+            breakpoint: 768,
+            options: {
+                chart: {
+                    offsetY: 0,
+                    offsetX: 0,
+                },
+                grid: {
+                    padding: {
+                        top: -20,
+                        right: 0,
+                        left: 0,
+                        bottom: -10,
+                    },
+                },
+                xaxis: {
+                    labels: {
+                        show: true,
+                        rotate: 0,
+                        rotateAlways: false,
+                        minHeight: 48,
+                    },
                 },
             },
         },
-    },
-    {
-        breakpoint: 375,
-        options: {
-            chart: {
-                height: 220,
+        {
+            breakpoint: 675,
+            options: {
+                chart: {
+                    height: 280,
+                },
             },
         },
-    },
+        {
+            breakpoint: 425,
+            options: {
+                chart: {
+                    height: 174,
+                },
+                xaxis: {
+                    labels: {
+                        show: true,
+                        rotate: -25,
+                        rotateAlways: true,
+                        minHeight: 45,
+                    },
+                },
+            },
+        },
+        {
+            breakpoint: 375,
+            options: {
+                chart: {
+                    height: 220,
+                },
+            },
+        },
     ],
 };
 
@@ -1916,8 +1912,6 @@ if (boxplotchartEl) {
 }
 
 /*=======/Polar Area Chart/=======*/
-
-
 const polarareachart = {
     series: [20, 28, 21, 17, 15, 18, 24],
     chart: {
@@ -1925,14 +1919,13 @@ const polarareachart = {
         height: 300,
     },
     stroke: {
-        colors: ['#fff']
+        colors: ['var(--border-light)']
     },
     colors: ['#33BFBF', '#FF6150', '#b52af6', '#63d5be', '#feb858', '#f1523d', '#d8ecff'],
     fill: {
         opacity: 0.8
     },
-    responsive: [
-        {
+    responsive: [{
             breakpoint: 1880,
             options: {
                 chart: {
@@ -1979,7 +1972,7 @@ polarareachartEl.render();
 const barchart = {
     series: [{
         data: [70, 30, 40, 90, 60, 50],
-    },],
+    }, ],
     chart: {
         type: 'bar',
         height: 300,
@@ -2015,7 +2008,7 @@ const barchart = {
             padding: 4,
             opacity: 0.9,
             borderWidth: 1,
-            borderColor: '#fff',
+            borderColor: 'var(--border-light)',
         },
         offsetX: 21,
         offsetY: -6,
@@ -2073,42 +2066,42 @@ const barchart = {
         },
     },
     responsive: [{
-        breakpoint: 675,
-        options: {
-            chart: {
-                height: 280,
-                offsetY: 15,
-            },
-            xaxis: {
-                title: {
-                    offsetY: 0,
+            breakpoint: 675,
+            options: {
+                chart: {
+                    height: 280,
+                    offsetY: 15,
                 },
-            },
+                xaxis: {
+                    title: {
+                        offsetY: 0,
+                    },
+                },
 
-            grid: {
-                padding: {
-                    left: -13,
-                    bottom: 25,
+                grid: {
+                    padding: {
+                        left: -13,
+                        bottom: 25,
+                    },
                 },
             },
         },
-    },
-    {
-        breakpoint: 425,
-        options: {
-            chart: {
-                height: 260,
+        {
+            breakpoint: 425,
+            options: {
+                chart: {
+                    height: 260,
+                },
             },
         },
-    },
-    {
-        breakpoint: 375,
-        options: {
-            chart: {
-                height: 220,
+        {
+            breakpoint: 375,
+            options: {
+                chart: {
+                    height: 220,
+                },
             },
         },
-    },
     ],
 };
 
@@ -2140,7 +2133,7 @@ const radalchart = {
     series: [{
         name: 'Series 1',
         data: [20, 100, 40, 30, 50, 80, 33],
-    },],
+    }, ],
     labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
     plotOptions: {
         radar: {
@@ -2157,8 +2150,8 @@ const radalchart = {
     colors: ['#FF6150'],
     markers: {
         size: 4,
-        colors: ['#fff'],
-        strokeColor: '#FF6150',
+        colors: ['var(--body)'],
+        strokeColor: 'var(--border-light)',
         strokeWidth: 2,
     },
     tooltip: {
@@ -2196,45 +2189,45 @@ const radalchart = {
     },
 
     responsive: [{
-        breakpoint: 675,
-        options: {
-            chart: {
-                height: 280,
-            },
-            plotOptions: {
-                radar: {
-                    size: 100,
+            breakpoint: 675,
+            options: {
+                chart: {
+                    height: 280,
+                },
+                plotOptions: {
+                    radar: {
+                        size: 100,
+                    },
                 },
             },
-        },
 
-    },
-    {
-        breakpoint: 425,
-        options: {
-            chart: {
-                height: 260,
-            },
-            plotOptions: {
-                radar: {
-                    size: 70,
+        },
+        {
+            breakpoint: 425,
+            options: {
+                chart: {
+                    height: 260,
+                },
+                plotOptions: {
+                    radar: {
+                        size: 70,
+                    },
                 },
             },
         },
-    },
-    {
-        breakpoint: 375,
-        options: {
-            chart: {
-                height: 220,
-            },
-            plotOptions: {
-                radar: {
-                    size: 50,
+        {
+            breakpoint: 375,
+            options: {
+                chart: {
+                    height: 220,
+                },
+                plotOptions: {
+                    radar: {
+                        size: 50,
+                    },
                 },
             },
         },
-    },
     ],
 };
 
@@ -2245,13 +2238,13 @@ radalchartEl.render();
 
 const linedatalabelchart = {
     series: [{
-        name: "High - 2013",
-        data: [28, 29, 33, 36, 32, 32, 33]
-    },
-    {
-        name: "Low - 2013",
-        data: [12, 11, 14, 18, 17, 13, 13]
-    }
+            name: "High - 2013",
+            data: [28, 29, 33, 36, 32, 32, 33]
+        },
+        {
+            name: "Low - 2013",
+            data: [12, 11, 14, 18, 17, 13, 13]
+        }
     ],
     chart: {
         height: 300,
@@ -2282,7 +2275,7 @@ const linedatalabelchart = {
             left: 30,
         },
         row: {
-            colors: ['#f5f6f9', 'transparent'],
+            colors: ['var(--body)', 'transparent'],
             opacity: 0.5
         },
     },
@@ -2294,7 +2287,8 @@ const linedatalabelchart = {
     },
     yaxis: {
         title: {
-            text: 'Temperature'
+            text: 'Temperature',
+            fill: ['var(--title)']
         },
         min: 5,
         max: 40
@@ -2308,29 +2302,29 @@ const linedatalabelchart = {
     },
 
     responsive: [{
-        breakpoint: 675,
-        options: {
-            chart: {
-                height: 280,
+            breakpoint: 675,
+            options: {
+                chart: {
+                    height: 280,
+                },
             },
         },
-    },
-    {
-        breakpoint: 425,
-        options: {
-            chart: {
-                height: 260,
+        {
+            breakpoint: 425,
+            options: {
+                chart: {
+                    height: 260,
+                },
             },
         },
-    },
-    {
-        breakpoint: 375,
-        options: {
-            chart: {
-                height: 220,
+        {
+            breakpoint: 375,
+            options: {
+                chart: {
+                    height: 220,
+                },
             },
         },
-    },
     ],
 
 };
@@ -2342,172 +2336,172 @@ linedatalabelchartEl.render();
 
 const rangeareachart = {
     series: [{
-        type: 'rangeArea',
-        name: 'Series B Range',
+            type: 'rangeArea',
+            name: 'Series B Range',
 
-        data: [{
-            x: 'Jan',
-            y: [1100, 1900]
+            data: [{
+                    x: 'Jan',
+                    y: [1100, 1900]
+                },
+                {
+                    x: 'Feb',
+                    y: [1200, 1800]
+                },
+                {
+                    x: 'Mar',
+                    y: [900, 2900]
+                },
+                {
+                    x: 'Apr',
+                    y: [1400, 2700]
+                },
+                {
+                    x: 'May',
+                    y: [2600, 3900]
+                },
+                {
+                    x: 'Jun',
+                    y: [500, 1700]
+                },
+                {
+                    x: 'Jul',
+                    y: [1900, 2300]
+                },
+                {
+                    x: 'Aug',
+                    y: [1000, 1500]
+                }
+            ]
         },
-        {
-            x: 'Feb',
-            y: [1200, 1800]
-        },
-        {
-            x: 'Mar',
-            y: [900, 2900]
-        },
-        {
-            x: 'Apr',
-            y: [1400, 2700]
-        },
-        {
-            x: 'May',
-            y: [2600, 3900]
-        },
-        {
-            x: 'Jun',
-            y: [500, 1700]
-        },
-        {
-            x: 'Jul',
-            y: [1900, 2300]
-        },
-        {
-            x: 'Aug',
-            y: [1000, 1500]
-        }
-        ]
-    },
 
-    {
-        type: 'rangeArea',
-        name: 'Series A Range',
-        data: [{
-            x: 'Jan',
-            y: [3100, 3400]
-        },
         {
-            x: 'Feb',
-            y: [4200, 5200]
+            type: 'rangeArea',
+            name: 'Series A Range',
+            data: [{
+                    x: 'Jan',
+                    y: [3100, 3400]
+                },
+                {
+                    x: 'Feb',
+                    y: [4200, 5200]
+                },
+                {
+                    x: 'Mar',
+                    y: [3900, 4900]
+                },
+                {
+                    x: 'Apr',
+                    y: [3400, 3900]
+                },
+                {
+                    x: 'May',
+                    y: [5100, 5900]
+                },
+                {
+                    x: 'Jun',
+                    y: [5400, 6700]
+                },
+                {
+                    x: 'Jul',
+                    y: [4300, 4600]
+                },
+                {
+                    x: 'Aug',
+                    y: [2100, 2900]
+                }
+            ]
         },
-        {
-            x: 'Mar',
-            y: [3900, 4900]
-        },
-        {
-            x: 'Apr',
-            y: [3400, 3900]
-        },
-        {
-            x: 'May',
-            y: [5100, 5900]
-        },
-        {
-            x: 'Jun',
-            y: [5400, 6700]
-        },
-        {
-            x: 'Jul',
-            y: [4300, 4600]
-        },
-        {
-            x: 'Aug',
-            y: [2100, 2900]
-        }
-        ]
-    },
 
-    {
-        type: 'line',
-        name: 'Series B Median',
-        data: [{
-            x: 'Jan',
-            y: 1500
+        {
+            type: 'line',
+            name: 'Series B Median',
+            data: [{
+                    x: 'Jan',
+                    y: 1500
+                },
+                {
+                    x: 'Feb',
+                    y: 1700
+                },
+                {
+                    x: 'Mar',
+                    y: 1900
+                },
+                {
+                    x: 'Apr',
+                    y: 2200
+                },
+                {
+                    x: 'May',
+                    y: 3000
+                },
+                {
+                    x: 'Jun',
+                    y: 1000
+                },
+                {
+                    x: 'Jul',
+                    y: 2100
+                },
+                {
+                    x: 'Aug',
+                    y: 1200
+                },
+                {
+                    x: 'Sep',
+                    y: 1800
+                },
+                {
+                    x: 'Oct',
+                    y: 2000
+                }
+            ]
         },
         {
-            x: 'Feb',
-            y: 1700
-        },
-        {
-            x: 'Mar',
-            y: 1900
-        },
-        {
-            x: 'Apr',
-            y: 2200
-        },
-        {
-            x: 'May',
-            y: 3000
-        },
-        {
-            x: 'Jun',
-            y: 1000
-        },
-        {
-            x: 'Jul',
-            y: 2100
-        },
-        {
-            x: 'Aug',
-            y: 1200
-        },
-        {
-            x: 'Sep',
-            y: 1800
-        },
-        {
-            x: 'Oct',
-            y: 2000
+            type: 'line',
+            name: 'Series A Median',
+            data: [{
+                    x: 'Jan',
+                    y: 3300
+                },
+                {
+                    x: 'Feb',
+                    y: 4900
+                },
+                {
+                    x: 'Mar',
+                    y: 4300
+                },
+                {
+                    x: 'Apr',
+                    y: 3700
+                },
+                {
+                    x: 'May',
+                    y: 5500
+                },
+                {
+                    x: 'Jun',
+                    y: 5900
+                },
+                {
+                    x: 'Jul',
+                    y: 4500
+                },
+                {
+                    x: 'Aug',
+                    y: 2400
+                },
+                {
+                    x: 'Sep',
+                    y: 2100
+                },
+                {
+                    x: 'Oct',
+                    y: 1500
+                }
+            ]
         }
-        ]
-    },
-    {
-        type: 'line',
-        name: 'Series A Median',
-        data: [{
-            x: 'Jan',
-            y: 3300
-        },
-        {
-            x: 'Feb',
-            y: 4900
-        },
-        {
-            x: 'Mar',
-            y: 4300
-        },
-        {
-            x: 'Apr',
-            y: 3700
-        },
-        {
-            x: 'May',
-            y: 5500
-        },
-        {
-            x: 'Jun',
-            y: 5900
-        },
-        {
-            x: 'Jul',
-            y: 4500
-        },
-        {
-            x: 'Aug',
-            y: 2400
-        },
-        {
-            x: 'Sep',
-            y: 2100
-        },
-        {
-            x: 'Oct',
-            y: 1500
-        }
-        ]
-    }
     ],
     chart: {
         height: 300,
@@ -2531,7 +2525,7 @@ const rangeareachart = {
     },
     stroke: {
         curve: 'straight',
-        width: [0, 0, 2, 2]
+        width: [0, 0, 2, 2],
     },
     legend: {
         show: true,
@@ -2543,31 +2537,30 @@ const rangeareachart = {
             sizeOffset: 5
         }
     },
-
     responsive: [{
-        breakpoint: 675,
-        options: {
-            chart: {
-                height: 280,
+            breakpoint: 675,
+            options: {
+                chart: {
+                    height: 280,
+                },
             },
         },
-    },
-    {
-        breakpoint: 425,
-        options: {
-            chart: {
-                height: 260,
+        {
+            breakpoint: 425,
+            options: {
+                chart: {
+                    height: 260,
+                },
             },
         },
-    },
-    {
-        breakpoint: 375,
-        options: {
-            chart: {
-                height: 220,
+        {
+            breakpoint: 375,
+            options: {
+                chart: {
+                    height: 220,
+                },
             },
         },
-    },
     ],
 };
 

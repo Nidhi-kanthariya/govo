@@ -4,11 +4,9 @@
 
 /*=======/Revenue Spark line/=======*/
 const revenueChart = {
-  series: [
-    {
-      data: [45, 25, 55, 47, 89, 47, 70, 38, 92, 44, 38, 70],
-    },
-  ],
+  series: [{
+    data: [45, 25, 55, 47, 89, 47, 70, 38, 92, 44, 38, 70],
+  }, ],
   chart: {
     type: 'bar',
     width: '100%',
@@ -53,8 +51,7 @@ const revenueChart = {
       show: false,
     },
   },
-  responsive: [
-    {
+  responsive: [{
       breakpoint: 992,
       options: {
         chart: {
@@ -150,8 +147,7 @@ const earningChart = {
   },
   colors: ['var(--chart-dark)'],
   labels: ['Profile'],
-  responsive: [
-    {
+  responsive: [{
       breakpoint: 1700,
       options: {
         chart: {
@@ -248,12 +244,10 @@ earningChartEl.render();
 
 /*=======/ Sell Overview Chart /=======*/
 const SellOverview = {
-  series: [
-    {
-      name: 'series1',
-      data: [310, 280, 350, 310, 570, 590, 650, 550],
-    },
-  ],
+  series: [{
+    name: 'series1',
+    data: [310, 280, 350, 310, 570, 590, 650, 550],
+  }, ],
   chart: {
     height: 320,
     width: '100%',
@@ -273,8 +267,7 @@ const SellOverview = {
       shadeIntensity: 1,
       opacityFrom: 0.8,
       opacityTo: 0.4,
-      colorStops: [
-        {
+      colorStops: [{
           offset: 0,
           color: 'rgba(var(--primary),0.5)',
           opacity: 1,
@@ -365,13 +358,17 @@ const SellOverview = {
     },
   },
   tooltip: {
-    custom: function ({ series, seriesIndex, dataPointIndex, w }) {
+    custom: function ({
+      series,
+      seriesIndex,
+      dataPointIndex,
+      w
+    }) {
       return '<div class="apex-tooltip">' + '<span>' + '<span class="bg-primary">' + '</span>' + 'Selling' + ': ' + series[seriesIndex][dataPointIndex] + 'K' + '</span>' + '</div>';
     },
   },
 
-  responsive: [
-    {
+  responsive: [{
       breakpoint: 675,
       options: {
         chart: {
@@ -403,11 +400,9 @@ SellOverviewEl.render();
 
 /*=======/ Users Position /=======*/
 const userPosition = {
-  series: [
-    {
-      data: [70, 30, 40, 90, 60, 50],
-    },
-  ],
+  series: [{
+    data: [70, 30, 40, 90, 60, 50],
+  }, ],
   chart: {
     type: 'bar',
     height: 323,
@@ -509,29 +504,27 @@ const userPosition = {
       },
     },
   },
-  responsive: [
-    {
-      breakpoint: 675,
-      options: {
-        chart: {
-          height: 300,
-          offsetY: 15,
+  responsive: [{
+    breakpoint: 675,
+    options: {
+      chart: {
+        height: 300,
+        offsetY: 15,
+      },
+      xaxis: {
+        title: {
+          offsetY: 0,
         },
-        xaxis: {
-          title: {
-            offsetY: 0,
-          },
-        },
+      },
 
-        grid: {
-          padding: {
-            left: -13,
-            bottom: 25,
-          },
+      grid: {
+        padding: {
+          left: -13,
+          bottom: 25,
         },
       },
     },
-  ],
+  }, ],
 };
 
 var userPositionEl = new ApexCharts(document.querySelector('#userPosition'), userPosition);
@@ -553,12 +546,10 @@ window.onload = function () {
 
 /*=======/ Social Media Statics Chart /=======*/
 const socialMediaStatisticsOption = {
-  series: [
-    {
-      name: 'series1',
-      data: [200, 570, 200, 300, 280, 530, 440, 440, 630, 400, 450, 560, 350, 200],
-    },
-  ],
+  series: [{
+    name: 'series1',
+    data: [200, 570, 200, 300, 280, 530, 440, 440, 630, 400, 450, 560, 350, 200],
+  }, ],
   chart: {
     height: 280,
     width: '100%',
@@ -578,8 +569,7 @@ const socialMediaStatisticsOption = {
       shadeIntensity: 1,
       opacityFrom: 0.8,
       opacityTo: 0.4,
-      colorStops: [
-        {
+      colorStops: [{
           offset: 0,
           color: 'rgba(var(--secondary),0.5)',
           opacity: 1,
@@ -604,7 +594,7 @@ const socialMediaStatisticsOption = {
   },
   markers: {
     size: 7,
-    colors: '#fff',
+    colors: 'var(--body)',
     strokeColors: 'rgba(var(--secondary), 1)',
     strokeWidth: 3,
 
@@ -682,8 +672,7 @@ const socialMediaStatisticsOption = {
     },
   },
 
-  responsive: [
-    {
+  responsive: [{
       breakpoint: 1700,
       options: {
         chart: {
@@ -744,12 +733,10 @@ socialMediaStatisticsEl.render();
 /*=======/ Recent Statistics Chart /=======*/
 
 const recentStatistics1 = {
-  series: [
-    {
-      name: 'series1',
-      data: [0, 20, 70, 25, 100, 45, 25],
-    },
-  ],
+  series: [{
+    name: 'series1',
+    data: [0, 20, 70, 25, 100, 45, 25],
+  }, ],
   colors: ['rgba(var(--secondary),1'],
   fill: {
     type: 'gradient',
@@ -757,8 +744,7 @@ const recentStatistics1 = {
       shadeIntensity: 1,
       opacityFrom: 0.8,
       opacityTo: 0.4,
-      colorStops: [
-        {
+      colorStops: [{
           offset: 0,
           color: 'rgba(var(--secondary),0.5)',
           opacity: 1,
@@ -783,18 +769,16 @@ const recentStatistics1 = {
   },
   markers: {
     size: 5,
-    colors: '#fff',
+    colors: 'var(--body)',
     strokeColors: 'rgba(var(--secondary), 1)',
     strokeWidth: 2,
   },
 };
 const recentStatistics2 = {
-  series: [
-    {
-      name: 'series1',
-      data: [0, 50, 40, 90, 60, 120, 150],
-    },
-  ],
+  series: [{
+    name: 'series1',
+    data: [0, 50, 40, 90, 60, 120, 150],
+  }, ],
   colors: ['rgba(var(--primary),1'],
   fill: {
     type: 'gradient',
@@ -802,8 +786,7 @@ const recentStatistics2 = {
       shadeIntensity: 1,
       opacityFrom: 0.8,
       opacityTo: 0.4,
-      colorStops: [
-        {
+      colorStops: [{
           offset: 0,
           color: 'rgba(var(--primary),0.5)',
           opacity: 1,
@@ -828,7 +811,7 @@ const recentStatistics2 = {
   },
   markers: {
     size: 5,
-    colors: '#fff',
+    colors: 'var(--body)',
     strokeColors: 'rgba(var(--primary), 1)',
     strokeWidth: 2,
   },
@@ -926,8 +909,7 @@ const recentStatisticsOption = (data) => {
       },
     },
 
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 1200,
         options: {
           chart: {
@@ -962,11 +944,9 @@ recentStatisticsChartE2.render();
 
 /*=======/Total Follower Bar Spark line/=======*/
 const totalSaveBarChartOption = {
-  series: [
-    {
-      data: [30, 66, 45, 89, 63, 52, 70],
-    },
-  ],
+  series: [{
+    data: [30, 66, 45, 89, 63, 52, 70],
+  }, ],
   chart: {
     type: 'bar',
     width: '100%',
@@ -1003,8 +983,7 @@ const totalSaveBarChartOption = {
     opacity: 0.3,
   },
   tooltip: toolTipMini,
-  responsive: [
-    {
+  responsive: [{
       breakpoint: 1700,
       options: {
         chart: {
@@ -1097,8 +1076,7 @@ const totalCommentOption = {
   stroke: {
     lineCap: 'round',
   },
-  responsive: [
-    {
+  responsive: [{
       breakpoint: 1700,
       options: {
         chart: {
@@ -1219,12 +1197,10 @@ totalCommentEl.render();
 /*=======/Total Likes area Spark line/=======*/
 
 const totalLikesOption = {
-  series: [
-    {
-      name: 'series2',
-      data: [5, 30, 20, 80, 27, 29, 24, 34, 18, 70, 60, 110, 0],
-    },
-  ],
+  series: [{
+    name: 'series2',
+    data: [5, 30, 20, 80, 27, 29, 24, 34, 18, 70, 60, 110, 0],
+  }, ],
   chart: {
     height: 110,
     type: 'area',
@@ -1250,8 +1226,7 @@ const totalLikesOption = {
   },
 
   tooltip: toolTipMini,
-  responsive: [
-    {
+  responsive: [{
       breakpoint: 1700,
       options: {
         chart: {
@@ -1290,11 +1265,9 @@ totalLikesEl.render();
 
 /*=======/Total Follower Bar Spark line/=======*/
 const totalFollowersBarChartOption = {
-  series: [
-    {
-      data: [10, 55, 45, 89, 63, 52, 70],
-    },
-  ],
+  series: [{
+    data: [10, 55, 45, 89, 63, 52, 70],
+  }, ],
   chart: {
     type: 'bar',
     width: '100%',
@@ -1330,8 +1303,7 @@ const totalFollowersBarChartOption = {
     type: 'solid',
   },
   tooltip: toolTipMini,
-  responsive: [
-    {
+  responsive: [{
       breakpoint: 1700,
       options: {
         chart: {
@@ -1365,12 +1337,10 @@ totalFollowersBarChartEl.render();
 
 /*=======/Market Overview chart/=======*/
 const marketOverViewChart = {
-  series: [
-    {
-      name: 'Desktops',
-      data: [18, 30, 25, 51, 34, 40, 34],
-    },
-  ],
+  series: [{
+    name: 'Desktops',
+    data: [18, 30, 25, 51, 34, 40, 34],
+  }, ],
   chart: {
     height: 205,
     type: 'line',
@@ -1428,8 +1398,7 @@ const marketOverViewChart = {
   yaxis: {
     show: false,
   },
-  responsive: [
-    {
+  responsive: [{
       breakpoint: 1600,
       options: {
         chart: {
