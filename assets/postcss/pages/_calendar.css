@@ -143,16 +143,16 @@
           }
         }
         .fc-timegrid-axis-cushion{
-          @apply capitalize;
-        }
+          @apply capitalize ;
+        } 
         .fc-timegrid-slot-lane, .fc-timegrid-slot-minor{
-          @apply bg-white;
+          @apply bg-white dark:bg-sidebar-dark;
         }
-        .fc-toolbar{
-          @apply 2md:!flex 2md:flex-wrap 2md:items-center 2md:gap-3 
-        }
-        .fc-col-header-cell-cushion{
-          @apply 2md:!whitespace-normal 2md:text-3xs 2md:p-0;
+        .fc-toolbar{  
+          @apply 2md:!flex 2md:flex-wrap 2md:items-center 2md:gap-3
+        } 
+        .fc-col-header-cell-cushion { 
+          @apply 2md:!whitespace-normal 2md:text-3xs 2md:p-0; 
         }
       }
     }

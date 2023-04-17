@@ -96,9 +96,8 @@ revenueChartEl.render();
 /*=======/ Earnings Radial Chart /=======*/
 const earningChart = {
   series: [46],
-  chart: {
+  chart: { 
     type: 'radialBar',
-
     offsetY: 0,
     height: 280,
     sparkline: {
@@ -121,15 +120,16 @@ const earningChart = {
       },
 
       dataLabels: {
-        name: {
+        name: { 
           show: true,
           ...fontCommon,
           color: 'var(--content)',
           offsetY: -1,
-        },
+        },  
         value: {
           offsetY: -40,
-          ...fontCommon,
+          ...fontCommon, 
+          color: 'var(--title)',
           fontSize: '24px',
           fontWeight: 700,
         },
@@ -1052,7 +1052,7 @@ const totalCommentOption = {
       dataLabels: {
         enabled: true,
         textAnchor: 'middle',
-        name: {
+        name: { 
           show: false,
         },
         value: {

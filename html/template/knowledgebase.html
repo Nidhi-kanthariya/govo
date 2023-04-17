@@ -366,10 +366,10 @@
                     </li>
                   </ul>
                 </div>
-                <ul class="profile-box flex items-center">
-                  <li class="cursor-pointer pr-[11px] rtl:pr-unset rtl:pl-[11px] rtl:last:pl-0 rtl:last:pr-unset last:pr-0 sm:pr-0 sm:border-none last:border-none rtl:border-l rtl:border-r-0 border-r border-border-2 dark:border-border-dark  dark:border-r flex items-center"> 
+                <ul class="profile-box flex items-center"> 
+                  <li class="cursor-pointer pr-[11px] rtl:pr-unset rtl:!pl-[11px] rtl:last:pl-0 rtl:last:pr-unset last:pr-0 sm:pr-0 sm:border-none last:border-none rtl:border-l rtl:border-r-0 border-r border-border-2 dark:border-border-dark  dark:border-r flex items-center"> 
                     <!-- Language Start -->
-                    <div class="language-select dropdown group">
+                    <div class="language-select dropdown group"> 
                       <button class="flex items-center max-w-[87px] min-w-[87px] md:min-w-[47px] gap-[11px]" id="language-select"><img class="w-[35px] sm:w-[30px] h-auto" src="../../assets/images/flag/en.svg" alt="flag"><span class="flex items-center gap-1 text-lg font-bold 4xl:text-base dark:text-white md:hidden">En</span>
                         <svg class="w-[6px] h-[4px] stroke-title group-hover:rotate-180 duration-300 transition-all dark:stroke-white"> 
                           <use href="../../assets/svg/sprite.svg#Fill-Arrow"> </use>
@@ -378,7 +378,7 @@
                       <ul class="language-menu dropdown-menu flex flex-col gap-3 !min-w-[145px]">
                         <li class="language-option flex items-center gap-2 cursor-pointer" data-value="En"> <img class="w-[32px] h-auto" src="../../assets/images/flag/en.svg" alt="flag"><span class="flex items-center gap-1 text-xs font-bold transition-all duration-300 hover:text-primary">
                              English</span></li>
-                        <li class="language-option flex items-center gap-2 cursor-pointer" data-value="Fr"> <img class="w-[32px] h-auto" src="../../assets/images/flag/fr.svg" alt="flag"><span class="flex items-center gap-1 text-xs font-bold transition-all duration-300 hover:text-primary">
+                        <li class="language-option flex items-center gap-2 cursor-pointer" data-value="Fr"><img class="w-[32px] h-auto" src="../../assets/images/flag/fr.svg" alt="flag"><span class="flex items-center gap-1 text-xs font-bold transition-all duration-300 hover:text-primary">
                              French</span></li>
                         <li class="language-option flex items-center gap-2 cursor-pointer" data-value="Es"> <img class="w-[32px] h-auto" src="../../assets/images/flag/es.svg" alt="flag"><span class="flex items-center gap-1 text-xs font-bold transition-all duration-300 hover:text-primary">
                              Spanich</span></li>
@@ -440,7 +440,7 @@
                       <div class="grid grid-cols-12 gap-2">
                         <div class="col-span-12">
                           <ul class="gap-[10px] p-[15px]"> 
-                            <li class="p-2 transition-all duration-300 rounded-5 hover:bg-gray-light"><a class="flex items-center gap-2" href="index.html"> 
+                            <li class="p-2 transition-all duration-300 rounded-5 hover:bg-gray-light dark:hover:bg-sidebar-dark2"><a class="flex items-center gap-2" href="index.html"> 
                                 <div class="p-2 rounded-5  border border-primary">
                                   <svg class="w-5 h-5 stroke-primary"> 
                                     <use href="../../assets/svg/sprite.svg#Home"> </use>
@@ -449,7 +449,7 @@
                                 <div>
                                   <h4 class="text-xs font-semibold capitalize text-title line-clamp-1">Unique Dashboard</h4><span class="text-xs font-medium text-content line-clamp-1">Over view of all</span>
                                 </div></a></li>
-                            <li class="p-2 transition-all duration-300 rounded-5 hover:bg-gray-light"><a class="flex items-center gap-2" href="index.html"> 
+                            <li class="p-2 transition-all duration-300 rounded-5 hover:bg-gray-light dark:hover:bg-sidebar-dark2"><a class="flex items-center gap-2" href="index.html"> 
                                 <div class="p-2 rounded-5  border border-primary">
                                   <svg class="w-5 h-5 stroke-primary"> 
                                     <use href="../../assets/svg/sprite.svg#Home"> </use>
@@ -1012,15 +1012,15 @@
         </div>
         <!-- Sidebar End -->
         <!-- Page Body Start-->
-        <div class="page-body">
+        <div class="page-body"> 
           <div class="grid grid-cols-12 gap-card-gap">
             <div class="col-span-12">
-              <div class="relative"><img class="w-full rounded-5 min-h-[100px] max-h-[300px] object-cover drop-shadow-md" src="../../assets/images/svg/liness.svg" alt="lines">
+              <div class="relative"> <img class="w-full rounded-5 min-h-[100px] max-h-[300px] object-cover drop-shadow-md" src="../../assets/images/svg/liness.svg" alt="lines">
                 <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[40%] lg:max-w-[75%] xl:max-w-[50%]">
                   <h3 class="mb-4 text-[33px] font-extrabold text-title lg:text-lg dark:text-black">How Can I help you?</h3>
                   <div class="search-box relative">
                     <input class="border-border-light dark:border-border-dark dark:bg-sidebar-dark2 border rounded-5 w-full py-[11px] pl-[25px] pr-[55px] md:py-[5px] text-xs font-semibold text-title" placeholder="Type to Search..." type="search">
-                    <svg class="xl:hidden w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 right-[25px] absolute"> 
+                    <svg class="xl:hidden w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title dark:stroke-white top-1/2 -translate-y-1/2 right-[25px] absolute "> 
                       <use href="../../assets/svg/sprite.svg#Search"> </use>
                     </svg>
                   </div>
@@ -1029,20 +1029,20 @@
               </div>
             </div>
           </div>
-          <div class="grid grid-cols-12 gap-card-gap mt-6">
+          <div class="grid grid-cols-12 gap-card-gap mt-6"> 
             <div class="col-span-3 4xl:col-span-4 lg:col-span-6 sm:col-span-12">
               <div class="card p-0 hover:translate-y-[-5px] duration-500 hover:transition-all transition-all">
                 <div class="card-image">
                   <div class="flex justify-center items-center"><img class="object-contain w-full min-h-full" src="../../assets/images/knowledgebase/1.jpg" alt="3D women"></div>
                 </div>
-                <div class="card-body flex flex-col gap-3 p-4 pt-0">
+                <div class="card-body flex flex-col gap-3 p-4 pt-0"> 
                   <div class="flex justify-between">
                     <div class="flex gap-2 items-center post-media"><i class="h-5 cursor-pointer stroke-content wish-like" data-feather="heart"></i><i class="h-5 cursor-pointer stroke-content" data-feather="message-square"></i><i class="h-5 cursor-pointer stroke-content" data-feather="send"> </i></div>
                     <div><i class="h-5 cursor-pointer stroke-content" data-feather="bookmark"></i></div>
                   </div>
-                  <div class="divider w-full"></div>
-                  <div class="flex justify-between"><a class="flex items-center gap-1" href="blog-grid.html">
-                      <p class="text-content text-xs">Liked by  </p><span class="text-primary text-xs">Yen and 242 Others  </span></a>
+                  <div class="divider w-full"> </div>
+                  <div class="flex justify-between"> <a class="flex items-center gap-1" href="blog-grid.html">
+                      <p class="text-content text-xs">Liked by </p><span class="text-primary text-xs">Yen and 242 Others</span></a>
                     <div class="avatar-group -space-x-4 2md:hidden sm:flex 2sm:hidden">
                       <div class="avatar border-white border-2 dark:border-border-dark hover:translate-y-[-5px] hover:ease hover:transition-all transition-all translate-y-0">
                         <div class="w-6 h-6"><img src="../../assets/images/avatar/15.jpg" alt="avatar"></div>

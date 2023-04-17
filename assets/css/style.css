@@ -53,13 +53,14 @@
 }
 html[class='dark'] {
   --White: #1f2f3e;
-  --black: #fff;
+  --black: #fff; 
   --light: #44588f;
   --dark: #d8ecff;
   --title: #fff;
   --border-light: #2c4050;
   --apex-tooltip: #17232e;
   --body: #00232e;
+  --content : #9fa6ab;
 }
 html[class='dark'] .apexcharts-tooltip.apexcharts-theme-light {
       background: var(--apex-tooltip);
@@ -3881,7 +3882,7 @@ code[class*="language-"],
 }
 @media (max-width: 575px) {
   .tabs .tab.tabs-vertical {
-    border-right-width: 0px;
+    border-right-width: 0px !important;
     border-bottom-width: 1px;
   }
 }
@@ -5507,6 +5508,10 @@ header {
 .calander-main .calander-body .fc .fc-timegrid-slot-lane, .calander-main .calander-body .fc .fc-timegrid-slot-minor {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+:is(.dark .calander-main .calander-body .fc .fc-timegrid-slot-lane),:is(.dark  .calander-main .calander-body .fc .fc-timegrid-slot-minor) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 47 62 / var(--tw-bg-opacity));
 }
 @media (max-width: 675px) {
   .calander-main .calander-body .fc .fc-toolbar {
@@ -11595,6 +11600,9 @@ header {
 /*=====================
     Basic Reset CSS
   ==========================*/
+.announcement-image img{
+    filter: brightness(0.5);
+  }
 /*=====================
     Typography CSS
   ==========================*/
@@ -12989,6 +12997,9 @@ header {
 :is([dir="rtl"] .rtl\:pr-unset) {
   padding-right: unset;
 }
+:is([dir="rtl"] .rtl\:\!pl-\[11px\]) {
+  padding-left: 11px !important;
+}
 :is([dir="rtl"] .rtl\:\!text-right) {
   text-align: right !important;
 }
@@ -13200,10 +13211,13 @@ header {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-:is(.dark .dark\:backdrop-brightness-\[0\.5\]) {
-  --tw-backdrop-brightness: brightness(0.5);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+:is(.dark .dark\:brightness-50) {
+  --tw-brightness: brightness(.5);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+:is(.dark .dark\:invert-\[1\]) {
+  --tw-invert: invert(1);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 :is(.dark .dark\:hover\:bg-primary:hover) {
   background-color: rgba(var(--primary),1);
@@ -13216,6 +13230,9 @@ header {
   --tw-bg-opacity: 1;
   background-color: rgb(23 35 46 / var(--tw-bg-opacity));
 }
+:is(.dark .dark\:hover\:bg-warning:hover) {
+  background-color: var(--warning);
+}
 :is(.dark .hover\:dark\:bg-sidebar-dark2):hover {
   --tw-bg-opacity: 1;
   background-color: rgb(23 35 46 / var(--tw-bg-opacity));
@@ -13227,11 +13244,17 @@ header {
 :is(.dark .dark\:focus\:\!border-border-dark:focus) {
   border-color: var(--border-dark) !important;
 }
+:is(.dark .dark\:focus\:border-border-dark:focus) {
+  border-color: var(--border-dark);
+}
 :is(.dark .dark\:focus\:border-primary:focus) {
   border-color: rgba(var(--primary),1);
 }
 :is(.dark .dark\:focus\:bg-primary:focus) {
   background-color: rgba(var(--primary),1);
+}
+:is(.dark .dark\:focus\:bg-warning:focus) {
+  background-color: var(--warning);
 }
 :is(.dark .dark\:focus\:text-white:focus) {
   --tw-text-opacity: 1;

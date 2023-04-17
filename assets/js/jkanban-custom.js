@@ -715,7 +715,7 @@ var kanban3 = new jKanban({
                               </div>
                               <div class="2xl:flex-col 2xl:items-start 2xl:gap-2 flex items-center justify-between"> 
                                      <span class="text-content ">23 Feb 2023</span>
-                                    <div class="flex items-center gap-2">
+                                    <div class="flex items-center gap-2"> 
                                        <span class="text-content leading-loose">261</span> 
                                        <svg class="w-5 h-5 stroke-content">
                                           <use href="../../assets/svg/sprite.svg#Chat"></use>
