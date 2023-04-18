@@ -174,26 +174,21 @@
     }
   }
   .accept-call-end{
-    &.hide{
-      .modal, 
+    .modal, 
       .modal-overlay{
-        @apply !hidden;
+        @apply hidden;
       }
-    }
-    &.hide-hide{
+    &.hide{
       .modal, 
       .modal-overlay{
         @apply hidden;
       }
-      &.hide{
+    }
+    &.show{
       .modal, 
       .modal-overlay{
-        @apply !hidden;
-      }
-      &.show{
         @apply block visible;
       }
-    }
     }
   }
   .accept-call-start{
