@@ -44,8 +44,8 @@ html(lang='en')
           include ../../layout/unique 
         // Sidebar End
 
-        // Page Body Start
-        div.page-body
+        // Page Body Start 
+        div.page-body  
           div.grid.grid-cols-12(class="lg:gap-0 gap-card-gap")
             div.col-span-3(class="xl:col-span-4") 
               div(class="card gap-0 lg:z-10 2xl:p-card-spacing lg:p-3 left-sidebar-aside z-[3] lg:w-[280px] sticky min-lg:top-0 sm:w-[269px] lg:fixed lg:h-[100vh]")
@@ -58,12 +58,12 @@ html(lang='en')
                   i(data-feather="align-left" class="hidden w-5 h-5 cursor-pointer stroke-title left-sidebar-toggle-btn lg:block")
                 div(class="overflow-auto max-h-[478px] custom-scroll")
                   +todo-app-data(TODO_APP_DATA)
-
+ 
         // Page Body End  
         +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
       include ../../components/customizer   
 
-      div.modal-main
+      div.modal-main 
         input#todo-modal(class="peer" name="todo-modal" type='checkbox')
         label.modal-overlay(class="peer-checked:block" for='todo-modal')
         div.modal.modal-bottom-right(class="checkout-detail dark:bg-sidebar-dark2 invisible w-11/12 max-w-xl sm:!left-0 transition-all duration-1000 translate-y-0 opacity-0 peer-checked:opacity-100 peer-checked:visible peer-checked:-translate-y-9 !right-[2%]")

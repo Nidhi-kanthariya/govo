@@ -368,10 +368,10 @@
                     </li>
                   </ul>
                 </div>
-                <ul class="profile-box flex items-center">
-                  <li class="cursor-pointer pr-[11px] rtl:pr-unset rtl:pl-[11px] rtl:last:pl-0 rtl:last:pr-unset last:pr-0 sm:pr-0 sm:border-none last:border-none rtl:border-l rtl:border-r-0 border-r border-border-2 dark:border-border-dark  dark:border-r flex items-center"> 
+                <ul class="profile-box flex items-center"> 
+                  <li class="cursor-pointer pr-[11px] rtl:pr-unset rtl:!pl-[11px] rtl:last:pl-0 rtl:last:pr-unset last:pr-0 sm:pr-0 sm:border-none last:border-none rtl:border-l rtl:border-r-0 border-r border-border-2 dark:border-border-dark  dark:border-r flex items-center"> 
                     <!-- Language Start -->
-                    <div class="language-select dropdown group">
+                    <div class="language-select dropdown group"> 
                       <button class="flex items-center max-w-[87px] min-w-[87px] md:min-w-[47px] gap-[11px]" id="language-select"><img class="w-[35px] sm:w-[30px] h-auto" src="../../assets/images/flag/en.svg" alt="flag"><span class="flex items-center gap-1 text-lg font-bold 4xl:text-base dark:text-white md:hidden">En</span>
                         <svg class="w-[6px] h-[4px] stroke-title group-hover:rotate-180 duration-300 transition-all dark:stroke-white"> 
                           <use href="../../assets/svg/sprite.svg#Fill-Arrow"> </use>
@@ -380,7 +380,7 @@
                       <ul class="language-menu dropdown-menu flex flex-col gap-3 !min-w-[145px]">
                         <li class="language-option flex items-center gap-2 cursor-pointer" data-value="En"> <img class="w-[32px] h-auto" src="../../assets/images/flag/en.svg" alt="flag"><span class="flex items-center gap-1 text-xs font-bold transition-all duration-300 hover:text-primary">
                              English</span></li>
-                        <li class="language-option flex items-center gap-2 cursor-pointer" data-value="Fr"> <img class="w-[32px] h-auto" src="../../assets/images/flag/fr.svg" alt="flag"><span class="flex items-center gap-1 text-xs font-bold transition-all duration-300 hover:text-primary">
+                        <li class="language-option flex items-center gap-2 cursor-pointer" data-value="Fr"><img class="w-[32px] h-auto" src="../../assets/images/flag/fr.svg" alt="flag"><span class="flex items-center gap-1 text-xs font-bold transition-all duration-300 hover:text-primary">
                              French</span></li>
                         <li class="language-option flex items-center gap-2 cursor-pointer" data-value="Es"> <img class="w-[32px] h-auto" src="../../assets/images/flag/es.svg" alt="flag"><span class="flex items-center gap-1 text-xs font-bold transition-all duration-300 hover:text-primary">
                              Spanich</span></li>
@@ -442,7 +442,7 @@
                       <div class="grid grid-cols-12 gap-2">
                         <div class="col-span-12">
                           <ul class="gap-[10px] p-[15px]"> 
-                            <li class="p-2 transition-all duration-300 rounded-5 hover:bg-gray-light"><a class="flex items-center gap-2" href="index.html"> 
+                            <li class="p-2 transition-all duration-300 rounded-5 hover:bg-gray-light dark:hover:bg-sidebar-dark2"><a class="flex items-center gap-2" href="index.html"> 
                                 <div class="p-2 rounded-5  border border-primary">
                                   <svg class="w-5 h-5 stroke-primary"> 
                                     <use href="../../assets/svg/sprite.svg#Home"> </use>
@@ -451,7 +451,7 @@
                                 <div>
                                   <h4 class="text-xs font-semibold capitalize text-title line-clamp-1">Unique Dashboard</h4><span class="text-xs font-medium text-content line-clamp-1">Over view of all</span>
                                 </div></a></li>
-                            <li class="p-2 transition-all duration-300 rounded-5 hover:bg-gray-light"><a class="flex items-center gap-2" href="index.html"> 
+                            <li class="p-2 transition-all duration-300 rounded-5 hover:bg-gray-light dark:hover:bg-sidebar-dark2"><a class="flex items-center gap-2" href="index.html"> 
                                 <div class="p-2 rounded-5  border border-primary">
                                   <svg class="w-5 h-5 stroke-primary"> 
                                     <use href="../../assets/svg/sprite.svg#Home"> </use>
@@ -867,20 +867,20 @@
                     </div>
                   </div>
                 </div>
-                <div class="card-body">                                  
+                <div class="card-body">
                   <div class="tabs-content">
                     <div class="tab-pan active show first:rounded-tl-none rounded-5" data-tabContent="1">
                       <div class="flex flex-col flex-wrap gap-2">
                         <div class="flex items-center flex-wrap gap-2">
-                          <button class="btn bg-warning-light hover:bg-warning hover:text-white focus:bg-warning focus:border-warning focus:text-white" data-tw-tooltip="Focused">Focused</button>
+                          <button class="btn bg-warning-light hover:bg-warning  dark:bg-sidebar-dark2 dark:hover:bg-warning dark:focus:bg-warning hover:text-white focus:bg-warning focus:border-warning focus:text-white" data-tw-tooltip="Focused">Focused</button>
                         </div>
                       </div>
                     </div>
                     <div class="relative tab-pan copyParent group first:rounded-tl-none rounded-5" data-tabContent="2">
                       <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white"> <i data-feather="clipboard"></i></button>
-                      <pre class="overflow-auto language-html custom-scroll "><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-col flex-wrap gap-2"&gt;
+                      <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2"> &lt;div class="flex flex-col flex-wrap gap-2"&gt;
   &lt;div class="flex flex-wrap items-center gap-2"&gt;
-      &lt;button class="btn bg-warning-light" data-tw-tooltip="Focused" class="hover:bg-warning hover:text-white focus:bg-warning focus:border-warning focus:text-white&gt;Focused&lt;/button&gt;
+      &lt;button data-tw-tooltip="Focused" class="btn bg-warning-light hover:bg-warning  dark:bg-sidebar-dark2 dark:hover:bg-warning dark:focus:bg-warning hover:text-white focus:bg-warning focus:border-warning focus:text-white &gt;Focused&lt;/button&gt;
   &lt;/div&gt; 
 &lt;/div&gt;</code></pre>
                     </div>
