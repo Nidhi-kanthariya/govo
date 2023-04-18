@@ -209,6 +209,9 @@
     .page {
       width: calc(100% / var(--stepNumber));
       transition: margin-left 0.3s ease-in-out;
+      [dir="rtl"]{
+        transition: margin-rigth 0.3s ease-in-out;
+      }
 
       input.invalid-input {
         @apply border border-danger;

@@ -1187,7 +1187,7 @@ const totalCommentOption = {
         },
       },
     },
-  ],
+  ], 
 };
 
 const totalCommentEl = new ApexCharts(document.querySelector('#totalCommentRadialChart'), totalCommentOption);

@@ -293,7 +293,7 @@ html(lang='en')
             label(for="modal-edit").inline-block.btn.bg-gray-light.p-3.text-title(class="dark:bg-sidebar-dark2 dark:text-white") Close
             label(for="modal-edit").inline-block.btn.btn-primary.p-3.text-white Save 
       //- Delete Info
-      div.modal-main
+      div.modal-main 
         input#modal-delete(class="peer" name="modal-delete" type='checkbox')
         label.modal-overlay(class="peer-checked:block" for='modal-delete')
         div.modal.modal-center(class="w-10/12 dark:bg-sidebar-dark2 max-w-md peer-checked:opacity-100 peer-checked:visible")
@@ -303,7 +303,7 @@ html(lang='en')
             div.modal-img
               img(class="" src="../../assets/images/ecommerce/delete.gif" alt="delete gif" class="w-28")
             h3(class="dark:text-white").text-lg.font-bold.mb-2 Are you sure? 
-            p(class="dark:text-contact").mb-3 Delete this address only if you are certain you want to.
+            p(class="dark:text-contact rtl:text-white").mb-3 Delete this address only if you are certain you want to.
           div.modal-footer.flex.justify-end.gap-3 
             label(for="modal-delete" class="dark:bg-sidebar-dark2 dark:text-white").inline-block.btn.bg-gray-light.p-3.text-title Close
             label(for="modal-delete").inline-block.btn.btn-danger.p-3.text-white Yes, Sure!

@@ -37,7 +37,7 @@ var swiper = new Swiper(".productImg", {
   });
 
   //  Grid & List view js 
-
+ 
   const gridView = document.querySelector('.grid-layout-view');
   const listView = document.querySelector('.list-layout-view');
   const productWrapperGrid = document.querySelector('.product-wrapper-grid');
@@ -48,7 +48,7 @@ var swiper = new Swiper(".productImg", {
   });
   listView?.addEventListener('click', function(){
     productWrapperGrid.classList.add("list-view");
-    // productWrapperGrid.classList.css("opacity","0.2");
+    // productWrapperGrid.classList.css("opacity","0.2"); 
     // productWrapperGrid.children().children();
     document.querySelector(".product-box").classList.add("col-span-12");
   });

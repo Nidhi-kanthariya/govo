@@ -1947,8 +1947,9 @@ const polarareachart = {
                 chart: {
                     height: 260,
                 },
-                legend: {
-                    position: 'bottom'
+                legend: { 
+                    position: 'bottom',
+                    colors: 'var(--title)',
                 }
             }
         },
