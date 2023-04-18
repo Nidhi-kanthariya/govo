@@ -14,11 +14,18 @@ aside(class="sidebar")
   nav.sidebar-main 
     ul.sidebar-links.custom-scroll 
       each mainMenu in SIDEBAR_MENU
-        //- if mainMenu.title
-        //-   li.title=mainMenu.title
+        if mainMenu.title
+          li.title=mainMenu.title
         each menuItem in mainMenu.menu   
           li.sidebar-list 
             a(href=`${menuItem.url}`).sidebar-link.sidebar-title
               span 
                 +SVG_ICON(`${menuItem.icon}`) 
                 span.sidebar-name= menuItem.title
+              if(menuItem.subMenu)
+                +SVG_ICON("Arrow-Right-2")  
+            if menuItem.subMenu 
+              ul.sidebar-submenu
+                each subLink in menuItem.subMenu
+                  li 
+                    a(href=`${subLink.url}`)=subLink.title 

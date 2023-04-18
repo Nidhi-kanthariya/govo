@@ -47,17 +47,21 @@
         .card {
           @apply hover:scale-100;
           .card-body {
-            @apply flex gap-3;
+            @apply flex gap-3 sm:block;
             .relative {
               img {
-                @apply w-[18.75rem];
+                @apply w-[18.75rem] md:w-[15rem] sm:w-full;
               }
             }
           }
         }
       }
+      ul{
+        @apply flex flex-col sm:grid;
+      }
     }
   }
+
   .checkout-detail,
   .add-product,
   .invoice-preview {

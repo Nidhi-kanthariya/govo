@@ -251,9 +251,9 @@ html(lang='en')
                       +new-product-card(NEW_PRODUCT)
 
             div.col-span-9(class="2xl:col-span-8 xl:col-span-12 product-wrapper-grid")
-              .grid.grid-cols-12.gap-6(class="sm:mt-5") 
+              ul.grid.grid-cols-12.gap-6(class="sm:mt-5") 
                 each data in PRODUCT_BOX 
-                  div.col-span-3(class='4xl:col-span-4 2xl:col-span-6 xl:col-span-4 md:col-span-6 sm:col-span-12 product-box')
+                  li.col-span-3(class='4xl:col-span-4 2xl:col-span-6 xl:col-span-4 md:col-span-6 sm:col-span-12 product-box')
                     +product(data,"modal", "productmodal")
 
         // Page Body End  
