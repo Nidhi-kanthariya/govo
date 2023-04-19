@@ -5,7 +5,10 @@
 @layer components {
   main{
     .page-body{
-      @apply lg:mt-[calc(125px_+_(90_-_125)_*_((100vw_-_320px)_/_(1920_-_320)))] mt-[7.5rem] md:mt-[6.875rem];
+      /* @apply lg:mt-[calc(135px_+_(66_-_135)_*_((100vw_-_320px)_/_(1920_-_320)))] mt-[calc(7.95rem+_(7.65_-_7.95)_*_((100vw_-_75rem)_/_(120_-_75)))] md:mt-[7.10rem]; */
+      @apply  mt-[calc(7.95rem+_(7.65_-_7.95)_*_((100vw_-_320px)_/_(1920_-_320)))] lg:mt-[116px] md:mt-[7.10rem];
+      /* @apply mt-[calc(7.95rem+_(7.15_-_7.95)_*_((100vw_-_320px)_/_(1920_-_320)))]; */
+      /* @apply mt-[calc(7.97rem+_(7.15_-_7.97)_*_((100vw_-_75rem)_/_(120_-_75)))] xl:mt-[calc(7.97rem+_(7.15_-_7.97)_*_((100vw_-_120rem)_/_(120_-_20)))]; */
         .apexcharts{
           &-canvas {
           [dir='rtl'] & {

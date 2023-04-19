@@ -468,3 +468,17 @@ gridView?.addEventListener('click', function () {
 listView?.addEventListener('click', function () {
   productWrapperGrid.classList.add("list-view");
 });
+
+/*=====================
+Blog sidebar js
+==========================*/
+
+const blogSidebarToggle = document.querySelector('.blog-toggle');
+const blogSidebar = document.querySelector('.blog-sidebar');
+const blogCloseBtn = document.querySelector('.blog-close-sidebar');
+blogSidebarToggle?.addEventListener('click', function () {
+  blogSidebar.classList.toggle('show');
+});
+blogCloseBtn?.addEventListener('click', function () {
+  blogSidebar.classList.remove('show');
+});
