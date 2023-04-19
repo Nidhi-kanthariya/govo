@@ -7,12 +7,20 @@ iconWrapper.addEventListener('click', function (event) {
   const iconName = iconBox.querySelector('.icon-name').textContent;
   const featherPage = event.target.closest('.feather-event');
   const iconlyNotBulk = event.target.closest('.icon-not-bulk-event');
+  const fontAwesomePage = event.target.closest('.fontawesome-event');
   const iconlyBulk = event.target.closest('.icon-bulk-event');
   const iconEl = iconBox.querySelector("i[class*='iconly-']");
   const iconBulkEl = iconBox.querySelector("span[class*='iconlyBulk-']");
   const iconBulkCode = iconBulkEl?.outerHTML;
   const preCodeBulk = iconBulkCode?.replaceAll('<', '&lt;').replaceAll('>', '&gt;');
   const iconClass = iconEl?.classList.contains('icli') ? 'icli' : iconEl?.classList.contains('icbo') ? 'icbo' : '';
+
+  const fontAwesomeHtml = `<div class=" flex items-center justify-center rounded-5"> <i class="${iconName}"></i></div>
+              <div class="relative bg-white2-light copyParent  rounded-5 ">
+                 <button class="btn copyBtn border-border-light !top-4 !right-[10px] dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white"> <i data-feather="clipboard"></i></button>
+                  <pre class="language-html !whitespace-pre-wrap custom-scroll overflow-auto dark:bg-sidebar-dark2"> <code>&lt;i class="${iconName}"&gt;&lt;/i&gt; </code></pre>
+               </div>
+            </div> `;
 
   const featherHtml = `<div class=" flex items-center justify-center rounded-5"> <i class="w-7 h-7 stroke-title" data-feather=${iconName}></i></div>
               <div class="relative bg-white2-light copyParent  rounded-5 ">
@@ -55,6 +63,7 @@ iconWrapper.addEventListener('click', function (event) {
             ${featherPage ? featherHtml : ''}
             ${iconlyNotBulk ? iconlyHtml : ''} 
             ${iconlyBulk ? iconlyBulkHtml : ''}  
+            ${fontAwesomePage ? fontAwesomeHtml : ''}  
           </div>
         </div>`;
 
