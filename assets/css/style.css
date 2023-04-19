@@ -12969,11 +12969,11 @@ header {
 :is([dir="rtl"] .rtl\:border-r-0) {
   border-right-width: 0px;
 }
-:is([dir="rtl"] .rtl\:p-4) {
-  padding: 1rem;
-}
 :is([dir="rtl"] .rtl\:\!pl-\[11px\]) {
   padding-left: 11px !important;
+}
+:is([dir="rtl"] .rtl\:\!pr-4) {
+  padding-right: 1rem !important;
 }
 :is([dir="rtl"] .rtl\:pl-0) {
   padding-left: 0px;
@@ -13011,12 +13011,6 @@ header {
 :is([dir="rtl"] .rtl\:pt-4) {
   padding-top: 1rem;
 }
-:is([dir="rtl"] .rtl\:pr-4) {
-  padding-right: 1rem;
-}
-:is([dir="rtl"] .rtl\:\!pr-4) {
-  padding-right: 1rem !important;
-}
 :is([dir="rtl"] .rtl\:\!text-right) {
   text-align: right !important;
 }
@@ -13042,10 +13036,6 @@ header {
 [dir=rtl] :is([dir="rtl"] .rtl\:pl-3) {
   padding-left: unset;
   padding-right: 0.75rem;
-}
-[dir=rtl] :is([dir="rtl"] .rtl\:pr-4) {
-  padding-left: 1rem;
-  padding-right: unset;
 }
 [dir=rtl] :is([dir="rtl"] .rtl\:\!pr-4) {
   padding-left: 1rem !important;
