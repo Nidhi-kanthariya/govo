@@ -2310,20 +2310,35 @@ const linedatalabelchart = {
         categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
         labels:{
             style: {
+<<<<<<< Updated upstream
                 colors: ['var(--content)', 'var(--content)','var(--content)','var(--content)','var(--content)','var(--content)','var(--content)']
             },
         },
         title: {
             text: 'Month', 
+=======
+                colors: "[var(--title)]",
+            },
+        },
+        title: {
+            text: 'Month',
+>>>>>>> Stashed changes
             style: {
                 color: ['var(--title)'],
             }, 
         }
     },
+<<<<<<< Updated upstream
     yaxis: { 
         labels:{
             style: {
                 colors: ['var(--content)']
+=======
+    yaxis: {
+        labels:{
+            style: {
+                colors: "[var(--title)]",
+>>>>>>> Stashed changes
             },
         },
         title: { 
@@ -2593,10 +2608,15 @@ const rangeareachart = {
     legend: { 
         show: true,
         customLegendItems: ['Series B', 'Series A'],
+<<<<<<< Updated upstream
         inverseOrder: true, 
         labels:{
             colors: ['var(--content)', 'var(--content)']
         },
+=======
+        inverseOrder: true,
+        colors: ['var(--title)'], 
+>>>>>>> Stashed changes
     },
     markers: { 
         hover: {

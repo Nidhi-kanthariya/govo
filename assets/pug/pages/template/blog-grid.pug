@@ -44,14 +44,24 @@ html(lang='en')
             div.col-span-12.flex.items-center.justify-between.gap-3.bg-white.p-3.rounded-5(class="dark:bg-sidebar-dark") 
               div.flex.items-center.gap-3 
                 label(for="sortby" class="text-xs min-w-max text-content3") Sort By                                    
+<<<<<<< Updated upstream
                 select.form-select.block.w-full.px-3.text-xs.font-normal.text-content3.bg-white.bg-clip-padding.bg-no-repeat.border.border-border-light.rounded-5.transition.ease-in-out.m-0(class='min-w-[150px] 2md:min-w-[130px] py-[9px] dark:border-border-dark dark:bg-sidebar-dark2' id="sortby" aria-label='Default select example')
                   option(selected='') All 
+=======
+                select.form-select.block.w-full.px-3.text-xs.font-normal.text-content3.bg-white.bg-clip-padding.bg-no-repeat.border.border-border-light.rounded-5.transition.ease-in-out.m-0(class='min-w-[150px] py-[9px] dark:border-border-dark dark:bg-sidebar-dark2 ' id="sortby" aria-label='Default select example')
+                  option(selected='') All  
+>>>>>>> Stashed changes
                   option(value='1') Popular 
                   option(value='2') Price Low
                   option(value='3') Price Hight 
               div.flex.items-center.gap-3 
+<<<<<<< Updated upstream
                 div.search-box.relative(class="2md:hidden")
                   input(class="rounded-5 w-full py-[11px] pl-[25px] pr-[55px] rtl:pr-[25px] rtl:pl-[55px] text-xs font-semibold text-title dark:text-white dark:bg-sidebar-dark2 border border-border-light dark:border-border-dark" placeholder="Type to Search..." type="search")       
+=======
+                div.search-box.relative(class="2md:hidden") 
+                  input(class="rounded-5 w-full py-[11px] pl-[25px] pr-[55px] rtl:pr-[25px] dark:bg-sidebar-dark2 rtl:pl-[55px] text-xs font-semibold text-title border border-border-light dark:border-border-dark dark:text-white" placeholder="Type to Search..." type="search")       
+>>>>>>> Stashed changes
                   +SVG_ICON("Search","w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 right-[25px] rtl:right-unset rtl:left-[25px] absolute dark:stroke-white")
                 button
                   +SVG_ICON("Search","2md:flex hidden w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title dark:stroke-white")

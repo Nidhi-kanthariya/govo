@@ -51,25 +51,32 @@
   --instagram2: #fd5949;
   --instagram3: #285aeb;
 }
-html[class='dark'] {
+html[class='dark'] { 
   --White: #1f2f3e;
   --black: #fff;
   --light: #44588f;
-  --dark: #d8ecff;
+  --dark: #d8ecff; 
   --title: #fff;
+<<<<<<< Updated upstream
   --border-light: #2c4050; 
   --apex-tooltip: #17232e; 
   --body: #00232e;
   --content : #9fa6ab; 
+=======
+  --border-light: #2c4050;
+  --apex-tooltip: #17232e;   
+  --body: #00232e; 
+  --content : #9fa6ab;  
+>>>>>>> Stashed changes
 }
 html[class='dark'] .apexcharts-tooltip.apexcharts-theme-light { 
       background: var(--apex-tooltip);
       border: var(--border-light);
-      box-shadow: none;
+      box-shadow: none; 
     }
-html[class='dark'] .apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title {
+html[class='dark'] .apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title { 
         background: var(--apex-tooltip);
-        color: var(--black); 
+        color: var(--black);
         border-bottom-color: var(--border-light);
       }
 /* Unique Skin */
@@ -13267,8 +13274,13 @@ header {
 :is([dir="rtl"] .rtl\:\!right-0) {
   right: 0px !important;
 }
+<<<<<<< Updated upstream
 :is([dir="rtl"] .rtl\:\!right-\[24\.938rem\]) {
   right: 24.938rem !important;
+=======
+:is([dir="rtl"] .rtl\:\!right-\[4\.625rem\]) {
+  right: 4.625rem !important;
+>>>>>>> Stashed changes
 }
 :is([dir="rtl"] .rtl\:left-0) {
   left: 0px;
@@ -13563,6 +13575,10 @@ header {
 :is(.dark .dark\:\!bg-sidebar-dark) {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(31 47 62 / var(--tw-bg-opacity)) !important;
+}
+:is(.dark .dark\:\!bg-sidebar-dark2) {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(23 35 46 / var(--tw-bg-opacity)) !important;
 }
 :is(.dark .dark\:bg-border-dark) {
   background-color: var(--border-dark);
@@ -14318,6 +14334,9 @@ header {
   }
   .lg\:z-10 {
     z-index: 10;
+  }
+  .lg\:z-\[6\] {
+    z-index: 6;
   }
   .lg\:-order-1 {
     order: -1;
