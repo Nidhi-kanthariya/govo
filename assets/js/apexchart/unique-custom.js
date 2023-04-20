@@ -1026,6 +1026,7 @@ totalSaveBarChartEl.render();
 /*=======/Radial Chart/=======*/
 const totalCommentOption = {
   series: [60],
+  
   chart: {
     type: 'radialBar',
     height: 120,
@@ -1060,6 +1061,7 @@ const totalCommentOption = {
           fontFamily: "'Nunito Sans', sans-serif",
           fontWeight: 600,
           offsetY: 5,
+          color: ['var(--content)']
         },
       },
     },

@@ -149,15 +149,16 @@ totalLikesEl.render();
 
 /*=======/Radial Chart/=======*/
 const totalCommentOption = {
-  series: [60],
+  series: [60], 
+  colors: ['var(--content)'],
   chart: {
-    type: 'radialBar',
+    type: 'radialBar', 
     height: 120,
     offsetY: 0,
     sparkline: {
       enabled: true,
     },
-  },
+  }, 
   plotOptions: {
     radialBar: {
       startAngle: 0,
@@ -181,9 +182,10 @@ const totalCommentOption = {
         },
         value: {
           fontSize: '16px',
-          fontFamily: "'Nunito Sans', sans-serif",
+          fontFamily: "Nunito Sans', sans-serif",
           fontWeight: 600,
           offsetY: 5,
+          colors: ['var(--content)'],
         },
       },
     },
