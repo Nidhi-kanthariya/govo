@@ -1,3 +1,7 @@
+/*=====================
+  3.15  Kanban Css
+ ==========================*/
+
 @layer components {
   .kanab-common {
     @apply overflow-auto custom-scroll;
