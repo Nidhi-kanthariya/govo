@@ -10,7 +10,7 @@
   --info-light: #b52af64d;
   --warning: #feb858;
   --warning-light: #feb8584d;
-  --danger: #f1523d;
+  --danger: #f1523d; 
   --danger-light: #f1523d4d;  
   --light: #d8ecff; 
   --dark: #44588f;  
@@ -51,12 +51,34 @@
   --instagram3: #285aeb;
 }
 
-html[class='dark'] { 
+html[class='draganddrop dark'] { 
   --White: #1f2f3e;
-  --black: #fff;
+  --black: #fff; 
   --light: #44588f;
   --dark: #d8ecff; 
-  --title: #fff;
+  --title: #fff; 
+  --border-light: #2c4050; 
+  --apex-tooltip: #17232e; 
+  --body: #00232e; 
+  --content : #9fa6ab; 
+}
+html[class='dark fontawesome-i2svg-active fontawesome-i2svg-complete'] { 
+  --White: #1f2f3e;
+  --black: #fff; 
+  --light: #44588f;
+  --dark: #d8ecff; 
+  --title: #fff; 
+  --border-light: #2c4050; 
+  --apex-tooltip: #17232e; 
+  --body: #00232e; 
+  --content : #9fa6ab; 
+}
+html[class='dark'] { 
+  --White: #1f2f3e;
+  --black: #fff; 
+  --light: #44588f;
+  --dark: #d8ecff; 
+  --title: #fff; 
   --border-light: #2c4050; 
   --apex-tooltip: #17232e; 
   --body: #00232e;
