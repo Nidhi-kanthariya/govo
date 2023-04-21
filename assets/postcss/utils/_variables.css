@@ -57,21 +57,12 @@ html[class='dark'] {
   --light: #44588f;
   --dark: #d8ecff; 
   --title: #fff;
-<<<<<<< Updated upstream
   --border-light: #2c4050; 
   --apex-tooltip: #17232e; 
   --body: #00232e;
   --content : #9fa6ab; 
 }  
 html[class='dark'] {
-=======
-  --border-light: #2c4050;
-  --apex-tooltip: #17232e;   
-  --body: #00232e; 
-  --content : #9fa6ab;  
-}  
-html[class='dark'] {  
->>>>>>> Stashed changes
   .apexcharts-tooltip {
     &.apexcharts-theme-light { 
       background: var(--apex-tooltip);
