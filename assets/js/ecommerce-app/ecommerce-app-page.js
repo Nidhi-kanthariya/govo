@@ -36,20 +36,18 @@ shopCloseBtn?.addEventListener('click', function () {
   shopSidebar.classList.remove('show');
 });
 
-  //  Grid & List view js 
- 
-  const gridView = document.querySelector('.grid-layout-view');
-  const listView = document.querySelector('.list-layout-view');
-  const productWrapperGrid = document.querySelector('.product-wrapper-grid');
-  let productBox = document.querySelectorAll('.product-box');
-  gridView?.addEventListener('click', function(){
-    productWrapperGrid.classList.remove("list-view");
-    document.querySelector(".product-box").classList.remove("col-span-12");
-  });
-  listView?.addEventListener('click', function(){
-    productWrapperGrid.classList.add("list-view");
-    // productWrapperGrid.classList.css("opacity","0.2"); 
-    // productWrapperGrid.children().children();
-    document.querySelector(".product-box").classList.add("col-span-12");
-  });
+//  Grid & List view js 
+
+const gridView = document.querySelector('.grid-layout-view');
+const listView = document.querySelector('.list-layout-view');
+const productWrapperGrid = document.querySelector('.product-wrapper-grid');
+let productBox = document.querySelectorAll('.product-box');
+gridView?.addEventListener('click', function () {
+  productWrapperGrid.classList.remove("list-view");
+  document.querySelector(".product-box").classList.remove("col-span-12");
+});
+listView?.addEventListener('click', function () {
+  productWrapperGrid.classList.add("list-view");
+  document.querySelector(".product-box").classList.add("col-span-12");
+});
 

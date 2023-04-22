@@ -4,33 +4,36 @@
 //- feather
 -var feather= true;
 
-//- custom select
+//- customSelect
 -var customSelect= true;
 
-//- customizer 
+//- customizer
 -var customizer=true;
 
-//- Breadcrumbs 
--var pageTitle="Govo";
--var breadcrumb=['Getting Started']; 
+//- prism
+-var prism=true;
 
-//- all JSON  
+//- Breadcrumbs
+-var pageTitle="Govo";
+-var breadcrumb=['Getting Started'];
+
+//- json
 include ../../data/all-data
 
-//- all mixin
+//- mixin
 include ../../mixin/mixin
 
 doctype html
-html(lang='en')
-    include ../../layout/header-files
-    body(dir="ltr" class="unique-skin")
+html(lang='en')  
+    include ../../layout/header-files 
+    body(dir="ltr" class="unique-skin") 
         main.page-wrapper
             div.page-body-wrapper(class="xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300")
                 include ../../layout/header/header     
                 // Sidebar Start 
                 div.page-sidebar.sidebar-dark.unique-sidebar
                     include ../../layout/unique
-                // Sidebar End 
+                // Sidebar En
 
                 // Page Body Start
                 div.page-body
@@ -72,4 +75,4 @@ html(lang='en')
                 +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
             include ../../components/customizer
 
-    include ../../layout/footer-files
+        include ../../layout/footer-files
