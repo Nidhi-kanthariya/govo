@@ -212,17 +212,7 @@
     }
   }
   
-  /* html[class='dark'] {
-    &.fontawesome-i2svg-complete{
-      &.fontawesome-i2svg-active{
-        .fontawesome-event{
-          .icon-box{
-            @apply !text-white;
-          }
-        }
-      }
-    }
-  } */
+
 }
 .announcement-image{
   img{

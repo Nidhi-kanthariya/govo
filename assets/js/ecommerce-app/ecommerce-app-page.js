@@ -48,8 +48,6 @@ shopCloseBtn?.addEventListener('click', function () {
   });
   listView?.addEventListener('click', function(){
     productWrapperGrid.classList.add("list-view");
-    // productWrapperGrid.classList.css("opacity","0.2"); 
-    // productWrapperGrid.children().children();
     document.querySelector(".product-box").classList.add("col-span-12");
   });
 

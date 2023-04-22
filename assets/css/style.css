@@ -803,18 +803,6 @@ input[type='number'] {
     }
   }
 
-/* html[class='dark'] {
-    &.fontawesome-i2svg-complete{
-      &.fontawesome-i2svg-active{
-        .fontawesome-event{
-          .icon-box{
-            @apply !text-white;
-          }
-        }
-      }
-    }
-  } */
-
 body,
   html {
   font-family: 'Nunito Sans', sans-serif;
@@ -7368,10 +7356,6 @@ header {
   gap: 0.5rem;
 }
 
-.countdown-5 li span {
-        /* @apply dark:last; */
-      }
-
 .countdown-5 span:last-child.select-style-1 .select-selected,.countdown-5 span:last-child .select-style-1 .select-items {
   border-radius: 0.75rem;
 }
@@ -7422,10 +7406,6 @@ header {
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-
-.countdown-6 li span {
-        /* @apply dark:first; */
-      }
 
 .countdown-6 span {
   text-align: center;
@@ -8670,30 +8650,6 @@ header {
 .todo-app li:nth-child(4n + 4) .check-icon {
   stroke: var(--warning);
 }
-
-.todo-app .todo-sublist li{
-                /* .priority-low{
-                    @apply bg-danger-light capitalize leading-none text-3xs text-danger;
-                }
-                .priority-medium{
-                    @apply bg-warning-light capitalize leading-none text-3xs text-warning;
-                }
-                .priority-high{
-                    @apply bg-primary-light capitalize leading-none text-3xs text-primary;
-                }
-                .status-pending{
-                    @apply bg-secondary-light capitalize leading-none text-3xs text-secondary;
-                }
-                .status-inprogress{
-                    @apply bg-info-light capitalize leading-none text-3xs text-info;
-                }
-                .status-completed{
-                    @apply bg-success-light capitalize leading-none text-3xs text-success;
-                }
-                .status-new{
-                    @apply bg-primary-light capitalize leading-none text-3xs text-primary;
-                } */
-            }
 
 .todo-form .priority-list select option{
                     

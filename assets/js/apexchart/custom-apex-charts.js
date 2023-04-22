@@ -1660,7 +1660,7 @@ const radialchart = {
                     color: undefined, 
                 },
                 value: { 
-                    ...fontCommon,  
+                    ...fontCommon,   
                     color: 'var(--content)',
                 }, 
                 total: {
