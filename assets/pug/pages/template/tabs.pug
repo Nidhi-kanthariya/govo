@@ -579,7 +579,7 @@ html(lang='en')
                 div.card-header.pb-2.header-bottom-border
                   div.flex.flex-col
                     h3(class="dark:text-white").text-lg.font-bold Vertical Boxed Tabs
-                    p(class="dark:text-content3")   Add vertical Boxed tabs using 
+                    p(class="dark:text-content3") Add vertical Boxed tabs using 
                       strong  .tab-boxed 
                       |   class.
                     div.preview-code.tab-links
@@ -715,7 +715,7 @@ html(lang='en')
                                     tr 
                                       th(scope='col' class="dark:text-content3") #
                                       th(scope='col' class="dark:text-content3") Name
-                                      th(scope='col' class="dark:text-content3") Country
+                                      th(scope='col' class="dark:text-content3") Country  
                                       th(scope='col' class="dark:text-content3 rtl:!text-end") Rating 
                                   tbody
                                     tr 
@@ -741,27 +741,96 @@ html(lang='en')
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white")   
                         i(data-feather="clipboard")
                       pre(class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2")
-                        code(class="dark:bg-sidebar-dark2")
-                          |&lt;div class="flex flex-wrap gap-2"&gt;
-                          |   &lt;div class="flex-col w-full tabs"&gt;
-                          |       &lt;div class="flex mb-1 tab-links"&gt;
-                          |           &lt;button class="tab tabs-bordered tabs-bordered-bg tab-active tab-link" data-tabFilter="1"&gt; Users &lt;/button&gt;
-                          |           &lt;button class="tab tabs-bordered tabs-bordered-bg tab-link" data-tabFilter="2"&gt; Reviews &lt;/button&gt;
-                          |       &lt;/div&gt;
-                          |       &lt;div class="tabs-content"&gt;
-                          |           &lt;div data-tabContent="1" class="tab-pan fade active show first:rounded-tl-none rounded-5 border-none !px-0 !pb-0"&gt; 
-                          |               &lt;p class="text-xs text-content3"&gt; Tabs are used ...attractive.&lt;/p&gt;  
-                          |           &lt;/div&gt;
-                          |           &lt;div data-tabContent="2" class="tab-pan fade group relative first:rounded-tl-none rounded-5 border-none !px-0 !pb-0"&gt; 
-                          |               &lt;p class="text-xs text-content3"&gt; We use tabs to ...attractive.&lt;/p&gt;  
-                          |           &lt;/div&gt;
-                          |           &lt;div data-tabContent="3" class="tab-pan fade group relative first:rounded-tl-none rounded-5 border-none !px-0 !pb-0"&gt; 
-                          |               &lt;p class="text-xs text-content3"&gt; We use tabs to ...attractive.&lt;/p&gt;  
-                          |           &lt;/div&gt;
-                          |       &lt;/div&gt;
-                          |   &lt;/div&gt; 
-                          |&lt;/div&gt;
-
+                        code(class="dark:bg-sidebar-dark2") 
+                          |  &lt;h3 class="font-bold text-sm mb-3 dark:text-white"&gt;User Detail:&lt;/h3&gt;
+                          |  &lt;div class="overflow-auto custom-scroll"&gt;&lt;/div&gt;
+                          |   &nbsp;&lt;table class="table equal-space"&gt;
+                          |      &lt;thead&gt;
+                          |        &lt;tr&gt;
+                          |          &lt;th class="dark:text-content3"&gt;#&lt;/th&gt;
+                          |          &lt;th class="dark:text-content3"&gt;Name&lt;/th&gt;
+                          |          &lt;th class="dark:text-content3"&gt;Country&lt;/th&gt;
+                          |          &lt;th class="dark:text-content3"&gt;Contact No&lt;/th&gt;
+                          |        &lt;/tr&gt;
+                          |      &lt;/thead&gt; 
+                          |      &lt;tbody&gt;
+                          |        &lt;tr&gt; 
+                          |          &lt;th class="dark:text-white rtl:text-right"&gt;1&lt;/th&gt;
+                          |            &lt;td class="dark:text-white"&gt;Mrunali&lt;/td&gt;
+                          |            &lt;td class="dark:text-white"&gt;India &lt;/td&gt;
+                          |            &lt;td class="dark:text-white"&gt;5698741236 &lt;/td&gt;
+                          |        &lt;/tr&gt;
+                          |        &lt;tr&gt;
+                          |          &lt;th class="dark:text-white rtl:text-right rtl:pt-4"&gt;2&lt;/th&gt;
+                          |            &lt;td class="dark:text-white"&gt;Bright&lt;/td&gt;
+                          |            &lt;td class="dark:text-white"&gt;Thailand &lt;/td&gt;
+                          |            &lt;td class="dark:text-white"&gt;7800030320 &lt;/td&gt;
+                          |        &lt;/tr&gt;
+                          |      &lt;/tbody&gt;
+                          |   &lt;/table&gt;
+                          |   &lt;h3 class="font-bold text-sm mb-3 dark:text-white"&gt;Description:&lt;/h3&gt;
+                          |   &lt;div class="overflow-auto custom-scroll"&gt;
+                          |     &lt;table class="table equal-space"&gt;
+                          |       &lt;thead&gt;
+                          |         &lt;tr&gt;
+                          |             &lt;th class="dark:text-content3"&gt;Technology &lt;/th&gt;
+                          |             &lt;th class="dark:text-content3"&gt;Interest &lt;/th&gt;
+                          |             &lt;th class="dark:text-content3"&gt;Salary Expected &lt;/th&gt;
+                          |         &lt;/tr&gt;
+                          |       &lt;/thead&gt;
+                          |       &lt;tbody&gt;
+                          |         &lt;tr&gt;
+                          |               &lt;td class="dark:text-white "&gt;Web Designer&lt;/td&gt;
+                          |               &lt;td class="dark:text-white"&gt;HTML,CSS,JS,SCSS&lt;/td&gt;
+                          |               &lt;td class="dark:text-white"&gt;45000&lt;/td&gt;
+                          |         &lt;/tr&gt;
+                          |         &lt;tr&gt;
+                          |             &lt;td class="dark:text-white"&gt;UX Designer&lt;/td&gt;
+                          |             &lt;td class="dark:text-white"&gt;Figma,Photoshop,craft&lt;/td&gt;
+                          |             &lt;td class="dark:text-white"&gt;20000&lt;/td&gt;
+                          |         &lt;/tr&gt;
+                          |       &lt;/tbody&gt;
+                          |     &lt;/table&gt;
+                          |   &lt;/div&gt;
+                          |   &lt;h3 class="font-bold text-sm mb-3 dark:text-white"&gt;Reviews:&lt;/h3&gt;
+                          |   &lt;div class="overflow-auto custom-scroll"&gt;
+                          |   &lt;table class="table equal-space"&gt; 
+                          |     &lt;thead&gt;
+                          |         &lt;tr&gt; 
+                          |             &lt;th class="dark:text-content3" scope="col"&gt;#&lt;/th&gt;
+                          |             &lt;th class="dark:text-content3" scope="col"&gt;Name&lt;/th&gt;
+                          |             &lt;th class="dark:text-content3" scope="col"&gt;Country&lt;/th&gt;
+                          |             &lt;th class="dark:text-content3 rtl:!text-end" scope="col"&gt;Rating &lt;/th&gt;
+                          |         &lt;/tr&gt;
+                          |     &lt;/thead&gt;
+                          |     &lt;tbody&gt;
+                          |       &lt;tr&gt; 
+                          |         &lt;th class="dark:text-white rtl:text-right" scope="row"&gt;1&lt;/th&gt;
+                          |             &lt;td class="dark:text-white"&gt;Mrunali&lt;/td&gt;
+                          |             &lt;td class="dark:text-white"&gt;India&lt;/td&gt;
+                          |             &lt;td class="dark:text-white"&gt;
+                          |             &lt;div class="flex items-center justify-end gap-[2px]"&gt;
+                          |               &lt;i class="fa-solid fa-star text-warning"&gt; &lt;/i&gt;
+                          |               &lt;i class="fa-solid fa-star text-warning"&gt;&lt;/i&gt;
+                          |               &lt;i class="fa-solid fa-star text-warning"&gt;&lt;/i&gt;
+                          |               &lt;i class="fa-solid fa-star text-warning"&gt;&lt;/i&gt;
+                          |             &lt;/div&gt;
+                          |            &lt;/td&gt;
+                          |         &lt;/tr&gt;
+                          |       &lt;tr&gt;
+                          |       &lt;th class="dark:text-white rtl:text-right rtl:pt-4" scope="row"&gt;3&lt;/th&gt;
+                          |         &lt;td class="dark:text-white"&gt;Bright &lt;/td&gt;
+                          |         &lt;td class="dark:text-white"&gt;Thailand &lt;/td&gt;
+                          |           &lt;td&gt;
+                          |             &lt;div class="flex items-center justify-end gap-[2px]"&gt;
+                          |               &lt;i class="fa-solid fa-star text-warning"&gt;&lt;/i&gt;
+                          |               &lt;i class="fa-solid fa-star text-warning"&gt;&lt;/i&gt;
+                          |               &lt;i class="fa-solid fa-star text-warning"&gt;&lt;/i&gt;
+                          |             &lt;/div&gt;
+                          |           &lt;/td&gt;
+                          |         &lt;/tr&gt;
+                          |       &lt;/tbody&gt;
+                          |   &lt;/table&gt;
             div.col-span-6(class="md:col-span-12")
               div.card.tabs
                 div.card-header.pb-2.header-bottom-border

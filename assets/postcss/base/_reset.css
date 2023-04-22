@@ -212,7 +212,7 @@
     }
   }
   
-  html[class='dark'] {
+  /* html[class='dark'] {
     &.fontawesome-i2svg-complete{
       &.fontawesome-i2svg-active{
         .fontawesome-event{
@@ -222,7 +222,7 @@
         }
       }
     }
-  }
+  } */
 }
 .announcement-image{
   img{

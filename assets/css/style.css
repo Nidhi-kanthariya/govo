@@ -85,7 +85,7 @@
   --info-light: #b52af64d;
   --warning: #feb858;
   --warning-light: #feb8584d;
-  --danger: #f1523d;
+  --danger: #f1523d; 
   --danger-light: #f1523d4d;  
   --light: #d8ecff; 
   --dark: #44588f;  
@@ -126,12 +126,36 @@
   --instagram3: #285aeb;
 }
 
-html[class='dark'] { 
+html[class='draganddrop dark'] { 
   --White: #1f2f3e;
-  --black: #fff;
+  --black: #fff; 
   --light: #44588f;
   --dark: #d8ecff; 
-  --title: #fff;
+  --title: #fff; 
+  --border-light: #2c4050; 
+  --apex-tooltip: #17232e; 
+  --body: #00232e; 
+  --content : #9fa6ab; 
+}
+
+html[class='dark fontawesome-i2svg-active fontawesome-i2svg-complete'] { 
+  --White: #1f2f3e;
+  --black: #fff; 
+  --light: #44588f;
+  --dark: #d8ecff; 
+  --title: #fff; 
+  --border-light: #2c4050; 
+  --apex-tooltip: #17232e; 
+  --body: #00232e; 
+  --content : #9fa6ab; 
+}
+
+html[class='dark'] { 
+  --White: #1f2f3e;
+  --black: #fff; 
+  --light: #44588f;
+  --dark: #d8ecff; 
+  --title: #fff; 
   --border-light: #2c4050; 
   --apex-tooltip: #17232e; 
   --body: #00232e;
@@ -779,10 +803,17 @@ input[type='number'] {
     }
   }
 
-html[class='dark'].fontawesome-i2svg-complete.fontawesome-i2svg-active .fontawesome-event .icon-box {
-  --tw-text-opacity: 1 !important;
-  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
-}
+/* html[class='dark'] {
+    &.fontawesome-i2svg-complete{
+      &.fontawesome-i2svg-active{
+        .fontawesome-event{
+          .icon-box{
+            @apply !text-white;
+          }
+        }
+      }
+    }
+  } */
 
 body,
   html {
@@ -4396,6 +4427,11 @@ pre[class*="language-"] {
   padding: 1rem;
 }
 
+:is(.dark pre[class*="language-"] code.language-html) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 code[class*="language-"],
   pre[class*="language-"] {
   background-color: var(--gray-light);
@@ -6494,6 +6530,16 @@ header {
   border-width: 2px;
   border-style: dashed;
   border-color: rgba(var(--primary),1);
+}
+
+.recent-online {
+  border-width: 2px;
+  border-color: var(--title);
+}
+
+.recent-offline {
+  border-width: 2px;
+  border-color: rgba(var(--secondary),1);
 }
 
 .message {
@@ -11755,6 +11801,10 @@ header {
   background-color: var(--success-light);
 }
 
+.bg-title {
+  background-color: var(--title);
+}
+
 .bg-transparent {
   background-color: transparent;
 }
@@ -11820,8 +11870,16 @@ header {
   fill: rgba(var(--primary),1);
 }
 
+.fill-secondary {
+  fill: rgba(var(--secondary),1);
+}
+
 .fill-success {
   fill: var(--success);
+}
+
+.fill-title {
+  fill: var(--title);
 }
 
 .fill-warning {
@@ -17055,11 +17113,6 @@ header {
   text-align: end !important;
 }
 
-:is([dir="rtl"] .rtl\:text-white) {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 [dir=rtl] :is([dir="rtl"] .rtl\:pl-0) {
   padding-left: unset;
   padding-right: 0px;
@@ -17130,6 +17183,10 @@ header {
   right: 17px;
 }
 
+:is([dir="rtl"] .rtl\:first\:\!pl-0:first-child) {
+  padding-left: 0px !important;
+}
+
 :is([dir="rtl"] .rtl\:first\:pr-0:first-child) {
   padding-right: 0px;
 }
@@ -17139,9 +17196,23 @@ header {
   padding-right: unset;
 }
 
+[dir=rtl] :is([dir="rtl"] .rtl\:first\:\!pl-0:first-child) {
+  padding-left: unset !important;
+  padding-right: 0px !important;
+}
+
 [dir=rtl] :is([dir="rtl"] .rtl\:first\:pr-0:first-child).5 {
   padding-left: 0.125rem;
   padding-right: unset;
+}
+
+[dir=rtl] :is([dir="rtl"] .rtl\:first\:\!pl-0:first-child).\35 {
+  padding-left: unset !important;
+  padding-right: 0.125rem !important;
+}
+
+:is([dir="rtl"] .rtl\:last\:\!pr-0:last-child) {
+  padding-right: 0px !important;
 }
 
 :is([dir="rtl"] .rtl\:last\:pl-0:last-child) {
@@ -17152,9 +17223,19 @@ header {
   padding-right: unset;
 }
 
+[dir=rtl] :is([dir="rtl"] .rtl\:last\:\!pr-0:last-child) {
+  padding-left: 0px !important;
+  padding-right: unset !important;
+}
+
 [dir=rtl] :is([dir="rtl"] .rtl\:last\:pl-0:last-child) {
   padding-left: unset;
   padding-right: 0px;
+}
+
+[dir=rtl] :is([dir="rtl"] .rtl\:last\:\!pr-0:last-child).\35 {
+  padding-left: 0.125rem !important;
+  padding-right: unset !important;
 }
 
 [dir=rtl] :is([dir="rtl"] .rtl\:last\:pl-0:last-child).5 {
