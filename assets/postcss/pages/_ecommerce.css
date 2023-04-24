@@ -189,7 +189,7 @@
             @apply mb-1;
           }
         }
-        .invoice-table {
+        .invoice-table { 
           thead {
             tr {
               th {

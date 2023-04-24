@@ -36,7 +36,7 @@ shopCloseBtn?.addEventListener('click', function () {
   shopSidebar.classList.remove('show');
 });
 
-//  Grid & List view js 
+//  Grid & List view js  
 
 const gridView = document.querySelector('.grid-layout-view');
 const listView = document.querySelector('.list-layout-view');
