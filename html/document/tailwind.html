@@ -17,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
     <!-- Custom Select css-->
     <link rel="stylesheet" href="../../assets/css/vendors/custom-select.css">
+    <!-- prism css-->
+    <link rel="stylesheet" href="../../assets/css/vendors/prism.css">
     <!-- fontAwesome CSS-->
     <link rel="stylesheet" href="../../assets/css/vendors/fontawesome/all.css">
     <!-- App css-->
@@ -347,7 +349,7 @@
                               <use href="../../assets/svg/sprite.svg#Home"></use>
                             </svg></a></li>
                         <li class="px-2"> <span>/</span></li>
-                        <li class="breadcrumb-items capitalize active">Getting Started</li>
+                        <li class="breadcrumb-items capitalize active">Working With Tailwind</li>
                       </ol>
                     </nav>
                   </div>
@@ -392,39 +394,238 @@
             </nav>
           </aside>
           <!-- Page sidebar end   -->
-          <!-- Sidebar End-->
-          <!-- Page Body Start-->
         </div>
+        <!-- Sidebar End-->
+        <!-- Page Body Start-->
         <div class="page-body">
           <div class="grid grid-cols-12 gap-card-gap"> 
             <div class="card col-span-12">       
-              <div class="card-header pb-2 header-bottom-border"> 
-                <h3 class="text-lg font-bold">Let's begin</h3>
-                <p>Thank you for choosing the Govo tailwind admin template</p>
+              <div class="card-header pb-2 header-bottom-border">
+                <h3 class="text-lg font-bold">Get Started with Tailwind CSS</h3>
               </div>
-              <div class="card-body">
-                <p class="text-sm">"We are pleased that you have chosen Govo admin theme for your site and we will not disappoint you with your choice. Govo is an excellent theme develop with a concise approach. The code written is a clean and well structured."</p>
-                <p class="mt-3 text-sm text-primary"> Govo Admin is a responsive HTML template that is based on the CSS, Pure Javascript, 
-                  <mark> &nbsp;framework tailwind </mark>&nbsp;and it is built with postcss, Gulp and Pug. postcss compiler makes it easier to code and customize. If you are unfamiliar with tailwind or Gulp, visit their website and read through the documentation. All of components have been modified to fit the style of Govo Admin and provide a consistent look throughout the template.
-                </p>
-                <p class="mt-3 text-sm"> Before you start working with the template, we suggest you go through the pages that are bundled with the theme. Most of the template example pages contain quick tips on how to create or use a component which can be really helpful when you need to create something on the fly.</p>
-              </div>
-            </div>
-            <div class="card col-span-12">       
-              <div class="card-header pb-2 header-bottom-border"> 
-                <h3 class="text-lg font-bold">GOVO Dependencies</h3>
-              </div>
-              <div class="card-body">
-                <ul>
-                  <li class="text-sm leading-7">"gulp-autoprefixer": <span class="text-sm font-bold text-primary">"^8.0.0" </span></li>
-                  <li class="text-sm leading-7">"gulp-livereload": <span class="text-sm font-bold text-primary">"^4.0.2" </span></li>
-                  <li class="text-sm leading-7">"gulp-plumber": <span class="text-sm font-bold text-primary">"^1.2.1" </span></li>
-                  <li class="text-sm leading-7">"gulp-pug": <span class="text-sm font-bold text-primary">"^5.0.0" </span></li>
-                  <li class="text-sm leading-7">"gulp-purgecss": <span class="text-sm font-bold text-primary">"^4.1.3" </span></li>
-                  <li class="text-sm leading-7">"gulp-watch": <span class="text-sm font-bold text-primary">"^5.0.1" </span></li>
-                  <li class="text-sm leading-7">"save": <span class="text-sm font-bold text-primary">"^2.5.0" </span></li>
-                  <li class="text-sm leading-7">"tailwindcss-animatecss": <span class="text-sm font-bold text-primary">"^1.0.7" </span></li>
-                </ul>
+              <div class="card-body">     
+                <p>Tailwind CSS works by scanning all of your HTML files, JavaScript components, and any other templates for class names, generating the corresponding styles and then writing them to a static CSS file.</p>
+                <p> It's fast, flexible, and reliable — with zero-runtime.</p>
+                <h6 class="mt-6 mb-3 font-bold"> Installation </h6>
+                <div class="w-full tabs flex-col">
+                  <div class="tab-links flex items-center mb-[1px]">
+                    <button class="tab tabs-bordered text-xs tab-active tab-link" data-tabFilter="1">Tailwind CLI </button>
+                    <button class="tab tabs-bordered text-xs tab-link" data-tabFilter="2">Using PostCSS</button>
+                  </div>
+                  <div class="tabs-content">
+                    <div class="tab-pan fade active show first:rounded-tl-none rounded-5 !bg-gray-light dark:!bg-sidebar-dark2 !p-4" data-tabContent="1">
+                      <div class="flex flex-col gap-5">
+                        <div>
+                          <p class="text-sm">1. Install Taimodule CSS </p>
+                          <p class="mt-3 ml-5 font-normal">Install 
+                            <mark> `tailwindcss`</mark> via npm, and create your 
+                            <mark>'tailwind.config.js'</mark> file.
+                          </p>
+                          <div class="p-4 mt-4 bg-white dark:bg-sidebar-dark sm:p-2">  
+                            <div class="overflow-auto custom-scroll">
+                              <p class="pb-1 font-bold border-b text-warning border-border-light">Terminal   </p>
+                              <p class="flex items-center mt-2 text-xs text-dark">   <i class="w-4 h-4 stroke-dark" data-feather="chevron-right"> </i>npm install -D tailwindcss </p>
+                              <p class="flex items-center mt-1 text-xs text-dark">   <i class="w-4 h-4 stroke-dark" data-feather="chevron-right"> </i>npx tailwindcss init </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <p class="text-sm">2. Configure your template paths</p>
+                          <p class="mt-3 ml-5 font-normal">Add the paths to all of your template files in your 
+                            <mark>'tailwind.config.js'</mark> file.
+                          </p>
+                          <div class="p-4 mt-4 bg-white dark:bg-sidebar-dark sm:p-2">  
+                            <div class="overflow-auto custom-scroll">
+                              <p class="pb-1 font-bold border-b text-warning border-border-light">tailwind.config.js   </p>
+                              <div class="flex mt-2">   
+                                <div class="text-xs text-dark">
+                                  <pre>/* @type {import('tailwindcss').Config} */
+  module.exports = {
+    content: ["./**/*.{html,js}"],
+    theme: {
+      block text-sm extend: {},
+    },
+    plugins: [],
+  }</pre>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <p class="text-sm">3. Add the Tailwind directives to your CSS</p>
+                          <p class="mt-3 ml-5 font-normal">Add the 
+                            <mark>`@tailwind`</mark> directives for each of Tailwind’s layers to your main CSS file.
+                          </p>
+                          <div class="p-4 mt-4 bg-white dark:bg-sidebar-dark sm:p-2">  
+                            <div class="overflow-auto custom-scroll">
+                              <p class="pb-1 font-bold border-b text-warning border-border-light">src/input.css   </p>
+                              <p class="flex mt-2 text-xs text-dark">
+                                    @tailwind base;</p>
+                              <p class="flex mt-1 text-xs text-dark">
+                                    @tailwind components;</p>
+                              <p class="flex mt-1 text-xs text-dark">
+                                    @tailwind utilities;             </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <p class="text-sm">4. tart the Tailwind CLI build process</p>
+                          <p class="mt-3 ml-5 font-normal">Run the CLI tool to scan your template files for classes and build your CSS.</p>
+                          <div class="p-4 mt-4 bg-white dark:bg-sidebar-dark sm:p-2">  
+                            <div class="overflow-auto custom-scroll">
+                              <p class="pb-1 font-bold border-b text-warning border-border-light">Terminal  </p>
+                              <p class="flex mt-2 text-xs text-dark">
+                                    npx tailwindcss -i ./input.css -o ./dist/output.css --watch</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <p class="text-sm">5. Start using Tailwind in your HTML</p>
+                          <p class="mt-3 ml-5 font-normal">Add your compiled CSS file to the 
+                            <mark>`&lt;head&gt;`</mark> and start using Tailwind’s utility classes to style your content.
+                          </p>
+                          <div class="p-4 mt-4 bg-white dark:bg-sidebar-dark sm:p-2">  
+                            <div class="text-sm text-content3 ">
+                              <div class="overflow-auto custom-scroll">
+                                <p class="pb-1 font-bold border-b text-warning border-border-light">index.html   </p>
+                                <div class="mt-2"><code class="text-xs text-bold text-dark"><span class="block text-xs"> &lt;!doctype html&gt;</span><span class="block text-xs"> &lt;html&gt;</span><span class="block text-xs"> &lt;head&gt;</span><span class="block ml-5 text-xs">
+                                       &lt;meta  charset=&quot;UTR-8&quot;&gt; </span><span class="block ml-5 text-xs">&lt;meta  name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; &gt;</span><span class="block ml-5 text-xs">
+                                       &lt;link  href=&quot;/dist/output.css&quot; rel=&quot;stylesheet&quot;&gt;</span><span class="block text-xs"> &lt;/head&gt;</span><span class="block text-xs"> &lt;body&gt;</span><span class="block ml-5 text-xs">
+                                       &lt;h1  class=&quot;text-3xl font-bold underline&quot;&gt;</span><span class="block ml-5 text-xs">
+                                       Hello world!</span><span class="block ml-5 text-xs">
+                                       &lt;/h1&gt;</span><span class="block text-xs"> &lt;/body&gt;</span><span class="block text-xs"> &lt;/html  &gt;</span></code></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pan fade group relative first:rounded-tl-none rounded-5 !bg-gray-light dark:!bg-sidebar-dark2 !p-4" data-tabContent="2">
+                      <div class="flex flex-col gap-5">
+                        <div> 
+                          <p class="text-sm">1. Install Tailwind CSS</p>
+                          <p class="mt-3 ml-5 font-normal">Install 
+                            <mark>`tailwindcss`</mark> and its peer dependencies via npm, and create your 
+                            <mark>`tailwind.config.js`</mark> file.
+                          </p>
+                          <div class="p-4 mt-4 bg-white dark:bg-sidebar-dark sm:p-2">  
+                            <div class="text-sm text-content3">
+                              <div class="overflow-auto custom-scroll">
+                                <p class="py-1 font-bold border-b text-warning border-t-transparent border-border-light">Terminal   </p>
+                                <p class="flex items-center mt-2 text-xs text-dark">   <i class="w-4 h-4 stroke-dark" data-feather="chevron-right">   </i>npm install -D tailwindcss postcss autoprefixer</p>
+                                <p class="flex items-center mt-1 text-xs text-dark">   <i class="w-4 h-4 stroke-dark" data-feather="chevron-right">   </i>npx tailwindcss init   </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div> 
+                          <p class="text-sm">2. Add Tailwind to your PostCSS configuration</p>
+                          <p class="mt-3 ml-5 font-normal">Add 
+                            <mark>`tailwindcss`</mark> and 
+                            <mark>`autoprefixer`</mark> to your
+                            <mark>`postcss.config.js`</mark> file, or wherever PostCSS is configured in your project.
+                          </p>
+                          <div class="p-4 mt-4 bg-white dark:bg-sidebar-dark sm:p-2">  
+                            <div class="text-sm text-content3">
+                              <div class="overflow-auto custom-scroll">
+                                <p class="py-1 font-bold border-b text-warning border-t-transparent border-border-light">postcss.config.js  </p>
+                                <div class="flex mt-2">   
+                                  <div class="text-xs text-bold text-dark">
+                                    <pre> module.exports = {
+  plugins: {
+     tailwindcss: {},
+     autoprefixer: {},
+  }
+} </pre>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div> 
+                          <p class="text-sm">3. Configure your template paths</p>
+                          <p class="mt-3 ml-5 font-normal">Add the paths to all of your template files in your
+                            <mark>`tailwind.config.js`</mark> file.
+                          </p>
+                          <div class="p-4 mt-4 bg-white dark:bg-sidebar-dark sm:p-2">  
+                            <div class="text-sm text-content3">
+                              <div class="overflow-auto custom-scroll">
+                                <p class="py-1 font-bold border-b text-warning border-t-transparent border-border-light">tailwind.config.js  </p>
+                                <div class="flex mt-2">   
+                                  <div class="text-xs text-bold text-dark"> 
+                                    <pre> /* @type {import('tailwindcss').Config} */
+ module.exports = {
+    content: ["./**/*.{html,js}"],
+    theme: {
+       extend: {},
+    },
+    plugins: [],
+ }                          </pre>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <p class="text-sm">4. Add the Tailwind directives to your CSS</p>
+                          <p class="mt-3 ml-5 font-normal">Add the 
+                            <mark>`@tailwind`</mark> directives for each of Tailwind’s layers to your main CSS file.
+                          </p>
+                          <div class="p-4 mt-4 bg-white dark:bg-sidebar-dark sm:p-2">  
+                            <div class="text-sm text-content3">
+                              <div class="overflow-auto custom-scroll">
+                                <p class="py-1 font-bold border-b text-warning border-t-transparent border-border-light">main.css  </p>
+                                <p class="flex mt-2 text-xs text-dark">
+                                      @tailwind base;</p>
+                                <p class="flex mt-1 text-xs text-dark">
+                                      @tailwind components;</p>
+                                <p class="flex mt-1 text-xs text-dark">
+                                      @tailwind utilities;</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <p class="text-sm">5. Start your build process</p>
+                          <p class="mt-3 ml-5 font-normal">Run your build process with 
+                            <mark>`npm run dev`</mark>  or whatever command is configured in your 
+                            <mark>`package.json`</mark> file.
+                          </p>
+                          <div class="p-4 mt-4 bg-white dark:bg-sidebar-dark sm:p-2">  
+                            <div class="text-sm text-content3">
+                              <div class="overflow-auto custom-scroll">
+                                <p class="py-1 font-bold border-b text-warning border-t-transparent border-border-light">Terminal   </p>
+                                <p class="flex items-center mt-2 text-xs text-dark">   <i class="w-4 h-4 stroke-dark" data-feather="chevron-right">  </i>npm run dev</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <p class="text-sm">6.Start using Tailwind in your HTML</p>
+                          <p class="mt-3 ml-5 font-normal">Make sure your compiled CSS is included in the 
+                            <mark>`&lt;head&gt;`</mark> (your framework might handle this for you), then start using Tailwind’s utility classes to style your content.
+                          </p>
+                          <div class="p-4 mt-4 bg-white dark:bg-sidebar-dark sm:p-2">  
+                            <div class="text-sm text-content3">
+                              <div class="overflow-auto custom-scroll">
+                                <p class="py-1 font-bold border-b text-warning border-t-transparent border-border-light">index.html   </p>
+                                <div class="mt-2"> <code class="text-xs text-bold text-dark"><span class="block text-xs">&lt;!doctype html&gt;</span><span class="block text-xs">&lt;html&gt;</span><span class="block text-xs">&lt;head&gt;</span><span class="block ml-5 text-xs">
+                                       &lt;meta  charset=&quot;UTR-8&quot;&gt; </span><span class="block ml-5 text-xs">&lt;meta  name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; &gt;</span><span class="block ml-5 text-xs">
+                                       &lt;link  href=&quot; /dist/main.css  &quot; rel=&quot;stylesheet&quot;&gt;</span><span class="block text-xs">&lt;/head&gt;</span><span class="block text-xs">&lt;body&gt;</span><span class="block ml-5 text-xs">
+                                       &lt;h1  class=&quot;text-3xl font-bold underline&quot;&gt;</span><span class="block ml-5 text-xs">
+                                       Hello world!</span><span class="block ml-5 text-xs">
+                                       &lt;/h1&gt;</span><span class="block text-xs">&lt;/body&gt;</span><span class="block text-xs"> &lt;/html&gt; </span></code></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -518,6 +719,8 @@
   <script src="../../assets/js/feather-custom.js"></script>
   <!-- Select Js -->
   <script src="../../assets/js/custom-select.js"></script>
+  <!-- prism js-->
+  <script src="../../assets/js/prism.js"></script>
   <!-- Sidebar Js -->
   <script src="../../assets/js/sidebar.js"></script>
   <!-- fontAwesome js-->
