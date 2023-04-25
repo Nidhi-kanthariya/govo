@@ -17,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
     <!-- Custom Select css-->
     <link rel="stylesheet" href="../../assets/css/vendors/custom-select.css">
+    <!-- prism css-->
+    <link rel="stylesheet" href="../../assets/css/vendors/prism.css">
     <!-- fontAwesome CSS-->
     <link rel="stylesheet" href="../../assets/css/vendors/fontawesome/all.css">
     <!-- App css-->
@@ -347,7 +349,7 @@
                               <use href="../../assets/svg/sprite.svg#Home"></use>
                             </svg></a></li>
                         <li class="px-2"> <span>/</span></li>
-                        <li class="breadcrumb-items capitalize active">Getting Started</li>
+                        <li class="breadcrumb-items capitalize active">Layouts</li>
                       </ol>
                     </nav>
                   </div>
@@ -392,39 +394,110 @@
             </nav>
           </aside>
           <!-- Page sidebar end   -->
-          <!-- Sidebar End-->
-          <!-- Page Body Start-->
         </div>
+        <!-- Sidebar End-->
+        <!-- Page Body Start-->
         <div class="page-body">
           <div class="grid grid-cols-12 gap-card-gap"> 
             <div class="card col-span-12">       
-              <div class="card-header pb-2 header-bottom-border"> 
-                <h3 class="text-lg font-bold">Let's begin</h3>
-                <p>Thank you for choosing the Govo tailwind admin template</p>
+              <div class="card-header pb-2 header-bottom-border">
+                <h3 class="text-lg font-bold">Get Started with Tailwind CSS</h3>
               </div>
-              <div class="card-body">
-                <p class="text-sm">"We are pleased that you have chosen Govo admin theme for your site and we will not disappoint you with your choice. Govo is an excellent theme develop with a concise approach. The code written is a clean and well structured."</p>
-                <p class="mt-3 text-sm text-primary"> Govo Admin is a responsive HTML template that is based on the CSS, Pure Javascript, 
-                  <mark> &nbsp;framework tailwind </mark>&nbsp;and it is built with postcss, Gulp and Pug. postcss compiler makes it easier to code and customize. If you are unfamiliar with tailwind or Gulp, visit their website and read through the documentation. All of components have been modified to fit the style of Govo Admin and provide a consistent look throughout the template.
-                </p>
-                <p class="mt-3 text-sm"> Before you start working with the template, we suggest you go through the pages that are bundled with the theme. Most of the template example pages contain quick tips on how to create or use a component which can be really helpful when you need to create something on the fly.</p>
-              </div>
-            </div>
-            <div class="card col-span-12">       
-              <div class="card-header pb-2 header-bottom-border"> 
-                <h3 class="text-lg font-bold">GOVO Dependencies</h3>
-              </div>
-              <div class="card-body">
-                <ul>
-                  <li class="text-sm leading-7">"gulp-autoprefixer": <span class="text-sm font-bold text-primary">"^8.0.0" </span></li>
-                  <li class="text-sm leading-7">"gulp-livereload": <span class="text-sm font-bold text-primary">"^4.0.2" </span></li>
-                  <li class="text-sm leading-7">"gulp-plumber": <span class="text-sm font-bold text-primary">"^1.2.1" </span></li>
-                  <li class="text-sm leading-7">"gulp-pug": <span class="text-sm font-bold text-primary">"^5.0.0" </span></li>
-                  <li class="text-sm leading-7">"gulp-purgecss": <span class="text-sm font-bold text-primary">"^4.1.3" </span></li>
-                  <li class="text-sm leading-7">"gulp-watch": <span class="text-sm font-bold text-primary">"^5.0.1" </span></li>
-                  <li class="text-sm leading-7">"save": <span class="text-sm font-bold text-primary">"^2.5.0" </span></li>
-                  <li class="text-sm leading-7">"tailwindcss-animatecss": <span class="text-sm font-bold text-primary">"^1.0.7" </span></li>
-                </ul>
+              <div class="card-body">   
+                <h5 class="flex mb-4 font-semibold">How to use layouts ?</h5>
+                <div class="grid grid-cols-12 gap-card-gap">
+                  <div class="col-span-4 p-5 border border-border-light xl:col-span-6 sm:col-span-12">
+                    <div class="gap-0 p-0 rounded-none card"><a href="#"><img src="../../assets/images/document/full-sidebar.png" alt="img"></a></div>
+                    <div class="mt-3 mb-3 text-center text-accent">
+                      <p class="font-bold">Full Sidebar</p>
+                      <p class="mt-1">by default all pages with full sidebar
+                        <div class="p-4 mt-4 bg-gray-light dark:bg-sidebar-dark2 sm:p-2">
+                          <div class="overflow-auto text-xs custom-scroll text-dark sm:p-2">
+                            <pre class="text-xs ms-1">&lt;html lang=&quot;en&quot;&gt; </pre>
+                          </div>
+                        </div>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-span-4 p-5 border border-border-light xl:col-span-6 sm:col-span-12">
+                    <div class="gap-0 p-0 rounded-none card"><a href="#"><img src="../../assets/images/document/light.png" alt="img"></a></div>
+                    <div class="mt-3 mb-3 text-center text-accent">
+                      <p class="font-bold">Light</p>
+                      <p class="mt-1">by default all pages are in light version
+                        <div class="p-4 mt-4 bg-gray-light dark:bg-sidebar-dark2 sm:p-2">
+                          <div class="overflow-auto text-xs custom-scroll text-dark sm:p-2">
+                            <pre class="text-xs ms-1">&lt;html lang=&quot;en&quot;&gt;  </pre>
+                          </div>
+                        </div>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-span-4 p-5 border border-border-light xl:col-span-6 sm:col-span-12">
+                    <div class="gap-0 p-0 rounded-none card"><a href="#"><img src="../../assets/images/document/dark.png" alt="img"></a></div>
+                    <div class="mt-3 mb-3 text-center text-accent">
+                      <p class="font-bold">Dark</p>
+                      <div class="mt-1 text-xs">for create dark layout just need to add dark class to html tag 
+                        <div class="p-4 mt-4 bg-gray-light dark:bg-sidebar-dark2 sm:p-2">
+                          <div class="overflow-auto text-xs custom-scroll text-dark sm:p-2">
+                            <pre class="text-xs ms-1">&lt;html lang=&quot;en&quot; class=&quot;dark&quot;&gt;  </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-span-4 p-5 border border-border-light xl:col-span-6 sm:col-span-12">
+                    <div class="gap-0 p-0 rounded-none card"><a href="#"> <img src="../../assets/images/document/ltr.png" alt="img"></a></div>
+                    <div class="mt-3 mb-3 text-center text-accent">
+                      <p class="font-bold">LTR</p>
+                      <div class="mt-1 text-xs">for create ltr layout just need to apply dir="ltr" to body tag
+                        <div class="p-4 mt-4 bg-gray-light dark:bg-sidebar-dark2 sm:p-2">
+                          <div class="overflow-auto text-sm custom-scroll text-dark sm:p-2">
+                            <pre class="text-xs ms-1">&lt;body dir=&quot;ltr&quot;&gt;    </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-span-4 p-5 border border-border-light xl:col-span-6 sm:col-span-12">
+                    <div class="gap-0 p-0 rounded-none card"><a href="#"><img src="../../assets/images/document/rtl.png" alt="img"></a></div>
+                    <div class="mt-3 mb-3 text-center text-accent">
+                      <p class="font-bold">RTL</p>
+                      <div class="mt-1 text-xs">for create rtl layout just need to apply dir="rtl" to body tag 
+                        <div class="p-4 mt-4 bg-gray-light dark:bg-sidebar-dark2 sm:p-2">
+                          <div class="overflow-auto text-sm custom-scroll text-dark sm:p-2">
+                            <pre class="text-xs ms-1"> &lt;body dir=&quot;rtl&quot;&gt;     </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-span-4 p-5 border border-border-light xl:col-span-6 sm:col-span-12">
+                    <div class="gap-0 p-0 rounded-none card"><a href="#"><img src="../../assets/images/document/icon-sidebar.png" alt="img"></a></div>
+                    <div class="mt-3 mb-3 text-center text-accent">
+                      <p class="font-bold">Icon Sidebar</p>
+                      <div class="mt-1 text-xs">add sidebar-close sidebar-icon class along with
+                        <div class="p-4 mt-4 bg-gray-light dark:bg-sidebar-dark2 sm:p-2">
+                          <div class="overflow-auto text-sm custom-scroll text-dark sm:p-2">
+                            <pre class="text-xs ms-1">&lt;main class=&quot;page-wrapper sidebar-close sidebar-icon&quot;&gt;  </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-span-4 p-5 border border-border-light xl:col-span-6 sm:col-span-12">
+                    <div class="gap-0 p-0 rounded-none card"><a href="#"><img src="../../assets/images/document/monochrome-mode.png" alt="img"></a></div>
+                    <div class="mt-3 mb-3 text-center text-accent">
+                      <p class="font-bold">Monochrome Mode</p>
+                      <div class="mt-1 text-xs">add class="monochrome-mode" to body tag 
+                        <div class="p-4 mt-4 bg-gray-light dark:bg-sidebar-dark2 sm:p-2">
+                          <div class="overflow-auto text-sm custom-scroll text-dark sm:p-2">
+                            <pre class="text-xs ms-1">&lt;body dir=&quot;ltr&quot; class=&quot;monochrome-mode&quot;&gt;     </pre>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -518,6 +591,8 @@
   <script src="../../assets/js/feather-custom.js"></script>
   <!-- Select Js -->
   <script src="../../assets/js/custom-select.js"></script>
+  <!-- prism js-->
+  <script src="../../assets/js/prism.js"></script>
   <!-- Sidebar Js -->
   <script src="../../assets/js/sidebar.js"></script>
   <!-- fontAwesome js-->

@@ -17,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
     <!-- Custom Select css-->
     <link rel="stylesheet" href="../../assets/css/vendors/custom-select.css">
+    <!-- prism css-->
+    <link rel="stylesheet" href="../../assets/css/vendors/prism.css">
     <!-- fontAwesome CSS-->
     <link rel="stylesheet" href="../../assets/css/vendors/fontawesome/all.css">
     <!-- App css-->
@@ -347,7 +349,7 @@
                               <use href="../../assets/svg/sprite.svg#Home"></use>
                             </svg></a></li>
                         <li class="px-2"> <span>/</span></li>
-                        <li class="breadcrumb-items capitalize active">Getting Started</li>
+                        <li class="breadcrumb-items capitalize active">Remove Customizer</li>
                       </ol>
                     </nav>
                   </div>
@@ -392,39 +394,47 @@
             </nav>
           </aside>
           <!-- Page sidebar end   -->
-          <!-- Sidebar End-->
-          <!-- Page Body Start-->
         </div>
+        <!-- Sidebar End-->
+        <!-- Page Body Start-->
         <div class="page-body">
           <div class="grid grid-cols-12 gap-card-gap"> 
-            <div class="card col-span-12">       
-              <div class="card-header pb-2 header-bottom-border"> 
-                <h3 class="text-lg font-bold">Let's begin</h3>
-                <p>Thank you for choosing the Govo tailwind admin template</p>
+            <div class="card col-span-12">    
+              <div class="card-header pb-2 header-bottom-border">
+                <h3 class="text-lg font-bold">Remove Customizer</h3>
+                <p>Follow below steps to remove that button</p>
               </div>
-              <div class="card-body">
-                <p class="text-sm">"We are pleased that you have chosen Govo admin theme for your site and we will not disappoint you with your choice. Govo is an excellent theme develop with a concise approach. The code written is a clean and well structured."</p>
-                <p class="mt-3 text-sm text-primary"> Govo Admin is a responsive HTML template that is based on the CSS, Pure Javascript, 
-                  <mark> &nbsp;framework tailwind </mark>&nbsp;and it is built with postcss, Gulp and Pug. postcss compiler makes it easier to code and customize. If you are unfamiliar with tailwind or Gulp, visit their website and read through the documentation. All of components have been modified to fit the style of Govo Admin and provide a consistent look throughout the template.
-                </p>
-                <p class="mt-3 text-sm"> Before you start working with the template, we suggest you go through the pages that are bundled with the theme. Most of the template example pages contain quick tips on how to create or use a component which can be really helpful when you need to create something on the fly.</p>
-              </div>
-            </div>
-            <div class="card col-span-12">       
-              <div class="card-header pb-2 header-bottom-border"> 
-                <h3 class="text-lg font-bold">GOVO Dependencies</h3>
-              </div>
-              <div class="card-body">
-                <ul>
-                  <li class="text-sm leading-7">"gulp-autoprefixer": <span class="text-sm font-bold text-primary">"^8.0.0" </span></li>
-                  <li class="text-sm leading-7">"gulp-livereload": <span class="text-sm font-bold text-primary">"^4.0.2" </span></li>
-                  <li class="text-sm leading-7">"gulp-plumber": <span class="text-sm font-bold text-primary">"^1.2.1" </span></li>
-                  <li class="text-sm leading-7">"gulp-pug": <span class="text-sm font-bold text-primary">"^5.0.0" </span></li>
-                  <li class="text-sm leading-7">"gulp-purgecss": <span class="text-sm font-bold text-primary">"^4.1.3" </span></li>
-                  <li class="text-sm leading-7">"gulp-watch": <span class="text-sm font-bold text-primary">"^5.0.1" </span></li>
-                  <li class="text-sm leading-7">"save": <span class="text-sm font-bold text-primary">"^2.5.0" </span></li>
-                  <li class="text-sm leading-7">"tailwindcss-animatecss": <span class="text-sm font-bold text-primary">"^1.0.7" </span></li>
-                </ul>
+              <div class="card-body"> 
+                <div class="flex flex-col gap-5">     
+                  <div>
+                    <h6 class="font-semibold"> When using Html</h6>
+                    <div class="mt-3 ml-5 text-sm">1. Every html file has a customizer section.You just remove that section 
+                      <div class="p-4 mt-4 bg-gray-light dark:bg-sidebar-dark2 sm:p-2">
+                        <div class="overflow-auto text-dark sm:p-2">
+                          <pre class="text-xs"><span class="block text-xs">&lt;li class=&quot;cursor-pointer flex customizer-btn items-center justify-center </span>  px-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] rtl:border-l sm:rtl:last:pl-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] 
+  rtl:border-r-0 first:pl-0 last:pr-0 last:border-none sm:last:pr-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] 
+  sm:last:border-r sm:last:border-solid border-r border-border-light dark:border-border-dark&quot;&gt;<span class="block text-xs"> ...</span><span class="block text-xs">&lt;/li&gt;</span></pre>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mt-5 ml-5 text-sm">2. There is a script in the same file, remove the script from too                              
+                      <div class="p-4 mt-4 bg-gray-light dark:bg-sidebar-dark2 sm:p-2">
+                        <div class="overflow-auto text-dark sm:p-2">
+                          <pre class="text-xs"><span class="block text-xs">&lt;!-- Template Customizer --&gt;</span><span class="block text-xs">&lt;script  src=&quot;../../assets/js/customizer.js&quot;&gt;&lt;/script&gt;</span></pre>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>   
+                    <h6 class="font-semibold"> When using pug   </h6>
+                    <p class="mt-3 ml-5 text-sm">  Add the code in the first line of the pug file to remove it from the pug file</p>
+                    <div class="p-4 mt-4 ml-5 bg-gray-light dark:bg-sidebar-dark2 sm:p-2">
+                      <div class="overflow-auto text-dark sm:p-2">
+                        <pre class="text-xs"><span class="block text-xs">&quot;-var customizer = false;&quot; </span></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -518,6 +528,8 @@
   <script src="../../assets/js/feather-custom.js"></script>
   <!-- Select Js -->
   <script src="../../assets/js/custom-select.js"></script>
+  <!-- prism js-->
+  <script src="../../assets/js/prism.js"></script>
   <!-- Sidebar Js -->
   <script src="../../assets/js/sidebar.js"></script>
   <!-- fontAwesome js-->

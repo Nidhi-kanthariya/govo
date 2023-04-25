@@ -31,7 +31,7 @@
             <div class="py-[11px] flex items-center xl:relative justify-between px-body-space">
               <div class="left-header flex items-center gap-2"> 
                 <button class="sidebar-toggle hide"> <i class="w-6 h-6 4xl:w-5 4xl:h-5 stroke-title" data-feather="grid"></i></button>
-                <h1 class="flex items-center gap-1 text-xl font-extrabold leading-none sm:hidden dark:text-white 4xl:text-lg">Govo</h1>
+                <h1 class="flex items-center gap-1 text-xl font-extrabold leading-none sm:hidden dark:text-white 4xl:text-lg">File Structure</h1>
               </div>
               <div class="right-header flex items-center flex-1 sm:gap-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] gap-[calc(16px_+_(20_-_16)_*_((100vw_-_320px)_/_(1920_-_320)))]  justify-end">
                 <div class="search-box-wrapper transition-all duration-300 max-w-[40%] 2xl:scale-0 2xl:opacity-0 2xl:invisible 2xl:px-body-space 2xl:max-w-full w-full 2xl:z-[5] flex-1 2xl:absolute 2xl:left-0">
@@ -344,10 +344,10 @@
                       <ol class="breadcrumb-list">
                         <li class="breadcrumb-items"><a href="index.html">
                             <svg class="w-5 h-5"> 
-                              <use href="../../assets/svg/sprite.svg#Home"></use>
+                              <use href="../../assets/svg/sprite.svg#Home"> </use>
                             </svg></a></li>
                         <li class="px-2"> <span>/</span></li>
-                        <li class="breadcrumb-items capitalize active">Getting Started</li>
+                        <li class="breadcrumb-items capitalize active">File Structure</li>
                       </ol>
                     </nav>
                   </div>
@@ -357,7 +357,7 @@
                       <option selected value="">Last 7 Days </option>
                       <option value="">Last 2 Weeks </option>
                       <option value="">Last 1 Month </option>
-                      <option value="">Last 3 Month     </option>
+                      <option value="">Last 3 Month    </option>
                     </select>
                   </div>
                 </div>
@@ -392,39 +392,146 @@
             </nav>
           </aside>
           <!-- Page sidebar end   -->
-          <!-- Sidebar End-->
-          <!-- Page Body Start-->
         </div>
+        <!-- Sidebar End -->
+        <!-- Page Body Start-->
         <div class="page-body">
           <div class="grid grid-cols-12 gap-card-gap"> 
-            <div class="card col-span-12">       
-              <div class="card-header pb-2 header-bottom-border"> 
-                <h3 class="text-lg font-bold">Let's begin</h3>
-                <p>Thank you for choosing the Govo tailwind admin template</p>
+            <div class="card col-span-12">        
+              <div class="card-header pb-2 header-bottom-border">
+                <h3 class="text-lg font-bold">File Structure</h3>
+                <p>Here you can write subtitle here</p>
               </div>
-              <div class="card-body">
-                <p class="text-sm">"We are pleased that you have chosen Govo admin theme for your site and we will not disappoint you with your choice. Govo is an excellent theme develop with a concise approach. The code written is a clean and well structured."</p>
-                <p class="mt-3 text-sm text-primary"> Govo Admin is a responsive HTML template that is based on the CSS, Pure Javascript, 
-                  <mark> &nbsp;framework tailwind </mark>&nbsp;and it is built with postcss, Gulp and Pug. postcss compiler makes it easier to code and customize. If you are unfamiliar with tailwind or Gulp, visit their website and read through the documentation. All of components have been modified to fit the style of Govo Admin and provide a consistent look throughout the template.
-                </p>
-                <p class="mt-3 text-sm"> Before you start working with the template, we suggest you go through the pages that are bundled with the theme. Most of the template example pages contain quick tips on how to create or use a component which can be really helpful when you need to create something on the fly.</p>
-              </div>
-            </div>
-            <div class="card col-span-12">       
-              <div class="card-header pb-2 header-bottom-border"> 
-                <h3 class="text-lg font-bold">GOVO Dependencies</h3>
-              </div>
-              <div class="card-body">
-                <ul>
-                  <li class="text-sm leading-7">"gulp-autoprefixer": <span class="text-sm font-bold text-primary">"^8.0.0" </span></li>
-                  <li class="text-sm leading-7">"gulp-livereload": <span class="text-sm font-bold text-primary">"^4.0.2" </span></li>
-                  <li class="text-sm leading-7">"gulp-plumber": <span class="text-sm font-bold text-primary">"^1.2.1" </span></li>
-                  <li class="text-sm leading-7">"gulp-pug": <span class="text-sm font-bold text-primary">"^5.0.0" </span></li>
-                  <li class="text-sm leading-7">"gulp-purgecss": <span class="text-sm font-bold text-primary">"^4.1.3" </span></li>
-                  <li class="text-sm leading-7">"gulp-watch": <span class="text-sm font-bold text-primary">"^5.0.1" </span></li>
-                  <li class="text-sm leading-7">"save": <span class="text-sm font-bold text-primary">"^2.5.0" </span></li>
-                  <li class="text-sm leading-7">"tailwindcss-animatecss": <span class="text-sm font-bold text-primary">"^1.0.7" </span></li>
-                </ul>
+              <div class="card-body"> 
+                <div class="tree-container">
+                  <div> 
+                    <ul class="mb-0">
+                      <li class="p-0">  <a class="block text-xl font-bold tree-head">GOVO</a></li>
+                      <li>
+                        <div class="relative tree-content">
+                          <div class="block hed-folder"><a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"></i>html</a></div>
+                          <ul class="relative second-list">
+                            <li class="relative sec-line">    <a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"></i>document</a></li>
+                            <li class="relative sec-line">    <a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"> </i>starter_kit</a></li>
+                            <li class="relative sec-line">    <a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"></i>template        </a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="relative tree-content">
+                          <div class="hed-folder relative">
+                            <div class="block hed-folder"><a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"></i>assets  </a></div>
+                            <ul class="relative second-list">
+                              <li class="relative sec-line">    <a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"> </i>css </a>
+                                <ul class="relative tree-content">
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>style.css </a></li>
+                                  <li class="block hed-2-folder"><a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"></i>vendors </a></li>
+                                </ul>
+                              </li>
+                              <li class="relative sec-line">    <a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"> </i>fonts </a>
+                                <ul class="relative tree-content">
+                                  <li class="block hed-2-folder"><a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"></i>font-awesome</a></li>
+                                </ul>
+                              </li>
+                              <li class="relative sec-line">    <a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"> </i>images</a></li>
+                              <li class="relative sec-line">    <a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"> </i>js</a>
+                                <ul class="relative tree-content">
+                                  <li class="block hed-2-folder"><a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"></i>apexchart</a></li>
+                                  <li class="block hed-2-folder"><a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"></i>calendar </a></li>
+                                  <li class="block hed-2-folder"><a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"></i>chartjs </a></li>
+                                  <li class="block hed-2-folder"><a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"></i>chat-app</a></li>
+                                  <li class="block hed-2-folder"><a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"></i>ecommerce-app </a></li>
+                                  <li class="block hed-2-folder"><a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"></i>swiper-slider</a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>email-app</a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>emoji-picker </a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>filepond </a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>fontawesome </a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>map </a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>photoswipe </a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>swiper-slider</a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>todo </a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>custom-select.js </a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>customizer.js </a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>dark-layout.js </a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>dropzone.js </a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>feather-custom.js </a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>feather.min.js</a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>fullcalender-custom.js </a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>fullcalender.js </a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>grid-list-view.js </a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>icon-copy.js </a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>jkanban-custom.js</a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>jkanban.min.js </a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>macy.js</a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>macy.min.js </a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>otp.js </a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>prism.js </a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>script.js </a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>sidebar.js</a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>text-editor.js</a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>todo-app.js </a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>user-profile-custom.js</a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>validation.init.js </a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>vector-map-custom.js </a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>vectormap.js </a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>wow-custom.js </a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>wow.js</a></li>
+                                </ul>
+                              </li>
+                              <li class="relative sec-line">    <a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"> </i>postcss</a>
+                                <ul class="relative tree-content">
+                                  <li class="block hed-2-folder"><a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"></i>base</a></li>
+                                  <li class="block hed-2-folder"><a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"></i>components </a></li>
+                                  <li class="block hed-2-folder"><a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"></i>layout</a></li>
+                                  <li class="block hed-2-folder"><a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"></i>pages</a></li>
+                                  <li class="block hed-2-folder"><a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"></i>utils</a></li>
+                                  <li class="block hed-2-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>style.css</a></li>
+                                </ul>
+                              </li>
+                              <li class="relative sec-line">    <a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"> </i>pug</a>
+                                <ul class="relative four-content">
+                                  <li class="block hed-2-folder"><a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"></i>components </a>
+                                    <ul class="relative five-content">
+                                      <li class="block hed-4-folder"><a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"></i>table </a></li>
+                                    </ul>
+                                  </li>
+                                  <li class="block hed-2-folder"><a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"></i>data </a></li>
+                                  <li class="block hed-2-folder"><a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"></i>layout </a></li>
+                                  <li class="block hed-2-folder"><a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"></i>mixin </a></li>
+                                  <li class="block hed-2-folder"><a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"></i>pages </a>
+                                    <ul class="relative five-content">
+                                      <li class="block hed-4-folder"><a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"></i>document </a></li>
+                                      <li class="block hed-4-folder"><a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"></i>starter_kit </a></li>
+                                      <li class="block hed-4-folder"><a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"></i>template</a></li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <div class="relative tree-content">
+                        <div class="block hed-folder"><a class="flex text-primary"><i class="w-5 mr-2" data-feather="folder"></i>node_modules</a></div>
+                      </div>
+                      <div class="relative tree-content">
+                        <div class="block hed-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>gulpfile.js</a></div>
+                      </div>
+                      <div class="relative tree-content">
+                        <div class="block hed-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>package-lock.json </a></div>
+                      </div>
+                      <div class="relative tree-content">
+                        <div class="block hed-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>package.json</a></div>
+                      </div>
+                      <div class="relative tree-content">
+                        <div class="block hed-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>postcss.config.js </a></div>
+                      </div>
+                      <div class="relative tree-content">
+                        <div class="block hed-folder"><a class="flex font-gray-500"><i class="w-5 mr-2" data-feather="file"></i>tailwind.config.js</a></div>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -512,18 +619,18 @@
         </div>
       </div>
     </main>
+    <!-- Feather Icon Js -->
+    <script src="../../assets/js/feather.min.js"></script>
+    <script src="../../assets/js/feather-custom.js"></script>
+    <!-- Select Js -->
+    <script src="../../assets/js/custom-select.js"></script>
+    <!-- Sidebar Js -->
+    <script src="../../assets/js/sidebar.js"></script>
+    <!-- fontAwesome js-->
+    <script src="../../assets/js/fontawesome/all.min.js"></script>
+    <!-- customizer js-->
+    <script src="../../assets/js/customizer.js"> </script>
+    <!-- Custom script   -->
+    <script src="../../assets/js/script.js">  </script>
   </body>
-  <!-- Feather Icon Js -->
-  <script src="../../assets/js/feather.min.js"></script>
-  <script src="../../assets/js/feather-custom.js"></script>
-  <!-- Select Js -->
-  <script src="../../assets/js/custom-select.js"></script>
-  <!-- Sidebar Js -->
-  <script src="../../assets/js/sidebar.js"></script>
-  <!-- fontAwesome js-->
-  <script src="../../assets/js/fontawesome/all.min.js"></script>
-  <!-- customizer js-->
-  <script src="../../assets/js/customizer.js"> </script>
-  <!-- Custom script   -->
-  <script src="../../assets/js/script.js">  </script>
 </html>
