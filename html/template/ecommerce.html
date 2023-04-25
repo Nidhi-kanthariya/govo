@@ -20,7 +20,7 @@
     <!-- App css-->
     <link rel="stylesheet" href="../../assets/css/style.css">
   </head>
-  <body class="unique-skin monochrome-mode" dir="ltr">
+  <body class="unique-skin" dir="ltr">
     <main class="page-wrapper">
       <div class="page-body-wrapper xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300">
         <!-- Page Header start-->
@@ -33,7 +33,7 @@
                     <use href="../../assets/svg/sprite.svg#Category"> </use>
                   </svg>
                 </button>
-                <h1 class="flex items-center gap-1 text-xl font-extrabold leading-none sm:hidden dark:text-white 4xl:text-lg">Sample Page</h1>
+                <h1 class="flex items-center gap-1 text-xl font-extrabold leading-none sm:hidden dark:text-white 4xl:text-lg">Ecommerce Dashboard</h1>
               </div>
               <div class="right-header flex items-center flex-1 sm:gap-[calc(7px_+_(14_-_7)_*_((100vw_-_320px)_/_(1920_-_320)))] gap-[calc(16px_+_(20_-_16)_*_((100vw_-_320px)_/_(1920_-_320)))]  justify-end">
                 <div class="search-box-wrapper transition-all duration-300 max-w-[40%] 2xl:scale-0 2xl:opacity-0 2xl:invisible 2xl:px-body-space 2xl:max-w-full w-full 2xl:z-[5] flex-1 2xl:absolute 2xl:left-0">
@@ -732,7 +732,7 @@
                         <li class="px-2"> <span>/</span></li>
                         <li class="breadcrumb-items capitalize">dashboard</li>
                         <li class="px-2"> <span>/</span></li>
-                        <li class="breadcrumb-items capitalize active">Sample Page</li>
+                        <li class="breadcrumb-items capitalize active">Ecommerce</li>
                       </ol>
                     </nav>
                   </div>
@@ -782,6 +782,7 @@
                     </svg></a>
                   <ul class="sidebar-submenu">
                     <li> <a href="./index.html">Unique</a></li>
+                    <li> <a href="./ecommerce.html">Ecommerce</a></li>
                   </ul>
                 </li>
                 <li class="sidebar-list"> <a class="sidebar-link sidebar-title" href="./widgets.html"><span> 
@@ -1015,42 +1016,513 @@
         <!-- Sidebar End -->
         <!-- Page Body Start-->
         <div class="page-body">
-          <div class="grid grid-cols-12 gap-card-gap"> 
-            <div class="card col-span-12">        
-              <div class="card-header pb-2 header-bottom-border">
-                <h3 class="font-bold text-title">Kick Start Your Project Development !</h3>
-                <p>Getting start with your project custom requirements using a ready template which is quite difficult and time taking process, Govo Admin provides useful features to kick start your project development with no efforts !</p>
-              </div>
-              <div class="card-body">                      
-                <ul class="list-decimal list-inside text-content3">
-                  <li>Govo Admin provides you getting start pages with different layouts, use the layout as per your custom requirements and just change the branding, menu & content.</li>
-                  <li>Every components in Govo Admin are decoupled, it means use only components you actually need! Remove unnecessary and extra code easily just by excluding the path to specific SCSS, JS file.</li>
-                  <li>It use PUG as template engine to generate pages and whole template quickly using node js. Save your time for doing the common changes for each page (i.e menu, branding and footer) by generating template with pug.</li>
-                </ul>
+          <div class="grid grid-cols-12 gap-card-gap">
+            <div class="col-span-6 xl:col-span-12"> 
+              <div class="grid grid-cols-2 gap-card-gap">
+                <div class="col-span-1 md:col-span-2">
+                  <div class="card svg-shake gap-0 p-0">
+                    <div class="grid grid-cols-12 p-4">
+                      <div class="col-span-7 5xl:col-span-8 2xl:col-span-7 2lg:col-span-8 3sm:col-span-9">
+                        <div class="flex items-center gap-[9px]">
+                          <div class="p-[13px] 6xl:p-[10px] 5xl:p-[8px] rounded-full relative">
+                            <div class="bg-success opacity-25 absolute z-[1] inset-0 rounded-full"> </div>
+                            <svg class="strong-hover-shake fill-success 2xl:w-[20px] 2xl:h-[20px] 3xl:w-[18px] 3xl:h-[18px] lg:w-[18px] lg:h-[18px] 2sm:w-4 2sm:h-4 6xl:w-4 6xl:h-4 w-5 h-5 relative z-[2]"> 
+                              <use href="../../../assets/svg/bold_sprite.svg#Money-Hand"></use>
+                            </svg>
+                          </div>
+                          <div> 
+                            <h5 class="text-base font-bold text-content3">Total Sells</h5>
+                            <h2 class="text-2xl font-extrabold text-title">20.79</h2>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex items-end col-span-5 5xl:col-span-4 2xl:col-span-5 2lg:col-span-4 3sm:col-span-3">
+                        <div id="totalSellBarChart"></div>
+                      </div>
+                    </div>
+                    <div class="card-footer border-t border-border-light">
+                      <div class="flex items-center p-4 gap-2 3xl:gap-[6px]">
+                        <div class="relative flex items-center justify-center p-[6px]">
+                          <div class="absolute inset-0 rounded-full bg-danger opacity-20"> </div>
+                          <svg class="fill-danger stroke-danger 5xl:w-[5px] 5xl:h-[5px] w-[7px] h-[7px]"> 
+                            <use href="../../assets/svg/sprite.svg#Fill-Arrow"> </use>
+                          </svg>
+                        </div>
+                        <p class="text-xs font-semibold 3xl:text-2xs text-content"><strong class="text-danger font-semibold">- 36.28%</strong><span class="text-xs text-content3 font-semibold"> Total Sells Compared to last year</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-1 md:col-span-2">
+                  <div class="card svg-shake gap-0 p-0">
+                    <div class="grid grid-cols-12 p-4">
+                      <div class="col-span-7 5xl:col-span-8 2xl:col-span-7 2lg:col-span-8 3sm:col-span-9">
+                        <div class="flex items-center gap-[9px]">
+                          <div class="p-[13px] 6xl:p-[10px] 5xl:p-[8px] rounded-full relative">
+                            <div class="bg-secondary opacity-25 absolute z-[1] inset-0 rounded-full"> </div>
+                            <svg class="strong-hover-shake fill-secondary 2xl:w-[20px] 2xl:h-[20px] 3xl:w-[18px] 3xl:h-[18px] lg:w-[18px] lg:h-[18px] 2sm:w-4 2sm:h-4 6xl:w-4 6xl:h-4 w-5 h-5 relative z-[2]"> 
+                              <use href="../../../assets/svg/bold_sprite.svg#Users"></use>
+                            </svg>
+                          </div>
+                          <div> 
+                            <h5 class="text-base font-bold text-content3">Total Customer</h5>
+                            <h2 class="text-2xl font-extrabold text-title">10.341</h2>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex items-end col-span-5 5xl:col-span-4 2xl:col-span-5 2lg:col-span-4 3sm:col-span-3">
+                        <div id="totalCustomerLineChart"></div>
+                      </div>
+                    </div>
+                    <div class="card-footer border-t border-border-light">
+                      <div class="flex items-center p-4 gap-2 3xl:gap-[6px]">
+                        <div class="relative flex items-center justify-center p-[6px]">
+                          <div class="absolute inset-0 rounded-full bg-danger opacity-20"> </div>
+                          <svg class="fill-danger stroke-danger 5xl:w-[5px] 5xl:h-[5px] w-[7px] h-[7px]"> 
+                            <use href="../../assets/svg/sprite.svg#Fill-Arrow"> </use>
+                          </svg>
+                        </div>
+                        <p class="text-xs font-semibold 3xl:text-2xs text-content"><strong class="text-danger font-semibold">- 26.14%</strong><span class="text-xs text-content3 font-semibold"> Customer Compared to last year</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-1 md:col-span-2">
+                  <div class="card svg-shake gap-0 p-0">
+                    <div class="grid grid-cols-12 p-4">
+                      <div class="col-span-7 5xl:col-span-8 2xl:col-span-7 2lg:col-span-8 3sm:col-span-9">
+                        <div class="flex items-center gap-[9px]">
+                          <div class="p-[13px] 6xl:p-[10px] 5xl:p-[8px] rounded-full relative">
+                            <div class="bg-title opacity-25 absolute z-[1] inset-0 rounded-full"> </div>
+                            <svg class="strong-hover-shake fill-title 2xl:w-[20px] 2xl:h-[20px] 3xl:w-[18px] 3xl:h-[18px] lg:w-[18px] lg:h-[18px] 2sm:w-4 2sm:h-4 6xl:w-4 6xl:h-4 w-5 h-5 relative z-[2]"> 
+                              <use href="../../../assets/svg/bold_sprite.svg#Medical"></use>
+                            </svg>
+                          </div>
+                          <div> 
+                            <h5 class="text-base font-bold text-content3">Total Expenses</h5>
+                            <h2 class="text-2xl font-extrabold text-title">23.28</h2>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex items-end col-span-5 5xl:col-span-4 2xl:col-span-5 2lg:col-span-4 3sm:col-span-3">
+                        <div id="totalExpensesLineChart"></div>
+                      </div>
+                    </div>
+                    <div class="card-footer border-t border-border-light">
+                      <div class="flex items-center p-4 gap-2 3xl:gap-[6px]">
+                        <div class="relative flex items-center justify-center p-[6px]">
+                          <div class="absolute inset-0 rounded-full bg-success opacity-20"> </div>
+                          <svg class="fill-success stroke-success -scale-y-100 5xl:w-[5px] 5xl:h-[5px] w-[7px] h-[7px]"> 
+                            <use href="../../assets/svg/sprite.svg#Fill-Arrow"> </use>
+                          </svg>
+                        </div>
+                        <p class="text-xs font-semibold 3xl:text-2xs text-content"><strong class="text-success font-semibold">+ 67.24%</strong><span class="text-xs text-content3 font-semibold"> Expenses Compared to last year</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-span-1 md:col-span-2">
+                  <div class="card svg-shake gap-0 p-0">
+                    <div class="grid grid-cols-12 p-4">
+                      <div class="col-span-7 5xl:col-span-8 2xl:col-span-7 2lg:col-span-8 3sm:col-span-9">
+                        <div class="flex items-center gap-[9px]">
+                          <div class="p-[13px] 6xl:p-[10px] 5xl:p-[8px] rounded-full relative">
+                            <div class="bg-warning opacity-25 absolute z-[1] inset-0 rounded-full"> </div>
+                            <svg class="strong-hover-shake fill-warning 2xl:w-[20px] 2xl:h-[20px] 3xl:w-[18px] 3xl:h-[18px] lg:w-[18px] lg:h-[18px] 2sm:w-4 2sm:h-4 6xl:w-4 6xl:h-4 w-5 h-5 relative z-[2]"> 
+                              <use href="../../../assets/svg/bold_sprite.svg#Order"></use>
+                            </svg>
+                          </div>
+                          <div> 
+                            <h5 class="text-base font-bold text-content3">Total Order</h5>
+                            <h2 class="text-2xl font-extrabold text-title">21.745</h2>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex items-end col-span-5 5xl:col-span-4 2xl:col-span-5 2lg:col-span-4 3sm:col-span-3">
+                        <div class="progress-bar dark:bg-border-dark">
+                          <div class="bg-warning" style="width:55%"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer border-t border-border-light">
+                      <div class="flex items-center p-4 gap-2 3xl:gap-[6px]">
+                        <div class="relative flex items-center justify-center p-[6px]">
+                          <div class="absolute inset-0 rounded-full bg-danger opacity-20"> </div>
+                          <svg class="fill-danger stroke-danger 5xl:w-[5px] 5xl:h-[5px] w-[7px] h-[7px]"> 
+                            <use href="../../assets/svg/sprite.svg#Fill-Arrow"> </use>
+                          </svg>
+                        </div>
+                        <p class="text-xs font-semibold 3xl:text-2xs text-content"><strong class="text-danger font-semibold">- 12.13%</strong><span class="text-xs text-content3 font-semibold"> Order Compared to last year</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="card col-span-12">        
-              <div class="card-header pb-2 header-bottom-border">
-                <h3 class="font-bold text-title">What Is Starter Kit ?</h3>
-                <p>Starter kit is a set of pages with different layouts, useful for your next project to start development process from scratch with no time.</p>
-              </div>
-              <div class="card-body">                      
-                <ul class="list-decimal list-inside text-content3">
-                  <li>Added all layouts you can quick start with layout page.</li>
-                  <li>Select your choice of layout from starter kit, customize it with optional changes like colors and branding, add required dependency only.</li>
-                  <li>Using template engine to generate whole template quickly with your selected layout and other custom changes.                        </li>
-                </ul>
+            <div class="col-span-6 xl:col-span-6 xl3:col-span-12">
+              <div class="card gap-0"> 
+                <div class="card-header">
+                  <div class="flex justify-between w-full flex-wrap gap-2 items-center">
+                    <h3 class="text-lg font-bold text-title leading-none">Recent Statistics</h3>
+                    <div class="custom-select select-style-1"> 
+                      <select class="capitalize">
+                        <option>19 Aug - 25 Aug</option>
+                        <option>1 Aug - 18 Aug</option>
+                        <option>19 Jul - 30 Aug</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="relative">
+                    <div id="recentStatisticsChart1">   </div>
+                    <div class="absolute inset-0" id="recentStatisticsChart2"></div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="card col-span-12">        
-              <div class="card-header pb-2 header-bottom-border">
-                <h3 class="font-bold text-title">How To Use Starter Kit ?                        </h3>
+            <div class="col-span-7 4xl:col-span-8 lg:col-span-12 lg:-order-1">
+              <div class="card">
+                <div class="card-header">
+                  <div class="flex justify-between w-full flex-wrap gap-2 items-center">
+                    <h3 class="text-lg font-bold leading-none text-title">Order Detail</h3>
+                    <div class="flex items-center gap-4">   
+                      <div class="search-box relative">
+                        <input class="border border-border-light dark:border-border-dark rounded-5 w-full py-[8px] pr-[25px] pl-[48px] rtl:pl-[25px] rtl:pr-[48px] text-xs font-semibold text-title" placeholder="Search..." type="search">
+                        <svg class="xl:hidden w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 left-[17px] rtl:left-unset rtl:right-[17px] absolute dark:stroke-white"> 
+                          <use href="../../assets/svg/sprite.svg#Search"> </use>
+                        </svg><i class="search-close hidden cursor-pointer xl:block w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 right-[25px] absolute" data-feather="x"></i>
+                      </div>
+                      <div class="dropdown on-hover-show">
+                        <button class="flex rounded-full items-center justify-center p-[5px] bg-gray-light dark:bg-sidebar-dark2"> 
+                          <svg class="w-[18px] h-[18px] stroke-title"> 
+                            <use href="../../assets/svg/sprite.svg#Setting"> </use>
+                          </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                          <ul>
+                            <li><a href="javascript:void(0)">Yearly</a></li>
+                            <li><a href="javascript:void(0)">Monthly</a></li>
+                            <li><a href="javascript:void(0)">Weekly</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="overflow-auto custom-scroll"> 
+                    <table class="table"> 
+                      <thead> 
+                        <tr> 
+                          <th>Name</th>
+                          <th>Order</th>
+                          <th>Delivery Date</th>
+                          <th>Pricing</th>
+                          <th>Status</th>
+                          <th>Payment</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody class="user-info">
+                        <tr class="user-item group">
+                          <td class="min-w-[210px]"> 
+                            <div class="flex items-center gap-2">
+                              <label class="checkbox w-[15px] h-[15px]">
+                                <input type="checkbox">
+                                <div class="checkbox-indicator"><i data-feather="check"></i></div>
+                              </label>
+                              <div class="flex items-center gap-[9px]"><img class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full" src="../../assets/images/avatar/7.jpg" alt="Lena Smith"><a href="javascript:void(0)">
+                                  <h4 class="text-xs font-semibold text-title group-hover:text-primary">Lena Smith</h4><span class="block mt-1 font-semibold text-2xs text-content">United Kingdom</span></a></div>
+                            </div>
+                          </td>
+                          <td class="min-w-[120px]">
+                            <h4 class="text-xs font-semibold text-title">Nike Tshirt</h4>
+                          </td>
+                          <td class="min-w-[75px]"> 
+                            <h4 class="text-xs font-semibold text-title">Jan 25, 2023</h4>
+                          </td>
+                          <td class="min-w-[140px]"> 
+                            <h4 class="text-xs font-semibold text-title">$12,30</h4>
+                          </td>
+                          <td class="min-w-[140px]"> 
+                            <h4 class="text-xs font-semibold text-warning">Resituate</h4>
+                          </td>
+                          <td class="min-w-[75px]"> 
+                            <h4 class="text-xs font-semibold text-title">Credit Card</h4>
+                          </td>
+                          <td class="min-w-[50px] text-right"> 
+                            <div class="dropdown on-hover-show inline-flex justify-end ">
+                              <button class="group"> 
+                                <svg class="w-[18px] h-[18px] stroke-title"> 
+                                  <use href="../../assets/svg/sprite.svg#Dote-h"> </use>
+                                </svg>
+                              </button>
+                              <div class="dropdown-menu !right-0 !left-unset ">
+                                <ul>
+                                  <li class="group"> <a href="javascript:void(0)">
+                                      <svg class="group-hover:stroke-primary w-[18px] h-[18px] stroke-title"> 
+                                        <use href="../../assets/svg/sprite.svg#Edit-Square"> </use>
+                                      </svg></a></li>
+                                  <li class="group"> <a href="javascript:void(0)">
+                                      <svg class="group-hover:stroke-primary remove-user w-[18px] h-[18px] stroke-title"> 
+                                        <use href="../../assets/svg/sprite.svg#Delete"> </use>
+                                      </svg></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="user-item group">
+                          <td class="min-w-[210px]"> 
+                            <div class="flex items-center gap-2">
+                              <label class="checkbox w-[15px] h-[15px]">
+                                <input type="checkbox" checked>
+                                <div class="checkbox-indicator"><i data-feather="check"></i></div>
+                              </label>
+                              <div class="flex items-center gap-[9px]"><img class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full" src="../../assets/images/avatar/6.jpg" alt="Nicol Green"><a href="javascript:void(0)">
+                                  <h4 class="text-xs font-semibold text-title group-hover:text-primary">Nicol Green</h4><span class="block mt-1 font-semibold text-2xs text-content">Australia</span></a></div>
+                            </div>
+                          </td>
+                          <td class="min-w-[120px]">
+                            <h4 class="text-xs font-semibold text-title">Adidas Hat</h4>
+                          </td>
+                          <td class="min-w-[75px]"> 
+                            <h4 class="text-xs font-semibold text-title">Jan 12, 2023</h4>
+                          </td>
+                          <td class="min-w-[140px]"> 
+                            <h4 class="text-xs font-semibold text-title">$10,40</h4>
+                          </td>
+                          <td class="min-w-[140px]"> 
+                            <h4 class="text-xs font-semibold text-primary">Completed</h4>
+                          </td>
+                          <td class="min-w-[75px]"> 
+                            <h4 class="text-xs font-semibold text-title">Bank Transfer</h4>
+                          </td>
+                          <td class="min-w-[50px] text-right"> 
+                            <div class="dropdown on-hover-show inline-flex justify-end ">
+                              <button class="group"> 
+                                <svg class="w-[18px] h-[18px] stroke-title"> 
+                                  <use href="../../assets/svg/sprite.svg#Dote-h"> </use>
+                                </svg>
+                              </button>
+                              <div class="dropdown-menu !right-0 !left-unset ">
+                                <ul>
+                                  <li class="group"> <a href="javascript:void(0)">
+                                      <svg class="group-hover:stroke-primary w-[18px] h-[18px] stroke-title"> 
+                                        <use href="../../assets/svg/sprite.svg#Edit-Square"> </use>
+                                      </svg></a></li>
+                                  <li class="group"> <a href="javascript:void(0)">
+                                      <svg class="group-hover:stroke-primary remove-user w-[18px] h-[18px] stroke-title"> 
+                                        <use href="../../assets/svg/sprite.svg#Delete"> </use>
+                                      </svg></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="user-item group">
+                          <td class="min-w-[210px]"> 
+                            <div class="flex items-center gap-2">
+                              <label class="checkbox w-[15px] h-[15px]">
+                                <input type="checkbox">
+                                <div class="checkbox-indicator"><i data-feather="check"></i></div>
+                              </label>
+                              <div class="flex items-center gap-[9px]"><img class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full" src="../../assets/images/avatar/8.jpg" alt="David King"><a href="javascript:void(0)">
+                                  <h4 class="text-xs font-semibold text-title group-hover:text-primary">David King</h4><span class="block mt-1 font-semibold text-2xs text-content">United Kingdom</span></a></div>
+                            </div>
+                          </td>
+                          <td class="min-w-[120px]">
+                            <h4 class="text-xs font-semibold text-title">Puma Bag</h4>
+                          </td>
+                          <td class="min-w-[75px]"> 
+                            <h4 class="text-xs font-semibold text-title">Jan 05, 2023</h4>
+                          </td>
+                          <td class="min-w-[140px]"> 
+                            <h4 class="text-xs font-semibold text-title">$11,23</h4>
+                          </td>
+                          <td class="min-w-[140px]"> 
+                            <h4 class="text-xs font-semibold text-title">Continue</h4>
+                          </td>
+                          <td class="min-w-[75px]"> 
+                            <h4 class="text-xs font-semibold text-title">Credit Card</h4>
+                          </td>
+                          <td class="min-w-[50px] text-right"> 
+                            <div class="dropdown on-hover-show inline-flex justify-end ">
+                              <button class="group"> 
+                                <svg class="w-[18px] h-[18px] stroke-title"> 
+                                  <use href="../../assets/svg/sprite.svg#Dote-h"> </use>
+                                </svg>
+                              </button>
+                              <div class="dropdown-menu !right-0 !left-unset ">
+                                <ul>
+                                  <li class="group"> <a href="javascript:void(0)">
+                                      <svg class="group-hover:stroke-primary w-[18px] h-[18px] stroke-title"> 
+                                        <use href="../../assets/svg/sprite.svg#Edit-Square"> </use>
+                                      </svg></a></li>
+                                  <li class="group"> <a href="javascript:void(0)">
+                                      <svg class="group-hover:stroke-primary remove-user w-[18px] h-[18px] stroke-title"> 
+                                        <use href="../../assets/svg/sprite.svg#Delete"> </use>
+                                      </svg></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="user-item group">
+                          <td class="min-w-[210px]"> 
+                            <div class="flex items-center gap-2">
+                              <label class="checkbox w-[15px] h-[15px]">
+                                <input type="checkbox">
+                                <div class="checkbox-indicator"><i data-feather="check"></i></div>
+                              </label>
+                              <div class="flex items-center gap-[9px]"><img class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full" src="../../assets/images/avatar/11.jpg" alt="Jone smith"><a href="javascript:void(0)">
+                                  <h4 class="text-xs font-semibold text-title group-hover:text-primary">Jone smith</h4><span class="block mt-1 font-semibold text-2xs text-content">Netherlands</span></a></div>
+                            </div>
+                          </td>
+                          <td class="min-w-[120px]">
+                            <h4 class="text-xs font-semibold text-title">Nike Glove</h4>
+                          </td>
+                          <td class="min-w-[75px]"> 
+                            <h4 class="text-xs font-semibold text-title">Jan 01, 2023</h4>
+                          </td>
+                          <td class="min-w-[140px]"> 
+                            <h4 class="text-xs font-semibold text-title">$19,10</h4>
+                          </td>
+                          <td class="min-w-[140px]"> 
+                            <h4 class="text-xs font-semibold text-secondary">Canceled</h4>
+                          </td>
+                          <td class="min-w-[75px]"> 
+                            <h4 class="text-xs font-semibold text-title">Bank Transfer</h4>
+                          </td>
+                          <td class="min-w-[50px] text-right"> 
+                            <div class="dropdown on-hover-show inline-flex justify-end top-open">
+                              <button class="group"> 
+                                <svg class="w-[18px] h-[18px] stroke-title"> 
+                                  <use href="../../assets/svg/sprite.svg#Dote-h"> </use>
+                                </svg>
+                              </button>
+                              <div class="dropdown-menu !right-0 !left-unset ">
+                                <ul>
+                                  <li class="group"> <a href="javascript:void(0)">
+                                      <svg class="group-hover:stroke-primary w-[18px] h-[18px] stroke-title"> 
+                                        <use href="../../assets/svg/sprite.svg#Edit-Square"> </use>
+                                      </svg></a></li>
+                                  <li class="group"> <a href="javascript:void(0)">
+                                      <svg class="group-hover:stroke-primary remove-user w-[18px] h-[18px] stroke-title"> 
+                                        <use href="../../assets/svg/sprite.svg#Delete"> </use>
+                                      </svg></a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
-              <div class="card-body">                      
-                <h6 class="font-bold">HTML</h6>
-                <p class="mt-1 text-content3">If you know just HTML, select your choice of layout from starter kit folder, customize it with optional changes like colors and branding, add required dependency only.</p>
-                <h6 class="mt-4 font-bold">PUG</h6>
-                <p class="mt-1 text-content3">To use PUG it required node.js and basic knowledge of using it. Using PUG as template engine to generate whole template quickly with your selected layout and other custom changes. To getting start with PUG usage & template generating process please refer template documentation.</p>
+            </div>
+            <div class="col-span-5 4xl:col-span-8 lg:col-span-12 lg:-order-1">
+              <div class="card">
+                <div class="card-header">
+                  <div class="flex justify-between w-full flex-wrap gap-2 items-center">
+                    <h3 class="text-lg font-bold text-title leading-none">Orders Status (May 10)</h3>
+                    <div class="dropdown on-hover-show">
+                      <button class="flex rounded-full items-center justify-center p-[5px] bg-gray-light dark:bg-sidebar-dark2"> 
+                        <svg class="w-[18px] h-[18px] stroke-title"> 
+                          <use href="../../assets/svg/sprite.svg#Setting"> </use>
+                        </svg>
+                      </button>
+                      <div class="dropdown-menu">
+                        <ul>
+                          <li><a href="javascript:void(0)">Yearly</a></li>
+                          <li><a href="javascript:void(0)">Monthly</a></li>
+                          <li><a href="javascript:void(0)">Weekly</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body"> 
+                  <div class="relative"> </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-4 4xl:col-span-8 lg:col-span-12 lg:-order-1">
+              <div class="card">
+                <div class="card-header">
+                  <div class="flex justify-between w-full flex-wrap gap-2 items-center">
+                    <h3 class="text-lg font-bold text-title leading-none">Customers</h3>
+                    <div class="dropdown on-hover-show">
+                      <button class="flex rounded-full items-center justify-center p-[5px] bg-gray-light dark:bg-sidebar-dark2"> 
+                        <svg class="w-[18px] h-[18px] stroke-title"> 
+                          <use href="../../assets/svg/sprite.svg#Setting"> </use>
+                        </svg>
+                      </button>
+                      <div class="dropdown-menu">
+                        <ul>
+                          <li><a href="javascript:void(0)">Yearly</a></li>
+                          <li><a href="javascript:void(0)">Monthly</a></li>
+                          <li><a href="javascript:void(0)">Weekly</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="relative"> 
+                    <div id="customerRadialchart"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-span-4 4xl:col-span-8 lg:col-span-12 lg:-order-1">
+              <div class="card">
+                <div class="card-header">
+                  <div class="flex justify-between w-full flex-wrap gap-2 items-center">
+                    <h3 class="text-lg font-bold text-title leading-none">Customers</h3>
+                    <div class="dropdown on-hover-show">
+                      <button class="flex rounded-full items-center justify-center p-[5px] bg-gray-light dark:bg-sidebar-dark2"> 
+                        <svg class="w-[18px] h-[18px] stroke-title"> 
+                          <use href="../../assets/svg/sprite.svg#Setting"> </use>
+                        </svg>
+                      </button>
+                      <div class="dropdown-menu">
+                        <ul>
+                          <li><a href="javascript:void(0)">Yearly</a></li>
+                          <li><a href="javascript:void(0)">Monthly</a></li>
+                          <li><a href="javascript:void(0)">Weekly</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body"></div>
+              </div>
+            </div>
+            <div class="col-span-4 4xl:col-span-8 lg:col-span-12 lg:-order-1">
+              <div class="card">
+                <div class="card-header">
+                  <div class="flex justify-between w-full flex-wrap gap-2 items-center">
+                    <h3 class="text-lg font-bold text-title leading-none">Customers</h3>
+                    <div class="dropdown on-hover-show">
+                      <button class="flex rounded-full items-center justify-center p-[5px] bg-gray-light dark:bg-sidebar-dark2"> 
+                        <svg class="w-[18px] h-[18px] stroke-title"> 
+                          <use href="../../assets/svg/sprite.svg#Setting"> </use>
+                        </svg>
+                      </button>
+                      <div class="dropdown-menu">
+                        <ul>
+                          <li><a href="javascript:void(0)">Yearly</a></li>
+                          <li><a href="javascript:void(0)">Monthly</a></li>
+                          <li><a href="javascript:void(0)">Weekly</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body"></div>
               </div>
             </div>
           </div>
@@ -1144,6 +1616,10 @@
   <script src="../../assets/js/feather-custom.js"></script>
   <!-- Select Js -->
   <script src="../../assets/js/custom-select.js"></script>
+  <!-- Apex Chart Js -->
+  <script src="../../assets/js/apexchart/apexcharts.js"></script>
+  <script src="../../assets/js/apexchart/apex-common.js"></script>
+  <script src="../../assets/js/apexchart/unique-custom.js"></script>
   <!-- Sidebar Js -->
   <script src="../../assets/js/sidebar.js"></script>
   <!-- customizer js-->
