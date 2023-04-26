@@ -1819,8 +1819,16 @@ const customerRadialchart = {
       },
     },
   },
+  stroke: {
+    lineCap: 'round',
+  },
   series: [70, 55, 40],
-  labels: ['Apples', 'Oranges', 'Bananas',],
+  // labels: ['Current Customers', 'New Customers', 'Retarget Customers'],
+  // legend: {
+  //   show: true,
+  //   floating: true,
+  //   position: 'bottom',
+  // },
   colors: ['rgba(var(--primary),1)', 'rgba(var(--secondary), 1)', 'var(--title)',],
   responsive: [{
     breakpoint: 675,
