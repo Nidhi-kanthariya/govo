@@ -95,17 +95,17 @@ html(lang='en')
                                         div#customerRadialchart
                                 div.card-footer.border-t.border-border-light.pt-4.px-0 
                                     div.radialBar-legend
-                                        div(class="border-r border-border-light px-3 dark:border-border-dark last:border-none rtl:border-r-0 rtl:border-l w-full") 
+                                        div(class="w-full px-3 border-r border-border-light dark:border-border-dark last:border-none rtl:border-r-0 rtl:border-l") 
                                             div.radialBar-legend-series
                                                 span.radialBar-legend-marker.primary
                                                 p.radialBar-legend-text.text-3xs.text-title Current Customers
                                             small.text-xs.text-content3(class="pl-3 rtl:pl-0 rtl:pr-3") 45%
-                                        div(class="border-r border-border-light px-3 dark:border-border-dark last:border-none rtl:border-r-0 rtl:border-l w-full")
+                                        div(class="w-full px-3 border-r border-border-light dark:border-border-dark last:border-none rtl:border-r-0 rtl:border-l")
                                             div.radialBar-legend-series
                                                 span.radialBar-legend-marker.secondary
                                                 p.radialBar-legend-text.text-3xs.text-title New Customers
                                             small.text-xs.text-content3(class="pl-3 rtl:pl-0 rtl:pr-3") 62% 
-                                        div(class="border-r border-border-light px-3 dark:border-border-dark last:border-none rtl:border-r-0 rtl:border-l w-full")
+                                        div(class="w-full px-3 border-r border-border-light dark:border-border-dark last:border-none rtl:border-r-0 rtl:border-l")
                                             div.radialBar-legend-series
                                                 span.radialBar-legend-marker.title
                                                 p.radialBar-legend-text.text-3xs.text-title Retarget Customers 
@@ -133,17 +133,16 @@ html(lang='en')
                             div.card
                                 div.card-header
                                     +card-header("Today’s Deals","setting", HISTORY_DROPDOWN)
-                                div.card-body
-                                    div.grid.gap-card-gap(class="sm:mt-5").overflow-hidden 
-                                        div.swiper.product-slides.swiper-product
-                                            div.swiper-wrapper
-                                                each data in PRODUCT_BOX 
-                                                    div.swiper-slide 
-                                                        +product(data) 
+                                //- div.card-body
+                                //-     div.grid.gap-card-gap(class="sm:mt-5").overflow-hidden 
+                                //-         div.swiper.product-slides.swiper-product
+                                //-             div.swiper-wrapper
+                                //-                 each data in PRODUCT_BOX 
+                                //-                     div.swiper-slide 
+                                //-                         +product(data) 
 
 
 
-.
 
 
     // Page Body End 
