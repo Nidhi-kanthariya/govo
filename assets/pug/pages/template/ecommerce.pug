@@ -115,6 +115,49 @@ html(lang='en')
                                 div.card-header
                                     +card-header("Recent Activity","setting", HISTORY_DROPDOWN)
                                 div.card-body
+                                    ul(class="relative before:content-[''] before:absolute before:border before:border-border-light before:w-[1px] before:h-full before:top-0 before:left-[4%] rtl:left-unset rtl:right-[4%] dark:border-border-dark") 
+                                        li.flex.gap-4(class="pb-6 last:pb-0") 
+                                            div.relative
+                                                img(class="min-w-[40px] h-[40px] rounded-full" src=`../../assets/images/avatar/39.jpg`, alt=`avatar`) 
+                                            div.flex.flex-col.gap-1
+                                                span.text-content3.text-2xs.font-bold 2hrs Ago
+                                                p.text-title.font-medium Today, I'm very happy about myself, because I realized my dreams.
+                                                ul.flex.items-center.gap-2.flex-wrap 
+                                                    li 
+                                                        img(class="min-w-[40px] h-[40px] rounded-5" src=`../../assets/images/product/18.png`, alt=`t-shirt`) 
+                                                    li 
+                                                        img(class="min-w-[40px] h-[40px] rounded-5" src=`../../assets/images/product/17.png`, alt=`shoes`) 
+                                                    li 
+                                                        img(class="min-w-[40px] h-[40px] rounded-5" src=`../../assets/images/product/16.png`, alt=`watch`) 
+                                        li.flex.gap-4(class="pb-6 last:pb-0") 
+                                            div.relative
+                                                img(class="min-w-[40px] h-[40px] rounded-full" src=`../../assets/images/avatar/40.png`, alt=`avatar`) 
+                                            div.flex.flex-col.gap-1
+                                                span.text-content3.text-2xs.font-bold 5hrs Ago
+                                                p.text-title.font-medium That is the key of this collection, being yourself. Don't be into trends.
+
+                                        li.flex.gap-4(class="items-center pb-6 last:pb-0") 
+                                            div(class="min-w-[40px]")    
+                                                div.activity-dot-secondary
+                                            div.flex.flex-col.gap-1
+                                                span.text-title.text-xs.relative(class="before:content-[''] before:absolute before:h-[2px] before:left-[-40%] rtl:left-unset rtl:right-[-40%] before:bg-border-light before:top-1/2 before:w-[calc(100%_-_55px)]") 25 Oct,2022
+
+                                        li.flex.gap-4(class="pb-6 last:pb-0") 
+                                            div.relative
+                                                img(class="min-w-[40px] h-[40px] rounded-full" src=`../../assets/images/avatar/41.png`, alt=`avatar`) 
+                                            div.flex.flex-col.gap-1
+                                                span.text-content3.text-2xs.font-bold 10:30 pm
+                                                p.text-title.font-medium I think it's an old fashioned notion that fashion needs to be exclusive to be fashionable.
+
+                                        li.flex.gap-4(class="pb-6 last:pb-0") 
+                                            div.relative
+                                                img(class="min-w-[40px] h-[40px] rounded-full" src=`../../assets/images/avatar/42.png`, alt=`avatar`) 
+                                            div.flex.flex-col.gap-1
+                                                span.text-content3.text-2xs.font-bold 12:00 pm
+                                                p.text-title.font-medium If you wear clothes that don't suit you.
+
+
+
                         div.col-span-4(class="4xl:col-span-8 lg:col-span-12 lg:-order-1")
                             div.card
                                 div.card-header
@@ -133,20 +176,20 @@ html(lang='en')
                             div.card
                                 div.card-header
                                     +card-header("Today’s Deals","setting", HISTORY_DROPDOWN)
-                                //- div.card-body
-                                //-     div.grid.gap-card-gap(class="sm:mt-5").overflow-hidden 
-                                //-         div.swiper.product-slides.swiper-product
-                                //-             div.swiper-wrapper
-                                //-                 each data in PRODUCT_BOX 
-                                //-                     div.swiper-slide 
-                                //-                         +product(data) 
+                                div.card-body
+                                    //- div.grid.gap-card-gap.overflow-hidden 
+                                    //- div.swiper.product-slides.swiper-product
+                                    //-     div.swiper-wrapper
+                                    //-         each data in ECO_PRODUCT_BOX 
+                                    //-             div.swiper-slide 
+                                    //-                 +product2(data) 
 
 
 
 
 
-    // Page Body End 
-    +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
-        include ../../components/customizer
+                // Page Body End 
+                +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
+            include ../../components/customizer
 
     include ../../layout/footer-files
