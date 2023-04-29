@@ -21,11 +21,12 @@
         }
       }
       .select-items {
+       
         > div {
           @apply hover:text-white text-white;
         }
       }
-    }
+    } 
     &.select-bg-white {
       .select-selected,
       .select-items {
@@ -33,7 +34,7 @@
       }
     }
     .select-items {
-      @apply p-[0.75rem] bg-gray-light dark:bg-sidebar-dark2;
+      @apply p-[0.75rem] bg-gray-light dark:bg-sidebar-dark2 z-[1] ;
       > div {
         @apply hover:text-primary transition-all  px-0 first:pt-0 last:pb-0 py-[0.25rem] text-xs text-title;
       }

@@ -38,14 +38,13 @@ todoForm.addEventListener('submit', function (e) {
                       <h5 class="font-medium text-dark truncate text-sm 2xl:text-xs focus:border focus:border-light dark:focus:border-mode-200 focus:outline-none focus:px-2 focus:rounded-5">${title}</h5>
                     </div>
                   </div>
-                  
                   <div> 
                     <ul class="flex gap-3 todo-sublist">
-                      <li class="cursor-pointer"> 
+                      <li class="cursor-pointer">
                         <div class="badge badge-xs px-3 font-bold rounded-full bg-primary-extralight !text-3xs text-primary">${priority}</div>
-                      </li>
+                      </li> 
                       <li class="cursor-pointer"> 
-                        <div class="badge badge-xs px-3 font-bold rounded-full bg-success-light !text-3xs text-success">${status}</div>
+                        <div class="badge badge-xs px-3 font-bold rounded-full bg-success-light dark:bg-sidebar-dark2 !text-3xs text-success">${status}</div>
                       </li>
                       <li class="cursor-pointer"> <i class="transition-all stroke-twitter opacity-50 hover:opacity-100 w-[calc(16px_+_(18_-_16)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(16px_+_(18_-_16)_*_((100vw_-_320px)_/_(1920_-_320)))] edit" data-feather="edit"></i></li>
                       <li class="cursor-pointer"><i class="transition-all stroke-danger opacity-50 hover:opacity-100 w-[calc(16px_+_(18_-_16)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(16px_+_(18_-_16)_*_((100vw_-_320px)_/_(1920_-_320)))] delete" data-feather="trash"></i></li>

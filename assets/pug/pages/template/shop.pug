@@ -20,7 +20,7 @@
 -var customizer = true;
 
 //- gridListView
--var gridListView=true;
+// -var gridListView=true;
 
 //- Breadcrumbs
 -var pageTitle="Shop";
@@ -31,12 +31,12 @@ include ../../data/all-data
 
 //- all mixin   
 include ../../mixin/mixin
-
+ 
 doctype html
-html(lang='en')
+html(lang='en') 
   include ../../layout/header-files
   body(dir="ltr" class="unique-skin")
-    main.page-wrapper
+    main.page-wrapper 
       div.page-body-wrapper(class="xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300")
         include ../../layout/header/header     
         // Sidebar Start 
@@ -47,7 +47,7 @@ html(lang='en')
         // Page Body Start
         div.page-body 
           div.grid.grid-cols-12.gap-card-gap
-            div.col-span-12 
+            div.col-span-12
               div.rounded-5.overflow-hidden.relative
                 img(src="../../assets/images/ecommerce/light-berner.jpg" alt="light-banner.jpg" class="w-full drop-shadow-lg min-h-[120px] max-h-[300px]")
                 div.absolute(class="text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[40%] lg:max-w-[75%] xl:max-w-[50%]")
@@ -59,9 +59,9 @@ html(lang='en')
               div.flex.items-center.gap-3 
                 label(for="sortby" class="text-xs min-w-max text-content3") Sort By                                    
                 select.form-select.block.w-full.px-3.text-xs.font-normal.text-content3.bg-white.bg-clip-padding.bg-no-repeat.border.border-border-light.rounded-5.transition.ease-in-out.m-0(class='min-w-[150px] py-[9px] dark:border-border-dark dark:bg-sidebar-dark2' id="sortby" aria-label='Default select example')
-                  option(selected='') All 
-                  option(value='1') Popular 
-                  option(value='2') Price Low
+                  option(selected='') All
+                  option(value='1') Popular
+                  option(value='2') Price Low 
                   option(value='3') Price Hight 
               div.flex.items-center.gap-3 
                 div.product-filter 
@@ -109,7 +109,7 @@ html(lang='en')
                                 input(type='checkbox' class="peer") 
                                 div.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
                                   i(data-feather="check")
-                              p.text-content Puma (21)
+                              p.text-content Puma (21) 
                             li.flex.items-center.gap-2(a href="javascript:void(0)")
                               label.checkbox.cursor-pointer(class="w-4 h-4")
                                 input(type='checkbox' class="peer" checked) 
@@ -347,7 +347,7 @@ html(lang='en')
                     li.btn-active.text-title.leading-none.w-8.h-8.flex.items-center.justify-center.border.border-border-light.bg-gray-extralight.rounded-full(class="hover:bg-gray-extralight dark:hover:bg-sidebar-dark2 dark:border-border-dark dark:bg-sidebar-dark2 dark:text-white") M
                     li.border.border-border-light.rounded-full.text-title.leading-none.w-8.h-8.flex.items-center.justify-center(class="hover:bg-gray-extralight dark:hover:bg-sidebar-dark2 dark:border-border-dark dark:hover:text-white") L 
                     li.border.border-border-light.rounded-full.text-title.leading-none.w-8.h-8.flex.items-center.justify-center(class="hover:bg-gray-extralight dark:hover:bg-sidebar-dark2 dark:border-border-dark dark:hover:text-white") XL 
-                div.divider.w-full.my-4(class=" dark:border-border-dark 2lg:my-3")
+                div.divider.w-full.my-4(class=" dark:border-border-dark 2lg:my-3") 
                 div.flex.flex-wrap.gap-2.items-center.capitalize(class="2lg:gap-1")
                   a(href="cart.html").btn.btn-primary.text-white.text-sm(class="lg:px-2 lg:text-xs") Add to cart         
                   a(href="wishlist.html").btn.btn-secondary.text-white.text-sm(class="lg:px-2 lg:text-xs") Add to wishlist         
