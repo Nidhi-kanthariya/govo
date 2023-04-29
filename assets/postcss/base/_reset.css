@@ -219,3 +219,25 @@
     filter: brightness(0.5);
   }
 } 
+
+div[class*=activity-dot-secondary]{
+  animation: round 1.3s ease-in-out infinite;
+}
+
+.activity-dot-secondary{
+    @apply min-w-[9px] h-[9px] w-[9px] mx-auto bg-secondary rounded-full relative z-[2];
+    outline: 4px solid var(--secondary-light);
+}
+@keyframes round{
+
+
+0% {
+    transform: scale(1);
+}
+
+50% {
+    transform: scale(1.2);
+}
+100% {
+    transform: scale(1);
+}}

@@ -1,5 +1,5 @@
 - 
-    var PRODUCT_BOX = [
+    var ECO_PRODUCT_BOX = [
         {
             image: "ecommerce/1.jpg",
             productName: "Wooden Sofa Set",
@@ -167,7 +167,7 @@
         },
     ];
 
-mixin product(data,modal,productmodal)
+mixin product2(data)
     .card.p-3(class="scale-0 hover:transition-all hover:ease-in-out group hover:scale-105 transform-none") 
         .card-body
             .relative
@@ -210,7 +210,6 @@ mixin product(data,modal,productmodal)
                             span(class="font-semibold leading-none text-white text-2xs mt-[3px]")= data.rate
                         span.text-content3.text-xs=data.rating
                     p(class="dark:text-white").text-title.text-2xs.mt-2=data.delivery
-
 
 
 

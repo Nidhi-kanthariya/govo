@@ -1823,7 +1823,7 @@ totalExpensesLineChartEl.render();
 /*=======/Radial Chart/=======*/
 const customerRadialchart = {
   chart: {
-    height: 300,
+    height: 330,
     type: 'radialBar',
   },
   plotOptions: {
@@ -1858,8 +1858,10 @@ const customerRadialchart = {
       },
     },
   },
+  stroke: {
+    lineCap: 'round',
+  },
   series: [70, 55, 40],
-  labels: ['Apples', 'Oranges', 'Bananas',],
   colors: ['rgba(var(--primary),1)', 'rgba(var(--secondary), 1)', 'var(--title)',],
   responsive: [{
     breakpoint: 675,
