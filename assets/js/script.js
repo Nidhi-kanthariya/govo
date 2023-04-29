@@ -416,7 +416,7 @@ suggest?.forEach((el) => {
 
 /*=====================
  19. Fill svg js
-==========================*/
+==========================*/ 
 
 const postMedia = document.querySelector('.post-media');
 const postLike = document.querySelectorAll('.post-like');

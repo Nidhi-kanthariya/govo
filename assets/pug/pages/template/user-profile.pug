@@ -480,13 +480,9 @@ html(lang='en')
                             span(class="3sm:hidden") by birdie_hoeger  
                         div
                           p.text-content3.text-xs(class="sm:line-clamp-4") He's being polite, but I want a change. Social kids shouldn't be thrown out. Mr. Am won the battle with himself. She could act hastily. By things fanny, my initial grin is real. He laughed at the refinement of Mr. Elegance. It's their preference to eat dinner at home. He was being unsatisfactorily imprudent with himself. be in a situation where the allowance is consistently broken by the principle. Furthermore wanted is additional carriage securing.
-
-
-
         // Page Body End  
         +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
       include ../../components/customizer
-
       //- Suggest modal
       div.modal-main
         input#suggest-modal(class="peer" name="suggest-modal" type='checkbox')
@@ -540,8 +536,7 @@ html(lang='en')
                     +SVG_ICON("Profile", "w-4 h-4 stroke-primary group-hover:stroke-white") 
               div(class="justify-end flex items-center gap-3")
                 label(for="suggest-modal" class="dark:bg-sidebar-dark2 dark:text-white").btn.bg-gray-light.p-2.text-title Save                                
-                label(for="suggest-modal").btn.bg-success.p-2.text-white Cancel                                
-
+                label(for="suggest-modal" class="dark:text-white").btn.bg-success.p-2.text-white Cancel
       //- Add friends modal
       div.modal-main
         input#add-friend-modal(class="peer" name="add-friend-modal" type='checkbox')
@@ -592,10 +587,8 @@ html(lang='en')
               div(class="justify-end flex items-center gap-3")
                 label(for="add-friend-modal" class="dark:bg-sidebar-dark2 dark:text-white").btn.bg-gray-light.p-2.text-title Save                                
                 label(for="add-friend-modal").btn.bg-secondary.p-2.text-white Cancel                               
-
-
       //- Follow modal
-      div.modal-main
+      div.modal-main 
         input#follow-modal(class="peer" name="follow-modal" type='checkbox')
         label.modal-overlay(class="peer-checked:block" for='follow-modal')
         div.modal.modal-center(class="peer-checked:opacity-100 peer-checked:visible w-full max-w-sm dark:bg-sidebar-dark2")
@@ -620,13 +613,13 @@ html(lang='en')
                 li.flex.justify-between.items-center.follow-friend
                   div.flex.items-center.gap-2.w-full
                     div.avatar.rounded-full(class="w-10 h-10")
-                      img(src=`../../assets/images/user-app/21.png` alt=`user`)                                                      
-                    div(class="w-[calc(100%_-_52px)]") 
+                      img(src=`../../assets/images/user-app/21.png` alt=`user`)                         
+                    div(class="w-[calc(100%_-_52px)]")
                       p.text-title(class="text-xs font-semibold dark:text-white") Josue Smith
                       span.text-content3(class="font-semibold text-2xs") Fullstack Developer
                   a(href="javascript:void(0)" class="dark:bg-sidebar-dark2 dark:text-white").follow-btn.btn.bg-gray-light.p-2  Follow
                 li.flex.justify-between.items-center.follow-friend
-                  div.flex.items-center.gap-2.w-full
+                  div.flex.items-center.gap-2.w-full 
                     div.avatar.rounded-full(class="w-10 h-10")
                       img(src=`../../assets/images/user-app/16.png` alt=`user`)                                                      
                     div(class="w-[calc(100%_-_52px)]") 

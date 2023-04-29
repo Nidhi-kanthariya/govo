@@ -942,6 +942,45 @@ const recentStatisticsChartE2 = new ApexCharts(document.querySelector('#recentSt
 recentStatisticsChartEl.render();
 recentStatisticsChartE2.render();
 
+/*=======/Sales Summary ( Jun 2023)/=======*/
+
+var options = {
+  series: [{
+  name: 'series1',
+  data: [25, 30, 25, 30, 25, 30, 25 , 28 ,29, 30]
+}, {
+  name: 'series2',
+  data: [35, 32, 35, 32, 36, 36, 34, 35 ,30, 35]
+}], 
+  chart: {
+  height: 350,
+  type: 'area'
+}, 
+dataLabels: {
+  enabled: false 
+},
+stroke: {
+  curve: 'smooth'
+},
+
+yaxis: {
+  type : 'Orders',
+  categories: ["$0" , "$2,000" ,"$4,000" , "$6,000" ,"$8,000", '$10,000']
+},
+xaxis: { 
+  type: 'datetime',
+  categories: ["Jan 01", "Jan 02", "Jan 03", "Jan 04", "Jan 05", "Jan 06", "Jan 07" ,"Jan 08","Jan 09" ,"Jan 10"]
+},
+tooltip: {
+  x: {
+    format: 'dd/MM/yy HH:mm'
+  },
+},
+};
+
+var chart = new ApexCharts(document.querySelector("#chart"), options);
+chart.render();
+
 /*=======/Total Follower Bar Spark line/=======*/
 const totalSaveBarChartOption = {
   series: [{
