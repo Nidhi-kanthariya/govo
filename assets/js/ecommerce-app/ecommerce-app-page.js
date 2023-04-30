@@ -35,6 +35,3 @@ shopSidebarToggle?.addEventListener('click', function () {
 shopCloseBtn?.addEventListener('click', function () {
   shopSidebar.classList.remove('show');
 });
-
-
-
