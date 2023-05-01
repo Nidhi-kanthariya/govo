@@ -544,6 +544,7 @@ window.onload = function () {
 
 
 
+<<<<<<< HEAD
 /*=======/ Social Media Statics Chart /=======*/
 const socialMediaStatisticsOption = {
   series: [{
@@ -1918,3 +1919,5 @@ const customerRadialchart = {
 
 const customerRadialchartEl = new ApexCharts(document.querySelector('#customerRadialchart'), customerRadialchart);
 customerRadialchartEl.render();
+=======
+>>>>>>> main

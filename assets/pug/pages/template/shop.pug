@@ -20,7 +20,7 @@
 -var customizer = true;
 
 //- gridListView
-// -var gridListView=true;
+-var gridListView=true;
 
 //- Breadcrumbs
 -var pageTitle="Shop";
@@ -36,7 +36,7 @@ doctype html
 html(lang='en') 
   include ../../layout/header-files
   body(dir="ltr" class="unique-skin")
-    main.page-wrapper 
+    main.page-wrapper.relative 
       div.page-body-wrapper(class="xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300")
         include ../../layout/header/header     
         // Sidebar Start 
@@ -46,7 +46,7 @@ html(lang='en')
 
         // Page Body Start
         div.page-body 
-          div.grid.grid-cols-12.gap-card-gap
+          div.grid.grid-cols-12.gap-card-gap 
             div.col-span-12
               div.rounded-5.overflow-hidden.relative
                 img(src="../../assets/images/ecommerce/light-berner.jpg" alt="light-banner.jpg" class="w-full drop-shadow-lg min-h-[120px] max-h-[300px]")
@@ -65,7 +65,7 @@ html(lang='en')
                   option(value='3') Price Hight 
               div.flex.items-center.gap-3 
                 div.product-filter 
-                  +SVG_ICON("Filter", "w-6 h-6 stroke-content3 xl:block hidden shop-toggle")
+                  +SVG_ICON("Filter", "w-6 h-6 stroke-content3 lg:block hidden shop-toggle")
                 div.product-setting 
                   a(href="javscript:void(0)" class="grid-layout-view")
                     i(data-feather="grid" class="w-6 h-6 stroke-content3")
@@ -77,7 +77,7 @@ html(lang='en')
                 div.card-header 
                   div.flex.items-center.justify-between(class="w-full") 
                     h2(class="font-bold text-title") Filters
-                    button(class="hidden p-1 rounded-full sm:p-1 shop-close-sidebar xl:block")
+                    button(class="hidden p-1 rounded-full sm:p-1 shop-close-sidebar lg:block")
                       i(class="w-4 h-4" data-feather="x")
                 div.card-body.flex.flex-col.gap-1
                   div.flex.flex-col.flex-wrap.gap-2
@@ -253,10 +253,10 @@ html(lang='en')
                     div(class="block w-full p-3 border-2 bg-white-light border-primary-light dark:bg-sidebar-dark")
                       +new-product-card(NEW_PRODUCT)
 
-            div.col-span-9(class="2xl:col-span-8 xl:col-span-12 product-wrapper-grid")
+            div.col-span-9(class="2xl:col-span-8 lg:col-span-12 product-wrapper-grid")
               ul.grid.grid-cols-12.gap-6(class="sm:mt-5") 
                 each data in PRODUCT_BOX 
-                  li.col-span-3(class='4xl:col-span-4 2xl:col-span-6 xl:col-span-4 md:col-span-6 sm:col-span-12 product-box')
+                  li.col-span-3(class='4xl:col-span-4 2xl:col-span-6 lg:col-span-4 2lg:col-span-6 sm:col-span-12 product-box')
                     +product(data,"modal", "productmodal")
 
         // Page Body End  
