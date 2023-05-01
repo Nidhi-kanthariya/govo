@@ -178,16 +178,11 @@ html(lang='en')
                                 div.card-header
                                     +card-header("Today’s Deals","setting", HISTORY_DROPDOWN)
                                 div.card-body
-                                    //- div.grid.gap-card-gap.overflow-hidden 
-                                    //- div.swiper.product-slides.swiper-product
-                                    //-     div.swiper-wrapper
-                                    //-         each data in ECO_PRODUCT_BOX 
-                                    //-             div.swiper-slide 
-                                    //-                 +product2(data) 
-
-
-
-
+                                    div.swiper.product-slides.swiper-product
+                                        div.swiper-wrapper
+                                            each data in ECO_PRODUCT_BOX 
+                                                div.swiper-slide 
+                                                    +product2(data)
 
                 // Page Body End 
                 +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")

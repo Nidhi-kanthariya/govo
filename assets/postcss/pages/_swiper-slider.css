@@ -88,7 +88,13 @@
         }
     }
     .swiper-product{
-        margin: calc(-15px + (-30 - -15) * ((100vw - 320px) / (1920 - 320)));
-        padding: calc(15px + (30 - 15) * ((100vw - 320px) / (1920 - 320)));
+        margin: calc(-0.9375rem + (-1.875r - -0.9375) * ((100vw - 20rem) / (120 - 20)));
+        padding: calc(0.9375rem + (1.875r - 0.9375) * ((100vw - 20rem) / (120 - 20)));
     }
+    .swiper-product {
+        @apply sm:p-0 sm:m-0 p-grid-space m-slider-space;
+    [dir='rtl'] & {
+      direction: ltr;
+    }
+  }
 }

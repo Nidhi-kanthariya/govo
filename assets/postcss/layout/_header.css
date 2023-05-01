@@ -25,4 +25,14 @@
   header{
     @apply mb-[7.5rem] lg:mb-[calc(125px_+_(90_-_125)_*_((100vw_-_320px)_/_(1920_-_320)))] md:mb-[6.875rem];
   }
+  .landing-main{
+    .container{
+      @apply mx-auto w-full max-w-[93.75rem] px-[1.875rem];
+    }
+  }
+  .landing-header {
+    .show {
+      @apply md:top-[-2px] md:visible md:opacity-100;
+    }
+  }
 }
