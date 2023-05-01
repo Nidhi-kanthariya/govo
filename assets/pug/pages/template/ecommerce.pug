@@ -50,11 +50,33 @@ html(lang='en')
                                             +widget4(data)
                         div.col-span-6(class="xl:col-span-6 xl3:col-span-12")
                             div.card.gap-0 
-                                div.card-header
-                                    +card-header("Sales Summary ( Jun 2023)","select",HiSTORY_DATE_DROPDOWN)
-                                div.card-body
-                                    div.relative 
-                                        div#chart
+                                div.card-header  
+                                    div.flex.justify-between.w-full(class=`flex-wrap gap-2 items-center`)
+                                        h3(class="text-lg font-bold leading-none text-title") Sales Summary ( Jun 2023)
+                                        div.flex.items-center.gap-4
+                                            div.radialBar-legend
+                                                div(class="w-full px-2") 
+                                                    div.radialBar-legend-series
+                                                        span.radialBar-legend-marker.primary
+                                                        p(class="!mt-0").radialBar-legend-text.text-3xs.text-title Sales
+                                                div(class="w-full px-2")
+                                                    div.radialBar-legend-series
+                                                        span.radialBar-legend-marker.secondary
+                                                        p(class="!mt-0").radialBar-legend-text.text-3xs.text-title Orders
+                                            div.dropdown.on-hover-show 
+                                                button(class="flex rounded-full items-center justify-center p-[5px] bg-gray-light dark:bg-sidebar-dark2") 
+                                                    +SVG_ICON("Setting","w-[18px] h-[18px] stroke-title")   
+                                                div.dropdown-menu 
+                                                    ul
+                                                        li
+                                                            a(href="javascript:void(0)") Yearly
+                                                        li
+                                                            a(href="javascript:void(0)") Monthly
+                                                        li
+                                                            a(href="javascript:void(0)") Weekly
+                                div.card-body 
+                                    div.relative
+                                        div#salesSummaryChart 
                                         //- div#recentStatisticsChart2(class="absolute inset-0")
                         div.col-span-7(class="lg:col-span-12 lg:-order-1")
                             div.card
@@ -84,9 +106,19 @@ html(lang='en')
                             div.card
                                 div.card-header
                                     +card-header("Orders Status (May 10)","setting", HISTORY_DROPDOWN)
-                                div.card-body 
-                                    div.relative 
-                                        //- div#customerRadialchart
+                                div.card-body
+                                    div.relative
+                                        //- div#OrdersStatus
+                                    div.grid.grid-cols-12 
+                                        div.col-span-9(class="xl:col-span-3 2md:col-span-12")
+                                            div#OrdersStatus.custom-data-label.apex-custom-text(class="2md:-mt-[12px] ml-[-40px] 2md:ml-0")
+                                        div.col-span-3(class="xl:col-span-9 2md:col-span-12") 
+                                            ul(class="flex flex-col gap-[14px] 2md:gap-[8px] 2md:flex-row 2md:flex-wrap")
+                                                each item in USERS_POSITIONS
+                                                    li
+                                                        button.flex.items-center.gap-2(class="justify-start w-full text-xs font-semibold 2md:py-[7px] 2md:px-[7px] py-[9px] px-4 bg-gray-light dark:bg-sidebar-dark2")
+                                                            span(class=`w-[10px] bg-${item.status} h-[10px] rounded-[2px]`)
+                                                            span(class="text-xs font-semibold text-left line-clamp-1 ")= item.title
                         div.col-span-4(class="lg:col-span-12 lg:-order-1")
                             div.card
                                 div.card-header

@@ -116,12 +116,10 @@
       }
     }
   }
-
-
+.
   /* Custom scroll */
   .page-sidebar{
     &.sidebar-dark {
-
       .custom-scroll {
         &::-webkit-scrollbar {
           @apply w-[.25rem] h-[.25rem];
@@ -241,3 +239,17 @@ div[class*=activity-dot-secondary]{
 100% {
     transform: scale(1);
 }}
+
+ 
+/* .apexcharts-tooltip.apexcharts-theme-light{
+  overflow: overflow-visible;
+}  */
+#salesSummaryChart{
+  .apexcharts-tooltip {
+    &.apexcharts-theme-light{
+      &.apexcharts-active{
+        @apply  overflow-visible ;
+      }
+    }
+  }
+}

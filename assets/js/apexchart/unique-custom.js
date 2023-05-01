@@ -367,7 +367,6 @@ const SellOverview = {
       return '<div class="apex-tooltip">' + '<span>' + '<span class="bg-primary">' + '</span>' + 'Selling' + ': ' + series[seriesIndex][dataPointIndex] + 'K' + '</span>' + '</div>';
     },
   },
-
   responsive: [{
       breakpoint: 675,
       options: {
@@ -450,7 +449,6 @@ const userPosition = {
   legend: {
     show: false,
   },
-
   grid: {
     show: true,
     borderColor: 'var(--border-light)',
@@ -542,9 +540,6 @@ window.onload = function () {
   }
 };
 
-
-
-<<<<<<< HEAD
 /*=======/ Social Media Statics Chart /=======*/
 const socialMediaStatisticsOption = {
   series: [{
@@ -943,66 +938,6 @@ const recentStatisticsChartE2 = new ApexCharts(document.querySelector('#recentSt
 recentStatisticsChartEl.render();
 recentStatisticsChartE2.render();
 
-/*=======/Sales Summary ( Jun 2023)/=======*/
-
-var options = {
-  series: [{
-    name: 'series1',
-    data: [6000, 6500, 6800, 6500, 6800, 6500, 6650, 6500, 5900, 6000]
-  }, {
-    name: 'series2',
-    data: [4000, 5500, 5800, 5500, 6500, 5600, 5550, 5500, 4900, 5000]
-  }],
-  colors: ['rgba(var(--secondary))', 'rgba(var(--primary))'], 
-  chart: {
-    height: 350,
-    type: 'area'
-  },
-  dataLabels: {
-    enabled: false
-  },
-  stroke: {
-    curve: 'smooth'
-  }, 
-  fill:{
-    type: "gradient",
-    gradient: {
-      shadeIntensity: 0,
-      opacityFrom: 1,
-      opacityTo: 0
-    } 
-  }, 
-  yaxis: {
-    // type: 'Sales',
-    // categories: ["$0" , "$2,000" ,"$4,000" , "$6,000" ,"$8,000", '$10,000']
-
-    // min: 0,
-    // max: 10000,  
-    // steps: 2000,
-
-    labels: {
-      // formatter: (value) => {
-      //   let gaurav = value % 2 == 0 ? gaurav : value
-      //   console.log("value", value % 2 == 0 ? value : '11'); 
-      //   return `${value}$`;
-      // }, 
-      // tickAmount: Math.ceil(Math.max(...data)/2),
-      formatter: function(val) { if (val % 2 !== 0) { return '' } else { return val } }                                                                                                                      
-    },
-  },
-  xaxis: {
-    type: 'datetime', 
-    categories: ["Jan 01", "Jan 02", "Jan 03", "Jan 04", "Jan 05", "Jan 06", "Jan 07", "Jan 08", "Jan 09", "Jan 10"]
-  },
-  tooltip: {
-    x: { 
-      format: 'dd/MM/yy HH:mm' 
-    },
-  },
-};
-
-var chart = new ApexCharts(document.querySelector("#chart"), options);
-chart.render();
 
 /*=======/Total Follower Bar Spark line/=======*/
 const totalSaveBarChartOption = {
@@ -1919,5 +1854,3 @@ const customerRadialchart = {
 
 const customerRadialchartEl = new ApexCharts(document.querySelector('#customerRadialchart'), customerRadialchart);
 customerRadialchartEl.render();
-=======
->>>>>>> main
