@@ -6,7 +6,7 @@
 const revenueChart = {
   series: [{
     data: [45, 25, 55, 47, 89, 47, 70, 38, 92, 44, 38, 70],
-  },],
+  }, ],
   chart: {
     type: 'bar',
     width: '100%',
@@ -52,41 +52,41 @@ const revenueChart = {
     },
   },
   responsive: [{
-    breakpoint: 992,
-    options: {
-      chart: {
-        height: 87,
-        sparkline: {
-          enabled: true,
+      breakpoint: 992,
+      options: {
+        chart: {
+          height: 87,
+          sparkline: {
+            enabled: true,
+          },
         },
       },
     },
-  },
-  {
-    breakpoint: 675,
-    options: {
-      plotOptions: {
-        bar: {
-          columnWidth: '55%',
-          borderRadius: 5,
+    {
+      breakpoint: 675,
+      options: {
+        plotOptions: {
+          bar: {
+            columnWidth: '55%',
+            borderRadius: 5,
+          },
         },
       },
     },
-  },
-  {
-    breakpoint: 425,
-    options: {
-      chart: {
-        height: 55,
-      },
-      plotOptions: {
-        bar: {
-          columnWidth: '70%',
-          borderRadius: 5,
+    {
+      breakpoint: 425,
+      options: {
+        chart: {
+          height: 55,
+        },
+        plotOptions: {
+          bar: {
+            columnWidth: '70%',
+            borderRadius: 5,
+          },
         },
       },
     },
-  },
   ],
 };
 
@@ -148,94 +148,94 @@ const earningChart = {
   colors: ['var(--chart-dark)'],
   labels: ['Profile'],
   responsive: [{
-    breakpoint: 1700,
-    options: {
-      chart: {
-        height: 250,
+      breakpoint: 1700,
+      options: {
+        chart: {
+          height: 250,
 
-        offsetY: 20,
-        sparkline: {
-          enabled: true,
+          offsetY: 20,
+          sparkline: {
+            enabled: true,
+          },
         },
       },
     },
-  },
-  {
-    breakpoint: 1600,
-    options: {
-      chart: {
-        height: 280,
+    {
+      breakpoint: 1600,
+      options: {
+        chart: {
+          height: 280,
 
-        offsetY: 10,
-        sparkline: {
-          enabled: true,
+          offsetY: 10,
+          sparkline: {
+            enabled: true,
+          },
         },
       },
     },
-  },
-  {
-    breakpoint: 1200,
-    options: {
-      chart: {
-        height: 250,
+    {
+      breakpoint: 1200,
+      options: {
+        chart: {
+          height: 250,
 
-        offsetY: 10,
-        sparkline: {
-          enabled: true,
+          offsetY: 10,
+          sparkline: {
+            enabled: true,
+          },
         },
       },
     },
-  },
-  {
-    breakpoint: 675,
-    options: {
-      chart: {
-        height: 280,
+    {
+      breakpoint: 675,
+      options: {
+        chart: {
+          height: 280,
+        },
       },
     },
-  },
-  {
-    breakpoint: 425,
-    options: {
-      chart: {
-        height: 245,
-      },
-      plotOptions: {
-        radialBar: {
-          dataLabels: {
-            name: {
-              ...fontCommon,
-              show: true,
-              color: 'var(--content)',
-              offsetY: 5,
-            },
-            value: {
-              offsetY: -30,
-              fontSize: '20px',
+    {
+      breakpoint: 425,
+      options: {
+        chart: {
+          height: 245,
+        },
+        plotOptions: {
+          radialBar: {
+            dataLabels: {
+              name: {
+                ...fontCommon,
+                show: true,
+                color: 'var(--content)',
+                offsetY: 5,
+              },
+              value: {
+                offsetY: -30,
+                fontSize: '20px',
+              },
             },
           },
         },
       },
     },
-  },
-  {
-    breakpoint: 375,
-    options: {
-      chart: {
-        height: 230,
-      },
+    {
+      breakpoint: 375,
+      options: {
+        chart: {
+          height: 230,
+        },
 
-      plotOptions: {
-        radialBar: {
-          startAngle: -100,
-          endAngle: 100,
-          hollow: {
-            size: '35%',
+        plotOptions: {
+          radialBar: {
+            startAngle: -100,
+            endAngle: 100,
+            hollow: {
+              size: '35%',
+            },
           },
         },
       },
     },
-  },
   ],
 };
 
@@ -247,7 +247,7 @@ const SellOverview = {
   series: [{
     name: 'series1',
     data: [310, 280, 350, 310, 570, 590, 650, 550],
-  },],
+  }, ],
   chart: {
     height: 320,
     width: '100%',
@@ -268,25 +268,25 @@ const SellOverview = {
       opacityFrom: 0.8,
       opacityTo: 0.4,
       colorStops: [{
-        offset: 0,
-        color: 'rgba(var(--primary),0.5)',
-        opacity: 1,
-      },
-      {
-        offset: 20,
-        color: 'rgba(var(--primary),0.3)',
-        opacity: 1,
-      },
-      {
-        offset: 60,
-        color: 'rgba(var(--primary),0.1)',
-        opacity: 1,
-      },
-      {
-        offset: 100,
-        color: 'rgba(var(--primary), 0)',
-        opacity: 1,
-      },
+          offset: 0,
+          color: 'rgba(var(--primary),0.5)',
+          opacity: 1,
+        },
+        {
+          offset: 20,
+          color: 'rgba(var(--primary),0.3)',
+          opacity: 1,
+        },
+        {
+          offset: 60,
+          color: 'rgba(var(--primary),0.1)',
+          opacity: 1,
+        },
+        {
+          offset: 100,
+          color: 'rgba(var(--primary), 0)',
+          opacity: 1,
+        },
       ],
     },
   },
@@ -369,29 +369,29 @@ const SellOverview = {
   },
 
   responsive: [{
-    breakpoint: 675,
-    options: {
-      chart: {
-        height: 280,
+      breakpoint: 675,
+      options: {
+        chart: {
+          height: 280,
+        },
       },
     },
-  },
-  {
-    breakpoint: 425,
-    options: {
-      chart: {
-        height: 260,
+    {
+      breakpoint: 425,
+      options: {
+        chart: {
+          height: 260,
+        },
       },
     },
-  },
-  {
-    breakpoint: 375,
-    options: {
-      chart: {
-        height: 220,
+    {
+      breakpoint: 375,
+      options: {
+        chart: {
+          height: 220,
+        },
       },
     },
-  },
   ],
 };
 
@@ -402,7 +402,7 @@ SellOverviewEl.render();
 const userPosition = {
   series: [{
     data: [70, 30, 40, 90, 60, 50],
-  },],
+  }, ],
   chart: {
     type: 'bar',
     height: 323,
@@ -524,7 +524,7 @@ const userPosition = {
         },
       },
     },
-  },],
+  }, ],
 };
 
 var userPositionEl = new ApexCharts(document.querySelector('#userPosition'), userPosition);
@@ -544,12 +544,13 @@ window.onload = function () {
 
 
 
+<<<<<<< HEAD
 /*=======/ Social Media Statics Chart /=======*/
 const socialMediaStatisticsOption = {
   series: [{
     name: 'series1',
     data: [200, 570, 200, 300, 280, 530, 440, 440, 630, 400, 450, 560, 350, 200],
-  },],
+  }, ],
   chart: {
     height: 280,
     width: '100%',
@@ -570,25 +571,25 @@ const socialMediaStatisticsOption = {
       opacityFrom: 0.8,
       opacityTo: 0.4,
       colorStops: [{
-        offset: 0,
-        color: 'rgba(var(--secondary),0.5)',
-        opacity: 1,
-      },
-      {
-        offset: 20,
-        color: 'rgba(var(--secondary),0.3)',
-        opacity: 1,
-      },
-      {
-        offset: 60,
-        color: 'rgba(var(--secondary),0.1)',
-        opacity: 1,
-      },
-      {
-        offset: 100,
-        color: 'rgba(var(--secondary), 0)',
-        opacity: 1,
-      },
+          offset: 0,
+          color: 'rgba(var(--secondary),0.5)',
+          opacity: 1,
+        },
+        {
+          offset: 20,
+          color: 'rgba(var(--secondary),0.3)',
+          opacity: 1,
+        },
+        {
+          offset: 60,
+          color: 'rgba(var(--secondary),0.1)',
+          opacity: 1,
+        },
+        {
+          offset: 100,
+          color: 'rgba(var(--secondary), 0)',
+          opacity: 1,
+        },
       ],
     },
   },
@@ -673,55 +674,55 @@ const socialMediaStatisticsOption = {
   },
 
   responsive: [{
-    breakpoint: 1700,
-    options: {
-      chart: {
-        height: 243,
-      },
-    },
-  },
-  {
-    breakpoint: 1500,
-    options: {
-      chart: {
-        height: 215,
-      },
-    },
-  },
-  {
-    breakpoint: 576,
-    options: {
-      chart: {
-        height: 180,
-      },
-      markers: {
-        size: 5,
-        strokeWidth: 2,
-        hover: {
-          size: 7,
-        },
-      },
-      xaxis: {
-        labels: {
-          show: true,
-          rotate: -45,
-          rotateAlways: true,
-          hideOverlappingLabels: true,
-          showDuplicates: false,
-          maxHeight: 30,
-          offsetX: 3,
+      breakpoint: 1700,
+      options: {
+        chart: {
+          height: 243,
         },
       },
     },
-  },
-  {
-    breakpoint: 426,
-    options: {
-      chart: {
-        height: 160,
+    {
+      breakpoint: 1500,
+      options: {
+        chart: {
+          height: 215,
+        },
       },
     },
-  },
+    {
+      breakpoint: 576,
+      options: {
+        chart: {
+          height: 180,
+        },
+        markers: {
+          size: 5,
+          strokeWidth: 2,
+          hover: {
+            size: 7,
+          },
+        },
+        xaxis: {
+          labels: {
+            show: true,
+            rotate: -45,
+            rotateAlways: true,
+            hideOverlappingLabels: true,
+            showDuplicates: false,
+            maxHeight: 30,
+            offsetX: 3,
+          },
+        },
+      },
+    },
+    {
+      breakpoint: 426,
+      options: {
+        chart: {
+          height: 160,
+        },
+      },
+    },
   ],
 };
 
@@ -736,7 +737,7 @@ const recentStatistics1 = {
   series: [{
     name: 'series1',
     data: [0, 20, 70, 25, 100, 45, 25],
-  },],
+  }, ],
   colors: ['rgba(var(--secondary),1'],
   fill: {
     type: 'gradient',
@@ -745,25 +746,25 @@ const recentStatistics1 = {
       opacityFrom: 0.8,
       opacityTo: 0.4,
       colorStops: [{
-        offset: 0,
-        color: 'rgba(var(--secondary),0.5)',
-        opacity: 1,
-      },
-      {
-        offset: 20,
-        color: 'rgba(var(--secondary),0.3)',
-        opacity: 1,
-      },
-      {
-        offset: 60,
-        color: 'rgba(var(--secondary),0.1)',
-        opacity: 1,
-      },
-      {
-        offset: 100,
-        color: 'rgba(var(--secondary), 0)',
-        opacity: 1,
-      },
+          offset: 0,
+          color: 'rgba(var(--secondary),0.5)',
+          opacity: 1,
+        },
+        {
+          offset: 20,
+          color: 'rgba(var(--secondary),0.3)',
+          opacity: 1,
+        },
+        {
+          offset: 60,
+          color: 'rgba(var(--secondary),0.1)',
+          opacity: 1,
+        },
+        {
+          offset: 100,
+          color: 'rgba(var(--secondary), 0)',
+          opacity: 1,
+        },
       ],
     },
   },
@@ -778,7 +779,7 @@ const recentStatistics2 = {
   series: [{
     name: 'series1',
     data: [0, 50, 40, 90, 60, 120, 150],
-  },],
+  }, ],
   colors: ['rgba(var(--primary),1'],
   fill: {
     type: 'gradient',
@@ -787,25 +788,25 @@ const recentStatistics2 = {
       opacityFrom: 0.8,
       opacityTo: 0.4,
       colorStops: [{
-        offset: 0,
-        color: 'rgba(var(--primary),0.5)',
-        opacity: 1,
-      },
-      {
-        offset: 20,
-        color: 'rgba(var(--primary),0.3)',
-        opacity: 1,
-      },
-      {
-        offset: 60,
-        color: 'rgba(var(--primary),0.1)',
-        opacity: 1,
-      },
-      {
-        offset: 100,
-        color: 'rgba(var(--primary), 0)',
-        opacity: 1,
-      },
+          offset: 0,
+          color: 'rgba(var(--primary),0.5)',
+          opacity: 1,
+        },
+        {
+          offset: 20,
+          color: 'rgba(var(--primary),0.3)',
+          opacity: 1,
+        },
+        {
+          offset: 60,
+          color: 'rgba(var(--primary),0.1)',
+          opacity: 1,
+        },
+        {
+          offset: 100,
+          color: 'rgba(var(--primary), 0)',
+          opacity: 1,
+        },
       ],
     },
   },
@@ -910,29 +911,29 @@ const recentStatisticsOption = (data) => {
     },
 
     responsive: [{
-      breakpoint: 1200,
-      options: {
-        chart: {
-          height: 260,
+        breakpoint: 1200,
+        options: {
+          chart: {
+            height: 260,
+          },
         },
       },
-    },
-    {
-      breakpoint: 676,
-      options: {
-        chart: {
-          height: 240,
+      {
+        breakpoint: 676,
+        options: {
+          chart: {
+            height: 240,
+          },
         },
       },
-    },
-    {
-      breakpoint: 376,
-      options: {
-        chart: {
-          height: 200,
+      {
+        breakpoint: 376,
+        options: {
+          chart: {
+            height: 200,
+          },
         },
       },
-    },
     ],
   };
 };
@@ -946,36 +947,58 @@ recentStatisticsChartE2.render();
 
 var options = {
   series: [{
-  name: 'series1',
-  data: [25, 30, 25, 30, 25, 30, 25 , 28 ,29, 30]
-}, {
-  name: 'series2',
-  data: [35, 32, 35, 32, 36, 36, 34, 35 ,30, 35]
-}], 
+    name: 'series1',
+    data: [6000, 6500, 6800, 6500, 6800, 6500, 6650, 6500, 5900, 6000]
+  }, {
+    name: 'series2',
+    data: [4000, 5500, 5800, 5500, 6500, 5600, 5550, 5500, 4900, 5000]
+  }],
+  colors: ['rgba(var(--secondary))', 'rgba(var(--primary))'], 
   chart: {
-  height: 350,
-  type: 'area'
-}, 
-dataLabels: {
-  enabled: false 
-},
-stroke: {
-  curve: 'smooth'
-},
-
-yaxis: {
-  type : 'Orders',
-  categories: ["$0" , "$2,000" ,"$4,000" , "$6,000" ,"$8,000", '$10,000']
-},
-xaxis: { 
-  type: 'datetime',
-  categories: ["Jan 01", "Jan 02", "Jan 03", "Jan 04", "Jan 05", "Jan 06", "Jan 07" ,"Jan 08","Jan 09" ,"Jan 10"]
-},
-tooltip: {
-  x: {
-    format: 'dd/MM/yy HH:mm'
+    height: 350,
+    type: 'area'
   },
-},
+  dataLabels: {
+    enabled: false
+  },
+  stroke: {
+    curve: 'smooth'
+  }, 
+  fill:{
+    type: "gradient",
+    gradient: {
+      shadeIntensity: 0,
+      opacityFrom: 1,
+      opacityTo: 0
+    } 
+  }, 
+  yaxis: {
+    // type: 'Sales',
+    // categories: ["$0" , "$2,000" ,"$4,000" , "$6,000" ,"$8,000", '$10,000']
+
+    // min: 0,
+    // max: 10000,  
+    // steps: 2000,
+
+    labels: {
+      // formatter: (value) => {
+      //   let gaurav = value % 2 == 0 ? gaurav : value
+      //   console.log("value", value % 2 == 0 ? value : '11'); 
+      //   return `${value}$`;
+      // }, 
+      // tickAmount: Math.ceil(Math.max(...data)/2),
+      formatter: function(val) { if (val % 2 !== 0) { return '' } else { return val } }                                                                                                                      
+    },
+  },
+  xaxis: {
+    type: 'datetime', 
+    categories: ["Jan 01", "Jan 02", "Jan 03", "Jan 04", "Jan 05", "Jan 06", "Jan 07", "Jan 08", "Jan 09", "Jan 10"]
+  },
+  tooltip: {
+    x: { 
+      format: 'dd/MM/yy HH:mm' 
+    },
+  },
 };
 
 var chart = new ApexCharts(document.querySelector("#chart"), options);
@@ -985,7 +1008,7 @@ chart.render();
 const totalSaveBarChartOption = {
   series: [{
     data: [30, 66, 45, 89, 63, 52, 70],
-  },],
+  }, ],
   chart: {
     type: 'bar',
     width: '100%',
@@ -1023,38 +1046,38 @@ const totalSaveBarChartOption = {
   },
   tooltip: toolTipMini,
   responsive: [{
-    breakpoint: 1700,
-    options: {
-      chart: {
-        height: 86,
-      },
-    },
-  },
-  {
-    breakpoint: 1400,
-    options: {
-      plotOptions: {
-        bar: {
-          columnWidth: '40%',
-          borderRadius: 5,
+      breakpoint: 1700,
+      options: {
+        chart: {
+          height: 86,
         },
       },
     },
-  },
-  {
-    breakpoint: 376,
-    options: {
-      chart: {
-        height: 50,
-      },
-      plotOptions: {
-        bar: {
-          columnWidth: '60%',
-          borderRadius: 5,
+    {
+      breakpoint: 1400,
+      options: {
+        plotOptions: {
+          bar: {
+            columnWidth: '40%',
+            borderRadius: 5,
+          },
         },
       },
     },
-  },
+    {
+      breakpoint: 376,
+      options: {
+        chart: {
+          height: 50,
+        },
+        plotOptions: {
+          bar: {
+            columnWidth: '60%',
+            borderRadius: 5,
+          },
+        },
+      },
+    },
   ],
 };
 
@@ -1118,116 +1141,116 @@ const totalCommentOption = {
     lineCap: 'round',
   },
   responsive: [{
-    breakpoint: 1700,
-    options: {
-      chart: {
-        height: 115,
-      },
+      breakpoint: 1700,
+      options: {
+        chart: {
+          height: 115,
+        },
 
-      plotOptions: {
-        radialBar: {
-          hollow: {
-            size: '48%',
-          },
+        plotOptions: {
+          radialBar: {
+            hollow: {
+              size: '48%',
+            },
 
-          dataLabels: {
-            value: {
-              fontSize: '14px',
+            dataLabels: {
+              value: {
+                fontSize: '14px',
+              },
             },
           },
         },
       },
     },
-  },
-  {
-    breakpoint: 1600,
-    options: {
-      chart: {
-        height: 110,
+    {
+      breakpoint: 1600,
+      options: {
+        chart: {
+          height: 110,
+        },
       },
     },
-  },
-  {
-    breakpoint: 1460,
-    options: {
-      chart: {
-        height: 100,
-      },
-      plotOptions: {
-        radialBar: {
-          hollow: {
-            size: '42%',
-          },
-          dataLabels: {
-            value: {
-              fontSize: '13px',
+    {
+      breakpoint: 1460,
+      options: {
+        chart: {
+          height: 100,
+        },
+        plotOptions: {
+          radialBar: {
+            hollow: {
+              size: '42%',
+            },
+            dataLabels: {
+              value: {
+                fontSize: '13px',
+              },
             },
           },
         },
       },
     },
-  },
-  {
-    breakpoint: 1400,
-    options: {
-      chart: {
-        height: 120,
-      },
-      plotOptions: {
-        radialBar: {
-          hollow: {
-            size: '50%',
-          },
-          dataLabels: {
-            value: {
-              fontSize: '18px',
+    {
+      breakpoint: 1400,
+      options: {
+        chart: {
+          height: 120,
+        },
+        plotOptions: {
+          radialBar: {
+            hollow: {
+              size: '50%',
+            },
+            dataLabels: {
+              value: {
+                fontSize: '18px',
+              },
             },
           },
         },
       },
     },
-  },
-  {
-    breakpoint: 876,
-    options: {
-      chart: {
-        height: 110,
-      },
-      plotOptions: {
-        radialBar: {
-          hollow: {
-            size: '45%',
-          },
-          dataLabels: {
-            value: {
-              fontSize: '18px',
+    {
+      breakpoint: 876,
+      options: {
+        chart: {
+          height: 110,
+        },
+        plotOptions: {
+          radialBar: {
+            hollow: {
+              size: '45%',
+            },
+            dataLabels: {
+              value: {
+                fontSize: '18px',
+              },
             },
           },
         },
       },
     },
-  },
-  {
-    breakpoint: 376,
-    options: {
-      chart: {
-        height: 90,
-      },
-      plotOptions: {
-        radialBar: {
-          hollow: {
-            size: '40%',
-          },
+    {
+      breakpoint: 376,
+      options: {
+        chart: {
+          height: 90,
+        },
+        plotOptions: {
+          radialBar: {
+            hollow: {
+              size: '40%',
+            },
 
-          dataLabels: {
-            value: {
-              fontSize: '14px',
+            dataLabels: {
+              value: {
+                fontSize: '14px',
+              },
             },
           },
         },
       },
     },
-  },
   ],
 };
 
@@ -1241,7 +1264,7 @@ const totalLikesOption = {
   series: [{
     name: 'series2',
     data: [5, 30, 20, 80, 27, 29, 24, 34, 18, 70, 60, 110, 0],
-  },],
+  }, ],
   chart: {
     height: 110,
     type: 'area',
@@ -1268,34 +1291,34 @@ const totalLikesOption = {
 
   tooltip: toolTipMini,
   responsive: [{
-    breakpoint: 1700,
-    options: {
-      chart: {
-        height: 86,
-      },
-    },
-  },
-  {
-    breakpoint: 1460,
-    options: {
-      grid: {
-        padding: {
-          top: 0,
-          right: 0,
-          bottom: 0,
-          left: 5,
+      breakpoint: 1700,
+      options: {
+        chart: {
+          height: 86,
         },
       },
     },
-  },
-  {
-    breakpoint: 376,
-    options: {
-      chart: {
-        height: 50,
+    {
+      breakpoint: 1460,
+      options: {
+        grid: {
+          padding: {
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 5,
+          },
+        },
       },
     },
-  },
+    {
+      breakpoint: 376,
+      options: {
+        chart: {
+          height: 50,
+        },
+      },
+    },
   ],
 };
 
@@ -1308,7 +1331,7 @@ totalLikesEl.render();
 const totalFollowersBarChartOption = {
   series: [{
     data: [10, 55, 45, 89, 63, 52, 70],
-  },],
+  }, ],
   chart: {
     type: 'bar',
     width: '100%',
@@ -1345,31 +1368,31 @@ const totalFollowersBarChartOption = {
   },
   tooltip: toolTipMini,
   responsive: [{
-    breakpoint: 1700,
-    options: {
-      chart: {
-        height: 86,
-      },
-    },
-  },
-  {
-    breakpoint: 1460,
-    options: {
-      grid: {
-        padding: {
-          left: 0,
+      breakpoint: 1700,
+      options: {
+        chart: {
+          height: 86,
         },
       },
     },
-  },
-  {
-    breakpoint: 376,
-    options: {
-      chart: {
-        height: 50,
+    {
+      breakpoint: 1460,
+      options: {
+        grid: {
+          padding: {
+            left: 0,
+          },
+        },
       },
     },
-  },
+    {
+      breakpoint: 376,
+      options: {
+        chart: {
+          height: 50,
+        },
+      },
+    },
   ],
 };
 
@@ -1381,7 +1404,7 @@ const marketOverViewChart = {
   series: [{
     name: 'Desktops',
     data: [18, 30, 25, 51, 34, 40, 34],
-  },],
+  }, ],
   chart: {
     height: 205,
     type: 'line',
@@ -1440,49 +1463,49 @@ const marketOverViewChart = {
     show: false,
   },
   responsive: [{
-    breakpoint: 1600,
-    options: {
-      chart: {
-        height: 203,
-        sparkline: {
-          enabled: true,
+      breakpoint: 1600,
+      options: {
+        chart: {
+          height: 203,
+          sparkline: {
+            enabled: true,
+          },
         },
       },
     },
-  },
-  {
-    breakpoint: 1500,
-    options: {
-      chart: {
-        height: 195,
-        sparkline: {
-          enabled: true,
+    {
+      breakpoint: 1500,
+      options: {
+        chart: {
+          height: 195,
+          sparkline: {
+            enabled: true,
+          },
         },
       },
     },
-  },
-  {
-    breakpoint: 768,
-    options: {
-      chart: {
-        height: 172,
-        sparkline: {
-          enabled: true,
+    {
+      breakpoint: 768,
+      options: {
+        chart: {
+          height: 172,
+          sparkline: {
+            enabled: true,
+          },
         },
       },
     },
-  },
-  {
-    breakpoint: 326,
-    options: {
-      chart: {
-        height: 145,
-        sparkline: {
-          enabled: true,
+    {
+      breakpoint: 326,
+      options: {
+        chart: {
+          height: 145,
+          sparkline: {
+            enabled: true,
+          },
         },
       },
     },
-  },
   ],
 };
 const marketOverViewChartEl = new ApexCharts(document.querySelector('#market-overview-chart'), marketOverViewChart);
@@ -1491,8 +1514,7 @@ marketOverViewChartEl.render();
 
 /*=======/Total Sell Bar Spark line/=======*/
 const totalSellBarChart = {
-  series: [
-    {
+  series: [{
       data: [40, 25, 60, 15, 40, 55, 35],
     },
     {
@@ -1538,38 +1560,38 @@ const totalSellBarChart = {
   },
   tooltip: toolTipMini,
   responsive: [{
-    breakpoint: 1700,
-    options: {
-      chart: {
-        height: 86,
-      },
-    },
-  },
-  {
-    breakpoint: 1400,
-    options: {
-      plotOptions: {
-        bar: {
-          columnWidth: '40%',
-          borderRadius: 5,
+      breakpoint: 1700,
+      options: {
+        chart: {
+          height: 86,
         },
       },
     },
-  },
-  {
-    breakpoint: 376,
-    options: {
-      chart: {
-        height: 50,
-      },
-      plotOptions: {
-        bar: {
-          columnWidth: '60%',
-          borderRadius: 5,
+    {
+      breakpoint: 1400,
+      options: {
+        plotOptions: {
+          bar: {
+            columnWidth: '40%',
+            borderRadius: 5,
+          },
         },
       },
     },
-  },
+    {
+      breakpoint: 376,
+      options: {
+        chart: {
+          height: 50,
+        },
+        plotOptions: {
+          bar: {
+            columnWidth: '60%',
+            borderRadius: 5,
+          },
+        },
+      },
+    },
   ],
 };
 
@@ -1703,116 +1725,116 @@ const totalExpensesLineChart = {
     lineCap: 'round',
   },
   responsive: [{
-    breakpoint: 1700,
-    options: {
-      chart: {
-        height: 115,
-      },
+      breakpoint: 1700,
+      options: {
+        chart: {
+          height: 115,
+        },
 
-      plotOptions: {
-        radialBar: {
-          hollow: {
-            size: '48%',
-          },
+        plotOptions: {
+          radialBar: {
+            hollow: {
+              size: '48%',
+            },
 
-          dataLabels: {
-            value: {
-              fontSize: '14px',
+            dataLabels: {
+              value: {
+                fontSize: '14px',
+              },
             },
           },
         },
       },
     },
-  },
-  {
-    breakpoint: 1600,
-    options: {
-      chart: {
-        height: 110,
+    {
+      breakpoint: 1600,
+      options: {
+        chart: {
+          height: 110,
+        },
       },
     },
-  },
-  {
-    breakpoint: 1460,
-    options: {
-      chart: {
-        height: 100,
-      },
-      plotOptions: {
-        radialBar: {
-          hollow: {
-            size: '42%',
-          },
-          dataLabels: {
-            value: {
-              fontSize: '13px',
+    {
+      breakpoint: 1460,
+      options: {
+        chart: {
+          height: 100,
+        },
+        plotOptions: {
+          radialBar: {
+            hollow: {
+              size: '42%',
+            },
+            dataLabels: {
+              value: {
+                fontSize: '13px',
+              },
             },
           },
         },
       },
     },
-  },
-  {
-    breakpoint: 1400,
-    options: {
-      chart: {
-        height: 120,
-      },
-      plotOptions: {
-        radialBar: {
-          hollow: {
-            size: '50%',
-          },
-          dataLabels: {
-            value: {
-              fontSize: '18px',
+    {
+      breakpoint: 1400,
+      options: {
+        chart: {
+          height: 120,
+        },
+        plotOptions: {
+          radialBar: {
+            hollow: {
+              size: '50%',
+            },
+            dataLabels: {
+              value: {
+                fontSize: '18px',
+              },
             },
           },
         },
       },
     },
-  },
-  {
-    breakpoint: 876,
-    options: {
-      chart: {
-        height: 110,
-      },
-      plotOptions: {
-        radialBar: {
-          hollow: {
-            size: '45%',
-          },
-          dataLabels: {
-            value: {
-              fontSize: '18px',
+    {
+      breakpoint: 876,
+      options: {
+        chart: {
+          height: 110,
+        },
+        plotOptions: {
+          radialBar: {
+            hollow: {
+              size: '45%',
+            },
+            dataLabels: {
+              value: {
+                fontSize: '18px',
+              },
             },
           },
         },
       },
     },
-  },
-  {
-    breakpoint: 376,
-    options: {
-      chart: {
-        height: 90,
-      },
-      plotOptions: {
-        radialBar: {
-          hollow: {
-            size: '40%',
-          },
+    {
+      breakpoint: 376,
+      options: {
+        chart: {
+          height: 90,
+        },
+        plotOptions: {
+          radialBar: {
+            hollow: {
+              size: '40%',
+            },
 
-          dataLabels: {
-            value: {
-              fontSize: '14px',
+            dataLabels: {
+              value: {
+                fontSize: '14px',
+              },
             },
           },
         },
       },
     },
-  },
   ],
 };
 
@@ -1862,38 +1884,40 @@ const customerRadialchart = {
     lineCap: 'round',
   },
   series: [70, 55, 40],
-  colors: ['rgba(var(--primary),1)', 'rgba(var(--secondary), 1)', 'var(--title)',],
+  colors: ['rgba(var(--primary),1)', 'rgba(var(--secondary), 1)', 'var(--title)', ],
   responsive: [{
-    breakpoint: 675,
-    options: {
-      chart: {
-        height: 280,
-      },
-    },
-  },
-  {
-    breakpoint: 425,
-    options: {
-      chart: {
-        height: 260,
-      },
-      plotOptions: {
-        radar: {
-          size: 50,
+      breakpoint: 675,
+      options: {
+        chart: {
+          height: 280,
         },
       },
     },
-  },
-  {
-    breakpoint: 375,
-    options: {
-      chart: {
-        height: 220,
+    {
+      breakpoint: 425,
+      options: {
+        chart: {
+          height: 260,
+        },
+        plotOptions: {
+          radar: {
+            size: 50,
+          },
+        },
       },
     },
-  },
+    {
+      breakpoint: 375,
+      options: {
+        chart: {
+          height: 220,
+        },
+      },
+    },
   ],
 };
 
 const customerRadialchartEl = new ApexCharts(document.querySelector('#customerRadialchart'), customerRadialchart);
 customerRadialchartEl.render();
+=======
+>>>>>>> main

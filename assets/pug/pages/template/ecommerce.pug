@@ -12,7 +12,7 @@
 
 //- apex-chart
 -var apexChart=true;  
--var uniqueApex=true;
+-var ecommerceApex=true; 
 
 //- swiper-slider
 -var swiper=true;
@@ -56,7 +56,7 @@ html(lang='en')
                                     div.relative 
                                         div#chart
                                         //- div#recentStatisticsChart2(class="absolute inset-0")
-                        div.col-span-7(class="4xl:col-span-8 lg:col-span-12 lg:-order-1")
+                        div.col-span-7(class="lg:col-span-12 lg:-order-1")
                             div.card
                                 div.card-header
                                     div.flex.justify-between.w-full(class=`flex-wrap gap-2 items-center`)
@@ -80,14 +80,14 @@ html(lang='en')
                                 div.card-body
                                     div.overflow-auto.custom-scroll  
                                         include ../../components/table/order-detail
-                        div.col-span-5(class="4xl:col-span-8 lg:col-span-12 lg:-order-1")
+                        div.col-span-5(class="lg:col-span-12 lg:-order-1")
                             div.card
                                 div.card-header
                                     +card-header("Orders Status (May 10)","setting", HISTORY_DROPDOWN)
                                 div.card-body 
                                     div.relative 
                                         //- div#customerRadialchart
-                        div.col-span-4(class="4xl:col-span-8 lg:col-span-12 lg:-order-1")
+                        div.col-span-4(class="lg:col-span-12 lg:-order-1")
                             div.card
                                 div.card-header
                                     +card-header("Customers","setting", HISTORY_DROPDOWN)
@@ -111,7 +111,7 @@ html(lang='en')
                                                 span.radialBar-legend-marker.title
                                                 p.radialBar-legend-text.text-3xs.text-title Retarget Customers 
                                             small.text-xs.text-content3(class="pl-3 rtl:pl-0 rtl:pr-3") 34%
-                        div.col-span-4(class="4xl:col-span-8 lg:col-span-12 lg:-order-1")
+                        div.col-span-4(class="lg:col-span-12 lg:-order-1")
                             div.card
                                 div.card-header
                                     +card-header("Recent Activity","setting", HISTORY_DROPDOWN)
@@ -159,21 +159,21 @@ html(lang='en')
 
 
 
-                        div.col-span-4(class="4xl:col-span-8 lg:col-span-12 lg:-order-1")
+                        div.col-span-4(class="lg:col-span-12 lg:-order-1")
                             div.card
                                 div.card-header
                                     +card-header("Global Sales by top Locations","setting", HISTORY_DROPDOWN)
                                 div.card-body
                                     div.overflow-auto.custom-scroll  
                                         include ../../components/table/sale-detail
-                        div.col-span-5(class="4xl:col-span-8 lg:col-span-12 lg:-order-1")
+                        div.col-span-5(class="lg:col-span-12 lg:-order-1")
                             div.card
                                 div.card-header
                                     +card-header("Best Product Seller","setting", HISTORY_DROPDOWN)
                                 div.card-body
                                     div.overflow-auto.custom-scroll  
                                         include ../../components/table/product-seller-detail
-                        div.col-span-7(class="4xl:col-span-8 lg:col-span-12 lg:-order-1")
+                        div.col-span-7(class="lg:col-span-12 lg:-order-1")
                             div.card
                                 div.card-header
                                     +card-header("Today’s Deals","setting", HISTORY_DROPDOWN)
@@ -184,8 +184,6 @@ html(lang='en')
                                     //-         each data in ECO_PRODUCT_BOX 
                                     //-             div.swiper-slide 
                                     //-                 +product2(data) 
-
-
 
 
 
