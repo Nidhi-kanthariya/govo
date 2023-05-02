@@ -1846,11 +1846,11 @@ const customerRadialchart = {
       options: {
         chart: {
           height: 220,
-        },
+        }, 
       },
     },
   ],
 };
 
 const customerRadialchartEl = new ApexCharts(document.querySelector('#customerRadialchart'), customerRadialchart);
-customerRadialchartEl.render();
+customerRadialchartEl.render(); 

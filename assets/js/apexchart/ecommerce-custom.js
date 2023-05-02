@@ -105,7 +105,9 @@ var totalCustomerLineChart = {
   dataLabels: {
     enabled: false
   },
-
+  legend: {
+    show: false
+  },
   colors: ['rgba(var(--secondary),1)'],
 
   grid: {
@@ -115,8 +117,8 @@ var totalCustomerLineChart = {
       bottom: -10,
       left: 0,
     },
+    show: false,
   },
-
   xaxis: {
     labels: {
       show: false,
@@ -129,6 +131,9 @@ var totalCustomerLineChart = {
     },
     lines: {
       show: false,
+    },
+    tooltip:{
+      enabled: false,
     },
   },
   yaxis: {
@@ -144,15 +149,20 @@ var totalCustomerLineChart = {
     axisTicks: {
       show: false,
     },
+    tooltip:{
+      enabled: false,
+    },
   },
-
+  legend:{ 
+    show: false,
+  },
   markers: {
     hover: {
       sizeOffset: 4
     }
-  }
+  },
 };
-
+ 
 var totalCustomerLineChartEl = new ApexCharts(document.querySelector("#totalCustomerLineChart"), totalCustomerLineChart);
 totalCustomerLineChartEl.render();
 
@@ -403,7 +413,6 @@ const customerRadialchart = {
   ],
 };
 
-
 /*=======/Sales Summary ( Jun 2023)/=======*/
 
 var salesSummaryChart = { 
@@ -422,7 +431,7 @@ var salesSummaryChart = {
       tools: {
         zoom: false,
         zoomin: false,
-        zoomout: false,
+        zoomout: false, 
         reset: false,
         pan: false,
         download: false, 
@@ -458,9 +467,12 @@ var salesSummaryChart = {
       //   return `${value}$`;
       // }, 
       // tickAmount: Math.ceil(Math.max(...data)/2),
+      style:{
+        colors: ['var(--content)']
+      },  
       formatter: function(val) { if (val % 2 !== 0) { return ''} else { return val } }                                                                                                                      
     },
-  },
+  }, 
   legend: {
     show: false,
     // horizontalAlign: 'right',
@@ -471,7 +483,15 @@ var salesSummaryChart = {
   },
   xaxis: { 
     type: 'datetime', 
-    categories: ["Jan 01", "Jan 02", "Jan 03", "Jan 04", "Jan 05", "Jan 06", "Jan 07", "Jan 08", "Jan 09", "Jan 10"]
+    categories: ["Jan 01", "Jan 02", "Jan 03", "Jan 04", "Jan 05", "Jan 06", "Jan 07", "Jan 08", "Jan 09", "Jan 10"],
+    labels:{
+      style:{
+        colors: [ 'var(--content)' ,'var(--content)','var(--content)','var(--content)','var(--content)','var(--content)','var(--content)','var(--content)','var(--content)'],
+      },
+    }
+  },
+  grid: {
+    borderColor: 'var(--border-light)',
   },
   tooltip: {
     custom: function({
@@ -479,7 +499,7 @@ var salesSummaryChart = {
       seriesIndex,
       dataPointIndex,
     }) {
-      return '<div class="apex-tooltip px-4 py-1 relative "> '+'<style>.after-before{position: absolute; overflow:hidden; background-color:#eff2f7; width: 30px; height: 16px;left: 50%;transform: translateX(-50%);top: 100%;} .after-before:before{ content:""; width:27px; height: 50px; background-color:white; border-radius: 50%; position: absolute; top: 0; left: -12px; }.after-before:after{ content:""; width:27px; height: 50px; background-color:white; border-radius: 50%; position: absolute; top: 0; right: -12px; } </style> <div class="after-before" >   </div>' + '<span class="font-bold">' + '$' + series[seriesIndex][dataPointIndex] + '</span>'  + '<br>' + '<span class="align-middle text-content">' + 'Orders' + '</span>' + '</div>';
+      return '<div class="apex-tooltip px-4 py-1 relative "> ' + '<span class="font-bold">' + '$' + series[seriesIndex][dataPointIndex] + '</span>'  + '<br>' + '<span class="align-middle text-content">' + 'Orders' + '</span>' + '</div>';
     },  
   }, 
 };
@@ -506,7 +526,6 @@ const OrdersStatus = {
       },
       stacked: true,
     },
-  
     grid: {
       padding: {
         top: -15,
@@ -514,24 +533,30 @@ const OrdersStatus = {
         bottom: 0,
         left: -5,
       },
-    },
-  
-  
+      show: true,
+      borderColor: 'var(--border-light)',
+    }, 
+     
     plotOptions: {
       bar: {
-        columnWidth: '25%',
-        borderRadius: 5,
+        columnWidth: '15%',
+        borderRadius: 9,
+        // distributed: true,
       },
     },
-  
     xaxis: {
       crosshairs: {
         width: 1,
       },
     },
-    colors: ['rgba(var(--primary),1)', '#F5F6F9','rgba(var(--secondary),1) ','#F5F6F9', 'rgba(var(--dark),1)','#F5F6F9' ],
-    fill: {
-      type: 'solid', 
+    yaxis:{
+      show: false,
+    },
+    // colors: ['rgba('+ app.color.componentColorRgb + ', .5)', app.color.indigo, 'rgba('+ app.color.componentColorRgb + ', .25)'],
+    // colors: ['"rgba(var(--primary),1)"', '#F5F6F9','rgba(var(--secondary),1)','#F5F6F9', 'rgba(var(--dark),1)','#F5F6F9', 'rgba(var(--warning),1)'],
+    colors:['rgba(var(--primary),1)', '#F5F6F9','rgba(var(--secondary),1)','#F5F6F9','rgba(var(--warning),1)','#F5F6F9','rgba(var(--success),1)','#F5F6F9','rgba(var(--danger),1)','#F5F6F9'],
+    fill: { 
+      type: 'solid',
       opacity: 1,
     },
     tooltip: toolTipMini,
@@ -548,8 +573,8 @@ const OrdersStatus = {
       options: {
         plotOptions: {
           bar: {
-            columnWidth: '25%',
-            borderRadius: 5,
+            columnWidth: '15%',
+            borderRadius: 9,
           },
         },
       },

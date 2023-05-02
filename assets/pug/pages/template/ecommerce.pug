@@ -50,12 +50,12 @@ html(lang='en')
                                             +widget4(data)
                         div.col-span-6(class="xl:col-span-6 xl3:col-span-12")
                             div.card.gap-0 
-                                div.card-header  
+                                div.card-header
                                     div.flex.justify-between.w-full(class=`flex-wrap gap-2 items-center`)
                                         h3(class="text-lg font-bold leading-none text-title") Sales Summary ( Jun 2023)
                                         div.flex.items-center.gap-4
-                                            div.radialBar-legend
-                                                div(class="w-full px-2") 
+                                            div.radialBar-legend 
+                                                div(class="w-full px-2")
                                                     div.radialBar-legend-series
                                                         span.radialBar-legend-marker.primary
                                                         p(class="!mt-0").radialBar-legend-text.text-3xs.text-title Sales
@@ -83,7 +83,7 @@ html(lang='en')
                                 div.card-header
                                     div.flex.justify-between.w-full(class=`flex-wrap gap-2 items-center`)
                                         h3(class="text-lg font-bold leading-none text-title") Order Detail
-                                        div.flex.items-center.gap-4   
+                                        div.flex.items-center.gap-4 
                                             div.search-box.relative
                                                 input(class="border border-border-light dark:bg-sidebar-dark2 dark:border-border-dark rounded-5 w-full py-[8px] pr-[25px] pl-[48px] rtl:pl-[25px] rtl:pr-[48px] text-xs font-semibold text-title dark:text-white" placeholder="Search..." type="search")       
                                                 +SVG_ICON("Search","xl:hidden w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title dark:stroke-white top-1/2 -translate-y-1/2 left-[17px] rtl:left-unset rtl:right-[17px] absolute dark:stroke-white")
@@ -123,13 +123,13 @@ html(lang='en')
                             div.card
                                 div.card-header
                                     +card-header("Customers","setting", HISTORY_DROPDOWN)
-                                div.card-body
-                                    div.relative 
-                                        div#customerRadialchart
+                                div.card-body 
+                                    div.relative
+                                        div#customerRadialchart 
                                 div.card-footer.border-t.border-border-light.pt-4.px-0 
                                     div.radialBar-legend
                                         div(class="w-full px-3 border-r border-border-light dark:border-border-dark last:border-none rtl:border-r-0 rtl:border-l") 
-                                            div.radialBar-legend-series
+                                            div.radialBar-legend-series 
                                                 span.radialBar-legend-marker.primary
                                                 p.radialBar-legend-text.text-3xs.text-title Current Customers
                                             small.text-xs.text-content3(class="pl-3 rtl:pl-0 rtl:pr-3") 45%
@@ -139,7 +139,7 @@ html(lang='en')
                                                 p.radialBar-legend-text.text-3xs.text-title New Customers
                                             small.text-xs.text-content3(class="pl-3 rtl:pl-0 rtl:pr-3") 62% 
                                         div(class="w-full px-3 border-r border-border-light dark:border-border-dark last:border-none rtl:border-r-0 rtl:border-l")
-                                            div.radialBar-legend-series
+                                            div.radialBar-legend-series 
                                                 span.radialBar-legend-marker.title
                                                 p.radialBar-legend-text.text-3xs.text-title Retarget Customers 
                                             small.text-xs.text-content3(class="pl-3 rtl:pl-0 rtl:pr-3") 34%
@@ -195,7 +195,7 @@ html(lang='en')
                             div.card
                                 div.card-header
                                     +card-header("Global Sales by top Locations","setting", HISTORY_DROPDOWN)
-                                div.card-body
+                                div.card-body 
                                     div.overflow-auto.custom-scroll  
                                         include ../../components/table/sale-detail
                         div.col-span-5(class="lg:col-span-12 lg:-order-1")

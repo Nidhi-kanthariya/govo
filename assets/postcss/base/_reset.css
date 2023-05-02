@@ -258,3 +258,6 @@ div[class*=activity-dot-secondary]{
     }
   }
 }
+#totalCustomerLineChart{
+    @apply mt-[-32px] mx-[0] mb-[-28px] ;
+}
