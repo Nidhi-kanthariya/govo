@@ -1,12 +1,12 @@
 var swiper = new Swiper(".product-slides", {
-    slidesPerView: 3.003,
-    spaceBetween: 30,
+    slidesPerView: 3,
+    spaceBetween: 20,
     freeMode: true,
-    loop: true,
-    infinite: true,
-    autoplay: {
-        delay: 2000,
-    },
+    // loop: true,
+    // infinite: true,
+    // autoplay: {
+    //     delay: 1000,
+    // },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -26,7 +26,7 @@ var swiper = new Swiper(".product-slides", {
             spaceBetween: 27,
         },
         1721: {
-            slidesPerView: 3.003,
+            slidesPerView: 3,
             spaceBetween: 30,
         },
     },

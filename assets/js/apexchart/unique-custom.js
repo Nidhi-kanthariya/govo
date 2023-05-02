@@ -6,7 +6,7 @@
 const revenueChart = {
   series: [{
     data: [45, 25, 55, 47, 89, 47, 70, 38, 92, 44, 38, 70],
-  }, ],
+  },],
   chart: {
     type: 'bar',
     width: '100%',
@@ -52,41 +52,41 @@ const revenueChart = {
     },
   },
   responsive: [{
-      breakpoint: 992,
-      options: {
-        chart: {
-          height: 87,
-          sparkline: {
-            enabled: true,
-          },
+    breakpoint: 992,
+    options: {
+      chart: {
+        height: 87,
+        sparkline: {
+          enabled: true,
         },
       },
     },
-    {
-      breakpoint: 675,
-      options: {
-        plotOptions: {
-          bar: {
-            columnWidth: '55%',
-            borderRadius: 5,
-          },
+  },
+  {
+    breakpoint: 675,
+    options: {
+      plotOptions: {
+        bar: {
+          columnWidth: '55%',
+          borderRadius: 5,
         },
       },
     },
-    {
-      breakpoint: 425,
-      options: {
-        chart: {
-          height: 55,
-        },
-        plotOptions: {
-          bar: {
-            columnWidth: '70%',
-            borderRadius: 5,
-          },
+  },
+  {
+    breakpoint: 425,
+    options: {
+      chart: {
+        height: 55,
+      },
+      plotOptions: {
+        bar: {
+          columnWidth: '70%',
+          borderRadius: 5,
         },
       },
     },
+  },
   ],
 };
 
@@ -148,94 +148,94 @@ const earningChart = {
   colors: ['var(--chart-dark)'],
   labels: ['Profile'],
   responsive: [{
-      breakpoint: 1700,
-      options: {
-        chart: {
-          height: 250,
+    breakpoint: 1700,
+    options: {
+      chart: {
+        height: 250,
 
-          offsetY: 20,
-          sparkline: {
-            enabled: true,
-          },
+        offsetY: 20,
+        sparkline: {
+          enabled: true,
         },
       },
     },
-    {
-      breakpoint: 1600,
-      options: {
-        chart: {
-          height: 280,
+  },
+  {
+    breakpoint: 1600,
+    options: {
+      chart: {
+        height: 280,
 
-          offsetY: 10,
-          sparkline: {
-            enabled: true,
-          },
+        offsetY: 10,
+        sparkline: {
+          enabled: true,
         },
       },
     },
-    {
-      breakpoint: 1200,
-      options: {
-        chart: {
-          height: 250,
+  },
+  {
+    breakpoint: 1200,
+    options: {
+      chart: {
+        height: 250,
 
-          offsetY: 10,
-          sparkline: {
-            enabled: true,
-          },
+        offsetY: 10,
+        sparkline: {
+          enabled: true,
         },
       },
     },
-    {
-      breakpoint: 675,
-      options: {
-        chart: {
-          height: 280,
-        },
+  },
+  {
+    breakpoint: 675,
+    options: {
+      chart: {
+        height: 280,
       },
     },
-    {
-      breakpoint: 425,
-      options: {
-        chart: {
-          height: 245,
-        },
-        plotOptions: {
-          radialBar: {
-            dataLabels: {
-              name: {
-                ...fontCommon,
-                show: true,
-                color: 'var(--content)',
-                offsetY: 5,
-              },
-              value: {
-                offsetY: -30,
-                fontSize: '20px',
-              },
+  },
+  {
+    breakpoint: 425,
+    options: {
+      chart: {
+        height: 245,
+      },
+      plotOptions: {
+        radialBar: {
+          dataLabels: {
+            name: {
+              ...fontCommon,
+              show: true,
+              color: 'var(--content)',
+              offsetY: 5,
+            },
+            value: {
+              offsetY: -30,
+              fontSize: '20px',
             },
           },
         },
       },
     },
-    {
-      breakpoint: 375,
-      options: {
-        chart: {
-          height: 230,
-        },
+  },
+  {
+    breakpoint: 375,
+    options: {
+      chart: {
+        height: 230,
+      },
 
-        plotOptions: {
-          radialBar: {
-            startAngle: -100,
-            endAngle: 100,
-            hollow: {
-              size: '35%',
-            },
+      plotOptions: {
+        radialBar: {
+          startAngle: -100,
+          endAngle: 100,
+          hollow: {
+            size: '35%',
           },
         },
       },
     },
+  },
   ],
 };
 
@@ -247,7 +247,7 @@ const SellOverview = {
   series: [{
     name: 'series1',
     data: [310, 280, 350, 310, 570, 590, 650, 550],
-  }, ],
+  },],
   chart: {
     height: 320,
     width: '100%',
@@ -268,25 +268,25 @@ const SellOverview = {
       opacityFrom: 0.8,
       opacityTo: 0.4,
       colorStops: [{
-          offset: 0,
-          color: 'rgba(var(--primary),0.5)',
-          opacity: 1,
-        },
-        {
-          offset: 20,
-          color: 'rgba(var(--primary),0.3)',
-          opacity: 1,
-        },
-        {
-          offset: 60,
-          color: 'rgba(var(--primary),0.1)',
-          opacity: 1,
-        },
-        {
-          offset: 100,
-          color: 'rgba(var(--primary), 0)',
-          opacity: 1,
-        },
+        offset: 0,
+        color: 'rgba(var(--primary),0.5)',
+        opacity: 1,
+      },
+      {
+        offset: 20,
+        color: 'rgba(var(--primary),0.3)',
+        opacity: 1,
+      },
+      {
+        offset: 60,
+        color: 'rgba(var(--primary),0.1)',
+        opacity: 1,
+      },
+      {
+        offset: 100,
+        color: 'rgba(var(--primary), 0)',
+        opacity: 1,
+      },
       ],
     },
   },
@@ -368,29 +368,29 @@ const SellOverview = {
     },
   },
   responsive: [{
-      breakpoint: 675,
-      options: {
-        chart: {
-          height: 280,
-        },
+    breakpoint: 675,
+    options: {
+      chart: {
+        height: 280,
       },
     },
-    {
-      breakpoint: 425,
-      options: {
-        chart: {
-          height: 260,
-        },
+  },
+  {
+    breakpoint: 425,
+    options: {
+      chart: {
+        height: 260,
       },
     },
-    {
-      breakpoint: 375,
-      options: {
-        chart: {
-          height: 220,
-        },
+  },
+  {
+    breakpoint: 375,
+    options: {
+      chart: {
+        height: 220,
       },
     },
+  },
   ],
 };
 
@@ -401,7 +401,7 @@ SellOverviewEl.render();
 const userPosition = {
   series: [{
     data: [70, 30, 40, 90, 60, 50],
-  }, ],
+  },],
   chart: {
     type: 'bar',
     height: 323,
@@ -522,7 +522,7 @@ const userPosition = {
         },
       },
     },
-  }, ],
+  },],
 };
 
 var userPositionEl = new ApexCharts(document.querySelector('#userPosition'), userPosition);

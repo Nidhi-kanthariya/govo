@@ -110,7 +110,7 @@ document.body.addEventListener('click', function (event) {
   const dropdownEl = event.target.closest('.dropdown');
   const visible = dropdownEl?.closest('.dropdown')?.classList.contains('show');
   const dropdownMenuElement = event.target.closest('.dropdown-menu');
-  headerDropdownMenu.forEach((item) => { 
+  headerDropdownMenu.forEach((item) => {
     if (!dropdownMenuElement) {
       item.classList.remove('show');
     }
@@ -416,7 +416,7 @@ suggest?.forEach((el) => {
 
 /*=====================
  19. Fill svg js
-==========================*/ 
+==========================*/
 
 const postMedia = document.querySelector('.post-media');
 const postLike = document.querySelectorAll('.post-like');
