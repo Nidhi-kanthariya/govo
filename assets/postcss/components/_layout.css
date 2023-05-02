@@ -27,13 +27,22 @@
         @apply w-[calc(65px_+_(90_-_65)_*_((100vw_-_320px)_/_(1920_-_320)))] transition-all ease-in-out;
       }
       .page-header{
-        @apply ml-[4.8125rem] rtl:!ml-unset rtl:!mr-[4.8125rem];
+        @apply ml-[4.8125rem];
+        [dir="rtl"] &{
+          @apply !ml-unset !mr-[4.8125rem];
+        }
       }
       .page-body{
-        @apply ml-[calc(65px_+_(90_-_65)_*_((100vw_-_320px)_/_(1920_-_320)))] rtl:!ml-unset rtl:!mr-[calc(65px_+_(90_-_65)_*_((100vw_-_320px)_/_(1920_-_320)))] transition-all duration-500;
+        @apply ml-[calc(65px_+_(90_-_65)_*_((100vw_-_320px)_/_(1920_-_320)))] transition-all duration-500;
+        [dir="rtl"] &{
+          @apply !ml-unset !mr-[calc(65px_+_(90_-_65)_*_((100vw_-_320px)_/_(1920_-_320)))];
+        }
       }
       .page-footer{
-        @apply ml-[4.8125rem] rtl:!ml-unset rtl:!mr-[4.8125rem] w-[calc(100%_-_77px)];
+        @apply ml-[4.8125rem] w-[calc(100%_-_77px)];
+        [dir="rtl"] &{
+          @apply !mr-[4.8125rem] !ml-unset;
+        }
       }
       &.sidebar-icon {
         .page-body-wrapper {
@@ -66,7 +75,10 @@
                   }
                 }
                 .sidebar-submenu{
-                  @apply invisible absolute !pl-[47px] rtl:!pr-[47px] rtl:pl-unset rtl:left-unset rtl:right-0 pt-5 left-0 top-0 bottom-0 z-[-1] !m-0 translate-x-0 !block h-full w-[250px] transform bg-sidebar-dark opacity-0 transition-all;
+                  @apply invisible absolute !pl-[47px] pt-5 left-0 top-0 bottom-0 z-[-1] !m-0 translate-x-0 !block h-full w-[250px] transform bg-sidebar-dark opacity-0 transition-all;
+                  [dir="rtl"] &{
+                    @apply  !pr-[47px] !pl-unset left-unset right-0;
+                  }
                   li{
                     &:hover{
                       a{
@@ -165,7 +177,10 @@
                     }
                     &.active{
                       .sidebar-submenu{
-                        @apply !flex visible opacity-100 static flex-col gap-[.5rem] transition-all ease-in-out rtl:!pr-[1.375rem] !pl-[1.375rem] rtl:!pl-unset !ml-[.5625rem] rtl:!ml-unset rtl:!mr-[0.5625rem] !mt-[.9375rem] border-l-2 rtl:border-l-0 rtl:border-r-2 border-border-dark !w-auto pt-0;
+                        @apply !flex visible opacity-100 static flex-col gap-[.5rem] transition-all ease-in-out !pl-[1.375rem] !ml-[.5625rem] !mt-[.9375rem] border-l-2 rtl:border-l-0 rtl:border-r-2 border-border-dark !w-auto pt-0;
+                        [dir="rtl"] &{
+                          @apply !pr-[1.375rem] !pl-unset !ml-unset !mr-[.5625rem];
+                        }
                         li{
                           &:not(:first-of-type){
                             @apply mt-0;

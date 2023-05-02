@@ -90,6 +90,7 @@ module.exports = {
         'grid-space': 'calc(0.9375rem + (1.875r - 0.9375) * ((100vw - 20rem) / (120 - 20)))',
         'slider-space': 'calc(-0.9375rem + (-1.875r - -0.9375) * ((100vw - 20rem) / (120 - 20)))',
         'section-space': 'calc(45px + (70 - 45) * ((100vw - 320px) / (1920 - 320)))',
+        'landing-title': 'calc(18px + (32 - 18) * ((100vw - 320px) / (1920 - 320)))',
         unset: 'unset',
       },
       fontSize: {
@@ -166,6 +167,7 @@ module.exports = {
         'info-light': 'var(--info-light)',
         warning: 'var(--warning)',
         'warning-light': 'var(--warning-light)',
+        'warning-extralight': 'var(--warning-extralight)',
         danger: 'var(--danger)',
         'danger-light': 'var(--danger-light)',
         light: 'var(--light)',
