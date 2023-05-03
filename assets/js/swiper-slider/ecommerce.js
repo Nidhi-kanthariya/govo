@@ -11,7 +11,7 @@ var swiper = new Swiper(".product-slides", {
         el: ".swiper-pagination",
         clickable: true,
     },
-    breakpoints: {
+    breakpoints: { 
         0: {
             slidesPerView: 1.5,
             centeredSlides: true,

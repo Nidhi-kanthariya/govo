@@ -116,12 +116,10 @@
       }
     }
   }
-
-
+.
   /* Custom scroll */
   .page-sidebar{
     &.sidebar-dark {
-
       .custom-scroll {
         &::-webkit-scrollbar {
           @apply w-[.25rem] h-[.25rem];

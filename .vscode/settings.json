@@ -93,6 +93,9 @@
         "vectormap",
         "Volkman",
         "Voxo",
-        "xmark"
+        "xaxis",
+        "xmark",
+        "zoomin",
+        "zoomout"
     ]
 }

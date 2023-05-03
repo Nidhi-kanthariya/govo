@@ -105,7 +105,9 @@ var totalCustomerLineChart = {
   dataLabels: {
     enabled: false
   },
-
+  legend: {
+    show: false
+  },
   colors: ['rgba(var(--secondary),1)'],
 
   grid: {
@@ -115,8 +117,8 @@ var totalCustomerLineChart = {
       bottom: -10,
       left: 0,
     },
+    show: false,
   },
-
   xaxis: {
     labels: {
       show: false,
@@ -129,6 +131,9 @@ var totalCustomerLineChart = {
     },
     lines: {
       show: false,
+    },
+    tooltip:{
+      enabled: false,
     },
   },
   yaxis: {
@@ -144,15 +149,20 @@ var totalCustomerLineChart = {
     axisTicks: {
       show: false,
     },
+    tooltip:{
+      enabled: false,
+    },
   },
-
+  legend:{ 
+    show: false,
+  },
   markers: {
     hover: {
       sizeOffset: 4
     }
-  }
+  },
 };
-
+ 
 var totalCustomerLineChartEl = new ApexCharts(document.querySelector("#totalCustomerLineChart"), totalCustomerLineChart);
 totalCustomerLineChartEl.render();
 
@@ -403,44 +413,189 @@ const customerRadialchart = {
   ],
 };
 
-const customerRadialchartEl = new ApexCharts(document.querySelector('#customerRadialchart'), customerRadialchart);
-customerRadialchartEl.render();
-
 /*=======/Sales Summary ( Jun 2023)/=======*/
 
-var options = {
+var salesSummaryChart = { 
   series: [{
-    name: 'series1',
-    data: [25, 30, 25, 30, 25, 30, 25, 28, 29, 30]
+    name: 'Orders',
+    data: [6000, 6500, 6800, 6500, 6800, 6500, 6650, 6500, 5900, 6000]
   }, {
-    name: 'series2',
-    data: [35, 32, 35, 32, 36, 36, 34, 35, 30, 35]
-  }],
+    name: 'Sales',
+    data: [5000, 5500, 5800, 5500, 6500, 5600, 6350, 6000, 5500, 5800]
+  }], 
+  colors: ['rgba(var(--secondary))', 'rgba(var(--primary))'], 
   chart: {
     height: 350,
-    type: 'area'
+    type: 'area',
+    toolbar: {
+      tools: {
+        zoom: false,
+        zoomin: false,
+        zoomout: false, 
+        reset: false,
+        pan: false,
+        download: false, 
+      },
+    },
   },
   dataLabels: {
     enabled: false
   },
   stroke: {
     curve: 'smooth'
+  }, 
+  fill:{
+    type: "gradient",
+    gradient: {
+      shadeIntensity: 0,
+      opacityFrom: 1,
+      opacityTo: 0
+    } 
   },
-
   yaxis: {
-    type: 'Orders',
-    categories: ["$0", "$2,000", "$4,000", "$6,000", "$8,000", '$10,000']
+    // type: 'Sales',
+    // categories: ["$0" , "$2,000" ,"$4,000" , "$6,000" ,"$8,000", '$10,000']
+
+    // min: 0,
+    // max: 10000,  
+    // steps: 2000,
+
+    labels: {
+      // formatter: (value) => {
+      //   let gaurav = value % 2 == 0 ? gaurav : value
+      //   console.log("value", value % 2 == 0 ? value : '11'); 
+      //   return `${value}$`;
+      // }, 
+      // tickAmount: Math.ceil(Math.max(...data)/2),
+      style:{
+        colors: ['var(--content)']
+      },  
+      formatter: function(val) { if (val % 2 !== 0) { return ''} else { return val } }                                                                                                                      
+    },
+  }, 
+  legend: {
+    show: false,
+    // horizontalAlign: 'right',
+    // position: 'top',
+    // margin:{
+    //   top: -30,
+    // }
   },
-  xaxis: {
-    type: 'datetime',
-    categories: ["Jan 01", "Jan 02", "Jan 03", "Jan 04", "Jan 05", "Jan 06", "Jan 07", "Jan 08", "Jan 09", "Jan 10"]
+  xaxis: { 
+    type: 'datetime', 
+    categories: ["Jan 01", "Jan 02", "Jan 03", "Jan 04", "Jan 05", "Jan 06", "Jan 07", "Jan 08", "Jan 09", "Jan 10"],
+    labels:{
+      style:{
+        colors: [ 'var(--content)' ,'var(--content)','var(--content)','var(--content)','var(--content)','var(--content)','var(--content)','var(--content)','var(--content)'],
+      },
+    }
+  },
+  grid: {
+    borderColor: 'var(--border-light)',
   },
   tooltip: {
-    x: {
-      format: 'dd/MM/yy HH:mm'
-    },
-  },
+    custom: function({
+      series,
+      seriesIndex,
+      dataPointIndex,
+    }) {
+      return '<div class="apex-tooltip px-4 py-1 relative "> ' + '<span class="font-bold">' + '$' + series[seriesIndex][dataPointIndex] + '</span>'  + '<br>' + '<span class="align-middle text-content">' + 'Orders' + '</span>' + '</div>';
+    },  
+  }, 
 };
 
-var chart = new ApexCharts(document.querySelector("#chart"), options);
-chart.render();
+var salesSummaryChartEl = new ApexCharts(document.querySelector("#salesSummaryChart"), salesSummaryChart);
+salesSummaryChartEl.render(); 
+
+/*=======/Orders Status (May 10)/=======*/
+const OrdersStatus = {
+    series: [
+      {
+        data: [40, 25, 60, 15, 40, 55, 35],
+      },
+      {
+        data: [60, 50, 15, 35, 55, 25, 40],
+      },
+    ],
+    chart: {
+      type: 'bar',
+      // width: '100%',
+      // height: 75,
+      sparkline: {
+        enabled: true,
+      },
+      stacked: true,
+    },
+    grid: {
+      padding: {
+        top: -15,
+        right: 0,
+        bottom: 0,
+        left: -5,
+      },
+      show: true,
+      borderColor: 'var(--border-light)',
+    }, 
+     
+    plotOptions: {
+      bar: {
+        columnWidth: '15%',
+        borderRadius: 9,
+        // distributed: true,
+      },
+    },
+    xaxis: {
+      crosshairs: {
+        width: 1,
+      },
+    },
+    yaxis:{
+      show: false,
+    },
+    // colors: ['rgba('+ app.color.componentColorRgb + ', .5)', app.color.indigo, 'rgba('+ app.color.componentColorRgb + ', .25)'],
+    // colors: ['"rgba(var(--primary),1)"', '#F5F6F9','rgba(var(--secondary),1)','#F5F6F9', 'rgba(var(--dark),1)','#F5F6F9', 'rgba(var(--warning),1)'],
+    colors:['rgba(var(--primary),1)', '#F5F6F9','rgba(var(--secondary),1)','#F5F6F9','rgba(var(--warning),1)','#F5F6F9','rgba(var(--success),1)','#F5F6F9','rgba(var(--danger),1)','#F5F6F9'],
+    fill: { 
+      type: 'solid',
+      opacity: 1,
+    },
+    tooltip: toolTipMini,
+    responsive: [{
+      breakpoint: 1700,
+      options: {
+        chart: {
+          height: 86,
+        },
+      },
+    },
+    {
+      breakpoint: 1400,
+      options: {
+        plotOptions: {
+          bar: {
+            columnWidth: '15%',
+            borderRadius: 9,
+          },
+        },
+      },
+    },
+    {
+      breakpoint: 376,
+      options: {
+        chart: {
+          height: 50,
+        },
+        plotOptions: {
+          bar: {
+            columnWidth: '60%',
+            borderRadius: 5,
+          },
+        },
+      },
+    },
+    ],
+  };
+  
+  const OrdersStatusEl = new ApexCharts(document.querySelector('#OrdersStatus'), OrdersStatus);
+  OrdersStatusEl.render();  
+  
