@@ -34,5 +34,11 @@
         @apply md:top-[-2px] md:visible md:opacity-100;
       }
     }
+    h2{
+      @apply text-landing-title;
+      span{
+        @apply text-landing-title;
+      }
+    }
   }
 }

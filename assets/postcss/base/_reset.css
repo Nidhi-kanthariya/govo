@@ -253,6 +253,11 @@ div[class*=activity-dot-secondary]{
         @apply bg-secondary;
       }
     }
+    &.text-warning{
+      &:before{
+        @apply bg-warning;
+      }
+    }
   }
   &:hover{
     .hover-underline-animation{
@@ -267,14 +272,14 @@ div[class*=activity-dot-secondary]{
   .rounded-border {
     @apply relative;
       &:before{
-        @apply content-[''] w-[45px] h-[45px] rounded-full absolute left-0 top-0 border-dashed border-primary;
+        @apply content-[''] w-[120%] h-[120%] rounded-full absolute left-[-5px] top-[-5px]  border-dashed border-primary border-[.0938rem];
       }
     }
   &:hover{
     .rounded-border {
       &:before{
         @apply border-white;
-        animation: rotate 2s infinite linear;
+        animation: rotate 8s infinite linear;
       }
     }
   }

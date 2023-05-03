@@ -90,7 +90,6 @@ module.exports = {
         'grid-space': 'calc(0.9375rem + (1.875r - 0.9375) * ((100vw - 20rem) / (120 - 20)))',
         'slider-space': 'calc(-0.9375rem + (-1.875r - -0.9375) * ((100vw - 20rem) / (120 - 20)))',
         'section-space': 'calc(45px + (70 - 45) * ((100vw - 320px) / (1920 - 320)))',
-        'landing-title': 'calc(18px + (32 - 18) * ((100vw - 320px) / (1920 - 320)))',
         unset: 'unset',
       },
       fontSize: {
@@ -146,6 +145,7 @@ module.exports = {
         }],
 
         'xl3': 'calc(1.375rem + (2.25rem - 1.375) * ((100vw - 20rem) / (120 - 20)))',
+        'landing-title': 'calc(18px + (32 - 18) * ((100vw - 320px) / (1920 - 320)))',
       },
 
       // theme colors
@@ -197,6 +197,7 @@ module.exports = {
         linkedin: 'var(--linkedin)',
         twitter: 'var(--twitter)',
         facebook: 'var(--facebook)',
+        landingBg: 'var(--landing-bg)',
       },
       boxShadow: {
         'md-bottom': '0 0.625rem 1.4375rem rgba(0, 0, 0, 0.03)',
