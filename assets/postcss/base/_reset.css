@@ -236,57 +236,29 @@ div[class*=activity-dot-secondary]{
     }
 }
 
-  /* Text Underline Hover Effrct */
-.framework-hover{
-  .hover-underline-animation{
-    @apply inline-block relative;
-    &:before{
-      @apply content-[''] absolute w-full h-[.125rem] bottom-0 left-0 origin-bottom-left transform transition-all duration-500 scale-x-0;
-    }
-    &.text-primary{
-      &:before{
-        @apply bg-primary;
-      }
-    }
-    &.text-secondary{
-      &:before{
-        @apply bg-secondary;
-      }
-    }
-  }
-  &:hover{
-    .hover-underline-animation{
-      &:before{
-         @apply scale-x-100 origin-bottom-left;
+
+ 
+/* .apexcharts-tooltip.apexcharts-theme-light{
+  overflow: overflow-visible;
+}  */
+#salesSummaryChart{
+  .apexcharts-tooltip {
+    &.apexcharts-theme-light{
+      &.apexcharts-active{
+        @apply  overflow-visible ;
       }
     }
   }
 }
-
-.rounded-border-main{
-  .rounded-border {
-    @apply relative;
-      &:before{
-        @apply content-[''] w-[45px] h-[45px] rounded-full absolute left-0 top-0 border-dashed border-primary;
-      }
-    }
-  &:hover{
-    .rounded-border {
-      &:before{
-        @apply border-white;
-        animation: rotate 2s infinite linear;
-      }
-    }
-  }
+#totalCustomerLineChart{
+    @apply mt-[-32px] mx-[0] mb-[-28px] ;
 }
-
-@keyframes rotate {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#totalOrderLineChart{ 
+   @apply mt-[-32px] mx-[0] mb-[-28px];
+  } 
+#OrdersStatus{
+  @apply ml-[0px] mt-[15px];  
 }
-
-
+#totalExpensesLineChart{
+  @apply ml-[50px];
+}

@@ -85,22 +85,51 @@ const totalSellBarChart = {
 const totalSellBarChartEl = new ApexCharts(document.querySelector('#totalSellBarChart'), totalSellBarChart);
 totalSellBarChartEl.render();
 
-// /*=======/Total Customer Line Chart/=======*/
+/*=======/Total Customer Line Chart/=======*/
 
 var totalCustomerLineChart = {
   series: [{
-    data: [34, 44, 54, 21, 12, 43]
+    data: [34, 12, 54, 30, 12, 43]
   }],
+  // annotations:{
+  //   points: [{
+  //       marker:{
+  //         size : 5, 
+  //         fillColor: "#fff", 
+  //         strokeColor: "#FF6150", 
+  //         radius: 1, 
+  //       },
+         
+  //     }],
+  // },
   chart: {
     type: 'line',
     width: '100%',
     height: 120,
     toolbar: {
       show: false,
+    }, 
+    dropShadow:{
+      enabled: true,
+      enabledOnSeries: undefined,
+      top: 5,
+      left: 3,
+      blur: 1,
+      color: ['rgba(var(--secondary),0.6)'],
     },
   },
-  stroke: {
+  stroke: { 
     curve: 'stepline',
+    width: 2,
+  }, 
+  markers: {
+    size: 0,
+    colors: '#FF6150',
+    strokeColors: '#FF6150', 
+    strokeWidth: 5,
+    strokeOpacity: 0.9,
+    strokeDashArray: 0,
+    discrete: [],
   },
   dataLabels: {
     enabled: false
@@ -108,8 +137,7 @@ var totalCustomerLineChart = {
   legend: {
     show: false
   },
-  colors: ['rgba(var(--secondary),1)'],
-
+  colors: ['rgba(var(--secondary),0.9)'],
   grid: {
     margin: {
       top: -10,
@@ -118,7 +146,26 @@ var totalCustomerLineChart = {
       left: 0,
     },
     show: false,
+    shadeIntensity: 1,
+    type: 'horizontal',
+    opacityFrom: 1,
+    opacityTo: 1,
+    stops: [0, 100, 100, 100]
   },
+  colors:['#FF6150'],
+  fill: { 
+    type: 'gradient',
+    opacity: 1,
+    gradient:{ 
+      shade: 'light', 
+      type: "vertical",
+      opacityFrom: 1,
+      opacityTo: 0.9,
+      stops: [0],
+    },
+    opacity: 1,
+  },
+
   xaxis: {
     labels: {
       show: false,
@@ -134,6 +181,9 @@ var totalCustomerLineChart = {
     },
     tooltip:{
       enabled: false,
+      onDatasetHover: {
+          highlightDataSeries: false,
+      },
     },
   },
   yaxis: {
@@ -161,10 +211,20 @@ var totalCustomerLineChart = {
       sizeOffset: 4
     }
   },
+  tooltip: {
+    custom: function({
+      series,
+      seriesIndex,
+      dataPointIndex,
+    }) {
+      return '<div class="apex-tooltip px-4 py-1 relative "> ' + '<span class="font-bold">' + '$' + series[seriesIndex][dataPointIndex] + '</span>'  + '</div>';
+    },
+  },
 };
- 
 var totalCustomerLineChartEl = new ApexCharts(document.querySelector("#totalCustomerLineChart"), totalCustomerLineChart);
 totalCustomerLineChartEl.render();
+
+
 
 /*=======/Radial Chart/=======*/
 const totalExpensesLineChart = {
@@ -413,6 +473,9 @@ const customerRadialchart = {
   ],
 };
 
+var customerRadialchartEl = new ApexCharts(document.querySelector("#customerRadialchart"), customerRadialchart);
+customerRadialchartEl.render(); 
+
 /*=======/Sales Summary ( Jun 2023)/=======*/
 
 var salesSummaryChart = { 
@@ -425,7 +488,7 @@ var salesSummaryChart = {
   }], 
   colors: ['rgba(var(--secondary))', 'rgba(var(--primary))'], 
   chart: {
-    height: 350,
+    height: 270,
     type: 'area',
     toolbar: {
       tools: {
@@ -511,20 +574,24 @@ salesSummaryChartEl.render();
 const OrdersStatus = {
     series: [
       {
-        data: [40, 25, 60, 15, 40, 55, 35],
+        data: [60, 78, 35, 60, 20],
       },
-      {
-        data: [60, 50, 15, 35, 55, 25, 40],
-      },
+      // {
+      //   data: [40, 22, 65, 40, 80],
+      // },
     ],
-    chart: {
+    chart: { 
       type: 'bar',
-      // width: '100%',
-      // height: 75,
+      // width: '80%', 
+      // height: '100%',  
       sparkline: {
-        enabled: true,
+        // enabled: true,
       },
-      stacked: true,
+      // stacked: true,
+      // stackType: "100%",
+      toolbar:{ 
+        show:false,
+      }
     },
     grid: {
       padding: {
@@ -535,30 +602,58 @@ const OrdersStatus = {
       },
       show: true,
       borderColor: 'var(--border-light)',
-    }, 
-     
+      // column: {
+      //   color: ['rgba(var(--secondary),1)','#F5F6F9']
+      // } 
+    },
     plotOptions: {
       bar: {
-        columnWidth: '15%',
-        borderRadius: 9,
-        // distributed: true,
+        columnWidth: '18%',
+        borderRadius: 9, 
+        distributed: true,
+
       },
     },
     xaxis: {
       crosshairs: {
         width: 1,
       },
+      showForNullSeries: false,
+      labels: {
+        show: false, 
+      },
     },
-    yaxis:{
+    dataLabels: { 
+      enabled: false,
+  
+    },
+    legend: {
       show: false,
     },
-    // colors: ['rgba('+ app.color.componentColorRgb + ', .5)', app.color.indigo, 'rgba('+ app.color.componentColorRgb + ', .25)'],
-    // colors: ['"rgba(var(--primary),1)"', '#F5F6F9','rgba(var(--secondary),1)','#F5F6F9', 'rgba(var(--dark),1)','#F5F6F9', 'rgba(var(--warning),1)'],
-    colors:['rgba(var(--primary),1)', '#F5F6F9','rgba(var(--secondary),1)','#F5F6F9','rgba(var(--warning),1)','#F5F6F9','rgba(var(--success),1)','#F5F6F9','rgba(var(--danger),1)','#F5F6F9'],
+    yaxis:{ 
+      show: true, 
+      showForNullSeries: true,
+      labels: {
+        show: true,
+        style:{ 
+          colors: ['var(--content)']
+        }
+      }  
+    },
+    colors:['#33BFBF', '#FF6150' , '#072448' , '#F8AA4B',  '#FAABA4' ,'#F5F6F9'],
     fill: { 
-      type: 'solid',
+      type: 'gradient',
+      opacity: 1,
+      gradient:{
+        shade: 'light',
+        type: "vertical",
+        opacityFrom: 1,
+        opacityTo: 0,
+        stops: [0, 90, 100],
+      },
       opacity: 1,
     },
+    
     tooltip: toolTipMini,
     responsive: [{
       breakpoint: 1700,
