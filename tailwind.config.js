@@ -26,6 +26,7 @@ module.exports = {
     fontFamily: {
       sans: ["'Nunito Sans', sans-serif"],
       serif: ["'Secular One', sans-serif"],
+      caveat: ["'Caveat', 'cursive'"],
     },
 
     // responsive screen

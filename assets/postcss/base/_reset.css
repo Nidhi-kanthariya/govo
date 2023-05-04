@@ -284,6 +284,16 @@ div[class*=activity-dot-secondary]{
     }
   }
 }
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 #totalOrderLineChart{ 
    @apply mt-[-32px] mx-[0] mb-[-28px];
   } 
@@ -292,4 +302,44 @@ div[class*=activity-dot-secondary]{
 }
 #totalExpensesLineChart{
   @apply ml-[50px];
+}
+
+.bg-landing-size{
+  background-image: url(../../assets/images/landing/svg/header.png);
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 100vh;
+}
+
+.trending-animate{
+  animation: animationtop 5s infinite;
+}
+
+@keyframes animationtop{
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+
+.waving-animate{
+  animation: 30s waveanimation linear infinite;
+    @apply absolute content-[""] bg-primary;
+  }
+
+@keyframes waveanimation {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 300px 0;
+	}
 }

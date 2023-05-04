@@ -15,31 +15,57 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <!-- App css-->
     <link rel="stylesheet" href="../../assets/css/style.css">
   </head>
   <body class="unique-skin" dir="ltr">
     <main class="page-wrapper landing-main">
-      <section id="home"> 
-        <div class="header-sticky top-0 left-0 w-full z-[100] bg-white relative">
-          <div class="container relative"> 
-            <header class="flex items-center justify-between landing-header py-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] !mb-0"> 
-              <div class="flex items-center gap-4"> <a href="landing.html"> <img class="w-[calc(65px_+_(97_-_65)_*_((100vw_-_320px)_/_(1920_-_320)))] h-auto" src="../../assets/images/logo/logo-dark.png" alt="logo"></a>
-                <button class="hidden md:block menu-toggle"><i class="w-4 h-4 stroke-dark" data-feather="menu"> </i></button>
+      <section id="home">
+        <div class="relative bg-landing-size"><img class="hidden bg-img" src="../../assets/images/landing/svg/header.png" alt="banner">
+          <div class="backdrop-blur-sm header-sticky top-0 left-0 w-full z-[100] bg-white relative">
+            <div class="container relative"> 
+              <header class="flex items-center justify-between landing-header py-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] !mb-0"> 
+                <div class="flex items-center gap-4"> <a href="landing.html"> <img class="w-[calc(65px_+_(97_-_65)_*_((100vw_-_320px)_/_(1920_-_320)))] h-auto" src="../../assets/images/logo/logo-dark.png" alt="logo"></a>
+                  <button class="hidden md:block menu-toggle"><i class="w-4 h-4 stroke-dark" data-feather="menu"> </i></button>
+                </div>
+                <nav class="navigation nav-menu md:absolute transition-all relative z-20 md:left-0 md:w-full md:translate-y-20 sm:translate-y-16 md:p-5 md:pt-0 md:top-[-100px] md:invisible md:opacity-0 md:bg-[#F0F0F0]"> 
+                  <ul class="flex items-center md:flex-col md:items-baseline md:gap-1 gap-[calc(5px_+_(36_-_5)_*_((100vw_-_320px)_/_(1920_-_320)))]"> 
+                    <li> <a class="font-medium home text-primary text-base-responsive" href="#home">Home   </a></li>
+                    <li> <a class="font-medium demo text-base-responsive" href="#framework">
+                         Frameworks </a></li>
+                    <li> <a class="font-medium component text-base-responsive" href="#core-feature">Core Feature  </a></li>
+                    <li> <a class="font-medium application text-base-responsive" href="#application">Applications  </a></li>
+                    <li> <a class="font-medium core-feature text-base-responsive" href="#document">Documentation  </a></li>
+                    <li> <a class="font-medium core-feature text-base-responsive" href="#document">Hire Us</a></li>
+                  </ul>
+                </nav><a class="btn btn-primary text-white sm:btn-sm" href="https://themeforest.net/user/pixelstrap/portfolio" target="_blank">
+                   Purchase Now          </a>
+              </header>
+            </div>
+          </div>
+          <div class="home-section lg:px-[15px] lg:pb-0 px-[calc(25px_+_(224_-_25)_*_((100vw_-_320px)_/_(1920_-_320)))] py-[calc(2.2rem_+_(5.5_-_2.2)_*_((100vw_-_320px)_/_(1920_-_320)))] relative h-[89%]">
+            <div class="grid grid-cols-2 h-full">          
+              <div class="col-span-1 h-full flex items-center lg:mt-[-5px] lg:pt-section-space lg:col-span-2 lg:text-center lg:max-w-[70%] 2md:max-w-[100%] lg:mx-auto lg:h-auto"> 
+                <div class="w-full"> 
+                  <h1 class="text-white text-5xl font-semibold sm:text-lg sm:leading-7 lg:text-dark lg:text-3xl-responsive">One Stop<br class="lg:hidden">For All Admin Template  </h1>
+                  <p class="mt-4 font-normal truncate-3 w-[80%] lg:block text-base-responsive text-[#DBDBDB] lg:text-gray-500  2xl:mt-2 2xl:leading-6">Govo is Perfect Admin template for any business. it has all features and modules to create your amazing C-panel. this template for selling Default, Ecommerce etc......</p>
+                  <div class="flex items-center flex-wrap lg:justify-center lg:gap-[5px]  gap-[calc(0px_+_(12_-_0)_*_((100vw_-_320px)_/_(1920_-_320)))] mt-8 2xl:mt-6 lg:mt-5"><a class="flex items-center gap-[5px] 2sm:text-3xs  btn btn-secondary 2xl:py-2 text-white" href="https://themeforest.net/user/pixelstrap/portfolio" target="_blank"> 
+                      <svg class="w-4 h-4 stroke-white"> 
+                        <use href="../../assets/svg/sprite.svg#Buy"> </use>
+                      </svg>Purchase Now       </a><a class="flex items-center gap-[5px] 2sm:text-3xs  btn btn-success 2xl:py-2 text-white" href="../document/getting_started.html" target="_blank">
+                      <svg class="w-4 h-4 stroke-white"> 
+                        <use href="../../assets/svg/sprite.svg#Document"> </use>
+                      </svg>Documentation </a></div>
+                </div>
               </div>
-              <nav class="navigation nav-menu md:absolute transition-all relative z-20 md:left-0 md:w-full md:translate-y-20 sm:translate-y-16 md:p-5 md:pt-0 md:top-[-100px] md:invisible md:opacity-0 md:bg-[#F0F0F0]"> 
-                <ul class="flex items-center md:flex-col md:items-baseline md:gap-1 gap-[calc(5px_+_(36_-_5)_*_((100vw_-_320px)_/_(1920_-_320)))]"> 
-                  <li> <a class="font-medium home text-primary text-base-responsive" href="#home">Home   </a></li>
-                  <li> <a class="font-medium demo text-base-responsive" href="#framework">
-                       Frameworks </a></li>
-                  <li> <a class="font-medium component text-base-responsive" href="#core-feature">Core Feature  </a></li>
-                  <li> <a class="font-medium application text-base-responsive" href="#application">Applications  </a></li>
-                  <li> <a class="font-medium core-feature text-base-responsive" href="#document">Documentation  </a></li>
-                  <li> <a class="font-medium core-feature text-base-responsive" href="#document">Hire Us</a></li>
-                </ul>
-              </nav><a class="btn btn-primary text-white sm:btn-sm" href="https://themeforest.net/user/pixelstrap/portfolio" target="_blank">
-                 Purchase Now          </a>
-            </header>
+              <div class="col-span-1 lg:col-span-2">      
+                <div class="relative lg:w-[70%] m-auto"> <img class="w-full transform -rotate-6 absolute top-[40px] right-[-310px] h-[660px] border border-white rounded-[20px] z-[3]" src="../../assets/images/landing/dashboard/default.png" alt="banner"><img class="w-full transform -rotate-6 absolute top-[180px] right-[-80px] h-[470px] border border-white rounded-[20px] z-[2]" src="../../assets/images/landing/dashboard/default.png" alt="banner"></div>
+              </div>
+            </div>
+            <div> <span class="text-primary font-bold text-[30px] font-caveat absolute top-[16%] right-[44%] transform -rotate-12">Trending</span><img class="trending-animate text-[30px] font-caveat absolute top-[17%] right-[39%] transform rotate-3" src="../../assets/images/landing/svg/arrow.svg">
+              <div class="absolute w-[6%] right-[22%] top-[5%] h-[2px] waving-animate"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -69,43 +95,43 @@
             <div class="col-span-2 sm:col-span-4 2sm:col-span-6">
               <div class="flex items-center gap-4 bg-white justify-center font-medium group rounded-border-main hover:translate-y-[-5px] py-5 px-7 hover:transition-all hover:ease translate-y-0 border border-primary rounded-2xl group hover:bg-primary hover:text-white"> <span class="rounded-border bg-primary-light p-[10px] rounded-full group-hover:bg-white">
                   <svg class="h-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] w-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-primary fill-primary"> 
-                    <use href="../../assets/svg/sprite.svg#Discovery"> </use>
+                    <use href="../../assets/svg/sprite.svg#Bold-Button"> </use>
                   </svg></span><small class="text-title font-bold text-base-responsive !leading-5 group-hover:text-white"> Buttons </small></div>
             </div>
             <div class="col-span-2 sm:col-span-4 2sm:col-span-6">
               <div class="flex items-center gap-4 bg-white justify-center font-medium group rounded-border-main hover:translate-y-[-5px] py-5 px-7 hover:transition-all hover:ease translate-y-0 border border-primary rounded-2xl group hover:bg-primary hover:text-white"> <span class="rounded-border bg-primary-light p-[10px] rounded-full group-hover:bg-white">
                   <svg class="h-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] w-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-primary fill-primary"> 
-                    <use href="../../assets/svg/sprite.svg#Discovery"> </use>
+                    <use href="../../assets/svg/sprite.svg#Bold-User"> </use>
                   </svg></span><small class="text-title font-bold text-base-responsive !leading-5 group-hover:text-white"> Avatars</small></div>
             </div>
             <div class="col-span-2 sm:col-span-4 2sm:col-span-6">
               <div class="flex items-center gap-4 bg-white justify-center font-medium group rounded-border-main hover:translate-y-[-5px] py-5 px-7 hover:transition-all hover:ease translate-y-0 border border-primary rounded-2xl group hover:bg-primary hover:text-white"> <span class="rounded-border bg-primary-light p-[10px] rounded-full group-hover:bg-white">
                   <svg class="h-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] w-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-primary fill-primary"> 
-                    <use href="../../assets/svg/sprite.svg#Discovery"> </use>
+                    <use href="../../assets/svg/sprite.svg#Bold-Medal"> </use>
                   </svg></span><small class="text-title font-bold text-base-responsive !leading-5 group-hover:text-white"> Badges </small></div>
             </div>
             <div class="col-span-2 sm:col-span-4 2sm:col-span-6">
               <div class="flex items-center gap-4 bg-white justify-center font-medium group rounded-border-main hover:translate-y-[-5px] py-5 px-7 hover:transition-all hover:ease translate-y-0 border border-primary rounded-2xl group hover:bg-primary hover:text-white"> <span class="rounded-border bg-primary-light p-[10px] rounded-full group-hover:bg-white">
                   <svg class="h-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] w-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-primary fill-primary"> 
-                    <use href="../../assets/svg/sprite.svg#Business-Chart"> </use>
+                    <use href="../../assets/svg/sprite.svg#Bold-Bar"> </use>
                   </svg></span><small class="text-title font-bold text-base-responsive !leading-5 group-hover:text-white"> Progress</small></div>
             </div>
             <div class="col-span-2 sm:col-span-4 2sm:col-span-6"> 
               <div class="flex items-center gap-4 bg-white justify-center font-medium group rounded-border-main hover:translate-y-[-5px] py-5 px-7 hover:transition-all hover:ease translate-y-0 border border-primary rounded-2xl group hover:bg-primary hover:text-white"> <span class="rounded-border bg-primary-light p-[10px] rounded-full group-hover:bg-white">
                   <svg class="h-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] w-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-primary fill-primary"> 
-                    <use href="../../assets/svg/sprite.svg#Discovery"> </use>
+                    <use href="../../assets/svg/sprite.svg#Bold-Network"> </use>
                   </svg></span><small class="text-title font-bold text-base-responsive !leading-5 group-hover:text-white"> Modal </small></div>
             </div>
             <div class="col-span-2 sm:col-span-4 2sm:col-span-6"> 
               <div class="flex items-center gap-4 bg-white justify-center font-medium group rounded-border-main hover:translate-y-[-5px] py-5 px-7 hover:transition-all hover:ease translate-y-0 border border-primary rounded-2xl group hover:bg-primary hover:text-white"> <span class="rounded-border bg-primary-light p-[10px] rounded-full group-hover:bg-white">
                   <svg class="h-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] w-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-primary fill-primary"> 
-                    <use href="../../assets/svg/sprite.svg#Discovery"> </use>
+                    <use href="../../assets/svg/sprite.svg#Bold-Danger"> </use>
                   </svg></span><small class="text-title font-bold text-base-responsive !leading-5 group-hover:text-white"> Alert</small></div>
             </div>
             <div class="col-span-2 sm:col-span-4 2sm:col-span-6">
               <div class="flex items-center gap-4 bg-white justify-center font-medium group rounded-border-main hover:translate-y-[-5px] py-5 px-7 hover:transition-all hover:ease translate-y-0 border border-primary rounded-2xl group hover:bg-primary hover:text-white"> <span class="rounded-border bg-primary-light p-[10px] rounded-full group-hover:bg-white">
                   <svg class="h-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] w-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-primary fill-primary"> 
-                    <use href="../../assets/svg/sprite.svg#Discovery"> </use>
+                    <use href="../../assets/svg/sprite.svg#Bold-Download"> </use>
                   </svg></span><small class="text-title font-bold text-base-responsive !leading-5 group-hover:text-white"> Dropdown </small></div>
             </div>
             <div class="col-span-2 sm:col-span-4 2sm:col-span-6">
@@ -117,31 +143,31 @@
             <div class="col-span-2 sm:col-span-4 2sm:col-span-6">
               <div class="flex items-center gap-4 bg-white justify-center font-medium group rounded-border-main hover:translate-y-[-5px] py-5 px-7 hover:transition-all hover:ease translate-y-0 border border-primary rounded-2xl group hover:bg-primary hover:text-white"> <span class="rounded-border bg-primary-light p-[10px] rounded-full group-hover:bg-white">
                   <svg class="h-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] w-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-primary fill-primary"> 
-                    <use href="../../assets/svg/sprite.svg#Discovery"> </use>
+                    <use href="../../assets/svg/sprite.svg#Bold-Paperclip"> </use>
                   </svg></span><small class="text-title font-bold text-base-responsive !leading-5 group-hover:text-white"> Tooltip </small></div>
             </div>
             <div class="col-span-2 sm:col-span-4 2sm:col-span-6">
               <div class="flex items-center gap-4 bg-white justify-center font-medium group rounded-border-main hover:translate-y-[-5px] py-5 px-7 hover:transition-all hover:ease translate-y-0 border border-primary rounded-2xl group hover:bg-primary hover:text-white"> <span class="rounded-border bg-primary-light p-[10px] rounded-full group-hover:bg-white">
                   <svg class="h-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] w-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-primary fill-primary"> 
-                    <use href="../../assets/svg/sprite.svg#Discovery"> </use>
+                    <use href="../../assets/svg/sprite.svg#Sim-Card"> </use>
                   </svg></span><small class="text-title font-bold text-base-responsive !leading-5 group-hover:text-white"> Divider</small></div>
             </div>
             <div class="col-span-2 sm:col-span-4 2sm:col-span-6">
               <div class="flex items-center gap-4 bg-white justify-center font-medium group rounded-border-main hover:translate-y-[-5px] py-5 px-7 hover:transition-all hover:ease translate-y-0 border border-primary rounded-2xl group hover:bg-primary hover:text-white"> <span class="rounded-border bg-primary-light p-[10px] rounded-full group-hover:bg-white">
                   <svg class="h-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] w-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-primary fill-primary"> 
-                    <use href="../../assets/svg/sprite.svg#Discovery"> </use>
+                    <use href="../../assets/svg/sprite.svg#Bold-Money"> </use>
                   </svg></span><small class="text-title font-bold text-base-responsive !leading-5 group-hover:text-white"> Breadcrumbs </small></div>
             </div>
             <div class="col-span-2 sm:col-span-4 2sm:col-span-6">
               <div class="flex items-center gap-4 bg-white justify-center font-medium group rounded-border-main hover:translate-y-[-5px] py-5 px-7 hover:transition-all hover:ease translate-y-0 border border-primary rounded-2xl group hover:bg-primary hover:text-white"> <span class="rounded-border bg-primary-light p-[10px] rounded-full group-hover:bg-white">
                   <svg class="h-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] w-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-primary fill-primary"> 
-                    <use href="../../assets/svg/sprite.svg#Discovery"> </use>
+                    <use href="../../assets/svg/sprite.svg#List-Bill"> </use>
                   </svg></span><small class="text-title font-bold text-base-responsive !leading-5 group-hover:text-white"> Pagination </small></div>
             </div>
             <div class="col-span-2 sm:col-span-4 2sm:col-span-6">
               <div class="flex items-center gap-4 bg-white justify-center font-medium group rounded-border-main hover:translate-y-[-5px] py-5 px-7 hover:transition-all hover:ease translate-y-0 border border-primary rounded-2xl group hover:bg-primary hover:text-white"> <span class="rounded-border bg-primary-light p-[10px] rounded-full group-hover:bg-white">
                   <svg class="h-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] w-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-primary fill-primary"> 
-                    <use href="../../assets/svg/sprite.svg#Discovery"> </use>
+                    <use href="../../assets/svg/sprite.svg#Database"> </use>
                   </svg></span><small class="text-title font-bold text-base-responsive !leading-5 group-hover:text-white"> Carousel </small></div>
             </div>
             <div class="col-span-2 sm:col-span-4 2sm:col-span-6">
@@ -153,13 +179,13 @@
             <div class="col-span-2 sm:col-span-4 2sm:col-span-6">
               <div class="flex items-center gap-4 bg-white justify-center font-medium group rounded-border-main hover:translate-y-[-5px] py-5 px-7 hover:transition-all hover:ease translate-y-0 border border-primary rounded-2xl group hover:bg-primary hover:text-white"> <span class="rounded-border bg-primary-light p-[10px] rounded-full group-hover:bg-white">
                   <svg class="h-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] w-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-primary fill-primary"> 
-                    <use href="../../assets/svg/sprite.svg#Discovery"> </use>
+                    <use href="../../assets/svg/sprite.svg#Bold-Feed"> </use>
                   </svg></span><small class="text-title font-bold text-base-responsive !leading-5 group-hover:text-white"> Indicator </small></div>
             </div>
             <div class="col-span-2 sm:col-span-4 2sm:col-span-6">
               <div class="flex items-center gap-4 bg-white justify-center font-medium group rounded-border-main hover:translate-y-[-5px] py-5 px-7 hover:transition-all hover:ease translate-y-0 border border-primary rounded-2xl group hover:bg-primary hover:text-white"> <span class="rounded-border bg-primary-light p-[10px] rounded-full group-hover:bg-white">
                   <svg class="h-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] w-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-primary fill-primary"> 
-                    <use href="../../assets/svg/sprite.svg#Discovery"> </use>
+                    <use href="../../assets/svg/sprite.svg#Bold-star"> </use>
                   </svg></span><small class="text-title font-bold text-base-responsive !leading-5 group-hover:text-white"> Mask</small></div>
             </div>
             <div class="col-span-2 sm:col-span-4 2sm:col-span-6">
@@ -174,34 +200,34 @@
                     <use href="../../assets/svg/sprite.svg#Duotone"> </use>
                   </svg></span><small class="text-title font-bold text-base-responsive !leading-5 group-hover:text-white"> Steps</small></div>
             </div>
-            <div class="col-span-2 sm:col-span-4 2sm:col-span-6"> 
+            <div class="col-span-2 sm:col-span-4 2sm:col-span-6">
               <div class="flex items-center gap-4 bg-white justify-center font-medium group rounded-border-main hover:translate-y-[-5px] py-5 px-7 hover:transition-all hover:ease translate-y-0 border border-primary rounded-2xl group hover:bg-primary hover:text-white"> <span class="rounded-border bg-primary-light p-[10px] rounded-full group-hover:bg-white">
                   <svg class="h-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] w-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-primary fill-primary"> 
-                    <use href="../../assets/svg/sprite.svg#Discovery"> </use>
+                    <use href="../../assets/svg/sprite.svg#Bold-Widget"> </use>
                   </svg></span><small class="text-title font-bold text-base-responsive !leading-5 group-hover:text-white"> Tabs </small></div>
             </div>
             <div class="col-span-2 sm:col-span-4 2sm:col-span-6"> 
               <div class="flex items-center gap-4 bg-white justify-center font-medium group rounded-border-main hover:translate-y-[-5px] py-5 px-7 hover:transition-all hover:ease translate-y-0 border border-primary rounded-2xl group hover:bg-primary hover:text-white"> <span class="rounded-border bg-primary-light p-[10px] rounded-full group-hover:bg-white">
                   <svg class="h-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] w-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-primary fill-primary"> 
-                    <use href="../../assets/svg/sprite.svg#Discovery"> </use>
+                    <use href="../../assets/svg/sprite.svg#Bold-Emoji"> </use>
                   </svg></span><small class="text-title font-bold text-base-responsive !leading-5 group-hover:text-white"> Rating</small></div>
             </div>
             <div class="col-span-2 sm:col-span-4 2sm:col-span-6">
               <div class="flex items-center gap-4 bg-white justify-center font-medium group rounded-border-main hover:translate-y-[-5px] py-5 px-7 hover:transition-all hover:ease translate-y-0 border border-primary rounded-2xl group hover:bg-primary hover:text-white"> <span class="rounded-border bg-primary-light p-[10px] rounded-full group-hover:bg-white">
                   <svg class="h-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] w-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-primary fill-primary"> 
-                    <use href="../../assets/svg/sprite.svg#Discovery"> </use>
+                    <use href="../../assets/svg/sprite.svg#Bold-Bag"> </use>
                   </svg></span><small class="text-title font-bold text-base-responsive !leading-5 group-hover:text-white"> Select </small></div>
             </div>
             <div class="col-span-2 sm:col-span-4 2sm:col-span-6">
               <div class="flex items-center gap-4 bg-white justify-center font-medium group rounded-border-main hover:translate-y-[-5px] py-5 px-7 hover:transition-all hover:ease translate-y-0 border border-primary rounded-2xl group hover:bg-primary hover:text-white"> <span class="rounded-border bg-primary-light p-[10px] rounded-full group-hover:bg-white">
                   <svg class="h-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] w-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-primary fill-primary"> 
-                    <use href="../../assets/svg/sprite.svg#Discovery"> </use>
+                    <use href="../../assets/svg/sprite.svg#Bold-Record"> </use>
                   </svg></span><small class="text-title font-bold text-base-responsive !leading-5 group-hover:text-white"> Switch</small></div>
             </div>
             <div class="col-span-2 sm:col-span-4 2sm:col-span-6">
               <div class="flex items-center gap-4 bg-white justify-center font-medium group rounded-border-main hover:translate-y-[-5px] py-5 px-7 hover:transition-all hover:ease translate-y-0 border border-primary rounded-2xl group hover:bg-primary hover:text-white"> <span class="rounded-border bg-primary-light p-[10px] rounded-full group-hover:bg-white">
                   <svg class="h-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] w-[calc(18px_+_(30-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-primary fill-primary"> 
-                    <use href="../../assets/svg/sprite.svg#Discovery"> </use>
+                    <use href="../../assets/svg/sprite.svg#Bold-Check"> </use>
                   </svg></span><small class="text-title font-bold text-base-responsive !leading-5 group-hover:text-white"> Checkboxes</small></div>
             </div>
           </div>
