@@ -236,7 +236,7 @@ div[class*=activity-dot-secondary]{
     }
 }
 
-  /* Text Underline Hover Effrct */
+/* Text Underline Hover Effrct */
 .framework-hover{
   .hover-underline-animation{
     @apply inline-block relative;
@@ -284,9 +284,30 @@ div[class*=activity-dot-secondary]{
     }
   }
 }
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#salesSummaryChart{
+  .apexcharts-tooltip {
+    &.apexcharts-theme-light{
+      &.apexcharts-active{
+        @apply  overflow-visible ;
+      }
+    }
+  }
+} 
+#totalCustomerLineChart{
+  @apply mt-[-32px] mx-[0] mb-[-28px] ;
+}
 #totalOrderLineChart{ 
-   @apply mt-[-32px] mx-[0] mb-[-28px];
-  } 
+  @apply mt-[-32px] mx-[0] mb-[-28px];
+} 
 #OrdersStatus{
   @apply ml-[0px] mt-[15px];  
 }

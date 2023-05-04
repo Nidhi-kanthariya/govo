@@ -91,17 +91,7 @@ var totalCustomerLineChart = {
   series: [{
     data: [34, 12, 54, 30, 12, 43]
   }],
-  // annotations:{
-  //   points: [{
-  //       marker:{
-  //         size : 5, 
-  //         fillColor: "#fff", 
-  //         strokeColor: "#FF6150", 
-  //         radius: 1, 
-  //       },
-         
-  //     }],
-  // },
+
   chart: {
     type: 'line',
     width: '100%',
@@ -500,6 +490,13 @@ var salesSummaryChart = {
         download: false, 
       },
     },
+    dropShadow:{
+      enabled:  true,
+      enabledOnSeries: undefined,
+      top: 5,
+      left: 3,
+      blur: 4, 
+    },
   },
   dataLabels: {
     enabled: false
@@ -513,6 +510,7 @@ var salesSummaryChart = {
       shadeIntensity: 0,
       opacityFrom: 1,
       opacityTo: 0
+      
     } 
   },
   yaxis: {
