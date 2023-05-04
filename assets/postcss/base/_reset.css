@@ -284,14 +284,12 @@ div[class*=activity-dot-secondary]{
     }
   }
 }
-
-@keyframes rotate {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#totalOrderLineChart{ 
+   @apply mt-[-32px] mx-[0] mb-[-28px];
+  } 
+#OrdersStatus{
+  @apply ml-[0px] mt-[15px];  
 }
-
-
+#totalExpensesLineChart{
+  @apply ml-[50px];
+}

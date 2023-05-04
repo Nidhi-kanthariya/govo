@@ -12,7 +12,7 @@
 
 //- apex-chart
 -var apexChart=true;  
--var ecommerceApex=true; 
+-var ecommerceApex=true;  
 
 //- swiper-slider
 -var swiper=true;
@@ -40,21 +40,21 @@ html(lang='en')
                 // Sidebar End 
 
                 // Page Body Start
-                div.page-body
+                div.page-body 
                     div.grid.grid-cols-12.gap-card-gap
                         div.col-span-6(class="xl:col-span-12") 
                             div(class="grid grid-cols-2 gap-card-gap")
-                                each data in WIDGET4_DATA
+                                each data in WIDGET4_DATA 
                                     div.col-span-1(class="md:col-span-2")
                                         div.card.svg-shake(class="gap-0 p-0")
-                                            +widget4(data)
+                                            +widget4(data) 
                         div.col-span-6(class="xl:col-span-6 xl3:col-span-12")
-                            div.card.gap-0 
-                                div.card-header
+                            div.card.gap-0
+                                div.card-header 
                                     div.flex.justify-between.w-full(class=`flex-wrap gap-2 items-center`)
                                         h3(class="text-lg font-bold leading-none text-title") Sales Summary ( Jun 2023)
                                         div.flex.items-center.gap-4
-                                            div.radialBar-legend 
+                                            div.radialBar-legend  
                                                 div(class="w-full px-2")
                                                     div.radialBar-legend-series
                                                         span.radialBar-legend-marker.primary
@@ -106,10 +106,10 @@ html(lang='en')
                             div.card
                                 div.card-header
                                     +card-header("Orders Status (May 10)","setting", HISTORY_DROPDOWN)
-                                div.card-body
-                                    div.relative
+                                div.card-body 
+                                    //- div.relative p-[13px] 6xl:p-[10px] 5xl:p-[8px] rounded-full relativep-[13px] 6xl:p-[10px] 5xl:p-[8px] rounded-full relativep-[13px] 6xl:p-[10px] 5xl:p-[8px] rounded-full relative
                                         //- div#OrdersStatus
-                                    div.grid.grid-cols-12 
+                                    div.grid.grid-cols-12.flex.gap-4
                                         div.col-span-9(class="xl:col-span-3 2md:col-span-12")
                                             div#OrdersStatus.custom-data-label.apex-custom-text(class="2md:-mt-[12px] ml-[-40px] 2md:ml-0")
                                         div.col-span-3(class="xl:col-span-9 2md:col-span-12") 
@@ -120,7 +120,7 @@ html(lang='en')
                                                             span(class=`w-[10px] bg-${item.status} h-[10px] rounded-[2px]`)
                                                             span(class="text-xs font-semibold text-left line-clamp-1 ")= item.title
                         div.col-span-4(class="lg:col-span-12 lg:-order-1")
-                            div.card
+                            div.card 
                                 div.card-header
                                     +card-header("Customers","setting", HISTORY_DROPDOWN)
                                 div.card-body 
@@ -188,8 +188,6 @@ html(lang='en')
                                             div.flex.flex-col.gap-1
                                                 span.text-content3.text-2xs.font-bold 12:00 pm
                                                 p.text-title.font-medium If you wear clothes that don't suit you.
-
-
 
                         div.col-span-4(class="lg:col-span-12 lg:-order-1")
                             div.card
