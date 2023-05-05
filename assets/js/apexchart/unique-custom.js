@@ -73,7 +73,7 @@ const revenueChart = {
       },
     },
   },
-  {
+  { 
     breakpoint: 425,
     options: {
       chart: {
