@@ -205,7 +205,6 @@
         transform: scaleX(1);
     }
   }
-  
 }
 
 .announcement-image{
@@ -234,6 +233,29 @@ div[class*=activity-dot-secondary]{
   100% {
       transform: scale(1);
     }
+}
+
+/* Ecommerce Chart Css */
+#salesSummaryChart{
+  .apexcharts-tooltip {
+    &.apexcharts-theme-light{
+      &.apexcharts-active{
+        @apply  overflow-visible ;
+      }
+    }
+  }
+} 
+#totalCustomerLineChart{
+  @apply mt-[-32px] mx-[0] mb-[-28px] ;
+}
+#totalOrderLineChart{ 
+  @apply mt-[-32px] mx-[0] mb-[-28px];
+} 
+#OrdersStatus{
+  @apply ml-[0px] mt-[15px];  
+}
+#totalExpensesLineChart{
+  @apply ml-[50px];
 }
 
 /* Text Underline Hover Effrct */
@@ -268,6 +290,7 @@ div[class*=activity-dot-secondary]{
   }
 }
 
+/* Landing Card Animation */
 .rounded-border-main{
   .rounded-border {
     @apply relative;
@@ -293,28 +316,8 @@ div[class*=activity-dot-secondary]{
     transform: rotate(360deg);
   }
 }
-#salesSummaryChart{
-  .apexcharts-tooltip {
-    &.apexcharts-theme-light{
-      &.apexcharts-active{
-        @apply  overflow-visible ;
-      }
-    }
-  }
-} 
-#totalCustomerLineChart{
-  @apply mt-[-32px] mx-[0] mb-[-28px] ;
-}
-#totalOrderLineChart{ 
-  @apply mt-[-32px] mx-[0] mb-[-28px];
-} 
-#OrdersStatus{
-  @apply ml-[0px] mt-[15px];  
-}
-#totalExpensesLineChart{
-  @apply ml-[50px];
-}
 
+/* Landing Home Background Image */
 .bg-landing-size{
   background-image: url(../../assets/images/landing/svg/header.png);
   background-size: cover; 
@@ -322,8 +325,10 @@ div[class*=activity-dot-secondary]{
   background-repeat: no-repeat;
   display: block;
   height: 100vh;
+  @apply lg:h-auto;
 }
 
+/* Tranding Text Animation */
 .trending-animate{
   animation: animationtop 5s infinite;
 }
@@ -340,17 +345,23 @@ div[class*=activity-dot-secondary]{
   }
 }
 
-
-.waving-animate{
-  animation: 30s waveanimation linear infinite;
-    @apply absolute content-[""] bg-primary;
+/* Landing Wave Animation */
+.wavy-gif {
+  @apply absolute;
+  svg {
+    @apply w-[5rem];
+    path {
+      @apply stroke-content3;
+      stroke-dasharray: 500;
+      stroke-dashoffset: 500;
+      animation: dash 3s linear infinite;
+    }
   }
-
-@keyframes waveanimation {
-	0% {
-		background-position: 0 0;
-	}
-	100% {
-		background-position: 300px 0;
-	}
 }
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
