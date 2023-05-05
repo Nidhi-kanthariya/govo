@@ -493,9 +493,10 @@ var salesSummaryChart = {
     dropShadow:{
       enabled:  true,
       enabledOnSeries: undefined,
-      top: 5,
-      left: 3,
-      blur: 4, 
+      top: 2,
+      left: 1,
+      blur: 5,
+      color:[ 'rgba(var(--secondary),0.6)' ,'rgba(var(--primary),0.6)' ],
     },
   },
   dataLabels: {

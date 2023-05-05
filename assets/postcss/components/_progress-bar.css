@@ -48,9 +48,9 @@
     } 
   }
   .progress{
-    @apply bg-content rounded-[5px] shadow-none ;
+    @apply rounded-[5px] shadow-none bg-warning-extralight ;
   } 
-  .progress-striped{
+  .progress-striped{  
     &.progress-bar{
       &.progress-bar-striped{ 
         background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -61,16 +61,30 @@
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); 
     background-size: 40px 40px;
   } 
-  .progress{
+  /* .progress{
     &.active{
       .progress-bar {
         animation: progress-bar-stripes 2s linear infinite;
       }
     }
+  } */
+  .progress.active .progress-bar, .progress-bar.active{
+    animation: progress-bar-stripes 2s linear infinite;
+  }
+  .progress-bar.active, .progress.active .progress-bar{
+    animation: progress-bar-stripes 2s linear infinite;
   }
   .progress-bar{ 
     &.progress-bar-warning{
       @apply !bg-warning ;
     }
+  }
+}
+@keyframes progress-bar-stripes{ 
+  0% {
+    background-position: 40px 0;
+  }
+  100% {
+    background-position: 0 0;
   }
 }
