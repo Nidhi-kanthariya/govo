@@ -50,17 +50,17 @@ html(lang='en')
                                             +widget4(data) 
                         div.col-span-6(class="xl:col-span-6 xl3:col-span-12")
                             div.card.gap-0
-                                div.card-header 
+                                div.card-header  
                                     div.flex.justify-between.w-full(class=`flex-wrap gap-2 items-center`)
                                         h3(class="text-lg font-bold leading-none text-title") Sales Summary ( Jun 2023)
-                                        div.flex.items-center.gap-4
-                                            div.radialBar-legend  
+                                        div.flex.items-center.gap-4  
+                                            div.radialBar-legend 
                                                 div(class="w-full px-2")
                                                     div.radialBar-legend-series
                                                         span.radialBar-legend-marker.primary
                                                         p(class="!mt-0").radialBar-legend-text.text-3xs.text-title Sales
-                                                div(class="w-full px-2")
-                                                    div.radialBar-legend-series
+                                                div(class="w-full px-2") 
+                                                    div.radialBar-legend-series 
                                                         span.radialBar-legend-marker.secondary
                                                         p(class="!mt-0").radialBar-legend-text.text-3xs.text-title Orders
                                             div.dropdown.on-hover-show 
@@ -74,17 +74,17 @@ html(lang='en')
                                                             a(href="javascript:void(0)") Monthly
                                                         li
                                                             a(href="javascript:void(0)") Weekly
-                                div.card-body 
+                                div.card-body
                                     div.relative
                                         div#salesSummaryChart 
                                         //- div#recentStatisticsChart2(class="absolute inset-0")
                         div.col-span-7(class="lg:col-span-12 lg:-order-1")
                             div.card
-                                div.card-header
+                                div.card-header 
                                     div.flex.justify-between.w-full(class=`flex-wrap gap-2 items-center`)
                                         h3(class="text-lg font-bold leading-none text-title") Order Detail
                                         div.flex.items-center.gap-4 
-                                            div.search-box.relative
+                                            div.search-box.relative 
                                                 input(class="border border-border-light dark:bg-sidebar-dark2 dark:border-border-dark rounded-5 w-full py-[8px] pr-[25px] pl-[48px] rtl:pl-[25px] rtl:pr-[48px] text-xs font-semibold text-title dark:text-white" placeholder="Search..." type="search")       
                                                 +SVG_ICON("Search","xl:hidden w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title dark:stroke-white top-1/2 -translate-y-1/2 left-[17px] rtl:left-unset rtl:right-[17px] absolute dark:stroke-white")
                                                 i(data-feather="x" class="search-close hidden cursor-pointer xl:block w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 right-[25px] absolute")
