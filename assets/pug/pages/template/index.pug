@@ -64,16 +64,16 @@ html(lang='en')
               div.card
                 div.card-header
                   +card-header("User Information","setting", SHORTING_DROPDOWN)
-                div.card-body
+                div.card-body 
                   div.overflow-auto.custom-scroll  
                     include ../../components/table/user-information
             div.col-span-3(class="4xl:col-span-4 lg:col-span-12") 
               div.grid.grid-cols-2.gap-card-gap
                 div.col-span-2(class="lg:col-span-1 2md:col-span-2")
-                  div.card
+                  div.card   
                     div.card-header
                       +card-header("Inventory Cost","setting", HISTORY_DROPDOWN)
-                    div.card-body
+                    div.card-body  
                       +product-list(INVENTORY_CARD)
                 div.col-span-2(class="lg:col-span-1 2md:col-span-2")
                   div.card

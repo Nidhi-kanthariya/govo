@@ -27,7 +27,6 @@ const totalSellBarChart = {
     },
   },
 
-
   plotOptions: {
     bar: {
       columnWidth: '40%',
@@ -325,7 +324,7 @@ const totalExpensesLineChart = {
     breakpoint: 1400,
     options: {
       chart: {
-        height: 120,
+        height: 120,        
       },
       plotOptions: {
         radialBar: {
@@ -372,7 +371,6 @@ const totalExpensesLineChart = {
           hollow: {
             size: '40%',
           },
-
           dataLabels: {
             value: {
               fontSize: '14px',
@@ -657,7 +655,7 @@ const OrdersStatus = {
       },
     },
     ],
-  };
+  }; 
 
   const OrdersStatusEl = new ApexCharts(document.querySelector('#OrdersStatus'), OrdersStatus);
   OrdersStatusEl.render();  
