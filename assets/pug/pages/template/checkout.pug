@@ -44,7 +44,7 @@ html(lang='en')
         // Page Body Start
         div.page-body  
           div.grid.grid-cols-12.gap-4.card.checkout-detail 
-            div.col-span-8(class="flex flex-col w-full pr-4 border-r lg:col-span-12 tabs lg:border-b lg:border-l-0 lg:border-r-0 lg:pb-4 rtl:lg:border-l-0 lg:px-0 lg:pr-0 rtl:lg:pl-0 border-border-light dark:border-border-dark rtl:border-l rtl:border-r-0 rtl:pl-4 rtl:pr-unset")
+            div.col-span-8(class="flex flex-col w-full pr-4 border-r checkout-tab lg:col-span-12 tabs lg:border-b lg:border-l-0 lg:border-r-0 lg:pb-4 rtl:lg:border-l-0 lg:px-0 lg:pr-0 rtl:lg:pl-0 border-border-light dark:border-border-dark rtl:border-l rtl:border-r-0")
               div.mb-1.tab-links.flex.items-center(class="2md:flex-col")
                 button.tab.product-tab.w-full.items-center.text-sm.tab-active(data-tabFilter="1" class="tab-link") 
                   i.fa-solid.fa-user
@@ -268,7 +268,7 @@ html(lang='en')
       div.modal-main
         input#modal-edit(class="peer" name="modal-edit" type='checkbox')
         label.modal-overlay(class="peer-checked:block" for='modal-edit')
-        div.modal.modal-center(class="w-10/12 dark:bg-sidebar-dark2 max-w-md peer-checked:opacity-100 peer-checked:visible")
+        div.modal.modal-center(class="w-10/12 max-w-md dark:bg-sidebar-dark2 peer-checked:opacity-100 peer-checked:visible")
           div.modal-header
             h3(class="dark:text-white").text-title.font-semibold.text-sm Information 
             label(for="modal-edit") 
@@ -283,7 +283,7 @@ html(lang='en')
                 textarea(placeholder="Enter your address" row="3" id="address" class="dark:border-border-dark dark:focus:!border-border-dark dark:bg-sidebar-dark2 p-[11px] focus:!border-border-light ").w-full.border.border-border-light.rounded-5.text-xs.text-content
               div
                 label(for="country") Address Type
-                select.form-select.block.w-full.px-3.text-xs.font-normal.text-content3.bg-white.bg-clip-padding.bg-no-repeat.border.border-border-light.rounded-5.transition.ease-in-out.m-0(class='min-w-[150px] py-[9px] dark:bg-sidebar-dark2 dark:border-border-dark dark:focus:border-border'  id="sortby" aria-label='Default select example')
+                select.form-select.block.w-full.px-3.text-xs.font-normal.text-content3.bg-white.bg-clip-padding.bg-no-repeat.border.border-border-light.rounded-5.transition.ease-in-out.m-0(class='min-w-[150px] py-[9px] dark:bg-sidebar-dark2 dark:border-border-dark dark:focus:border-border' id="sortby" aria-label='Default select example')
                   option(selected='') Home 
                   option(value='1') Office
               div 
@@ -296,7 +296,7 @@ html(lang='en')
       div.modal-main 
         input#modal-delete(class="peer" name="modal-delete" type='checkbox')
         label.modal-overlay(class="peer-checked:block" for='modal-delete')
-        div.modal.modal-center(class="w-10/12 dark:bg-sidebar-dark2 max-w-md peer-checked:opacity-100 peer-checked:visible")
+        div.modal.modal-center(class="w-10/12 max-w-md dark:bg-sidebar-dark2 peer-checked:opacity-100 peer-checked:visible")
           div.modal-body.text-center
             label(for="modal-delete" class="flex justify-end") 
               i(data-feather="x" class="w-4 h-4 stroke-content3") 

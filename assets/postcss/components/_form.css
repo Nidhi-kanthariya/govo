@@ -44,10 +44,10 @@
     }
 
     .social {
-      @apply flex gap-2 justify-center;
+      @apply flex gap-2 justify-center ;
 
       .btn {
-        @apply bg-gray-light py-2 px-4 rounded-none text-primary text-xs;
+        @apply bg-gray-light py-2 px-4 rounded-none text-primary text-xs dark:bg-sidebar-dark;
       }
 
       img {
@@ -137,6 +137,16 @@
           @apply mt-1 inline-block rounded-5 p-1 text-3xs leading-4;
           background-color: rgb(241 89 92 / var(--tw-bg-opacity));
           color: rgb(255 255 255 / var(--tw-text-opacity));
+        }
+      }
+    }
+  }
+
+  .user-card{
+    .social-media{
+      ul{
+        li{
+          @apply dark:bg-sidebar-dark2;
         }
       }
     }
