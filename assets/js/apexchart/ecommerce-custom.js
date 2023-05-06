@@ -515,20 +515,8 @@ var salesSummaryChart = {
     } 
   },
   yaxis: {
-    // type: 'Sales',
-    // categories: ["$0" , "$2,000" ,"$4,000" , "$6,000" ,"$8,000", '$10,000']
-
-    // min: 0,
-    // max: 10000,  
-    // steps: 2000,
 
     labels: {
-      // formatter: (value) => {
-      //   let gaurav = value % 2 == 0 ? gaurav : value
-      //   console.log("value", value % 2 == 0 ? value : '11'); 
-      //   return `${value}$`;
-      // }, 
-      // tickAmount: Math.ceil(Math.max(...data)/2),
       style:{
         colors: ['var(--content)']
       },  
@@ -537,11 +525,6 @@ var salesSummaryChart = {
   }, 
   legend: {
     show: false,
-    // horizontalAlign: 'right',
-    // position: 'top',
-    // margin:{
-    //   top: -30,
-    // }
   },
   xaxis: { 
     type: 'datetime', 
@@ -575,42 +558,30 @@ const OrdersStatus = {
       {
         data: [60, 78, 35, 60, 20],
       },
-      // {
-      //   data: [40, 22, 65, 40, 80],
-      // },
     ],
     chart: { 
       type: 'bar',
-      // width: '80%', 
-      // height: '100%',  
-      sparkline: {
-        // enabled: true,
-      },
-      // stacked: true,
-      // stackType: "100%",
       toolbar:{ 
         show:false,
-      }
+      },
+      height: 320,
     },
     grid: {
       padding: {
         top: -15,
-        right: 0,
+        right: 20,
         bottom: 0,
-        left: -5,
+        left: 20,
       },
       show: true,
       borderColor: 'var(--border-light)',
-      // column: {
-      //   color: ['rgba(var(--secondary),1)','#F5F6F9']
-      // } 
     },
     plotOptions: {
       bar: {
-        columnWidth: '18%',
+        columnWidth: '15%',
         borderRadius: 9, 
         distributed: true,
-
+        barHeight: '100%',   
       },
     },
     xaxis: {
@@ -624,7 +595,6 @@ const OrdersStatus = {
     },
     dataLabels: { 
       enabled: false,
-  
     },
     legend: {
       show: false,
@@ -640,7 +610,7 @@ const OrdersStatus = {
       }  
     },
     colors:['#33BFBF', '#FF6150' , '#072448' , '#F8AA4B',  '#FAABA4' ,'#F5F6F9'],
-    fill: { 
+    fill: {
       type: 'gradient',
       opacity: 1,
       gradient:{
@@ -652,13 +622,12 @@ const OrdersStatus = {
       },
       opacity: 1,
     },
-    
     tooltip: toolTipMini,
     responsive: [{
       breakpoint: 1700,
       options: {
         chart: {
-          height: 86,
+          height: 320,
         },
       },
     },
@@ -689,7 +658,7 @@ const OrdersStatus = {
     },
     ],
   };
-  
+
   const OrdersStatusEl = new ApexCharts(document.querySelector('#OrdersStatus'), OrdersStatus);
   OrdersStatusEl.render();  
   
