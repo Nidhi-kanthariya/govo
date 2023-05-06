@@ -8,7 +8,7 @@ menuToggle.addEventListener('click', function () {
 //  Tap To Top Js
 const tapTopBtn = document.querySelector('.tap-to-top-button');
 const tapTopTopBox = document.querySelector('.tap-to-top-box');
-tapTopBtn?.addEventListener('click', function () {
+tapTopBtn ? .addEventListener('click', function () {
     window.scroll({
         top: 0,
         behavior: 'smooth',
@@ -47,7 +47,7 @@ window.addEventListener('scroll', () => {
 navLi.forEach((el) => {
     el.addEventListener('click', function (e) {
         e.preventDefault();
-        document.querySelector(el.getAttribute('href'))?.scrollIntoView({
+        document.querySelector(el.getAttribute('href')) ? .scrollIntoView({
             behavior: 'smooth',
         });
     });

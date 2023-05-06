@@ -27,7 +27,7 @@
   }
   .landing-main{
     .container{
-      @apply mx-auto w-full max-w-[93.75rem] px-[1.875rem];
+      @apply mx-auto w-full max-w-[93.75rem] px-[1.875rem] sm:px-[1.5625rem];
     }
     .landing-header {
       .show {

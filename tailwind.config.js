@@ -90,7 +90,7 @@ module.exports = {
         'padding': 'calc(0.9375rem + (1.5625 - 0.9375) * ((100vw - 20rem) / (120 - 20)))',
         'grid-space': 'calc(0.9375rem + (1.875r - 0.9375) * ((100vw - 20rem) / (120 - 20)))',
         'slider-space': 'calc(-0.9375rem + (-1.875r - -0.9375) * ((100vw - 20rem) / (120 - 20)))',
-        'section-space': 'calc(45px + (70 - 45) * ((100vw - 320px) / (1920 - 320)))',
+        'section-space': 'calc(25px + (70 - 25) * ((100vw - 320px) / (1920 - 320)))',
         unset: 'unset',
       },
       fontSize: {
