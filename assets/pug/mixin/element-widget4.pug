@@ -11,8 +11,8 @@ mixin widget4(data)
             use(href=`../../../assets/svg/bold_sprite.svg#${data.icon}`)
         div 
           h5(class="text-base font-bold text-content3 5xl:text-sm  2xl:text-3xs xl:text-base")= data.title
-          h2(class="text-2xl font-extrabold text-title 5xl:text-sm 2xl:text-3xs xl:text-2xl")= data.profit
-    div(class="block col-span-5 5xl:col-span-4 2xl:col-span-5 2lg:col-span-4 3sm:col-span-3 ")
+          h2(class="text-2xl font-extrabold text-title 5xl:text-sm 2xl:text-3xs xl:text-base")= data.profit
+    div(class="block col-span-5 5xl:col-span-4 2xl:col-span-5 2lg:col-span-4 3sm:col-span-3")
       if(data.chart)
         div(id=`${data.chart}`)
       if(data.progress)

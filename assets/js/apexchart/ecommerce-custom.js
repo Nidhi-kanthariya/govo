@@ -49,7 +49,8 @@ const totalSellBarChart = {
     breakpoint: 1700,
     options: {
       chart: {
-        height: 86,
+        // height: 86,
+        // width: 80, 
       },
     },
   },
@@ -209,6 +210,15 @@ var totalCustomerLineChart = {
       return '<div class="apex-tooltip px-4 py-1 relative "> ' + '<span class="font-bold">' + '$' + series[seriesIndex][dataPointIndex] + '</span>'  + '</div>';
     },
   },
+  responsive:[{
+    breakpoint: 375,
+    options:{
+      chart: {
+        width: 100,
+        height: 105,
+      } 
+    },
+  }],
 };
 var totalCustomerLineChartEl = new ApexCharts(document.querySelector("#totalCustomerLineChart"), totalCustomerLineChart);
 totalCustomerLineChartEl.render();
@@ -274,18 +284,19 @@ const totalExpensesLineChart = {
     breakpoint: 1700,
     options: {
       chart: {
-        height: 115,
+        height: 105,
+        width: 100, 
       },
 
       plotOptions: {
         radialBar: {
           hollow: {
-            size: '48%',
+            size: '42%',
           },
 
           dataLabels: {
             value: {
-              fontSize: '14px',
+              fontSize: '13px',
             },
           },
         },
@@ -296,7 +307,7 @@ const totalExpensesLineChart = {
     breakpoint: 1600,
     options: {
       chart: {
-        height: 110,
+        height: 100,
       },
     },
   },
@@ -304,7 +315,27 @@ const totalExpensesLineChart = {
     breakpoint: 1460,
     options: {
       chart: {
-        height: 100,
+        height: 90,
+      },
+      plotOptions: {
+        radialBar: {
+          hollow: {
+            size: '35%',
+          },
+          dataLabels: {
+            value: {
+              fontSize: '13px',
+            },
+          },
+        },
+      },
+    },
+  },
+  {
+    breakpoint: 1400,
+    options: {
+      chart: {
+        height: 100,        
       },
       plotOptions: {
         radialBar: {
@@ -321,39 +352,19 @@ const totalExpensesLineChart = {
     },
   },
   {
-    breakpoint: 1400,
-    options: {
-      chart: {
-        height: 120,        
-      },
-      plotOptions: {
-        radialBar: {
-          hollow: {
-            size: '50%',
-          },
-          dataLabels: {
-            value: {
-              fontSize: '18px',
-            },
-          },
-        },
-      },
-    },
-  },
-  {
     breakpoint: 876,
     options: {
       chart: {
         height: 110,
-      },
+      }, 
       plotOptions: {
         radialBar: {
           hollow: {
-            size: '45%',
+            size: '42%',
           },
           dataLabels: {
             value: {
-              fontSize: '18px',
+              fontSize: '13px',
             },
           },
         },
@@ -364,16 +375,16 @@ const totalExpensesLineChart = {
     breakpoint: 376,
     options: {
       chart: {
-        height: 90,
+        height: 110,
       },
       plotOptions: {
         radialBar: {
           hollow: {
-            size: '40%',
+            size: '42%',
           },
           dataLabels: {
             value: {
-              fontSize: '14px',
+              fontSize: '13px',
             },
           },
         },
@@ -644,12 +655,12 @@ const OrdersStatus = {
       breakpoint: 376,
       options: {
         chart: {
-          height: 50,
+          height: 300,
         },
-        plotOptions: {
+        plotOptions: { 
           bar: {
-            columnWidth: '60%',
-            borderRadius: 5,
+            columnWidth: '15%',
+            borderRadius: 9,
           },
         },
       },

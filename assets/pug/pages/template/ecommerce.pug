@@ -49,10 +49,10 @@ html(lang='en')
                                         div.card.svg-shake(class="gap-0 p-0")
                                             +widget4(data)
                         div.col-span-6(class="xl:col-span-6 xl3:col-span-12")
-                            div.card.gap-0
-                                div.card-header  
-                                    div.flex.justify-between.w-full(class=`flex-wrap gap-2 items-center`)
-                                        h3(class="text-lg font-bold leading-none text-title") Sales Summary ( Jun 2023)
+                            div.card.gap-0  
+                                div.card-header 
+                                    div.flex.justify-between.w-full(class="flex-wrap gap-2 items-center 2xl:flex-nowrap 2xl:gap-1 2sm:flex-wrap 2sm:flex-wrap 2sm:gap-2")
+                                        h3(class="text-lg font-bold leading-none text-title") Sales Summary (Jun 2023)
                                         div.flex.items-center.gap-4  
                                             div.radialBar-legend 
                                                 div(class="w-full px-2")
@@ -83,7 +83,7 @@ html(lang='en')
                                     div.flex.justify-between.w-full(class=`flex-wrap gap-2 items-center`)
                                         h3(class="text-lg font-bold leading-none text-title") Order Detail
                                         div.flex.items-center.gap-4 
-                                            div.search-box.relative 
+                                            div(class="sm:hidden").search-box.relative 
                                                 input(class="border border-border-light dark:bg-sidebar-dark2 dark:border-border-dark rounded-5 w-full py-[8px] pr-[25px] pl-[48px] rtl:pl-[25px] rtl:pr-[48px] text-xs font-semibold text-title dark:text-white" placeholder="Search..." type="search")       
                                                 +SVG_ICON("Search","xl:hidden w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title dark:stroke-white top-1/2 -translate-y-1/2 left-[17px] rtl:left-unset rtl:right-[17px] absolute dark:stroke-white")
                                                 i(data-feather="x" class="search-close hidden cursor-pointer xl:block w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 right-[25px] absolute")
@@ -128,30 +128,33 @@ html(lang='en')
                                         div(class="w-full px-3 border-r border-border-light dark:border-border-dark last:border-none rtl:border-r-0 rtl:border-l") 
                                             div.radialBar-legend-series 
                                                 span.radialBar-legend-marker.primary
-                                                p.radialBar-legend-text.text-3xs.text-title Current Customers
+                                                p(class="2xl:line-clamp-1 2xl:hidden lg:block 2sm:hidden").radialBar-legend-text.text-3xs.text-title Current Customers
+                                                p(class="2xl:line-clamp-1 hidden lg:hidden  2sm:block").radialBar-legend-text.text-3xs.text-title Current 
                                             small.text-xs.text-content3(class="pl-3 rtl:pl-0 rtl:pr-3") 45%
                                         div(class="w-full px-3 border-r border-border-light dark:border-border-dark last:border-none rtl:border-r-0 rtl:border-l")
-                                            div.radialBar-legend-series
+                                            div.radialBar-legend-series 
                                                 span.radialBar-legend-marker.secondary
-                                                p.radialBar-legend-text.text-3xs.text-title New Customers
+                                                p(class="2xl:line-clamp-1 2xl:hidden lg:block 2sm:hidden").radialBar-legend-text.text-3xs.text-title New Customers
+                                                p(class="2xl:line-clamp-1 hidden lg:hidden  2sm:block").radialBar-legend-text.text-3xs.text-title New 
                                             small.text-xs.text-content3(class="pl-3 rtl:pl-0 rtl:pr-3") 62% 
                                         div(class="w-full px-3 border-r border-border-light dark:border-border-dark last:border-none rtl:border-r-0 rtl:border-l")
-                                            div.radialBar-legend-series 
-                                                span.radialBar-legend-marker.title
-                                                p.radialBar-legend-text.text-3xs.text-title Retarget Customers 
-                                            small.text-xs.text-content3(class="pl-3 rtl:pl-0 rtl:pr-3") 34%
-                        div.col-span-4(class="lg:col-span-12 lg:-order-1")
+                                            div.radialBar-legend-series
+                                                span.radialBar-legend-marker.title 
+                                                p(class="2xl:line-clamp-1 2xl:hidden lg:block 2sm:hidden").radialBar-legend-text.text-3xs.text-title Retarget Customers
+                                                p(class="2xl:line-clamp-1 hidden lg:hidden  2sm:block").radialBar-legend-text.text-3xs.text-title Retarget
+                                            small.text-xs.text-content3(class="pl-3 rtl:pl-0 rtl:pr-3") 34% 
+                        div.col-span-4(class="lg:col-span-12 lg:-order-1 recent-activity") 
                             div.card
                                 div.card-header
                                     +card-header("Recent Activity","setting", HISTORY_DROPDOWN)
-                                div.card-body
-                                    ul(class="relative before:content-[''] before:absolute before:border before:border-border-light before:w-[1px] before:h-full before:top-0 before:left-[4%] rtl:left-unset rtl:right-[4%] dark:border-border-dark") 
-                                        li.flex.gap-4(class="pb-6 last:pb-0") 
+                                div.card-body 
+                                    ul(class="relative before:content-[''] before:absolute before:border before:border-border-light before:w-[1px] before:h-full  before:top-0 rtl:before:bottom-0   rtl:before:right-[4%] before:left-[4%] 2xl:before:left-[6%] rtl:lg:before:right-[2%] rtl:2xl:before:right-[6%] rtl:2lg:before:right-[1.125rem] rtl:4xl:before:right-[5%] 4xl:before:left-[5%] 2lg:before:left-[1.125rem] rtl:!2lg:before:right-[1.125rem] rtl:before:right-[2%] lg:before:left-[2%] rtl:left-unset rtl:right-[4%] dark:border-border-dark") 
+                                        li.flex.gap-4(class="pb-6 last:pb-0")
                                             div.relative
                                                 img(class="min-w-[40px] h-[40px] rounded-full" src=`../../assets/images/avatar/39.jpg`, alt=`avatar`) 
-                                            div.flex.flex-col.gap-1
+                                            div.flex.flex-col.gap-1 
                                                 span.text-content3.text-2xs.font-bold 2hrs Ago
-                                                p.text-title.font-medium Today, I'm very happy about myself, because I realized my dreams.
+                                                p(class="2xl:line-clamp-2").text-title.font-medium Today, I'm very happy about myself, because I realized my dreams.
                                                 ul.flex.items-center.gap-2.flex-wrap 
                                                     li 
                                                         img(class="min-w-[40px] h-[40px] rounded-5" src=`../../assets/images/product/18.png`, alt=`t-shirt`) 
@@ -164,27 +167,27 @@ html(lang='en')
                                                 img(class="min-w-[40px] h-[40px] rounded-full" src=`../../assets/images/avatar/40.png`, alt=`avatar`) 
                                             div.flex.flex-col.gap-1
                                                 span.text-content3.text-2xs.font-bold 5hrs Ago
-                                                p.text-title.font-medium That is the key of this collection, being yourself. Don't be into trends.
+                                                p(class="2xl:line-clamp-2").text-title.font-medium That is the key of this collection, being yourself. Don't be into trends.
 
                                         li.flex.gap-4(class="items-center pb-6 last:pb-0") 
                                             div(class="min-w-[40px]")    
                                                 div.activity-dot-secondary
                                             div.flex.flex-col.gap-1
-                                                span.text-title.text-xs.relative(class="before:content-[''] before:absolute before:h-[2px] before:left-[-40%] rtl:left-unset rtl:right-[-40%] before:bg-border-light before:top-1/2 before:w-[calc(100%_-_55px)]") 25 Oct,2022
+                                                span.text-title.text-xs.relative(class="before:content-[''] recent-activity-date before:absolute before:h-[2px] before:left-[-40%] rtl:left-unset rtl:before:right-[-40%] before:bg-border-light before:top-1/2 before:w-[calc(100%_-_55px)]") 25 Oct,2022
 
                                         li.flex.gap-4(class="pb-6 last:pb-0") 
                                             div.relative
                                                 img(class="min-w-[40px] h-[40px] rounded-full" src=`../../assets/images/avatar/41.png`, alt=`avatar`) 
                                             div.flex.flex-col.gap-1
                                                 span.text-content3.text-2xs.font-bold 10:30 pm
-                                                p.text-title.font-medium I think it's an old fashioned notion that fashion needs to be exclusive to be fashionable.
+                                                p(class="2xl:line-clamp-2").text-title.font-medium I think it's an old fashioned notion that fashion needs to be exclusive to be fashionable.
 
                                         li.flex.gap-4(class="pb-6 last:pb-0") 
                                             div.relative
                                                 img(class="min-w-[40px] h-[40px] rounded-full" src=`../../assets/images/avatar/42.png`, alt=`avatar`) 
                                             div.flex.flex-col.gap-1
                                                 span.text-content3.text-2xs.font-bold 12:00 pm
-                                                p.text-title.font-medium If you wear clothes that don't suit you.
+                                                p(class="2xl:line-clamp-2").text-title.font-medium If you wear clothes that don't suit you.
 
                         div.col-span-4(class="lg:col-span-12 lg:-order-1")
                             div.card
