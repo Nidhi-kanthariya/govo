@@ -18880,12 +18880,6 @@ div[class*=activity-dot-secondary]{
     letter-spacing: 0.03125rem;
   }
 
-  .\35xl\:text-base {
-    font-size: 1.125rem;
-    line-height: 1.375rem;
-    letter-spacing: 0.03125rem;
-  }
-
   .\35xl\:last\:hidden:last-child {
     display: none;
   }
@@ -19405,12 +19399,6 @@ div[class*=activity-dot-secondary]{
     padding-bottom: 0.5rem;
   }
 
-  .\32xl\:text-2xs {
-    font-size: 0.8125rem;
-    line-height: 1.2;
-    letter-spacing: 0.03125rem;
-  }
-
   .\32xl\:text-3xs {
     font-size: 0.75rem;
     line-height: 1.2;
@@ -19425,12 +19413,6 @@ div[class*=activity-dot-secondary]{
     font-size: 0.875rem;
     line-height: 1.4;
     letter-spacing: 0.025rem;
-  }
-
-  .\32xl\:text-sm {
-    font-size: 1rem;
-    line-height: 1.25rem;
-    letter-spacing: 0.03125rem;
   }
 
   .\32xl\:leading-6 {
@@ -19600,6 +19582,12 @@ div[class*=activity-dot-secondary]{
     padding-bottom: 17px;
   }
 
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.03125rem;
+  }
+
   .xl\:text-3xs {
     font-size: 0.75rem;
     line-height: 1.2;
@@ -19610,21 +19598,15 @@ div[class*=activity-dot-secondary]{
     font-size: 34px;
   }
 
-  .xl\:text-sm {
-    font-size: 1rem;
-    line-height: 1.25rem;
-    letter-spacing: 0.03125rem;
-  }
-
-  .xl\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-    letter-spacing: 0.03125rem;
-  }
-
   .xl\:text-base {
     font-size: 1.125rem;
     line-height: 1.375rem;
+    letter-spacing: 0.03125rem;
+  }
+
+  .xl\:text-sm {
+    font-size: 1rem;
+    line-height: 1.25rem;
     letter-spacing: 0.03125rem;
   }
 
@@ -19669,12 +19651,6 @@ div[class*=activity-dot-secondary]{
 
   .xl3\:w-\[28px\] {
     width: 28px;
-  }
-
-  .xl3\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-    letter-spacing: 0.03125rem;
   }
 
   .xl3\:text-base {
