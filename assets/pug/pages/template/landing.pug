@@ -1,12 +1,15 @@
 
 //- customizer 
--var customizer=true;
+-var customizer=false;
 
 //- landing
 -var landing=true; 
 
 //- fontAwesome
 -var fontAwesome=true; 
+
+//- feather
+-var feather=true; 
 
 //- all JSON  
 include ../../data/all-data
@@ -23,23 +26,23 @@ html(lang='en')
         div.relative.bg-landing-size
           img(class="hidden bg-img" src="../../assets/images/landing/svg/header.png" alt="banner")                    
           div(class="backdrop-blur-sm header-sticky top-0 left-0 w-full z-[100] bg-white relative")
-            div.container.relative 
+            div.container.relative
               include ../../layout/header/landing-header 
           div(class="home-section lg:px-[15px] sm:pb-0 px-[calc(25px_+_(224_-_25)_*_((100vw_-_320px)_/_(1920_-_320)))] py-[calc(2.2rem_+_(5.5_-_2.2)_*_((100vw_-_320px)_/_(1920_-_320)))] relative h-[89%] lg:h-auto")
             div.grid.grid-cols-2.h-full           
               div.col-span-1.h-full.flex.items-center(class="lg:mt-[-5px] lg:py-section-space lg:col-span-2 lg:text-center lg:max-w-[70%] 2md:max-w-[100%] lg:mx-auto lg:h-auto") 
                 div(class="w-full") 
-                  h1.text-white(class="text-5xl 2xl:text-[38px] xl:text-[34px] 2xl:leading-[2.75rem] xl:leading-[2.5rem] leading-[3.5rem] font-semibold sm:text-lg sm:leading-7 lg:text-3xl-responsive") One Stop
+                  h1.text-white(class="text-5xl 2xl:text-[38px] xl:text-[34px] 2xl:leading-[2.75rem] xl:leading-[2.5rem] leading-[3.5rem] font-semibold sm:text-lg sm:leading-7 lg:text-3xl-responsive font-poppins") One Stop
                     br(class="lg:hidden")   
                     | For All Admin Template  
-                  p.mt-4.font-normal(class="truncate-3 w-[80%] lg:mx-auto lg:block text-base-responsive text-white 2xl:mt-2 2xl:leading-6") Govo is Perfect Admin template for any business. It has all features and modules to create your amazing C-panel. This template for selling Default, Ecommerce etc......
+                  p.mt-4.font-semibold(class="truncate-3 w-[80%] lg:mx-auto lg:block text-base-responsive text-content 2xl:mt-2 2xl:leading-6") Govo is Perfect Admin template for any business. It has all features and modules to create your amazing C-panel. This template for selling Default, Ecommerce etc......
                   div.flex.items-center(class="flex-wrap lg:justify-center lg:gap-[5px]  gap-[calc(0px_+_(12_-_0)_*_((100vw_-_320px)_/_(1920_-_320)))] mt-8 2xl:mt-6 lg:mt-5")
                     a.flex.items-center(class="gap-[5px] 2sm:text-3xs  btn btn-secondary 2xl:py-2 text-white" href="https://themeforest.net/user/pixelstrap/portfolio" target="_blank") 
-                      +SVG_ICON("Buy", "w-4 h-4 stroke-white")
-                      | Purchase Now       
+                      +SVG_ICON("Buy", "w-5 h-5 stroke-white")
+                      span.text-sm.font-medium Purchase Now       
                     a.flex.items-center(class="gap-[5px] 2sm:text-3xs  btn btn-success 2xl:py-2 text-white" href="../document/getting_started.html" target="_blank")
-                      +SVG_ICON("Document", "w-4 h-4 stroke-white")
-                      | Documentation 
+                      +SVG_ICON("Document", "w-5 h-5 stroke-white")
+                      span.text-sm.font-medium Documentation 
               div.col-span-1(class="lg:hidden")       
                 div.relative(class="lg:w-[70%] m-auto")  
                   img(class="w-full transform -rotate-6 absolute top-[40px] right-[-310px] h-[660px] xl:right-[-200px] border border-white rounded-[20px] z-[3] 4xl:h-[590px] 4xl:right-[-260px]" src="../../assets/images/landing/dashboard/default.png" alt="banner")
@@ -71,7 +74,7 @@ html(lang='en')
                   img(class="w-full rounded-5 transition-al " src="../../assets/images/landing/dashboard/default.png" alt="dashboard") 
                 h3.text-primary.text-lg.font-medium.mt-3(class="2xl:mt-2 hover-underline-animation") Unique Dashboard    
             div.col-span-6(class="sm:col-span-12") 
-              a(href="./education.html" class="block text-center transition-all framework-hover group hover:-translate-y-2")
+              a(href="./ecommerce.html" class="block text-center transition-all framework-hover group hover:-translate-y-2")
                 div(class="overflow-hidden transition-all border-[15px] rounded-3xl border-secondary-extralight")
                   img(class="w-full transition-all rounded-5" src="../../assets/images/landing/dashboard/default.png" alt="dashboard") 
                 h3.text-secondary.text-lg.font-medium.mt-3(class="2xl:mt-2 hover-underline-animation") Ecommerce Dashboard   
@@ -207,37 +210,37 @@ html(lang='en')
             p(class=" text-base-responsive text-content3 font-semibold  leading-[1.5] mt-2") We provide Most Useful App That help you to manage all thing on one side
           div.grid.grid-cols-12(class="gap-card-gap")
             div.col-span-4(class="xl:col-span-6 sm:col-span-12")
-              a(href="./index.html" class="block text-center transition-all framework-hover group hover:-translate-y-2")
+              a(href="./chat-app.html" class="block text-center transition-all framework-hover group hover:-translate-y-2")
                 div(class="overflow-hidden transition-all border-[15px] rounded-3xl border-primary-light")
                   img(class="w-full object-contain h-[270px] lg:h-auto rounded-5 transition-all" src="../../assets/images/landing/app/chat.png" alt="dashboard") 
                   div.bg-primary-light
                     h3.text-primary.text-lg.font-medium.mt-2(class="hover-underline-animation") Chat App    
             div.col-span-4(class="xl:col-span-6 sm:col-span-12") 
-              a(href="./education.html" class="block text-center transition-all framework-hover group hover:-translate-y-2")
+              a(href="./calendar.html" class="block text-center transition-all framework-hover group hover:-translate-y-2")
                 div(class="overflow-hidden transition-all border-[15px] rounded-3xl border-secondary-extralight")
                   img(class="w-full object-contain h-[270px] lg:h-auto transition-all rounded-5" src="../../assets/images/landing/app/calendar.png" alt="dashboard") 
                   div.bg-secondary-extralight
                     h3.text-secondary.text-lg.font-medium.mt-2(class="hover-underline-animation") Calendar App 
             div.col-span-4(class="xl:col-span-6 sm:col-span-12") 
-              a(href="./education.html" class="block text-center transition-all framework-hover group hover:-translate-y-2")
+              a(href="./email.html" class="block text-center transition-all framework-hover group hover:-translate-y-2")
                 div(class="overflow-hidden transition-all border-[15px] rounded-3xl border-warning-extralight")
                   img(class="w-full object-contain h-[270px] lg:h-auto transition-all rounded-5" src="../../assets/images/landing/app/email.png" alt="dashboard") 
                   div.bg-warning-extralight
                     h3.text-warning.text-lg.font-medium.mt-2(class="hover-underline-animation") Email App 
             div.col-span-4(class="xl:col-span-6 sm:col-span-12") 
-              a(href="./index.html" class="block text-center transition-all framework-hover group hover:-translate-y-2")
+              a(href="./kanban-board.html" class="block text-center transition-all framework-hover group hover:-translate-y-2")
                 div(class="overflow-hidden transition-all border-[15px] rounded-3xl border-warning-extralight")
                   img(class="w-full object-contain h-[270px] lg:h-auto rounded-5 transition-all" src="../../assets/images/landing/app/kanban.png" alt="dashboard") 
                   div.bg-warning-extralight
                     h3.text-warning.text-lg.font-medium.mt-2(class="hover-underline-animation") Kanban Board App    
             div.col-span-4(class="xl:col-span-6 sm:col-span-12") 
-              a(href="./education.html" class="block text-center transition-all framework-hover group hover:-translate-y-2")
+              a(href="./todo.html" class="block text-center transition-all framework-hover group hover:-translate-y-2")
                 div(class="overflow-hidden transition-all border-[15px] rounded-3xl border-primary-light")
                   img(class="w-full object-contain h-[270px] lg:h-auto transition-all rounded-5" src="../../assets/images/landing/app/todo.png" alt="dashboard") 
                   div.bg-primary-light
                     h3.text-primary.text-lg.font-medium.mt-2(class="hover-underline-animation") Todo App 
             div.col-span-4(class="xl:col-span-6 sm:col-span-12") 
-              a(href="./education.html" class="block text-center transition-all framework-hover group hover:-translate-y-2")
+              a(href="./user-profile.html" class="block text-center transition-all framework-hover group hover:-translate-y-2")
                 div(class="overflow-hidden transition-all border-[15px] rounded-3xl border-secondary-extralight")
                   img(class="w-full object-contain h-[270px] lg:h-auto transition-all rounded-5" src="../../assets/images/landing/app/user.png" alt="dashboard") 
                   div.bg-secondary-extralight
@@ -322,7 +325,14 @@ html(lang='en')
           h3(class="text-white font-medium text-[50px] 4xl:text-[30px] lg:text-[22px]") Thanks to choose Govo Admin
           a.inline-flex.items-center(class="mt-7 2xl:mt-5 lg:mt-3 gap-[5px] 2sm:text-3xs  btn btn-secondary 2xl:py-2 text-white " href="https://themeforest.net/user/pixelstrap/portfolio" target="_blank") Purchase Now   
 
+      div(class="fixed z-10 flex items-center p-3 transition-all scale-0 rounded-full tap-to-top-box xl:p-2 right-6 bg-secondary bottom-6")
+        button(class="tap-to-top-button")
+          i(data-feather="chevrons-up" class="xl:w-5 xl:h-5 stroke-white")   
 
+
+  include ../../layout/footer-files
+//- customizer 
+-var customizer=true;
 
 
 

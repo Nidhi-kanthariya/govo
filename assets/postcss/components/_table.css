@@ -234,7 +234,12 @@
       thead {
         tr {
           th {
-            @apply px-[40px] pt-[14px] text-center;
+            @apply px-[40px] pt-[14px] text-center border-[2px];
+            [dir="rtl"] &{
+              &:first-child, &:last-child{
+                @apply px-[2.5rem] pl-[2.5rem];
+              }
+            }
           }
         }
       }
@@ -275,6 +280,16 @@
           }
         }
       }
+      &.table-bordered{
+        thead {
+        tr {
+          th {
+            @apply border-0;
+            
+          }
+        }
+      }
+      }
     }
     &.table-variant {
       tbody {
@@ -306,7 +321,7 @@
         thead {
           tr {
             th {
-              @apply pt-unset;
+              @apply pt-unset border-0;
             }
           }
         }

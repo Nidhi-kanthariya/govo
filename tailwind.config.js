@@ -27,6 +27,8 @@ module.exports = {
       sans: ["'Nunito Sans', sans-serif"],
       serif: ["'Secular One', sans-serif"],
       caveat: ["'Caveat', 'cursive'"],
+      poppins: ["'Poppins', 'sans-serif'"],
+      roboto: ["'Roboto', 'sans-serif'"],
     },
 
     // responsive screen

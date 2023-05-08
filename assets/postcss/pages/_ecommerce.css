@@ -1,5 +1,5 @@
 /*=====================
-  5.5  Ecommerce Css
+  5.4  Ecommerce Css
   ==========================*/
 @layer components {
   .product-modal {
@@ -103,6 +103,11 @@
     }
   }
   .checkout-detail {
+    .checkout-tab{
+      [dir="rtl"] &{
+        @apply pl-4 pr-unset;
+      }
+    }
     .table {
       tbody {
         tr {

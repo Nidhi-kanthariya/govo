@@ -1,5 +1,5 @@
 /*=====================
-  5.3  Calendar Css
+  5.2  Calendar Css
  ==========================*/
 @layer components {
   .calander-main {
@@ -10,8 +10,10 @@
     }
 
     .calander-body {
-      @apply  rtl:pr-[15.5625rem] lg:pr-0; 
-
+      @apply  lg:pr-0; 
+      [dir="rtl"] &{
+        @apply pl-unset pr-[15.5625rem];
+      }
       .fc {
         @apply h-full;
 

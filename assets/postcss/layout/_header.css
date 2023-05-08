@@ -31,7 +31,7 @@
     }
     .landing-header {
       .show {
-        @apply md:top-[-2px] md:visible md:opacity-100;
+        @apply 2lg:top-[-3px] 2lg:visible 2lg:opacity-100;
       }
     }
     h2{

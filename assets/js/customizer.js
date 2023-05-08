@@ -11,11 +11,10 @@ const darkCheckBox = document.getElementById('dark-checked');
 const ltrChecked = document.getElementById('ltr-checked');
 const rtlChecked = document.getElementById('rtl-checked');
 const fullSidebarChecked = document.getElementById('full-sidebar');
-const iconSidebarChecked = document.getElementById('icon-sidebar');
 const customizerBtn = document.querySelector('.customizer-btn');
 const customizerCloseBtn = document.querySelector('.customizer-close');
 const customizerSidebar = document.querySelector('.customizer-sidebar');
-const reseteCustomizer = document.querySelector('.reset-customizer');
+const resetCustomizer = document.querySelector('.reset-customizer');
 const mainPageWrapper = document.querySelector('.page-wrapper');
 const monochromeSwitch = document.querySelector('#monochrome');
 
@@ -87,16 +86,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.setAttribute('dir', 'ltr');
     radioBtnCheckedFunction(rtlChecked, ltrChecked);
   }
-
-
-  /// Sidebar Type (full & icon) ///
-  if (localStorage.sidebarType === 'icon') {
-    mainPageWrapper.classList.add('sidebar-close', 'sidebar-icon');
-    radioBtnCheckedFunction(fullSidebarChecked, iconSidebarChecked);
-  } else {
-    mainPageWrapper.classList.remove('sidebar-close', 'sidebar-icon');
-    radioBtnCheckedFunction(iconSidebarChecked, fullSidebarChecked);
-  }
 });
 
 /*========= All Settings ===========*/
@@ -130,17 +119,6 @@ const rtlLayout = function () {
   radioBtnCheckedFunction(ltrChecked, rtlChecked);
 };
 
-const fullSidebar = function () {
-  sidebarType = 'full';
-  mainPageWrapper.classList.remove('sidebar-close', 'sidebar-icon');
-  radioBtnCheckedFunction(iconSidebarChecked, fullSidebarChecked);
-};
-const iconSidebar = function () {
-  sidebarType = 'icon';
-  mainPageWrapper.classList.add('sidebar-close', 'sidebar-icon');
-  radioBtnCheckedFunction(fullSidebarChecked, iconSidebarChecked);
-};
-
 /// Monochrome Mode ///
 const monochromeModeFunction = function () {
   monochromeSwitch.checked = true;
@@ -169,12 +147,6 @@ const resetMonochromeModeFunction = function () {
   monochromeSwitch.checked = false;
   localStorage.setItem('monochrome', false);
   document.body.classList.remove('monochrome-mode');
-};
-
-const resetSidebarType = function () {
-  sidebarType = '';
-  mainPageWrapper.classList.remove('sidebar-close', 'sidebar-icon');
-  radioBtnCheckedFunction(iconSidebarChecked, fullSidebarChecked);
 };
 
 /*========= All Trigger Events ===========*/
@@ -236,7 +208,7 @@ modeEvent.addEventListener('click', function (event) {
 
 /* This is an event listener that is listening for a click event. When the click event is fired,
 it will call the functions that are listed. */
-reseteCustomizer.addEventListener('click', function () {
+resetCustomizer.addEventListener('click', function () {
   themeResetFunction();
   layoutResetFunction();
   resetMonochromeModeFunction();

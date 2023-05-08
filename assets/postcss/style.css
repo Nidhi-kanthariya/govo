@@ -53,20 +53,19 @@
 
     5. Pages css  
         5.1 Chat App css
-        5.2 Carousel css
-        5.3 Calendar css
-        5.4 Countdown css
-        5.5 Ecommerce css
-        5.6 Mask css
-        5.7 Rating css
-        5.8 Swiper Slider css
-        5.9 Stack css
-        5.10 Steps css
-        5.11 Switch css
-        5.12 Swap css
-        5.13 Todo App css
-        5.14 User Profile css
-        5.15 Wow Animation css
+        5.2 Calendar css
+        5.3 Countdown css
+        5.4 Ecommerce css
+        5.5 Mask css
+        5.6 Rating css
+        5.7 Swiper Slider css
+        5.8 Stack css
+        5.9 Steps css
+        5.10 Switch css
+        5.11 Swap css
+        5.12 Todo App css
+        5.13 User Profile css
+        5.14 Wow Animation css
 
  --------------------------------------------------------------------------------- */
 
@@ -122,7 +121,6 @@
 
 /* Pages */
 @import "pages/_chat-app.css";
-@import "pages/_carousel.css";
 @import "pages/_calendar.css";
 @import "pages/_countdown.css";
 @import "pages/_ecommerce.css";

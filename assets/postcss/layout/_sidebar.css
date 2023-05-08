@@ -57,8 +57,10 @@
                 }
               }
               .sidebar-submenu {
-                @apply hidden flex-col gap-[.5rem] pl-[1.375rem] rtl:!pr-[1.375rem] rtl:!pl-unset mt-[.9375rem] border-l-2 rtl:border-l-0 rtl:border-r-2 border-border-dark rtl:ml-unset rtl:mr-[.5625rem] ml-[.5625rem];
-
+                @apply hidden flex-col gap-[.5rem] pl-[1.375rem]  mt-[.9375rem] border-l-2 rtl:border-l-0 rtl:border-r-2 border-border-dark ml-[.5625rem];
+                [dir="rtl"] &{
+                  @apply !pr-[1.375rem] !pl-unset ml-unset mr-[.5625rem];
+                }
                 a {
                   @apply text-xs text-content font-medium; 
                 }
