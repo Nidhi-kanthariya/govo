@@ -12,7 +12,7 @@ div.dropdown
    div.dropdown-menu(class="!min-w-[170px]") 
       ul.flex.flex-col.gap-3 
          each setting in PROFILE_SETTING
-            li 
+            li
                a(href=`${setting.url}` class="flex items-center gap-2 text-title")
                   +SVG_ICON(`${setting.icon}`,"w-[22px] h-[22px] stroke-title dark:stroke-white")
                   = setting.name

@@ -26,19 +26,19 @@ include ../../mixin/mixin
 doctype html
 html(lang='en' class="dark")
     include ../../layout/header-files
-    body(dir="ltr" class="unique-skin")
+    body(dir="ltr" class="unique-skin") 
         main.page-wrapper
             div.page-body-wrapper(class="xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300")
-                include ../../layout/header/header
+                include ../../layout/starter-kit-header/header 
                 // Sidebar Start 
                 div.page-sidebar.sidebar-dark.unique-sidebar
-                    include ../../layout/starter-kit-sidebar    
-                // Sidebar End 
-
-                // Page Body Start
-                div.page-body
-                    div.grid.grid-cols-12.gap-card-gap 
-                        div.card.col-span-12         
+                    include ../../layout/starter-kit-sidebar
+                // Sidebar End  
+  
+                // Page Body Start 
+                div.page-body 
+                    div.grid.grid-cols-12.gap-card-gap
+                        div.card.col-span-12
                             div.card-header.pb-2.header-bottom-border
                                 h3(class="font-bold text-title") Kick Start Your Project Development !
                                 p Getting start with your project custom requirements using a ready template which is quite difficult and time taking process, Govo Admin provides useful features to kick start your project development with no efforts !

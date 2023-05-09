@@ -247,21 +247,22 @@ div[class*=activity-dot-secondary]{
 } 
 #totalCustomerLineChart{
   @apply mt-[-32px] mx-[0] mb-[-28px] 3sm:ml-[-34px];
-}  
+  [dir="rtl"] &{
+    @apply 3sm:mr-[-34px] 3sm:ml-unset ;
+  }
+}
 #totalOrderLineChart{ 
   @apply mt-[-32px] mx-[0] mb-[-28px];
 } 
-#OrdersStatus {
+#OrdersStatus { 
   @apply ml-[0px] mt-[15px];  
 } 
 #totalExpensesLineChart { 
-  @apply xl:ml-[90px] rtl:xl:mr-[90px] lg:ml-[50px] rtl:lg:mr-[50px] rtl:5xl:mr-0 5xl:ml-0 ml-[50px] rtl:ml-unset rtl:mr-[50px] 2lg:ml-[20px] rtl:2lg:mr-[20px] rtl:md:mr-[100px] md:ml-[100px] sm:ml-[50px] rtl:sm:mr-[50px] 2sm:ml-[20px]  rtl:2sm:mr-[20px] 3sm:ml-[-20px] rtl:3sm:mr-[-20px] ;  
-  [dir=rtl] {
-      @apply  rtl:xl:!mr-[90px];
-  }
+  @apply xl:ml-[90px] lg:ml-[50px] rtl:lg:mr-[50px] 5xl:ml-0 ml-[50px]  2lg:ml-[20px] md:ml-[100px] sm:ml-[50px]  2sm:ml-[20px]   3sm:ml-[-20px]  ;  
+  [dir="rtl"] &{
+    @apply  xl:mr-[90px] xl:ml-unset lg:mr-[50px] lg:ml-unset  5xl:mr-0 5xl:ml-unset  ml-unset mr-[50px] 2lg:mr-[20px] 2lg:ml-unset md:mr-[100px] md:ml-unset sm:mr-[50px] sm:ml-unset 2sm:mr-[20px] 2sm:ml-unset 3sm:mr-[-20px] 3sm:ml-unset ;
+  } 
 }
-
-
 /* Text Underline Hover Effrct */
 .framework-hover{
   .hover-underline-animation{

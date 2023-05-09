@@ -96,7 +96,7 @@
   }
   .countdown-8 {
     li {
-      @apply border-r last:border-0 rtl:first:border-0 rtl:last:border-l border-border-light rtl:border-border-dark rtl:border-r-0 rtl:border-l w-[3.5rem] flex flex-col justify-center items-center;
+      @apply border-r last:border-0 rtl:first:border-0 rtl:last:border-l border-border-light rtl:border-border-light  rtl: rtl:border-r-0 rtl:border-l w-[3.5rem] flex flex-col justify-center items-center;
 
       span {
         @apply first:font-bold first:text-sm first:sm:text-sm text-title last:text-[.75rem] last:font-normal last:text-primary;
