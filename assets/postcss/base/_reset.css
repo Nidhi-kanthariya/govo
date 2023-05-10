@@ -227,7 +227,7 @@ div[class*=activity-dot-secondary]{
 }
 
 .activity-dot-secondary{
-    @apply min-w-[9px] h-[9px] w-[9px] mx-auto bg-secondary rounded-full relative z-[2];
+    @apply min-w-[9px] h-[9px] w-[9px] mx-auto rtl:my-auto bg-secondary rounded-full relative z-[2];
     outline: 4px solid var(--secondary-light);
 }
 @keyframes round{
@@ -256,7 +256,7 @@ div[class*=activity-dot-secondary]{
 #totalCustomerLineChart{
   @apply mt-[-32px] mx-[0] mb-[-28px] 3sm:ml-[-34px];
   [dir="rtl"] &{
-    @apply 3sm:mr-[-34px] 3sm:ml-unset ;
+    @apply 3sm:mr-[-10px] 3sm:ml-unset ;
   }
 }
 #totalOrderLineChart{ 

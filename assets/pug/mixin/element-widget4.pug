@@ -3,7 +3,7 @@
 //- ============
 mixin widget4(data)
   div(class="grid grid-cols-12 p-4")
-    div(class="col-span-7 5xl:col-span-8 2xl:col-span-7 2lg:col-span-8 3sm:col-span-9")
+    div(class="col-span-7 5xl:col-span-8 2xl:col-span-7 2lg:col-span-8 3sm:col-span-8")
       div.flex.items-center(class="gap-[9px] 2xl:flex-col 2xl:items-start ")
         div(class="p-[13px] 6xl:p-[10px] 5xl:p-[8px] rounded-full relative")
           div(class=`bg-${data.status} opacity-25 absolute z-[1] inset-0 rounded-full`) 
@@ -12,7 +12,7 @@ mixin widget4(data)
         div 
           h5(class="text-base font-bold text-content3 5xl:text-sm  2xl:text-3xs xl:text-base")= data.title
           h2(class="text-2xl font-extrabold text-title 5xl:text-sm 2xl:text-3xs xl:text-base")= data.profit
-    div(class="block col-span-5 5xl:col-span-4 2xl:col-span-5 2lg:col-span-4 3sm:col-span-3")
+    div(class="block col-span-5 5xl:col-span-4 2xl:col-span-5 2lg:col-span-4 3sm:col-span-4")
       if(data.chart)
         div(id=`${data.chart}`)
       if(data.progress)

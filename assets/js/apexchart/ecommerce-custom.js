@@ -645,12 +645,12 @@ const OrdersStatus = {
       options: {
         plotOptions: {
           bar: {
-            columnWidth: '15%',
+            columnWidth: '25%',
             borderRadius: 9,
           },
         },
       },
-    },
+    }, 
     {
       breakpoint: 376,
       options: {

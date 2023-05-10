@@ -11,8 +11,8 @@ const revenueChart = {
     type: 'bar',
     width: '100%',
     height: 67,
-    sparkline: {
-      enabled: true,
+    sparkline: { 
+      enabled: true, 
     },
   },
   plotOptions: {

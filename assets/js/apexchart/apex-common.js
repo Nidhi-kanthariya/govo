@@ -20,7 +20,7 @@ const toolTipMini = {
       formatter: (seriesName) => '',
     },
   },
-  marker: {
+  marker: { 
     show: false,
   },
 };
