@@ -614,6 +614,18 @@ input::-webkit-outer-spin-button,
     margin: 0;
   }
 
+/* header */
+
+[dir="rtl"] header .language-border {
+  padding-right: 11px;
+  padding-left: unset;
+}
+
+[dir=rtl] [dir="rtl"] header .language-border {
+  padding-left: unset;
+  padding-right: unset;
+}
+
 /* Firefox */
 
 input[type='number'] {
@@ -17222,9 +17234,9 @@ div[class*=activity-dot-secondary]{
   top: 0px;
 }
 
-.before\:top-1\/2::before {
+.before\:top-\[45\%\]::before {
   content: var(--tw-content);
-  top: 50%;
+  top: 45%;
 }
 
 .before\:\!h-3::before {

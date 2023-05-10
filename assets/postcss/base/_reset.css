@@ -41,6 +41,14 @@
     margin: 0;
   }
 
+  /* header */
+  header{
+    .language-border{
+      [dir="rtl"] &{
+        @apply  pr-[11px] pl-unset ;
+      }
+    }
+  }
   /* Firefox */
   input[type='number'] {
     -moz-appearance: textfield;
@@ -263,6 +271,7 @@ div[class*=activity-dot-secondary]{
     @apply  xl:mr-[90px] xl:ml-unset lg:mr-[50px] lg:ml-unset  5xl:mr-0 5xl:ml-unset  ml-unset mr-[50px] 2lg:mr-[20px] 2lg:ml-unset md:mr-[100px] md:ml-unset sm:mr-[50px] sm:ml-unset 2sm:mr-[20px] 2sm:ml-unset 3sm:mr-[-20px] 3sm:ml-unset ;
   } 
 }
+
 /* Text Underline Hover Effrct */
 .framework-hover{
   .hover-underline-animation{
