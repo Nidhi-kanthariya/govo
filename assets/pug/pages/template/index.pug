@@ -25,8 +25,8 @@ include ../../data/all-data
 include ../../mixin/mixin
 
 doctype html
-html(lang='en')
-  include ../../layout/header-files
+html(lang='en')  
+  include ../../layout/header-files 
   body(dir="ltr" class="unique-skin")
     main.page-wrapper
       div.page-body-wrapper(class="xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300")
@@ -36,16 +36,16 @@ html(lang='en')
           include ../../layout/unique
         // Sidebar End 
 
-        // Page Body Start
+        // Page Body Start  
         div.page-body
-          div.grid.grid-cols-12.gap-card-gap
+          div.grid.grid-cols-12.gap-card-gap  
             div.col-span-3.ratio_109(class="4xl:col-span-4 lg:col-span-6 lg:-order-2 2md:col-span-12")
               include ../../components/welcome-card  
             div.col-span-6(class="4xl:col-span-8 lg:col-span-12 lg:-order-1")
-              div.card
+              div.card  
                 div.card-header.transaction-history 
                   +card-header("Transaction History","select", HISTORY_DROPDOWN)
-                div.card-body  
+                div.card-body
                   div.overflow-auto.custom-scroll
                     include ../../components/table/transaction-history
             div.col-span-3(class="4xl:col-span-4 lg:col-span-12")

@@ -393,7 +393,7 @@
                     </div>
                     <!-- Language End -->
                   </li>
-                  <li class="cursor-pointer flex- pl-[11px] rtl:pr-[11px] rtl:pl-unset rtl:first:pr-0 first:pl-0 flex items-center">
+                  <li class="cursor-pointer flex- pl-[11px] language-border rtl:first:pr-0 first:pl-0 flex items-center">
                     <!-- Profile Start -->
                     <div class="dropdown"> 
                       <div class="flex items-center gap-[10px] cursor-pointer"> 
@@ -448,7 +448,7 @@
                             <li class="p-2 transition-all duration-300 rounded-5 hover:bg-gray-light dark:hover:bg-sidebar-dark2"><a class="flex items-center gap-2" href="../template/index.html"> 
                                 <div class="p-2 rounded-5  border border-primary">
                                   <svg class="w-5 h-5 stroke-primary"> 
-                                    <use href="../../assets/svg/sprite.svg#../template/Home"> </use>
+                                    <use href="../../assets/svg/sprite.svg#Home"> </use>
                                   </svg>
                                 </div>
                                 <div>
@@ -457,7 +457,7 @@
                             <li class="p-2 transition-all duration-300 rounded-5 hover:bg-gray-light dark:hover:bg-sidebar-dark2"><a class="flex items-center gap-2" href="../template/ecommerce.html"> 
                                 <div class="p-2 rounded-5  border border-primary">
                                   <svg class="w-5 h-5 stroke-primary"> 
-                                    <use href="../../assets/svg/sprite.svg#../template/Home"> </use>
+                                    <use href="../../assets/svg/sprite.svg#Bag"> </use>
                                   </svg>
                                 </div>
                                 <div>
@@ -1323,8 +1323,8 @@
                         </div>
                         <div class="progress-bar progress-lg multi-bar dark:bg-border-dark">
                           <div class="flex">
-                            <div class="bg-info" style="width:45%"></div>
-                            <div class="bg-warning !rounded-none" style="width:22%"></div>
+                            <div class="bg-success" style="width:45%"></div>
+                            <div class="bg-info !rounded-none" style="width:22%"></div>
                             <div class="bg-secondary" style="width:15%"></div>
                           </div>
                         </div>
@@ -1355,9 +1355,9 @@
    &lt;/div&gt;
    &lt;div class="progress-bar progress-lg multi-bar dark:bg-border-dark"&gt;
        &lt;div class="flex"&gt;
-          &lt;div class="bg-light" style="width:45%"&gt;&lt;/div&gt;
-          &lt;div class="bg-warning !rounded-none" style="width:22%"&gt;&lt;/div&gt;
-          &lt;div class="bg-danger" style="width:15%"&gt;&lt;/div&gt;
+          &lt;div class="bg-success" style="width:45%"&gt;&lt;/div&gt;
+          &lt;div class="bg-info !rounded-none" style="width:22%"&gt;&lt;/div&gt;
+          &lt;div class="bg-secondary" style="width:15%"&gt;&lt;/div&gt;
        &lt;/div&gt;
    &lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -1382,16 +1382,16 @@
                   <div class="tabs-content">
                     <div class="tab-pan active show first:rounded-tl-none rounded-5" data-tabContent="1">
                       <div class="flex flex-col gap-2">
-                        <div class="flex flex-col gap-1">
-                          <div class="flex justify-between items-center"><span class="text-sm font-medium">Loading</span><span class="text-sm font-medium bg-primary-light text-primary px-2 py-1">40%</span></div>
+                        <div class="flex flex-col gap-1"> 
+                          <div class="flex justify-between items-center"><span class="text-sm font-medium">Progress</span><span class="text-sm font-medium bg-primary-light text-primary px-2 py-1">40%</span></div>
                           <div class="progress-bar dark:bg-border-dark">
                             <div class="bg-primary" style="width:70%"></div>
                           </div>
                         </div>
-                        <div class="flex flex-col gap-1">
-                          <div class="flex justify-between items-center"><span class="text-sm font-medium">Loading</span><span class="text-sm font-medium bg-secondary-extralight text-secondary px-2 py-1">55%</span></div>
+                        <div class="flex flex-col gap-1"> 
+                          <div class="flex justify-between items-center"><span class="text-sm font-medium">Loading </span><span class="text-sm font-medium bg-warning-extralight text-warning px-2 py-1">55%</span></div>
                           <div class="progress-bar dark:bg-border-dark">
-                            <div class="bg-secondary" style="width:55%"></div>
+                            <div class="bg-warning" style="width:55%"></div>
                           </div>
                         </div>
                       </div>
@@ -1411,7 +1411,7 @@
    &lt;div class="flex flex-col gap-1"&gt;
        &lt;div class="flex items-center justify-between"&gt;
           &lt;span class="text-sm font-medium"&gt;Processing&lt;/span&gt;
-          &lt;span class="px-2 py-1 text-sm font-medium bg-secondary-light"&gt;40%&lt;/span&gt; 
+          &lt;span class="px-2 py-1 text-sm font-medium bg-secondary-light"&gt;55%&lt;/span&gt; 
        &lt;/div&gt;
        &lt;div class="progress-bar dark:bg-border-dark"&gt;
            &lt;div class="bg-secondary" style="width:70%"&gt;&lt;/div&gt;

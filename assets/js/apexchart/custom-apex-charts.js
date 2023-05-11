@@ -928,6 +928,7 @@ const linechart = {
         },
     },
     xaxis: {
+        
         type: 'category',
         categories: [
             'Jan',
@@ -988,7 +989,7 @@ const linechart = {
             dataPointIndex,
             w
         }) {
-            return `<div class="apex-tooltip"> 
+            return `<div class="apex-tooltip p-2"> 
                 <span>
                      <span class="bg-secondary"> </span>
                       Selling : ${series[0][dataPointIndex]} K
@@ -1785,7 +1786,7 @@ const boxplotchart = {
         }) {
             var dataY = series[0][dataPointIndex];
             var dataX = w.globals.initialSeries[seriesIndex].data[dataPointIndex].x;
-            return '<ul class="boxChartTooltip">' + '<li><b>Price</b>: ' + dataY + '</li>' + '<li><b>Date</b>: ' + dataX + '</li>' + '</ul>';
+            return '<ul class="boxChartTooltip p-2">' + '<li><b>Price</b>: ' + dataY + '</li>' + '<li><b>Date</b>: ' + dataX + '</li>' + '</ul>';
         },
     },
     grid: {

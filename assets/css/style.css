@@ -616,6 +616,16 @@ input::-webkit-outer-spin-button,
 
 /* header */
 
+[dir="rtl"] header .language-border {
+  padding-right: 11px;
+  padding-left: unset;
+}
+
+[dir=rtl] [dir="rtl"] header .language-border {
+  padding-left: unset;
+  padding-right: unset;
+}
+
 /* Firefox */
 
 input[type='number'] {
@@ -6644,10 +6654,13 @@ header {
   }
 }
 
+/* !max-w-[23.5625rem] */
+
 .right-sidebar-aside {
   position: absolute;
   z-index: 3;
-  max-width: 23.5625rem !important;
+  width: -webkit-fill-available;
+  max-width: 44.5625rem !important;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 1000ms;
@@ -6658,7 +6671,7 @@ header {
   .right-sidebar-aside {
     right: 0px;
     top: 0px;
-    width: 17.1875rem;
+    width: 17.1875rem !important;
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
@@ -6671,9 +6684,7 @@ header {
   }
 }
 
-.right-sidebar-aside {
-    width: -webkit-fill-available;
-  }
+/* width: -webkit-fill-available; */
 
 .right-sidebar-aside.right-hide-show-sidebar {
   right: -31.25rem !important;
@@ -10273,6 +10284,10 @@ header {
   height: 1rem;
 }
 
+.h-\[2\.25rem\] {
+  height: 2.25rem;
+}
+
 .h-\[2\.5rem\] {
   height: 2.5rem;
 }
@@ -10319,10 +10334,6 @@ header {
 
 .h-\[3\.125rem\] {
   height: 3.125rem;
-}
-
-.h-\[3\.25rem\] {
-  height: 3.25rem;
 }
 
 .h-\[309px\] {
@@ -10613,6 +10624,10 @@ header {
   width: 1rem;
 }
 
+.w-40 {
+  width: 10rem;
+}
+
 .w-5 {
   width: 1.25rem;
 }
@@ -10729,6 +10744,10 @@ header {
   width: 1rem;
 }
 
+.w-\[2\.25rem\] {
+  width: 2.25rem;
+}
+
 .w-\[2\.5rem\] {
   width: 2.5rem;
 }
@@ -10767,10 +10786,6 @@ header {
 
 .w-\[3\.125rem\] {
   width: 3.125rem;
-}
-
-.w-\[3\.25rem\] {
-  width: 3.25rem;
 }
 
 .w-\[3\.30rem\] {
@@ -15750,7 +15765,7 @@ div[class*=activity-dot-secondary]{
 @media (max-width: 375px) {
 
   #totalCustomerLineChart {
-    margin-left: -34px;
+    margin-left: -10px;
   }
 
   [dir="rtl"] #totalCustomerLineChart {
@@ -15846,7 +15861,7 @@ div[class*=activity-dot-secondary]{
 @media (max-width: 375px) {
 
   #totalExpensesLineChart {
-    margin-left: -20px;
+    margin-left: -10px;
   }
 }
 
@@ -15964,7 +15979,7 @@ div[class*=activity-dot-secondary]{
 @media (max-width: 375px) {
 
   [dir="rtl"] #totalExpensesLineChart {
-    margin-right: -20px;
+    margin-right: -10px;
     margin-left: unset;
   }
 
@@ -16814,7 +16829,7 @@ div[class*=activity-dot-secondary]{
   ==========================*/
 
 /*=====================
-  5.12 Swap Css
+  5.11 Swap Css
   ==========================*/
 
 /*=====================
@@ -18249,10 +18264,6 @@ div[class*=activity-dot-secondary]{
   padding-right: 0.75rem;
 }
 
-:is([dir="rtl"] .rtl\:pr-\[11px\]) {
-  padding-right: 11px;
-}
-
 :is([dir="rtl"] .rtl\:pr-\[25px\]) {
   padding-right: 25px;
 }
@@ -18589,8 +18600,16 @@ div[class*=activity-dot-secondary]{
   color: rgb(31 47 62 / var(--tw-text-opacity));
 }
 
+:is(.dark .dark\:text-success) {
+  color: var(--success);
+}
+
 :is(.dark .dark\:text-title) {
   color: var(--title);
+}
+
+:is(.dark .dark\:text-warning) {
+  color: var(--warning);
 }
 
 :is(.dark .dark\:text-white) {

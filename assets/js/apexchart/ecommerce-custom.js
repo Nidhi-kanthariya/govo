@@ -69,7 +69,7 @@ const totalSellBarChart = {
     breakpoint: 376,
     options: {
       chart: {
-        height: 50,
+        height: 80,
       },
       plotOptions: {
         bar: {
@@ -217,8 +217,16 @@ var totalCustomerLineChart = {
         width: 100,
         height: 105,
       } 
-    },
+    }, 
+  },{
+    breakpoint: 1399,
+    options:{
+      chart:{
+        // width: 400,
+      }
+    }
   }],
+  
 };
 var totalCustomerLineChartEl = new ApexCharts(document.querySelector("#totalCustomerLineChart"), totalCustomerLineChart);
 totalCustomerLineChartEl.render();
@@ -542,6 +550,9 @@ var salesSummaryChart = {
       style:{
         colors: [ 'var(--content)' ,'var(--content)','var(--content)','var(--content)','var(--content)','var(--content)','var(--content)','var(--content)','var(--content)'],
       },
+    },
+    tooltip: {
+      enabled: false, 
     }
   },
   grid: {
@@ -648,6 +659,9 @@ const OrdersStatus = {
             columnWidth: '25%',
             borderRadius: 9,
           },
+        },
+        chart:{ 
+          height: 290,
         },
       },
     }, 

@@ -212,7 +212,7 @@ html(lang='en')
                           |    &lt;button class="btn btn-outline btn-primary btn-xs.text-primary"&gt;Ex-small&lt;/button&gt; 
                           |&lt;/div&gt;
             div.col-span-6(class="2lg:col-span-12")  
-              div.card.tabs
+              div(class="h-full").card.tabs
                 div.card-header.pb-2.header-bottom-border 
                   div.flex.flex-col
                     h3.text-lg.font-bold Buttons Shape 
@@ -223,17 +223,17 @@ html(lang='en')
                     div.preview-code.tab-links
                       button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
                       button.p-0.tab.tab-lifted(data-tabFilter="2" class="tab-link tab-2") Html
-                div.card-body                                   
+                div.card-body  
                   div.tabs-content
                     div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
-                      div.flex.flex-wrap.gap-2.text-white
-                        button.btn.btn-warning.btn-rounded(class="w-[3.25rem] h-[3.25rem] grid place-content-center !p-0")
+                      div.flex.flex-wrap.gap-2.text-white.pt-3
+                        button.btn.btn-warning.btn-rounded(class="w-[2.25rem] h-[2.25rem] grid place-content-center !p-0")
                           i(data-feather="x" class="w-4 h-4 stroke-white")
-                        button.btn.btn-outline.btn-warning.btn-rounded.group(class="dark:bg-sidebar-dark w-[3.25rem] h-[3.25rem] grid place-content-center !p-0")
+                        button.btn.btn-outline.btn-warning.btn-rounded.group(class="dark:bg-sidebar-dark w-[2.25rem] h-[2.25rem] grid place-content-center !p-0")
                           i(data-feather="x" class="w-4 h-4 stroke-warning group-hover:stroke-white")
-                        button.btn.btn-success.btn-square(class="w-[3.25rem] h-[3.25rem] grid place-content-center !p-0")
+                        button.btn.btn-success.btn-square(class="w-[2.25rem] h-[2.25rem] grid place-content-center !p-0")
                           i(data-feather="x" class="w-4 h-4 stroke-white")
-                        button.btn.btn-outline.btn-success.btn-square.group(class="dark:bg-sidebar-dark w-[3.25rem] h-[3.25rem] grid place-content-center !p-0")
+                        button.btn.btn-outline.btn-success.btn-square.group(class="dark:bg-sidebar-dark w-[2.25rem] h-[2.25rem] grid place-content-center !p-0")
                           i(data-feather="x" class="w-4 h-4 stroke-success group-hover:stroke-white")
                     div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark2 dark:hover:text-white")
@@ -241,10 +241,10 @@ html(lang='en')
                       pre(class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2")
                         code(class="dark:bg-sidebar-dark2")
                           |&lt;div class="flex flex-wrap gap-2"&gt; 
-                          |    &lt;button class="btn btn-warning btn-rounded w-[3.25rem] h-[3.25rem] grid place-content-center !p-0"&gt; &lt;i class="w-4 h-4 stroke-white"&gt; &lt;/i&gt;  &lt;/button&gt; 
-                          |    &lt;button class="btn btn-outline btn-warning btn-rounded w-[3.25rem] h-[3.25rem] grid place-content-center !p-0"&gt; &lt;i class="w-4 h-4 stroke-warning group-hover:stroke-white"&gt; &lt;/i&gt;  &lt;/button&gt;
-                          |    &lt;button class="btn btn-success btn-square w-[3.25rem] h-[3.25rem] grid place-content-center !p-0"&gt; &lt;i class="w-4 h-4 stroke-white"&gt; &lt;/i&gt;  &lt;/button&gt;
-                          |    &lt;button class="btn btn-outline btn-success btn-square w-[3.25rem] h-[3.25rem] grid place-content-center !p-0"&gt; &lt;i class="w-4 h-4 stroke-success group-hover:stroke-white"&gt; &lt;/i&gt;  &lt;/button&gt;
+                          |    &lt;button class="btn btn-warning btn-rounded w-[2.25rem] h-[2.25rem] grid place-content-center !p-0"&gt; &lt;i class="w-4 h-4 stroke-white"&gt; &lt;/i&gt;  &lt;/button&gt; 
+                          |    &lt;button class="btn btn-outline btn-warning btn-rounded w-[2.25rem] h-[2.25rem] grid place-content-center !p-0"&gt; &lt;i class="w-4 h-4 stroke-warning group-hover:stroke-white"&gt; &lt;/i&gt;  &lt;/button&gt;
+                          |    &lt;button class="btn btn-success btn-square w-[2.25rem] h-[2.25rem] grid place-content-center !p-0"&gt; &lt;i class="w-4 h-4 stroke-white"&gt; &lt;/i&gt;  &lt;/button&gt;
+                          |    &lt;button class="btn btn-outline btn-success btn-square w-[2.25rem] h-[2.25rem] grid place-content-center !p-0"&gt; &lt;i class="w-4 h-4 stroke-success group-hover:stroke-white"&gt; &lt;/i&gt;  &lt;/button&gt;
                           |&lt;/div&gt;
             div.col-span-6(class="2lg:col-span-12")
               div.card.tabs
@@ -289,10 +289,10 @@ html(lang='en')
                   div.tabs-content
                     div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
                       div.flex.flex-wrap.gap-2
-                        button.btn.btn-secondary.text-white.flex.justify-center.items-center.gap-2
+                        button.btn.btn-primary.text-white.flex.justify-center.items-center.gap-2
                           +SVG_ICON("Heart","w-[1.125rem] h-[1.125rem] stroke-white") 
                           |  Likes
-                        button.btn.btn-secondary.text-white.flex.justify-center.items-center.gap-2
+                        button.btn.btn-warning.text-white.flex.justify-center.items-center.gap-2
                           |   Wishlist
                           +SVG_ICON("Heart","w-[1.125rem] h-[1.125rem] stroke-white")
                     div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
@@ -301,10 +301,10 @@ html(lang='en')
                       pre(class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2")
                         code(class="dark:bg-sidebar-dark2")
                           |&lt;div class="flex flex-wrap gap-2"&gt; 
-                          |    &lt;button class="flex items-center justify-center gap-2 text-white btn btn-secondary"&gt;
+                          |    &lt;button class="flex items-center justify-center gap-2 text-white btn btn-primary"&gt;
                           |       +SVG_ICON("Heart","w-[1.125rem] h-[1.125rem] stroke-white")Likes
                           |    &lt;/button&gt; 
-                          |    &lt;button class="flex items-center justify-center gap-2 text-white btn btn-secondary"&gt;
+                          |    &lt;button class="flex items-center justify-center gap-2 text-white btn btn-warning"&gt;
                           |       +SVG_ICON("Heart","w-[1.125rem] h-[1.125rem] stroke-white")Wishlist
                           |    &lt;/button&gt;
                           |&lt;/div&gt;
