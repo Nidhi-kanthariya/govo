@@ -325,7 +325,7 @@ html(lang='en')
                           |       &lt;label class="button-label btn-success" for="modal-13"&gt;Bottom Center Modal&lt;/label&gt;
                           |       &lt;label class="button-label btn-success" for="modal-13"&gt;Bottom Right Modal&lt;/label&gt;
                           |    &lt;/div&gt;                        
-                          |
+                          | 
                           |&lt;!-- Put this part before &lt;/body&gt; tag for bottom left position modal --&gt;
                           |   &lt;div&gt;                        
                           |      &lt;input class="peer" name="modal-12" type="checkbox" id="modal-12"&gt;
@@ -386,7 +386,7 @@ html(lang='en')
                       button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
                       button.p-0.tab.tab-lifted(data-tabFilter="2" class="tab-link tab-2") Html
                 div.card-body                                   
-                  div.tabs-content
+                  div.tabs-content  
                     div(data-tabContent="1" class="tab-pan active show first:rounded-tl-none rounded-5")
                       div.flex.flex-wrap.gap-2
                         label.button-label.btn-success(for='modal-6') Centered Modal
@@ -606,7 +606,6 @@ html(lang='en')
                           |   &lt;div class="flex flex-col flex-wrap gap-2"&gt;
                           |      &lt;label class="button-label btn-success" for="modal-9"&gt;Modal&lt;/label&gt;
                           |   &lt;/div&gt;
-                          |
                           |&lt;!-- Put this part before &lt;/body&gt; tag --&gt;
                           |   &lt;div&gt;
                           |       &lt;input class="peer" name="modal-9" type="checkbox" id="modal-9"&gt;
@@ -810,13 +809,13 @@ html(lang='en')
         label.modal-overlay(class="peer-checked:block" for='modal-9')
         div.modal(class="w-[18.75rem] peer-checked:opacity-100 peer-checked:visible dark:bg-sidebar-dark2")
           div.modal-header
-            h3 Tooltip and popover modal
-            label(for='modal-9')
+            h3 Tooltip and Popover modal
+            label(for='modal-9') 
               i(data-feather="x" class="w-4 h-4 stroke-dark")
-          div.modal-body
-            p.leading- Here, you can see that inside the
+          div.modal-body    
+            p(class="leading-[1.9]") Here, you can see that inside the
               label.button-label.btn-secondary.text-sm.py-1.px-2(data-tw-tooltip="Tooltip") popover
-              |   modal, 
+              |   modal,  
               a(href="javascript:void(0)" class="font-semibold text-secondary" data-tw-tooltip="link") This link  
               |  and that link have tooltips on hover.
             //- p.leading- Tooltip 

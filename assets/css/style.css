@@ -13372,6 +13372,10 @@ header {
   line-height: 1.5;
 }
 
+.leading-\[1\.9\] {
+  line-height: 1.9;
+}
+
 .leading-\[14px\] {
   line-height: 14px;
 }
