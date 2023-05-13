@@ -152,7 +152,35 @@ html(lang='en')
             img(src='../../assets/images/chat-app/9.jpg' alt='women wear black jacket' class="max-w-[200px] lg:max-w-[190px] h-[200px] rounded-none")
             img(src='../../assets/images/chat-app/10.jpg' alt='men in jacket' class="max-w-[200px] lg:max-w-[190px] h-[200px] rounded-none")
             img(src='../../assets/images/chat-app/11.jpg' alt='women in gray shirt' class="max-w-[200px] lg:max-w-[190px] h-[200px] rounded-none")
-
+    //-  New add
+    div.modal-main(class="lg:hidden")  
+      input#modal-16(class="peer" name="modal-8" type='checkbox')
+      label.modal-overlay(class="peer-checked:block" for='modal-8')
+      div.modal(class="max-w-sm peer-checked:opacity-100 peer-checked:visible dark:bg-sidebar-dark2")
+        div.modal-body 
+          label(for='modal-16')
+            i(data-feather="x" class="w-5 h-5 stroke-dark") 
+          form.theme-form.flex.flex-col.gap-2
+            h3 Create Your Room
+            p Your Room is where You and your friends hang out.Make yours and start talking.
+            img(src="../../assets/images/chatting.gif " class="xl:w-[50%] xl:ml-[28%] xl:flex xl:items-center xl:justify-center")
+            div
+              button.btn.btn-primary.text-white(a href="index.html") Join a Room
+            div
+              h4 Or Sign in with
+            div.social
+              a(href="https://www.linkedin.com/login" class="flex items-center justify-center gap-1 btn !text-linkedin")
+                img(src='../../assets/images/social/linkd2.svg' alt='linkedin')
+                | Linkedin
+              a(href="https://twitter.com/i/flow/login" class="flex items-center justify-center gap-1 btn !text-twitter")
+                img(src='../../assets/images/social/tw2.svg' alt='twitter')
+                | Twitter 
+              a(href="https://www.facebook.com/" class="flex items-center justify-center gap-1 btn !text-facebook") 
+                img(src='../../assets/images/social/fb2.svg' alt='facebook')
+                | Facebook
+          div.text-center
+            span Don't have an account? 
+              a(href="register.html" class="hover:!text-primary").text-primary Create Now
   include ../../layout/footer-files 
 
 

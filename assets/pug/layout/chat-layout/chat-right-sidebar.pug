@@ -12,7 +12,7 @@ div.border-l.border-gray-light.tabs.flex-col.gap-0.right-sidebar-aside(class="rt
         img(src='../../assets/images/avatar/38.jpg' alt='girl in yellow jacket')
         span.p-1.bg-white.rounded-full.absolute(class="bottom-[-12px] right-[-12px] dark:bg-sidebar-dark")
           a(href="user-profile.html")
-            +SVG_ICON("Edit","w-5 h-5 stroke-title")
+            +SVG_ICON("Edit","w-5 h-5 stroke-title 2xl:p-[2px] xl:p-[3px] 2sm:p-[4px] ")
       div.social-media
         +social-mediadata(SOCIAL_MEDIA_DATA)
       div.social-detail.flex.flex-wrap.justify-center.items-center
@@ -78,13 +78,13 @@ div.border-l.border-gray-light.tabs.flex-col.gap-0.right-sidebar-aside(class="rt
               h4.text-xs.font-medium.truncate.text-title(class="leading-none lg:text-2xs lg:leading-none") Block
         li(class="pt-[16px] first:pt-0 first:mt-0 first:border-none")                                 
           div.flex.items-center.justify-between 
-            div.flex.justify-center.items-center.gap-2 
+            div.flex.justify-center.items-center.gap-2
               +SVG_ICON("Delete","w-5 h-5 stroke-secondary")
               h4.text-xs.font-medium.truncate.text-secondary(class="leading-none lg:text-2xs lg:leading-none") Delete
-    div.p-4.relative 
+    div.p-4.relative   
       img(src='../../assets/images/chat-app/6.jpg' alt="more information" class="w-full h-[127px]")
       div.absolute(class="top-[50%] left-0 p-4 pl-8 -translate-y-1/2")
-        h4(class="font-bold text-sm leading-[22px] w-[170px]") Get more information with 
+        h4(class="font-bold text-sm leading-[22px] w-[170px] 5xl:w-[120px] lg:w-[160px]") Get more information with 
           span.font-extrabold PRO! 
         button(class="text-[10px] leading-[14px] font-bold text-white py-[6px] px-[14px] bg-primary mt-2") Upgrade to PRO
 

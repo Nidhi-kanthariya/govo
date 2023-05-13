@@ -6671,7 +6671,7 @@ header {
   .right-sidebar-aside {
     right: 0px;
     top: 0px;
-    width: 17.1875rem !important;
+    width: 18.1875rem !important;
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
@@ -6681,6 +6681,23 @@ header {
 
   .right-sidebar-aside {
     width: 18.1875rem !important;
+  }
+}
+
+@media (max-width: 991px) {
+
+  @media (max-width: 575px) {
+
+    .right-sidebar-aside {
+      width: 22.1875rem !important;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+
+  .right-sidebar-aside {
+    width: 17.1875rem !important;
   }
 }
 
@@ -10444,6 +10461,10 @@ header {
   height: calc(100vh - 139px);
 }
 
+.h-\[calc\(14px_\+_\(24_-_18\)_\*_\(\(100vw_-_320px\)_\/_\(1920_-_320\)\)\)\] {
+  height: calc(14px + (24 - 18) * ((100vw - 320px) / (1920 - 320)));
+}
+
 .h-\[calc\(16px_\+_\(18_-_16\)_\*_\(\(100vw_-_320px\)_\/_\(1920_-_320\)\)\)\] {
   height: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
 }
@@ -10954,6 +10975,10 @@ header {
 
 .w-\[calc\(100\%_-_70px\)\] {
   width: calc(100% - 70px);
+}
+
+.w-\[calc\(14px_\+_\(24_-_18\)_\*_\(\(100vw_-_320px\)_\/_\(1920_-_320\)\)\)\] {
+  width: calc(14px + (24 - 18) * ((100vw - 320px) / (1920 - 320)));
 }
 
 .w-\[calc\(16px_\+_\(18_-_16\)_\*_\(\(100vw_-_320px\)_\/_\(1920_-_320\)\)\)\] {
@@ -12338,6 +12363,14 @@ header {
   --tw-bg-opacity: 0.45;
 }
 
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/dotsbg\.jpg\'\)\] {
+  background-image: url('../../assets/images/dotsbg.jpg');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
 .bg-clip-padding {
   background-clip: padding-box;
 }
@@ -13713,6 +13746,10 @@ header {
   transition-duration: 700ms;
 }
 
+.duration-150 {
+  transition-duration: 150ms;
+}
+
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
@@ -13723,6 +13760,10 @@ header {
 
 .ease-linear {
   transition-timing-function: linear;
+}
+
+.ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 [dir=rtl] .pr-2 {
@@ -17605,6 +17646,12 @@ div[class*=activity-dot-secondary]{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:scale-100:hover {
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -17614,6 +17661,11 @@ div[class*=activity-dot-secondary]{
 .hover\:scale-110:hover {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:scale-y-50:hover {
+  --tw-scale-y: .5;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -17680,6 +17732,10 @@ div[class*=activity-dot-secondary]{
   padding-bottom: 0.25rem;
 }
 
+.hover\:\!text-primary:hover {
+  color: rgba(var(--primary),1) !important;
+}
+
 .hover\:text-primary:hover {
   color: rgba(var(--primary),1);
 }
@@ -17701,6 +17757,18 @@ div[class*=activity-dot-secondary]{
   opacity: 1;
 }
 
+.hover\:shadow-lg:hover {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:shadow-sm:hover {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .hover\:drop-shadow-lg:hover {
   --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -17714,6 +17782,10 @@ div[class*=activity-dot-secondary]{
 
 .hover\:ease-in-out:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover\:ease-in:hover {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 .hover\:before\:w-full:hover::before {
@@ -18815,6 +18887,10 @@ div[class*=activity-dot-secondary]{
     width: 2.75rem;
   }
 
+  .\35xl\:w-\[120px\] {
+    width: 120px;
+  }
+
   .\35xl\:w-\[35px\] {
     width: 35px;
   }
@@ -19407,6 +19483,10 @@ div[class*=activity-dot-secondary]{
     padding: 1rem;
   }
 
+  .\32xl\:p-\[2px\] {
+    padding: 2px;
+  }
+
   .\32xl\:px-body-space {
     padding-left: calc(0.9375rem + (2.25 - 0.9375) * ((100vw - 20rem) / (120 - 20)));
     padding-right: calc(0.9375rem + (2.25 - 0.9375) * ((100vw - 20rem) / (120 - 20)));
@@ -19518,6 +19598,10 @@ div[class*=activity-dot-secondary]{
     grid-column: span 9 / span 9;
   }
 
+  .xl\:ml-\[28\%\] {
+    margin-left: 28%;
+  }
+
   .xl\:block {
     display: block;
   }
@@ -19574,6 +19658,10 @@ div[class*=activity-dot-secondary]{
     width: 21px;
   }
 
+  .xl\:w-\[50\%\] {
+    width: 50%;
+  }
+
   .xl\:w-full {
     width: 100%;
   }
@@ -19596,6 +19684,10 @@ div[class*=activity-dot-secondary]{
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
+  .xl\:items-center {
+    align-items: center;
+  }
+
   .xl\:justify-center {
     justify-content: center;
   }
@@ -19606,6 +19698,10 @@ div[class*=activity-dot-secondary]{
 
   .xl\:p-2 {
     padding: 0.5rem;
+  }
+
+  .xl\:p-\[3px\] {
+    padding: 3px;
   }
 
   .xl\:py-\[12px\] {
@@ -19874,6 +19970,10 @@ div[class*=activity-dot-secondary]{
 
   .lg\:\!w-auto {
     width: auto !important;
+  }
+
+  .lg\:w-\[160px\] {
+    width: 160px;
   }
 
   .lg\:w-\[18px\] {
@@ -21441,6 +21541,10 @@ div[class*=activity-dot-secondary]{
 
   .\32sm\:p-4 {
     padding: 1rem;
+  }
+
+  .\32sm\:p-\[4px\] {
+    padding: 4px;
   }
 
   .\32sm\:\!py-2 {
