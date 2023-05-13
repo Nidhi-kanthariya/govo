@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  /* initialize the calendar
+  /* initialize the calendar 
   -----------------------------------------------------------------*/
   var calendarEl = document.getElementById('calendar');
   var calendar = new FullCalendar.Calendar(calendarEl, {

@@ -928,6 +928,7 @@ const linechart = {
         },
     },
     xaxis: {
+        
         type: 'category',
         categories: [
             'Jan',
@@ -988,7 +989,7 @@ const linechart = {
             dataPointIndex,
             w
         }) {
-            return `<div class="apex-tooltip"> 
+            return `<div class="apex-tooltip p-2"> 
                 <span>
                      <span class="bg-secondary"> </span>
                       Selling : ${series[0][dataPointIndex]} K
@@ -1058,7 +1059,6 @@ function generateData(baseval, count, yrange) {
     var i = 0;
     var series = [];
     while (i < count) {
-        //var x =Math.floor(Math.random() * (750 - 1 + 1)) + 1;;
         var y = Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
         var z = Math.floor(Math.random() * (75 - 15 + 1)) + 15;
 
@@ -1786,7 +1786,7 @@ const boxplotchart = {
         }) {
             var dataY = series[0][dataPointIndex];
             var dataX = w.globals.initialSeries[seriesIndex].data[dataPointIndex].x;
-            return '<ul class="boxChartTooltip">' + '<li><b>Price</b>: ' + dataY + '</li>' + '<li><b>Date</b>: ' + dataX + '</li>' + '</ul>';
+            return '<ul class="boxChartTooltip p-2">' + '<li><b>Price</b>: ' + dataY + '</li>' + '<li><b>Date</b>: ' + dataX + '</li>' + '</ul>';
         },
     },
     grid: {
@@ -1852,7 +1852,6 @@ const boxplotchart = {
             xaxis: {
                 labels: {
                     show: true,
-                    // rotate: -30,
                     rotateAlways: true,
                     minHeight: 48,
                 },

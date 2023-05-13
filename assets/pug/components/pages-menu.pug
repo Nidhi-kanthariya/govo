@@ -3,7 +3,7 @@
 ul(class="flex flex-col gap-3") 
    each pagesMenu in PAGES_LIST
       li(class=`w-full ${pagesMenu.menu ? "dropdown on-hover-show group" : ""}`)
-         a(href=`${pagesMenu.url}` class="flex items-center gap-2")
+         a(href=`../template/${pagesMenu.url}` class="flex items-center gap-2")
             span.flex.items-center.gap-2
                +SVG_ICON(`${pagesMenu.icon}`,"w-5 h-5 stroke-title")
                small(class="text-xs leading-7")= pagesMenu.title
@@ -14,4 +14,4 @@ ul(class="flex flex-col gap-3")
                ul(class="flex flex-col gap-2") 
                   each subMenuItem in pagesMenu.menu
                      li
-                        a(href=`${subMenuItem.url}`)= subMenuItem.title
+                        a(href=`../template/${subMenuItem.url}`)= subMenuItem.title

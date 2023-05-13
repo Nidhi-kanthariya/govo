@@ -298,45 +298,6 @@ todoList?.forEach((el) => {
   });
 });
 
-/*==============================
-  12. Password Show hide js 
-=====================================*/
-const showHideBtn = document.querySelectorAll('.showHidePassword');
-console.log(showHideBtn)
-let activeEye = 1;
-for (let i = 0; i < showHideBtn.length; ++i) {
-  showHideBtn[i].addEventListener('click', function () {
-    let inputEl = showHideBtn[i].parentNode.querySelector('input');
-    if (inputEl.type === 'password') {
-      inputEl.type = 'text';
-      activeEye = 2;
-    } else {
-      inputEl.type = 'password';
-      activeEye = 1;
-    }
-    showHideBtn[i].src = `../../assets/icons/svg/eye-${activeEye}.svg`;
-  });
-}
-
-/*=====================
-  12. Password hide/show js
-==========================*/
-
-// const eye = document.querySelector(".feather-eye");
-// const eyeoff = document.querySelector(".feather-eye-off");
-// const passwordField = document.querySelector("input[type=password]");
-
-// eye.addEventListener("click", () => {
-//   eye.style.display = "none";
-//   eyeoff.style.display = "block";
-//   passwordField.type = "text";
-// });
-
-// eyeoff.addEventListener("click", () => {
-//   eyeoff.style.display = "none";
-//   eye.style.display = "block";
-//   passwordField.type = "password";
-// });
 
 
 /*=====================

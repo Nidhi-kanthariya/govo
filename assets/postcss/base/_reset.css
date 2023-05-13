@@ -41,6 +41,14 @@
     margin: 0;
   }
 
+  /* header */
+  header{
+    .language-border{
+      [dir="rtl"] &{
+        @apply  pr-[11px]  pl-unset ;
+      }
+    }
+  }
   /* Firefox */
   input[type='number'] {
     -moz-appearance: textfield;
@@ -133,7 +141,6 @@
       }
     }
   }
-
     /* Fill Heart Svg */
   .post-media{
     &.post-liked, &.wish-liked{
@@ -219,7 +226,7 @@ div[class*=activity-dot-secondary]{
 }
 
 .activity-dot-secondary{
-    @apply min-w-[9px] h-[9px] w-[9px] mx-auto bg-secondary rounded-full relative z-[2];
+    @apply min-w-[9px] h-[9px] w-[9px] mx-auto rtl:my-auto bg-secondary rounded-full relative z-[2];
     outline: 4px solid var(--secondary-light);
 }
 @keyframes round{
@@ -246,16 +253,22 @@ div[class*=activity-dot-secondary]{
   }
 } 
 #totalCustomerLineChart{
-  @apply mt-[-32px] mx-[0] mb-[-28px] ;
+  @apply mt-[-32px] mx-[0] mb-[-28px] 3sm:ml-[-10px];
+  [dir="rtl"] &{
+    @apply 3sm:mr-[-10px] 3sm:ml-unset;
+  }
 }
 #totalOrderLineChart{ 
   @apply mt-[-32px] mx-[0] mb-[-28px];
 } 
-#OrdersStatus{
+#OrdersStatus { 
   @apply ml-[0px] mt-[15px];  
-}
-#totalExpensesLineChart{
-  @apply ml-[50px];
+} 
+#totalExpensesLineChart { 
+  @apply xl:ml-[90px] lg:ml-[50px] rtl:lg:mr-[50px] 5xl:ml-0 ml-[50px]  2lg:ml-[20px] md:ml-[100px] sm:ml-[50px]  2sm:ml-[20px]   3sm:ml-[-10px]  ;  
+  [dir="rtl"] &{
+    @apply  xl:mr-[90px] xl:ml-unset lg:mr-[50px] lg:ml-unset  5xl:mr-0 5xl:ml-unset  ml-unset mr-[50px] 2lg:mr-[20px] 2lg:ml-unset md:mr-[100px] md:ml-unset sm:mr-[50px] sm:ml-unset 2sm:mr-[20px] 2sm:ml-unset 3sm:mr-[-10px] 3sm:ml-unset ;
+  } 
 }
 
 /* Text Underline Hover Effrct */
@@ -363,5 +376,3 @@ div[class*=activity-dot-secondary]{
     stroke-dashoffset: 0;
   }
 }
-
-

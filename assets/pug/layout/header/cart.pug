@@ -13,9 +13,9 @@ div.dropdown.shopping-bag
       each cartItems in ADD_TO_CART_ITEMS
         li.cart-item.flex.items-center.gap-3(class="py-3 rtl:first:!pl-0  rtl:last:!pr-0 transition-all duration-300 border-b last:border-b-0 border-border-light dark:border-border-dark rounded-5")
           a.flex.items-center(href="./product.html" class="gap-[12px]")
-            div.rounded-full(class="relative ")
+            div.rounded-full(class="relative")  
               img(class="rounded-full min-w-[2.25rem] min-h-[2.25rem] w-full h-auto object-cover" src=`../../assets/images/product/${cartItems.image}` alt=`${cartItems.name}`) 
-            div
+            div 
               h4(class="text-xs font-semibold line-clamp-1 text-title" )= cartItems.name
               p(class="text-xs font-semibold line-clamp-1 text-content ")= cartItems.price
           div(class="flex items-center gap-2 ml-auto")

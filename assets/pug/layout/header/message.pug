@@ -13,7 +13,7 @@ div.dropdown
       each message in MESSAGE_LIST 
         li.flex.items-center.gap-3(class="px-2 py-3 transition-all duration-300 border-b last:border-b-0 border-border-light dark:border-border-dark hover:bg-gray-light dark:hover:bg-sidebar-dark2 rounded-5")
           a.flex.items-center(href="./chat-app.html" class="gap-[12px]")
-            div.rounded-full(class=`relative shadow-lg bg-${message.status} flex items-center justify-center rounded-full p-2`)
+            div(class=`relative shadow-lg bg-${message.status} flex items-center justify-center rounded-full p-2`)
               +SVG_ICON(`${message.icon}`,"w-5 h-5 stroke-white")                         
             div 
               h4(class="text-xs font-semibold line-clamp-1 text-title" )= message.name

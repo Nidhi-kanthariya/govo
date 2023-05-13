@@ -27,7 +27,6 @@ const totalSellBarChart = {
     },
   },
 
-
   plotOptions: {
     bar: {
       columnWidth: '40%',
@@ -50,7 +49,8 @@ const totalSellBarChart = {
     breakpoint: 1700,
     options: {
       chart: {
-        height: 86,
+        // height: 86,
+        // width: 80, 
       },
     },
   },
@@ -69,7 +69,7 @@ const totalSellBarChart = {
     breakpoint: 376,
     options: {
       chart: {
-        height: 50,
+        height: 80,
       },
       plotOptions: {
         bar: {
@@ -210,6 +210,23 @@ var totalCustomerLineChart = {
       return '<div class="apex-tooltip px-4 py-1 relative "> ' + '<span class="font-bold">' + '$' + series[seriesIndex][dataPointIndex] + '</span>'  + '</div>';
     },
   },
+  responsive:[{
+    breakpoint: 375,
+    options:{
+      chart: {
+        width: 100,
+        height: 105,
+      } 
+    }, 
+  },{
+    breakpoint: 1399,
+    options:{
+      chart:{
+        // width: 400,
+      }
+    }
+  }],
+  
 };
 var totalCustomerLineChartEl = new ApexCharts(document.querySelector("#totalCustomerLineChart"), totalCustomerLineChart);
 totalCustomerLineChartEl.render();
@@ -275,18 +292,19 @@ const totalExpensesLineChart = {
     breakpoint: 1700,
     options: {
       chart: {
-        height: 115,
+        height: 105,
+        width: 100, 
       },
 
       plotOptions: {
         radialBar: {
           hollow: {
-            size: '48%',
+            size: '42%',
           },
 
           dataLabels: {
             value: {
-              fontSize: '14px',
+              fontSize: '13px',
             },
           },
         },
@@ -297,7 +315,7 @@ const totalExpensesLineChart = {
     breakpoint: 1600,
     options: {
       chart: {
-        height: 110,
+        height: 100,
       },
     },
   },
@@ -305,7 +323,27 @@ const totalExpensesLineChart = {
     breakpoint: 1460,
     options: {
       chart: {
-        height: 100,
+        height: 90,
+      },
+      plotOptions: {
+        radialBar: {
+          hollow: {
+            size: '35%',
+          },
+          dataLabels: {
+            value: {
+              fontSize: '13px',
+            },
+          },
+        },
+      },
+    },
+  },
+  {
+    breakpoint: 1400,
+    options: {
+      chart: {
+        height: 100,        
       },
       plotOptions: {
         radialBar: {
@@ -322,39 +360,19 @@ const totalExpensesLineChart = {
     },
   },
   {
-    breakpoint: 1400,
-    options: {
-      chart: {
-        height: 120,
-      },
-      plotOptions: {
-        radialBar: {
-          hollow: {
-            size: '50%',
-          },
-          dataLabels: {
-            value: {
-              fontSize: '18px',
-            },
-          },
-        },
-      },
-    },
-  },
-  {
     breakpoint: 876,
     options: {
       chart: {
         height: 110,
-      },
+      }, 
       plotOptions: {
         radialBar: {
           hollow: {
-            size: '45%',
+            size: '42%',
           },
           dataLabels: {
             value: {
-              fontSize: '18px',
+              fontSize: '13px',
             },
           },
         },
@@ -365,17 +383,16 @@ const totalExpensesLineChart = {
     breakpoint: 376,
     options: {
       chart: {
-        height: 90,
+        height: 110,
       },
       plotOptions: {
         radialBar: {
           hollow: {
-            size: '40%',
+            size: '42%',
           },
-
           dataLabels: {
             value: {
-              fontSize: '14px',
+              fontSize: '13px',
             },
           },
         },
@@ -533,6 +550,9 @@ var salesSummaryChart = {
       style:{
         colors: [ 'var(--content)' ,'var(--content)','var(--content)','var(--content)','var(--content)','var(--content)','var(--content)','var(--content)','var(--content)'],
       },
+    },
+    tooltip: {
+      enabled: false, 
     }
   },
   grid: {
@@ -636,28 +656,31 @@ const OrdersStatus = {
       options: {
         plotOptions: {
           bar: {
+            columnWidth: '25%',
+            borderRadius: 9,
+          },
+        },
+        chart:{ 
+          height: 290,
+        },
+      },
+    }, 
+    {
+      breakpoint: 376,
+      options: {
+        chart: {
+          height: 300,
+        },
+        plotOptions: { 
+          bar: {
             columnWidth: '15%',
             borderRadius: 9,
           },
         },
       },
     },
-    {
-      breakpoint: 376,
-      options: {
-        chart: {
-          height: 50,
-        },
-        plotOptions: {
-          bar: {
-            columnWidth: '60%',
-            borderRadius: 5,
-          },
-        },
-      },
-    },
     ],
-  };
+  }; 
 
   const OrdersStatusEl = new ApexCharts(document.querySelector('#OrdersStatus'), OrdersStatus);
   OrdersStatusEl.render();  

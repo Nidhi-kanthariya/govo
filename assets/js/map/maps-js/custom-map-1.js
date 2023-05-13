@@ -34,6 +34,7 @@ var osm = L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
 
 new L.Hash(map);
 
+
 var $date = $("#date");
 
 var now = new Date();

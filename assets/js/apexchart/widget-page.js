@@ -10,7 +10,7 @@ const socialMediaStatisticsOption = {
     type: 'area',
     offsetY: 14,
     toolbar: {
-      show: false,
+      show: false, 
     },
   },
   dataLabels: {
