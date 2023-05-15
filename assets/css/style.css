@@ -13746,10 +13746,6 @@ header {
   transition-duration: 700ms;
 }
 
-.duration-150 {
-  transition-duration: 150ms;
-}
-
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
@@ -13760,10 +13756,6 @@ header {
 
 .ease-linear {
   transition-timing-function: linear;
-}
-
-.ease-out {
-  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 [dir=rtl] .pr-2 {
@@ -16034,6 +16026,10 @@ div[class*=activity-dot-secondary]{
   }
 }
 
+#salesSummaryChart .apexcharts-text.apexcharts-xaxis-label:first-child {
+  font-weight: 300 !important;
+}
+
 /* Text Underline Hover Effrct */
 
 .product-wrapper-grid.list-view .product-box .card .card-body .framework-hover .hover-underline-animation img {
@@ -17664,9 +17660,8 @@ div[class*=activity-dot-secondary]{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:scale-y-50:hover {
-  --tw-scale-y: .5;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
 }
 
 .hover\:rounded-br-\[25px\]:hover {
@@ -17784,10 +17779,6 @@ div[class*=activity-dot-secondary]{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hover\:ease-in:hover {
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
-}
-
 .hover\:before\:w-full:hover::before {
   content: var(--tw-content);
   width: 100%;
@@ -17858,6 +17849,15 @@ div[class*=activity-dot-secondary]{
 
 .focus\:ring-warning:focus {
   --tw-ring-color: var(--warning);
+}
+
+.active\:bg-primary:active {
+  background-color: rgba(var(--primary),1);
+}
+
+.active\:text-white:active {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:visible {
@@ -21613,6 +21613,13 @@ div[class*=activity-dot-secondary]{
 
   .\33sm\:col-span-9 {
     grid-column: span 9 / span 9;
+  }
+
+  .\33sm\:line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
   }
 
   .\33sm\:hidden {

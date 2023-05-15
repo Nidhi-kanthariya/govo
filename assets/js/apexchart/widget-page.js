@@ -1053,8 +1053,7 @@ const earningChart = {
     options: {
       chart: {
         height: 250,
-
-        offsetY: 20,
+        offsetY: 10,
         sparkline: {
           enabled: true,
         },
@@ -1065,12 +1064,23 @@ const earningChart = {
     breakpoint: 1600,
     options: {
       chart: {
-        height: 280,
-
+        height: 250,
         offsetY: 10,
         sparkline: {
           enabled: true,
         },
+      },
+    },
+  },
+  {
+    breakpoint: 1400,
+    options: {
+      chart: {
+        height: 250,
+      }, 
+      offsetY: 10,
+      sparkline: {
+        enabled: true,
       },
     },
   },
@@ -1079,12 +1089,20 @@ const earningChart = {
     options: {
       chart: {
         height: 250,
-
-        offsetY: 10,
+        offsetY: 0, 
+      },
+    },
+  },
+  {
+    breakpoint: 991,
+    options: {
+      chart: {
+        height: 280,
+      }, 
+      offsetY: 2, 
         sparkline: {
           enabled: true,
         },
-      },
     },
   },
   {
@@ -1093,6 +1111,10 @@ const earningChart = {
       chart: {
         height: 280,
       },
+      offsetY: 10,
+        sparkline: {
+          enabled: true,
+        },
     },
   },
   {
@@ -1110,7 +1132,7 @@ const earningChart = {
               color: 'var(--content)',
               offsetY: 5,
             },
-            value: {
+            value: { 
               offsetY: -30,
               fontSize: '20px',
             },
@@ -1123,9 +1145,9 @@ const earningChart = {
     breakpoint: 375,
     options: {
       chart: {
-        height: 230,
+        height: 240,
       },
-
+      offsetY: 30,
       plotOptions: {
         radialBar: {
           startAngle: -100,

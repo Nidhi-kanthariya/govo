@@ -630,7 +630,7 @@ html(lang='en')
         label.modal-overlay(class="peer-checked:block" for='modal-1')
         div.modal(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] dark:bg-sidebar-dark2")
           div.modal-header 
-            h3 Hasten up !! 
+            h3 Hasten up !
             label(for='modal-1') 
               i(data-feather="x" class="w-4 h-4 stroke-dark")
           div.modal-body.text-center
@@ -639,7 +639,7 @@ html(lang='en')
               |  , Hurry Up Online Shopping
             div.modal-img
               img(class="" src="../../assets/images/modal/online-shopping.gif" alt="shopping" class="w-40")
-            label(for="modal-1").bg-primary.text-white.py-1.px-2.rounded.text-end.inline-block
+            label(for="modal-1" class="hover:cursor-pointer").bg-primary.text-white.py-1.px-2.rounded.text-end.inline-block
               a(href="shop.html") Explore More
       //- Small size modal
       div.modal-main
@@ -651,9 +651,8 @@ html(lang='en')
             label(for='modal-2') 
               i(data-feather="x" class="w-4 h-4 stroke-dark")
           div.modal-body(class="h-[12.5rem]")
-            p 
+            p
             | We build specialized websites for companies, list them on digital directories, and set up a sales funnel to boost ROI.
-
       //- large size modal
       div.modal-main
         input#modal-3(class="peer" name="modal-3" type='checkbox')
@@ -721,7 +720,7 @@ html(lang='en')
             div.modal-img 
               img(class="" src="../../assets/images/modal/cookies-sendcookie.gif" alt="Cookies" class="w-40")               
           div.modal-footer
-            label(for="modal-5").btn.btn-primary.p-2.text-white.inline-block Accept
+            label(for="modal-5" class="hover:cursor-pointer").btn.btn-primary.p-2.text-white.inline-block Accept
 
       //- Centered modal
       div.modal-main
@@ -733,7 +732,7 @@ html(lang='en')
               img(class="" src="../../assets/images/modal/danger.gif" alt="danger" class="w-14")
             h3.text-lg.font-bold.mb-2 Ohh! Something went wrong!
             p.mb-3 Attackers on malicious activity may trick you into doing something dangerous like installing software or revealing your personal information.
-            label(for="modal-6").btn.btn-danger.py-1.px-2.text-white.inline-block.text-sm Close
+            label(for="modal-6" class="hover:cursor-pointer").btn.btn-danger.py-1.px-2.text-white.inline-block.text-sm Close
 
       //- Scrollable modal
       div.modal-main
@@ -761,7 +760,7 @@ html(lang='en')
               +SVG_ICON("Arrow-Right","w-[2.5rem] h-[2.5rem] stroke-title")
               p firms may more easily and precisely communicate their brands through typography.
           div.modal-footer
-            label(for="modal-7").btn.btn-primary.text-white.py-1.px-2.inline-block.text-sm(class="!text-end") Close
+            label(for="modal-7" class="hover:cursor-pointer").btn.btn-primary.text-white.py-1.px-2.inline-block.text-sm(class="!text-end") Close
 
       //- Form modal
       div.modal-main
@@ -835,7 +834,7 @@ html(lang='en')
               li
                 img(class="" src="../../assets/images/modal/facebook.gif" alt="facebook" class="w-52")
             p.my-3 Remove your complete account from your phone or tablet to sign out of the Gmail app.
-            label(for="modal-10").btn.btn-primary.py-1.px-2.text-white.inline-block.text-sm Create an account
+            label(for="modal-10" class="hover:cursor-pointer").btn.btn-primary.py-1.px-2.text-white.inline-block.text-sm Create an account
 
       //- Top-center modal
       div.modal-main
@@ -851,7 +850,7 @@ html(lang='en')
               li
                 img(class="" src="../../assets/images/modal/facebook.gif" alt="facebook" class="w-52")
             p.my-3 Remove your complete account from your phone or tablet to sign out of the Gmail app.
-            label(for="modal-11").btn.btn-primary.py-1.px-2.text-white.inline-block.text-sm Create an account
+            label(for="modal-11" class="hover:cursor-pointer").btn.btn-primary.py-1.px-2.text-white.inline-block.text-sm Create an account
 
       //- Top-right modal
       div.modal-main
@@ -864,10 +863,10 @@ html(lang='en')
                 img(class="" src="../../assets/images/modal/whatsapp.gif" alt="whatsapp" class="w-52")
               li
                 img(class="" src="../../assets/images/modal/instagram.gif" alt="instagram" class="w-52")
-              li
+              li 
                 img(class="" src="../../assets/images/modal/facebook.gif" alt="facebook" class="w-52")
             p.my-3 Remove your complete account from your phone or tablet to sign out of the Gmail app.
-            label(for="modal-14").btn.btn-primary.py-1.px-2.text-white.inline-block.text-sm  Create an account
+            label(for="modal-14" class="hover:cursor-pointer").btn.btn-primary.py-1.px-2.text-white.inline-block.text-sm  Create an account
 
       //- Bottom-left modal
       div.modal-main
@@ -879,7 +878,7 @@ html(lang='en')
               img(class="" src="../../assets/images/modal/success.gif" alt="success" class="w-28")
             h3.text-lg.font-bold.leading-none.mt-1 Success Message
             p.mb-3 Now, you can access your account.
-            label(for="modal-12").btn.btn-success.py-1.px-2.text-white.inline-block.text-sm Close
+            label(for="modal-12"  class="hover:cursor-pointer").btn.btn-success.py-1.px-2.text-white.inline-block.text-sm Close
 
       //- Bottom-center modal
       div.modal-main
@@ -891,7 +890,7 @@ html(lang='en')
               img(class="" src="../../assets/images/modal/success.gif" alt="success" class="w-28")
             h3.text-lg.font-bold.leading-none.mt-1 Success Message
             p.mb-3 Now, you can access your account.
-            label(for="modal-13").btn.btn-success.py-1.px-2.text-white.inline-block.text-sm Close
+            label(for="modal-13"  class="hover:cursor-pointer").btn.btn-success.py-1.px-2.text-white.inline-block.text-sm Close
 
       //- Bottom-right modal
       div.modal-main
@@ -903,5 +902,5 @@ html(lang='en')
               img(class="" src="../../assets/images/modal/success.gif" alt="success" class="w-28")
             h3.text-lg.font-bold.leading-none.mt-1 Success Message
             p.mb-3 Now, you can access your account.
-            label(for="modal-15").btn.btn-success.py-1.px-2.text-white.inline-block.text-sm Close
+            label(for="modal-15"  class="hover:cursor-pointer").btn.btn-success.py-1.px-2.text-white.inline-block.text-sm Close
   include ../../layout/footer-files

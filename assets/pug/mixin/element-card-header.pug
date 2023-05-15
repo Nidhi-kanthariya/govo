@@ -30,5 +30,5 @@ mixin card-header(title,type,dropdownData,subTitle)
       +setting-btn(dropdownData) 
     if(type === "btn-group") 
       div.flex
-        each data, index in dropdownData
-          button.py-2.px-3.text-3xs.font-semibold.rounded-none(class=`${dropdownData.length - 1 === index ? "text-white bg-primary" : "text-title bg-gray-light dark:bg-sidebar-dark2 dark:border-border-dark "} hover:bg-primary hover:text-white dark:hover:bg-primary  dark:focus:bg-primary focus:text-white focus:bg-primary `)= data
+        each data, index in dropdownData 
+          button.py-2.px-3.text-3xs.font-semibold.rounded-none(class=`${dropdownData.length - 1 === index ? "text-white bg-primary" : "text-title bg-gray-light dark:bg-sidebar-dark2 dark:border-border-dark "} active:bg-primary active:text-white  dark:hover:bg-primary  dark:focus:bg-primary focus:text-white focus:bg-primary `)= data

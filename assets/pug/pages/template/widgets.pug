@@ -46,38 +46,38 @@ html(lang='en')
               div(class="grid grid-cols-2 gap-card-gap")
                 each data in WIDGET3_DATA
                   div.col-span-1(class="md:col-span-2")
-                    div.card.svg-shake
+                    div.card.svg-shake(class="transition ease-in delay-400 duration-500 hover:shadow-sm hover:-translate-y-1 hover:scale-45")
                       +widget3(data)
             div.col-span-4(class="xl:col-span-6 xl3:col-span-12")
               div.card.gap-0 
-                div.card-header 
+                div.card-header  
                   +card-header("Recent Statistics","select",HiSTORY_DATE_DROPDOWN)
-                div.card-body 
-                  div.relative  
-                    div#recentStatisticsChart1     
+                div.card-body
+                  div.relative
+                    div#recentStatisticsChart1   
                     div#recentStatisticsChart2(class="absolute inset-0")
             div.col-span-4(class="xl:col-span-6 lg:col-span-12 xl3:order-5")
               div.grid.grid-cols-2.gap-card-gap
                 div.col-span-2(class="lg:col-span-1 2md:col-span-2")
-                  div.card 
+                  div.card(class="transition ease-in delay-400 duration-500 hover:shadow-sm hover:-translate-y-1 hover:scale-45")
                     div.card-header 
                       +card-header("Earnings","setting", HISTORY_DROPDOWN)
                     div.card-body
                       +widget2(EARNINGS_WIDGET)
                 div.col-span-2(class="lg:col-span-1 2md:col-span-2")
-                  div.card
+                  div.card(class="transition ease-in delay-400 duration-500 hover:shadow-sm hover:-translate-y-1 hover:scale-45")
                     div.card-body
                       +widget1(REVENUE_WIDGET)
             div.col-span-4(class="xl:col-span-6 lg:col-span-12")
               div.grid.grid-cols-2.gap-card-gap
                 div.col-span-2(class="lg:col-span-1 2md:col-span-2")  
-                  div.card
+                  div.card(class="transition ease-in delay-400 duration-500 hover:shadow-sm hover:-translate-y-1 hover:scale-45")
                     div.card-header
                       +card-header("Inventory Cost","setting", HISTORY_DROPDOWN)
-                    div.card-body  
+                    div.card-body
                       +product-list(INVENTORY_CARD)
                 div.col-span-2(class="lg:col-span-1 2md:col-span-2")
-                  div.card.p-0(class="overflow-hidden")
+                  div.card.p-0(class="overflow-hidden transition ease-in delay-400 duration-500 hover:shadow-sm hover:-translate-y-1 hover:scale-45 ")
                     div.relative
                       img(class="w-full h-[178px] 2xl:h-[170px] lg:h-[193px] 2md:h-[170px] dark:brightness-50" src="../../assets/images/banner/2.jpg" alt="banner") 
                       div(class="absolute top-1/2 -translate-y-1/2 left-0 max-w-[70%] px-card-space") 
@@ -86,19 +86,18 @@ html(lang='en')
             div.col-span-4(class="xl:col-span-6 lg:col-span-12")
               div.grid.grid-cols-2.gap-card-gap 
                 div.col-span-2(class="lg:col-span-1 2md:col-span-2")
-                  div.card
-                    div.card-header    
+                  div.card(class="transition ease-in delay-400 duration-500 hover:shadow-sm hover:-translate-y-1 hover:scale-45")
+                    div.card-header
                       +card-header("Advertising","setting", HISTORY_DROPDOWN)
                     div.card-body 
                       +product-list(ADVERTISE_CARD)
                 div.col-span-2(class="lg:col-span-1 2md:col-span-2")
-                  div.card(class="!gap-1 lg:!gap-6") 
-                    div.card-header
-                      +card-header("Most Location Visits") 
+                  div.card(class="!gap-1 lg:!gap-6 transition ease-in delay-400 duration-500 hover:shadow-sm hover:-translate-y-1 hover:scale-45") 
+                    div.card-header 
+                      +card-header("Most Location Visits ") 
                     div.card-body
-                      div.flex.items-center.h-full  
+                      div.flex.items-center.h-full
                         +legend-image-1(IMAGE_LEGEND_1)
-
             div.col-span-8(class="xl3:order-last 3xl:col-span-8 xl3:col-span-12")
               div.card(class="overflow-hidden")
                 div.card-header 

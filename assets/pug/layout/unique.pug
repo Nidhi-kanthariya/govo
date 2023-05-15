@@ -24,7 +24,7 @@ aside(class="sidebar")
               if(menuItem.subMenu)
                 +SVG_ICON("Arrow-Right-2")  
             if menuItem.subMenu 
-              ul.sidebar-submenu
+              ul.sidebar-submenu 
                 each subLink in menuItem.subMenu
                   li 
                     a(href=`${subLink.url}`)=subLink.title 

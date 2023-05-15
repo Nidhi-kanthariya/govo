@@ -532,7 +532,6 @@ var salesSummaryChart = {
     } 
   },
   yaxis: {
-
     labels: {
       style:{
         colors: ['var(--content)']
@@ -546,9 +545,11 @@ var salesSummaryChart = {
   xaxis: { 
     type: 'datetime', 
     categories: ["Jan 01", "Jan 02", "Jan 03", "Jan 04", "Jan 05", "Jan 06", "Jan 07", "Jan 08", "Jan 09", "Jan 10"],
-    labels:{
-      style:{
-        colors: [ 'var(--content)' ,'var(--content)','var(--content)','var(--content)','var(--content)','var(--content)','var(--content)','var(--content)','var(--content)'],
+    labels:{ 
+      style:{ 
+        colors: [ 'var(--content)' , 'var(--content)', 'var(--content)', 'var(--content)', 'var(--content)', 'var(--content)','var(--content)', 'var(--content)','var(--content)','var(--content)'],
+        fontWeight: 400,
+        
       },
     },
     tooltip: {

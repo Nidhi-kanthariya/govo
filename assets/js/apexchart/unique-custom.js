@@ -174,6 +174,14 @@ const earningChart = {
     },
   },
   {
+    breakpoint: 1499,
+    options:{
+      chart:{
+        height: 250, 
+      } 
+    }
+  }, 
+  {
     breakpoint: 1200,
     options: {
       chart: {
