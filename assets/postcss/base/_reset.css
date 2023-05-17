@@ -255,7 +255,8 @@ div[class*=activity-dot-secondary]{
     &.apexcharts-xaxis-label { 
         @apply first:!font-light font-serif ; 
     }
-  } 
+  }
+  @apply !min-h-0 
 } 
 #totalCustomerLineChart{
   @apply mt-[-32px] mx-[0] mb-[-28px] 3sm:ml-[-10px];
@@ -270,12 +271,14 @@ div[class*=activity-dot-secondary]{
   @apply ml-[0px] mt-[15px];  
 } 
 #totalExpensesLineChart { 
-  @apply xl:ml-[90px] lg:ml-[50px] rtl:lg:mr-[50px] 5xl:ml-0 ml-[50px]  2lg:ml-[20px] md:ml-[100px] sm:ml-[50px]  2sm:ml-[20px]   3sm:ml-[-10px]  ;  
+  @apply xl:ml-[90px] lg:ml-[50px] rtl:lg:mr-[50px] 5xl:ml-0 ml-[50px]  2lg:ml-[20px] md:ml-[50px] sm:ml-auto  2sm:ml-[20px]   3sm:ml-[-10px]  ;  
   [dir="rtl"] &{
-    @apply  xl:mr-[90px] xl:ml-unset lg:mr-[50px] lg:ml-unset  5xl:mr-0 5xl:ml-unset  ml-unset mr-[50px] 2lg:mr-[20px] 2lg:ml-unset md:mr-[100px] md:ml-unset sm:mr-[50px] sm:ml-unset 2sm:mr-[20px] 2sm:ml-unset 3sm:mr-[-10px] 3sm:ml-unset ;
-  } 
+    @apply  xl:mr-[90px] xl:ml-unset lg:mr-[50px] lg:ml-unset  5xl:mr-0 5xl:ml-unset  ml-unset mr-[50px] 2lg:mr-[20px] 2lg:ml-unset md:mr-[50px] md:ml-unset sm:mr-auto sm:ml-unset 2sm:mr-[20px] 2sm:ml-unset 3sm:mr-[-10px] 3sm:ml-unset ;
+  }
+  .apexcharts-canvas{
+    @apply sm:mx-auto;
+  }
 }
-
 
 /* Text Underline Hover Effrct */
 .framework-hover{

@@ -47,10 +47,10 @@ html(lang='en')
                                 each data in WIDGET4_DATA
                                     div.col-span-1(class="md:col-span-2")
                                         div.card.svg-shake(class="gap-0 p-0 transition ease-in delay-400 duration-500 hover:shadow-sm hover:-translate-y-1 hover:scale-45")
-                                            +widget4(data)
+                                            +widget4(data) 
                         div.col-span-6(class="xl:col-span-6 xl:order-2 lg:col-span-12")
                             div.card.gap-0
-                                div.card-header 
+                                div.card-header
                                     div.flex.justify-between.w-full(class="flex-wrap gap-2 items-center 2xl:flex-nowrap 2xl:gap-1 2sm:flex-wrap 2sm:gap-2")
                                         h3(class="text-lg font-bold leading-none text-title") Sales Summary (Jun 2023)
                                         div.flex.items-center.gap-4
@@ -145,9 +145,9 @@ html(lang='en')
                                             small.text-xs.text-content3(class="pl-3 rtl:pl-0 rtl:pr-3") 34% 
                         div.col-span-4(class="lg:col-span-12  recent-activity xl:order-5") 
                             div.card
-                                div.card-header   
+                                div.card-header    
                                     +card-header("Recent Activity","setting", HISTORY_DROPDOWN)
-                                div.card-body 
+                                div.card-body  
                                     ul(class="relative before:content-[''] before:absolute before:border before:border-border-light before:w-[1px] before:h-full  before:top-0 rtl:before:bottom-0   rtl:before:right-[1.188rem] before:left-[1.188rem] 2xl:before:left-[1.125rem] rtl:lg:before:right-[2%]  rtl:2xl:before:right-[1.125rem]  rtl:4xl:before:right-[1.188rem] 4xl:before:left-[1.188rem] 2lg:before:left-[1.188rem] rtl:2lg:before:right-[1.188rem] rtl:lg:before:right-[1.188rem] lg:before:left-[1.188rem] rtl:left-unset rtl:right-[4%] dark:border-border-dark") 
                                         li.flex.gap-4(class="pb-6 last:pb-0")
                                             div.relative 

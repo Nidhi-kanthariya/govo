@@ -15800,6 +15800,10 @@ div[class*=activity-dot-secondary]{
   font-weight: 300 !important;
 }
 
+#salesSummaryChart {
+  min-height: 0px !important;
+}
+
 #totalCustomerLineChart {
   margin-left: 0;
   margin-right: 0;
@@ -15885,14 +15889,19 @@ div[class*=activity-dot-secondary]{
 @media (max-width: 767px) {
 
   #totalExpensesLineChart {
-    margin-left: 100px;
+    margin-left: 50px;
   }
 }
 
 @media (max-width: 575px) {
 
   #totalExpensesLineChart {
-    margin-left: 50px;
+    margin-left: auto;
+  }
+
+  [dir=rtl] #totalExpensesLineChart {
+    margin-left: unset;
+    margin-right: auto;
   }
 }
 
@@ -15985,7 +15994,7 @@ div[class*=activity-dot-secondary]{
 @media (max-width: 767px) {
 
   [dir="rtl"] #totalExpensesLineChart {
-    margin-right: 100px;
+    margin-right: 50px;
     margin-left: unset;
   }
 
@@ -15998,11 +16007,12 @@ div[class*=activity-dot-secondary]{
 @media (max-width: 575px) {
 
   [dir="rtl"] #totalExpensesLineChart {
-    margin-right: 50px;
+    margin-right: auto;
     margin-left: unset;
   }
 
   [dir=rtl] [dir="rtl"] #totalExpensesLineChart {
+    margin-left: auto;
     margin-left: unset;
     margin-right: unset;
   }
@@ -16031,6 +16041,14 @@ div[class*=activity-dot-secondary]{
   [dir=rtl] [dir="rtl"] #totalExpensesLineChart {
     margin-left: unset;
     margin-right: unset;
+  }
+}
+
+@media (max-width: 575px) {
+
+  #totalExpensesLineChart .apexcharts-canvas {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -18789,6 +18807,10 @@ div[class*=activity-dot-secondary]{
     -webkit-line-clamp: 1;
   }
 
+  .\36xl\:flex {
+    display: flex;
+  }
+
   .\36xl\:h-4 {
     height: 1rem;
   }
@@ -18819,6 +18841,14 @@ div[class*=activity-dot-secondary]{
 
   .\36xl\:max-w-\[202px\] {
     max-width: 202px;
+  }
+
+  .\36xl\:items-center {
+    align-items: center;
+  }
+
+  .\36xl\:gap-2 {
+    gap: 0.5rem;
   }
 
   .\36xl\:p-\[10px\] {
@@ -21732,6 +21762,11 @@ div[class*=activity-dot-secondary]{
   .\33sm\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .\33sm\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .\33sm\:text-2xs {

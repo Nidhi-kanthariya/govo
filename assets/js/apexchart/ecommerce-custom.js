@@ -1,7 +1,6 @@
 /*=======/Total Sell Bar Spark line/=======*/
 const totalSellBarChart = {
-  series: [
-    {
+  series: [{
       data: [40, 25, 60, 15, 40, 55, 35],
     },
     {
@@ -46,39 +45,39 @@ const totalSellBarChart = {
   },
   tooltip: toolTipMini,
   responsive: [{
-    breakpoint: 1700,
-    options: {
-      chart: {
-        // height: 86,
-        // width: 80, 
-      },
-    },
-  },
-  {
-    breakpoint: 1400,
-    options: {
-      plotOptions: {
-        bar: {
-          columnWidth: '40%',
-          borderRadius: 5,
+      breakpoint: 1700,
+      options: {
+        chart: {
+          // height: 86,
+          // width: 80, 
         },
       },
     },
-  },
-  {
-    breakpoint: 376,
-    options: {
-      chart: {
-        height: 80,
-      },
-      plotOptions: {
-        bar: {
-          columnWidth: '60%',
-          borderRadius: 5,
+    {
+      breakpoint: 1400,
+      options: {
+        plotOptions: {
+          bar: {
+            columnWidth: '40%',
+            borderRadius: 5,
+          },
         },
       },
     },
-  },
+    {
+      breakpoint: 376,
+      options: {
+        chart: {
+          height: 80,
+        },
+        plotOptions: {
+          bar: {
+            columnWidth: '60%',
+            borderRadius: 5,
+          },
+        },
+      },
+    },
   ],
 };
 
@@ -98,8 +97,8 @@ var totalCustomerLineChart = {
     height: 120,
     toolbar: {
       show: false,
-    }, 
-    dropShadow:{
+    },
+    dropShadow: {
       enabled: true,
       enabledOnSeries: undefined,
       top: 5,
@@ -108,14 +107,14 @@ var totalCustomerLineChart = {
       color: ['rgba(var(--secondary),0.6)'],
     },
   },
-  stroke: { 
+  stroke: {
     curve: 'stepline',
     width: 2,
-  }, 
+  },
   markers: {
     size: 0,
     colors: '#FF6150',
-    strokeColors: '#FF6150', 
+    strokeColors: '#FF6150',
     strokeWidth: 5,
     strokeOpacity: 0.9,
     strokeDashArray: 0,
@@ -142,12 +141,12 @@ var totalCustomerLineChart = {
     opacityTo: 1,
     stops: [0, 100, 100, 100]
   },
-  colors:['#FF6150'],
-  fill: { 
+  colors: ['#FF6150'],
+  fill: {
     type: 'gradient',
     opacity: 1,
-    gradient:{ 
-      shade: 'light', 
+    gradient: {
+      shade: 'light',
       type: "vertical",
       opacityFrom: 1,
       opacityTo: 0.9,
@@ -169,10 +168,10 @@ var totalCustomerLineChart = {
     lines: {
       show: false,
     },
-    tooltip:{
+    tooltip: {
       enabled: false,
       onDatasetHover: {
-          highlightDataSeries: false,
+        highlightDataSeries: false,
       },
     },
   },
@@ -189,11 +188,11 @@ var totalCustomerLineChart = {
     axisTicks: {
       show: false,
     },
-    tooltip:{
+    tooltip: {
       enabled: false,
     },
   },
-  legend:{ 
+  legend: {
     show: false,
   },
   markers: {
@@ -202,31 +201,31 @@ var totalCustomerLineChart = {
     }
   },
   tooltip: {
-    custom: function({
+    custom: function ({
       series,
       seriesIndex,
       dataPointIndex,
     }) {
-      return '<div class="apex-tooltip px-4 py-1 relative "> ' + '<span class="font-bold">' + '$' + series[seriesIndex][dataPointIndex] + '</span>'  + '</div>';
+      return '<div class="apex-tooltip px-4 py-1 relative "> ' + '<span class="font-bold">' + '$' + series[seriesIndex][dataPointIndex] + '</span>' + '</div>';
     },
   },
-  responsive:[{
+  responsive: [{
     breakpoint: 375,
-    options:{
+    options: {
       chart: {
         width: 100,
         height: 105,
-      } 
-    }, 
-  },{
+      }
+    },
+  }, {
     breakpoint: 1399,
-    options:{
-      chart:{
+    options: {
+      chart: {
         // width: 400,
       }
     }
   }],
-  
+
 };
 var totalCustomerLineChartEl = new ApexCharts(document.querySelector("#totalCustomerLineChart"), totalCustomerLineChart);
 totalCustomerLineChartEl.render();
@@ -289,116 +288,116 @@ const totalExpensesLineChart = {
     lineCap: 'round',
   },
   responsive: [{
-    breakpoint: 1700,
-    options: {
-      chart: {
-        height: 105,
-        width: 100, 
-      },
+      breakpoint: 1700,
+      options: {
+        chart: {
+          height: 105,
+          width: 100,
+        },
 
-      plotOptions: {
-        radialBar: {
-          hollow: {
-            size: '42%',
-          },
+        plotOptions: {
+          radialBar: {
+            hollow: {
+              size: '42%',
+            },
 
-          dataLabels: {
-            value: {
-              fontSize: '13px',
+            dataLabels: {
+              value: {
+                fontSize: '13px',
+              },
             },
           },
         },
       },
     },
-  },
-  {
-    breakpoint: 1600,
-    options: {
-      chart: {
-        height: 100,
+    {
+      breakpoint: 1600,
+      options: {
+        chart: {
+          height: 100,
+        },
       },
     },
-  },
-  {
-    breakpoint: 1460,
-    options: {
-      chart: {
-        height: 90,
-      },
-      plotOptions: {
-        radialBar: {
-          hollow: {
-            size: '35%',
-          },
-          dataLabels: {
-            value: {
-              fontSize: '13px',
+    {
+      breakpoint: 1460,
+      options: {
+        chart: {
+          height: 90,
+        },
+        plotOptions: {
+          radialBar: {
+            hollow: {
+              size: '35%',
+            },
+            dataLabels: {
+              value: {
+                fontSize: '13px',
+              },
             },
           },
         },
       },
     },
-  },
-  {
-    breakpoint: 1400,
-    options: {
-      chart: {
-        height: 100,        
-      },
-      plotOptions: {
-        radialBar: {
-          hollow: {
-            size: '42%',
-          },
-          dataLabels: {
-            value: {
-              fontSize: '13px',
+    {
+      breakpoint: 1400,
+      options: {
+        chart: {
+          height: 100,
+        },
+        plotOptions: {
+          radialBar: {
+            hollow: {
+              size: '42%',
+            },
+            dataLabels: {
+              value: {
+                fontSize: '13px',
+              },
             },
           },
         },
       },
     },
-  },
-  {
-    breakpoint: 876,
-    options: {
-      chart: {
-        height: 110,
-      }, 
-      plotOptions: {
-        radialBar: {
-          hollow: {
-            size: '42%',
-          },
-          dataLabels: {
-            value: {
-              fontSize: '13px',
+    {
+      breakpoint: 876,
+      options: {
+        chart: {
+          height: 110,
+        },
+        plotOptions: {
+          radialBar: {
+            hollow: {
+              size: '42%',
+            },
+            dataLabels: {
+              value: {
+                fontSize: '13px',
+              },
             },
           },
         },
       },
     },
-  },
-  {
-    breakpoint: 376,
-    options: {
-      chart: {
-        height: 110,
-      },
-      plotOptions: {
-        radialBar: {
-          hollow: {
-            size: '42%',
-          },
-          dataLabels: {
-            value: {
-              fontSize: '13px',
+    {
+      breakpoint: 376,
+      options: {
+        chart: {
+          height: 110,
+        },
+        plotOptions: {
+          radialBar: {
+            hollow: {
+              size: '42%',
+            },
+            dataLabels: {
+              value: {
+                fontSize: '13px',
+              },
             },
           },
         },
       },
     },
-  },
   ],
 };
 
@@ -447,45 +446,45 @@ const customerRadialchart = {
     lineCap: 'round',
   },
   series: [70, 55, 40],
-  colors: ['rgba(var(--primary),1)', 'rgba(var(--secondary), 1)', 'var(--title)',],
+  colors: ['rgba(var(--primary),1)', 'rgba(var(--secondary), 1)', 'var(--title)', ],
   responsive: [{
-    breakpoint: 675,
-    options: {
-      chart: {
-        height: 280,
-      },
-    },
-  },
-  {
-    breakpoint: 425,
-    options: {
-      chart: {
-        height: 260,
-      },
-      plotOptions: {
-        radar: {
-          size: 50,
+      breakpoint: 675,
+      options: {
+        chart: {
+          height: 280,
         },
       },
     },
-  },
-  {
-    breakpoint: 375,
-    options: {
-      chart: {
-        height: 220,
+    {
+      breakpoint: 425,
+      options: {
+        chart: {
+          height: 260,
+        },
+        plotOptions: {
+          radar: {
+            size: 50,
+          },
+        },
       },
     },
-  },
+    {
+      breakpoint: 375,
+      options: {
+        chart: {
+          height: 220,
+        },
+      },
+    },
   ],
 };
 
 var customerRadialchartEl = new ApexCharts(document.querySelector("#customerRadialchart"), customerRadialchart);
-customerRadialchartEl.render(); 
+customerRadialchartEl.render();
 
 /*=======/Sales Summary ( Jun 2023)/=======*/
 
-var salesSummaryChart = { 
+var salesSummaryChart = {
   series: [{
     name: 'Orders',
     data: [6000, 6500, 6800, 6500, 6800, 6500, 6650, 6500, 5900, 6000]
@@ -493,27 +492,27 @@ var salesSummaryChart = {
     name: 'Sales',
     data: [5000, 5500, 5800, 5500, 6500, 5600, 6350, 6000, 5500, 5800]
   }], 
-  colors: ['rgba(var(--secondary))', 'rgba(var(--primary))'], 
+  colors: ['rgba(var(--secondary))', 'rgba(var(--primary))'],
   chart: {
-    height: 270,
+    height: 275, 
     type: 'area',
     toolbar: {
       tools: {
         zoom: false,
         zoomin: false,
-        zoomout: false, 
+        zoomout: false,
         reset: false,
         pan: false,
-        download: false, 
+        download: false,
       },
     },
-    dropShadow:{
-      enabled:  true,
+    dropShadow: {
+      enabled: true,
       enabledOnSeries: undefined,
       top: 2,
       left: 1,
       blur: 5,
-      color:[ 'rgba(var(--secondary),0.6)' ,'rgba(var(--primary),0.6)' ],
+      color: ['rgba(var(--secondary),0.6)', 'rgba(var(--primary),0.6)'],
     },
   },
   dataLabels: {
@@ -521,51 +520,63 @@ var salesSummaryChart = {
   },
   stroke: {
     curve: 'smooth'
-  }, 
-  fill:{
+  },
+  fill: {
     type: "gradient",
     gradient: {
       shadeIntensity: 0,
       opacityFrom: 1,
       opacityTo: 0
-    } 
+    }
   },
   yaxis: {
     labels: {
-      style:{
+      style: {
         colors: ['var(--content)']
-      },  
-      formatter: function(val) { if (val % 2 !== 0) { return ''} else { return val } }                                                                                                                      
-    },
-  }, 
-  legend: {
-    show: false,
+      },
+      // formatter: function (val) {
+      //   if (val % 2 !== 0) {
+      //     return ''
+      //   } else {
+      //     return val
+      //   }
+      // }
+    }, 
   },
-  xaxis: { 
-    type: 'datetime', 
+  xaxis: {
     categories: ["Jan 01", "Jan 02", "Jan 03", "Jan 04", "Jan 05", "Jan 06", "Jan 07", "Jan 08", "Jan 09", "Jan 10"],
-    labels:{ 
-      style:{ 
-        colors: [ 'var(--content)' , 'var(--content)', 'var(--content)', 'var(--content)', 'var(--content)', 'var(--content)','var(--content)', 'var(--content)','var(--content)','var(--content)'],
+    type: 'datetime',
+    labels: { 
+      style: {
+        colors: ['var(--content)', 'var(--content)', 'var(--content)', 'var(--content)', 'var(--content)', 'var(--content)', 'var(--content)', 'var(--content)', 'var(--content)', 'var(--content)'],
         fontWeight: 400,
       },
-    }, 
+    },
     tooltip: {
-      enabled: false, 
+      enabled: false,
     }
+  },
+  dataLabels: {
+    enabled: false
+  },
+  legend: {
+    show: false
+  },
+  sparkline: {
+    enabled: true
   },
   grid: {
     borderColor: 'var(--border-light)',
   },
   tooltip: {
-    custom: function({
+    custom: function ({
       series,
       seriesIndex,
       dataPointIndex,
     }) {
-      return '<div class="apex-tooltip px-4 py-1 relative "> ' + '<span class="font-bold">' + '$' + series[seriesIndex][dataPointIndex] + '</span>'  + '<br>' + '<span class="align-middle text-content">' + 'Orders' + '</span>' + '</div>';
-    },  
-  }, 
+      return '<div class="apex-tooltip px-4 py-1 relative"> ' + '<span class="font-bold">' + '$' + series[seriesIndex][dataPointIndex] + '</span>' + '<br>' + '<span class="align-middle text-content">' + 'Orders' + '</span>' + '</div>';
+    },
+  },
   responsive: [{
     breakpoint: 1199,
     options: {
@@ -574,84 +585,123 @@ var salesSummaryChart = {
       },
     },
   },
-  ],
+  {
+    breakpoint: 1299,
+    options: {
+      chart: {
+        height: 270,
+      },
+    },
+  },
+  {
+    breakpoint: 599,
+    options: {
+      series: [{
+        name: 'Orders',
+        data: [6000, 6500, 6800, 6500, 6800, 6500, 6650,6500 ]
+      }, {
+        name: 'Sales',
+        data: [5000, 5500, 5800, 5500, 6500, 5600, 6350 ,6000]
+      }], 
+      xaxis: {
+        categories: ["Jan 01", "Jan 02", "Jan 03", "Jan 04", "Jan 05", "Jan 06",  "Jan 07" ,"Jan 08" ],
+        type: 'datetime',       
+      },
+    },
+  },
+  {
+    breakpoint: 499,
+    options: { 
+      series: [{
+        name: 'Orders',
+        data: [6000, 6500, 6800, 6500, 6800, 6500, 6650, 6500, 5900, 6000]
+      }, {
+        name: 'Sales',
+        data: [5000, 5500, 5800, 5500, 6500, 5600, 6350, 6000, 5500, 5800]
+      }], 
+      xaxis: {
+        categories: ["Jan 01", "Jan 02", "Jan 03", "Jan 04", "Jan 05", "Jan 06",  "Jan 07", "Jan 08", "Jan 09" , "Jan 10" ],
+        type: 'datetime',       
+      },
+    },
+  },
+],
 };
 
 var salesSummaryChartEl = new ApexCharts(document.querySelector("#salesSummaryChart"), salesSummaryChart);
-salesSummaryChartEl.render(); 
+salesSummaryChartEl.render();
 
+ 
 /*=======/Orders Status (May 10)/=======*/
 const OrdersStatus = {
-    series: [
-      {
-        data: [60, 78, 35, 60, 20],
-      },
-    ],
-    chart: { 
-      type: 'bar',
-      toolbar:{ 
-        show:false,
-      },
-      height: 320,
-    },
-    grid: {
-      padding: {
-        top: -15,
-        right: 20,
-        bottom: 0,
-        left: 20,
-      },
-      show: true,
-      borderColor: 'var(--border-light)',
-    },
-    plotOptions: {
-      bar: {
-        columnWidth: '15%',
-        borderRadius: 9, 
-        distributed: true,
-        barHeight: '100%',   
-      },
-    },
-    xaxis: {
-      crosshairs: {
-        width: 1,
-      },
-      showForNullSeries: false,
-      labels: {
-        show: false, 
-      },
-    },
-    dataLabels: { 
-      enabled: false,
-    },
-    legend: {
+  series: [{
+    data: [60, 78, 35, 60, 20],
+  }, ],
+  chart: {
+    type: 'bar',
+    toolbar: {
       show: false,
     },
-    yaxis:{ 
-      show: true, 
-      showForNullSeries: true,
-      labels: {
-        show: true,
-        style:{ 
-          colors: ['var(--content)']
-        }
-      }  
+    height: 320,
+  },
+  grid: {
+    padding: {
+      top: -15,
+      right: 20,
+      bottom: 0,
+      left: 20,
     },
-    colors:['#33BFBF', '#FF6150' , '#072448' , '#F8AA4B',  '#FAABA4' ,'#F5F6F9'],
-    fill: {
-      type: 'gradient',
-      opacity: 1,
-      gradient:{
-        shade: 'light',
-        type: "vertical",
-        opacityFrom: 1,
-        opacityTo: 0,
-        stops: [0, 90, 100],
-      },
-      opacity: 1,
+    show: true,
+    borderColor: 'var(--border-light)',
+  },
+  plotOptions: {
+    bar: {
+      columnWidth: '15%',
+      borderRadius: 9,
+      distributed: true,
+      barHeight: '100%',
     },
-    tooltip: toolTipMini,
-    responsive: [{
+  },
+  xaxis: {
+    crosshairs: {
+      width: 1,
+    },
+    showForNullSeries: false,
+    labels: {
+      show: false,
+    },
+  },
+  dataLabels: {
+    enabled: false,
+  },
+  legend: {
+    show: false,
+  },
+  yaxis: {
+    show: true,
+    showForNullSeries: true,
+    labels: {
+      show: true,
+      style: {
+        colors: ['var(--content)']
+      }
+    }
+  },
+  colors: ['#33BFBF', '#FF6150', '#072448', '#F8AA4B', '#FAABA4', '#F5F6F9'],
+  fill: {
+    type: 'gradient',
+    opacity: 1,
+    gradient: {
+      shade: 'light',
+      type: "vertical",
+      opacityFrom: 1,
+      opacityTo: 0,
+      stops: [0, 90, 100],
+    },
+    opacity: 1,
+  },
+  tooltip: toolTipMini,
+  responsive: [{
       breakpoint: 1700,
       options: {
         chart: {
@@ -668,18 +718,18 @@ const OrdersStatus = {
             borderRadius: 9,
           },
         },
-        chart:{ 
+        chart: {
           height: 290,
         },
       },
-    }, 
+    },
     {
       breakpoint: 376,
       options: {
         chart: {
           height: 300,
         },
-        plotOptions: { 
+        plotOptions: {
           bar: {
             columnWidth: '25%',
             borderRadius: 9,
@@ -687,9 +737,8 @@ const OrdersStatus = {
         },
       },
     },
-    ],
-  }; 
+  ],
+};
 
-  const OrdersStatusEl = new ApexCharts(document.querySelector('#OrdersStatus'), OrdersStatus);
-  OrdersStatusEl.render();  
-  
+const OrdersStatusEl = new ApexCharts(document.querySelector('#OrdersStatus'), OrdersStatus);
+OrdersStatusEl.render();

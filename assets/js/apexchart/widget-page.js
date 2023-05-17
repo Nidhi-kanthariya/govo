@@ -798,11 +798,11 @@ const marketOverViewChart = {
     data: [18, 30, 25, 51, 34, 40, 34],
   },],
   chart: {
-    height: 205,
+    height: 245,
     type: 'line',
     zoom: {
       enabled: false,
-    },
+    }, 
     toolbar: {
       show: false,
     },
@@ -858,7 +858,7 @@ const marketOverViewChart = {
     breakpoint: 1600,
     options: {
       chart: {
-        height: 203,
+        height: 245,
         sparkline: {
           enabled: true,
         },
@@ -868,9 +868,20 @@ const marketOverViewChart = {
   {
     breakpoint: 1500,
     options: {
-      chart: {
-        height: 195,
+      chart: { 
+        height: 195, 
         sparkline: {
+          enabled: true,
+        },
+      },
+    },
+  },
+  {
+    breakpoint: 1095,
+    options: {
+      chart: {
+        height: 270,
+        sparkline: { 
           enabled: true,
         },
       },

@@ -4,11 +4,11 @@ aside(class="sidebar")
     div.logo-wrapper
         a(href="index.html") 
             img(class="w-full full-sidebar" src="../../assets/images/logo/logo.png" alt="logo")
-            //- img(class="w-full icon-sidebar" src="../../assets/images/logo/logo-sort-1.png" alt="logo") 
+            //- img(class="w-full icon-sidebar" src="../../assets/images/logo/logo-sort-1.png" alt="logo")
         button.sidebar-btn
             +SVG_ICON("Category", "w-6 h-6") 
     div.search-wrapper
-        div.search-box 
+        div.search-box
             input(class="search" placeholder="Search" type="search")
             +SVG_ICON("Search", "w-5 h-5")  
     nav.sidebar-main 
@@ -18,7 +18,7 @@ aside(class="sidebar")
                     span
                         +SVG_ICON("Document", "w-5 h-5") 
                         span.sidebar-name Sample Page
-            li.sidebar-list
+            li.sidebar-list 
                 a(href="light.html").sidebar-link.sidebar-title 
                     span
                         +SVG_ICON("Activity", "w-5 h-5")  
