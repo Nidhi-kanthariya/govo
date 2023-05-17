@@ -879,7 +879,7 @@ const marketOverViewChart = {
   {
     breakpoint: 768,
     options: {
-      chart: {
+      chart: { 
         height: 172,
         sparkline: {
           enabled: true,

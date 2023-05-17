@@ -15792,6 +15792,14 @@ div[class*=activity-dot-secondary]{
   overflow: visible;
 }
 
+#salesSummaryChart .apexcharts-text.apexcharts-xaxis-label {
+  font-family: 'Secular One', sans-serif;
+}
+
+#salesSummaryChart .apexcharts-text.apexcharts-xaxis-label:first-child {
+  font-weight: 300 !important;
+}
+
 #totalCustomerLineChart {
   margin-left: 0;
   margin-right: 0;
@@ -16024,10 +16032,6 @@ div[class*=activity-dot-secondary]{
     margin-left: unset;
     margin-right: unset;
   }
-}
-
-#salesSummaryChart .apexcharts-text.apexcharts-xaxis-label:first-child {
-  font-weight: 300 !important;
 }
 
 /* Text Underline Hover Effrct */
@@ -19566,6 +19570,38 @@ div[class*=activity-dot-secondary]{
     right: 48%;
   }
 
+  .xl\:order-1 {
+    order: 1;
+  }
+
+  .xl\:order-2 {
+    order: 2;
+  }
+
+  .xl\:order-3 {
+    order: 3;
+  }
+
+  .xl\:order-4 {
+    order: 4;
+  }
+
+  .xl\:order-5 {
+    order: 5;
+  }
+
+  .xl\:order-6 {
+    order: 6;
+  }
+
+  .xl\:order-7 {
+    order: 7;
+  }
+
+  .xl\:order-8 {
+    order: 8;
+  }
+
   .xl\:col-span-12 {
     grid-column: span 12 / span 12;
   }
@@ -20070,6 +20106,10 @@ div[class*=activity-dot-secondary]{
 
   .lg\:gap-2 {
     gap: 0.5rem;
+  }
+
+  .lg\:gap-3 {
+    gap: 0.75rem;
   }
 
   .lg\:gap-4 {
@@ -21626,8 +21666,16 @@ div[class*=activity-dot-secondary]{
     display: none;
   }
 
+  .\33sm\:h-\[14px\] {
+    height: 14px;
+  }
+
   .\33sm\:h-auto {
     height: auto;
+  }
+
+  .\33sm\:w-\[14px\] {
+    width: 14px;
   }
 
   .\33sm\:w-\[220px\] {

@@ -42,24 +42,24 @@ html(lang='en')
                 // Page Body Start
                 div.page-body 
                     div.grid.grid-cols-12.gap-card-gap
-                        div.col-span-6(class="xl:col-span-12") 
+                        div.col-span-6(class="xl:col-span-12 ") 
                             div(class="grid grid-cols-2 gap-card-gap")
                                 each data in WIDGET4_DATA
                                     div.col-span-1(class="md:col-span-2")
                                         div.card.svg-shake(class="gap-0 p-0 transition ease-in delay-400 duration-500 hover:shadow-sm hover:-translate-y-1 hover:scale-45")
                                             +widget4(data)
-                        div.col-span-6(class="xl:col-span-12")
-                            div.card.gap-0  
+                        div.col-span-6(class="xl:col-span-6 xl:order-2 lg:col-span-12")
+                            div.card.gap-0
                                 div.card-header 
                                     div.flex.justify-between.w-full(class="flex-wrap gap-2 items-center 2xl:flex-nowrap 2xl:gap-1 2sm:flex-wrap 2sm:gap-2")
                                         h3(class="text-lg font-bold leading-none text-title") Sales Summary (Jun 2023)
-                                        div.flex.items-center.gap-4  
+                                        div.flex.items-center.gap-4
                                             div(class="2sm:hidden").radialBar-legend 
                                                 div(class="w-full px-2")
                                                     div.radialBar-legend-series
                                                         span.radialBar-legend-marker.primary
                                                         p(class="!mt-0").radialBar-legend-text.text-3xs.text-title Sales
-                                                div(class="w-full px-2")
+                                                div(class="w-full px-2") 
                                                     div.radialBar-legend-series 
                                                         span.radialBar-legend-marker.secondary
                                                         p(class="!mt-0").radialBar-legend-text.text-3xs.text-title Orders
@@ -77,9 +77,9 @@ html(lang='en')
                                 div.card-body
                                     div.relative 
                                         div#salesSummaryChart
-                        div.col-span-7(class="lg:col-span-12 ")
+                        div.col-span-7(class="xl:col-span-12 xl:order-1")
                             div.card 
-                                div.card-header 
+                                div.card-header
                                     div.flex.justify-between.w-full(class=`flex-wrap gap-2 items-center`)
                                         h3(class="text-lg font-bold leading-none text-title") Order Detail
                                         div.flex.items-center.gap-4
@@ -101,7 +101,7 @@ html(lang='en')
                                 div.card-body
                                     div.overflow-auto.custom-scroll
                                         include ../../components/table/order-detail
-                        div.col-span-5(class="lg:col-span-12 ")
+                        div.col-span-5(class="lg:col-span-12 xl:col-span-6 xl:order-3")
                             div.card
                                 div.card-header
                                     +card-header("Orders Status (May 10)","setting", HISTORY_DROPDOWN)
@@ -116,7 +116,7 @@ html(lang='en')
                                                         button.flex.items-center.gap-2(class="justify-start w-full text-xs font-semibold 2md:py-[7px] 2md:px-[7px] py-[9px] px-4 bg-gray-light dark:bg-sidebar-dark2")
                                                             span(class=`w-[10px] bg-${item.status} h-[10px] rounded-[2px]`)
                                                             span(class="text-xs font-semibold text-left line-clamp-1 ")= item.title
-                        div.col-span-4(class="lg:col-span-12 ")
+                        div.col-span-4(class="lg:col-span-12  xl:order-4")
                             div.card 
                                 div.card-header 
                                     +card-header("Customers","setting", HISTORY_DROPDOWN)
@@ -143,7 +143,7 @@ html(lang='en')
                                                 p(class="2xl:line-clamp-1 2xl:hidden lg:block 2sm:hidden").radialBar-legend-text.text-3xs.text-title Retarget Customers
                                                 p(class="2xl:line-clamp-1 hidden lg:hidden  2sm:block").radialBar-legend-text.text-3xs.text-title Retarget
                                             small.text-xs.text-content3(class="pl-3 rtl:pl-0 rtl:pr-3") 34% 
-                        div.col-span-4(class="lg:col-span-12  recent-activity") 
+                        div.col-span-4(class="lg:col-span-12  recent-activity xl:order-5") 
                             div.card
                                 div.card-header   
                                     +card-header("Recent Activity","setting", HISTORY_DROPDOWN)
@@ -189,7 +189,7 @@ html(lang='en')
                                                 span.text-content3.text-2xs.font-bold 12:00 pm
                                                 p(class="2xl:line-clamp-1").text-title.font-medium If you wear clothes that don't suit you.
 
-                        div.col-span-4(class="lg:col-span-12")
+                        div.col-span-4(class="lg:col-span-12 xl:order-6")
                             div.card
                                 div.card-header
                                     div.flex.justify-between.w-full(class=`flex-wrap gap-2 items-center`)
@@ -209,14 +209,14 @@ html(lang='en')
                                 div.card-body 
                                     div.overflow-auto.custom-scroll  
                                         include ../../components/table/sale-detail 
-                        div.col-span-5(class="lg:col-span-12 ")
+                        div.col-span-5(class="lg:col-span-12   xl:order-7")
                             div.card
                                 div.card-header
                                     +card-header("Best Product Seller","setting", HISTORY_DROPDOWN)
                                 div.card-body
                                     div.overflow-auto.custom-scroll  
                                         include ../../components/table/product-seller-detail
-                        div.col-span-7(class="lg:col-span-12 ")
+                        div.col-span-7(class="lg:col-span-12  xl:order-8")
                             div.card
                                 div.card-header
                                     +card-header("Today’s Deals","setting", HISTORY_DROPDOWN)

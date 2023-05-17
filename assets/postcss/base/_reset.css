@@ -251,6 +251,11 @@ div[class*=activity-dot-secondary]{
       }
     }
   }
+  .apexcharts-text { 
+    &.apexcharts-xaxis-label { 
+        @apply first:!font-light font-serif ; 
+    }
+  } 
 } 
 #totalCustomerLineChart{
   @apply mt-[-32px] mx-[0] mb-[-28px] 3sm:ml-[-10px];
@@ -270,13 +275,7 @@ div[class*=activity-dot-secondary]{
     @apply  xl:mr-[90px] xl:ml-unset lg:mr-[50px] lg:ml-unset  5xl:mr-0 5xl:ml-unset  ml-unset mr-[50px] 2lg:mr-[20px] 2lg:ml-unset md:mr-[100px] md:ml-unset sm:mr-[50px] sm:ml-unset 2sm:mr-[20px] 2sm:ml-unset 3sm:mr-[-10px] 3sm:ml-unset ;
   } 
 }
-#salesSummaryChart{
-  .apexcharts-text { 
-    &.apexcharts-xaxis-label { 
-        @apply first:!font-light ; 
-    }
-  }
-}
+
 
 /* Text Underline Hover Effrct */
 .framework-hover{
