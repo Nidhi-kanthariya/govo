@@ -174,6 +174,14 @@ const earningChart = {
     },
   },
   {
+    breakpoint: 1499,
+    options:{
+      chart:{
+        height: 250, 
+      } 
+    }
+  }, 
+  {
     breakpoint: 1200,
     options: {
       chart: {
@@ -255,7 +263,7 @@ const SellOverview = {
     offsetY: 0,
     toolbar: {
       show: false,
-    },
+    }, 
   },
   dataLabels: {
     enabled: false,
@@ -266,7 +274,7 @@ const SellOverview = {
     gradient: {
       shadeIntensity: 1,
       opacityFrom: 0.8,
-      opacityTo: 0.4,
+      opacityTo: 0.4, 
       colorStops: [{
         offset: 0,
         color: 'rgba(var(--primary),0.5)',
@@ -275,7 +283,7 @@ const SellOverview = {
       {
         offset: 20,
         color: 'rgba(var(--primary),0.3)',
-        opacity: 1,
+        opacity: 1, 
       },
       {
         offset: 60,
@@ -324,22 +332,27 @@ const SellOverview = {
     },
   },
   yaxis: {
+    show: true, 
+    showAlways: true,
+    showForNullSeries: true,
     logBase: 100,
     tickAmount: 6,
     min: 100,
     max: 700,
     labels: {
+      // formatter: (value) => {
+      //   return `${value}k` ;
+      // },
+      formatter: function (value) {
+        return value + "k";
+      }, 
       show: true,
       align: 'right',
       minWidth: 0,
       maxWidth: 34,
       style: {
         ...fontCommon,
-      },
-
-      formatter: (value) => {
-        return `${value}k`;
-      },
+      }, 
     },
   },
   xaxis: {
@@ -362,7 +375,6 @@ const SellOverview = {
       series,
       seriesIndex,
       dataPointIndex,
-      w
     }) {
       return '<div class="apex-tooltip">' + '<span>' + '<span class="bg-primary">' + '</span>' + 'Selling' + ': ' + series[seriesIndex][dataPointIndex] + 'K' + '</span>' + '</div>';
     },
@@ -377,6 +389,14 @@ const SellOverview = {
     },
   },
   {
+    breakpoint: 1799,
+    options: {
+      chart: {
+        height: 300,
+      },
+    },
+  },
+  {
     breakpoint: 425,
     options: {
       chart: {
@@ -386,9 +406,14 @@ const SellOverview = {
   },
   {
     breakpoint: 375,
-    options: {
-      chart: {
-        height: 220,
+    options: { 
+      chart: {  
+        height: 250, 
+      },
+      labels: {
+        style:{ 
+          fontSize: '5px',
+        },
       },
     },
   },

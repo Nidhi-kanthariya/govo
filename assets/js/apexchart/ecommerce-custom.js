@@ -528,11 +528,9 @@ var salesSummaryChart = {
       shadeIntensity: 0,
       opacityFrom: 1,
       opacityTo: 0
-      
     } 
   },
   yaxis: {
-
     labels: {
       style:{
         colors: ['var(--content)']
@@ -546,11 +544,12 @@ var salesSummaryChart = {
   xaxis: { 
     type: 'datetime', 
     categories: ["Jan 01", "Jan 02", "Jan 03", "Jan 04", "Jan 05", "Jan 06", "Jan 07", "Jan 08", "Jan 09", "Jan 10"],
-    labels:{
-      style:{
-        colors: [ 'var(--content)' ,'var(--content)','var(--content)','var(--content)','var(--content)','var(--content)','var(--content)','var(--content)','var(--content)'],
+    labels:{ 
+      style:{ 
+        colors: [ 'var(--content)' , 'var(--content)', 'var(--content)', 'var(--content)', 'var(--content)', 'var(--content)','var(--content)', 'var(--content)','var(--content)','var(--content)'],
+        fontWeight: 400,
       },
-    },
+    }, 
     tooltip: {
       enabled: false, 
     }
@@ -567,6 +566,15 @@ var salesSummaryChart = {
       return '<div class="apex-tooltip px-4 py-1 relative "> ' + '<span class="font-bold">' + '$' + series[seriesIndex][dataPointIndex] + '</span>'  + '<br>' + '<span class="align-middle text-content">' + 'Orders' + '</span>' + '</div>';
     },  
   }, 
+  responsive: [{
+    breakpoint: 1199,
+    options: {
+      chart: {
+        height: 320,
+      },
+    },
+  },
+  ],
 };
 
 var salesSummaryChartEl = new ApexCharts(document.querySelector("#salesSummaryChart"), salesSummaryChart);
@@ -673,7 +681,7 @@ const OrdersStatus = {
         },
         plotOptions: { 
           bar: {
-            columnWidth: '15%',
+            columnWidth: '25%',
             borderRadius: 9,
           },
         },

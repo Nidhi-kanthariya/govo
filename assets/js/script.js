@@ -30,7 +30,7 @@
         19. Fill svg js
         20. Accept voice call js
         21. Blog sidebar js
-
+        22. rating js 
  --------------------------------------------------------------------------------- */
 
 /*========================
@@ -443,4 +443,19 @@ blogSidebarToggle?.addEventListener('click', function () {
 });
 blogCloseBtn?.addEventListener('click', function () {
   blogSidebar.classList.remove('show');
+});
+
+
+/*=====================
+  22. rating js 
+==========================*/
+
+// document.querySelector('jsuites-rating').addEventListener('onchange', function(e) {
+//     document.getElementById('console').innerHTML = 'New value: ' + this.value;
+// });
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('jsuites-rating').addEventListener('onchange', function(e) {
+    document.getElementById('console').innerHTML = 'New value: ' + this.value;
+  });
 });

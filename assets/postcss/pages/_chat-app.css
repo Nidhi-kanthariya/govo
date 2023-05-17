@@ -11,8 +11,8 @@
   }
 
   /* !max-w-[23.5625rem] */
-  .right-sidebar-aside {
-    @apply z-[3] transition-all duration-1000 w-[-webkit-fill-available] !max-w-[44.5625rem] absolute 2xl:right-0 2xl:top-0 2xl:bg-white 2xl:!w-[17.1875rem] sm:!w-[18.1875rem];
+  .right-sidebar-aside { 
+    @apply z-[3] transition-all duration-1000 w-[-webkit-fill-available] !max-w-[44.5625rem] absolute 2xl:right-0 2xl:top-0 2xl:bg-white 2xl:!w-[18.1875rem] lg:sm:!w-[22.1875rem] sm:!w-[18.1875rem] 3sm:!w-[17.1875rem];
     /* width: -webkit-fill-available; */
     &.right-hide-show-sidebar {
       @apply !right-[-31.25rem];

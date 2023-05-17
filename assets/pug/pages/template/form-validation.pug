@@ -63,12 +63,11 @@ html(lang='en')
                           div
                             label(for='email1') Email
                             input(type='email' id="email1" placeholder='Enter your email id' required='')
-                          div
+                          div 
                             label(for='password1') Password
                             input(type='password' id='password1' required='' placeholder="Enter your password")
                           div.flex.justify-end.items-center
                             button.btn.btn-primary.text-white.text-xs.font-semibold(type='submit' class="py-2 !m-0 !w-fit") Submit
-
                     div(data-tabContent="2" class="relative tab-pan copyParent group first:rounded-tl-none rounded-5")
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white")
                         i(data-feather="clipboard")
@@ -247,7 +246,7 @@ html(lang='en')
                                 input(type="email" id="email" placeholder="Enter your email id" required)
                               div
                                 label(for="contact") Contact
-                                input(type="number" id="contact" placeholder="Enter your contact" required)
+                                input(type="number" id="contact" maxlength="10" placeholder="Enter your contact" required)
 
                               div.btns.flex.justify-end.items-center.gap-3
                                 button.text-xs.btn.btn-secondary.text-white.py-2.prev-1.prev(class="!w-fit !m-0") Previous
