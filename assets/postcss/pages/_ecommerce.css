@@ -181,6 +181,13 @@
         }
       }
     }
+    .product-substitution-rtl{
+      .product-substitution{
+        [dir="rtl"] &{
+          @apply pl-3 pr-unset ;
+        }
+      }
+    }
   }
 
   .invoice-preview {

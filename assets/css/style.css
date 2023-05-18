@@ -8029,6 +8029,26 @@ header {
   padding-top: 0px;
 }
 
+[dir="rtl"] .product-detail .product-substitution-rtl .product-substitution {
+  padding-left: 0.75rem;
+  padding-right: unset;
+}
+
+[dir=rtl] [dir="rtl"] .product-detail .product-substitution-rtl .product-substitution {
+  padding-left: unset;
+  padding-right: 0.75rem;
+}
+
+[dir=rtl] [dir="rtl"] .product-detail .product-substitution-rtl .product-substitution.5 {
+  padding-left: unset;
+  padding-right: 0.875rem;
+}
+
+[dir=rtl] [dir="rtl"] .product-detail .product-substitution-rtl .product-substitution {
+  padding-left: unset;
+  padding-right: unset;
+}
+
 .invoice-preview .table.equal-space tbody tr:first-child td {
   padding-top: 0px;
 }
@@ -13325,6 +13345,10 @@ header {
   letter-spacing: 0.025rem;
 }
 
+.\!font-extrabold {
+  font-weight: 800 !important;
+}
+
 .font-black {
   font-weight: 900;
 }
@@ -18326,6 +18350,10 @@ div[class*=activity-dot-secondary]{
   padding-right: 1rem !important;
 }
 
+:is([dir="rtl"] .rtl\:\!pr-unset) {
+  padding-right: unset !important;
+}
+
 :is([dir="rtl"] .rtl\:pl-0) {
   padding-left: 0px;
 }
@@ -18448,6 +18476,11 @@ div[class*=activity-dot-secondary]{
 [dir=rtl] :is([dir="rtl"] .rtl\:pl-3).5 {
   padding-left: unset;
   padding-right: 0.875rem;
+}
+
+[dir=rtl] :is([dir="rtl"] .rtl\:\!pr-unset) {
+  padding-left: unset !important;
+  padding-right: unset !important;
 }
 
 [dir=rtl] :is([dir="rtl"] .rtl\:pr-unset) {
