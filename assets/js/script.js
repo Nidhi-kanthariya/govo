@@ -445,4 +445,3 @@ blogCloseBtn?.addEventListener('click', function () {
   blogSidebar.classList.remove('show');
 });
 
-

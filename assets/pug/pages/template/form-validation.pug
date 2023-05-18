@@ -19,6 +19,9 @@
 //- formValidation
 -var formValidation = true;
 
+//- passwordHideShow
+-var passwordHideShow=true; 
+
 //- Breadcrumbs
 -var pageTitle="Form Validation";
 -var breadcrumb=['Ui Kits','Form Validation'];
@@ -60,12 +63,12 @@ html(lang='en')
                     div(data-tabContent="1" class="tab-pan active show ")
                       div.checkout-detail     
                         form.theme-form(class="flex flex-col gap-4 !m-0")
+                          div 
+                            label(for='name') Name
+                            input(type='text' id='name' required='' placeholder="Enter your name")
                           div
                             label(for='email1') Email
                             input(type='email' id="email1" placeholder='Enter your email id' required='')
-                          div 
-                            label(for='password1') Password
-                            input(type='password' id='password1' required='' placeholder="Enter your password")
                           div.flex.justify-end.items-center
                             button.btn.btn-primary.text-white.text-xs.font-semibold(type='submit' class="py-2 !m-0 !w-fit") Submit
                     div(data-tabContent="2" class="relative tab-pan copyParent group ")
@@ -76,12 +79,12 @@ html(lang='en')
                           |&lt;div class="checkout-detail"&gt;
                           |   &lt;form class="theme-form flex flex-col gap-4 !m-0"&gt;
                           |      &lt;div&gt;
-                          |          &lt;label for="email1&gt;Email&lt;/label&gt; 
-                          |          &lt;input type="email" id="email1" placeholder='Enter your email id' required=''&gt;&lt;/input&gt; 
+                          |          &lt;label for="name&gt;Name&lt;/label&gt; 
+                          |          &lt;input type="text" id="name" placeholder='Enter your name' required=''&gt;&lt;/input&gt; 
                           |      &lt;/div&gt;
                           |      &lt;div&gt;
-                          |          &lt;label for="password1&gt;Password&lt;/label&gt; 
-                          |          &lt;input type="password" id="password1" placeholder='Enter your password' required=''&gt;&lt;/input&gt; 
+                          |          &lt;label for="email1&gt;Email&lt;/label&gt; 
+                          |          &lt;input type="email" id="email1" placeholder='Enter your email id' required=''&gt;&lt;/input&gt; 
                           |      &lt;/div&gt;
                           |      &lt;div class="flex items-center justify-end"&gt;
                           |          &lt;button class="btn btn-primary text-white text-sm font-semibold py-2 !m-0 !w-fit" type="submit"&gt;Submit&lt;/button&gt; 
@@ -105,12 +108,12 @@ html(lang='en')
                     div(data-tabContent="1" class="tab-pan active show ")
                       div     
                         form(class="flex flex-col gap-4 !m-0")
+                          div.relative.z-0.w-full.mt-7.group 
+                            input#floating_password.block.px-0.w-full.text-xs.text-content3.bg-transparent.border-0.border-b-2.border-border-light.appearance-none.peer(type='text' name='floating_password' class='py-2.5 dark:text-white dark:border-border-dark  dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-primary' placeholder=' ' required='')
+                            label.absolute.font-semibold.text-xs.text-content3.duration-300.transform.-translate-y-9.top-3.-z-10(for='floating_password' class='peer-focus:font-medium dark:text-content3 origin-[0] peer-focus:left-0 rtl:peer-focus:left-unset rtl:peer-focus:right-0 peer-focus:text-primary peer-focus:dark:text-content3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:-translate-y-9') User Id
                           div.relative.z-0.w-full.mt-7.group
                             input#floating_email.block.px-0.w-full.text-xs.text-content3.bg-transparent.border-0.border-b-2.border-border-light.appearance-none.peer(type='email' name='floating_email' class='py-2.5 dark:text-white dark:border-border-dark  dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-primary' placeholder=' ' required='')
                             label.absolute.font-semibold.text-xs.text-content3.duration-300.transform.-translate-y-9.top-3.-z-10(for='floating_email' class='peer-focus:font-medium dark:text-content3 origin-[0] peer-focus:left-0 rtl:peer-focus:left-unset rtl:peer-focus:right-0 peer-focus:text-primary peer-focus:dark:text-content3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:-translate-y-9') Email
-                          div.relative.z-0.w-full.mt-7.group 
-                            input#floating_password.block.px-0.w-full.text-xs.text-content3.bg-transparent.border-0.border-b-2.border-border-light.appearance-none.peer(type='password' name='floating_password' class='py-2.5 dark:text-white dark:border-border-dark  dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-primary' placeholder=' ' required='')
-                            label.absolute.font-semibold.text-xs.text-content3.duration-300.transform.-translate-y-9.top-3.-z-10(for='floating_password' class='peer-focus:font-medium dark:text-content3 origin-[0] peer-focus:left-0 rtl:peer-focus:left-unset rtl:peer-focus:right-0 peer-focus:text-primary peer-focus:dark:text-content3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:-translate-y-9') Password
                           div.flex.justify-end.items-center
                             button.btn.btn-primary.text-white.text-xs.font-semibold(type='submit' class="py-2 !m-0 !w-fit") Submit
                     div(data-tabContent="2" class="relative tab-pan copyParent group ")
@@ -121,13 +124,13 @@ html(lang='en')
                           |&lt;div&gt;
                           |   &lt;form class="flex flex-col gap-4 !m-0"&gt;
                           |      &lt;div class="relative z-0 w-full mt-7 group"&gt;
+                          |          &lt;input type="text" id="#floating_password" required='' class="block w-full px-0 text-xs bg-transparent border-0 border-b-2 appearance-none dark:border-b-2 text-content3 border-border-light peer"&gt;&lt;/input&gt; 
+                          |          &lt;label for="floating_password" class="absolute text-xs duration-300 transform -translate-y-9  text-content3 top-3 -z-10 peer-focus:font-medium dark:text-content3 origin-[0] peer-focus:left-0 rtl:peer-focus:left-unset rtl:peer-focus:right-0 peer-focus:text-primary peer-focus:dark:text-content3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:-translate-y-9"&gt;User Id&lt;/label&gt; 
+                          |      &lt;/div&gt;                                                    
+                          |      &lt;div class="relative z-0 w-full mt-7 group"&gt;
                           |          &lt;input type="email" id="#floating_email" required='' class="block w-full px-0 text-xs bg-transparent border-0 border-b-2 appearance-none dark:border-b-2 text-content3 border-border-light peer"&gt;&lt;/input&gt; 
                           |          &lt;label for="floating_email" class="absolute text-xs duration-300 transform -translate-y-9  text-content3 top-3 -z-10 peer-focus:font-medium dark:text-content3 origin-[0] peer-focus:left-0 rtl:peer-focus:left-unset rtl:peer-focus:right-0 peer-focus:text-primary peer-focus:dark:text-content3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:-translate-y-9"&gt;Email&lt;/label&gt; 
                           |      &lt;/div&gt;
-                          |      &lt;div class="relative z-0 w-full mt-7 group"&gt;
-                          |          &lt;input type="password" id="#floating_password" required='' class="block w-full px-0 text-xs bg-transparent border-0 border-b-2 appearance-none dark:border-b-2 text-content3 border-border-light peer"&gt;&lt;/input&gt; 
-                          |          &lt;label for="floating_password" class="absolute text-xs duration-300 transform -translate-y-9  text-content3 top-3 -z-10 peer-focus:font-medium dark:text-content3 origin-[0] peer-focus:left-0 rtl:peer-focus:left-unset rtl:peer-focus:right-0 peer-focus:text-primary peer-focus:dark:text-content3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:-translate-y-9"&gt;Password&lt;/label&gt; 
-                          |      &lt;/div&gt;                                                    
                           |      &lt;div class="flex items-center justify-end"&gt;
                           |          &lt;button class="btn btn-primary text-white text-sm font-semibold py-2 !m-0 !w-fit" type="submit"&gt;Submit&lt;/button&gt; 
                           |      &lt;/div&gt;
@@ -159,8 +162,8 @@ html(lang='en')
                             input#email(type='email' placeholder='Enter email id')
                             small Error Message
                           div
-                            label(for='password') Password 
-                            input#password(type='password' placeholder='Enter your password')
+                            label(for='contact') Contact 
+                            input#contact(type='number' placeholder='Enter your contact')
                             small Error Message
                           div.flex.justify-end.items-center
                             button.btn.btn-primary.text-white.text-xs.font-semibold(type='submit' class="py-2 !m-0 !w-fit") Submit
@@ -183,8 +186,8 @@ html(lang='en')
                           |          &lt;small&gt;Error Message&lt;/small&gt; 
                           |      &lt;/div&gt;
                           |      &lt;div&gt;
-                          |          &lt;label for="password"&gt;Password&lt;/label&gt; 
-                          |          &lt;input type="password" id="password" required='' placeholder='Enter your password&gt;&lt;/input&gt; 
+                          |          &lt;label for="contact"&gt;Password&lt;/label&gt; 
+                          |          &lt;input type="number" id="contact" required='' placeholder='Enter your contact&gt;&lt;/input&gt; 
                           |          &lt;small&gt;Error Message&lt;/small&gt; 
                           |      &lt;/div&gt;
                           |      &lt;div class="flex items-center justify-end"&gt;
@@ -256,9 +259,16 @@ html(lang='en')
                               div
                                 label(for="name") Username 
                                 input(type="text" id="name" placeholder="Enter your username" required)
-                              div
-                                label(for="password1") Password
-                                input(type="password" id="password1" placeholder="Enter your password" required)
+                              //- div
+                              //-   label(for="password1") Password
+                              //-   input(type="password" id="password1" placeholder="Enter your password" required)
+                              label(for="password") Password 
+                              div.relative
+                                input(type='password' id="password" required='' placeholder="Enter your Password")
+                                div.password-icon
+                                  i(data-feather="eye" class="cursor-pointer w-4 h-4 stroke-title right-[25px] rtl:right-unset top-1/2 rtl:left-[25px] absolute -translate-y-1/2 ").showHidePassword 
+                                  i(data-feather="eye-off" class="cursor-pointer w-4 h-4 stroke-title right-[25px] rtl:right-unset top-1/2 rtl:left-[25px] absolute -translate-y-1/2 ").showHidePassword 
+
 
                               div.btns.flex.justify-end.items-center.gap-3
                                 button.text-xs.btn.btn-secondary.text-white.py-2.prev-2.prev(class="!w-fit !m-0") Previous

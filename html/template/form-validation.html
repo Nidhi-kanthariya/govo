@@ -1040,13 +1040,13 @@
                     <div class="tab-pan active show " data-tabContent="1">
                       <div class="checkout-detail">    
                         <form class="theme-form flex flex-col gap-4 !m-0">
+                          <div> 
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required="" placeholder="Enter your name">
+                          </div>
                           <div>
                             <label for="email1">Email</label>
                             <input type="email" id="email1" placeholder="Enter your email id" required="">
-                          </div>
-                          <div> 
-                            <label for="password1">Password</label>
-                            <input type="password" id="password1" required="" placeholder="Enter your password">
                           </div>
                           <div class="flex justify-end items-center">
                             <button class="btn btn-primary text-white text-xs font-semibold py-2 !m-0 !w-fit" type="submit">Submit</button>
@@ -1059,12 +1059,12 @@
                       <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="checkout-detail"&gt;
   &lt;form class="theme-form flex flex-col gap-4 !m-0"&gt;
      &lt;div&gt;
-         &lt;label for="email1&gt;Email&lt;/label&gt; 
-         &lt;input type="email" id="email1" placeholder='Enter your email id' required=''&gt;&lt;/input&gt; 
+         &lt;label for="name&gt;Name&lt;/label&gt; 
+         &lt;input type="text" id="name" placeholder='Enter your name' required=''&gt;&lt;/input&gt; 
      &lt;/div&gt;
      &lt;div&gt;
-         &lt;label for="password1&gt;Password&lt;/label&gt; 
-         &lt;input type="password" id="password1" placeholder='Enter your password' required=''&gt;&lt;/input&gt; 
+         &lt;label for="email1&gt;Email&lt;/label&gt; 
+         &lt;input type="email" id="email1" placeholder='Enter your email id' required=''&gt;&lt;/input&gt; 
      &lt;/div&gt;
      &lt;div class="flex items-center justify-end"&gt;
          &lt;button class="btn btn-primary text-white text-sm font-semibold py-2 !m-0 !w-fit" type="submit"&gt;Submit&lt;/button&gt; 
@@ -1093,13 +1093,13 @@
                     <div class="tab-pan active show " data-tabContent="1">
                       <div>    
                         <form class="flex flex-col gap-4 !m-0">
+                          <div class="relative z-0 w-full mt-7 group"> 
+                            <input class="block px-0 w-full text-xs text-content3 bg-transparent border-0 border-b-2 border-border-light appearance-none peer py-2.5 dark:text-white dark:border-border-dark  dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-primary" id="floating_password" type="text" name="floating_password" placeholder=" " required="">
+                            <label class="absolute font-semibold text-xs text-content3 duration-300 transform -translate-y-9 top-3 -z-10 peer-focus:font-medium dark:text-content3 origin-[0] peer-focus:left-0 rtl:peer-focus:left-unset rtl:peer-focus:right-0 peer-focus:text-primary peer-focus:dark:text-content3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:-translate-y-9" for="floating_password">User Id</label>
+                          </div>
                           <div class="relative z-0 w-full mt-7 group">
                             <input class="block px-0 w-full text-xs text-content3 bg-transparent border-0 border-b-2 border-border-light appearance-none peer py-2.5 dark:text-white dark:border-border-dark  dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-primary" id="floating_email" type="email" name="floating_email" placeholder=" " required="">
                             <label class="absolute font-semibold text-xs text-content3 duration-300 transform -translate-y-9 top-3 -z-10 peer-focus:font-medium dark:text-content3 origin-[0] peer-focus:left-0 rtl:peer-focus:left-unset rtl:peer-focus:right-0 peer-focus:text-primary peer-focus:dark:text-content3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:-translate-y-9" for="floating_email">Email</label>
-                          </div>
-                          <div class="relative z-0 w-full mt-7 group"> 
-                            <input class="block px-0 w-full text-xs text-content3 bg-transparent border-0 border-b-2 border-border-light appearance-none peer py-2.5 dark:text-white dark:border-border-dark  dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-primary" id="floating_password" type="password" name="floating_password" placeholder=" " required="">
-                            <label class="absolute font-semibold text-xs text-content3 duration-300 transform -translate-y-9 top-3 -z-10 peer-focus:font-medium dark:text-content3 origin-[0] peer-focus:left-0 rtl:peer-focus:left-unset rtl:peer-focus:right-0 peer-focus:text-primary peer-focus:dark:text-content3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:-translate-y-9" for="floating_password">Password</label>
                           </div>
                           <div class="flex justify-end items-center">
                             <button class="btn btn-primary text-white text-xs font-semibold py-2 !m-0 !w-fit" type="submit">Submit</button>
@@ -1112,13 +1112,13 @@
                       <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div&gt;
   &lt;form class="flex flex-col gap-4 !m-0"&gt;
      &lt;div class="relative z-0 w-full mt-7 group"&gt;
+         &lt;input type="text" id="#floating_password" required='' class="block w-full px-0 text-xs bg-transparent border-0 border-b-2 appearance-none dark:border-b-2 text-content3 border-border-light peer"&gt;&lt;/input&gt; 
+         &lt;label for="floating_password" class="absolute text-xs duration-300 transform -translate-y-9  text-content3 top-3 -z-10 peer-focus:font-medium dark:text-content3 origin-[0] peer-focus:left-0 rtl:peer-focus:left-unset rtl:peer-focus:right-0 peer-focus:text-primary peer-focus:dark:text-content3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:-translate-y-9"&gt;User Id&lt;/label&gt; 
+     &lt;/div&gt;                                                    
+     &lt;div class="relative z-0 w-full mt-7 group"&gt;
          &lt;input type="email" id="#floating_email" required='' class="block w-full px-0 text-xs bg-transparent border-0 border-b-2 appearance-none dark:border-b-2 text-content3 border-border-light peer"&gt;&lt;/input&gt; 
          &lt;label for="floating_email" class="absolute text-xs duration-300 transform -translate-y-9  text-content3 top-3 -z-10 peer-focus:font-medium dark:text-content3 origin-[0] peer-focus:left-0 rtl:peer-focus:left-unset rtl:peer-focus:right-0 peer-focus:text-primary peer-focus:dark:text-content3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:-translate-y-9"&gt;Email&lt;/label&gt; 
      &lt;/div&gt;
-     &lt;div class="relative z-0 w-full mt-7 group"&gt;
-         &lt;input type="password" id="#floating_password" required='' class="block w-full px-0 text-xs bg-transparent border-0 border-b-2 appearance-none dark:border-b-2 text-content3 border-border-light peer"&gt;&lt;/input&gt; 
-         &lt;label for="floating_password" class="absolute text-xs duration-300 transform -translate-y-9  text-content3 top-3 -z-10 peer-focus:font-medium dark:text-content3 origin-[0] peer-focus:left-0 rtl:peer-focus:left-unset rtl:peer-focus:right-0 peer-focus:text-primary peer-focus:dark:text-content3 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:-translate-y-9"&gt;Password&lt;/label&gt; 
-     &lt;/div&gt;                                                    
      &lt;div class="flex items-center justify-end"&gt;
          &lt;button class="btn btn-primary text-white text-sm font-semibold py-2 !m-0 !w-fit" type="submit"&gt;Submit&lt;/button&gt; 
      &lt;/div&gt;
@@ -1155,8 +1155,8 @@
                             <input id="email" type="email" placeholder="Enter email id"><small>Error Message</small>
                           </div>
                           <div>
-                            <label for="password">Password </label>
-                            <input id="password" type="password" placeholder="Enter your password"><small>Error Message</small>
+                            <label for="contact">Contact </label>
+                            <input id="contact" type="number" placeholder="Enter your contact"><small>Error Message</small>
                           </div>
                           <div class="flex justify-end items-center">
                             <button class="btn btn-primary text-white text-xs font-semibold py-2 !m-0 !w-fit" type="submit">Submit</button>
@@ -1179,8 +1179,8 @@
          &lt;small&gt;Error Message&lt;/small&gt; 
      &lt;/div&gt;
      &lt;div&gt;
-         &lt;label for="password"&gt;Password&lt;/label&gt; 
-         &lt;input type="password" id="password" required='' placeholder='Enter your password&gt;&lt;/input&gt; 
+         &lt;label for="contact"&gt;Password&lt;/label&gt; 
+         &lt;input type="number" id="contact" required='' placeholder='Enter your contact&gt;&lt;/input&gt; 
          &lt;small&gt;Error Message&lt;/small&gt; 
      &lt;/div&gt;
      &lt;div class="flex items-center justify-end"&gt;
@@ -1263,9 +1263,10 @@
                                 <label for="name">Username </label>
                                 <input type="text" id="name" placeholder="Enter your username" required>
                               </div>
-                              <div>
-                                <label for="password1">Password</label>
-                                <input type="password" id="password1" placeholder="Enter your password" required>
+                              <label for="password">Password </label>
+                              <div class="relative">
+                                <input type="password" id="password" required="" placeholder="Enter your Password">
+                                <div class="password-icon"><i class="cursor-pointer w-4 h-4 stroke-title right-[25px] rtl:right-unset top-1/2 rtl:left-[25px] absolute -translate-y-1/2  showHidePassword" data-feather="eye"> </i><i class="cursor-pointer w-4 h-4 stroke-title right-[25px] rtl:right-unset top-1/2 rtl:left-[25px] absolute -translate-y-1/2  showHidePassword" data-feather="eye-off"> </i></div>
                               </div>
                               <div class="btns flex justify-end items-center gap-3">
                                 <button class="text-xs btn btn-secondary text-white py-2 prev-2 prev !w-fit !m-0">Previous</button>
@@ -1445,6 +1446,8 @@
     <script src="../../assets/js/validation.init.js"> </script>
     <!-- customizer js-->
     <script src="../../assets/js/customizer.js"> </script>
+    <!-- password hide-show js-->
+    <script src="../../assets/js/password-hide-show.js"></script>
     <!-- Custom script   -->
     <script src="../../assets/js/script.js"> </script>
   </body>
