@@ -24,6 +24,6 @@ mixin widget4(data)
       div.relative.flex.items-center.justify-center(class="p-[6px]") 
         div(class=`absolute inset-0 rounded-full bg-${data.gros > 50 ? "success" : "danger" } opacity-20`) 
         +SVG_ICON("Fill-Arrow",`${data.gros > 50 ? "fill-success stroke-success -scale-y-100" : "fill-danger stroke-danger" } 5xl:w-[5px] 5xl:h-[5px] w-[7px] h-[7px]`)
-      p(class="text-xs font-semibold 3xl:text-2xs text-content 3xl:flex 3xl:items-center 3xl:gap-2")
+      p(class="text-xs font-semibold 3xl:text-2xs text-content 3xl:flex 3xl:items-center 3xl:gap-2 6xl:flex 6xl:items-center 6xl:gap-2") 
         strong(class=`text-${data.gros > 50 ? "success" : "danger" } font-semibold`)= `${data.gros > 50 ? "+" : "-" }${data.gros}% ` 
         span.text-xs.text-content3(class="font-semibold 6xl:line-clamp-1 5xl:line-clamp-1")= data.data

@@ -410,9 +410,11 @@ const SellOverview = {
       chart: {  
         height: 250, 
       },
-      labels: {
-        style:{ 
-          fontSize: '5px',
+      xaxis:{
+        labels: {
+          style: {
+            fontSize: '12px',
+          },
         },
       },
     },
