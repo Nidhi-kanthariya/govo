@@ -116,8 +116,8 @@
 
             &:before {
                 content: attr(data-tg-off);
-                @apply bg-danger;
-            }
+                @apply bg-success;
+            } 
 
             &:active:before {
                 transform: rotateY(-20deg);
@@ -131,7 +131,7 @@
 
             &:after {
                 transform: rotateY(0);
-                @apply bg-success left-0;
+                @apply bg-warning left-0;
             }
 
             &:active:after {
