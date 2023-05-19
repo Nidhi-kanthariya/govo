@@ -8906,7 +8906,7 @@ header {
 
 .tgl-flip +.tgl-btn:before {
                 content: attr(data-tg-off);
-                background-color: var(--danger);
+                background-color: var(--success);
             }
 
 .tgl-flip +.tgl-btn:active:before {
@@ -8920,7 +8920,7 @@ header {
 .tgl-flip:checked+.tgl-btn:after {
                 transform: rotateY(0);
                 left: 0px;
-                background-color: var(--success);
+                background-color: var(--warning);
             }
 
 .tgl-flip:checked+.tgl-btn:active:after {
@@ -18350,20 +18350,12 @@ div[class*=activity-dot-secondary]{
   padding-right: 1rem !important;
 }
 
-:is([dir="rtl"] .rtl\:\!pr-unset) {
-  padding-right: unset !important;
-}
-
 :is([dir="rtl"] .rtl\:pl-0) {
   padding-left: 0px;
 }
 
 :is([dir="rtl"] .rtl\:pl-2) {
   padding-left: 0.5rem;
-}
-
-:is([dir="rtl"] .rtl\:pl-3) {
-  padding-left: 0.75rem;
 }
 
 :is([dir="rtl"] .rtl\:pl-4) {
@@ -18438,11 +18430,6 @@ div[class*=activity-dot-secondary]{
   padding-right: unset;
 }
 
-[dir=rtl] :is([dir="rtl"] .rtl\:pl-3) {
-  padding-left: unset;
-  padding-right: 0.75rem;
-}
-
 [dir=rtl] :is([dir="rtl"] .rtl\:\!pr-4) {
   padding-left: 1rem !important;
   padding-right: unset !important;
@@ -18471,16 +18458,6 @@ div[class*=activity-dot-secondary]{
 [dir=rtl] :is([dir="rtl"] .rtl\:pr-3).5 {
   padding-left: 0.875rem;
   padding-right: unset;
-}
-
-[dir=rtl] :is([dir="rtl"] .rtl\:pl-3).5 {
-  padding-left: unset;
-  padding-right: 0.875rem;
-}
-
-[dir=rtl] :is([dir="rtl"] .rtl\:\!pr-unset) {
-  padding-left: unset !important;
-  padding-right: unset !important;
 }
 
 [dir=rtl] :is([dir="rtl"] .rtl\:pr-unset) {
@@ -20472,6 +20449,10 @@ div[class*=activity-dot-secondary]{
 
   .\32lg\:flex-col {
     flex-direction: column;
+  }
+
+  .\32lg\:flex-wrap {
+    flex-wrap: wrap;
   }
 
   .\32lg\:items-baseline {

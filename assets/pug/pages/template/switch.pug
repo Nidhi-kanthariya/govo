@@ -10,6 +10,9 @@
 //- customizer
 -var customizer=true;
 
+//- custom_switch
+-var custom_switch=true;
+
 //- prism
 -var prism=true;
 
@@ -146,35 +149,51 @@ html(lang='en')
                           |       &lt;/label&gt;
                           |   &lt;/div&gt; 
                           |&lt;/div&gt;
-
-            div.col-span-6(class="md:col-span-12")
+            div.col-span-12
               div.card.tabs
                 div.card-header.pb-2.header-bottom-border
                   div.flex.flex-col
-                    h3.text-lg.font-bold Custom Switch
+                    h3.text-lg.font-bold Variation of Switches
                     p Here, the Square switch that you can use. 
                     div.preview-code.tab-links
                       button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
                       button.p-0.tab.tab-lifted(data-tabFilter="2" class="tab-link tab-2") Html
-                div.card-body                   
+                div.card-body
                   div.tabs-content
                     div(data-tabContent="1" class="tab-pan active show ")
-                      div.flex.justify-between.items-center.gap-5
-                        div.flex.justify-between.items-center.gap-3
+                      div(class="2lg:flex-wrap").flex.justify-between.items-center.gap-5
+                        div.flex.justify-between.items-center.gap-3 
                           span.text-xs.font-medium.text-content Square Switch
                           label.inline-flex.relative.items-center.cursor-pointer
                             input.sr-only.peer(type='checkbox' checked="" )
                             span.w-11.h-6.bg-content.rounded-5.peer(class="peer-focus:outline-none peer-checked:after:translate-x-full peer-checked:after:content-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-light after:border after:rounded-5 after:h-5 after:w-5 after:transition-all peer-checked:bg-warning")
                         div.flex.justify-between.items-center.gap-3
+                          span.text-xs.font-medium.text-content Icon Switch
+                          .switch_boxbox_4
+                            .input_wrapper
+                              input(type='checkbox' checked="" ).switch_4
+                              div.is_checked 
+                                i(data-feather="check" class="w-4 h-4 !stroke-contact")  
+                              div.is_unchecked 
+                                i(data-feather="x" class="w-4 h-4 !stroke-contact")
+                        div.flex.justify-between.items-center.gap-3
                           span.text-xs.font-medium.text-content Flat Switch
                           label.inline-flex.relative.items-center.cursor-pointer
-                            input.sr-only.peer(type='checkbox' checked="" )
+                            input.sr-only.peer(type='checkbox' checked="" ) 
                             span.w-11.h-6.bg-content.rounded-none.peer(class="peer-focus:outline-none peer-checked:after:translate-x-full peer-checked:after:content-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-light after:border after:rounded-none after:h-5 after:w-5 after:transition-all peer-checked:bg-info")
-
-
-                    div(data-tabContent="2" class="relative tab-pan copyParent group ")
+                        div.flex.justify-between.items-center.gap-3
+                          span.text-xs.font-medium.text-content Skewed
+                          div.tg-list-item 
+                            input#cb3.tgl.tgl-skewed(type = "checkbox")
+                            label.tgl-btn(data-tg-off = "OFF", data-tg-on = "ON", for = "cb3")
+                        div.flex.justify-between.items-center.gap-3
+                          span.text-xs.font-medium.text-content Flip  
+                          div.tg-list-item  
+                            input#cb5.tgl.tgl-flip(type = "checkbox")
+                            label.tgl-btn(data-tg-off = "Nope", data-tg-on = "Yeah!", for = "cb5")
+                    div(data-tabContent="2" class="relative tab-pan copyParent group")
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white")
-                        i(data-feather="clipboard")
+                        i(data-feather="clipboard")  
                       pre(class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2")
                         code(class="dark:bg-sidebar-dark2")
                           |&lt;div class="flex items-center justify-between gap-5"&gt;
@@ -196,38 +215,6 @@ html(lang='en')
                           |               after:left-[2px] after:bg-white after:border-gray-light after:border after:rounded-none after:h-5 after:w-5 after:transition-all peer-checked:bg-info"&gt;&lt;/span&gt;
                           |       &lt;/label&gt;
                           |   &lt;/div&gt; 
-                          |&lt;/div&gt;
-
-            div.col-span-6(class="md:col-span-12")
-              div.card.tabs
-                div.card-header.pb-2.header-bottom-border
-                  div.flex.flex-col
-                    h3.text-lg.font-bold Variation of Switches
-                    p Here, the Square switch that you can use. 
-                    div.preview-code.tab-links
-                      button.p-0.tab.tab-lifted.tab-active(data-tabFilter="1" class="tab-link") Preview  
-                      button.p-0.tab.tab-lifted(data-tabFilter="2" class="tab-link tab-2") Html
-                div.card-body                   
-                  div.tabs-content
-                    div(data-tabContent="1" class="tab-pan active show ")
-                      div.flex.justify-between.items-center.gap-5
-                        div.flex.justify-between.items-center.gap-3
-                          span.text-xs.font-medium.text-content Skewed
-                          div.tg-list-item
-                            input#cb3.tgl.tgl-skewed(type = "checkbox")
-                            label.tgl-btn(data-tg-off = "OFF", data-tg-on = "ON", for = "cb3")
-                        div.flex.justify-between.items-center.gap-3
-                          span.text-xs.font-medium.text-content Flip
-                          div.tg-list-item
-                            input#cb5.tgl.tgl-flip(type = "checkbox")
-                            label.tgl-btn(data-tg-off = "Nope", data-tg-on = "Yeah!", for = "cb5")   
-
-                    div(data-tabContent="2" class="relative tab-pan copyParent group ")
-                      button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white")
-                        i(data-feather="clipboard")
-                      pre(class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2")
-                        code(class="dark:bg-sidebar-dark2")
-                          |&lt;div class="flex items-center justify-between gap-5"&gt;
                           |   &lt;div class="flex items-center justify-between"&gt; 
                           |       &lt;span class="text-xs font-medium text-content"&gt;Skewed&lt;/span&gt;
                           |       &lt;div class="tg-list-item"&gt;
@@ -235,6 +222,17 @@ html(lang='en')
                           |           &lt;label class="tgl-btn" data-tg-off = "OFF" data-tg-on = "ON"  for = "cb3"&gt;
                           |           &lt;/label&gt;
                           |       &lt;/div&gt;
+                          |   &lt;/div&gt;  
+                          |   &lt;div&gt;
+                          |     &lt;div class="switch_boxbox_4"&gt;&lt;/div&gt;
+                          |       &lt;div class=".input_wrapper"&gt;&lt;/div&gt;
+                          |         &lt;input type='checkbox' class="switch_4&gt;&lt;/input&gt;
+                          |         &lt;div class="is_checked&gt;
+                          |             &lt;i class="w-4 h-4 stroke-contact" data-feather="check"&gt; &lt;/i&gt;
+                          |         &lt;/div&gt;
+                          |         &lt;div class="is_unchecked"&gt;
+                          |             &lt;i class="w-4 h-4 stroke-contact" data-feather="x" &gt; &lt;/i&gt;
+                          |         &lt;/div&gt;
                           |   &lt;/div&gt; 
                           |   &lt;div class="flex items-center justify-between"&gt; 
                           |       &lt;span class="text-xs font-medium text-content"&gt;Flip&lt;/span&gt;

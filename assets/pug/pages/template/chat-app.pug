@@ -79,10 +79,10 @@ html(lang='en')
               ul.flex.gap-3.flex-wrap.items-center.justify-center
                 li.cursor-pointer.call-start-show
                   label(for='accept-call-modal')
-                    +SVG_ICON("Calling","w-[4rem] h-[4rem] 2lg:w-[3.5rem] 2lg:h-[3.5rem] sm:w-[3rem] sm:h-[3rem] p-[12px] stroke-white bg-success rounded-full relative")
+                    +SVG_ICON("Calling","w-[4rem] h-[4rem] 2lg:w-[3.5rem] 2lg:h-[3.5rem] sm:w-[3rem] sm:h-[3rem] p-[12px] stroke-white bg-success rounded-full relative hover:cursor-pointer")
                 li.cursor-pointer  
                   label(for="voice-call-modal")
-                    +SVG_ICON("Call","w-[4rem] h-[4rem] 2lg:w-[3.5rem] 2lg:h-[3.5rem] sm:w-[3rem] sm:h-[3rem] p-[12px] stroke-white bg-danger rounded-full rotate-[132deg]")
+                    +SVG_ICON("Call","w-[4rem] h-[4rem] 2lg:w-[3.5rem] 2lg:h-[3.5rem] sm:w-[3rem] sm:h-[3rem] p-[12px] stroke-white bg-danger rounded-full rotate-[132deg] hover:cursor-pointer")
     //- Accept call modal
     div.modal-main.accept-call-end
       input#accept-call-modal(class="" name="accept-call-modal" type='checkbox')
