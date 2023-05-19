@@ -1,7 +1,7 @@
 /*=====================
      04. Dark & Rtl mode js
    ==========================*/
-window.location.pathname.includes('rtl.html') && (localStorage.layout = 'rtl')
+// window.location.pathname.includes('rtl.html');
 /* This is declaring variables. */
 let theme = localStorage.theme || '';
 let layout = localStorage.layout || '';
@@ -49,8 +49,9 @@ theme, layout, monochrome, and sidebarType. If it finds them, it will set the th
 monochrome, and sidebarType to the values that were found in the local storage. If it does not find
 them, it will set the theme, layout, monochrome, and sidebarType to the default values. */
 document.addEventListener('DOMContentLoaded', function () {
-
   const pathName = window.location.pathname.split('/').pop();
+  console.log("window.location.pathname.includes", pathName);
+  console.log("window.location", localStorage.layout);
 
   /// Fetch monochromeSwitch Mode ///
   const monochrome = localStorage.getItem('monochrome');
@@ -79,7 +80,9 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   /// Fetch Layout (dark & rtl) ///
-  if (localStorage.layout === 'rtl') {
+
+
+  if (localStorage.layout === 'rtl' || pathName === 'rtl.html') {
     document.body.setAttribute('dir', 'rtl');
     radioBtnCheckedFunction(ltrChecked, rtlChecked);
   } else {
@@ -114,6 +117,7 @@ const ltrLayout = function () {
 
 /// Rtl Layout Function ///
 const rtlLayout = function () {
+  console.log("call fun 120");
   layout = 'rtl';
   document.body.setAttribute('dir', 'rtl');
   radioBtnCheckedFunction(ltrChecked, rtlChecked);
@@ -194,6 +198,7 @@ modeEvent.addEventListener('click', function (event) {
     ltrLayout();
   }
   if (RtlLayoutBtn) {
+    console.log("201");
     rtlLayout();
   }
   if (fullSidebarEl) {
@@ -222,5 +227,5 @@ window.addEventListener('beforeunload', function () {
   localStorage.theme = theme;
   localStorage.layout = layout;
   localStorage.sidebarType = sidebarType;
-  window.location.pathname.includes('rtl.html') && (localStorage.removeItem('layout'))
+  // window.location.pathname.includes('rtl.html') && (localStorage.removeItem('layout'))
 });
