@@ -51,11 +51,11 @@ html(lang='en')
             div.col-span-3(class="4xl:col-span-4 lg:col-span-12")
               div.grid.grid-cols-2.gap-card-gap  
                 div.col-span-2(class="lg:col-span-1 2md:col-span-2")
-                  div.card
+                  div.card(class="transition ease-in delay-400 duration-500 hover:shadow-sm hover:-translate-y-1 hover:scale-45")
                     div.card-body 
                       +widget1(REVENUE_WIDGET)
                 div.col-span-2(class="lg:col-span-1 2md:col-span-2")
-                  div.card 
+                  div.card(class="transition ease-in delay-400 duration-500 hover:shadow-sm hover:-translate-y-1 hover:scale-45")
                     div.card-header
                       +card-header("Earnings","setting", HISTORY_DROPDOWN)
                     div.card-body
@@ -70,13 +70,13 @@ html(lang='en')
             div.col-span-3(class="4xl:col-span-4 lg:col-span-12") 
               div.grid.grid-cols-2.gap-card-gap
                 div.col-span-2(class="lg:col-span-1 2md:col-span-2")
-                  div.card   
+                  div.card(class="transition ease-in delay-400 duration-500 hover:shadow-sm hover:-translate-y-1 hover:scale-45")
                     div.card-header
                       +card-header("Inventory Cost","setting", HISTORY_DROPDOWN)
                     div.card-body  
                       +product-list(INVENTORY_CARD)
                 div.col-span-2(class="lg:col-span-1 2md:col-span-2")
-                  div.card
+                  div.card(class="transition ease-in delay-400 duration-500 hover:shadow-sm hover:-translate-y-1 hover:scale-45")
                     div.card-header
                       +card-header("Advertising","setting", HISTORY_DROPDOWN)
                     div.card-body

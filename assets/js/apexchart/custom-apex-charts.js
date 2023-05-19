@@ -150,6 +150,13 @@ const areachart = {
             chart: {
                 height: 220,
             },
+            xaxis:{
+                labels: {
+                  style: {
+                    fontSize: '12px',
+                  },
+                },
+            }, 
         },
     },
     ],
@@ -1176,7 +1183,7 @@ const bubblechart = {
         breakpoint: 375,
         options: {
             chart: {
-                height: 220,
+                height: 270,
             },
         },
     },

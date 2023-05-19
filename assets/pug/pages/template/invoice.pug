@@ -43,7 +43,7 @@ html(lang='en')
                       div.dropdown
                         button.btn.border.border-border-light.flex.gap-1.text-content.items-center(class="!p-[0.7rem] dark:border-border-dark") Action
                           +SVG_ICON("Arrow-Down-2","w-[20px] h-[20px] stroke-content")
-                        div.dropdown-menu(class="!w-36 !top-11 left-0 !p-2")
+                        div.dropdown-menu(class="!w-36 !top-11 left-0 rtl:!right-0 rtl:!left-unset !p-2")
                           ul.flex.flex-col.cursor-pointer(class="!gap-0")
                             li(class="px-2 py-1 rounded hover:bg-gray-light dark:hover:bg-sidebar-dark2") Select All
                             li(class="px-2 py-1 rounded hover:bg-gray-light dark:hover:bg-sidebar-dark2") Edit
@@ -53,7 +53,7 @@ html(lang='en')
                       button.bg-primary.text-white.rounded.border-none.p-3.rounded-tl-none.rounded-bl-none(class="rtl:rounded-bl-5 rtl:rounded-br-none rtl:rounded-tr-none rtl:rounded-tl-5")
                         +SVG_ICON("Search","w-[20px] h-[20px] stroke-white") 
                 div.card-body
-                  div.overflow-auto.custom-scroll
+                  div.overflow-auto.custom-scroll 
                     include ../../components/table/invoice-table 
                 div.card-footer
                   div.flex.justify-between.items-center.flex-wrap(class="sm:flex-col sm:items-end")

@@ -130,7 +130,7 @@
 
   .emoji-picker-insert {
     input:focus:not([tabindex^='-']) {
-      @apply outline-none;
+      @apply !outline-none;
     }
   }
 

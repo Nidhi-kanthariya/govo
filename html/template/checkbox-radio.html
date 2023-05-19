@@ -45,7 +45,7 @@
                   <!-- Search Start  -->
                   <div class="search-box relative">
                     <input class="bg-gray-light dark:bg-sidebar-dark2 rounded-5 w-full  py-[11px] pl-[25px] pr-[55px] rtl:pr-[25px] rtl:pl-[55px] text-xs font-semibold text-title" placeholder="Type to Search..." type="search">
-                    <svg class="xl:hidden hover:cursor-pointer w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 right-[25px] rtl:right-unset rtl:left-[25px] absolute dark:stroke-white"> 
+                    <svg class="xl:hidden cursor-pointer w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 right-[25px] rtl:right-unset rtl:left-[25px] absolute dark:stroke-white"> 
                       <use href="../../assets/svg/sprite.svg#Search"> </use>
                     </svg><i class="search-close hidden cursor-pointer xl:block w-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] h-[calc(18px_+_(24_-_18)_*_((100vw_-_320px)_/_(1920_-_320)))] stroke-title top-1/2 -translate-y-1/2 right-[25px] absolute" data-feather="x"></i>
                   </div>
@@ -76,7 +76,7 @@
                           </div>
                           <div class="search-box relative mt-4"> 
                             <input class="bg-gray-light border dark:bg-sidebar-dark2  dark:border-border-dark border-border-light  w-full py-[8px] pl-[15px] pr-[30px] rounded-5 text-xs font-medium text-title" placeholder="Type to Search..." type="search">
-                            <svg class="w-4 h-4 stroke-title top-1/2 -translate-y-1/2 right-[15px] absolute hover:cursor-pointer"> 
+                            <svg class="w-4 h-4 stroke-title top-1/2 -translate-y-1/2 right-[15px] absolute cursor-pointer"> 
                               <use href="../../assets/svg/sprite.svg#Search"> </use>
                             </svg>
                           </div>
@@ -770,7 +770,7 @@
             <div class="search-wrapper">
               <div class="search-box"> 
                 <input class="search" placeholder="Search" type="search">
-                <svg class="w-5 h-5 hover:cursor-pointer"> 
+                <svg class="w-5 h-5 cursor-pointer"> 
                   <use href="../../assets/svg/sprite.svg#Search"> </use>
                 </svg>
               </div>
@@ -1039,17 +1039,17 @@
                       <div class="flex gap-2 flex-col">
                         <div class="flex items-center gap-2">
                           <label class="checkbox checkbox-md cursor-pointer"> 
-                            <input class="peer" type="checkbox" checked>
+                            <input class="peer" type="checkbox" id="remember" checked>
                             <div class="checkbox-indicator peer-checked:!bg-primary !border-primary"> <i data-feather="check"></i></div>
                           </label>
-                          <p>Remember Me</p>
+                          <label for="remember">Remember Me</label>
                         </div>
                         <div class="flex items-center gap-2">
                           <label class="checkbox checkbox-md cursor-pointer"> 
-                            <input class="peer" type="checkbox">
+                            <input class="peer" type="checkbox" id="save">
                             <div class="checkbox-indicator peer-checked:!bg-primary !border-primary"> <i data-feather="check"></i></div>
                           </label>
-                          <p>Save It</p>
+                          <label for="save">Save It</label>
                         </div>
                       </div>
                     </div>
@@ -1058,21 +1058,21 @@
                       <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-col gap-2"&gt;
   &lt;div class="flex items-center gap-2"&gt; 
       &lt;label class="cursor-pointer checkbox checkbox-md"&gt;
-          &lt;input type="checkbox" class="peer" checked=""/&gt;
+          &lt;input type="checkbox" class="peer"  id="remember" checked=""/&gt;
           &lt;div class="checkbox-indicator peer-checked:!bg-primary !border-primary"&gt;
              &lt;i data-feather="check"&gt;&lt;/i&gt;
           &lt;/div&gt;
       &lt;/label&gt;
-      &lt;p&gt;Remember Me&lt;/p&gt;
+      &lt;label for="remember"&gt;Remember Me&lt;/label&gt;
   &lt;/div&gt;
   &lt;div class="flex items-center gap-2"&gt; 
       &lt;label class="cursor-pointer checkbox checkbox-md"&gt;
-          &lt;input type="checkbox" class="peer" checked=""/&gt;
+          &lt;input type="checkbox" class="peer" id="save" checked=""/&gt;
           &lt;div class="checkbox-indicator peer-checked:!bg-primary !border-primary"&gt;
              &lt;i data-feather="check"&gt;&lt;/i&gt;
           &lt;/div&gt;
       &lt;/label&gt;
-      &lt;p&gt;Save It&lt;/p&gt;
+      &lt;label id="save"&gt;Save It&lt;/label&gt;
   &lt;/div&gt; 
 &lt;/div&gt;</code></pre>
                     </div>
@@ -1156,16 +1156,16 @@
                     <div class="tab-pan active show " data-tabContent="1">
                       <div class="flex gap-2 flex-col">
                         <div class="flex items-center gap-2">
-                          <p>Reverse Checkbox</p>
+                          <label for="reverse">Reverse Checkbox</label>
                           <label class="checkbox checkbox-md cursor-pointer"> 
-                            <input class="peer" type="checkbox">
+                            <input class="peer" type="checkbox" id="reverse">
                             <div class="checkbox-indicator peer-checked:!bg-secondary !border-secondary"> <i data-feather="check"></i></div>
                           </label>
                         </div>
                         <div class="flex items-center gap-2">
-                          <p>Reverse Checked Checkbox</p>
+                          <label for="revers">Reverse Checked Checkbox</label>
                           <label class="checkbox checkbox-md cursor-pointer"> 
-                            <input class="peer" type="checkbox" checked>
+                            <input class="peer" type="checkbox" id="revers" checked>
                             <div class="checkbox-indicator peer-checked:!bg-secondary !border-secondary"> <i data-feather="check"></i></div>
                           </label>
                         </div>
@@ -1175,18 +1175,18 @@
                       <button class="btn copyBtn dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white"><i data-feather="clipboard"></i></button>
                       <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-col gap-2"&gt;
   &lt;div class="flex items-center gap-2"&gt; 
-      &lt;p&gt;Reverse Checkbox&lt;/p&gt;
+      &lt;label for="reverse"&gt;Reverse Checkbox&lt;/label&gt;
       &lt;label class="cursor-pointer checkbox checkbox-md"&gt;
-          &lt;input type="checkbox" class="peer"&gt;
+          &lt;input type="checkbox" id="reverse" class="peer"&gt;
           &lt;div class="checkbox-indicator peer-checked:!bg-secondary !border-secondary"&gt;
              &lt;i data-feather="check"&gt;&lt;/i&gt;
           &lt;/div&gt;
       &lt;/label&gt;
   &lt;/div&gt; 
   &lt;div class="flex items-center gap-2"&gt; 
-      &lt;p&gt;Reverse Checked Checkbox&lt;/p&gt;
+      &lt;label for="revers"&gt;Reverse Checked Checkbox&lt;/label&gt;
       &lt;label class="cursor-pointer checkbox checkbox-md"&gt;
-          &lt;input type="checkbox" class="peer" checked&gt;
+          &lt;input type="checkbox" id="revers" class="peer" checked&gt;
           &lt;div class="checkbox-indicator peer-checked:!bg-secondary !border-secondary"&gt;
              &lt;i data-feather="check"&gt;&lt;/i&gt;
           &lt;/div&gt;
@@ -1357,31 +1357,31 @@
                       <div class="flex gap-2 flex-col">
                         <div class="flex items-center gap-2">
                           <label class="checkbox checkbox-md cursor-pointer">  
-                            <input class="peer" type="checkbox" checked="checked">
+                            <input class="peer" type="checkbox" checked="checked" id="warn">
                             <div class="checkbox-indicator peer-checked:!bg-warning !border-warning"> <i data-feather="check"> </i></div>
                           </label>
-                          <p>Warning - checkbox-solid-warning</p>
+                          <label for="warn">Warning - checkbox-solid-warning</label>
                         </div>
                         <div class="flex items-center gap-2"> 
                           <label class="checkbox checkbox-md cursor-pointer">  
-                            <input class="peer" type="checkbox">
+                            <input class="peer" type="checkbox" id="inf">
                             <div class="checkbox-indicator peer-checked:!bg-info !border-info"> <i data-feather="check"></i></div>
                           </label>
-                          <p>Info - checkbox-solid-info</p>
+                          <label for="inf">Info - checkbox-solid-info</label>
                         </div>
                         <div class="flex items-center gap-2"> 
                           <label class="checkbox checkbox-md cursor-pointer">  
-                            <input class="peer" type="checkbox" checked="checked">
+                            <input class="peer" type="checkbox" checked="checked" id="dan">
                             <div class="checkbox-indicator peer-checked:!bg-danger !border-danger"> <i data-feather="check"></i></div>
                           </label>
-                          <p>Danger - checkbox-solid-danger</p>
+                          <label for="dan">Danger - checkbox-solid-danger</label>
                         </div>
                         <div class="flex items-center gap-2"> 
                           <label class="checkbox checkbox-md cursor-pointer">
-                            <input class="peer" type="checkbox">
+                            <input class="peer" type="checkbox" id="success">
                             <div class="checkbox-indicator peer-checked:!bg-success !border-success"> <i data-feather="check"></i></div>
                           </label>
-                          <p>Success - checkbox-solid-success</p>
+                          <label for="success">Success - checkbox-solid-success</label>
                         </div>
                       </div>
                     </div>
@@ -1390,39 +1390,39 @@
                       <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-col gap-2"&gt;
   &lt;div class="flex items-center gap-2"&gt; 
       &lt;label checkbox checkbox-md cursor-pointer"&gt;
-          &lt;input type= 'checkbox'class="peer"&gt;
+          &lt;input type= 'checkbox'class="peer" id="warn"&gt;
           &lt;div checkbox-indicator class="peer-checked:!bg-warning !border-warning"&gt;
               &lt;i data-feather="check"&gt;&lt;/i&gt;
           &lt;/div&gt; 
       &lt;/label&gt;
-      &lt;p&gt;Warning - checkbox-solid-warning&lt;/p&gt;
+      &lt;label for="warn"&gt;Warning - checkbox-solid-warning&lt;/label&gt;
   &lt;/div&gt; 
   &lt;div class="flex items-center gap-2"&gt; 
       &lt;label checkbox checkbox-md cursor-pointer"&gt;
-          &lt;input type= 'checkbox'class="peer" checked='checked'/&gt;
+          &lt;input type= 'checkbox'class="peer" id="inf" checked='checked'/&gt;
           &lt;div checkbox-indicator class="peer-checked:!bg-info !border-info"&gt;
               &lt;i data-feather="check"&gt;&lt;/i&gt;
           &lt;/div&gt; 
       &lt;/label&gt;
-      &lt;p&gt;Info - checkbox-solid-info&lt;/p&gt;
+      &lt;label for="Inf"&gt;Info - checkbox-solid-info&lt;/label&gt;
   &lt;/div&gt; 
   &lt;div class="flex items-center gap-2"&gt; 
       &lt;label checkbox checkbox-md cursor-pointer"&gt;
-          &lt;input type= 'checkbox'class="peer" checked='checked'/&gt;
+          &lt;input type= 'checkbox'class="peer" id="dan" checked='checked'/&gt;
           &lt;div checkbox-indicator class="peer-checked:!bg-danger !border-danger"&gt;
               &lt;i data-feather="check"&gt;&lt;/i&gt;
           &lt;/div&gt; 
       &lt;/label&gt;
-      &lt;p&gt;Danger - checkbox-solid-danger&lt;/p&gt;
+      &lt;label for="dan"&gt;Danger - checkbox-solid-danger&lt;/label&gt;
   &lt;/div&gt; 
   &lt;div class="flex items-center gap-2"&gt; 
       &lt;label checkbox checkbox-md cursor-pointer"&gt;
-          &lt;input type= 'checkbox'class="peer"/&gt;
+          &lt;input type= 'checkbox' id="success" class="peer"/&gt;
           &lt;div checkbox-indicator class="peer-checked:!bg-success !border-success"&gt;
               &lt;i data-feather="check"&gt;&lt;/i&gt;
           &lt;/div&gt; 
       &lt;/label&gt;
-      &lt;p&gt;Success - checkbox-solid-success&lt;/p&gt;
+      &lt;label for="success"&gt;Success - checkbox-solid-success&lt;/label&gt;
   &lt;/div&gt; 
 &lt;/div&gt;</code></pre>
                     </div>
@@ -1753,31 +1753,31 @@
                       <div class="flex gap-3 flex-wrap">
                         <div class="flex items-center gap-2">
                           <label class="checkbox checkbox-xl cursor-pointer">  
-                            <input class="peer" type="checkbox" checked="checked">
+                            <input class="peer" type="checkbox" id="Checkout-xl" checked="checked">
                             <div class="checkbox-indicator peer-checked:!bg-success !border-success"> <i data-feather="check"></i></div>
                           </label>
-                          <p>Checkout-xl </p>
+                          <label for="Checkout-xl">Checkout-xl </label>
                         </div>
                         <div class="flex items-center gap-2"> 
                           <label class="checkbox checkbox-lg cursor-pointer">  
-                            <input class="peer" type="checkbox">
+                            <input class="peer" type="checkbox" id="Checkout-lg">
                             <div class="checkbox-indicator peer-checked:!bg-success !border-success"> <i data-feather="check"></i></div>
                           </label>
-                          <p>Checkout-lg </p>
+                          <label for="Checkout-lg">Checkout-lg </label>
                         </div>
                         <div class="flex items-center gap-2"> 
                           <label class="checkbox checkbox-md cursor-pointer">  
-                            <input class="peer" type="checkbox">
+                            <input class="peer" type="checkbox" id="Checkout-md">
                             <div class="checkbox-indicator peer-checked:!bg-success !border-success"> <i data-feather="check"></i></div>
                           </label>
-                          <p>Checkout-md</p>
+                          <label for="Checkout-md">Checkout-md</label>
                         </div>
                         <div class="flex items-center gap-2"> 
                           <label class="checkbox checkbox-sm cursor-pointer">
-                            <input class="peer" type="checkbox" checked="checked">
+                            <input class="peer" type="checkbox" id="Checkout-sm" checked="checked">
                             <div class="checkbox-indicator peer-checked:!bg-success !border-success"> <i data-feather="check"></i></div>
                           </label>
-                          <p>Checkout-sm</p>
+                          <label for="Checkout-sm">Checkout-sm</label>
                         </div>
                       </div>
                     </div>
@@ -1786,39 +1786,39 @@
                       <pre class="overflow-auto language-html custom-scroll dark:bg-sidebar-dark2"><code class="dark:bg-sidebar-dark2">&lt;div class="flex flex-wrap gap-3"&gt;
   &lt;div class="flex items-center gap-2"&gt; 
       &lt;label checkbox checkbox-xl cursor-pointer"&gt;
-          &lt;input type= 'checkbox'class="peer" checked='checked'/&gt;
+          &lt;input type= 'checkbox'class="peer" id="Checkout-xl"  checked='checked'/&gt;
           &lt;div checkbox-indicator class="peer-checked:!bg-success !border-success"&gt;
               &lt;i data-feather="check"&gt;&lt;/i&gt;
           &lt;/div&gt; 
       &lt;/label&gt;
-      &lt;p&gt;Checkout-xl&lt;/p&gt;
-  &lt;/div&gt; 
+      &lt;label for="Checkout-xl"&gt;Checkout-xl&lt;/label&gt;
+  &lt;/div&gt;
   &lt;div class="flex items-center gap-2"&gt; 
       &lt;label checkbox checkbox-lg cursor-pointer"&gt;
-          &lt;input type= 'checkbox'class="peer"/&gt;
+          &lt;input type= 'checkbox' id="Checkout-lg" class="peer"/&gt;
           &lt;div checkbox-indicator class="peer-checked:!bg-success !border-success"&gt;
               &lt;i data-feather="check"&gt;&lt;/i&gt;
           &lt;/div&gt; 
       &lt;/label&gt;
-      &lt;p&gt;Checkout-lg&lt;/p&gt;
+      &lt;label for="Checkout-lg"&gt;Checkout-lg&lt;/label&gt;
   &lt;/div&gt; 
   &lt;div class="flex items-center gap-2"&gt; 
       &lt;label checkbox checkbox-md cursor-pointer"&gt;
-          &lt;input type= 'checkbox'class="peer"/&gt;
+          &lt;input type= 'checkbox' id="Checkout-md" class="peer"/&gt;
           &lt;div checkbox-indicator class="peer-checked:!bg-success !border-success"&gt;
               &lt;i data-feather="check"&gt;&lt;/i&gt;
           &lt;/div&gt; 
       &lt;/label&gt;
-      &lt;p&gt;Checkout-md&lt;/p&gt;
+      &lt;label for="Checkout-md"&gt;Checkout-md&lt;/label&gt;
   &lt;/div&gt; 
   &lt;div class="flex items-center gap-2"&gt; 
       &lt;label checkbox checkbox-sm cursor-pointer"&gt;
-          &lt;input type= 'checkbox'class="peer" checked='checked'/&gt;
+          &lt;input type= 'checkbox' id="Checkout-sm" class="peer" checked='checked'/&gt;
           &lt;div checkbox-indicator class="peer-checked:!bg-success !border-success"&gt;
               &lt;i data-feather="check"&gt;&lt;/i&gt;
           &lt;/div&gt; 
       &lt;/label&gt;
-      &lt;p&gt;Checkout-sm&lt;/p&gt;
+      &lt;label for="Checkout-sm"&gt;Checkout-sm&lt;/label&gt;
   &lt;/div&gt; 
 &lt;/div&gt;</code></pre>
                     </div>

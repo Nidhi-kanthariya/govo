@@ -11,7 +11,7 @@
 -var customizer=true;
 
 //- Breadcrumbs
--var pageTitle="Sample Page";
+-var pageTitle="Light Mode";
 -var breadcrumb=['dashboard','Sample Page'];
 
 //- all JSON  
@@ -64,10 +64,9 @@ html(lang='en')
 
                                 h6(class="mt-4 font-bold") PUG
                                 p(class="mt-1 text-content3") To use PUG it required node.js and basic knowledge of using it. Using PUG as template engine to generate whole template quickly with your selected layout and other custom changes. To getting start with PUG usage & template generating process please refer template documentation.
-    body(dir="rtl" class="unique-skin")
 
-        // Page Body End 
-        +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
+                // Page Body End 
+                +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
             include ../../components/customizer
 
-    include ../../layout/footer-files
+    include ../../layout/footer-files 

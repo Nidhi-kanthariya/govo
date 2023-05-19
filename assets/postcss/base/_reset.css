@@ -18,7 +18,7 @@
     @apply w-full;
   }
   body {
-    @apply bg-body;
+    @apply bg-body; 
   }
   input,
   select,
@@ -26,6 +26,12 @@
     &:focus {
       outline: none;
       box-shadow: none;
+    }
+  }
+
+  a{
+    &:hover{
+      @apply !no-underline;
     }
   }
   ::placeholder {
@@ -276,7 +282,7 @@ div[class*=activity-dot-secondary]{
     @apply  xl:mr-[90px] xl:ml-unset lg:mr-[50px] lg:ml-unset  5xl:mr-0 5xl:ml-unset  ml-unset mr-[50px] 2lg:mr-[20px] 2lg:ml-unset md:mr-[50px] md:ml-unset sm:mr-auto sm:ml-unset 2sm:mr-[20px] 2sm:ml-unset 3sm:mr-[-10px] 3sm:ml-unset ;
   }
   .apexcharts-canvas{
-    @apply sm:mx-auto;
+    @apply sm:mx-auto ;
   }
 }
 
@@ -338,7 +344,7 @@ div[class*=activity-dot-secondary]{
     transform: rotate(360deg);
   }
 }
-
+ 
 /* Landing Home Background Image */
 .bg-landing-size{
   background-image: url(../../assets/images/landing/svg/header.png);

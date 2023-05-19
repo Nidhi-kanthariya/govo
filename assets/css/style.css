@@ -594,6 +594,10 @@ input:focus, select:focus, textarea:focus {
       box-shadow: none;
     }
 
+a:hover {
+  text-decoration-line: none !important;
+}
+
 ::-moz-placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: inherit;
@@ -6945,8 +6949,8 @@ header {
 }
 
 .emoji-picker-insert input:focus:not([tabindex^='-']) {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
+  outline: 2px solid transparent !important;
+  outline-offset: 2px !important;
 }
 
 .product-wrapper-grid.list-view .product-box .card .card-body .emoji-picker-insert .emoji-btn img {
@@ -17704,10 +17708,6 @@ div[class*=activity-dot-secondary]{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:cursor-pointer:hover {
-  cursor: pointer;
 }
 
 .hover\:rounded-br-\[25px\]:hover {
