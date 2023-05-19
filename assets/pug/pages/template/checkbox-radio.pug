@@ -53,16 +53,16 @@ html(lang='en')
                       div.flex.gap-2.flex-col
                         div.flex.items-center.gap-2
                           label.checkbox.checkbox-md.cursor-pointer  
-                            input(type='checkbox' class="peer" checked) 
+                            input(type='checkbox' class="peer" id="remember" checked) 
                             div.checkbox-indicator(class="peer-checked:!bg-primary !border-primary")  
                               i(data-feather="check")
-                          p Remember Me
+                          label(for="remember") Remember Me
                         div.flex.items-center.gap-2
                           label.checkbox.checkbox-md.cursor-pointer  
-                            input(type='checkbox' class="peer") 
+                            input(type='checkbox' id="save" class="peer") 
                             div.checkbox-indicator(class="peer-checked:!bg-primary !border-primary")  
                               i(data-feather="check")
-                          p Save It
+                          label(for="save") Save It
                     div(data-tabContent="2" class="relative tab-pan copyParent group ")
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white")
                         i(data-feather="clipboard")
@@ -71,21 +71,21 @@ html(lang='en')
                           |&lt;div class="flex flex-col gap-2"&gt;
                           |   &lt;div class="flex items-center gap-2"&gt; 
                           |       &lt;label class="cursor-pointer checkbox checkbox-md"&gt;
-                          |           &lt;input type="checkbox" class="peer" checked=""/&gt;
+                          |           &lt;input type="checkbox" class="peer"  id="remember" checked=""/&gt;
                           |           &lt;div class="checkbox-indicator peer-checked:!bg-primary !border-primary"&gt;
                           |              &lt;i data-feather="check"&gt;&lt;/i&gt;
                           |           &lt;/div&gt;
                           |       &lt;/label&gt;
-                          |       &lt;p&gt;Remember Me&lt;/p&gt;
+                          |       &lt;label for="remember"&gt;Remember Me&lt;/label&gt;
                           |   &lt;/div&gt;
                           |   &lt;div class="flex items-center gap-2"&gt; 
                           |       &lt;label class="cursor-pointer checkbox checkbox-md"&gt;
-                          |           &lt;input type="checkbox" class="peer" checked=""/&gt;
+                          |           &lt;input type="checkbox" class="peer" id="save" checked=""/&gt;
                           |           &lt;div class="checkbox-indicator peer-checked:!bg-primary !border-primary"&gt;
                           |              &lt;i data-feather="check"&gt;&lt;/i&gt;
                           |           &lt;/div&gt;
                           |       &lt;/label&gt;
-                          |       &lt;p&gt;Save It&lt;/p&gt;
+                          |       &lt;label id="save"&gt;Save It&lt;/label&gt;
                           |   &lt;/div&gt; 
                           |&lt;/div&gt;
 
@@ -156,15 +156,15 @@ html(lang='en')
                     div(data-tabContent="1" class="tab-pan active show ")
                       div.flex.gap-2.flex-col
                         div.flex.items-center.gap-2
-                          p Reverse Checkbox
+                          label(for="reverse") Reverse Checkbox
                           label.checkbox.checkbox-md.cursor-pointer 
-                            input(type='checkbox' class="peer") 
+                            input(type='checkbox' class="peer" id="reverse") 
                             div.checkbox-indicator(class="peer-checked:!bg-secondary !border-secondary")  
                               i(data-feather="check")
                         div.flex.items-center.gap-2
-                          p Reverse Checked Checkbox
+                          label(for="revers") Reverse Checked Checkbox
                           label.checkbox.checkbox-md.cursor-pointer 
-                            input(type='checkbox' class="peer" checked) 
+                            input(type='checkbox' class="peer" id="revers" checked) 
                             div.checkbox-indicator(class="peer-checked:!bg-secondary !border-secondary")  
                               i(data-feather="check")
                     div(data-tabContent="2" class="relative tab-pan copyParent group ")
@@ -174,18 +174,18 @@ html(lang='en')
                         code(class="dark:bg-sidebar-dark2")
                           |&lt;div class="flex flex-col gap-2"&gt;
                           |   &lt;div class="flex items-center gap-2"&gt; 
-                          |       &lt;p&gt;Reverse Checkbox&lt;/p&gt;
+                          |       &lt;label for="reverse"&gt;Reverse Checkbox&lt;/label&gt;
                           |       &lt;label class="cursor-pointer checkbox checkbox-md"&gt;
-                          |           &lt;input type="checkbox" class="peer"&gt;
+                          |           &lt;input type="checkbox" id="reverse" class="peer"&gt;
                           |           &lt;div class="checkbox-indicator peer-checked:!bg-secondary !border-secondary"&gt;
                           |              &lt;i data-feather="check"&gt;&lt;/i&gt;
                           |           &lt;/div&gt;
                           |       &lt;/label&gt;
                           |   &lt;/div&gt; 
                           |   &lt;div class="flex items-center gap-2"&gt; 
-                          |       &lt;p&gt;Reverse Checked Checkbox&lt;/p&gt;
+                          |       &lt;label for="revers"&gt;Reverse Checked Checkbox&lt;/label&gt;
                           |       &lt;label class="cursor-pointer checkbox checkbox-md"&gt;
-                          |           &lt;input type="checkbox" class="peer" checked&gt;
+                          |           &lt;input type="checkbox" id="revers" class="peer" checked&gt;
                           |           &lt;div class="checkbox-indicator peer-checked:!bg-secondary !border-secondary"&gt;
                           |              &lt;i data-feather="check"&gt;&lt;/i&gt;
                           |           &lt;/div&gt;
@@ -331,28 +331,28 @@ html(lang='en')
                       div.flex.gap-2.flex-col
                         div.flex.items-center.gap-2
                           label.checkbox.checkbox-md.cursor-pointer   
-                            input(type='checkbox' checked='checked' class="peer") 
+                            input(type='checkbox' checked='checked'  id="warn" class="peer") 
                             div.checkbox-indicator(class="peer-checked:!bg-warning !border-warning")  
                               i(data-feather="check") 
-                          p Warning - checkbox-solid-warning
+                          label(for='warn') Warning - checkbox-solid-warning
                         div.flex.items-center.gap-2  
                           label.checkbox.checkbox-md.cursor-pointer   
-                            input(type='checkbox' class="peer") 
+                            input(type='checkbox' class="peer" id="inf") 
                             div.checkbox-indicator(class="peer-checked:!bg-info !border-info")  
                               i(data-feather="check")
-                          p Info - checkbox-solid-info
+                          label(for='inf') Info - checkbox-solid-info
                         div.flex.items-center.gap-2 
                           label.checkbox.checkbox-md.cursor-pointer   
-                            input(type='checkbox' checked='checked' class="peer") 
+                            input(type='checkbox' checked='checked' id="dan" class="peer") 
                             div.checkbox-indicator(class="peer-checked:!bg-danger !border-danger")  
                               i(data-feather="check")
-                          p Danger - checkbox-solid-danger
+                          label(for='dan') Danger - checkbox-solid-danger
                         div.flex.items-center.gap-2 
                           label.checkbox.checkbox-md.cursor-pointer
-                            input(type='checkbox' class="peer") 
+                            input(type='checkbox' class="peer" id="success") 
                             div.checkbox-indicator(class="peer-checked:!bg-success !border-success")  
                               i(data-feather="check")
-                          p Success - checkbox-solid-success
+                          label(for='success') Success - checkbox-solid-success
                     div(data-tabContent="2" class="relative tab-pan copyParent group ")
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white")
                         i(data-feather="clipboard")
@@ -361,39 +361,39 @@ html(lang='en')
                           |&lt;div class="flex flex-col gap-2"&gt;
                           |   &lt;div class="flex items-center gap-2"&gt; 
                           |       &lt;label checkbox checkbox-md cursor-pointer"&gt;
-                          |           &lt;input type= 'checkbox'class="peer"&gt;
+                          |           &lt;input type= 'checkbox'class="peer" id="warn"&gt;
                           |           &lt;div checkbox-indicator class="peer-checked:!bg-warning !border-warning"&gt;
                           |               &lt;i data-feather="check"&gt;&lt;/i&gt;
                           |           &lt;/div&gt; 
                           |       &lt;/label&gt;
-                          |       &lt;p&gt;Warning - checkbox-solid-warning&lt;/p&gt;
+                          |       &lt;label for="warn"&gt;Warning - checkbox-solid-warning&lt;/label&gt;
                           |   &lt;/div&gt; 
                           |   &lt;div class="flex items-center gap-2"&gt; 
                           |       &lt;label checkbox checkbox-md cursor-pointer"&gt;
-                          |           &lt;input type= 'checkbox'class="peer" checked='checked'/&gt;
+                          |           &lt;input type= 'checkbox'class="peer" id="inf" checked='checked'/&gt;
                           |           &lt;div checkbox-indicator class="peer-checked:!bg-info !border-info"&gt;
                           |               &lt;i data-feather="check"&gt;&lt;/i&gt;
                           |           &lt;/div&gt; 
                           |       &lt;/label&gt;
-                          |       &lt;p&gt;Info - checkbox-solid-info&lt;/p&gt;
+                          |       &lt;label for="Inf"&gt;Info - checkbox-solid-info&lt;/label&gt;
                           |   &lt;/div&gt; 
                           |   &lt;div class="flex items-center gap-2"&gt; 
                           |       &lt;label checkbox checkbox-md cursor-pointer"&gt;
-                          |           &lt;input type= 'checkbox'class="peer" checked='checked'/&gt;
+                          |           &lt;input type= 'checkbox'class="peer" id="dan" checked='checked'/&gt;
                           |           &lt;div checkbox-indicator class="peer-checked:!bg-danger !border-danger"&gt;
                           |               &lt;i data-feather="check"&gt;&lt;/i&gt;
                           |           &lt;/div&gt; 
                           |       &lt;/label&gt;
-                          |       &lt;p&gt;Danger - checkbox-solid-danger&lt;/p&gt;
+                          |       &lt;label for="dan"&gt;Danger - checkbox-solid-danger&lt;/label&gt;
                           |   &lt;/div&gt; 
                           |   &lt;div class="flex items-center gap-2"&gt; 
                           |       &lt;label checkbox checkbox-md cursor-pointer"&gt;
-                          |           &lt;input type= 'checkbox'class="peer"/&gt;
+                          |           &lt;input type= 'checkbox' id="success" class="peer"/&gt;
                           |           &lt;div checkbox-indicator class="peer-checked:!bg-success !border-success"&gt;
                           |               &lt;i data-feather="check"&gt;&lt;/i&gt;
                           |           &lt;/div&gt; 
                           |       &lt;/label&gt;
-                          |       &lt;p&gt;Success - checkbox-solid-success&lt;/p&gt;
+                          |       &lt;label for="success"&gt;Success - checkbox-solid-success&lt;/label&gt;
                           |   &lt;/div&gt; 
                           |&lt;/div&gt;
 
@@ -722,28 +722,28 @@ html(lang='en')
                       div.flex.gap-3.flex-wrap
                         div.flex.items-center.gap-2
                           label.checkbox.checkbox-xl.cursor-pointer   
-                            input(type='checkbox' checked='checked' class="peer") 
+                            input(type='checkbox' id="Checkout-xl" checked='checked' class="peer") 
                             div.checkbox-indicator(class="peer-checked:!bg-success !border-success")  
                               i(data-feather="check")
-                          p Checkout-xl 
+                          label(for="Checkout-xl") Checkout-xl 
                         div.flex.items-center.gap-2  
                           label.checkbox.checkbox-lg.cursor-pointer   
-                            input(type='checkbox' class="peer") 
+                            input(type='checkbox' id="Checkout-lg" class="peer") 
                             div.checkbox-indicator(class="peer-checked:!bg-success !border-success")  
                               i(data-feather="check")
-                          p Checkout-lg 
+                          label(for="Checkout-lg") Checkout-lg 
                         div.flex.items-center.gap-2 
                           label.checkbox.checkbox-md.cursor-pointer   
-                            input(type='checkbox' class="peer") 
+                            input(type='checkbox' id="Checkout-md" class="peer") 
                             div.checkbox-indicator(class="peer-checked:!bg-success !border-success")  
                               i(data-feather="check")
-                          p Checkout-md
+                          label(for="Checkout-md") Checkout-md
                         div.flex.items-center.gap-2 
                           label.checkbox.checkbox-sm.cursor-pointer
-                            input(type='checkbox' checked='checked' class="peer") 
+                            input(type='checkbox' id="Checkout-sm" checked='checked' class="peer") 
                             div.checkbox-indicator(class="peer-checked:!bg-success !border-success")  
                               i(data-feather="check")
-                          p Checkout-sm
+                          label(for="Checkout-sm") Checkout-sm
                     div(data-tabContent="2" class="relative tab-pan copyParent group ")
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white")
                         i(data-feather="clipboard")
@@ -752,39 +752,39 @@ html(lang='en')
                           |&lt;div class="flex flex-wrap gap-3"&gt;
                           |   &lt;div class="flex items-center gap-2"&gt; 
                           |       &lt;label checkbox checkbox-xl cursor-pointer"&gt;
-                          |           &lt;input type= 'checkbox'class="peer" checked='checked'/&gt;
+                          |           &lt;input type= 'checkbox'class="peer" id="Checkout-xl"  checked='checked'/&gt;
                           |           &lt;div checkbox-indicator class="peer-checked:!bg-success !border-success"&gt;
                           |               &lt;i data-feather="check"&gt;&lt;/i&gt;
                           |           &lt;/div&gt; 
                           |       &lt;/label&gt;
-                          |       &lt;p&gt;Checkout-xl&lt;/p&gt;
-                          |   &lt;/div&gt; 
+                          |       &lt;label for="Checkout-xl"&gt;Checkout-xl&lt;/label&gt;
+                          |   &lt;/div&gt;
                           |   &lt;div class="flex items-center gap-2"&gt; 
                           |       &lt;label checkbox checkbox-lg cursor-pointer"&gt;
-                          |           &lt;input type= 'checkbox'class="peer"/&gt;
+                          |           &lt;input type= 'checkbox' id="Checkout-lg" class="peer"/&gt;
                           |           &lt;div checkbox-indicator class="peer-checked:!bg-success !border-success"&gt;
                           |               &lt;i data-feather="check"&gt;&lt;/i&gt;
                           |           &lt;/div&gt; 
                           |       &lt;/label&gt;
-                          |       &lt;p&gt;Checkout-lg&lt;/p&gt;
+                          |       &lt;label for="Checkout-lg"&gt;Checkout-lg&lt;/label&gt;
                           |   &lt;/div&gt; 
                           |   &lt;div class="flex items-center gap-2"&gt; 
                           |       &lt;label checkbox checkbox-md cursor-pointer"&gt;
-                          |           &lt;input type= 'checkbox'class="peer"/&gt;
+                          |           &lt;input type= 'checkbox' id="Checkout-md" class="peer"/&gt;
                           |           &lt;div checkbox-indicator class="peer-checked:!bg-success !border-success"&gt;
                           |               &lt;i data-feather="check"&gt;&lt;/i&gt;
                           |           &lt;/div&gt; 
                           |       &lt;/label&gt;
-                          |       &lt;p&gt;Checkout-md&lt;/p&gt;
+                          |       &lt;label for="Checkout-md"&gt;Checkout-md&lt;/label&gt;
                           |   &lt;/div&gt; 
                           |   &lt;div class="flex items-center gap-2"&gt; 
                           |       &lt;label checkbox checkbox-sm cursor-pointer"&gt;
-                          |           &lt;input type= 'checkbox'class="peer" checked='checked'/&gt;
+                          |           &lt;input type= 'checkbox' id="Checkout-sm" class="peer" checked='checked'/&gt;
                           |           &lt;div checkbox-indicator class="peer-checked:!bg-success !border-success"&gt;
                           |               &lt;i data-feather="check"&gt;&lt;/i&gt;
                           |           &lt;/div&gt; 
                           |       &lt;/label&gt;
-                          |       &lt;p&gt;Checkout-sm&lt;/p&gt;
+                          |       &lt;label for="Checkout-sm"&gt;Checkout-sm&lt;/label&gt;
                           |   &lt;/div&gt; 
                           |&lt;/div&gt;
 

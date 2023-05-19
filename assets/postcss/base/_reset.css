@@ -338,7 +338,7 @@ div[class*=activity-dot-secondary]{
     transform: rotate(360deg);
   }
 }
-
+ 
 /* Landing Home Background Image */
 .bg-landing-size{
   background-image: url(../../assets/images/landing/svg/header.png);
