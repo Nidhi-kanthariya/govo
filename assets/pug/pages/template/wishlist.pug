@@ -42,12 +42,12 @@ html(lang='en')
         // Sidebar End 
 
         // Page Body Start
-        div.page-body 
+        div.page-body
           div.grid.grid-cols-12.gap-card-gap
             each data in WISHLIST_PRODUCT_BOX
               div.col-span-3(class='4xl:col-span-3 lg:col-span-4 2md:col-span-6 2sm:col-span-12')
-                +wishlist-product(data) 
-        // Page Body End  
+                +wishlist-product(data)
+        // Page Body End
         +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
       include ../../components/customizer       
   include ../../layout/footer-files
