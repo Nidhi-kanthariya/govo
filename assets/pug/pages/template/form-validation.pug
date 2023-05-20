@@ -63,12 +63,16 @@ html(lang='en')
                     div(data-tabContent="1" class="tab-pan active show ")
                       div.checkout-detail     
                         form.theme-form(class="flex flex-col gap-4 !m-0")
-                          div 
-                            label(for='name') Name
-                            input(type='text' id='name' required='' placeholder="Enter your name")
                           div
                             label(for='email1') Email
                             input(type='email' id="email1" placeholder='Enter your email id' required='')
+                          div.relative
+                            label(for='password2') Password
+                            input(type='password' id="password2" required='' placeholder="Enter your Password")
+                            div.password-icon
+                              i(data-feather="eye" class="feather-eye2 cursor-pointer w-4 h-4 stroke-title right-[25px] rtl:right-unset top-1/2 rtl:left-[25px] absolute -translate-y-1/2 ").showHidePassword 
+                              i(data-feather="eye-off" class="feather-eye-off2 cursor-pointer w-4 h-4 stroke-title right-[25px] rtl:right-unset top-1/2 rtl:left-[25px] absolute -translate-y-1/2 ").showHidePassword 
+
                           div.flex.justify-end.items-center
                             button.btn.btn-primary.text-white.text-xs.font-semibold(type='submit' class="py-2 !m-0 !w-fit") Submit
                     div(data-tabContent="2" class="relative tab-pan copyParent group ")
@@ -79,12 +83,16 @@ html(lang='en')
                           |&lt;div class="checkout-detail"&gt;
                           |   &lt;form class="theme-form flex flex-col gap-4 !m-0"&gt;
                           |      &lt;div&gt;
-                          |          &lt;label for="name&gt;Name&lt;/label&gt; 
-                          |          &lt;input type="text" id="name" placeholder='Enter your name' required=''&gt;&lt;/input&gt; 
-                          |      &lt;/div&gt;
-                          |      &lt;div&gt;
                           |          &lt;label for="email1&gt;Email&lt;/label&gt; 
                           |          &lt;input type="email" id="email1" placeholder='Enter your email id' required=''&gt;&lt;/input&gt; 
+                          |      &lt;/div&gt;
+                          |      &lt;div class="relative"&gt;
+                          |          &lt;label for="password2&gt;Password&lt;/label&gt; 
+                          |          &lt;input type="text" id="password2" placeholder='Enter your password' required=''&gt;&lt;/input&gt; 
+                          |          &lt;div class="password-icon"&gt;
+                          |             &lt;i data-feather="eye" class="feather-eye2 showHidePassword cursor-pointer w-4 h-4 stroke-title right-[25px] rtl:right-unset top-1/2 rtl:left-[25px] absolute -translate-y-1/2"&gt; REMIND ME LATER &lt;/i&gt;
+                          |             &lt;i data-feather="eye-off" class="feather-eye-off2 showHidePassword cursor-pointer w-4 h-4 stroke-title right-[25px] rtl:right-unset top-1/2 rtl:left-[25px] absolute -translate-y-1/2"&gt; REMIND ME LATER &lt;/i&gt;
+                          |          &lt;/div&gt; 
                           |      &lt;/div&gt;
                           |      &lt;div class="flex items-center justify-end"&gt;
                           |          &lt;button class="btn btn-primary text-white text-sm font-semibold py-2 !m-0 !w-fit" type="submit"&gt;Submit&lt;/button&gt; 
@@ -259,17 +267,12 @@ html(lang='en')
                               div
                                 label(for="name") Username 
                                 input(type="text" id="name" placeholder="Enter your username" required)
-                              //- div
-                              //-   label(for="password1") Password
-                              //-   input(type="password" id="password1" placeholder="Enter your password" required)
                               label(for="password") Password 
                               div.relative
                                 input(type='password' id="password" required='' placeholder="Enter your Password")
                                 div.password-icon
                                   i(data-feather="eye" class="cursor-pointer w-4 h-4 stroke-title right-[25px] rtl:right-unset top-1/2 rtl:left-[25px] absolute -translate-y-1/2 ").showHidePassword 
                                   i(data-feather="eye-off" class="cursor-pointer w-4 h-4 stroke-title right-[25px] rtl:right-unset top-1/2 rtl:left-[25px] absolute -translate-y-1/2 ").showHidePassword 
-
-
                               div.btns.flex.justify-end.items-center.gap-3
                                 button.text-xs.btn.btn-secondary.text-white.py-2.prev-2.prev(class="!w-fit !m-0") Previous
                                 button.text-xs.btn.btn-primary.text-white.py-2.submit(class="!w-fit !m-0") Submit
@@ -346,10 +349,13 @@ html(lang='en')
                           |                   &lt;label for="name"&gt;Username&lt;/label&gt;
                           |                   &lt;input type="text" id="name" placeholder="Enter your first name" required&gt;First Name&lt;/input&gt;
                           |               &lt;/div&gt;
-                          |               &lt;div&gt;
-                          |                   &lt;label for="password1"&gt;Password&lt;/label&gt;
-                          |                   &lt;input type="password" id="password1" placeholder="Enter your first name" required&gt;First Name&lt;/input&gt;
-                          |               &lt;/div&gt;
+                          |           &lt;div class="relative"&gt;
+                          |               &lt;input type="text" id="password2" placeholder='Enter your password' required=''&gt;&lt;/input&gt; 
+                          |               &lt;div class="password-icon"&gt;
+                          |                  &lt;i data-feather="eye" class="showHidePassword cursor-pointer w-4 h-4 stroke-title right-[25px] rtl:right-unset top-1/2 rtl:left-[25px] absolute -translate-y-1/2"&gt; REMIND ME LATER &lt;/i&gt;
+                          |                  &lt;i data-feather="eye-off" class="showHidePassword cursor-pointer w-4 h-4 stroke-title right-[25px] rtl:right-unset top-1/2 rtl:left-[25px] absolute -translate-y-1/2"&gt; REMIND ME LATER &lt;/i&gt;
+                          |               &lt;/div&gt; 
+                          |           &lt;/div&gt;
                           |               &lt;div class="flex items-center justify-end"&gt;
                           |                   &lt;button class="text-xs btn btn-primary text-white py-2 prev-2 prev !w-fit !m-0"&gt;Previous&lt;/button&gt;
                           |                   &lt;button class="text-xs btn btn-primary text-white py-2 submit !w-fit !m-0"&gt;Submit&lt;/button&gt;
@@ -358,9 +364,6 @@ html(lang='en')
                           |       &lt;/form&gt;
                           |    &lt;/div&gt;
                           |&lt;/div&gt;
-
-
-
 
         // Page Body End 
         +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
