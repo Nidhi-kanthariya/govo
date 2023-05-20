@@ -66,12 +66,13 @@ html(lang='en')
                           div
                             label(for='email1') Email
                             input(type='email' id="email1" placeholder='Enter your email id' required='')
-                          div.relative
+                          div
                             label(for='password2') Password
-                            input(type='password' id="password2" required='' placeholder="Enter your Password")
-                            div.password-icon
-                              i(data-feather="eye" class="feather-eye2 cursor-pointer w-4 h-4 stroke-title right-[25px] rtl:right-unset top-1/2 rtl:left-[25px] absolute -translate-y-1/2 ").showHidePassword 
-                              i(data-feather="eye-off" class="feather-eye-off2 cursor-pointer w-4 h-4 stroke-title right-[25px] rtl:right-unset top-1/2 rtl:left-[25px] absolute -translate-y-1/2 ").showHidePassword 
+                            div.relative
+                              input(type='password' id="password2" required='' placeholder="Enter your Password")
+                              div.password-icon
+                                i(data-feather="eye" class="feather-eye2 cursor-pointer w-4 h-4 stroke-title right-[25px] rtl:right-unset top-1/2 rtl:left-[25px] absolute -translate-y-1/2 ").showHidePassword 
+                                i(data-feather="eye-off" class="feather-eye-off2 cursor-pointer w-4 h-4 stroke-title right-[25px] rtl:right-unset top-1/2 rtl:left-[25px] absolute -translate-y-1/2 ").showHidePassword 
 
                           div.flex.justify-end.items-center
                             button.btn.btn-primary.text-white.text-xs.font-semibold(type='submit' class="py-2 !m-0 !w-fit") Submit
