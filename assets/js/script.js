@@ -410,6 +410,7 @@ const acceptCallStart = document.querySelector('.accept-call-start');
 const CallStartBtn = document.getElementsByClassName('call-start-btn');
 const CallStartShow = document.querySelector('.call-start-show');
 const CallEnd = document.querySelector('.call-end');
+const CallStartEnd = document.querySelector('.call-start-end');
 
 CallEnd?.addEventListener('click', function () {
   this.closest('.accept-call-end')?.classList.add('hide');
@@ -429,6 +430,10 @@ for (var i = 0; i < CallStartBtn.length; i++) {
     acceptCallStart.classList.add('show');
   });
 }
+
+CallStartEnd?.addEventListener('click', function () {
+  acceptCallStart?.classList.remove('show');
+});
 
 
 /*=====================

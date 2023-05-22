@@ -8,7 +8,7 @@
       @apply border-b border-border-light dark:border-border-dark;
       tr {
         th {
-          @apply py-[.6875rem] px-[.3438rem] pt-0 first:pl-0 last:pr-0 text-xs font-semibold capitalize text-content3 rtl:text-right;
+          @apply py-[.6875rem] px-[.3438rem] pt-0 first:pl-0 last:pr-0 text-xs font-bold capitalize text-title rtl:text-right;
         }
       }
     }

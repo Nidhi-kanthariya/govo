@@ -4971,9 +4971,9 @@ code[class*="language-"],
   font-size: 0.875rem;
   line-height: 1.4;
   letter-spacing: 0.025rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: capitalize;
-  color: var(--content3);
+  color: var(--title);
 }
 
 .table thead tr th:first-child {
