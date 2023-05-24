@@ -62,7 +62,7 @@ html(lang='en')
     include ../../components/customizer
 
     //- Voice call modal
-    div.modal-main.accept-call-start
+    div.modal-main.accept-call-start 
       input#voice-call-modal(class="" name="voice-call-modal" type='checkbox')
       label.modal-overlay(class="" for='voice-call-modal')
       div.modal.modal-center(class="max-w-[450px] 2md:!w-full rounded-xl")
@@ -79,8 +79,8 @@ html(lang='en')
                 li.cursor-pointer.call-start-end  
                   label(for="voice-call-modal")
                     +SVG_ICON("Call","w-[4rem] h-[4rem] 2lg:w-[3.5rem] 2lg:h-[3.5rem] sm:w-[3rem] sm:h-[3rem] p-[12px] stroke-white bg-danger rounded-full rotate-[132deg] cursor-pointer")
-    //- Accept call modal
-    div.modal-main.accept-call-end
+    //- Accept call modal  
+    div.modal-main.accept-call-end 
       input#accept-call-modal(class="" name="accept-call-modal" type='checkbox')
       label.modal-overlay(class="" for='accept-call-modal')
       div.modal.modal-center(class="max-w-[450px] 2md:!w-full rounded-xl")

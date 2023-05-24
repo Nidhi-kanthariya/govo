@@ -11,43 +11,27 @@ var swiper = new Swiper(".product-slides", {
         el: ".swiper-pagination",
         clickable: true,
     },
-    breakpoints: { 
+    breakpoints: {
         0: {
             slidesPerView: 1,
             centeredSlides: true,
             spaceBetween: 15,
         },
-        471: {
+        451: {
             slidesPerView: 2,
             spaceBetween: 25,
         },
-        875:{
-            slidesPerView: 2, 
+        768: {
+            slidesPerView: 3,
             spaceBetween: 25,
         },
-        991:{
+        992: {
             slidesPerView: 2,
             spaceBetween: 25,
         },
-        1095:{
-            slidesPerView: 2,
-            spaceBetween: 25,
-        },
-        1199:{
-            slidesPerView: 2,
-            spaceBetween: 25,
-        },
-        1399:{
-            slidesPerView: 2,
-            spaceBetween: 15,
-        },
-        1497: {
+        1499: {
             slidesPerView: 3,
             spaceBetween: 27,
-        },
-        1721: {
-            slidesPerView: 3,
-            spaceBetween: 30,
         },
     },
 });

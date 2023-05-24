@@ -10,7 +10,7 @@ mixin widget4(data)
           svg(class=`strong-hover-shake fill-${data.status} 2xl:w-[20px] 2xl:h-[20px] 3xl:w-[18px] 3xl:h-[18px] lg:w-[18px] lg:h-[18px] 2sm:w-4 2sm:h-4 6xl:w-4 6xl:h-4 w-5 h-5 relative z-[2]`)  
             use(href=`../../../assets/svg/bold_sprite.svg#${data.icon}`)
         div 
-          h5(class="text-base font-bold text-content3 5xl:text-sm  2xl:text-3xs xl:text-base")= data.title
+          h5(class="text-base font-bold text-content3 5xl:text-sm 4xl:text-xs 2xl:text-2xs xl:text-base")= data.title
           h2(class="text-2xl font-extrabold text-title 5xl:text-sm 2xl:text-3xs xl:text-base")= data.profit
     div(class="block col-span-5 5xl:col-span-4 2xl:col-span-5 2lg:col-span-4 3sm:col-span-4")
       if(data.chart)

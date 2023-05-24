@@ -1,11 +1,11 @@
 /*=======/Total Sell Bar Spark line/=======*/
 const totalSellBarChart = {
   series: [{
-      data: [40, 25, 60, 15, 40, 55, 35],
-    },
-    {
-      data: [60, 50, 15, 35, 55, 25, 40],
-    },
+    data: [40, 25, 60, 15, 40, 55, 35],
+  },
+  {
+    data: [60, 50, 15, 35, 55, 25, 40],
+  },
   ],
   chart: {
     type: 'bar',
@@ -45,39 +45,39 @@ const totalSellBarChart = {
   },
   tooltip: toolTipMini,
   responsive: [{
-      breakpoint: 1700,
-      options: {
-        chart: {
-          // height: 86,
-          // width: 80, 
+    breakpoint: 1700,
+    options: {
+      chart: {
+        // height: 86,
+        // width: 80, 
+      },
+    },
+  },
+  {
+    breakpoint: 1400,
+    options: {
+      plotOptions: {
+        bar: {
+          columnWidth: '40%',
+          borderRadius: 5,
         },
       },
     },
-    {
-      breakpoint: 1400,
-      options: {
-        plotOptions: {
-          bar: {
-            columnWidth: '40%',
-            borderRadius: 5,
-          },
+  },
+  {
+    breakpoint: 376,
+    options: {
+      chart: {
+        height: 80,
+      },
+      plotOptions: {
+        bar: {
+          columnWidth: '60%',
+          borderRadius: 5,
         },
       },
     },
-    {
-      breakpoint: 376,
-      options: {
-        chart: {
-          height: 80,
-        },
-        plotOptions: {
-          bar: {
-            columnWidth: '60%',
-            borderRadius: 5,
-          },
-        },
-      },
-    },
+  },
   ],
 };
 
@@ -288,116 +288,116 @@ const totalExpensesLineChart = {
     lineCap: 'round',
   },
   responsive: [{
-      breakpoint: 1700,
-      options: {
-        chart: {
-          height: 105,
-          width: 100,
-        },
+    breakpoint: 1700,
+    options: {
+      chart: {
+        height: 105,
+        width: 100,
+      },
 
-        plotOptions: {
-          radialBar: {
-            hollow: {
-              size: '42%',
-            },
+      plotOptions: {
+        radialBar: {
+          hollow: {
+            size: '42%',
+          },
 
-            dataLabels: {
-              value: {
-                fontSize: '13px',
-              },
+          dataLabels: {
+            value: {
+              fontSize: '13px',
             },
           },
         },
       },
     },
-    {
-      breakpoint: 1600,
-      options: {
-        chart: {
-          height: 100,
-        },
+  },
+  {
+    breakpoint: 1600,
+    options: {
+      chart: {
+        height: 100,
       },
     },
-    {
-      breakpoint: 1460,
-      options: {
-        chart: {
-          height: 90,
-        },
-        plotOptions: {
-          radialBar: {
-            hollow: {
-              size: '35%',
-            },
-            dataLabels: {
-              value: {
-                fontSize: '13px',
-              },
+  },
+  {
+    breakpoint: 1460,
+    options: {
+      chart: {
+        height: 90,
+      },
+      plotOptions: {
+        radialBar: {
+          hollow: {
+            size: '35%',
+          },
+          dataLabels: {
+            value: {
+              fontSize: '13px',
             },
           },
         },
       },
     },
-    {
-      breakpoint: 1400,
-      options: {
-        chart: {
-          height: 100,
-        },
-        plotOptions: {
-          radialBar: {
-            hollow: {
-              size: '42%',
-            },
-            dataLabels: {
-              value: {
-                fontSize: '13px',
-              },
+  },
+  {
+    breakpoint: 1400,
+    options: {
+      chart: {
+        height: 100,
+      },
+      plotOptions: {
+        radialBar: {
+          hollow: {
+            size: '42%',
+          },
+          dataLabels: {
+            value: {
+              fontSize: '13px',
             },
           },
         },
       },
     },
-    {
-      breakpoint: 876,
-      options: {
-        chart: {
-          height: 110,
-        },
-        plotOptions: {
-          radialBar: {
-            hollow: {
-              size: '42%',
-            },
-            dataLabels: {
-              value: {
-                fontSize: '13px',
-              },
+  },
+  {
+    breakpoint: 876,
+    options: {
+      chart: {
+        height: 110,
+      },
+      plotOptions: {
+        radialBar: {
+          hollow: {
+            size: '42%',
+          },
+          dataLabels: {
+            value: {
+              fontSize: '13px',
             },
           },
         },
       },
     },
-    {
-      breakpoint: 376,
-      options: {
-        chart: {
-          height: 110,
-        },
-        plotOptions: {
-          radialBar: {
-            hollow: {
-              size: '42%',
-            },
-            dataLabels: {
-              value: {
-                fontSize: '13px',
-              },
+  },
+  {
+    breakpoint: 376,
+    options: {
+      chart: {
+        height: 110,
+      },
+      plotOptions: {
+        radialBar: {
+          hollow: {
+            size: '42%',
+          },
+          dataLabels: {
+            value: {
+              fontSize: '13px',
             },
           },
         },
       },
     },
+  },
   ],
 };
 
@@ -446,12 +446,37 @@ const customerRadialchart = {
     lineCap: 'round',
   },
   series: [70, 55, 40],
-  colors: ['rgba(var(--primary),1)', 'rgba(var(--secondary), 1)', 'var(--title)', ],
-  responsive: [{
-      breakpoint: 675,
+  colors: ['rgba(var(--primary),1)', 'rgba(var(--secondary), 1)', 'var(--title)',],
+  responsive: [
+    // {
+    //   breakpoint: 1850,
+    //   options: {
+    //     chart: {
+    //       height: 315,
+    //     },
+    //   },
+    // },
+    {
+      breakpoint: 1600,
       options: {
         chart: {
-          height: 280,
+          height: 295,
+        },
+      },
+    },
+    {
+      breakpoint: 1400,
+      options: {
+        chart: {
+          height: 300,
+        },
+      },
+    },
+    {
+      breakpoint: 992,
+      options: {
+        chart: {
+          height: 297,
         },
       },
     },
@@ -491,10 +516,10 @@ var salesSummaryChart = {
   }, {
     name: 'Sales',
     data: [5000, 5500, 5800, 5500, 6500, 5600, 6350, 6000, 5500, 5800]
-  }], 
+  }],
   colors: ['rgba(var(--secondary))', 'rgba(var(--primary))'],
   chart: {
-    height: 275, 
+    height: 280,
     type: 'area',
     toolbar: {
       tools: {
@@ -541,12 +566,12 @@ var salesSummaryChart = {
       //     return val
       //   }
       // }
-    }, 
+    },
   },
   xaxis: {
     categories: ["Jan 01", "Jan 02", "Jan 03", "Jan 04", "Jan 05", "Jan 06", "Jan 07", "Jan 08", "Jan 09", "Jan 10"],
     type: 'datetime',
-    labels: { 
+    labels: {
       style: {
         colors: ['var(--content)', 'var(--content)', 'var(--content)', 'var(--content)', 'var(--content)', 'var(--content)', 'var(--content)', 'var(--content)', 'var(--content)', 'var(--content)'],
         fontWeight: 400,
@@ -578,18 +603,26 @@ var salesSummaryChart = {
     },
   },
   responsive: [{
-    breakpoint: 1199,
+    breakpoint: 1200,
     options: {
       chart: {
-        height: 320,
+        height: 335,
       },
     },
   },
   {
-    breakpoint: 1299,
+    breakpoint: 992,
     options: {
       chart: {
-        height: 270,
+        height: 290,
+      },
+    },
+  },
+  {
+    breakpoint: 425,
+    options: {
+      chart: {
+        height: 260,
       },
     },
   },
@@ -598,45 +631,45 @@ var salesSummaryChart = {
     options: {
       series: [{
         name: 'Orders',
-        data: [6000, 6500, 6800, 6500, 6800, 6500, 6650,6500 ]
+        data: [6000, 6500, 6800, 6500, 6800, 6500, 6650, 6500]
       }, {
         name: 'Sales',
-        data: [5000, 5500, 5800, 5500, 6500, 5600, 6350 ,6000]
-      }], 
+        data: [5000, 5500, 5800, 5500, 6500, 5600, 6350, 6000]
+      }],
       xaxis: {
-        categories: ["Jan 01", "Jan 02", "Jan 03", "Jan 04", "Jan 05", "Jan 06",  "Jan 07" ,"Jan 08" ],
-        type: 'datetime',       
+        categories: ["Jan 01", "Jan 02", "Jan 03", "Jan 04", "Jan 05", "Jan 06", "Jan 07", "Jan 08"],
+        type: 'datetime',
       },
     },
   },
   {
     breakpoint: 499,
-    options: { 
+    options: {
       series: [{
         name: 'Orders',
         data: [6000, 6500, 6800, 6500, 6800, 6500, 6650, 6500, 5900, 6000]
       }, {
         name: 'Sales',
         data: [5000, 5500, 5800, 5500, 6500, 5600, 6350, 6000, 5500, 5800]
-      }], 
+      }],
       xaxis: {
-        categories: ["Jan 01", "Jan 02", "Jan 03", "Jan 04", "Jan 05", "Jan 06",  "Jan 07", "Jan 08", "Jan 09" , "Jan 10" ],
-        type: 'datetime',       
+        categories: ["Jan 01", "Jan 02", "Jan 03", "Jan 04", "Jan 05", "Jan 06", "Jan 07", "Jan 08", "Jan 09", "Jan 10"],
+        type: 'datetime',
       },
     },
   },
-],
+  ],
 };
 
 var salesSummaryChartEl = new ApexCharts(document.querySelector("#salesSummaryChart"), salesSummaryChart);
 salesSummaryChartEl.render();
 
- 
+
 /*=======/Orders Status (May 10)/=======*/
 const OrdersStatus = {
   series: [{
     data: [60, 78, 35, 60, 20],
-  }, ],
+  },],
   chart: {
     type: 'bar',
     toolbar: {
@@ -702,41 +735,62 @@ const OrdersStatus = {
   },
   tooltip: toolTipMini,
   responsive: [{
-      breakpoint: 1700,
-      options: {
-        chart: {
-          height: 320,
+    breakpoint: 1700,
+    options: {
+      chart: {
+        height: 315,
+      },
+    },
+  },
+  {
+    breakpoint: 1600,
+    options: {
+      chart: {
+        height: 295,
+      },
+    },
+  },
+  {
+    breakpoint: 1400,
+    options: {
+      plotOptions: {
+        bar: {
+          columnWidth: '25%',
+          borderRadius: 9,
         },
       },
     },
-    {
-      breakpoint: 1400,
-      options: {
-        plotOptions: {
-          bar: {
-            columnWidth: '25%',
-            borderRadius: 9,
-          },
-        },
-        chart: {
-          height: 290,
+  },
+  {
+    breakpoint: 1200,
+    options: {
+      chart: {
+        height: 290,
+      },
+    },
+  },
+  {
+    breakpoint: 992,
+    options: {
+      chart: {
+        height: 270,
+      },
+    },
+  },
+  {
+    breakpoint: 426,
+    options: {
+      chart: {
+        height: 250,
+      },
+      plotOptions: {
+        bar: {
+          columnWidth: '25%',
+          borderRadius: 9,
         },
       },
     },
-    {
-      breakpoint: 376,
-      options: {
-        chart: {
-          height: 300,
-        },
-        plotOptions: {
-          bar: {
-            columnWidth: '25%',
-            borderRadius: 9,
-          },
-        },
-      },
-    },
+  },
   ],
 };
 

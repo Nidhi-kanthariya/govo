@@ -11,8 +11,8 @@ const revenueChart = {
     type: 'bar',
     width: '100%',
     height: 67,
-    sparkline: { 
-      enabled: true, 
+    sparkline: {
+      enabled: true,
     },
   },
   plotOptions: {
@@ -152,8 +152,7 @@ const earningChart = {
     options: {
       chart: {
         height: 250,
-
-        offsetY: 20,
+        // offsetY: 20,
         sparkline: {
           enabled: true,
         },
@@ -166,7 +165,7 @@ const earningChart = {
       chart: {
         height: 280,
 
-        offsetY: 10,
+        offsetY: 5,
         sparkline: {
           enabled: true,
         },
@@ -175,12 +174,12 @@ const earningChart = {
   },
   {
     breakpoint: 1499,
-    options:{
-      chart:{
-        height: 250, 
-      } 
+    options: {
+      chart: {
+        height: 250,
+      }
     }
-  }, 
+  },
   {
     breakpoint: 1200,
     options: {
@@ -190,6 +189,11 @@ const earningChart = {
         offsetY: 10,
         sparkline: {
           enabled: true,
+        },
+      },
+      grid: {
+        padding: {
+          top: -10,
         },
       },
     },
@@ -263,7 +267,7 @@ const SellOverview = {
     offsetY: 0,
     toolbar: {
       show: false,
-    }, 
+    },
   },
   dataLabels: {
     enabled: false,
@@ -274,7 +278,7 @@ const SellOverview = {
     gradient: {
       shadeIntensity: 1,
       opacityFrom: 0.8,
-      opacityTo: 0.4, 
+      opacityTo: 0.4,
       colorStops: [{
         offset: 0,
         color: 'rgba(var(--primary),0.5)',
@@ -283,7 +287,7 @@ const SellOverview = {
       {
         offset: 20,
         color: 'rgba(var(--primary),0.3)',
-        opacity: 1, 
+        opacity: 1,
       },
       {
         offset: 60,
@@ -332,7 +336,7 @@ const SellOverview = {
     },
   },
   yaxis: {
-    show: true, 
+    show: true,
     showAlways: true,
     showForNullSeries: true,
     logBase: 100,
@@ -345,14 +349,14 @@ const SellOverview = {
       // },
       formatter: function (value) {
         return value + "k";
-      }, 
+      },
       show: true,
       align: 'right',
       minWidth: 0,
       maxWidth: 34,
       style: {
         ...fontCommon,
-      }, 
+      },
     },
   },
   xaxis: {
@@ -381,18 +385,18 @@ const SellOverview = {
   },
 
   responsive: [{
-    breakpoint: 675,
+    breakpoint: 1600,
     options: {
       chart: {
-        height: 280,
+        height: 340,
       },
     },
   },
   {
-    breakpoint: 1799,
+    breakpoint: 675,
     options: {
       chart: {
-        height: 300,
+        height: 280,
       },
     },
   },
@@ -406,11 +410,11 @@ const SellOverview = {
   },
   {
     breakpoint: 375,
-    options: { 
-      chart: {  
-        height: 250, 
+    options: {
+      chart: {
+        height: 250,
       },
-      xaxis:{
+      xaxis: {
         labels: {
           style: {
             fontSize: '12px',

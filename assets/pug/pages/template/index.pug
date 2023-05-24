@@ -5,7 +5,7 @@
 -var feather= true;
 
 //- custom select
--var customSelect= true;
+-var customSelect= true; 
 
 //- customizer 
 -var customizer=true;
@@ -15,7 +15,7 @@
 -var uniqueApex=true;
 
 //- Breadcrumbs 
--var pageTitle="Unique Dashboard";
+-var pageTitle="Unique";
 -var breadcrumb=['dashboard','unique'];   
 
 //- all JSON  
@@ -39,7 +39,7 @@ html(lang='en')
         // Page Body Start  
         div.page-body
           div.grid.grid-cols-12.gap-card-gap  
-            div.col-span-3.ratio_109(class="4xl:col-span-4 lg:col-span-6 lg:-order-2 2md:col-span-12")
+            div.col-span-3.ratio_109(class="4xl:col-span-4 lg:col-span-5 2lg:col-span-6 lg:-order-2 2md:col-span-12")
               include ../../components/welcome-card  
             div.col-span-6(class="4xl:col-span-8 lg:col-span-12 lg:-order-1")
               div.card  
@@ -87,7 +87,7 @@ html(lang='en')
                   +card-header("Audit log","setting", HISTORY_DROPDOWN)
                 div.card-body
                   +audit-car(AUDIT_LOG)
-            div.col-span-3(class="4xl:col-span-4 lg:-order-2 lg:col-span-6 2md:col-span-12")
+            div.col-span-3(class="4xl:col-span-4 lg:-order-2 lg:col-span-7 2lg:col-span-6 2md:col-span-12")
               div.card 
                 div.card-header
                   +card-header("News & Update")

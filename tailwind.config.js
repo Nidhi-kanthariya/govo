@@ -45,7 +45,7 @@ module.exports = {
       '3xl': {
         max: '1499px'
       },
-      '2xl': { 
+      '2xl': {
         max: '1399px'
       },
       xl: {
@@ -168,6 +168,7 @@ module.exports = {
         'success-light': 'var(--success-light)',
         info: 'var(--info)',
         'info-light': 'var(--info-light)',
+        'info-extralight': 'var(--info-extralight)',
         warning: 'var(--warning)',
         'warning-light': 'var(--warning-light)',
         'warning-extralight': 'var(--warning-extralight)',
