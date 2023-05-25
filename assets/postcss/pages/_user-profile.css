@@ -29,5 +29,12 @@
         }
       }
     }
+    .post-media{
+      a{
+        [dir="rtl"] &{
+          @apply pl-0 pr-2;
+        }
+      }
+    }
   }
 }

@@ -97,7 +97,7 @@
                                   @apply dark:border-border-dark;
 
                                   .fc-scrollgrid-sync-inner {
-                                    @apply p-2 sm:p-0 dark:border-border-dark;
+                                    @apply p-2 2sm:p-0 dark:border-border-dark;
                                   }
                                 }
                               }
@@ -154,7 +154,7 @@
           @apply 2md:!flex 2md:flex-wrap 2md:items-center 2md:gap-3
         } 
         .fc-col-header-cell-cushion { 
-          @apply 2md:!whitespace-normal 2md:text-3xs 2md:p-0; 
+          @apply 2md:!whitespace-normal 2md:text-3xs 2sm:leading-none 2md:p-0; 
         }
       }
     }

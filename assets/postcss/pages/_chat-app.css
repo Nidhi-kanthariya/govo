@@ -16,15 +16,15 @@
     /* width: -webkit-fill-available; */
     &.right-hide-show-sidebar {
       @apply !right-[-31.25rem];
-    }
+    } 
   }
 
   .left-sidebar-aside {
     @apply lg:z-[3] transition-all duration-1000 lg:absolute lg:!left-[-31.25rem] lg:top-0 lg:bg-white lg:w-[23.5625rem] sm:w-[18.1875rem];
 
-    &.left-hide-show-sidebar {
-      @apply !left-0;
-    }
+    &.left-hide-show-sidebar { 
+      @apply !left-0; 
+    } 
   }
 
   .chat-main {

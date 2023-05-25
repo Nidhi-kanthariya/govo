@@ -27,7 +27,7 @@ mixin email-data(data)
                 img(src=`../../assets/images/avatar/${dataItem.image}`, alt=`${dataItem.title}`)
             div(class="w-[calc(100%_-_40px)]")
               h4.text-xs.font-medium.truncate.text-title(class="leading-none whitespace-normal lg:text-2xs line-clamp-1")=dataItem.title 
-              span.text-content.truncate.block(class="mt-1 whitespace-normal line-clamp-1")=dataItem.subTitle
+              span.text-content.block(class="mt-1 whitespace-normal md:line-clamp-2 sm:line-clamp-1")=dataItem.subTitle
         div     
           span.text-content(class="text-3xs")=dataItem.time
 

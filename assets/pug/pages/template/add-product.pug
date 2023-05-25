@@ -50,14 +50,14 @@ html(lang='en')
             div.col-span-8(class="pr-4 border-r dark:border-r rtl:!border-r-0 rtl:!pr-4 dark:border-border-dark 2lg:col-span-12 2lg:border-b 2lg:pb-4 2lg:border-r-0 border-border-light rtl:border-l rtl:2lg:border-l-0  rtl:pl-4 ")
               div 
                 h5.text-title.font-semibold.mb-3 Create Product 
-                form(class="flex flex-col gap-4 m-0 theme-form")
+                form(class="flex flex-col gap-4 m-0 sm:gap-3 theme-form")
                   div 
                     label(for="productName") Product Name
                     input(type="text" id="productName" value="Women's Latest Bags" required)
                   div 
                     label(for="description") Product Description 
                     textarea(placeholder="A bag that holds your entire universe!" class="p-[11px] dark:border-border-dark focus:!border-border-light").w-full.border.border-border-light.rounded-5.text-xs.text-content
-                  div.grid.grid-cols-12.gap-5
+                  div.grid.grid-cols-12.gap-5(class="sm:gap-3 sm:-mt-1")
                     div.col-span-6(class="2md:col-span-6 sm:col-span-12")
                       label(for="sku") SKU 
                       input(type="text" id="sku" value="Women's Latest Bags" required)                                            
@@ -71,7 +71,7 @@ html(lang='en')
                         option(value='4') Adidas
                         option(value='5') Puma
                         option(value='6') Nike
-                  div.grid.grid-cols-12.gap-5
+                  div.grid.grid-cols-12.gap-5(class="sm:gap-3")
                     div.col-span-4(class="2md:col-span-6 sm:col-span-12")
                       label(for="gender") Gender
                       select.form-select.block.w-full.px-3.text-xs.font-normal.text-content3.bg-white.bg-clip-padding.bg-no-repeat.border.border-border-light.rounded-5.transition.ease-in-out.m-0(class='min-w-[150px] py-[9px] dark:border-border-dark dark:bg-sidebar-dark2 ' id="gender" aria-label='Default select example')
@@ -86,7 +86,7 @@ html(lang='en')
                       div.flex.items-center
                         span.flex.items-center.justify-center.bg-gray-light.text-title.border.border-border-light.rounded-5.rounded-br-none.rounded-tr-none.font-medium.text-xs(class="!leading-[18px] py-[12px] dark:bg-sidebar-dark2  dark:border-border-dark px-[11px] rtl:rounded-tr-5 rtl:rounded-br-5 rtl:rounded-tl-none rtl:rounded-bl-none") $
                         input(type="text" id="price" placeholder="300" class="p-[11px]").w-full.rounded-5.border.border-border-light.text-xs.text-content(class="!rounded-bl-none !rounded-tl-none rtl:!rounded-tr-none rtl:!rounded-br-none rtl:!rounded-tl-5 rtl:!rounded-bl-5")                                       
-                  div.grid.grid-cols-12.gap-5 
+                  div.grid.grid-cols-12.gap-5(class="sm:gap-3") 
                     div.col-span-6(class="2md:col-span-6 sm:col-span-12")
                       label(for="tax") Tax
                       select.form-select.block.w-full.px-3.text-xs.font-normal.text-content3.bg-white.bg-clip-padding.bg-no-repeat.border.border-border-light.rounded-5.transition.ease-in-out.m-0(class='min-w-[150px] py-[9px] dark:border-border-dark dark:bg-sidebar-dark2' id="tax" aria-label='Default select example')
@@ -108,7 +108,7 @@ html(lang='en')
             div.col-span-4(class="2lg:col-span-12")
               div(class='dark:border-b dark:border-border-dark').border-b.border-border-light.pb-3
                 h5.text-title.font-semibold.mb-3 Publish
-                form(class="flex flex-col gap-4 m-0 theme-form")
+                form(class="flex flex-col gap-4 m-0 sm:gap-3 theme-form")
                   div 
                     label(for="publishStatus") Status
                     select.form-select.block.w-full.px-3.text-xs.font-normal.text-content3.bg-white.bg-clip-padding.bg-no-repeat.border.border-border-light.rounded-5.transition.ease-in-out.m-0(class='min-w-[150px] py-[9px] dark:border-border-dark  dark:bg-sidebar-dark2' id="publishStatus" aria-label='Default select example')
@@ -142,7 +142,7 @@ html(lang='en')
                     textarea(placeholder="Enter Short description for product.." row="3" id="productShortDescription" class="dark:border-border-dark p-[11px] focus:!border-border-light").w-full.border.border-border-light.rounded-5.text-xs.text-content
               div.pt-3
                 h5.text-title.font-semibold.mb-3 General Info
-                form(class="flex flex-col gap-4 m-0 theme-form")
+                form(class="flex flex-col gap-4 m-0 sm:gap-3 theme-form")
                   div 
                     label(for="manufactureName") Manufacturer Name
                     input(type="text" id="manufactureName" placeholder="Enter manufacture name.." required)

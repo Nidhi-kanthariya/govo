@@ -44,7 +44,7 @@ html(lang='en')
             div.grid.grid-cols-12.gap-card-gap
               div.col-span-12
                 div.user-bg.card.p-0
-                  img(src="../../assets/images/user-app/bg.jpg" alt="" class="w-full h-80")
+                  img(src="../../assets/images/user-app/bg.jpg" alt="" class="w-full h-80 md:h-64 sm:h-40")
 
             div.grid.grid-cols-12.gap-card-gap(class="user-profile-detail px-body-space mt-[-70px] relative 3sm:px-unset")
               div.col-span-3(class="4xl:col-span-4 lg:col-span-12")
@@ -58,8 +58,8 @@ html(lang='en')
                               img(src='../../assets/images/avatar/38.jpg' alt='girl in yellow jacket' class="rounded-full")
                           div.flex.flex-col.gap-2
                             div.text-center 
-                              p.text-content-title(class="font-semibold text-base dark:text-white") Emayila Sidorshina
-                              p.text-content-title(class="font-semibold text-sm dark:text-content") Freelancer
+                              p.text-content-title(class="text-base font-semibold dark:text-white") Emayila Sidorshina
+                              p.text-content-title(class="text-sm font-semibold dark:text-content") Freelancer
                           div.flex.items-center.gap-6
                             div.text-center
                               p(class="dark:text-content").text-content-title.font-semibold.text-xs 359 
@@ -75,7 +75,7 @@ html(lang='en')
                       div.card-header 
                         h6.font-bold Social Media  
                       div.card-body.flex.flex-col.gap-3.checkout-detail
-                        form.social(class="flex flex-col gap-1 theme-form m-0")
+                        form.social(class="flex flex-col gap-1 m-0 theme-form")
                           div.flex.items-center.gap-4
                             span(class="bg-gray-light dark:bg-sidebar-dark2 rounded-full btn !text-facebook")
                               i.fa-brands.fa-facebook-f(class="w-4 h-4")
@@ -103,10 +103,10 @@ html(lang='en')
                             span(class="bg-gray-light dark:bg-sidebar-dark2 rounded-full btn !text-danger")
                               i.fa-solid.fa-rss(class="w-4 h-4")
                             input(type="text" id="firstName" class="dark:border-border-dark" value="Sidorshinaemayila12" class="!py-2" required)
-              div.col-span-9(class="4xl:col-span-8 lg:col-span-12 w-full tabs flex flex-col") 
+              div.col-span-9(class="flex flex-col w-full 4xl:col-span-8 lg:col-span-12 tabs") 
                 div.card.gap-1
                   div.card-header.flex.items-center
-                    div.tab-links.flex.items-center.justify-start.w-full(class="2md:w-full border-b border-border-light dark:border-b dark:border-border-dark md:flex-col")
+                    div.tab-links.flex.items-center.justify-start.w-full(class="border-b 2md:w-full border-border-light dark:border-b dark:border-border-dark md:flex-col")
                       button.tab.tabs-bordered.user-tab.flex.items-center.justify-center.tab-active(data-tabFilter="1" class="text-content3 !flex-row !gap-2 tab-link md:w-full")
                         i.fa-solid.fa-user(class="w-4 h-4 stroke-title-content3")
                         | Personal Detail
@@ -122,14 +122,14 @@ html(lang='en')
                   div.card-body
                     div.tabs-content.checkout-detail
                       div(data-tabContent="1" class="tab-pan  fade active show  border-none !px-1 !pb-0")
-                        form(class="theme-form flex flex-col gap-4 m-0")
+                        form(class="flex flex-col gap-4 m-0 theme-form")
                           div.grid.grid-cols-12.gap-5
                             div.col-span-6(class="sm:col-span-12")
                               label(for="firstName") First Name
-                              input(type="text" class="dark:border-border-dark"   id="firstName" value="Emayila" required)
+                              input(type="text" class="dark:border-border-dark" id="firstName" value="Emayila" required)
                             div.col-span-6(class="sm:col-span-12")
                               label(for="lastName") Last Name
-                              input(type="text" class="dark:border-border-dark"  id="lastName" value="Emayila" required)
+                              input(type="text" class="dark:border-border-dark" id="lastName" value="Emayila" required)
                           div.grid.grid-cols-12.gap-5
                             div.col-span-6(class="sm:col-span-12")
                               label(for="number") Contact No
@@ -169,7 +169,7 @@ html(lang='en')
                             a(href="javascript:void(0)").btn.btn-primary.text-xs.text-white.flex.items-center.gap-2(class="!w-fit justify-center !m-0 py-2" type='button') Cancel
 
                       div(data-tabContent="2" class="tab-pan fade group relative  border-none !px-1 !pb-0")
-                        form(class="theme-form flex flex-col gap-4 m-0 mb-2")                        
+                        form(class="flex flex-col gap-4 m-0 mb-2 theme-form")                        
                           h6(class="text-white").font-bold Change Password 
                           div.grid.grid-cols-12.gap-5
                             div.col-span-4(class="2md:col-span-12")
@@ -185,7 +185,7 @@ html(lang='en')
                             a(href="javascript:void(0)" class="!text-primary text-xs") Forgot Password?
                           div.flex.justify-end.items-center 
                             a(href="javascript:void(0)").btn.bg-primary.text-xs.text-white.flex.items-center.gap-2(class="!w-fit justify-center py-2 !m-0" type='button') Change Password
-                        form(class="theme-form flex flex-col gap-4 m-0 mb-2")    
+                        form(class="flex flex-col gap-4 m-0 mb-2 theme-form")    
                           div
                             h6(class="dark:text-white").font-bold Verification code
                             span(class="!mb-0 mt-2 !text-start") We have sent the code verification to your email address
@@ -202,7 +202,7 @@ html(lang='en')
                             a(href="javascript:void(0)").btn.bg-primary.text-xs.text-white.flex.items-center.gap-2(class="!w-fit justify-center py-2 !m-0" type='button') Submit
                         div.mb-2
                           h6(class="dark:text-white").font-bold.mb-2 Login History 
-                          div.flex.gap-3.items-center.justify-between(class="border-b border-border-light dark:border-b dark:border-border-dark last:border-none pb-3 last:pb-0 pt-3 first:pt-0") 
+                          div.flex.gap-3.items-center.justify-between(class="pt-3 pb-3 border-b border-border-light dark:border-b dark:border-border-dark last:border-none last:pb-0 first:pt-0") 
                             div.flex.items-center.gap-4 
                               i.fa-brands.fa-windows(class="w-5 h-5 text-primary")
                               div  
@@ -210,7 +210,7 @@ html(lang='en')
                                 span.text-content3.text-xs Dubai, 20 Jan 2023 23:07
                             div 
                               p.text-content3.text-xs Logout
-                          div.flex.gap-3.items-center.justify-between(class="border-b border-border-light dark:border-b dark:border-border-dark last:border-none pb-3 last:pb-0 pt-3 first:pt-0") 
+                          div.flex.gap-3.items-center.justify-between(class="pt-3 pb-3 border-b border-border-light dark:border-b dark:border-border-dark last:border-none last:pb-0 first:pt-0") 
                             div.flex.items-center.gap-4
                               i.fa-brands.fa-apple(class="w-5 h-5 text-title dark:text-primary")
                               div
@@ -218,7 +218,7 @@ html(lang='en')
                                 span.text-content3.text-xs  Australia, 16 Jan 2023 15:07
                             div
                               p.text-content3.text-xs Logout
-                          div.flex.gap-3.items-center.justify-between(class="border-b border-border-light dark:border-b dark:border-border-dark last:border-none pb-3 last:pb-0 pt-3 first:pt-0") 
+                          div.flex.gap-3.items-center.justify-between(class="pt-3 pb-3 border-b border-border-light dark:border-b dark:border-border-dark last:border-none last:pb-0 first:pt-0") 
                             div.flex.items-center.gap-4 
                               i.fa-solid.fa-mobile-screen(class="w-5 h-5 text-secondary")
                               div  
@@ -226,7 +226,7 @@ html(lang='en')
                                 span.text-content3.text-xs  India, 12 Jan 2023 17:07
                             div 
                               p.text-content3.text-xs Logout
-                          div.flex.gap-3.items-center.justify-between(class="border-b border-border-light dark:border-b dark:border-border-dark last:border-none pb-3 last:pb-0 pt-3 first:pt-0") 
+                          div.flex.gap-3.items-center.justify-between(class="pt-3 pb-3 border-b border-border-light dark:border-b dark:border-border-dark last:border-none last:pb-0 first:pt-0") 
                             div.flex.items-center.gap-4 
                               i.fa-solid.fa-robot(class="w-5 h-5 text-success")
                               div  
@@ -236,7 +236,7 @@ html(lang='en')
                               p.text-content3.text-xs Logout
 
                       div(data-tabContent="3" class="tab-pan fade group relative  border-none !px-1 !pb-0")
-                        form(class="theme-form flex flex-col gap-2 m-0")
+                        form(class="flex flex-col gap-2 m-0 theme-form")
                           div(id="newForm" class="flex flex-col gap-4 m-0")
                             div(id="1" class="flex flex-col gap-4 m-0")
                               div 
@@ -282,94 +282,94 @@ html(lang='en')
 
                       div(data-tabContent="4" class="tab-pan fade group relative  border-none !px-1 !pb-0")
                         div.flex.flex-col.gap-4
-                          div(class="border-b border-border-light border-dashed last:border-none pb-5 last:pb-0 dark:border-border-dark") 
+                          div(class="pb-5 border-b border-dashed border-border-light last:border-none last:pb-0 dark:border-border-dark") 
                             h6.font-bold(class="mb-[2px] dark:text-white") Password Manager
-                            div.flex.items-base.justify-between.gap-2(class="border-b border-border-light dark:border-b dark:border-border-dark last:border-none pb-4 pt-4 first:pt-0 last:pb-0")
+                            div.flex.items-base.justify-between.gap-2(class="pt-4 pb-4 border-b border-border-light dark:border-b dark:border-border-dark last:border-none first:pt-0 last:pb-0")
                               span.font-medium(class="text-[15px] dark:text-content3") Offer to save passwords
                               label.inline-flex.relative.items-center.cursor-pointer
                                 input.sr-only.peer(type='checkbox')
                                 span.w-7.h-4.bg-content.rounded-full.peer(class="peer-focus:outline-none peer-checked:after:translate-x-full peer-checked:after:content-white after:content-[''] after:absolute after:top-[3px] after:left-[2px] after:bg-white after:border-gray-light after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-primary")
-                            div(class="border-b border-border-light dark:border-b dark:border-border-dark last:border-none pb-4 pt-4 first:pt-0 last:pb-0")
+                            div(class="pt-4 pb-4 border-b border-border-light dark:border-b dark:border-border-dark last:border-none first:pt-0 last:pb-0")
                               span.font-medium(class="text-[15px] dark:text-content3") Auto Sign-in
                               div.flex.items-base.justify-between.gap-2
                                 p.text-content3.text-2xs Use saved credentials to log in automatically to websites and applications. If it's disabled, you'll always be prompted for confirmation before logging in to a website or app. 
                                 label.inline-flex.relative.items-base.cursor-pointer
                                   input.sr-only.peer(type='checkbox' checked)
                                   span.w-7.h-4.bg-content.rounded-full.peer(class="peer-focus:outline-none peer-checked:after:translate-x-full peer-checked:after:content-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-light after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-primary")
-                          div(class="border-b border-border-light dark:border-b dark:border-border-dark border-dashed last:border-none pb-5 last:pb-0 ") 
+                          div(class="pb-5 border-b border-dashed border-border-light dark:border-b dark:border-border-dark last:border-none last:pb-0 ") 
                             h6.font-bold(class="mb-[2px] dark:text-white") Payment Method
-                            div(class="border-b border-border-light last:border-none pb-4 pt-4 first:pt-0 last:pb-0 dark:border-b dark:border-border-dark")
+                            div(class="pt-4 pb-4 border-b border-border-light last:border-none first:pt-0 last:pb-0 dark:border-b dark:border-border-dark")
                               span.font-medium(class="text-[15px] dark:text-content3") Save and fill payment methods
                               div.flex.items-base.justify-between.gap-2 
                                 p.text-content3.text-2xs Utilizes your saved payment methods to complete payment forms 
                                 label.inline-flex.relative.items-base.cursor-pointer
                                   input.sr-only.peer(type='checkbox' checked)
                                   span.w-7.h-4.bg-content.rounded-full.peer(class="peer-focus:outline-none peer-checked:after:translate-x-full peer-checked:after:content-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-light after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-primary")
-                            div.flex.items-base.justify-between.gap-2(class="border-b dark:border-b dark:border-border-dark border-border-light last:border-none pb-4 pt-4 first:pt-0 last:pb-0")
+                            div.flex.items-base.justify-between.gap-2(class="pt-4 pb-4 border-b dark:border-b dark:border-border-dark border-border-light last:border-none first:pt-0 last:pb-0")
                               span.font-medium(class="text-[15px] dark:text-content3") Allow sites to check if you have payment methods saved
                               label.inline-flex.relative.items-base.cursor-pointer
                                 input.sr-only.peer(type='checkbox')
                                 span.w-7.h-4.bg-content.rounded-full.peer(class="peer-focus:outline-none peer-checked:after:translate-x-full peer-checked:after:content-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-light after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-primary")
-                          div(class="border-b border-border-light dark:border-b dark:border-border-dark border-dashed last:border-none pb-5 last:pb-0 ") 
+                          div(class="pb-5 border-b border-dashed border-border-light dark:border-b dark:border-border-dark last:border-none last:pb-0 ") 
                             h6.font-bold(class="mb-[2px] dark:text-white") Addresses
-                            div(class="border-b border-border-light last:border-none pb-4 pt-4 first:pt-0 last:pb-0 dark:border-b dark:border-border-dark")
+                            div(class="pt-4 pb-4 border-b border-border-light last:border-none first:pt-0 last:pb-0 dark:border-b dark:border-border-dark")
                               span.font-medium(class="text-[15px] dark:text-content3") Save and fill addresses
                               div.flex.items-base.justify-between.gap-2
                                 p.text-content3.text-2xs Includes details such contact details, email addresses, and delivery addresses.
                                 label.inline-flex.relative.items-base.cursor-pointer
                                   input.sr-only.peer(type='checkbox')
                                   span.w-7.h-4.bg-content.rounded-full.peer(class="peer-focus:outline-none peer-checked:after:translate-x-full peer-checked:after:content-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-light after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-primary")
-                          div(class="border-b border-border-light dark:border-b dark:border-border-dark border-dashed last:border-none pb-5 last:pb-0 ") 
+                          div(class="pb-5 border-b border-dashed border-border-light dark:border-b dark:border-border-dark last:border-none last:pb-0 ") 
                             h6.font-bold(class="mb-[2px] dark:text-white") Safe Browsing
-                            div(class="border-b border-border-light dark:border-b dark:border-border-dark last:border-none pb-4 pt-4 first:pt-0 last:pb-0")
+                            div(class="pt-4 pb-4 border-b border-border-light dark:border-b dark:border-border-dark last:border-none first:pt-0 last:pb-0")
                               div.radio-button.radio-md.primary(class="!gap-4")
                                 input#security1(type='radio' name='security')
-                                div.check(class="min-w-[1.15rem] !h-[1.15rem] before:!w-3 before:!h-3")
+                                div.check(class="min-w-[1.05rem] !h-[1.05rem] before:!w-[0.7rem] before:!h-[0.7rem] before:!top-[2px] before:!left-[2px]")
                                 label(for='security1' class="text-xs cursor-pointer text-[15px] font-medium") 
                                   p.font-medium(class="text-xs dark:text-content3") Enhanced protection   
                                   p.text-content3.text-2xs Faster, more proactive defense against malicious downloads, extensions, and websites. Warns you about password breaches. Needs surfing data to be provided to Google.                                                          
-                            div(class="border-b border-border-light dark:border-b dark:border-border-dark last:border-none pb-4 pt-4 first:pt-0 last:pb-0")
+                            div(class="pt-4 pb-4 border-b border-border-light dark:border-b dark:border-border-dark last:border-none first:pt-0 last:pb-0")
                               div.radio-button.radio-md.primary(class="!gap-4")
                                 input#security2(type='radio' name='security' checked)
-                                div.check(class="min-w-[1.15rem] !h-[1.15rem] before:!w-3 before:!h-3")
+                                div.check(class="min-w-[1.05rem] !h-[1.05rem] before:!w-[0.7rem] before:!h-[0.7rem] before:!top-[2px] before:!left-[2px]")
                                 label(for='security2' class="text-xs cursor-pointer text-[15px] font-medium") 
                                   p.font-medium(class="text-xs dark:text-content3") Standard protection 
                                   p.text-content3.text-2xs Standard protection against websites, downloads and extensions that are known to be dangerous
-                            div(class="border-b border-border-light dark:border-b dark:border-border-dark last:border-none pb-4 pt-4 first:pt-0 last:pb-0")
+                            div(class="pt-4 pb-4 border-b border-border-light dark:border-b dark:border-border-dark last:border-none first:pt-0 last:pb-0")
                               div.radio-button.radio-md.primary(class="!gap-4")
-                                input#security2(type='radio' name='security')
-                                div.check(class="min-w-[1.15rem] !h-[1.15rem] before:!w-3 before:!h-3")
-                                label(for='security2' class="text-xs cursor-pointer text-[15px] font-medium") 
+                                input#security3(type='radio' name='security')
+                                div.check(class="min-w-[1.05rem] !h-[1.05rem] before:!w-[0.7rem] before:!h-[0.7rem] before:!top-[2px] before:!left-[2px]")
+                                label(for='security3' class="text-xs cursor-pointer text-[15px] font-medium") 
                                   p.font-medium(class="text-xs dark:text-content3") No protection (not recommended) 
                                   p.text-content3.text-2xs Does not protect you against dangerous websites, downloads and extensions. Other Google services, such as Gmail and Search, will still provide Safe Browsing protection for you, if it is available.
-                          div(class="border-b border-border-light dark:border-b dark:border-border-dark border-dashed last:border-none pb-5 last:pb-0 ")
+                          div(class="pb-5 border-b border-dashed border-border-light dark:border-b dark:border-border-dark last:border-none last:pb-0 ")
                             h6.font-bold(class="mb-[2px] dark:text-white") Notifications
                             p.text-content3.text-2xs Sites automatically follow this setting when you visit them
-                            div(class="border-b border-border-light dark:border-b dark:border-border-dark last:border-none pb-4 pt-4 first:pt-0 last:pb-0")
+                            div(class="pt-4 pb-4 border-b border-border-light dark:border-b dark:border-border-dark last:border-none first:pt-0 last:pb-0")
                               div.radio-button.radio-md.primary(class="!gap-4")
                                 input#notify1(type='radio' name='notify' checked)
-                                div.check(class="min-w-[1.15rem] !h-[1.15rem] before:!w-3 before:!h-3")
+                                div.check(class="min-w-[1.05rem] !h-[1.05rem] before:!w-[0.7rem] before:!h-[0.7rem] before:!top-[2px] before:!left-[2px]")
                                 label(for='notify1' class="text-xs cursor-pointer text-[15px] font-medium") 
                                   div.flex.gap-2.items-center
-                                    i(data-feather="bell" class="w-4 h-4 stroke-title")
+                                    i(data-feather="bell" class="w-4 h-4 min-w-[16px] stroke-title")
                                     p.font-medium(class="text-xs dark:text-content3") Sites can ask to send notifications  
-                            div(class="border-b border-border-light dark:border-b dark:border-border-dark last:border-none pb-4 pt-4 first:pt-0 last:pb-0")
+                            div(class="pt-4 pb-4 border-b border-border-light dark:border-b dark:border-border-dark last:border-none first:pt-0 last:pb-0")
                               div.radio-button.radio-md.primary(class="!gap-4")
                                 input#notify2(type='radio' name='notify')
-                                div.check(class="min-w-[1.15rem] !h-[1.15rem] before:!w-3 before:!h-3")
+                                div.check(class="min-w-[1.05rem] !h-[1.05rem] before:!w-[0.7rem] before:!h-[0.7rem] before:!top-[2px] before:!left-[2px]")
                                 label(for='notify2' class="text-xs cursor-pointer text-[15px] font-medium") 
                                   div.flex.gap-2.items-center 
-                                    i(data-feather="bell" class="w-4 h-4 stroke-title")
+                                    i(data-feather="bell" class="w-4 h-4 min-w-[16px] stroke-title")
                                     div 
                                       p.font-medium(class="text-xs dark:text-content3") Use quieter messaging 
                                       p.text-content3.text-2xs Sites are blocked from interrupting you when they ask to send notifications
-                            div(class="border-b border-border-light dark:border-b dark:border-border-dark last:border-none pb-4 pt-4 first:pt-0 last:pb-0")
+                            div(class="pt-4 pb-4 border-b border-border-light dark:border-b dark:border-border-dark last:border-none first:pt-0 last:pb-0")
                               div.radio-button.radio-md.primary(class="!gap-4")
                                 input#notify3(type='radio' name='notify')
-                                div.check(class="min-w-[1.15rem] !h-[1.15rem] before:!w-3 before:!h-3")
+                                div.check(class="min-w-[1.05rem] !h-[1.05rem] before:!w-[0.7rem] before:!h-[0.7rem] before:!top-[2px] before:!left-[2px]")
                                 label(for='notify3' class="text-xs cursor-pointer text-[15px] font-medium") 
                                   div.flex.gap-2.items-center 
-                                    i(data-feather="bell-off" class="w-4 h-4 stroke-title")
+                                    i(data-feather="bell-off" class="w-4 h-4 min-w-[16px] stroke-title")
                                     div
                                       p.font-medium(class="text-xs dark:text-content3") Don't allow sites to send notifications 
                                       p.text-content3.text-2xs Features that need notifications won't work
