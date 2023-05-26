@@ -25,16 +25,16 @@ html(lang='en')
                             form.theme-form.flex.flex-col.gap-3(class="!m-0 p-8 2sm:p-4" action="reset-password.html")
                                 h3 Verification Code
                                 p(class="!mb-0") We have sent the code verification to your email address
-                                span.justify-center.edit.flex.items-center.gap-2(class="text-xs !text-primary mt-[15px]")
+                                span.justify-center.edit.flex.items-center.gap-2(class="text-xs !text-primary mt-[15px] xl:mt-2 md:mt-0")
                                     | emayiladosidorshina@gmail.com 
                                     a(href="forgot-password.html") 
                                         i(class="w-5 h-5 stroke-primary" data-feather="edit-3")
-                                div.flex.items-center.gap-2.mt-6
+                                div.flex.items-center.gap-2.mt-6(class="xl:mt-4 md:mt-2")
                                     input.w-full.text-center(class="input-otp " placeholder='0' type='tel' required oninput='digitValidate(this)' onkeyup='tabChange(1)' maxlength='1')
                                     input.w-full.text-center(class="input-otp " placeholder='0' type='tel' required oninput='digitValidate(this)' onkeyup='tabChange(2)' maxlength='1')
                                     input.w-full.text-center(class="input-otp " placeholder='0' type='tel' required oninput='digitValidate(this)' onkeyup='tabChange(3)' maxlength='1')
                                     input.w-full.text-center(class="input-otp " placeholder='0' type='tel' required oninput='digitValidate(this)' onkeyup='tabChange(4)' maxlength='1')
-                                button.btn.btn-primary.text-white(class="hover:drop-shadow-lg") Submit
+                                button.btn.btn-primary.text-white(class="hover:drop-shadow-lg md:!mb-0 sm:!mt-2") Submit
                                 div.flex.items-center.justify-center.gap-2
                                     a.resend-otp(class="text-xs text-primary" href='javascript:void(0)') Resend 
                                     span.time.flex.gap-2 

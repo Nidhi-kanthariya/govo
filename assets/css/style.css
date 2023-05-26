@@ -9825,6 +9825,11 @@ header {
   margin-bottom: 0.625rem;
 }
 
+.\!my-2 {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
 .\!mb-0 {
   margin-bottom: 0px !important;
 }
@@ -10168,8 +10173,8 @@ header {
   display: none;
 }
 
-.\!h-\[1\.15rem\] {
-  height: 1.15rem !important;
+.\!h-\[1\.05rem\] {
+  height: 1.05rem !important;
 }
 
 .\!h-\[400px\] {
@@ -10547,10 +10552,6 @@ header {
 .h-max {
   height: -moz-max-content;
   height: max-content;
-}
-
-.\!h-\[1\.05rem\] {
-  height: 1.05rem !important;
 }
 
 .max-h-\[120px\] {
@@ -11114,8 +11115,8 @@ header {
   min-width: .625rem;
 }
 
-.min-w-\[1\.15rem\] {
-  min-width: 1.15rem;
+.min-w-\[1\.05rem\] {
+  min-width: 1.05rem;
 }
 
 .min-w-\[1\.25rem\] {
@@ -11402,10 +11403,6 @@ header {
 .min-w-max {
   min-width: -moz-max-content;
   min-width: max-content;
-}
-
-.min-w-\[1\.05rem\] {
-  min-width: 1.05rem;
 }
 
 .max-w-2xl {
@@ -17310,6 +17307,16 @@ div[class*=activity-dot-secondary]{
   inset: 0px;
 }
 
+.before\:\!left-\[2px\]::before {
+  content: var(--tw-content);
+  left: 2px !important;
+}
+
+.before\:\!top-\[2px\]::before {
+  content: var(--tw-content);
+  top: 2px !important;
+}
+
 .before\:bottom-0::before {
   content: var(--tw-content);
   bottom: 0px;
@@ -17340,19 +17347,9 @@ div[class*=activity-dot-secondary]{
   top: 45%;
 }
 
-.before\:\!left-\[2px\]::before {
+.before\:\!h-\[0\.7rem\]::before {
   content: var(--tw-content);
-  left: 2px !important;
-}
-
-.before\:\!top-\[2px\]::before {
-  content: var(--tw-content);
-  top: 2px !important;
-}
-
-.before\:\!h-3::before {
-  content: var(--tw-content);
-  height: 0.75rem !important;
+  height: 0.7rem !important;
 }
 
 .before\:h-\[2px\]::before {
@@ -17365,14 +17362,9 @@ div[class*=activity-dot-secondary]{
   height: 100%;
 }
 
-.before\:\!h-\[0\.7rem\]::before {
+.before\:\!w-\[0\.7rem\]::before {
   content: var(--tw-content);
-  height: 0.7rem !important;
-}
-
-.before\:\!w-3::before {
-  content: var(--tw-content);
-  width: 0.75rem !important;
+  width: 0.7rem !important;
 }
 
 .before\:w-0::before {
@@ -17393,11 +17385,6 @@ div[class*=activity-dot-secondary]{
 .before\:w-full::before {
   content: var(--tw-content);
   width: 100%;
-}
-
-.before\:\!w-\[0\.7rem\]::before {
-  content: var(--tw-content);
-  width: 0.7rem !important;
 }
 
 .before\:-translate-x-1\/2::before {
@@ -19768,6 +19755,14 @@ div[class*=activity-dot-secondary]{
     margin-left: 28%;
   }
 
+  .xl\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
+  .xl\:mt-4 {
+    margin-top: 1rem;
+  }
+
   .xl\:block {
     display: block;
   }
@@ -20650,6 +20645,11 @@ div[class*=activity-dot-secondary]{
     margin-right: -45px;
   }
 
+  .md\:\!my-2 {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
   .md\:-mt-\[5px\] {
     margin-top: -5px;
   }
@@ -20664,6 +20664,26 @@ div[class*=activity-dot-secondary]{
 
   .md\:mt-\[-0\.125rem\] {
     margin-top: -0.125rem;
+  }
+
+  .md\:\!mt-1 {
+    margin-top: 0.25rem !important;
+  }
+
+  .md\:mb-3 {
+    margin-bottom: 0.75rem;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .md\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
+  .md\:\!mb-0 {
+    margin-bottom: 0px !important;
   }
 
   .md\:line-clamp-2 {
@@ -20692,6 +20712,10 @@ div[class*=activity-dot-secondary]{
     height: 90vh !important;
   }
 
+  .md\:h-64 {
+    height: 16rem;
+  }
+
   .md\:h-\[216px\] {
     height: 216px;
   }
@@ -20710,10 +20734,6 @@ div[class*=activity-dot-secondary]{
 
   .md\:h-unset {
     height: unset;
-  }
-
-  .md\:h-64 {
-    height: 16rem;
   }
 
   .md\:max-h-\[200px\] {
@@ -21185,6 +21205,14 @@ div[class*=activity-dot-secondary]{
     margin-top: 1.25rem;
   }
 
+  .sm\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .sm\:\!mt-2 {
+    margin-top: 0.5rem !important;
+  }
+
   .sm\:line-clamp-1 {
     overflow: hidden;
     display: -webkit-box;
@@ -21223,6 +21251,10 @@ div[class*=activity-dot-secondary]{
 
   .sm\:hidden {
     display: none;
+  }
+
+  .sm\:h-40 {
+    height: 10rem;
   }
 
   .sm\:h-44 {
@@ -21279,10 +21311,6 @@ div[class*=activity-dot-secondary]{
 
   .sm\:h-auto {
     height: auto;
-  }
-
-  .sm\:h-40 {
-    height: 10rem;
   }
 
   .sm\:\!w-full {
