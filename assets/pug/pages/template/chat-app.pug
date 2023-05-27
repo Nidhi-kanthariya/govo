@@ -155,14 +155,15 @@ html(lang='en')
             img(src='../../assets/images/chat-app/9.jpg' alt='women wear black jacket' class="max-w-[200px] lg:max-w-[190px] h-[200px] rounded-none")
             img(src='../../assets/images/chat-app/10.jpg' alt='men in jacket' class="max-w-[200px] lg:max-w-[190px] h-[200px] rounded-none")
             img(src='../../assets/images/chat-app/11.jpg' alt='women in gray shirt' class="max-w-[200px] lg:max-w-[190px] h-[200px] rounded-none")
+
     //- Create Your Room
     div.modal-main(class="lg:hidden")
-      input#modal-16(class="peer" name="modal-8" type='checkbox')
+      input#createroom-modal(class="peer" name="modal-8" type='checkbox')
       label.modal-overlay(class="peer-checked:block" for='modal-8')
       div.modal(class="max-w-sm peer-checked:opacity-100 peer-checked:visible dark:bg-sidebar-dark2")
         div.modal-body
-          label(for='modal-16') 
-            i(data-feather="x" class="w-5 h-5 stroke-dark") 
+          label(for='createroom-modal') 
+            i(data-feather="x" class="w-5 h-5 ml-auto stroke-dark") 
           form.theme-form.flex.flex-col.gap-2
             h3 Create Your Room 
             p Your Room is where You and your friends hang out.Make yours and start talking.

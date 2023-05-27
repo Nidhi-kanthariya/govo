@@ -69,7 +69,6 @@ submenuLinks.forEach((el) => {
 let elOpen;
 allList.forEach((el) => {
   el.addEventListener('click', function (e) {
-    // const eventSubMenu = e.path[0].closest('.submenu-wrapper');
     if (shoppingPlaceSidebar && !reportSidebar) {
       allList.forEach((item) => {
         if (item.classList.contains('active')) {

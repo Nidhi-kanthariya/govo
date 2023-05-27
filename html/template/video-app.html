@@ -1030,7 +1030,7 @@
                   <div class="p-4 pb-0 dark:bg-sidebar-dark">
                     <div class="flex items-center justify-between">
                       <h4 class="text-xl font-extrabold dark:text-white">Messages</h4>
-                      <label for="modal-16"><i class="block w-8 h-8 p-2 scale-100 stroke-primary bg-gray-light hover:scale-110 dark:bg-sidebar-dark2 lg:hidden" data-feather="plus"></i><i class="hidden h-6 cursor-pointer stroke-title left-sidebar-toggle lg:block" data-feather="chevrons-left"></i></label>
+                      <label for="createroom-modal"><i class="block w-8 h-8 p-2 scale-100 stroke-primary bg-gray-light hover:scale-110 dark:bg-sidebar-dark2 lg:hidden" data-feather="plus"></i><i class="hidden h-6 cursor-pointer stroke-title left-sidebar-toggle lg:block" data-feather="chevrons-left"></i></label>
                     </div>
                   </div>
                   <div class="p-4 pb-0 dark:bg-sidebar-dark">
@@ -1553,7 +1553,7 @@
                           <ul class="flex flex-col justify-start gap-3">
                             <li class="cursor-pointer flex items-center gap-2 text-title hover:text-primary">
                               <label class="flex items-center gap-2" for="voice-call-modal"> 
-                                <svg class="w-5 h-5 stroke-title cursor-pointer hover:stroke-primary"> 
+                                <svg class="w-5 h-5 stroke-title cursor-pointer hover:stroke-primary call-start-btn"> 
                                   <use href="../../assets/svg/sprite.svg#Calling"> </use>
                                 </svg><span class="whitespace-nowrap"> Voice Call</span>
                               </label>
@@ -1570,7 +1570,7 @@
                       </div><span class="left-sidebar-hide-logo-show hidden lg:block">
                         <svg class="w-5 h-5 stroke-title cursor-pointer hover:stroke-primary  left-sidebar-toggle-btn lg:block hidden"> 
                           <use href="../../assets/svg/sprite.svg#Chat"> </use>
-                        </svg></span><span class="right-sidebar-hide-logo-show"> 
+                        </svg></span><span class="right-sidebar-hide-logo-show hide"> 
                         <svg class="w-5 h-5 cursor-pointer stroke-title hover:stroke-primary right-sidebar-toggle-btn"> 
                           <use href="../../assets/svg/sprite.svg#Arrow-Left-Square"> </use>
                         </svg></span>
@@ -2025,11 +2025,11 @@
       </div>
     </div>
     <div class="modal-main lg:hidden"> 
-      <input class="peer" id="modal-16" name="modal-8" type="checkbox">
+      <input class="peer" id="createroom-modal" name="modal-8" type="checkbox">
       <label class="modal-overlay peer-checked:block" for="modal-8"></label>
       <div class="modal max-w-sm peer-checked:opacity-100 peer-checked:visible dark:bg-sidebar-dark2">
         <div class="modal-body"> 
-          <label for="modal-16"><i class="w-5 h-5 stroke-dark" data-feather="x"> </i></label>
+          <label for="createroom-modal"><i class="w-5 h-5 stroke-dark" data-feather="x"> </i></label>
           <form class="theme-form flex flex-col gap-2">
             <h3>Create Your Room</h3>
             <p>Your Room is where You and your friends hang out.Make yours and start talking.</p><img class="xl:w-[50%] xl:ml-[28%] xl:flex xl:items-center xl:justify-center" src="../../assets/images/chatting.gif ">

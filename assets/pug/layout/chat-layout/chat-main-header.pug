@@ -24,7 +24,7 @@ div.border-b.border-gray-light.pb-4.flex.items-center.justify-between(class="dar
         ul.flex.flex-col.justify-start.gap-3
           li.cursor-pointer(class='flex items-center gap-2 text-title hover:text-primary')
             label(for='voice-call-modal' class="flex items-center gap-2") 
-              +SVG_ICON("Calling","w-5 h-5 stroke-title cursor-pointer hover:stroke-primary")
+              +SVG_ICON("Calling","w-5 h-5 stroke-title cursor-pointer hover:stroke-primary call-start-btn")
               span.whitespace-nowrap  Voice Call
           li.cursor-pointer(class='flex items-center gap-2 text-title hover:text-primary')
             label(for='video-call-modal' class="flex items-center gap-2")
@@ -32,7 +32,7 @@ div.border-b.border-gray-light.pb-4.flex.items-center.justify-between(class="dar
               span.whitespace-nowrap Video Call
     span.left-sidebar-hide-logo-show(class="hidden lg:block")
       +SVG_ICON("Chat","w-5 h-5 stroke-title cursor-pointer hover:stroke-primary  left-sidebar-toggle-btn lg:block hidden")
-    span.right-sidebar-hide-logo-show 
+    span.right-sidebar-hide-logo-show.hide 
       +SVG_ICON("Arrow-Left-Square","w-5 h-5 cursor-pointer stroke-title hover:stroke-primary right-sidebar-toggle-btn")
 
 // chat main header end
