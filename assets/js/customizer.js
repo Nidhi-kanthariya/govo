@@ -224,3 +224,5 @@ window.addEventListener('beforeunload', function () {
   localStorage.sidebarType = sidebarType;
   window.location.pathname.includes('rtl.html') && (localStorage.removeItem('layout'))
 });
+
+

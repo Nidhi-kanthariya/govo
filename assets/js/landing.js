@@ -32,7 +32,7 @@ window.onscroll = function () {
 
 //  Scroll Active //
 const sections = document.querySelectorAll('section');
-const navLi = document.querySelectorAll('.navigation ul li a');
+const navLi = document.querySelectorAll('.navigation ul li .nav-link');
 
 let current = '';
 window.addEventListener('scroll', () => {

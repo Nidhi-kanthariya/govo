@@ -6,7 +6,7 @@
     @apply overflow-hidden;
   }
   .page-body-wrapper {
-    @apply sm:mb-20 mb-[3.65rem];
+    @apply sm:mb-[3.25rem] mb-[3.65rem] 3sm:mb-[3.1rem];
     .page-body {
       @apply py-card-gap px-card-gap ml-auto h-full dark:bg-sidebar-dark2;
     }

@@ -44,40 +44,32 @@ const totalSellBarChart = {
     opacity: 1,
   },
   tooltip: toolTipMini,
-  responsive: [{
-    breakpoint: 1700,
-    options: {
-      chart: {
-        // height: 86,
-        // width: 80, 
-      },
-    },
-  },
-  {
-    breakpoint: 1400,
-    options: {
-      plotOptions: {
-        bar: {
-          columnWidth: '40%',
-          borderRadius: 5,
+  responsive: [
+    {
+      breakpoint: 1400,
+      options: {
+        plotOptions: {
+          bar: {
+            columnWidth: '40%',
+            borderRadius: 5,
+          },
         },
       },
     },
-  },
-  {
-    breakpoint: 376,
-    options: {
-      chart: {
-        height: 80,
-      },
-      plotOptions: {
-        bar: {
-          columnWidth: '60%',
-          borderRadius: 5,
+    {
+      breakpoint: 376,
+      options: {
+        chart: {
+          height: 80,
+        },
+        plotOptions: {
+          bar: {
+            columnWidth: '60%',
+            borderRadius: 5,
+          },
         },
       },
     },
-  },
   ],
 };
 
@@ -217,13 +209,6 @@ var totalCustomerLineChart = {
         height: 105,
       }
     },
-  }, {
-    breakpoint: 1399,
-    options: {
-      chart: {
-        // width: 400,
-      }
-    }
   }],
 
 };
@@ -448,14 +433,6 @@ const customerRadialchart = {
   series: [70, 55, 40],
   colors: ['rgba(var(--primary),1)', 'rgba(var(--secondary), 1)', 'var(--title)',],
   responsive: [
-    // {
-    //   breakpoint: 1850,
-    //   options: {
-    //     chart: {
-    //       height: 315,
-    //     },
-    //   },
-    // },
     {
       breakpoint: 1600,
       options: {
@@ -559,13 +536,6 @@ var salesSummaryChart = {
       style: {
         colors: ['var(--content)']
       },
-      // formatter: function (val) {
-      //   if (val % 2 !== 0) {
-      //     return ''
-      //   } else {
-      //     return val
-      //   }
-      // }
     },
   },
   xaxis: {

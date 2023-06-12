@@ -80,10 +80,10 @@ const searchShow = document.querySelector('.search-show');
 const searchClose = document.querySelector('.search-close');
 const searchBoxWrapper = document.querySelector('.search-box-wrapper');
 searchShow?.addEventListener('click', function () {
-  searchBoxWrapper.classList.remove('xl:scale-0', 'xl:opacity-0', 'xl:invisible');
+  searchBoxWrapper.classList.remove('lg:scale-0', 'lg:opacity-0', 'lg:invisible');
 });
 searchClose?.addEventListener('click', function () {
-  searchBoxWrapper.classList.add('xl:scale-0', 'xl:opacity-0', 'xl:invisible');
+  searchBoxWrapper.classList.add('lg:scale-0', 'lg:opacity-0', 'lg:invisible');
 });
 
 /*========================

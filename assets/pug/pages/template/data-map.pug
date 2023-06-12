@@ -25,55 +25,55 @@ include ../../mixin/mixin
 
 doctype html
 html(lang='en')
-   include ../../layout/header-files
-   body(dir="ltr" class="unique-skin")
-      main.page-wrapper
-         div.page-body-wrapper(class="xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300")
-            include ../../layout/header/header     
-            // Sidebar Start 
-            div.page-sidebar.sidebar-dark.unique-sidebar
-               include ../../layout/unique
-            // Sidebar End 
+  include ../../layout/header-files
+  body(dir="ltr" class="unique-skin")
+    main.page-wrapper
+      div.page-body-wrapper(class="xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300")
+        include ../../layout/header/header     
+        // Sidebar Start 
+        div.page-sidebar.sidebar-dark.unique-sidebar
+          include ../../layout/unique
+        // Sidebar End 
 
-            // Page Body Start
-            div.page-body
-               div.grid.grid-cols-12.gap-card-gap
-                  div(class="col-span-6 lg:col-span-12") 
-                     div.card
-                        div.card-header.pb-4.header-bottom-border
-                           +card-header("Basic") 
-                        div.card-body
-                           div.data-map#basic  
-                  div(class="col-span-6 lg:col-span-12") 
-                     div.card
-                        div.card-header.pb-4.header-bottom-border
-                           +card-header("Choropleth") 
-                        div.card-body
-                           div.data-map#basic_choropleth  
-                  div(class="col-span-6 lg:col-span-12")  
-                     div.card
-                        div.card-header.pb-4.header-bottom-border
-                           +card-header("Map Election") 
-                        div.card-body
-                           div.data-map#map_election  
-                  div(class="col-span-6 lg:col-span-12") 
-                     div.card
-                        div.card-header.pb-4.header-bottom-border
-                           +card-header("Area Bubbles") 
-                        div.card-body
-                           div.data-map#bubbles  
-                  div(class="col-span-12") 
-                     div.card
-                        div.card-header.pb-2.header-bottom-border
-                           +card-header("Projection Map") 
-                        div.card-body
-                           div.data-map-glob#projection_map
-
-
+        // Page Body Start
+        div.page-body
+          div.grid.grid-cols-12.gap-card-gap
+            div(class="col-span-6 lg:col-span-12") 
+              div.card
+                div.card-header.pb-4.header-bottom-border
+                  +card-header("Basic") 
+                div.card-body
+                  div.data-map#basic  
+            div(class="col-span-6 lg:col-span-12") 
+              div.card
+                div.card-header.pb-4.header-bottom-border
+                  +card-header("Choropleth") 
+                div.card-body
+                  div.data-map#basic_choropleth  
+            div(class="col-span-6 lg:col-span-12")  
+              div.card
+                div.card-header.pb-4.header-bottom-border
+                  +card-header("Map Election") 
+                div.card-body
+                  div.data-map#map_election  
+            div(class="col-span-6 lg:col-span-12") 
+              div.card
+                div.card-header.pb-4.header-bottom-border
+                  +card-header("Area Bubbles") 
+                div.card-body
+                  div.data-map#bubbles  
+            div(class="col-span-12") 
+              div.card
+                div.card-header.pb-2.header-bottom-border
+                  +card-header("Projection Map") 
+                div.card-body
+                  div.data-map-glob#projection_map
 
 
-            // Page Body End 
-            +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] shadow-footer bg-white px-body-space mt-card-gap")
-         include ../../components/customizer
 
-   include ../../layout/footer-files
+
+        // Page Body End 
+        +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] sm:py-4  shadow-footer bg-white px-body-space mt-card-gap")
+      include ../../components/customizer
+
+  include ../../layout/footer-files

@@ -152,7 +152,6 @@ const earningChart = {
     options: {
       chart: {
         height: 250,
-        // offsetY: 20,
         sparkline: {
           enabled: true,
         },
@@ -344,9 +343,6 @@ const SellOverview = {
     min: 100,
     max: 700,
     labels: {
-      // formatter: (value) => {
-      //   return `${value}k` ;
-      // },
       formatter: function (value) {
         return value + "k";
       },

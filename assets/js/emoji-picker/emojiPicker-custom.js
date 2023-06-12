@@ -10,5 +10,4 @@ new EmojiPicker({
     },
   ],
   closeButton: true,
-  //specialButtons: green
 });
