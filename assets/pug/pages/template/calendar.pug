@@ -64,9 +64,9 @@ html(lang='en')
                     div.flex.items-center.gap-2 
                       label.checkbox.checkbox-sm.cursor-pointer  
                         input#drop-remove(type='checkbox' class="peer") 
-                        div.checkbox-indicator(class="peer-checked:!bg-primary !border-primary")  
+                        span.checkbox-indicator(class="peer-checked:!bg-primary !border-primary")  
                           i(data-feather="check")
-                      p(for='drop-remove') Remove After Drop
+                      p Remove After Drop
                     h5.mt-5.mb-4.text-title.font-semibold My Schedule
                     div.flex.flex-col.gap-4
                       div.card.shadow-sm.border-2.border-light(class="w-[230px] 3sm:w-[220px] dark:border-border-dark dark:border-2") 
@@ -93,7 +93,7 @@ html(lang='en')
         // Page Body End  
         +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] sm:py-4  shadow-footer bg-white px-body-space mt-card-gap")
       include ../../components/customizer                               
-  include ../../layout/footer-files
+    include ../../layout/footer-files
 
 
 

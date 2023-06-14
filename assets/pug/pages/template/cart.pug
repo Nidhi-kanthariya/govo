@@ -65,13 +65,11 @@ html(lang='en')
                       h6 $345  
                 div.card-footer
                   div.flex.flex-col.gap-3 
-                    a(href="checkout.html")
-                      button.btn.btn-secondary.w-full.text-white Process To Checkout
-                    a(href="shop.html")
-                      button.btn.btn-primary.text-white.w-full.flex.justify-center.items-center.gap-2.py-2 
-                        i(data-feather="arrow-left" class="w-5 h-5 stroke-white")
-                        | Back to Shopping
+                    a(href="checkout.html").btn.btn-secondary.w-full.text-white Process To Checkout
+                    a(href="shop.html").btn.btn-primary.text-white.w-full.flex.justify-center.items-center.gap-2.py-2 
+                      i(data-feather="arrow-left" class="w-5 h-5 stroke-white")  
+                      | Back to Shopping
         // Page Body End  
         +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] sm:py-4  shadow-footer bg-white px-body-space mt-card-gap")
       include ../../components/customizer
-  include ../../layout/footer-files
+    include ../../layout/footer-files

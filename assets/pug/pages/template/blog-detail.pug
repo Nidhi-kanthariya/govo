@@ -230,12 +230,12 @@ html(lang='en')
                       div(class="w-full")
                         input(type="text" id="Name" class="rounded dark:bg-sidebar-dark2 dark:text-white" placeholder="Enter your name.." name="name" required )
                       div(class="w-full")
-                        input(type="Name" id="Name" class="rounded dark:bg-sidebar-dark2 dark:text-white" placeholder="Enter your id.." name ="Email" required)
-                    input(type="text" id="Comment" class="rounded dark:bg-sidebar-dark2 dark:text-white" placeholder="Enter your message.." name ="" required)   
+                        input(type="email" id="email1" class="rounded dark:bg-sidebar-dark2 dark:text-white" placeholder="Enter your id.." name ="email" required)
+                    input(type="text" id="Comment" class="rounded dark:bg-sidebar-dark2 dark:text-white" placeholder="Enter your message.." name ="comment" required)   
                     button(class="!w-auto p-2 text-white rounded bg-primary hover:drop-shadow-lg !mb-0") Post Comment
 
         // Page Body End 
         +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] sm:py-4  shadow-footer bg-white px-body-space mt-card-gap")
-    include ../../components/customizer
+      include ../../components/customizer
 
-  include ../../layout/footer-files
+    include ../../layout/footer-files

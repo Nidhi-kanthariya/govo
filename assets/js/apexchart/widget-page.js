@@ -10,7 +10,7 @@ const socialMediaStatisticsOption = {
     type: 'area',
     offsetY: 14,
     toolbar: {
-      show: false, 
+      show: false,
     },
   },
   dataLabels: {
@@ -802,7 +802,7 @@ const marketOverViewChart = {
     type: 'line',
     zoom: {
       enabled: false,
-    }, 
+    },
     toolbar: {
       show: false,
     },
@@ -868,8 +868,8 @@ const marketOverViewChart = {
   {
     breakpoint: 1500,
     options: {
-      chart: { 
-        height: 195, 
+      chart: {
+        height: 195,
         sparkline: {
           enabled: true,
         },
@@ -881,7 +881,7 @@ const marketOverViewChart = {
     options: {
       chart: {
         height: 270,
-        sparkline: { 
+        sparkline: {
           enabled: true,
         },
       },
@@ -890,7 +890,7 @@ const marketOverViewChart = {
   {
     breakpoint: 768,
     options: {
-      chart: { 
+      chart: {
         height: 172,
         sparkline: {
           enabled: true,
@@ -914,7 +914,6 @@ const marketOverViewChart = {
 const marketOverViewChartEl = new ApexCharts(document.querySelector('#market-overview-chart'), marketOverViewChart);
 marketOverViewChartEl.render();
 
-/*=======/Revenue Spark line/=======*/
 const revenueChart = {
   series: [{
     data: [45, 25, 55, 47, 89, 47, 70, 38, 92, 44, 38, 70],
@@ -967,7 +966,18 @@ const revenueChart = {
     breakpoint: 992,
     options: {
       chart: {
-        height: 87,
+        height: 92,
+        sparkline: {
+          enabled: true,
+        },
+      },
+    },
+  },
+  {
+    breakpoint: 922,
+    options: {
+      chart: {
+        height: 95,
         sparkline: {
           enabled: true,
         },
@@ -1064,7 +1074,6 @@ const earningChart = {
     options: {
       chart: {
         height: 250,
-        offsetY: 10,
         sparkline: {
           enabled: true,
         },
@@ -1075,8 +1084,9 @@ const earningChart = {
     breakpoint: 1600,
     options: {
       chart: {
-        height: 250,
-        offsetY: 10,
+        height: 280,
+
+        offsetY: -5,
         sparkline: {
           enabled: true,
         },
@@ -1084,36 +1094,39 @@ const earningChart = {
     },
   },
   {
-    breakpoint: 1400,
+    breakpoint: 1499,
     options: {
       chart: {
         height: 250,
-      }, 
-      offsetY: 10,
-      sparkline: {
-        enabled: true,
-      },
-    },
+        offsetY: 0,
+      }
+    }
   },
   {
     breakpoint: 1200,
     options: {
       chart: {
         height: 250,
-        offsetY: 0, 
+
+        offsetY: 0,
+        sparkline: {
+          enabled: true,
+        },
+      },
+      grid: {
+        padding: {
+          top: -10,
+        },
       },
     },
   },
   {
-    breakpoint: 991,
+    breakpoint: 992,
     options: {
       chart: {
-        height: 280,
-      }, 
-      offsetY: 2, 
-        sparkline: {
-          enabled: true,
-        },
+
+        offsetY: -3,
+      },
     },
   },
   {
@@ -1122,10 +1135,6 @@ const earningChart = {
       chart: {
         height: 280,
       },
-      offsetY: 10,
-        sparkline: {
-          enabled: true,
-        },
     },
   },
   {
@@ -1143,7 +1152,7 @@ const earningChart = {
               color: 'var(--content)',
               offsetY: 5,
             },
-            value: { 
+            value: {
               offsetY: -30,
               fontSize: '20px',
             },
@@ -1156,9 +1165,9 @@ const earningChart = {
     breakpoint: 375,
     options: {
       chart: {
-        height: 240,
+        height: 230,
       },
-      offsetY: 30,
+
       plotOptions: {
         radialBar: {
           startAngle: -100,

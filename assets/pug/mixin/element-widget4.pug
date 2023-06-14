@@ -17,7 +17,7 @@ mixin widget4(data)
         div(id=`${data.chart}`)
       if(data.progress)
         .progress.progress-striped.active(class="mb-[38px] mt-[22px]")
-          .progress-bar.progress-bar-warning(role='progressbar ', style=`width: ${data.progress}%;`)
+          .progress-bar.progress-bar-warning(role='progressbar' aria-valuemin="0" aria-valuemax="100", style=`width: ${data.progress}%;`)
 
   div.card-footer.border-t.border-border-light
     div.flex.items-center(class="p-4 gap-2 3xl:gap-[6px]") 

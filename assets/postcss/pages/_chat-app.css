@@ -30,8 +30,6 @@
   }
 
   .right-sidebar-hide-logo-show {
-    /* @apply hidden; */
-
     &.hide {
       @apply hidden 2xl:block;
     }

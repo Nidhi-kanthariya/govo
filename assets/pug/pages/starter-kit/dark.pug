@@ -8,22 +8,22 @@
 -var customSelect= true;
 
 //- customizer 
--var customizer=true;
+-var customizer=true; 
 
 //- darkLayout
--var darkLayout=true;
+-var darkLayout=true; 
 
 //- Breadcrumbs
 -var pageTitle="Dark Mode";
 -var breadcrumb=['dashboard','Sample Page'];
 
 //- all JSON  
-include ../../data/all-data
+include ../../data/all-data 
 
 //- all mixin
 include ../../mixin/mixin
 
-doctype html
+doctype html 
 html(lang='en' class="dark")
   include ../../layout/header-files
   body(dir="ltr" class="unique-skin") 
@@ -58,7 +58,7 @@ html(lang='en' class="dark")
                   li Select your choice of layout from starter kit, customize it with optional changes like colors and branding, add required dependency only.
                   li Using template engine to generate whole template quickly with your selected layout and other custom changes.                        
 
-            div.card.col-span-12         
+            div.card.col-span-12          
               div.card-header.pb-2.header-bottom-border
                 h3(class="font-bold text-title") How To Use Starter Kit ?                        
               div.card-body                       
@@ -73,4 +73,4 @@ html(lang='en' class="dark")
         +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] sm:py-4  shadow-footer bg-white px-body-space mt-card-gap")
       include ../../components/customizer
 
-  include ../../layout/footer-files
+    include ../../layout/footer-files 

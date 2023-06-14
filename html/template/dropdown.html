@@ -31,7 +31,7 @@
         <!-- Page Header start-->
         <header class="fixed top-0 z-[6] xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto">
           <div class="page-header transition-all bg-white shadow-header dark:bg-sidebar-dark">
-            <div class="py-[11px] flex items-center xl:relative justify-between px-body-space">
+            <div class="py-[11px] flex items-center xl:relative justify-between px-body-space gap-4">
               <div class="left-header flex items-center gap-2"> 
                 <button class="sidebar-toggle hide"> 
                   <svg class="w-6 4xl:w-5 h-6 4xl:h-5 stroke-title"> 
@@ -80,7 +80,7 @@
                               <use href="../../assets/svg/sprite.svg#Search"> </use>
                             </svg>
                           </div>
-                          <ul class="mt-4 flex flex-col max-h-[232px] overflow-auto custom-scroll"> 
+                          <ul class="mt-4 flex flex-col max-h-[214px] overflow-auto custom-scroll"> 
                             <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 dark:hover:bg-sidebar-dark2 border-border-light hover:bg-gray-light rounded-5"><a class="flex items-center gap-[12px]" href="./email.html">
                                 <div class="indicator"> <span class="chat-status status-online"></span>
                                   <div class="avatar">
@@ -197,7 +197,7 @@
                             <h4 class="text-base font-bold text-title">Messages</h4>
                             <div class="badge leading-none p-1 badge bg-primary rounded-full text-3xs flex items-center justify-center min-w-[22px] min-h-[22px]">25</div>
                           </div>
-                          <ul class="mt-[15px] flex flex-col max-h-[232px] overflow-auto custom-scroll"> 
+                          <ul class="mt-[15px] flex flex-col max-h-[214px] overflow-auto custom-scroll"> 
                             <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 border-border-light dark:border-border-dark hover:bg-gray-light dark:hover:bg-sidebar-dark2 rounded-5"><a class="flex items-center gap-[12px]" href="./chat-app.html">
                                 <div class="relative shadow-lg bg-success flex items-center justify-center rounded-full p-2">
                                   <svg class="w-5 h-5 stroke-white"> 
@@ -278,7 +278,7 @@
                               </svg>
                             </button>
                           </div>
-                          <ul class="flex flex-col max-h-[232px] overflow-auto custom-scroll px-1">
+                          <ul class="flex flex-col max-h-[214px] overflow-auto custom-scroll px-1">
                             <li class="cart-item flex items-center gap-3 py-3 rtl:first:!pl-0  rtl:last:!pr-0 transition-all duration-300 border-b last:border-b-0 border-border-light dark:border-border-dark rounded-5"><a class="flex items-center gap-[12px]" href="./product.html">
                                 <div class="rounded-full relative"> <img class="rounded-full min-w-[2.25rem] min-h-[2.25rem] w-full h-auto object-cover" src="../../assets/images/product/1.jpg" alt="Flower Pot"></div>
                                 <div> 
@@ -742,7 +742,7 @@
                     </nav>
                   </div>
                   <!-- Breadcrumbs End -->
-                  <div class="custom-select select-style-1 lg:hidden dark:text-title">
+                  <div class="custom-select select-style-1 2xl:hidden dark:text-title">
                     <select class="dark:text-title">
                       <option selected value="">Last 7 Days </option>
                       <option value="">Last 2 Weeks </option>
@@ -1622,9 +1622,7 @@
                           <button class="btn btn-danger text-white">Helper card</button>
                           <div class="dropdown-menu card !w-36 left-0 !top-11 rtl:left-unset rtl:!right-0 rounded !bg-danger">
                             <div class="card-body text-white">
-                              <h3 class="text-lg font-bold mb-1">Learn More!
-                                <p class="font-normal">Here, you can learn more and more</p>
-                              </h3>
+                              <h3 class="text-lg font-bold mb-1">Learn More!</h3><span class="font-normal">Here, you can learn more and more</span>
                             </div>
                           </div>
                         </div>
@@ -1638,7 +1636,7 @@
     &lt;div class="dropdown-menu card !w-36 left-0 !top-11 rtl:left-unset rtl:!right-0 rounded !bg-danger"&gt; 
       &lt;div class="text-white card-body"&gt;
         &lt;h3 class="mb-1 text-lg font-bold"&gt; Learn More! &lt;/h3&gt; 
-          &lt;p class="font-medium"&gt; Here, you can learn more and more &lt;/p&gt;             
+        &lt;span class="font-medium"&gt; Here, you can learn more and more &lt;/span&gt;             
       &lt;/div&gt;
     &lt;/div&gt; 
    &lt;/div&gt;
@@ -1681,8 +1679,7 @@
                               <li> 
                                 <div class="flex items-center gap-2">
                                   <label class="checkbox w-4 h-4 cursor-pointer">  
-                                    <input class="peer" type="checkbox">
-                                    <div class="checkbox-indicator peer-checked:!bg-primary !border-primary"> <i data-feather="check"></i></div>
+                                    <input class="peer" type="checkbox"><span class="checkbox-indicator peer-checked:!bg-primary !border-primary"> <i data-feather="check"></i></span>
                                   </label>
                                   <p class="m-0">Default Checkbox</p>
                                 </div>
@@ -1713,7 +1710,7 @@
           &lt;div class="flex items-center gap-2"&gt;
             &lt;label class="checkbox w-4 h-4 cursor-pointer&gt;&lt;/label&gt;
               &lt;input type="checkbox" class="peer"&gt;
-              &lt;div class="checkbox-indicator peer-checked:!bg-primary !border-primary"&gt;&lt;/div&gt;
+              &lt;span class="checkbox-indicator peer-checked:!bg-primary !border-primary"&gt;&lt;/span&gt;
                   &lt;i data-feather="check"&gt;&lt;/i&gt;
             &lt;p&gt; Default Checkbox &lt;/p&gt;
           &lt;/div&gt;
@@ -1845,18 +1842,18 @@
         </div>
       </div>
     </main>
+    <!-- Feather Icon Js -->
+    <script src="../../assets/js/feather.min.js"></script>
+    <script src="../../assets/js/feather-custom.js"></script>
+    <!-- Select Js -->
+    <script src="../../assets/js/custom-select.js"></script>
+    <!-- prism js-->
+    <script src="../../assets/js/prism.js"></script>
+    <!-- Sidebar Js -->
+    <script src="../../assets/js/sidebar.js"></script>
+    <!-- customizer js-->
+    <script src="../../assets/js/customizer.js"> </script>
+    <!-- Custom script   -->
+    <script src="../../assets/js/script.js"> </script>
   </body>
-  <!-- Feather Icon Js -->
-  <script src="../../assets/js/feather.min.js"></script>
-  <script src="../../assets/js/feather-custom.js"></script>
-  <!-- Select Js -->
-  <script src="../../assets/js/custom-select.js"></script>
-  <!-- prism js-->
-  <script src="../../assets/js/prism.js"></script>
-  <!-- Sidebar Js -->
-  <script src="../../assets/js/sidebar.js"></script>
-  <!-- customizer js-->
-  <script src="../../assets/js/customizer.js"> </script>
-  <!-- Custom script   -->
-  <script src="../../assets/js/script.js"> </script>
 </html>

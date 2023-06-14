@@ -48,7 +48,7 @@ html(lang='en')
         // Sidebar End 
 
         // Page Body Start
-        div.page-body
+        div.page-body 
           div(class="dark:border dark:border-border-dark").grid.grid-cols-12.border.border-gray-light.bg-white.rounded.h-full.gap-0.relative.overflow-hidden.chatting-app
             div.col-span-3(class="2xl:col-span-4")
               include ../../layout/chat-layout/chat-left-sidebar
@@ -64,7 +64,7 @@ html(lang='en')
               include ../../layout/chat-layout/chat-right-sidebar 
         // Page Body End 
         +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] sm:py-4  shadow-footer bg-white px-body-space mt-card-gap")
-    include ../../components/customizer
+      include ../../components/customizer
     //- Voice call modal
     div.modal-main.accept-call-start
       input#voice-call-modal(class="" name="voice-call-modal" type='checkbox')
@@ -75,7 +75,7 @@ html(lang='en')
             img(src="../../assets/images/chat-app/12.jpg" alt="girl" class="h-[500px] w-[450px] 2sm:h-[400px] opacity-70")
             div.voicecall-content.flex.flex-col.gap-3.absolute.items-center(class="bottom-[10%] left-0 right-0")
               h3.font-bold.text-white.m-0.text-xl3 Dmitriy Groshev
-              spa.text-white.font-semibold LOG ANGELINA CALIFORNIA 
+              span.text-white.font-semibold LOG ANGELINA CALIFORNIA 
               ul.flex.gap-3.flex-wrap.items-center.justify-center
                 li.cursor-pointer.call-start-show
                   label(for='accept-call-modal')
@@ -121,7 +121,7 @@ html(lang='en')
                       i(data-feather="play" ,class="p-2 bg-white rounded-full dark:bg-sidebar-dark2 w-9 h-9 stroke-title")
                     span.text-3xl.swap-off
                       i(data-feather="pause" ,class="p-2 bg-white rounded-full dark:bg-sidebar-dark2 w-9 h-9 stroke-title")
-    //- Video call modal
+    //- Video call modal 
     div.modal-main
       input#video-call-modal(class="peer" name="video-call-modal" type='checkbox')
       label.modal-overlay(class="peer-checked:block" for='video-call-modal')
@@ -158,18 +158,18 @@ html(lang='en')
 
     //- Create Your Room
     div.modal-main(class="lg:hidden")
-      input#createroom-modal(class="peer" name="modal-8" type='checkbox')
-      label.modal-overlay(class="peer-checked:block" for='modal-8')
+      input#createroom-modal(class="peer" name="createroom-modal" type='checkbox')
+      label.modal-overlay(class="peer-checked:block" for='createroom-modal')
       div.modal(class="max-w-sm peer-checked:opacity-100 peer-checked:visible dark:bg-sidebar-dark2")
         div.modal-body
           label(for='createroom-modal') 
             i(data-feather="x" class="w-5 h-5 ml-auto stroke-dark") 
-          form.theme-form.flex.flex-col.gap-2
+          form.theme-form.flex.flex-col.gap-2 
             h3 Create Your Room 
             p Your Room is where You and your friends hang out.Make yours and start talking.
-            img(src="../../assets/images/chatting.gif " class="xl:w-[50%] xl:ml-[28%] xl:flex xl:items-center xl:justify-center")
+            img(src="../../assets/images/chatting.gif " alt="" class="xl:w-[50%] xl:ml-[28%] xl:flex xl:items-center xl:justify-center")
             div 
-              button.btn.btn-primary.text-white(a href="index.html") Join a Room
+              a.btn.btn-primary.text-white(href="index.html") Join a Room
             div
               h4 Or Sign in with
             div.social
@@ -185,4 +185,4 @@ html(lang='en')
           div.text-center
             span Don't have an account? 
               a(href="register.html" class="hover:!text-primary").text-primary Create Now
-  include ../../layout/footer-files
+    include ../../layout/footer-files

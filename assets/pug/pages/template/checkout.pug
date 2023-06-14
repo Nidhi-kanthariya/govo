@@ -74,17 +74,17 @@ html(lang='en')
                       div.grid.grid-cols-12.gap-5
                         div.col-span-6(class="sm:col-span-12")
                           label(for="number") Contact No 
-                          input(type="Number" id="number" placeholder="Enter your contact no" maxlength="10" pattern="\d{10}" class="rounded"  required)
+                          input(type="Number" id="number2" placeholder="Enter your contact no" class="rounded"  required)
                         div.col-span-6(class="sm:col-span-12")
                           label(for="email") Email
                           input(type="email" id="email" placeholder="Enter your email id" required)
                       div 
                         label(for="address") Address 
-                        textarea(placeholder="Enter your address.." row="3" id="address" class="p-[11px] focus:!border-border-light dark:border-border-dark dark:focus:!border-border-dark ").w-full.border.border-border-light.rounded-5.text-xs.text-content
+                        textarea(placeholder="Enter your address.." id="address2" class="p-[11px] focus:!border-border-light dark:border-border-dark dark:focus:!border-border-dark ").w-full.border.border-border-light.rounded-5.text-xs.text-content
                       div.grid.grid-cols-12.gap-5
                         div.col-span-4(class="2md:col-span-6 sm:col-span-12")
                           label(for="country") Country
-                          select.form-select.block.w-full.px-3.text-xs.font-normal.text-content3.bg-white.bg-clip-padding.bg-no-repeat.border.border-border-light.rounded-5.transition.ease-in-out.m-0(class='min-w-[150px] py-[9px] dark:border-border-dark dark:bg-sidebar-dark2' id="sortby" aria-label='Default select example')
+                          select.form-select.block.w-full.px-3.text-xs.font-normal.text-content3.bg-white.bg-clip-padding.bg-no-repeat.border.border-border-light.rounded-5.transition.ease-in-out.m-0(class='min-w-[150px] py-[9px] dark:border-border-dark dark:bg-sidebar-dark2' id="country" aria-label='Default select example')
                             option(selected='') Select Country
                             option(value='1') India 
                             option(value='2') South Korea
@@ -101,17 +101,17 @@ html(lang='en')
                       div.flex.items-center.gap-2
                         label.checkbox.checkbox-sm(class="!mb-0 cursor-pointer")  
                           input(type='checkbox' class="peer") 
-                          div.checkbox-indicator(class="peer-checked:!bg-primary !border-primary")  
+                          span.checkbox-indicator(class="peer-checked:!bg-primary !border-primary")  
                             i(data-feather="check")
                         p(class="!my-0") Remember me for next time 
                       div 
                         label(for="otherNotes") Other Notes
-                        textarea(placeholder="Enter your address.." row="3" id="otherNotes" class="p-[11px] focus:!border-border-light dark:focus:!border-border-dark  dark:border-border-dark").w-full.border.border-border-light.rounded-5.text-xs.text-content
+                        textarea(placeholder="Enter your address.." id="otherNotes" class="p-[11px] focus:!border-border-light dark:focus:!border-border-dark  dark:border-border-dark").w-full.border.border-border-light.rounded-5.text-xs.text-content
                       div.flex.justify-between.items-center(class="sm:flex-col sm:gap-3")
-                        a(href="cart.html").btn.bg-secondary.text-xs.text-white.flex.items-center.gap-2(class="py-2 !w-fit sm:!w-full justify-center !m-0" type='button') 
+                        a(href="cart.html").btn.bg-secondary.text-xs.text-white.flex.items-center.gap-2(class="py-2 !w-fit sm:!w-full justify-center !m-0") 
                           i(data-feather="arrow-left" class="w-4 h-4 stroke-white")
                           |  Return to Shopping Cart 
-                        a(href="javascript:void(0)").btn.btn-primary.text-xs.text-white.flex.items-center.gap-2(class="py-2 !w-fit sm:!w-full justify-center !m-0" type='button') 
+                        a(href="javascript:void(0)").btn.btn-primary.text-xs.text-white.flex.items-center.gap-2(class="py-2 !w-fit sm:!w-full justify-center !m-0") 
                           |  Proceed to Next
                           i(data-feather="truck" class="w-4 h-4 stroke-white")
                 div(data-tabContent="2" class="tab-pan fade group relative  border-none !px-1 !pb-0")
@@ -124,47 +124,48 @@ html(lang='en')
                         i(data-feather="plus" class="w-4 h-4 stroke-content3 dark:stroke-white")
                     div.grid.grid-cols-12.gap-card-gap.mb-5
                       div.col-span-4(class="5xl:col-span-6 2md:col-span-12")
-                        div.border.border-border-light.p-4(class="dark:border-border-dark")
+                        div.border.border-border-light.p-4(class="relative dark:border-border-dark")
                           div.radio-button.radio-sm.primary(class="items-start")
                             input#home(type='radio' name='address')
                             div.check(class="min-w-[1rem]")
                             label(for='home' class="w-full text-xs cursor-pointer") 
-                              div.flex.gap-2.justify-between
+                              span.flex.gap-2.justify-between
                                 span(class="dark:text-content3") Home 
-                                div.flex.items-center.gap-2
-                                  label(for='modal-edit') 
-                                    +SVG_ICON("Edit-Square", "w-4 h-4 stroke-title cursor-pointer dark:stroke-white") 
-                                  label(for='modal-delete') 
-                                    +SVG_ICON("Delete", "w-4 h-4 stroke-title cursor-pointer dark:stroke-white") 
-                              div.flex.flex-col.gap-2 
-                                h6.text-title.font-bold(class="dark:text-white") Filomena Green 
-                                p.text-content3.text-xs
+
+                              span.flex.flex-col.gap-2 
+                                span.text-title.font-bold(class="text-xs dark:text-white") Filomena Green 
+                                span.text-content3.text-xs
                                   span.font-semibold Address: 
                                   | 	2211 Fruitville Rd, Sarasota, Florida, US 34237
-                                p.text-content3.text-xs
+                                span.text-content3.text-xs
                                   span.font-semibold Contact:
                                   | 	(941) 321-5643
+                          div.flex.items-center.gap-2(class="absolute top-4 right-4")
+                            label(for='modal-edit') 
+                              +SVG_ICON("Edit-Square", "w-4 h-4 stroke-title cursor-pointer dark:stroke-white") 
+                            label(for='modal-delete') 
+                              +SVG_ICON("Delete", "w-4 h-4 stroke-title cursor-pointer dark:stroke-white") 
                       div.col-span-4(class="5xl:col-span-6 2md:col-span-12")
-                        div.border.border-border-light.p-4(class="dark:border-border-dark") 
+                        div.border.border-border-light.p-4(class="relative dark:border-border-dark") 
                           div.radio-button.radio-sm.primary(class="items-start")
                             input#work(type='radio' name='address')
                             div.check(class="min-w-[1rem]") 
                             label(for='work' class="w-full text-xs cursor-pointer") 
-                              div.flex.gap-2.justify-between
-                                span(class="dark:text-content3") Work 
-                                div.flex.items-center.gap-2 
-                                  label(for='modal-edit') 
-                                    +SVG_ICON("Edit-Square", "w-4 h-4 stroke-title cursor-pointer dark:stroke-white") 
-                                  label(for='modal-delete')
-                                    +SVG_ICON("Delete", "w-4 h-4 stroke-title cursor-pointer dark:stroke-white") 
-                              div.flex.flex-col.gap-2
-                                h6.text-title.font-bold(class="dark:text-white") 	Ms. Ila Runte DDS
-                                p.text-content3.text-xs 
+                              span.flex.gap-2.justify-between
+                                span(class="dark:text-content3") Work                       
+                              span.flex.flex-col.gap-2
+                                span.text-title.font-bold(class="text-xs dark:text-white") 	Ms. Ila Runte DDS
+                                span.text-content3.text-xs 
                                   span.font-semibold Address: 
                                   | 	1531 E 23rd St S, Independence, Mississippi, US 64055
-                                p.text-content3.text-xs 
+                                span.text-content3.text-xs 
                                   span.font-semibold Contact: 
-                                  | 	(816) 252-4500                                        
+                                  | 	(816) 252-4500 
+                          div.flex.items-center.gap-2(class="absolute top-4 right-4")
+                            label(for='modal-edit') 
+                              +SVG_ICON("Edit-Square", "w-4 h-4 stroke-title cursor-pointer dark:stroke-white") 
+                            label(for='modal-delete') 
+                              +SVG_ICON("Delete", "w-4 h-4 stroke-title cursor-pointer dark:stroke-white")                                        
                     h6.text-title.font-medium(class="dark:text-white").mb-5 Shipping Method 
                     div.grid.grid-cols-12.gap-card-gap.mb-5 
                       div.col-span-6(class="2md:col-span-12")
@@ -172,23 +173,23 @@ html(lang='en')
                           div.radio-button.radio-sm.primary(class="items-start")
                             input#free(type='radio' name='payment')
                             div.check(class="min-w-[1rem]")
-                            label(for='free' class="w-full text-xs cursor-pointer") 
+                            label(for='free' class="flex flex-col w-full text-xs cursor-pointer") 
                               span(class="dark:text-white") Standard Delivery - Free 
-                              p.text-content3.text-xs Estimated 5-7 days shipping
+                              span.text-content3.text-xs Estimated 5-7 days shipping
                       div.col-span-6(class="2md:col-span-12")
                         div.border.border-border-light.p-4(class="dark:border-border-dark") 
                           div.flex.items-center.gap-2.mb-1 
                             div.radio-button.radio-sm.primary(class="items-start w-full")
                               input#standard(type='radio' name='payment')
                               div.check(class="min-w-[1rem]")
-                              label(for='standard' class="w-full text-xs cursor-pointer") 
+                              label(for='standard' class="flex flex-col w-full text-xs cursor-pointer") 
                                 span(class="dark:text-white") Express Delivery - $24 
-                                p.text-content3.text-xs Estimated 1-2 days shipping
+                                span.text-content3.text-xs Estimated 1-2 days shipping
                     div.flex.justify-between.items-center(class="sm:flex-col sm:gap-3")
-                      a(href="cart.html").btn.bg-secondary.text-xs.text-white.flex.items-center.gap-2(class="py-2 !w-fit sm:!w-full justify-center !m-0" type='button') 
+                      a(href="cart.html").btn.bg-secondary.text-xs.text-white.flex.items-center.gap-2(class="py-2 !w-fit sm:!w-full justify-center !m-0") 
                         i(data-feather="arrow-left" class="w-4 h-4 stroke-white")
                         |  Return to Shopping Cart
-                      a(href="javascript:void(0)").btn.btn-primary.text-xs.text-white.flex.items-center.gap-2(class="py-2 !w-fit sm:!w-full justify-center !m-0" type='button') 
+                      a(href="javascript:void(0)").btn.btn-primary.text-xs.text-white.flex.items-center.gap-2(class="py-2 !w-fit sm:!w-full justify-center !m-0") 
                         |  Proceed to Next
                         i(data-feather="truck" class="w-4 h-4 stroke-white")
                 div(data-tabContent="3" class="tab-pan fade group relative  border-none !px-1 !pb-0")
@@ -200,21 +201,21 @@ html(lang='en')
                         input#paypal(type='radio' name='payment-method')
                         div.check(class="min-w-[1rem]")
                         label(for='paypal' class="w-full text-xs cursor-pointer")
-                          div.flex.justify-between.gap-1(class="sm:flex-col sm:items-start")
-                            div
+                          span.flex.justify-between.gap-1(class="sm:flex-col sm:items-start")
+                            span.flex.flex-col
                               span(class="dark:text-white") PayPal
-                              p.text-content3.text-xs You will be taken to the PayPal website to finish your transaction safely
+                              span.text-content3.text-xs You will be taken to the PayPal website to finish your transaction safely
                             img(class="h-[30px]" src="../../assets/images/ecommerce/paypal.png" alt="PayPal" class="rtl:2sm:pl-unset rtl:2sm:pr-6")
                     div.border.border-border-light.p-4(class="dark:border-border-dark").mb-5 
                       div.radio-button.radio-sm.primary(class="items-start")
                         input#credit(type='radio' name='payment-method')
                         div.check(class="min-w-[1rem]")
                         label(for='credit' class="w-full text-xs cursor-pointer")
-                          div.flex.flex-col.gap-4
-                            div.flex.justify-between.gap-1(class="sm:flex-col sm:items-start") 
-                              div
+                          span.flex.flex-col.gap-4
+                            span.flex.justify-between.gap-1(class="sm:flex-col sm:items-start") 
+                              span.flex.flex-col
                                 span(class="dark:text-white") Credit Card
-                                p.text-content3.text-xs Transferring money securely through your bank account. Mastercard, Visa, Discover, and Stripe are all accepted
+                                span.text-content3.text-xs Transferring money securely through your bank account. Mastercard, Visa, Discover, and Stripe are all accepted
                               img(class="h-[30px]" src="../../assets/images/ecommerce/credit-card.png" alt="credit card" class="rtl:2sm:pl-unset rtl:2sm:pr-6")
                       form(action="index.html" class="flex flex-col gap-4 m-0 !mt-4 !ml-5 sm:!ml-0 theme-form")
                         div
@@ -222,7 +223,7 @@ html(lang='en')
                           input(type="text" id="cardholder" placeholder="Enter card holder name" required)
                         div
                           label(for="cardholder") Card Number
-                          input(type="number" id="cardholder" placeholder="Enter card number" required)
+                          input(type="number" id="cardholder2" placeholder="Enter card number" required)
                         div.grid.grid-cols-12.gap-5
                           div.col-span-6(class="sm:col-span-12")
                             label(for="expirydate") Expiry Date
@@ -235,16 +236,16 @@ html(lang='en')
                         input#cod(type='radio' name='payment-method')
                         div.check(class="min-w-[1rem]")
                         label(for='cod' class="w-full text-xs cursor-pointer") 
-                          div.flex.justify-between.gap-1(class="sm:flex-col sm:items-start") 
-                            div 
+                          span.flex.justify-between.gap-1(class="sm:flex-col sm:items-start") 
+                            span.flex.flex-col 
                               span(class="dark:text-white") Cash On Delivery
-                              p.text-content3.text-xs After your order is delivered, make a cash payment
+                              span.text-content3.text-xs After your order is delivered, make a cash payment
                             img(class="h-[30px]" src="../../assets/images/ecommerce/cash-on-delivery.png" alt="cash on delivery" class="rtl:2sm:pl-unset rtl:2sm:pr-6")
                     div.flex.justify-between.items-center(class="sm:flex-col sm:gap-3")
-                      a(href="cart.html").btn.bg-secondary.text-xs.text-white.flex.items-center.gap-2(class="py-2 !w-fit sm:!w-full justify-center !m-0" type='button') 
+                      a(href="cart.html").btn.bg-secondary.text-xs.text-white.flex.items-center.gap-2(class="py-2 !w-fit sm:!w-full justify-center !m-0") 
                         i(data-feather="arrow-left" class="w-4 h-4 stroke-white")
                         |  Return to Shopping Cart
-                      a(href="javascript:void(0)").btn.btn-primary.text-xs.text-white.flex.items-center.gap-2(class="py-2 !w-fit sm:!w-full justify-center !m-0" type='button') 
+                      a(href="javascript:void(0)").btn.btn-primary.text-xs.text-white.flex.items-center.gap-2(class="py-2 !w-fit sm:!w-full justify-center !m-0") 
                         |  Proceed to Next
                         i(data-feather="truck" class="w-4 h-4 stroke-white")
                 div(data-tabContent="4" class="tab-pan fade group relative  border-none !px-1 !pb-0")
@@ -280,18 +281,19 @@ html(lang='en')
                 input(type="text" id="name" placeholder="Enter your name" required class="dark:border-border-dark dark:border")                                                
               div 
                 label(for="address") Address 
-                textarea(placeholder="Enter your address" row="3" id="address" class="dark:border-border-dark dark:focus:!border-border-dark dark:bg-sidebar-dark2 p-[11px] focus:!border-border-light ").w-full.border.border-border-light.rounded-5.text-xs.text-content
+                textarea(placeholder="Enter your address" id="address" class="dark:border-border-dark dark:focus:!border-border-dark dark:bg-sidebar-dark2 p-[11px] focus:!border-border-light ").w-full.border.border-border-light.rounded-5.text-xs.text-content
               div
-                label(for="country") Address Type
-                select.form-select.block.w-full.px-3.text-xs.font-normal.text-content3.bg-white.bg-clip-padding.bg-no-repeat.border.border-border-light.rounded-5.transition.ease-in-out.m-0(class='min-w-[150px] py-[9px] dark:bg-sidebar-dark2 dark:border-border-dark dark:focus:border-border' id="sortby" aria-label='Default select example')
+                label(for="country2") Address Type
+                select.form-select.block.w-full.px-3.text-xs.font-normal.text-content3.bg-white.bg-clip-padding.bg-no-repeat.border.border-border-light.rounded-5.transition.ease-in-out.m-0(class='min-w-[150px] py-[9px] dark:bg-sidebar-dark2 dark:border-border-dark dark:focus:border-border' id="country2" aria-label='Default select example')
                   option(selected='') Home 
                   option(value='1') Office
               div 
                 label(for="number") Contact No
-                input(type="Number" id="number" placeholder="Enter your contact no" class="dark:text-white" maxlength="10" pattern="\d{10}" class="rounded"  required)
+                input(type="Number" id="number" placeholder="Enter your contact no" class="dark:text-white" class="rounded"  required)
           div.modal-footer(class="flex justify-end gap-3")
             label(for="modal-edit").inline-block.btn.bg-gray-light.p-3.text-title(class="dark:bg-sidebar-dark2 dark:text-white") Close
             label(for="modal-edit").inline-block.btn.btn-primary.p-3.text-white Save 
+
       //- Delete Info
       div.modal-main 
         input#modal-delete(class="peer" name="modal-delete" type='checkbox')
@@ -308,4 +310,4 @@ html(lang='en')
             label(for="modal-delete" class="dark:bg-sidebar-dark2 dark:text-white").inline-block.btn.bg-gray-light.p-3.text-title Close
             label(for="modal-delete").inline-block.btn.btn-danger.p-3.text-white Yes, Sure!
 
-  include ../../layout/footer-files
+    include ../../layout/footer-files

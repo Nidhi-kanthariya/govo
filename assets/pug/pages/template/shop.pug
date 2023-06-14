@@ -86,42 +86,54 @@ html(lang='en')
                         h4.accordionItemHeading.bg-primary Brand
                         div.accordionItemContent(class="dark:bg-sidebar-dark2")
                           ul.flex.gap-2.flex-col 
-                            li.flex.items-center.gap-2(a href="javascript:void(0)")
-                              label.checkbox.cursor-pointer(class="w-4 h-4") 
-                                input(type='checkbox' class="peer") 
-                                div.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
-                                  i(data-feather="check")
-                              p.text-content Zara (21)
-                            li.flex.items-center.gap-2(a href="javascript:void(0)")
-                              label.checkbox.cursor-pointer(class="w-4 h-4") 
-                                input(type='checkbox' class="peer")
-                                div.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
-                                  i(data-feather="check")
-                              p.text-content Nike (31)
-                            li.flex.items-center.gap-2(a href="javascript:void(0)")   
-                              label.checkbox.cursor-pointer(class="w-4 h-4") 
-                                input(type='checkbox' class="peer" checked) 
-                                div.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
-                                  i(data-feather="check")
-                              p.text-content Louis Vuitton (15)
-                            li.flex.items-center.gap-2(a href="javascript:void(0)")
-                              label.checkbox.cursor-pointer(class="w-4 h-4")
-                                input(type='checkbox' class="peer") 
-                                div.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
-                                  i(data-feather="check")
-                              p.text-content Puma (21) 
-                            li.flex.items-center.gap-2(a href="javascript:void(0)")
-                              label.checkbox.cursor-pointer(class="w-4 h-4")
-                                input(type='checkbox' class="peer" checked) 
-                                div.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
-                                  i(data-feather="check")
-                              p.text-content Dior (25)
-                            li.flex.items-center.gap-2(a href="javascript:void(0)")
-                              label.checkbox.cursor-pointer(class="w-4 h-4")
-                                input(type='checkbox' class="peer") 
-                                div.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
-                                  i(data-feather="check") 
-                              p.text-content H & M (5)
+                            li 
+                              div.flex.items-center.gap-2
+                                label.checkbox.cursor-pointer(class="w-4 h-4") 
+                                  input(type='checkbox' class="peer") 
+                                  span.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
+                                    i(data-feather="check")
+                                a(href="javascript:void(0)")
+                                  p.text-content Zara (21)
+                            li 
+                              div.flex.items-center.gap-2
+                                label.checkbox.cursor-pointer(class="w-4 h-4") 
+                                  input(type='checkbox' class="peer")
+                                  span.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
+                                    i(data-feather="check")
+                                a(href="javascript:void(0)")
+                                  p.text-content Nike (31)
+                            li 
+                              div.flex.items-center.gap-2   
+                                label.checkbox.cursor-pointer(class="w-4 h-4") 
+                                  input(type='checkbox' class="peer" checked) 
+                                  span.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
+                                    i(data-feather="check")
+                                a(href="javascript:void(0)")
+                                  p.text-content Louis Vuitton (15)
+                            li 
+                              div.flex.items-center.gap-2
+                                label.checkbox.cursor-pointer(class="w-4 h-4")
+                                  input(type='checkbox' class="peer") 
+                                  span.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
+                                    i(data-feather="check")
+                                a(href="javascript:void(0)")
+                                  p.text-content Puma (21) 
+                            li 
+                              div.flex.items-center.gap-2
+                                label.checkbox.cursor-pointer(class="w-4 h-4")
+                                  input(type='checkbox' class="peer" checked) 
+                                  span.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
+                                    i(data-feather="check")
+                                a(href="javascript:void(0)")
+                                  p.text-content Dior (25)
+                            li 
+                              div.flex.items-center.gap-2
+                                label.checkbox.cursor-pointer(class="w-4 h-4")
+                                  input(type='checkbox' class="peer") 
+                                  span.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
+                                    i(data-feather="check") 
+                                a(href="javascript:void(0)")
+                                  p.text-content H & M (5)
 
                   div.flex.flex-col.flex-wrap.gap-2
                     div.accordionWrapper
@@ -129,27 +141,41 @@ html(lang='en')
                         h4.accordionItemHeading.bg-primary Categories
                         div.accordionItemContent(class="dark:bg-sidebar-dark2")
                           ul.flex.gap-2.flex-col
-                            li(a href="javascript:void(0)").flex.items-center.justify-between.cursor-pointer
-                              span.text-xs.text-content Fashion
-                              small.text-2x.text-content 39   
-                            li(a href="javascript:void(0)").flex.items-center.justify-between.cursor-pointer 
-                              span.text-xs.text-content Trends
-                              small.text-2x.text-content 25
-                            li(a href="javascript:void(0)").flex.items-center.justify-between.cursor-pointer 
-                              span.text-xs.text-content  Designer
-                              small.text-2x.text-content 15
-                            li(a href="javascript:void(0)").flex.items-center.justify-between.cursor-pointer 
-                              span.text-xs.text-content  Swimwear
-                              small.text-2x.text-content 51
-                            li(a href="javascript:void(0)").flex.items-center.justify-between.cursor-pointer 
-                              span.text-xs.text-content Home & kitchen  
-                              small.text-2x.text-content 84
-                            li(a href="javascript:void(0)").flex.items-center.justify-between.cursor-pointer
-                              span.text-xs.text-content Toys & hobbies
-                              small.text-2x.text-content 54
-                            li(a href="javascript:void(0)").flex.items-center.justify-between.cursor-pointer
-                              span.text-xs.text-content Tools & hardware
-                              small.text-2x.text-content 54
+                            li 
+                              a(href="javascript:void(0)").flex.items-center.justify-between.cursor-pointer
+                                div
+                                  span.text-xs.text-content Fashion
+                                  small.text-2x.text-content 39   
+                            li 
+                              a(href="javascript:void(0)").flex.items-center.justify-between.cursor-pointer 
+                                div
+                                  span.text-xs.text-content Trends
+                                  small.text-2x.text-content 25
+                            li 
+                              a(href="javascript:void(0)").flex.items-center.justify-between.cursor-pointer 
+                                div
+                                  span.text-xs.text-content  Designer
+                                  small.text-2x.text-content 15
+                            li 
+                              a(href="javascript:void(0)").flex.items-center.justify-between.cursor-pointer 
+                                div
+                                  span.text-xs.text-content  Swimwear
+                                  small.text-2x.text-content 51
+                            li 
+                              a(href="javascript:void(0)").flex.items-center.justify-between.cursor-pointer 
+                                div
+                                  span.text-xs.text-content Home & kitchen  
+                                  small.text-2x.text-content 84
+                            li 
+                              a(href="javascript:void(0)").flex.items-center.justify-between.cursor-pointer
+                                div
+                                  span.text-xs.text-content Toys & hobbies
+                                  small.text-2x.text-content 54
+                            li 
+                              a(href="javascript:void(0)").flex.items-center.justify-between.cursor-pointer
+                                div
+                                  span.text-xs.text-content Tools & hardware
+                                  small.text-2x.text-content 54
 
                   div.flex.flex-col.flex-wrap.gap-2
                     div.accordionWrapper
@@ -157,42 +183,55 @@ html(lang='en')
                         h4.accordionItemHeading.bg-primary Discount 
                         div.accordionItemContent(class="dark:bg-sidebar-dark2")
                           ul.flex.gap-2.flex-col
-                            li.flex.items-center.gap-2(a href="javascript:void(0)")
-                              label.checkbox.cursor-pointer(class="w-4 h-4") 
-                                input(type='checkbox' class="peer") 
-                                div.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
+                            li 
+                              div.flex.items-center.gap-2
+                                label.checkbox.cursor-pointer(class="w-4 h-4") 
+                                  input(type='checkbox' class="peer") 
+                                  span.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
+                                    i(data-feather="check")
+                                a(href="javascript:void(0)")
+                                  p.text-content 50% or more
+                            li 
+                              div.flex.items-center.gap-2
+                                label.checkbox.cursor-pointer(class="w-4 h-4") 
+                                  input(type='checkbox' class="peer" checked)
+                                  span.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
+                                    i(data-feather="check")
+                                a(href="javascript:void(0)")
+                                  p.text-content 40% or more
+                            li 
+
+                              div.flex.items-center.gap-2
+                                label.checkbox.cursor-pointer(class="w-4 h-4") 
+                                  input(type='checkbox' class="peer") 
+                                  span.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
+                                a(href="javascript:void(0)")
                                   i(data-feather="check")
-                              p.text-content 50% or more
-                            li.flex.items-center.gap-2(a href="javascript:void(0)")
-                              label.checkbox.cursor-pointer(class="w-4 h-4") 
-                                input(type='checkbox' class="peer" checked)
-                                div.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
-                                  i(data-feather="check")
-                              p.text-content 40% or more
-                            li.flex.items-center.gap-2(a href="javascript:void(0)")   
-                              label.checkbox.cursor-pointer(class="w-4 h-4") 
-                                input(type='checkbox' class="peer") 
-                                div.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
-                                  i(data-feather="check")
-                              p.text-content 30% or more
-                            li.flex.items-center.gap-2(a href="javascript:void(0)")
-                              label.checkbox.cursor-pointer(class="w-4 h-4")
-                                input(type='checkbox' class="peer") 
-                                div.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
-                                  i(data-feather="check")
-                              p.text-content 20% or more
-                            li.flex.items-center.gap-2(a href="javascript:void(0)")
-                              label.checkbox.cursor-pointer(class="w-4 h-4")
-                                input(type='checkbox' class="peer") 
-                                div.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
-                                  i(data-feather="check")
-                              p.text-content 10% or more
-                            li.flex.items-center.gap-2(a href="javascript:void(0)")
-                              label.checkbox.cursor-pointer(class="w-4 h-4")
-                                input(type='checkbox' class="peer") 
-                                div.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
-                                  i(data-feather="check")
-                              p.text-content Less than 10%
+                                  p.text-content 30% or more
+                            li 
+                              div.flex.items-center.gap-2
+                                label.checkbox.cursor-pointer(class="w-4 h-4")
+                                  input(type='checkbox' class="peer") 
+                                  span.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
+                                    i(data-feather="check")
+                                a(href="javascript:void(0)")
+                                  p.text-content 20% or more
+                            li 
+                              div.flex.items-center.gap-2
+                                label.checkbox.cursor-pointer(class="w-4 h-4")
+                                  input(type='checkbox' class="peer") 
+                                  span.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
+                                    i(data-feather="check")
+                                a(href="javascript:void(0)")
+                                  p.text-content 10% or more
+                            li 
+                              div.flex.items-center.gap-2
+                                label.checkbox.cursor-pointer(class="w-4 h-4")
+                                  input(type='checkbox' class="peer") 
+                                  span.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
+                                    i(data-feather="check")
+                                a(href="javascript:void(0)")
+                                  p.text-content Less than 10%
 
                   div.flex.flex-col.flex-wrap.gap-2
                     div.accordionWrapper
@@ -200,54 +239,62 @@ html(lang='en')
                         h4.accordionItemHeading.bg-primary Rating
                         div.accordionItemContent(class="dark:bg-sidebar-dark2")
                           ul.flex.gap-2.flex-col
-                            li.flex.items-center.gap-2(a href="javascript:void(0)")
-                              label.checkbox(class="w-4 h-4") 
-                                input(type='checkbox' class="peer" checked)
-                                div.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
-                                  i(data-feather="check")
-                              div.flex.items-center.gap-1
-                                i(data-feather="star" class="w-5 h-5 fill-warning")
-                                i(data-feather="star" class="w-5 h-5 fill-warning")
-                                i(data-feather="star" class="w-5 h-5 fill-warning")
-                                i(data-feather="star" class="w-5 h-5 fill-warning")
-                                i(data-feather="star" class="w-5 h-5 fill-content")
-                              p.text-content 4 & Above
-                            li.flex.items-center.gap-2(a href="javascript:void(0)")   
-                              label.checkbox(class="w-4 h-4") 
-                                input(type='checkbox' class="peer") 
-                                div.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
-                                  i(data-feather="check")
-                              div.flex.items-center.gap-1
-                                i(data-feather="star" class="w-5 h-5 fill-warning")
-                                i(data-feather="star" class="w-5 h-5 fill-warning")
-                                i(data-feather="star" class="w-5 h-5 fill-warning")
-                                i(data-feather="star" class="w-5 h-5 fill-content")
-                                i(data-feather="star" class="w-5 h-5 fill-content")
-                              p.text-content 3 & Above
-                            li.flex.items-center.gap-2(a href="javascript:void(0)")
-                              label.checkbox(class="w-4 h-4")
-                                input(type='checkbox' class="peer") 
-                                div.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
-                                  i(data-feather="check")
-                              div.flex.items-center.gap-1
-                                i(data-feather="star" class="w-5 h-5 fill-warning")
-                                i(data-feather="star" class="w-5 h-5 fill-warning")
-                                i(data-feather="star" class="w-5 h-5 fill-content")
-                                i(data-feather="star" class="w-5 h-5 fill-content")
-                                i(data-feather="star" class="w-5 h-5 fill-content")
-                              p.text-content 2 & Above
-                            li.flex.items-center.gap-2(a href="javascript:void(0)")
-                              label.checkbox(class="w-4 h-4")
-                                input(type='checkbox' class="peer") 
-                                div.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
-                                  i(data-feather="check")
-                              div.flex.items-center.gap-1
-                                i(data-feather="star" class="w-5 h-5 fill-warning")
-                                i(data-feather="star" class="w-5 h-5 fill-content")
-                                i(data-feather="star" class="w-5 h-5 fill-content")
-                                i(data-feather="star" class="w-5 h-5 fill-content")
-                                i(data-feather="star" class="w-5 h-5 fill-content")
-                              p.text-content 1
+                            li 
+                              div.flex.items-center.gap-2
+                                label.checkbox(class="w-4 h-4") 
+                                  input(type='checkbox' class="peer" checked)
+                                  span.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
+                                    i(data-feather="check")
+                                div.flex.items-center.gap-1
+                                  i(data-feather="star" class="w-5 h-5 fill-warning")
+                                  i(data-feather="star" class="w-5 h-5 fill-warning")
+                                  i(data-feather="star" class="w-5 h-5 fill-warning")
+                                  i(data-feather="star" class="w-5 h-5 fill-warning")
+                                  i(data-feather="star" class="w-5 h-5 fill-content")
+                                a(href="javascript:void(0)")
+                                  p.text-content 4 & Above
+                            li 
+                              div.flex.items-center.gap-2
+                                label.checkbox(class="w-4 h-4") 
+                                  input(type='checkbox' class="peer") 
+                                  span.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
+                                    i(data-feather="check")
+                                div.flex.items-center.gap-1
+                                  i(data-feather="star" class="w-5 h-5 fill-warning")
+                                  i(data-feather="star" class="w-5 h-5 fill-warning")
+                                  i(data-feather="star" class="w-5 h-5 fill-warning")
+                                  i(data-feather="star" class="w-5 h-5 fill-content")
+                                  i(data-feather="star" class="w-5 h-5 fill-content")
+                                a(href="javascript:void(0)")
+                                  p.text-content 3 & Above
+                            li 
+                              div.flex.items-center.gap-2
+                                label.checkbox(class="w-4 h-4")
+                                  input(type='checkbox' class="peer") 
+                                  span.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
+                                    i(data-feather="check")
+                                div.flex.items-center.gap-1
+                                  i(data-feather="star" class="w-5 h-5 fill-warning")
+                                  i(data-feather="star" class="w-5 h-5 fill-warning")
+                                  i(data-feather="star" class="w-5 h-5 fill-content")
+                                  i(data-feather="star" class="w-5 h-5 fill-content")
+                                  i(data-feather="star" class="w-5 h-5 fill-content")
+                                a(href="javascript:void(0)")
+                                  p.text-content 2 & Above
+                            li 
+                              div.flex.items-center.gap-2
+                                label.checkbox(class="w-4 h-4")
+                                  input(type='checkbox' class="peer") 
+                                  span.checkbox-indicator(class="peer-checked:!bg-primary !border peer-checked:!border-primary") 
+                                    i(data-feather="check")
+                                div.flex.items-center.gap-1
+                                  i(data-feather="star" class="w-5 h-5 fill-warning")
+                                  i(data-feather="star" class="w-5 h-5 fill-content")
+                                  i(data-feather="star" class="w-5 h-5 fill-content")
+                                  i(data-feather="star" class="w-5 h-5 fill-content")
+                                  i(data-feather="star" class="w-5 h-5 fill-content")
+                                a(href="javascript:void(0)")
+                                  p.text-content 1
                   div.flex.flex-col
                     h4.bg-primary.text-white.text-sm.p-3.w-full.cursor-pointer.rounded.font-bold(class="rounded-tr-[0.25rem] rounded-tl-[0.25rem] rounded-br-none rounded-bl-none") New Product
                     div(class="block w-full p-3 border-2 bg-white-light border-primary-light dark:bg-sidebar-dark")
@@ -271,8 +318,8 @@ html(lang='en')
           div.modal-body.product-modal(class="md:modal-content-scroll md:custom-scroll md:!h-[90vh] !px-4")
             div.grid.grid-cols-12.gap-card-gap 
               div.col-span-6(class="md:col-span-12")             
-                div.product-slider
-                  div.swiper.productImgNav
+                div.product-slider 
+                  div.swiper.productImgNav  
                     div.swiper-wrapper 
                       div.swiper-slide 
                         img(src="../../assets/images/ecommerce/18.jpg" alt="product")
@@ -317,13 +364,13 @@ html(lang='en')
                     i(data-feather="star" class="w-4 h-4 fill-warning stroke-transparent")
                     i(data-feather="star" class="w-4 h-4 fill-warning stroke-transparent")
                     i(data-feather="star" class="w-4 h-4 fill-content stroke-transparent")
-                  label(for="4above").text-content3.text-xs.font-semibold 1059 ratings
+                  label.text-content3.text-xs.font-semibold 1059 ratings
                 p.text-content3.text-sm.mt-1.line-clamp-2 This Men's Oversize T-Shirt is ideal for daily wear or for college because it is incredibly cool and cosy.
                 div.divider.w-full.my-4(class="dark:border-border-dark 2lg:my-3")
                 div.grid.grid-cols-12.gap-card-gap.items-center 
                   div.col-span-6(class="2lg:col-span-7 2sm:col-span-12")
                     div.flex.items-center.gap-3 
-                      label.text-title.text-sm.font-medium(for="color" class="dark:text-white") Color
+                      label.text-title.text-sm.font-medium(class="dark:text-white") Color
                       ul(class="flex flex-wrap items-center gap-1" id="color")
                         li(class="w-5 h-5 rounded-full cursor-pointer bg-light")
                         li(class="w-5 h-5 bg-black rounded-full cursor-pointer")
@@ -337,11 +384,11 @@ html(lang='en')
                         option(selected='') 1 
                         option(value='1') 2
                         option(value='2') 3 
-                        option(value='3') 4
+                        option(value='3') 4 
                         option(value='3') 5  
                 div.divider.w-full.my-4(class="2lg:my-3 dark:border-border-dark")
                 div.flex.items-center.gap-3
-                  label.text-title.text-sm.font-medium(for="size" class="dark:text-white") Sizes
+                  label.text-title.text-sm.font-medium(class="dark:text-white") Sizes
                   ul.flex.items-center.gap-2
                     li.border.border-border-light.rounded-full.text-title.leading-none.w-8.h-8.flex.items-center.justify-center(class="hover:bg-gray-extralight dark:hover:bg-sidebar-dark2 dark:border-border-dark dark:hover:text-white") S 
                     li.btn-active.text-title.leading-none.w-8.h-8.flex.items-center.justify-center.border.border-border-light.bg-gray-extralight.rounded-full(class="hover:bg-gray-extralight dark:hover:bg-sidebar-dark2 dark:border-border-dark dark:bg-sidebar-dark2 dark:text-white") M
@@ -353,7 +400,7 @@ html(lang='en')
                   a(href="wishlist.html").btn.btn-secondary.text-white.text-sm(class="lg:px-2 lg:text-xs") Add to wishlist         
                   a(href="checkout.html").btn.btn-warning.text-white.text-sm(class="lg:px-2 lg:text-xs") Buy it now         
 
-  include ../../layout/footer-files
+    include ../../layout/footer-files
 
 
 

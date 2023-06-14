@@ -529,7 +529,7 @@ html(lang='en')
                           div.dropdown-menu.card(class="!w-36 left-0 !top-11 rtl:left-unset rtl:!right-0 rounded !bg-danger")
                             div.card-body.text-white
                               h3.text-lg.font-bold.mb-1 Learn More!
-                                p.font-normal Here, you can learn more and more
+                              span.font-normal Here, you can learn more and more
                     div(data-tabContent="2" class="relative tab-pan copyParent group ")
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white")
                         i(data-feather="clipboard")
@@ -541,7 +541,7 @@ html(lang='en')
                           |     &lt;div class="dropdown-menu card !w-36 left-0 !top-11 rtl:left-unset rtl:!right-0 rounded !bg-danger"&gt; 
                           |       &lt;div class="text-white card-body"&gt;
                           |         &lt;h3 class="mb-1 text-lg font-bold"&gt; Learn More! &lt;/h3&gt; 
-                          |           &lt;p class="font-medium"&gt; Here, you can learn more and more &lt;/p&gt;             
+                          |         &lt;span class="font-medium"&gt; Here, you can learn more and more &lt;/span&gt;             
                           |       &lt;/div&gt;
                           |     &lt;/div&gt; 
                           |    &lt;/div&gt;
@@ -574,7 +574,7 @@ html(lang='en')
                                 div.flex.items-center.gap-2
                                   label.checkbox(class="w-4 h-4 cursor-pointer")   
                                     input(type='checkbox' class="peer") 
-                                    div.checkbox-indicator(class="peer-checked:!bg-primary !border-primary")  
+                                    span.checkbox-indicator(class="peer-checked:!bg-primary !border-primary")  
                                       i(data-feather="check")
                                   p.m-0 Default Checkbox
                     div(data-tabContent="2" class="relative tab-pan copyParent group ")
@@ -601,7 +601,7 @@ html(lang='en')
                           |           &lt;div class="flex items-center gap-2"&gt;
                           |             &lt;label class="checkbox w-4 h-4 cursor-pointer&gt;&lt;/label&gt;
                           |               &lt;input type="checkbox" class="peer"&gt;
-                          |               &lt;div class="checkbox-indicator peer-checked:!bg-primary !border-primary"&gt;&lt;/div&gt;
+                          |               &lt;span class="checkbox-indicator peer-checked:!bg-primary !border-primary"&gt;&lt;/span&gt;
                           |                   &lt;i data-feather="check"&gt;&lt;/i&gt;
                           |             &lt;p&gt; Default Checkbox &lt;/p&gt;
                           |           &lt;/div&gt;
@@ -652,4 +652,4 @@ html(lang='en')
         +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] sm:py-4  shadow-footer bg-white px-body-space mt-card-gap")
       include ../../components/customizer
 
-  include ../../layout/footer-files
+    include ../../layout/footer-files

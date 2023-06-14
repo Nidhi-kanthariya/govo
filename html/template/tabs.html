@@ -33,7 +33,7 @@
         <!-- Page Header start-->
         <header class="fixed top-0 z-[6] xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto">
           <div class="page-header transition-all bg-white shadow-header dark:bg-sidebar-dark">
-            <div class="py-[11px] flex items-center xl:relative justify-between px-body-space">
+            <div class="py-[11px] flex items-center xl:relative justify-between px-body-space gap-4">
               <div class="left-header flex items-center gap-2"> 
                 <button class="sidebar-toggle hide"> 
                   <svg class="w-6 4xl:w-5 h-6 4xl:h-5 stroke-title"> 
@@ -82,7 +82,7 @@
                               <use href="../../assets/svg/sprite.svg#Search"> </use>
                             </svg>
                           </div>
-                          <ul class="mt-4 flex flex-col max-h-[232px] overflow-auto custom-scroll"> 
+                          <ul class="mt-4 flex flex-col max-h-[214px] overflow-auto custom-scroll"> 
                             <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 dark:hover:bg-sidebar-dark2 border-border-light hover:bg-gray-light rounded-5"><a class="flex items-center gap-[12px]" href="./email.html">
                                 <div class="indicator"> <span class="chat-status status-online"></span>
                                   <div class="avatar">
@@ -199,7 +199,7 @@
                             <h4 class="text-base font-bold text-title">Messages</h4>
                             <div class="badge leading-none p-1 badge bg-primary rounded-full text-3xs flex items-center justify-center min-w-[22px] min-h-[22px]">25</div>
                           </div>
-                          <ul class="mt-[15px] flex flex-col max-h-[232px] overflow-auto custom-scroll"> 
+                          <ul class="mt-[15px] flex flex-col max-h-[214px] overflow-auto custom-scroll"> 
                             <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 border-border-light dark:border-border-dark hover:bg-gray-light dark:hover:bg-sidebar-dark2 rounded-5"><a class="flex items-center gap-[12px]" href="./chat-app.html">
                                 <div class="relative shadow-lg bg-success flex items-center justify-center rounded-full p-2">
                                   <svg class="w-5 h-5 stroke-white"> 
@@ -280,7 +280,7 @@
                               </svg>
                             </button>
                           </div>
-                          <ul class="flex flex-col max-h-[232px] overflow-auto custom-scroll px-1">
+                          <ul class="flex flex-col max-h-[214px] overflow-auto custom-scroll px-1">
                             <li class="cart-item flex items-center gap-3 py-3 rtl:first:!pl-0  rtl:last:!pr-0 transition-all duration-300 border-b last:border-b-0 border-border-light dark:border-border-dark rounded-5"><a class="flex items-center gap-[12px]" href="./product.html">
                                 <div class="rounded-full relative"> <img class="rounded-full min-w-[2.25rem] min-h-[2.25rem] w-full h-auto object-cover" src="../../assets/images/product/1.jpg" alt="Flower Pot"></div>
                                 <div> 
@@ -744,7 +744,7 @@
                     </nav>
                   </div>
                   <!-- Breadcrumbs End -->
-                  <div class="custom-select select-style-1 lg:hidden dark:text-title">
+                  <div class="custom-select select-style-1 2xl:hidden dark:text-title">
                     <select class="dark:text-title">
                       <option selected value="">Last 7 Days </option>
                       <option value="">Last 2 Weeks </option>
@@ -1296,7 +1296,7 @@
               &lt;p class="text-xs text-content3"&gt; Creating a website that...&lt;/p&gt;  
           &lt;/div&gt;
           &lt;div data-tabContent="2" class="tab-pan fade group relative  border-none !px-0 !pb-0"&gt; 
-              &lt;p class="text-xs text-content3 mb-2"&gt; Construct a web page...&lt;/p&gt;  
+              &lt;p class="mb-2 text-xs text-content3"&gt; Construct a web page...&lt;/p&gt;  
               &lt;p class="font-bold text-title dark:text-white"&gt; Visit Us:   
                   &lt;span class="text-content3 text-2xs"&gt;4 Marigold Close, Glenmore Park, New South Wales, 2745 Australia- 2745&lt;/span&gt; 
               &lt;/p&gt;
@@ -1555,11 +1555,11 @@
                               <div class="flex flex-col gap-3 form-group"> 
                                 <div class="flex flex-col gap-1">
                                   <label class="font-medium text-xs text-primary" for="email">Email</label>
-                                  <input class="p-[11px] dark:text-white dark:bg-sidebar-dark2 dark:border-border-dark w-full border border-border-light rounded-5 text-xs text-content" type="email" placeholder="Enter your email id..">
+                                  <input class="p-[11px] dark:text-white dark:bg-sidebar-dark2 dark:border-border-dark w-full border border-border-light rounded-5 text-xs text-content" type="email" id="email" placeholder="Enter your email id..">
                                 </div>
                                 <div class="flex flex-col gap-1"> 
                                   <label class="font-medium text-xs text-primary" for="notes">Notes</label>
-                                  <textarea class="p-[11px] dark:text-white dark:bg-sidebar-dark2 dark:border-border-dark w-full border border-border-light rounded-5 text-xs text-content" placeholder="Enter the address.." row="3" id="notes"></textarea>
+                                  <textarea class="p-[11px] dark:text-white dark:bg-sidebar-dark2 dark:border-border-dark w-full border border-border-light rounded-5 text-xs text-content" placeholder="Enter the address.." id="notes"></textarea>
                                 </div>
                               </div>
                             </div>
@@ -1612,11 +1612,11 @@
               &lt;div class="flex flex-col gap-3 form-group"&gt;
                   &lt;div class="flex flex-col gap-1"&gt; 
                       &lt;label for="email" class="text-xs font-medium text-primary"&gt;Email&lt;/label&gt;
-                      &lt;input type="email"  placeholder="Enter your email id.." class="p-[11px]  dark:bg-sidebar-dark2 dark:border-border-dark w-full border border-border-light rounded-5 text-xs text-content"/&gt;
+                      &lt;input type="email" id="email"  placeholder="Enter your email id.." class="p-[11px]  dark:bg-sidebar-dark2 dark:border-border-dark w-full border border-border-light rounded-5 text-xs text-content"/&gt;
                   &lt;/div&gt;
                   &lt;div class="flex flex-col gap-1"&gt; 
                       &lt;label for="address" class="text-xs font-medium text-primary"&gt;Current Address &lt;/label&gt;
-                      &lt;textarea placeholder="Enter the address.." row="3" id="address" class=" p-[11px] dark:bg-sidebar-dark2 dark:border-border-dark w-full border border-border-light rounded-5 text-xs text-content"&gt;
+                      &lt;textarea placeholder="Enter the address.." id="address" class=" p-[11px] dark:bg-sidebar-dark2 dark:border-border-dark w-full border border-border-light rounded-5 text-xs text-content"&gt;
                   &lt;/div&gt;
               &lt;/div&gt;  
           &lt;/div&gt;
@@ -1989,7 +1989,7 @@
                                 </div>
                                 <div class="flex flex-col gap-1">
                                   <label class="font-medium text-xs text-primary" for="password">Password</label>
-                                  <input class="p-[11px] dark:bg-sidebar-dark2 dark:border-border-dark w-full border border-border-light rounded-5 text-xs text-content" type="password" placeholder="Password..">
+                                  <input class="p-[11px] dark:bg-sidebar-dark2 dark:border-border-dark w-full border border-border-light rounded-5 text-xs text-content" type="password" id="password" placeholder="Password..">
                                 </div>
                               </div>
                             </div>
@@ -2024,7 +2024,7 @@
                   &lt;/div&gt;
                   &lt;div class="flex flex-col gap-1"&gt; 
                       &lt;label for="password" class="text-xs font-medium text-primary"&gt;Password&lt;/label&gt;
-                      &lt;input type="password"  placeholder="Password.." class="p-[11px] w-full border border-border-light rounded-5 text-xs text-content dark:bg-sidebar-dark2 dark:border-border-dark "/&gt;
+                      &lt;input type="password" id="password"  placeholder="Password.." class="p-[11px] w-full border border-border-light rounded-5 text-xs text-content dark:bg-sidebar-dark2 dark:border-border-dark "/&gt;
                   &lt;/div&gt; 
               &lt;/div&gt;  
           &lt;/div&gt;
@@ -2104,20 +2104,20 @@
         </div>
       </div>
     </main>
+    <!-- Feather Icon Js -->
+    <script src="../../assets/js/feather.min.js"></script>
+    <script src="../../assets/js/feather-custom.js"></script>
+    <!-- Select Js -->
+    <script src="../../assets/js/custom-select.js"></script>
+    <!-- prism js-->
+    <script src="../../assets/js/prism.js"></script>
+    <!-- Sidebar Js -->
+    <script src="../../assets/js/sidebar.js"></script>
+    <!-- fontAwesome js-->
+    <script src="../../assets/js/fontawesome/all.min.js"></script>
+    <!-- customizer js-->
+    <script src="../../assets/js/customizer.js"> </script>
+    <!-- Custom script   -->
+    <script src="../../assets/js/script.js"> </script>
   </body>
-  <!-- Feather Icon Js -->
-  <script src="../../assets/js/feather.min.js"></script>
-  <script src="../../assets/js/feather-custom.js"></script>
-  <!-- Select Js -->
-  <script src="../../assets/js/custom-select.js"></script>
-  <!-- prism js-->
-  <script src="../../assets/js/prism.js"></script>
-  <!-- Sidebar Js -->
-  <script src="../../assets/js/sidebar.js"></script>
-  <!-- fontAwesome js-->
-  <script src="../../assets/js/fontawesome/all.min.js"></script>
-  <!-- customizer js-->
-  <script src="../../assets/js/customizer.js"> </script>
-  <!-- Custom script   -->
-  <script src="../../assets/js/script.js"> </script>
 </html>

@@ -33,7 +33,7 @@
         <!-- Page Header start-->
         <header class="fixed top-0 z-[6] xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto">
           <div class="page-header transition-all bg-white shadow-header dark:bg-sidebar-dark">
-            <div class="py-[11px] flex items-center xl:relative justify-between px-body-space">
+            <div class="py-[11px] flex items-center xl:relative justify-between px-body-space gap-4">
               <div class="left-header flex items-center gap-2"> 
                 <button class="sidebar-toggle hide"> 
                   <svg class="w-6 4xl:w-5 h-6 4xl:h-5 stroke-title"> 
@@ -82,7 +82,7 @@
                               <use href="../../assets/svg/sprite.svg#Search"> </use>
                             </svg>
                           </div>
-                          <ul class="mt-4 flex flex-col max-h-[232px] overflow-auto custom-scroll"> 
+                          <ul class="mt-4 flex flex-col max-h-[214px] overflow-auto custom-scroll"> 
                             <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 dark:hover:bg-sidebar-dark2 border-border-light hover:bg-gray-light rounded-5"><a class="flex items-center gap-[12px]" href="./email.html">
                                 <div class="indicator"> <span class="chat-status status-online"></span>
                                   <div class="avatar">
@@ -199,7 +199,7 @@
                             <h4 class="text-base font-bold text-title">Messages</h4>
                             <div class="badge leading-none p-1 badge bg-primary rounded-full text-3xs flex items-center justify-center min-w-[22px] min-h-[22px]">25</div>
                           </div>
-                          <ul class="mt-[15px] flex flex-col max-h-[232px] overflow-auto custom-scroll"> 
+                          <ul class="mt-[15px] flex flex-col max-h-[214px] overflow-auto custom-scroll"> 
                             <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 border-border-light dark:border-border-dark hover:bg-gray-light dark:hover:bg-sidebar-dark2 rounded-5"><a class="flex items-center gap-[12px]" href="./chat-app.html">
                                 <div class="relative shadow-lg bg-success flex items-center justify-center rounded-full p-2">
                                   <svg class="w-5 h-5 stroke-white"> 
@@ -280,7 +280,7 @@
                               </svg>
                             </button>
                           </div>
-                          <ul class="flex flex-col max-h-[232px] overflow-auto custom-scroll px-1">
+                          <ul class="flex flex-col max-h-[214px] overflow-auto custom-scroll px-1">
                             <li class="cart-item flex items-center gap-3 py-3 rtl:first:!pl-0  rtl:last:!pr-0 transition-all duration-300 border-b last:border-b-0 border-border-light dark:border-border-dark rounded-5"><a class="flex items-center gap-[12px]" href="./product.html">
                                 <div class="rounded-full relative"> <img class="rounded-full min-w-[2.25rem] min-h-[2.25rem] w-full h-auto object-cover" src="../../assets/images/product/1.jpg" alt="Flower Pot"></div>
                                 <div> 
@@ -744,7 +744,7 @@
                     </nav>
                   </div>
                   <!-- Breadcrumbs End -->
-                  <div class="custom-select select-style-1 lg:hidden dark:text-title">
+                  <div class="custom-select select-style-1 2xl:hidden dark:text-title">
                     <select class="dark:text-title">
                       <option selected value="">Last 7 Days </option>
                       <option value="">Last 2 Weeks </option>
@@ -1042,7 +1042,7 @@
                         <form class="theme-form flex flex-col gap-4 !m-0">
                           <div>
                             <label for="email1">Email</label>
-                            <input type="email" id="email1" placeholder="Enter your email id" required="">
+                            <input type="email" id="email2" placeholder="Enter your email id" required="">
                           </div>
                           <div>
                             <label for="password2">Password</label>
@@ -1063,7 +1063,7 @@
   &lt;form class="theme-form flex flex-col gap-4 !m-0"&gt;
      &lt;div&gt;
          &lt;label for="email1&gt;Email&lt;/label&gt; 
-         &lt;input type="email" id="email1" placeholder='Enter your email id' required=''&gt;&lt;/input&gt; 
+         &lt;input type="email" id="email2" placeholder='Enter your email id' required=''&gt;&lt;/input&gt; 
      &lt;/div&gt;
      &lt;div class="relative"&gt;
          &lt;label for="password&gt;Password&lt;/label&gt; 
@@ -1159,11 +1159,11 @@
                           </div>
                           <div>
                             <label for="email">Email</label>
-                            <input id="email" type="email" placeholder="Enter email id"><small>Error Message</small>
+                            <input id="email1" type="email" placeholder="Enter email id"><small>Error Message</small>
                           </div>
                           <div>
                             <label for="contact">Contact </label>
-                            <input id="contact" type="number" placeholder="Enter your contact"><small>Error Message</small>
+                            <input id="contact1" type="number" placeholder="Enter your contact"><small>Error Message</small>
                           </div>
                           <div class="flex justify-end items-center">
                             <button class="btn btn-primary text-white text-xs font-semibold py-2 !m-0 !w-fit" type="submit">Submit</button>
@@ -1187,7 +1187,7 @@
      &lt;/div&gt;
      &lt;div&gt;
          &lt;label for="contact"&gt;Password&lt;/label&gt; 
-         &lt;input type="number" id="contact" required='' placeholder='Enter your contact&gt;&lt;/input&gt; 
+         &lt;input type="number" id="contact1" required='' placeholder='Enter your contact&gt;&lt;/input&gt; 
          &lt;small&gt;Error Message&lt;/small&gt; 
      &lt;/div&gt;
      &lt;div class="flex items-center justify-end"&gt;
@@ -1257,7 +1257,7 @@
                               </div>
                               <div>
                                 <label for="contact">Contact</label>
-                                <input type="number" id="contact" maxlength="10" placeholder="Enter your contact" required>
+                                <input type="number" id="contact" placeholder="Enter your contact" required>
                               </div>
                               <div class="btns flex justify-end items-center gap-3">
                                 <button class="text-xs btn btn-secondary text-white py-2 prev-1 prev !w-fit !m-0">Previous</button>
@@ -1274,7 +1274,7 @@
                                 <label for="password">Password</label>
                                 <div class="relative">
                                   <input type="password" id="password2" name="Confirmpassword" required="" placeholder="Confirm password">
-                                  <div class="password-icon"> <i class="cursor-pointer w-4 h-4 stroke-title right-[25px] rtl:right-unset top-1/2 rtl:left-[25px] absolute -translate-y-1/2 feather-eye2" data-feather="eye" for="password2"> </i><i class="cursor-pointer w-4 h-4 stroke-title right-[25px] rtl:right-unset top-1/2 rtl:left-[25px] absolute -translate-y-1/2 feather-eye-off2" data-feather="eye-off" for="password2"></i></div>
+                                  <div class="password-icon"> <i class="cursor-pointer w-4 h-4 stroke-title right-[25px] rtl:right-unset top-1/2 rtl:left-[25px] absolute -translate-y-1/2 feather-eye2" data-feather="eye"> </i><i class="cursor-pointer w-4 h-4 stroke-title right-[25px] rtl:right-unset top-1/2 rtl:left-[25px] absolute -translate-y-1/2 feather-eye-off2" data-feather="eye-off"></i></div>
                                 </div>
                               </div>
                               <div class="btns flex justify-end items-center gap-3">

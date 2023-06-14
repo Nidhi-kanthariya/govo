@@ -35,7 +35,7 @@
       }
     }
     h2{
-      @apply text-landing-title;
+      @apply text-landing-title; 
       span{
         @apply text-landing-title;
       }

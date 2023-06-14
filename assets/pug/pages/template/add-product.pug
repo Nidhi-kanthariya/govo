@@ -139,7 +139,7 @@ html(lang='en')
                       input(type="text" id="productTag" class="!border-none !p-0" required)
                   div 
                     label(for="productShortDescription") Product Short Description 
-                    textarea(placeholder="Enter Short description for product.." row="3" id="productShortDescription" class="dark:border-border-dark p-[11px] focus:!border-border-light").w-full.border.border-border-light.rounded-5.text-xs.text-content
+                    textarea(placeholder="Enter Short description for product.." id="productShortDescription" class="dark:border-border-dark p-[11px] focus:!border-border-light").w-full.border.border-border-light.rounded-5.text-xs.text-content
               div.pt-3
                 h5.text-title.font-semibold.mb-3 General Info
                 form(class="flex flex-col gap-4 m-0 sm:gap-3 theme-form")
@@ -151,13 +151,13 @@ html(lang='en')
                     input(type="text" id="manufacturerBrand" placeholder="Enter manufacture brand.." required)
                   div 
                     label(for="description") Additional 
-                    textarea(placeholder="Enter product description.." row="3" id="description" class="p-[11px] focus:!border-border-light dark:border-border-dark").w-full.border.border-border-light.rounded-5.text-xs.text-content
+                    textarea(placeholder="Enter product description.." id="description" class="p-[11px] focus:!border-border-light dark:border-border-dark").w-full.border.border-border-light.rounded-5.text-xs.text-content
 
 
         // Page Body End  
         +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] sm:py-4  shadow-footer bg-white px-body-space mt-card-gap")
       include ../../components/customizer 
-  include ../../layout/footer-files
+    include ../../layout/footer-files
 
 
 

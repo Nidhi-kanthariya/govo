@@ -291,7 +291,7 @@ html(lang='en')
                           |               &lt;p class="text-xs text-content3"&gt; Creating a website that...&lt;/p&gt;  
                           |           &lt;/div&gt;
                           |           &lt;div data-tabContent="2" class="tab-pan fade group relative  border-none !px-0 !pb-0"&gt; 
-                          |               &lt;p class="text-xs text-content3 mb-2"&gt; Construct a web page...&lt;/p&gt;  
+                          |               &lt;p class="mb-2 text-xs text-content3"&gt; Construct a web page...&lt;/p&gt;  
                           |               &lt;p class="font-bold text-title dark:text-white"&gt; Visit Us:   
                           |                   &lt;span class="text-content3 text-2xs"&gt;4 Marigold Close, Glenmore Park, New South Wales, 2745 Australia- 2745&lt;/span&gt; 
                           |               &lt;/p&gt;
@@ -510,10 +510,10 @@ html(lang='en')
                               div.flex.flex-col.gap-3.form-group 
                                 div.flex.flex-col.gap-1
                                   label(for="email").font-medium.text-xs.text-primary Email
-                                  input(type="email" placeholder="Enter your email id.." class="p-[11px] dark:text-white dark:bg-sidebar-dark2 dark:border-border-dark").w-full.border.border-border-light.rounded-5.text-xs.text-content
+                                  input(type="email" id="email" placeholder="Enter your email id.." class="p-[11px] dark:text-white dark:bg-sidebar-dark2 dark:border-border-dark").w-full.border.border-border-light.rounded-5.text-xs.text-content
                                 div.flex.flex-col.gap-1 
                                   label(for="notes").font-medium.text-xs.text-primary Notes
-                                  textarea(placeholder="Enter the address.." row="3" id="notes" class="p-[11px] dark:text-white dark:bg-sidebar-dark2 dark:border-border-dark").w-full.border.border-border-light.rounded-5.text-xs.text-content
+                                  textarea(placeholder="Enter the address.." id="notes" class="p-[11px] dark:text-white dark:bg-sidebar-dark2 dark:border-border-dark").w-full.border.border-border-light.rounded-5.text-xs.text-content
                     div(data-tabContent="2" class="relative tab-pan copyParent group ")
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white")   
                         i(data-feather="clipboard") 
@@ -562,11 +562,11 @@ html(lang='en')
                           |               &lt;div class="flex flex-col gap-3 form-group"&gt;
                           |                   &lt;div class="flex flex-col gap-1"&gt; 
                           |                       &lt;label for="email" class="text-xs font-medium text-primary"&gt;Email&lt;/label&gt;
-                          |                       &lt;input type="email"  placeholder="Enter your email id.." class="p-[11px]  dark:bg-sidebar-dark2 dark:border-border-dark w-full border border-border-light rounded-5 text-xs text-content"/&gt;
+                          |                       &lt;input type="email" id="email"  placeholder="Enter your email id.." class="p-[11px]  dark:bg-sidebar-dark2 dark:border-border-dark w-full border border-border-light rounded-5 text-xs text-content"/&gt;
                           |                   &lt;/div&gt;
                           |                   &lt;div class="flex flex-col gap-1"&gt; 
                           |                       &lt;label for="address" class="text-xs font-medium text-primary"&gt;Current Address &lt;/label&gt;
-                          |                       &lt;textarea placeholder="Enter the address.." row="3" id="address" class=" p-[11px] dark:bg-sidebar-dark2 dark:border-border-dark w-full border border-border-light rounded-5 text-xs text-content"&gt;
+                          |                       &lt;textarea placeholder="Enter the address.." id="address" class=" p-[11px] dark:bg-sidebar-dark2 dark:border-border-dark w-full border border-border-light rounded-5 text-xs text-content"&gt;
                           |                   &lt;/div&gt;
                           |               &lt;/div&gt;  
                           |           &lt;/div&gt;
@@ -897,7 +897,7 @@ html(lang='en')
                                   input(type="email" id="email1" placeholder="Enter your email id.." class="p-[11px] dark:bg-sidebar-dark2 dark:border-border-dark").w-full.border.border-border-light.rounded-5.text-xs.text-content
                                 div.flex.flex-col.gap-1
                                   label(for="password").font-medium.text-xs.text-primary Password
-                                  input(type="password" placeholder="Password.." class="p-[11px] dark:bg-sidebar-dark2 dark:border-border-dark").w-full.border.border-border-light.rounded-5.text-xs.text-content
+                                  input(type="password" id="password" placeholder="Password.." class="p-[11px] dark:bg-sidebar-dark2 dark:border-border-dark").w-full.border.border-border-light.rounded-5.text-xs.text-content
                     div(data-tabContent="2" class="relative tab-pan copyParent group ")
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white")   
                         i(data-feather="clipboard")
@@ -928,7 +928,7 @@ html(lang='en')
                           |                   &lt;/div&gt;
                           |                   &lt;div class="flex flex-col gap-1"&gt; 
                           |                       &lt;label for="password" class="text-xs font-medium text-primary"&gt;Password&lt;/label&gt;
-                          |                       &lt;input type="password"  placeholder="Password.." class="p-[11px] w-full border border-border-light rounded-5 text-xs text-content dark:bg-sidebar-dark2 dark:border-border-dark "/&gt;
+                          |                       &lt;input type="password" id="password"  placeholder="Password.." class="p-[11px] w-full border border-border-light rounded-5 text-xs text-content dark:bg-sidebar-dark2 dark:border-border-dark "/&gt;
                           |                   &lt;/div&gt; 
                           |               &lt;/div&gt;  
                           |           &lt;/div&gt;
@@ -940,4 +940,4 @@ html(lang='en')
         +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] sm:py-4  shadow-footer bg-white px-body-space mt-card-gap")
       include ../../components/customizer
 
-  include ../../layout/footer-files
+    include ../../layout/footer-files

@@ -14,7 +14,7 @@ table.table
           div(class="flex items-center gap-2")
             label.checkbox(class="w-[15px] h-[15px]")
               input(type='checkbox'  checked=index + 1 == 2 ? true : false)
-              div.checkbox-indicator
+              span.checkbox-indicator
                 i(data-feather="check")
             div.flex.items-center(class="gap-[9px]")
               img(class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full object-cover" src=`../../assets/images/avatar/${bodyData.image}`, alt=`${bodyData.title}`) 

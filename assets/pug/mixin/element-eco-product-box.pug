@@ -55,8 +55,8 @@ mixin product2(data)
                 a(href="product.html" class="block py-5 bg-white")
                     img(src=`../../assets/images/${data.image}` class="rounded-[4px] w-auto h-[130px] 4xl:h-[110px] mx-auto" alt="product image")
             div.pt-2 
-                a(href="product.html" class="flex flex-col gap-[0.3rem]")     
-                    h4(class="dark:text-white").font-bold.text-sm.text-title.line-clamp-1= data.productName
+                div(class="flex flex-col gap-[0.3rem]")     
+                    a(href="product.html" class="dark:text-white").font-bold.text-sm.text-title.line-clamp-1= data.productName
                     div.flex.items-center(class="pt-0.5 gap-1")
                         span.text-xs.font-bold.text-primary= data.price
                         del.text-content3.text-xs.text-semibold= data.deletePrice

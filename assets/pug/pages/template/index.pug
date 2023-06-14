@@ -30,7 +30,7 @@ html(lang='en')
   body(dir="ltr" class="unique-skin")
     main.page-wrapper
       div.page-body-wrapper(class="xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto transition-all duration-300")
-        include ../../layout/header/header     
+        include ../../layout/header/header      
         // Sidebar Start 
         div.page-sidebar.sidebar-dark.unique-sidebar
           include ../../layout/unique
@@ -58,7 +58,7 @@ html(lang='en')
                   div.card(class="transition duration-500 ease-in delay-400 hover:shadow-sm hover:-translate-y-1 hover:scale-45")
                     div.card-header
                       +card-header("Earnings","setting", HISTORY_DROPDOWN)
-                    div.card-body
+                    div.card-body  
                       +widget2(EARNINGS_WIDGET) 
             div.col-span-6(class="4xl:col-span-8 lg:col-span-12 lg:-order-1")
               div.card   
@@ -130,6 +130,6 @@ html(lang='en')
 
         // Page Body End  
         +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] sm:py-4  shadow-footer bg-white px-body-space mt-card-gap")
-      include ../../components/customizer
+      include ../../components/customizer  
 
-  include ../../layout/footer-files
+    include ../../layout/footer-files

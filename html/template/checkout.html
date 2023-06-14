@@ -31,7 +31,7 @@
         <!-- Page Header start-->
         <header class="fixed top-0 z-[6] xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto">
           <div class="page-header transition-all bg-white shadow-header dark:bg-sidebar-dark">
-            <div class="py-[11px] flex items-center xl:relative justify-between px-body-space">
+            <div class="py-[11px] flex items-center xl:relative justify-between px-body-space gap-4">
               <div class="left-header flex items-center gap-2"> 
                 <button class="sidebar-toggle hide"> 
                   <svg class="w-6 4xl:w-5 h-6 4xl:h-5 stroke-title"> 
@@ -80,7 +80,7 @@
                               <use href="../../assets/svg/sprite.svg#Search"> </use>
                             </svg>
                           </div>
-                          <ul class="mt-4 flex flex-col max-h-[232px] overflow-auto custom-scroll"> 
+                          <ul class="mt-4 flex flex-col max-h-[214px] overflow-auto custom-scroll"> 
                             <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 dark:hover:bg-sidebar-dark2 border-border-light hover:bg-gray-light rounded-5"><a class="flex items-center gap-[12px]" href="./email.html">
                                 <div class="indicator"> <span class="chat-status status-online"></span>
                                   <div class="avatar">
@@ -197,7 +197,7 @@
                             <h4 class="text-base font-bold text-title">Messages</h4>
                             <div class="badge leading-none p-1 badge bg-primary rounded-full text-3xs flex items-center justify-center min-w-[22px] min-h-[22px]">25</div>
                           </div>
-                          <ul class="mt-[15px] flex flex-col max-h-[232px] overflow-auto custom-scroll"> 
+                          <ul class="mt-[15px] flex flex-col max-h-[214px] overflow-auto custom-scroll"> 
                             <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 border-border-light dark:border-border-dark hover:bg-gray-light dark:hover:bg-sidebar-dark2 rounded-5"><a class="flex items-center gap-[12px]" href="./chat-app.html">
                                 <div class="relative shadow-lg bg-success flex items-center justify-center rounded-full p-2">
                                   <svg class="w-5 h-5 stroke-white"> 
@@ -278,7 +278,7 @@
                               </svg>
                             </button>
                           </div>
-                          <ul class="flex flex-col max-h-[232px] overflow-auto custom-scroll px-1">
+                          <ul class="flex flex-col max-h-[214px] overflow-auto custom-scroll px-1">
                             <li class="cart-item flex items-center gap-3 py-3 rtl:first:!pl-0  rtl:last:!pr-0 transition-all duration-300 border-b last:border-b-0 border-border-light dark:border-border-dark rounded-5"><a class="flex items-center gap-[12px]" href="./product.html">
                                 <div class="rounded-full relative"> <img class="rounded-full min-w-[2.25rem] min-h-[2.25rem] w-full h-auto object-cover" src="../../assets/images/product/1.jpg" alt="Flower Pot"></div>
                                 <div> 
@@ -742,7 +742,7 @@
                     </nav>
                   </div>
                   <!-- Breadcrumbs End -->
-                  <div class="custom-select select-style-1 lg:hidden dark:text-title">
+                  <div class="custom-select select-style-1 2xl:hidden dark:text-title">
                     <select class="dark:text-title">
                       <option selected value="">Last 7 Days </option>
                       <option value="">Last 2 Weeks </option>
@@ -1047,7 +1047,7 @@
                       <div class="grid grid-cols-12 gap-5">
                         <div class="col-span-6 sm:col-span-12">
                           <label for="number">Contact No </label>
-                          <input class="rounded" type="Number" id="number" placeholder="Enter your contact no" maxlength="10" pattern="d{10}" required>
+                          <input class="rounded" type="Number" id="number2" placeholder="Enter your contact no" required>
                         </div>
                         <div class="col-span-6 sm:col-span-12">
                           <label for="email">Email</label>
@@ -1056,12 +1056,12 @@
                       </div>
                       <div> 
                         <label for="address">Address </label>
-                        <textarea class="p-[11px] focus:!border-border-light dark:border-border-dark dark:focus:!border-border-dark  w-full border border-border-light rounded-5 text-xs text-content" placeholder="Enter your address.." row="3" id="address"></textarea>
+                        <textarea class="p-[11px] focus:!border-border-light dark:border-border-dark dark:focus:!border-border-dark  w-full border border-border-light rounded-5 text-xs text-content" placeholder="Enter your address.." id="address2"></textarea>
                       </div>
                       <div class="grid grid-cols-12 gap-5">
                         <div class="col-span-4 2md:col-span-6 sm:col-span-12">
                           <label for="country">Country</label>
-                          <select class="form-select block w-full px-3 text-xs font-normal text-content3 bg-white bg-clip-padding bg-no-repeat border border-border-light rounded-5 transition ease-in-out m-0 min-w-[150px] py-[9px] dark:border-border-dark dark:bg-sidebar-dark2" id="sortby" aria-label="Default select example">
+                          <select class="form-select block w-full px-3 text-xs font-normal text-content3 bg-white bg-clip-padding bg-no-repeat border border-border-light rounded-5 transition ease-in-out m-0 min-w-[150px] py-[9px] dark:border-border-dark dark:bg-sidebar-dark2" id="country" aria-label="Default select example">
                             <option selected="">Select Country</option>
                             <option value="1">India </option>
                             <option value="2">South Korea</option>
@@ -1082,16 +1082,15 @@
                       </div>
                       <div class="flex items-center gap-2">
                         <label class="checkbox checkbox-sm !mb-0 cursor-pointer"> 
-                          <input class="peer" type="checkbox">
-                          <div class="checkbox-indicator peer-checked:!bg-primary !border-primary"> <i data-feather="check"></i></div>
+                          <input class="peer" type="checkbox"><span class="checkbox-indicator peer-checked:!bg-primary !border-primary"> <i data-feather="check"></i></span>
                         </label>
                         <p class="!my-0">Remember me for next time </p>
                       </div>
                       <div> 
                         <label for="otherNotes">Other Notes</label>
-                        <textarea class="p-[11px] focus:!border-border-light dark:focus:!border-border-dark  dark:border-border-dark w-full border border-border-light rounded-5 text-xs text-content" placeholder="Enter your address.." row="3" id="otherNotes"></textarea>
+                        <textarea class="p-[11px] focus:!border-border-light dark:focus:!border-border-dark  dark:border-border-dark w-full border border-border-light rounded-5 text-xs text-content" placeholder="Enter your address.." id="otherNotes"></textarea>
                       </div>
-                      <div class="flex justify-between items-center sm:flex-col sm:gap-3"><a class="btn bg-secondary text-xs text-white flex items-center gap-2 py-2 !w-fit sm:!w-full justify-center !m-0" href="cart.html" type="button"> <i class="w-4 h-4 stroke-white" data-feather="arrow-left"></i> Return to Shopping Cart </a><a class="btn btn-primary text-xs text-white flex items-center gap-2 py-2 !w-fit sm:!w-full justify-center !m-0" href="javascript:void(0)" type="button">
+                      <div class="flex justify-between items-center sm:flex-col sm:gap-3"><a class="btn bg-secondary text-xs text-white flex items-center gap-2 py-2 !w-fit sm:!w-full justify-center !m-0" href="cart.html"> <i class="w-4 h-4 stroke-white" data-feather="arrow-left"></i> Return to Shopping Cart </a><a class="btn btn-primary text-xs text-white flex items-center gap-2 py-2 !w-fit sm:!w-full justify-center !m-0" href="javascript:void(0)">
                             Proceed to Next<i class="w-4 h-4 stroke-white" data-feather="truck"></i></a></div>
                     </form>
                   </div>
@@ -1106,59 +1105,43 @@
                     </div>
                     <div class="grid grid-cols-12 gap-card-gap mb-5">
                       <div class="col-span-4 5xl:col-span-6 2md:col-span-12">
-                        <div class="border border-border-light p-4 dark:border-border-dark">
+                        <div class="border border-border-light p-4 relative dark:border-border-dark">
                           <div class="radio-button radio-sm primary items-start">
                             <input id="home" type="radio" name="address">
                             <div class="check min-w-[1rem]"></div>
-                            <label class="w-full text-xs cursor-pointer" for="home"> 
-                              <div class="flex gap-2 justify-between"><span class="dark:text-content3">Home </span>
-                                <div class="flex items-center gap-2">
-                                  <label for="modal-edit"> 
-                                    <svg class="w-4 h-4 stroke-title cursor-pointer dark:stroke-white"> 
-                                      <use href="../../assets/svg/sprite.svg#Edit-Square"> </use>
-                                    </svg>
-                                  </label>
-                                  <label for="modal-delete"> 
-                                    <svg class="w-4 h-4 stroke-title cursor-pointer dark:stroke-white"> 
-                                      <use href="../../assets/svg/sprite.svg#Delete"> </use>
-                                    </svg>
-                                  </label>
-                                </div>
-                              </div>
-                              <div class="flex flex-col gap-2"> 
-                                <h6 class="text-title font-bold dark:text-white">Filomena Green </h6>
-                                <p class="text-content3 text-xs"><span class="font-semibold">Address: </span>	2211 Fruitville Rd, Sarasota, Florida, US 34237</p>
-                                <p class="text-content3 text-xs"><span class="font-semibold">Contact:</span>	(941) 321-5643</p>
-                              </div>
+                            <label class="w-full text-xs cursor-pointer" for="home"> <span class="flex gap-2 justify-between"><span class="dark:text-content3">Home </span></span><span class="flex flex-col gap-2"> <span class="text-title font-bold text-xs dark:text-white">Filomena Green </span><span class="text-content3 text-xs"><span class="font-semibold">Address: </span>	2211 Fruitville Rd, Sarasota, Florida, US 34237</span><span class="text-content3 text-xs"><span class="font-semibold">Contact:</span>	(941) 321-5643</span></span></label>
+                          </div>
+                          <div class="flex items-center gap-2 absolute top-4 right-4">
+                            <label for="modal-edit"> 
+                              <svg class="w-4 h-4 stroke-title cursor-pointer dark:stroke-white"> 
+                                <use href="../../assets/svg/sprite.svg#Edit-Square"> </use>
+                              </svg>
+                            </label>
+                            <label for="modal-delete"> 
+                              <svg class="w-4 h-4 stroke-title cursor-pointer dark:stroke-white"> 
+                                <use href="../../assets/svg/sprite.svg#Delete"> </use>
+                              </svg>
                             </label>
                           </div>
                         </div>
                       </div>
                       <div class="col-span-4 5xl:col-span-6 2md:col-span-12">
-                        <div class="border border-border-light p-4 dark:border-border-dark"> 
+                        <div class="border border-border-light p-4 relative dark:border-border-dark"> 
                           <div class="radio-button radio-sm primary items-start">
                             <input id="work" type="radio" name="address">
                             <div class="check min-w-[1rem]"> </div>
-                            <label class="w-full text-xs cursor-pointer" for="work"> 
-                              <div class="flex gap-2 justify-between"><span class="dark:text-content3">Work </span>
-                                <div class="flex items-center gap-2"> 
-                                  <label for="modal-edit"> 
-                                    <svg class="w-4 h-4 stroke-title cursor-pointer dark:stroke-white"> 
-                                      <use href="../../assets/svg/sprite.svg#Edit-Square"> </use>
-                                    </svg>
-                                  </label>
-                                  <label for="modal-delete">
-                                    <svg class="w-4 h-4 stroke-title cursor-pointer dark:stroke-white"> 
-                                      <use href="../../assets/svg/sprite.svg#Delete"> </use>
-                                    </svg>
-                                  </label>
-                                </div>
-                              </div>
-                              <div class="flex flex-col gap-2">
-                                <h6 class="text-title font-bold dark:text-white">	Ms. Ila Runte DDS</h6>
-                                <p class="text-content3 text-xs"> <span class="font-semibold">Address: </span>	1531 E 23rd St S, Independence, Mississippi, US 64055</p>
-                                <p class="text-content3 text-xs"> <span class="font-semibold">Contact: </span>	(816) 252-4500                                        </p>
-                              </div>
+                            <label class="w-full text-xs cursor-pointer" for="work"> <span class="flex gap-2 justify-between"><span class="dark:text-content3">Work                       </span></span><span class="flex flex-col gap-2"><span class="text-title font-bold text-xs dark:text-white">	Ms. Ila Runte DDS</span><span class="text-content3 text-xs"> <span class="font-semibold">Address: </span>	1531 E 23rd St S, Independence, Mississippi, US 64055</span><span class="text-content3 text-xs"> <span class="font-semibold">Contact: </span>	(816) 252-4500 </span></span></label>
+                          </div>
+                          <div class="flex items-center gap-2 absolute top-4 right-4">
+                            <label for="modal-edit"> 
+                              <svg class="w-4 h-4 stroke-title cursor-pointer dark:stroke-white"> 
+                                <use href="../../assets/svg/sprite.svg#Edit-Square"> </use>
+                              </svg>
+                            </label>
+                            <label for="modal-delete"> 
+                              <svg class="w-4 h-4 stroke-title cursor-pointer dark:stroke-white"> 
+                                <use href="../../assets/svg/sprite.svg#Delete"> </use>
+                              </svg>
                             </label>
                           </div>
                         </div>
@@ -1171,9 +1154,7 @@
                           <div class="radio-button radio-sm primary items-start">
                             <input id="free" type="radio" name="payment">
                             <div class="check min-w-[1rem]"></div>
-                            <label class="w-full text-xs cursor-pointer" for="free"> <span class="dark:text-white">Standard Delivery - Free </span>
-                              <p class="text-content3 text-xs">Estimated 5-7 days shipping</p>
-                            </label>
+                            <label class="flex flex-col w-full text-xs cursor-pointer" for="free"> <span class="dark:text-white">Standard Delivery - Free </span><span class="text-content3 text-xs">Estimated 5-7 days shipping</span></label>
                           </div>
                         </div>
                       </div>
@@ -1183,15 +1164,13 @@
                             <div class="radio-button radio-sm primary items-start w-full">
                               <input id="standard" type="radio" name="payment">
                               <div class="check min-w-[1rem]"></div>
-                              <label class="w-full text-xs cursor-pointer" for="standard"> <span class="dark:text-white">Express Delivery - $24 </span>
-                                <p class="text-content3 text-xs">Estimated 1-2 days shipping</p>
-                              </label>
+                              <label class="flex flex-col w-full text-xs cursor-pointer" for="standard"> <span class="dark:text-white">Express Delivery - $24 </span><span class="text-content3 text-xs">Estimated 1-2 days shipping</span></label>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="flex justify-between items-center sm:flex-col sm:gap-3"><a class="btn bg-secondary text-xs text-white flex items-center gap-2 py-2 !w-fit sm:!w-full justify-center !m-0" href="cart.html" type="button"> <i class="w-4 h-4 stroke-white" data-feather="arrow-left"></i> Return to Shopping Cart</a><a class="btn btn-primary text-xs text-white flex items-center gap-2 py-2 !w-fit sm:!w-full justify-center !m-0" href="javascript:void(0)" type="button">
+                    <div class="flex justify-between items-center sm:flex-col sm:gap-3"><a class="btn bg-secondary text-xs text-white flex items-center gap-2 py-2 !w-fit sm:!w-full justify-center !m-0" href="cart.html"> <i class="w-4 h-4 stroke-white" data-feather="arrow-left"></i> Return to Shopping Cart</a><a class="btn btn-primary text-xs text-white flex items-center gap-2 py-2 !w-fit sm:!w-full justify-center !m-0" href="javascript:void(0)">
                           Proceed to Next<i class="w-4 h-4 stroke-white" data-feather="truck"></i></a></div>
                   </div>
                 </div>
@@ -1203,28 +1182,14 @@
                       <div class="radio-button radio-sm primary items-start">
                         <input id="paypal" type="radio" name="payment-method">
                         <div class="check min-w-[1rem]"></div>
-                        <label class="w-full text-xs cursor-pointer" for="paypal">
-                          <div class="flex justify-between gap-1 sm:flex-col sm:items-start">
-                            <div><span class="dark:text-white">PayPal</span>
-                              <p class="text-content3 text-xs">You will be taken to the PayPal website to finish your transaction safely</p>
-                            </div><img class="h-[30px] rtl:2sm:pl-unset rtl:2sm:pr-6" src="../../assets/images/ecommerce/paypal.png" alt="PayPal">
-                          </div>
-                        </label>
+                        <label class="w-full text-xs cursor-pointer" for="paypal"><span class="flex justify-between gap-1 sm:flex-col sm:items-start"><span class="flex flex-col"><span class="dark:text-white">PayPal</span><span class="text-content3 text-xs">You will be taken to the PayPal website to finish your transaction safely</span></span><img class="h-[30px] rtl:2sm:pl-unset rtl:2sm:pr-6" src="../../assets/images/ecommerce/paypal.png" alt="PayPal"></span></label>
                       </div>
                     </div>
                     <div class="border border-border-light p-4 dark:border-border-dark mb-5"> 
                       <div class="radio-button radio-sm primary items-start">
                         <input id="credit" type="radio" name="payment-method">
                         <div class="check min-w-[1rem]"></div>
-                        <label class="w-full text-xs cursor-pointer" for="credit">
-                          <div class="flex flex-col gap-4">
-                            <div class="flex justify-between gap-1 sm:flex-col sm:items-start"> 
-                              <div><span class="dark:text-white">Credit Card</span>
-                                <p class="text-content3 text-xs">Transferring money securely through your bank account. Mastercard, Visa, Discover, and Stripe are all accepted</p>
-                              </div><img class="h-[30px] rtl:2sm:pl-unset rtl:2sm:pr-6" src="../../assets/images/ecommerce/credit-card.png" alt="credit card">
-                            </div>
-                          </div>
-                        </label>
+                        <label class="w-full text-xs cursor-pointer" for="credit"><span class="flex flex-col gap-4"><span class="flex justify-between gap-1 sm:flex-col sm:items-start"> <span class="flex flex-col"><span class="dark:text-white">Credit Card</span><span class="text-content3 text-xs">Transferring money securely through your bank account. Mastercard, Visa, Discover, and Stripe are all accepted</span></span><img class="h-[30px] rtl:2sm:pl-unset rtl:2sm:pr-6" src="../../assets/images/ecommerce/credit-card.png" alt="credit card"></span></span></label>
                       </div>
                       <form class="flex flex-col gap-4 m-0 !mt-4 !ml-5 sm:!ml-0 theme-form" action="index.html">
                         <div>
@@ -1233,7 +1198,7 @@
                         </div>
                         <div>
                           <label for="cardholder">Card Number</label>
-                          <input type="number" id="cardholder" placeholder="Enter card number" required>
+                          <input type="number" id="cardholder2" placeholder="Enter card number" required>
                         </div>
                         <div class="grid grid-cols-12 gap-5">
                           <div class="col-span-6 sm:col-span-12">
@@ -1251,16 +1216,10 @@
                       <div class="radio-button radio-sm primary items-start">
                         <input id="cod" type="radio" name="payment-method">
                         <div class="check min-w-[1rem]"></div>
-                        <label class="w-full text-xs cursor-pointer" for="cod"> 
-                          <div class="flex justify-between gap-1 sm:flex-col sm:items-start"> 
-                            <div> <span class="dark:text-white">Cash On Delivery</span>
-                              <p class="text-content3 text-xs">After your order is delivered, make a cash payment</p>
-                            </div><img class="h-[30px] rtl:2sm:pl-unset rtl:2sm:pr-6" src="../../assets/images/ecommerce/cash-on-delivery.png" alt="cash on delivery">
-                          </div>
-                        </label>
+                        <label class="w-full text-xs cursor-pointer" for="cod"> <span class="flex justify-between gap-1 sm:flex-col sm:items-start"> <span class="flex flex-col"> <span class="dark:text-white">Cash On Delivery</span><span class="text-content3 text-xs">After your order is delivered, make a cash payment</span></span><img class="h-[30px] rtl:2sm:pl-unset rtl:2sm:pr-6" src="../../assets/images/ecommerce/cash-on-delivery.png" alt="cash on delivery"></span></label>
                       </div>
                     </div>
-                    <div class="flex justify-between items-center sm:flex-col sm:gap-3"><a class="btn bg-secondary text-xs text-white flex items-center gap-2 py-2 !w-fit sm:!w-full justify-center !m-0" href="cart.html" type="button"> <i class="w-4 h-4 stroke-white" data-feather="arrow-left"></i> Return to Shopping Cart</a><a class="btn btn-primary text-xs text-white flex items-center gap-2 py-2 !w-fit sm:!w-full justify-center !m-0" href="javascript:void(0)" type="button">
+                    <div class="flex justify-between items-center sm:flex-col sm:gap-3"><a class="btn bg-secondary text-xs text-white flex items-center gap-2 py-2 !w-fit sm:!w-full justify-center !m-0" href="cart.html"> <i class="w-4 h-4 stroke-white" data-feather="arrow-left"></i> Return to Shopping Cart</a><a class="btn btn-primary text-xs text-white flex items-center gap-2 py-2 !w-fit sm:!w-full justify-center !m-0" href="javascript:void(0)">
                           Proceed to Next<i class="w-4 h-4 stroke-white" data-feather="truck"></i></a></div>
                   </div>
                 </div>
@@ -1430,18 +1389,18 @@
               </div>
               <div> 
                 <label for="address">Address </label>
-                <textarea class="dark:border-border-dark dark:focus:!border-border-dark dark:bg-sidebar-dark2 p-[11px] focus:!border-border-light  w-full border border-border-light rounded-5 text-xs text-content" placeholder="Enter your address" row="3" id="address"></textarea>
+                <textarea class="dark:border-border-dark dark:focus:!border-border-dark dark:bg-sidebar-dark2 p-[11px] focus:!border-border-light  w-full border border-border-light rounded-5 text-xs text-content" placeholder="Enter your address" id="address"></textarea>
               </div>
               <div>
-                <label for="country">Address Type</label>
-                <select class="form-select block w-full px-3 text-xs font-normal text-content3 bg-white bg-clip-padding bg-no-repeat border border-border-light rounded-5 transition ease-in-out m-0 min-w-[150px] py-[9px] dark:bg-sidebar-dark2 dark:border-border-dark dark:focus:border-border" id="sortby" aria-label="Default select example">
+                <label for="country2">Address Type</label>
+                <select class="form-select block w-full px-3 text-xs font-normal text-content3 bg-white bg-clip-padding bg-no-repeat border border-border-light rounded-5 transition ease-in-out m-0 min-w-[150px] py-[9px] dark:bg-sidebar-dark2 dark:border-border-dark dark:focus:border-border" id="country2" aria-label="Default select example">
                   <option selected="">Home </option>
                   <option value="1">Office</option>
                 </select>
               </div>
               <div> 
                 <label for="number">Contact No</label>
-                <input class="dark:text-white rounded" type="Number" id="number" placeholder="Enter your contact no" maxlength="10" pattern="d{10}" required>
+                <input class="dark:text-white rounded" type="Number" id="number" placeholder="Enter your contact no" required>
               </div>
             </form>
           </div>
@@ -1468,24 +1427,24 @@
         </div>
       </div>
     </main>
+    <!-- Feather Icon Js -->
+    <script src="../../assets/js/feather.min.js"></script>
+    <script src="../../assets/js/feather-custom.js"></script>
+    <!-- Select Js -->
+    <script src="../../assets/js/custom-select.js"></script>
+    <!-- Sidebar Js -->
+    <script src="../../assets/js/sidebar.js"></script>
+    <!-- swiper slider js-->
+    <script src="../../assets/js/swiper-slider/swiper-bundle.min.js"></script>
+    <script src="../../assets/js/swiper-slider/swiper-slider-page.js"></script>
+    <script src="../../assets/js/swiper-slider/ecommerce.js"></script>
+    <!-- ecommerce js-->
+    <script src="../../assets/js/ecommerce-app/ecommerce-app-page.js"></script>
+    <!-- fontAwesome js-->
+    <script src="../../assets/js/fontawesome/all.min.js"></script>
+    <!-- customizer js-->
+    <script src="../../assets/js/customizer.js"> </script>
+    <!-- Custom script   -->
+    <script src="../../assets/js/script.js"> </script>
   </body>
-  <!-- Feather Icon Js -->
-  <script src="../../assets/js/feather.min.js"></script>
-  <script src="../../assets/js/feather-custom.js"></script>
-  <!-- Select Js -->
-  <script src="../../assets/js/custom-select.js"></script>
-  <!-- Sidebar Js -->
-  <script src="../../assets/js/sidebar.js"></script>
-  <!-- swiper slider js-->
-  <script src="../../assets/js/swiper-slider/swiper-bundle.min.js"></script>
-  <script src="../../assets/js/swiper-slider/swiper-slider-page.js"></script>
-  <script src="../../assets/js/swiper-slider/ecommerce.js"></script>
-  <!-- ecommerce js-->
-  <script src="../../assets/js/ecommerce-app/ecommerce-app-page.js"></script>
-  <!-- fontAwesome js-->
-  <script src="../../assets/js/fontawesome/all.min.js"></script>
-  <!-- customizer js-->
-  <script src="../../assets/js/customizer.js"> </script>
-  <!-- Custom script   -->
-  <script src="../../assets/js/script.js"> </script>
 </html>

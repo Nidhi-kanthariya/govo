@@ -43,7 +43,7 @@ html(lang='en')
                     div.mt-4 
                       form(class="m-0 theme-form")
                         label(for="address") Address  
-                        textarea(placeholder="Enter address" row="3" id="address" class="p-[11px] focus:!border-border-light dark:border-border-dark dark:focus:!border-border-dark").w-full.border.border-border-light.rounded-5.text-xs.text-content
+                        textarea(placeholder="Enter address" id="address" class="p-[11px] focus:!border-border-light dark:border-border-dark dark:focus:!border-border-dark").w-full.border.border-border-light.rounded-5.text-xs.text-content
                   div.col-span-4(class="lg:col-span-6 lg:hidden")
                   div.col-span-4(class="lg:col-span-6 sm:col-span-12")           
                     div
@@ -73,21 +73,21 @@ html(lang='en')
                 div.grid.grid-cols-12.gap-card-gap
                   div.col-span-4(class="lg:col-span-6 sm:col-span-12")
                     form(class="flex flex-col gap-2 m-0 theme-form")
-                      label(for="address" class="!mb-1") Shipping Address
+                      label(for="address2" class="!mb-1") Shipping Address
                       input(type="text" id="name" placeholder="Vilma Gerhold" required)
-                      textarea(placeholder="14300 Gallant Fox Ln, Bowie, Maryland, 20715, US" row="3" id="address" class="p-[11px] focus:!border-border-light dark:border-border-dark dark:focus:!border-border-dark").w-full.border.border-border-light.rounded-5.text-xs.text-content
-                      input(type="number" id="name" placeholder="(301) 464-0110" required)
+                      textarea(placeholder="14300 Gallant Fox Ln, Bowie, Maryland, 20715, US" id="address2" class="p-[11px] focus:!border-border-light dark:border-border-dark dark:focus:!border-border-dark").w-full.border.border-border-light.rounded-5.text-xs.text-content
+                      input(type="number" id="add" placeholder="(301) 464-0110" required)
                   div.col-span-4(class="lg:hidden")
                   div.col-span-4(class="lg:col-span-6 sm:col-span-12")
                     form(class="flex flex-col gap-2 m-0 theme-form")
-                      label(for="address" class="!mb-1") Billing Address
-                      input(type="text" id="name" placeholder="Vilma Gerhold" required)
-                      textarea(placeholder="14300 Gallant Fox Ln, Bowie, Maryland, 20715, US" row="3" id="address" class="p-[11px] focus:!border-border-light dark:border-border-dark dark:focus:!border-border-dark").w-full.border.border-border-light.rounded-5.text-xs.text-content
-                      input(type="number" id="name" placeholder="(301) 464-0110" required)
+                      label(for="address3" class="!mb-1") Billing Address
+                      input(type="text" id="name2" placeholder="Vilma Gerhold" required)
+                      textarea(placeholder="14300 Gallant Fox Ln, Bowie, Maryland, 20715, US" id="address3" class="p-[11px] focus:!border-border-light dark:border-border-dark dark:focus:!border-border-dark").w-full.border.border-border-light.rounded-5.text-xs.text-content
+                      input(type="number" id="add2" placeholder="(301) 464-0110" required)
                 div.flex.items-center.gap-2
                   label.checkbox.checkbox-sm.cursor-pointer
                     input(type='checkbox' class="peer") 
-                    div.checkbox-indicator(class="peer-checked:!bg-primary !border-primary")  
+                    span.checkbox-indicator(class="peer-checked:!bg-primary !border-primary")  
                       i(data-feather="check")
                   p.text-content3 Shipping & Billing address are the same?
                 div.divider(class="w-full bg-gray-light dark:bg-sidebar-dark")
@@ -105,11 +105,11 @@ html(lang='en')
                       option(value='3') PayPal
                       option(value='4') Visa
                     input(type="text" id="card-name" placeholder="Vilma Gerhold" required)
-                    input(type="number" id="name" placeholder="xxx xxxx xxxx 7159" required)
-                    input(type="number" id="name" placeholder="$")
+                    input(type="number" id="card-no" placeholder="xxx xxxx xxxx 7159" required)
+                    input(type="number" id="card-no1" placeholder="$")
                 div.divider(class="w-full bg-gray-light dark:bg-sidebar-dark")
                 form(class="flex flex-col gap-2 m-0 theme-form")
-                  label(for="notes") Notes
+                  label Notes
                   p.font-medium.text-content3(class="!text-left rtl:!text-right") All accounts must be settled within seven days of receiving an invoice. to be paid by check, credit card, or online direct deposit. If the account is not paid within seven days, the agreed-upon quoted fee indicated above will be charged to the credits details provided as confirmation of the task completed.
                 div.divider(class="w-full bg-gray-light dark:bg-sidebar-dark")
                 div.flex.items-center.gap-2.justify-end
@@ -121,4 +121,4 @@ html(lang='en')
         // Page Body End  
         +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] sm:py-4  shadow-footer bg-white px-body-space mt-card-gap")
       include ../../components/customizer
-  include ../../layout/footer-files
+    include ../../layout/footer-files

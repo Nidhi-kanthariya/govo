@@ -214,7 +214,7 @@ html(lang='en')
                           div
                             button.btn.btn-primary.flex.items-center.py-1.px-3.btn-rounded.text-white 
                               +SVG_ICON("Notification","w-[1.25rem] h-[1.25rem] stroke-white mr-2")
-                              p   REMIND ME LATER
+                              span   REMIND ME LATER
                     div(data-tabContent="2" class="relative tab-pan copyParent group ")
                       button.btn.copyBtn(class="dark:text-white dark:bg-sidebar-dark dark:hover:bg-sidebar-dark dark:hover:text-white") 
                         i(data-feather="clipboard")
@@ -226,7 +226,7 @@ html(lang='en')
                           |      &lt;div&gt;
                           |        &lt;button class="flex px-3 py-1 text-white btn btn-primary btn-rounded"&gt;
                           |          +SVG_ICON("Notification","w-[1.25rem] h-[1.25rem] stroke-white mr-2") 
-                          |           &lt;p&gt; REMIND ME LATER &lt;/p&gt;
+                          |           &lt;span&gt; REMIND ME LATER &lt;/span&gt;
                           |        &lt;/button&gt;
                           |      &lt;/div&gt;
                           |    &lt;/div&gt;
@@ -310,4 +310,4 @@ html(lang='en')
 
       include ../../components/customizer
 
-  include ../../layout/footer-files
+    include ../../layout/footer-files

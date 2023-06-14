@@ -29,7 +29,7 @@
         <!-- Page Header start-->
         <header class="fixed top-0 z-[6] xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto">
           <div class="page-header transition-all bg-white shadow-header dark:bg-sidebar-dark">
-            <div class="py-[11px] flex items-center xl:relative justify-between px-body-space">
+            <div class="py-[11px] flex items-center xl:relative justify-between px-body-space gap-4">
               <div class="left-header flex items-center gap-2"> 
                 <button class="sidebar-toggle hide"> 
                   <svg class="w-6 4xl:w-5 h-6 4xl:h-5 stroke-title"> 
@@ -78,7 +78,7 @@
                               <use href="../../assets/svg/sprite.svg#Search"> </use>
                             </svg>
                           </div>
-                          <ul class="mt-4 flex flex-col max-h-[232px] overflow-auto custom-scroll"> 
+                          <ul class="mt-4 flex flex-col max-h-[214px] overflow-auto custom-scroll"> 
                             <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 dark:hover:bg-sidebar-dark2 border-border-light hover:bg-gray-light rounded-5"><a class="flex items-center gap-[12px]" href="./email.html">
                                 <div class="indicator"> <span class="chat-status status-online"></span>
                                   <div class="avatar">
@@ -195,7 +195,7 @@
                             <h4 class="text-base font-bold text-title">Messages</h4>
                             <div class="badge leading-none p-1 badge bg-primary rounded-full text-3xs flex items-center justify-center min-w-[22px] min-h-[22px]">25</div>
                           </div>
-                          <ul class="mt-[15px] flex flex-col max-h-[232px] overflow-auto custom-scroll"> 
+                          <ul class="mt-[15px] flex flex-col max-h-[214px] overflow-auto custom-scroll"> 
                             <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 border-border-light dark:border-border-dark hover:bg-gray-light dark:hover:bg-sidebar-dark2 rounded-5"><a class="flex items-center gap-[12px]" href="./chat-app.html">
                                 <div class="relative shadow-lg bg-success flex items-center justify-center rounded-full p-2">
                                   <svg class="w-5 h-5 stroke-white"> 
@@ -276,7 +276,7 @@
                               </svg>
                             </button>
                           </div>
-                          <ul class="flex flex-col max-h-[232px] overflow-auto custom-scroll px-1">
+                          <ul class="flex flex-col max-h-[214px] overflow-auto custom-scroll px-1">
                             <li class="cart-item flex items-center gap-3 py-3 rtl:first:!pl-0  rtl:last:!pr-0 transition-all duration-300 border-b last:border-b-0 border-border-light dark:border-border-dark rounded-5"><a class="flex items-center gap-[12px]" href="./product.html">
                                 <div class="rounded-full relative"> <img class="rounded-full min-w-[2.25rem] min-h-[2.25rem] w-full h-auto object-cover" src="../../assets/images/product/1.jpg" alt="Flower Pot"></div>
                                 <div> 
@@ -740,7 +740,7 @@
                     </nav>
                   </div>
                   <!-- Breadcrumbs End -->
-                  <div class="custom-select select-style-1 lg:hidden dark:text-title">
+                  <div class="custom-select select-style-1 2xl:hidden dark:text-title">
                     <select class="dark:text-title">
                       <option selected value="">Last 7 Days </option>
                       <option value="">Last 2 Weeks </option>
@@ -1023,7 +1023,7 @@
               <!-- Welcome Card -->
               <div class="card p-card-space before:!pt-0 bg-primary relative common-animate-main 4xl:h-[390px] xl:h-full gap-0 common-animate-main welcome-card-main h-[410px] "> 
                 <div>
-                  <h4 class="flex items-center gap-2 justify-between"> <span class="flex items-center gap-2 text-3xl font-semibold text-white 3sm:text-lg 5xl:text-2xl">Hello, Amirreza<img class="w-[22px] h-[22px]" src="../../assets/images/waving-hand.png" alt="waving-hand"></span>
+                  <div class="flex items-center gap-2 justify-between"> <span class="flex items-center gap-2 text-3xl font-semibold text-white 3sm:text-lg 5xl:text-2xl">Hello, Amirreza<img class="w-[22px] h-[22px]" src="../../assets/images/waving-hand.png" alt="waving-hand"></span>
                     <div class="dropdown">
                       <button class="before:absolute flex items-center justify-center cursor-pointer before:inset-0 before:bg-white before:opacity-[34%] before:rounded-full p-[5px]"> 
                         <svg class="w-[18px] h-[18px] stroke-white"> 
@@ -1038,7 +1038,7 @@
                         </ul>
                       </div>
                     </div>
-                  </h4>
+                  </div>
                   <p class="text-xs font-semibold text-content-white leading-[22px] max-w-[285px] mt-1 2md:line-clamp-2 sm:line-clamp-none">Welcome to the Govo family! we are glad that you are visite this dashboard.</p>
                   <button class="mt-6 sm:mt-4 rounded-5 py-[8px] px-4 bg-white text-xs font-bold text-title dark:bg-sidebar-dark2 hover:text-primary">What New!</button>
                 </div>
@@ -1231,7 +1231,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body"> 
                       <div class="relative"> 
                         <div class="flex items-center justify-between">
                           <div class="flex-[0_1_50%]">
@@ -1286,8 +1286,7 @@
                           <td class="min-w-[210px]"> 
                             <div class="flex items-center gap-2">
                               <label class="checkbox w-[15px] h-[15px]">
-                                <input type="checkbox">
-                                <div class="checkbox-indicator"><i data-feather="check"></i></div>
+                                <input type="checkbox"><span class="checkbox-indicator"><i data-feather="check"></i></span>
                               </label>
                               <div class="flex items-center gap-[9px]"><img class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full object-cover" src="../../assets/images/avatar/1.jpg" alt="Dmitriy Groshev"><a href="user-profile.html">
                                   <h4 class="text-xs font-semibold text-title group-hover:text-primary">Dmitriy Groshev</h4><span class="block mt-1 font-semibold text-2xs text-content">United Kingdom</span></a></div>
@@ -1328,8 +1327,7 @@
                           <td class="min-w-[210px]"> 
                             <div class="flex items-center gap-2">
                               <label class="checkbox w-[15px] h-[15px]">
-                                <input type="checkbox" checked>
-                                <div class="checkbox-indicator"><i data-feather="check"></i></div>
+                                <input type="checkbox" checked><span class="checkbox-indicator"><i data-feather="check"></i></span>
                               </label>
                               <div class="flex items-center gap-[9px]"><img class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full object-cover" src="../../assets/images/avatar/2.jpg" alt="Patrick Beverley"><a href="user-profile.html">
                                   <h4 class="text-xs font-semibold text-title group-hover:text-primary">Patrick Beverley</h4><span class="block mt-1 font-semibold text-2xs text-content">Australia</span></a></div>
@@ -1370,8 +1368,7 @@
                           <td class="min-w-[210px]"> 
                             <div class="flex items-center gap-2">
                               <label class="checkbox w-[15px] h-[15px]">
-                                <input type="checkbox">
-                                <div class="checkbox-indicator"><i data-feather="check"></i></div>
+                                <input type="checkbox"><span class="checkbox-indicator"><i data-feather="check"></i></span>
                               </label>
                               <div class="flex items-center gap-[9px]"><img class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full object-cover" src="../../assets/images/avatar/3.jpg" alt="Kevin Greem"><a href="user-profile.html">
                                   <h4 class="text-xs font-semibold text-title group-hover:text-primary">Kevin Greem</h4><span class="block mt-1 font-semibold text-2xs text-content">United Kingdom</span></a></div>
@@ -1412,8 +1409,7 @@
                           <td class="min-w-[210px]"> 
                             <div class="flex items-center gap-2">
                               <label class="checkbox w-[15px] h-[15px]">
-                                <input type="checkbox">
-                                <div class="checkbox-indicator"><i data-feather="check"></i></div>
+                                <input type="checkbox"><span class="checkbox-indicator"><i data-feather="check"></i></span>
                               </label>
                               <div class="flex items-center gap-[9px]"><img class="sm:w-[40px] sm:h-[40px] 5xl:w-[43px] 5xl:h-[43px] w-[45px] h-[45px] rounded-full object-cover" src="../../assets/images/avatar/4.jpg" alt="William Barton"><a href="user-profile.html">
                                   <h4 class="text-xs font-semibold text-title group-hover:text-primary">William Barton</h4><span class="block mt-1 font-semibold text-2xs text-content">Netherlands</span></a></div>
@@ -2007,20 +2003,20 @@
         </div>
       </div>
     </main>
+    <!-- Feather Icon Js -->
+    <script src="../../assets/js/feather.min.js"></script>
+    <script src="../../assets/js/feather-custom.js"></script>
+    <!-- Select Js -->
+    <script src="../../assets/js/custom-select.js"></script>
+    <!-- Apex Chart Js -->
+    <script src="../../assets/js/apexchart/apexcharts.js"></script>
+    <script src="../../assets/js/apexchart/apex-common.js"></script>
+    <script src="../../assets/js/apexchart/unique-custom.js"></script>
+    <!-- Sidebar Js -->
+    <script src="../../assets/js/sidebar.js"></script>
+    <!-- customizer js-->
+    <script src="../../assets/js/customizer.js"> </script>
+    <!-- Custom script   -->
+    <script src="../../assets/js/script.js"> </script>
   </body>
-  <!-- Feather Icon Js -->
-  <script src="../../assets/js/feather.min.js"></script>
-  <script src="../../assets/js/feather-custom.js"></script>
-  <!-- Select Js -->
-  <script src="../../assets/js/custom-select.js"></script>
-  <!-- Apex Chart Js -->
-  <script src="../../assets/js/apexchart/apexcharts.js"></script>
-  <script src="../../assets/js/apexchart/apex-common.js"></script>
-  <script src="../../assets/js/apexchart/unique-custom.js"></script>
-  <!-- Sidebar Js -->
-  <script src="../../assets/js/sidebar.js"></script>
-  <!-- customizer js-->
-  <script src="../../assets/js/customizer.js"> </script>
-  <!-- Custom script   -->
-  <script src="../../assets/js/script.js"> </script>
 </html>

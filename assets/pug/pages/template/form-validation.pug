@@ -65,7 +65,7 @@ html(lang='en')
                         form.theme-form(class="flex flex-col gap-4 !m-0")
                           div
                             label(for='email1') Email
-                            input(type='email' id="email1" placeholder='Enter your email id' required='')
+                            input(type='email' id="email2" placeholder='Enter your email id' required='')
                           div
                             label(for='password2') Password
                             div.relative  
@@ -84,7 +84,7 @@ html(lang='en')
                           |   &lt;form class="theme-form flex flex-col gap-4 !m-0"&gt;
                           |      &lt;div&gt;
                           |          &lt;label for="email1&gt;Email&lt;/label&gt; 
-                          |          &lt;input type="email" id="email1" placeholder='Enter your email id' required=''&gt;&lt;/input&gt; 
+                          |          &lt;input type="email" id="email2" placeholder='Enter your email id' required=''&gt;&lt;/input&gt; 
                           |      &lt;/div&gt;
                           |      &lt;div class="relative"&gt;
                           |          &lt;label for="password&gt;Password&lt;/label&gt; 
@@ -167,11 +167,11 @@ html(lang='en')
                             small Error Message
                           div
                             label(for='email') Email
-                            input#email(type='email' placeholder='Enter email id')
+                            input#email1(type='email' placeholder='Enter email id')
                             small Error Message
                           div
                             label(for='contact') Contact 
-                            input#contact(type='number' placeholder='Enter your contact')
+                            input#contact1(type='number' placeholder='Enter your contact')
                             small Error Message
                           div.flex.justify-end.items-center
                             button.btn.btn-primary.text-white.text-xs.font-semibold(type='submit' class="py-2 !m-0 !w-fit") Submit
@@ -195,7 +195,7 @@ html(lang='en')
                           |      &lt;/div&gt;
                           |      &lt;div&gt;
                           |          &lt;label for="contact"&gt;Password&lt;/label&gt; 
-                          |          &lt;input type="number" id="contact" required='' placeholder='Enter your contact&gt;&lt;/input&gt; 
+                          |          &lt;input type="number" id="contact1" required='' placeholder='Enter your contact&gt;&lt;/input&gt; 
                           |          &lt;small&gt;Error Message&lt;/small&gt; 
                           |      &lt;/div&gt;
                           |      &lt;div class="flex items-center justify-end"&gt;
@@ -257,7 +257,7 @@ html(lang='en')
                                 input(type="email" id="email" placeholder="Enter your email id" required)
                               div
                                 label(for="contact") Contact
-                                input(type="number" id="contact" maxlength="10" placeholder="Enter your contact" required)
+                                input(type="number" id="contact" placeholder="Enter your contact" required)
 
                               div.btns.flex.justify-end.items-center.gap-3
                                 button.text-xs.btn.btn-secondary.text-white.py-2.prev-1.prev(class="!w-fit !m-0") Previous
@@ -272,8 +272,8 @@ html(lang='en')
                                 div.relative
                                   input(type='password' id="password2" name='Confirmpassword' required='' placeholder="Confirm password")
                                   div.password-icon 
-                                    i(data-feather="eye" class="cursor-pointer w-4 h-4 stroke-title right-[25px] rtl:right-unset top-1/2 rtl:left-[25px] absolute -translate-y-1/2 feather-eye2" for="password2") 
-                                    i(data-feather="eye-off" class="cursor-pointer w-4 h-4 stroke-title right-[25px] rtl:right-unset top-1/2 rtl:left-[25px] absolute -translate-y-1/2 feather-eye-off2" for="password2")
+                                    i(data-feather="eye" class="cursor-pointer w-4 h-4 stroke-title right-[25px] rtl:right-unset top-1/2 rtl:left-[25px] absolute -translate-y-1/2 feather-eye2") 
+                                    i(data-feather="eye-off" class="cursor-pointer w-4 h-4 stroke-title right-[25px] rtl:right-unset top-1/2 rtl:left-[25px] absolute -translate-y-1/2 feather-eye-off2")
                               div.btns.flex.justify-end.items-center.gap-3
                                 button.text-xs.btn.btn-secondary.text-white.py-2.prev-2.prev(class="!w-fit !m-0") Previous
                                 button.text-xs.btn.btn-primary.text-white.py-2.submit(class="!w-fit !m-0") Submit

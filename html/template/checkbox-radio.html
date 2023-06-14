@@ -31,7 +31,7 @@
         <!-- Page Header start-->
         <header class="fixed top-0 z-[6] xl:w-full 4xl:w-[calc(100%_-_14.375rem)] w-[calc(100%_-_15.8125rem)] ml-auto">
           <div class="page-header transition-all bg-white shadow-header dark:bg-sidebar-dark">
-            <div class="py-[11px] flex items-center xl:relative justify-between px-body-space">
+            <div class="py-[11px] flex items-center xl:relative justify-between px-body-space gap-4">
               <div class="left-header flex items-center gap-2"> 
                 <button class="sidebar-toggle hide"> 
                   <svg class="w-6 4xl:w-5 h-6 4xl:h-5 stroke-title"> 
@@ -80,7 +80,7 @@
                               <use href="../../assets/svg/sprite.svg#Search"> </use>
                             </svg>
                           </div>
-                          <ul class="mt-4 flex flex-col max-h-[232px] overflow-auto custom-scroll"> 
+                          <ul class="mt-4 flex flex-col max-h-[214px] overflow-auto custom-scroll"> 
                             <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 dark:hover:bg-sidebar-dark2 border-border-light hover:bg-gray-light rounded-5"><a class="flex items-center gap-[12px]" href="./email.html">
                                 <div class="indicator"> <span class="chat-status status-online"></span>
                                   <div class="avatar">
@@ -197,7 +197,7 @@
                             <h4 class="text-base font-bold text-title">Messages</h4>
                             <div class="badge leading-none p-1 badge bg-primary rounded-full text-3xs flex items-center justify-center min-w-[22px] min-h-[22px]">25</div>
                           </div>
-                          <ul class="mt-[15px] flex flex-col max-h-[232px] overflow-auto custom-scroll"> 
+                          <ul class="mt-[15px] flex flex-col max-h-[214px] overflow-auto custom-scroll"> 
                             <li class="flex items-center gap-3 px-2 py-3 transition-all duration-300 border-b last:border-b-0 border-border-light dark:border-border-dark hover:bg-gray-light dark:hover:bg-sidebar-dark2 rounded-5"><a class="flex items-center gap-[12px]" href="./chat-app.html">
                                 <div class="relative shadow-lg bg-success flex items-center justify-center rounded-full p-2">
                                   <svg class="w-5 h-5 stroke-white"> 
@@ -278,7 +278,7 @@
                               </svg>
                             </button>
                           </div>
-                          <ul class="flex flex-col max-h-[232px] overflow-auto custom-scroll px-1">
+                          <ul class="flex flex-col max-h-[214px] overflow-auto custom-scroll px-1">
                             <li class="cart-item flex items-center gap-3 py-3 rtl:first:!pl-0  rtl:last:!pr-0 transition-all duration-300 border-b last:border-b-0 border-border-light dark:border-border-dark rounded-5"><a class="flex items-center gap-[12px]" href="./product.html">
                                 <div class="rounded-full relative"> <img class="rounded-full min-w-[2.25rem] min-h-[2.25rem] w-full h-auto object-cover" src="../../assets/images/product/1.jpg" alt="Flower Pot"></div>
                                 <div> 
@@ -742,7 +742,7 @@
                     </nav>
                   </div>
                   <!-- Breadcrumbs End -->
-                  <div class="custom-select select-style-1 lg:hidden dark:text-title">
+                  <div class="custom-select select-style-1 2xl:hidden dark:text-title">
                     <select class="dark:text-title">
                       <option selected value="">Last 7 Days </option>
                       <option value="">Last 2 Weeks </option>
@@ -1039,15 +1039,13 @@
                       <div class="flex gap-2 flex-col">
                         <div class="flex items-center gap-2">
                           <label class="checkbox checkbox-md cursor-pointer"> 
-                            <input class="peer" type="checkbox" id="remember" checked>
-                            <div class="checkbox-indicator peer-checked:!bg-primary !border-primary"> <i data-feather="check"></i></div>
+                            <input class="peer" type="checkbox" id="remember" checked><span class="checkbox-indicator peer-checked:!bg-primary !border-primary"> <i data-feather="check"></i></span>
                           </label>
                           <label for="remember">Remember Me</label>
                         </div>
                         <div class="flex items-center gap-2">
                           <label class="checkbox checkbox-md cursor-pointer"> 
-                            <input class="peer" type="checkbox" id="save">
-                            <div class="checkbox-indicator peer-checked:!bg-primary !border-primary"> <i data-feather="check"></i></div>
+                            <input class="peer" type="checkbox" id="save"><span class="checkbox-indicator peer-checked:!bg-primary !border-primary"> <i data-feather="check"></i></span>
                           </label>
                           <label for="save">Save It</label>
                         </div>
@@ -1098,15 +1096,13 @@
                       <div class="flex gap-2 flex-col">
                         <div class="flex items-center gap-2 opacity-40">
                           <label class="checkbox checkbox-md cursor-pointer"> 
-                            <input class="peer" type="checkbox" disabled>
-                            <div class="checkbox-indicator peer-checked:!bg-warning !border-warning"> <i data-feather="check"></i></div>
+                            <input class="peer" type="checkbox" disabled><span class="checkbox-indicator peer-checked:!bg-warning !border-warning"> <i data-feather="check"></i></span>
                           </label>
                           <p>Disabled Checkbox</p>
                         </div>
                         <div class="flex items-center gap-2 opacity-40">
                           <label class="checkbox checkbox-md cursor-pointer"> 
-                            <input class="peer" type="checkbox" disabled checked>
-                            <div class="checkbox-indicator peer-checked:!bg-warning !border-warning"> <i data-feather="check"></i></div>
+                            <input class="peer" type="checkbox" disabled checked><span class="checkbox-indicator peer-checked:!bg-warning !border-warning"> <i data-feather="check"></i></span>
                           </label>
                           <p>Disabled Checked Checkbox</p>
                         </div>
@@ -1158,15 +1154,13 @@
                         <div class="flex items-center gap-2">
                           <label for="reverse">Reverse Checkbox</label>
                           <label class="checkbox checkbox-md cursor-pointer"> 
-                            <input class="peer" type="checkbox" id="reverse">
-                            <div class="checkbox-indicator peer-checked:!bg-secondary !border-secondary"> <i data-feather="check"></i></div>
+                            <input class="peer" type="checkbox" id="reverse"><span class="checkbox-indicator peer-checked:!bg-secondary !border-secondary"> <i data-feather="check"></i></span>
                           </label>
                         </div>
                         <div class="flex items-center gap-2">
                           <label for="revers">Reverse Checked Checkbox</label>
                           <label class="checkbox checkbox-md cursor-pointer"> 
-                            <input class="peer" type="checkbox" id="revers" checked>
-                            <div class="checkbox-indicator peer-checked:!bg-secondary !border-secondary"> <i data-feather="check"></i></div>
+                            <input class="peer" type="checkbox" id="revers" checked><span class="checkbox-indicator peer-checked:!bg-secondary !border-secondary"> <i data-feather="check"></i></span>
                           </label>
                         </div>
                       </div>
@@ -1357,29 +1351,25 @@
                       <div class="flex gap-2 flex-col">
                         <div class="flex items-center gap-2">
                           <label class="checkbox checkbox-md cursor-pointer">  
-                            <input class="peer" type="checkbox" checked="checked" id="warn">
-                            <div class="checkbox-indicator peer-checked:!bg-warning !border-warning"> <i data-feather="check"> </i></div>
+                            <input class="peer" type="checkbox" checked="checked" id="warn"><span class="checkbox-indicator peer-checked:!bg-warning !border-warning"> <i data-feather="check"> </i></span>
                           </label>
                           <label for="warn">Warning - checkbox-solid-warning</label>
                         </div>
                         <div class="flex items-center gap-2"> 
                           <label class="checkbox checkbox-md cursor-pointer">  
-                            <input class="peer" type="checkbox" id="inf">
-                            <div class="checkbox-indicator peer-checked:!bg-info !border-info"> <i data-feather="check"></i></div>
+                            <input class="peer" type="checkbox" id="inf"><span class="checkbox-indicator peer-checked:!bg-info !border-info"> <i data-feather="check"></i></span>
                           </label>
                           <label for="inf">Info - checkbox-solid-info</label>
                         </div>
                         <div class="flex items-center gap-2"> 
                           <label class="checkbox checkbox-md cursor-pointer">  
-                            <input class="peer" type="checkbox" checked="checked" id="dan">
-                            <div class="checkbox-indicator peer-checked:!bg-danger !border-danger"> <i data-feather="check"></i></div>
+                            <input class="peer" type="checkbox" checked="checked" id="dan"><span class="checkbox-indicator peer-checked:!bg-danger !border-danger"> <i data-feather="check"></i></span>
                           </label>
                           <label for="dan">Danger - checkbox-solid-danger</label>
                         </div>
                         <div class="flex items-center gap-2"> 
                           <label class="checkbox checkbox-md cursor-pointer">
-                            <input class="peer" type="checkbox" id="success">
-                            <div class="checkbox-indicator peer-checked:!bg-success !border-success"> <i data-feather="check"></i></div>
+                            <input class="peer" type="checkbox" id="success"><span class="checkbox-indicator peer-checked:!bg-success !border-success"> <i data-feather="check"></i></span>
                           </label>
                           <label for="success">Success - checkbox-solid-success</label>
                         </div>
@@ -1753,29 +1743,25 @@
                       <div class="flex gap-3 flex-wrap">
                         <div class="flex items-center gap-2">
                           <label class="checkbox checkbox-xl cursor-pointer">  
-                            <input class="peer" type="checkbox" id="Checkout-xl" checked="checked">
-                            <div class="checkbox-indicator peer-checked:!bg-success !border-success"> <i data-feather="check"></i></div>
+                            <input class="peer" type="checkbox" id="Checkout-xl" checked="checked"><span class="checkbox-indicator peer-checked:!bg-success !border-success"> <i data-feather="check"></i></span>
                           </label>
                           <label for="Checkout-xl">Checkout-xl </label>
                         </div>
                         <div class="flex items-center gap-2"> 
                           <label class="checkbox checkbox-lg cursor-pointer">  
-                            <input class="peer" type="checkbox" id="Checkout-lg">
-                            <div class="checkbox-indicator peer-checked:!bg-success !border-success"> <i data-feather="check"></i></div>
+                            <input class="peer" type="checkbox" id="Checkout-lg"><span class="checkbox-indicator peer-checked:!bg-success !border-success"> <i data-feather="check"></i></span>
                           </label>
                           <label for="Checkout-lg">Checkout-lg </label>
                         </div>
                         <div class="flex items-center gap-2"> 
                           <label class="checkbox checkbox-md cursor-pointer">  
-                            <input class="peer" type="checkbox" id="Checkout-md">
-                            <div class="checkbox-indicator peer-checked:!bg-success !border-success"> <i data-feather="check"></i></div>
+                            <input class="peer" type="checkbox" id="Checkout-md"><span class="checkbox-indicator peer-checked:!bg-success !border-success"> <i data-feather="check"></i></span>
                           </label>
                           <label for="Checkout-md">Checkout-md</label>
                         </div>
                         <div class="flex items-center gap-2"> 
                           <label class="checkbox checkbox-sm cursor-pointer">
-                            <input class="peer" type="checkbox" id="Checkout-sm" checked="checked">
-                            <div class="checkbox-indicator peer-checked:!bg-success !border-success"> <i data-feather="check"></i></div>
+                            <input class="peer" type="checkbox" id="Checkout-sm" checked="checked"><span class="checkbox-indicator peer-checked:!bg-success !border-success"> <i data-feather="check"></i></span>
                           </label>
                           <label for="Checkout-sm">Checkout-sm</label>
                         </div>
@@ -1910,23 +1896,19 @@
                     <div class="tab-pan active show " data-tabContent="1">
                       <div class="flex gap-3 flex-wrap main-img-checkbox">
                         <div class="img-checkbox">
-                          <input class="main-img-cover form-check-input" id="img-check-1" type="checkbox" checked>
-                          <div class="checkbox-indicator"> <i data-feather="check"></i></div>
+                          <input class="main-img-cover form-check-input" id="img-check-1" type="checkbox" checked><span class="checkbox-indicator"> <i data-feather="check"></i></span>
                           <label class="form-check-label cursor-pointer mb-0" for="img-check-1"> <img src="../../assets/images/carousel/1.jpg" alt="nature"></label>
                         </div>
                         <div class="img-checkbox">
-                          <input class="main-img-cover form-check-input" id="img-check-2" type="checkbox">
-                          <div class="checkbox-indicator"> <i data-feather="check"></i></div>
+                          <input class="main-img-cover form-check-input" id="img-check-2" type="checkbox"><span class="checkbox-indicator"> <i data-feather="check"></i></span>
                           <label class="form-check-label cursor-pointer mb-0" for="img-check-2"> <img src="../../assets/images/carousel/2.jpg" alt="butterfly"></label>
                         </div>
                         <div class="img-checkbox">
-                          <input class="main-img-cover form-check-input" id="img-check-3" type="checkbox" disabled>
-                          <div class="checkbox-indicator"> <i data-feather="check"></i></div>
+                          <input class="main-img-cover form-check-input" id="img-check-3" type="checkbox" disabled><span class="checkbox-indicator"> <i data-feather="check"></i></span>
                           <label class="form-check-label cursor-pointer mb-0" for="img-check-3"> <img src="../../assets/images/carousel/3.jpg" alt="sky view"></label>
                         </div>
                         <div class="img-checkbox">
-                          <input class="main-img-cover form-check-input" id="img-check-4" type="checkbox" disabled checked>
-                          <div class="checkbox-indicator"> <i data-feather="check"></i></div>
+                          <input class="main-img-cover form-check-input" id="img-check-4" type="checkbox" disabled checked><span class="checkbox-indicator"> <i data-feather="check"></i></span>
                           <label class="form-check-label cursor-pointer mb-0" for="img-check-4"> <img src="../../assets/images/carousel/4.jpg" alt="tree"></label>
                         </div>
                       </div>
@@ -2057,76 +2039,76 @@
           </div>
         </div>
       </div>
-    </main>
-    <!-- Customizer-->
-    <div class="bg-white customizer-sidebar dark:bg-sidebar-dark2 dark:border-border-dark">
-      <div class="flex rtl:flex items-center text-title bg-primary justify-between  p-[15px] shadow-md"> <span class="text-base font-semibold text-white">Customizer</span>
-        <button class="customizer-close"> <i class="w-4 h-4 stroke-white" data-feather="x"></i></button>
-      </div>
-      <div class="py-[4px] dark:bg-mode-200">
-        <div class="px-[15px] py-7  h-[calc(100vh_-_139px)] overflow-auto ">
-          <ul class="flex flex-col gap-7 mode-event">
-            <li> 
-              <div>
-                <h5 class="leading-none text-dark text-sm font-semibold dark:text-white">Template Mode</h5><span class="leading-none text-content text-xs font-medium">Choose template mode dark & light</span>
-              </div>
-              <div class="mt-2"> 
-                <ul class="flex items-center gap-3 flex-wrap"> 
-                  <li class="relative">
-                    <input class="absolute invisible opacity-0 peer" checked id="light-checked" type="radio" name="mode"><i class="stroke-primary z-[10] transition-all scale-0 opacity-0 absolute peer-checked:opacity-100 peer-checked:scale-100 top-2 right-2 w-4 h-4" data-feather="check-circle"></i>
-                    <label class="cursor-pointer block overflow-hidden border shadow-md mode-theme-light border-light dark:border-border-dark rounded-5" for="light-checked"> <img class="w-[90px] object-cover" src="../../assets/images/customizer/light.png" alt="light"></label>
-                  </li>
-                  <li class="relative">
-                    <input class="absolute invisible opacity-0 peer" id="dark-checked" type="radio" name="mode"><i class="stroke-white z-[10] transition-all scale-0 opacity-0 absolute peer-checked:opacity-100 peer-checked:scale-100 top-2 right-2 w-4 h-4" data-feather="check-circle"></i>
-                    <label class="cursor-pointer block overflow-hidden border shadow-md mode-theme-dark border-light dark:border-border-dark rounded-5" for="dark-checked"> <img class="w-[90px] object-cover" src="../../assets/images/customizer/dark.png" alt="dark"></label>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <div>
-                <h5 class="leading-none text-dark text-sm font-semibold dark:text-white">Layout Type</h5><span class="leading-none text-content text-xs">Choose layout Ltr & Rtl</span>
-              </div>
-              <div class="mt-2">
-                <ul class="flex items-center gap-3"> 
-                  <li class="relative">
-                    <input class="absolute invisible opacity-0 peer" checked id="ltr-checked" type="radio" name="dir"><i class="stroke-primary z-[10] transition-all scale-0 opacity-0 absolute peer-checked:opacity-100 peer-checked:scale-100 top-2 right-2 w-4 h-4" data-feather="check-circle"></i>
-                    <label class="cursor-pointer block overflow-hidden border shadow-md layout-ltr border-light dark:border-border-dark rounded-5" for="ltr-checked"> <img class="w-[90px] object-cover" src="../../assets/images/customizer/ltr.png" alt="ltr"></label>
-                  </li>
-                  <li class="relative"> 
-                    <input class="absolute invisible opacity-0 peer" id="rtl-checked" type="radio" name="dir"><i class="stroke-white z-[10] transition-all scale-0 opacity-0 absolute peer-checked:opacity-100 peer-checked:scale-100 top-2 right-2 w-4 h-4" data-feather="check-circle"></i>
-                    <label class="cursor-pointer block overflow-hidden border shadow-md layout-rtl border-light dark:border-border-dark rounded-5" for="rtl-checked"> <img class="w-[90px] object-cover" src="../../assets/images/customizer/rtl.png" alt="rtl"></label>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <div class="flex items-center justify-between"><span class="dark:text-white text-sm font-semibold text-title">Monochrome Mode </span>
-                <label class="cursor-pointer inline-flex relative items-center">
-                  <input class="sr-only peer monochrome toggle toggle-primary" name="monochrome" type="checkbox" id="monochrome"><span class="w-7 h-4 bg-content rounded-full peer peer-focus:outline-none peer-checked:after:translate-x-full peer-checked:after:content-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-light after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-primary"></span>
-                </label>
-              </div>
-            </li>
-          </ul>
+      <!-- Customizer-->
+      <div class="bg-white customizer-sidebar dark:bg-sidebar-dark2 dark:border-border-dark">
+        <div class="flex rtl:flex items-center text-title bg-primary justify-between  p-[15px] shadow-md"> <span class="text-base font-semibold text-white">Customizer</span>
+          <button class="customizer-close"> <i class="w-4 h-4 stroke-white" data-feather="x"></i></button>
+        </div>
+        <div class="py-[4px] dark:bg-mode-200">
+          <div class="px-[15px] py-7  h-[calc(100vh_-_139px)] overflow-auto ">
+            <ul class="flex flex-col gap-7 mode-event">
+              <li> 
+                <div>
+                  <h5 class="leading-none text-dark text-sm font-semibold dark:text-white">Template Mode</h5><span class="leading-none text-content text-xs font-medium">Choose template mode dark & light</span>
+                </div>
+                <div class="mt-2"> 
+                  <ul class="flex items-center gap-3 flex-wrap"> 
+                    <li class="relative">
+                      <input class="absolute invisible opacity-0 peer" checked id="light-checked" type="radio" name="mode"><i class="stroke-primary z-[10] transition-all scale-0 opacity-0 absolute peer-checked:opacity-100 peer-checked:scale-100 top-2 right-2 w-4 h-4" data-feather="check-circle"></i>
+                      <label class="cursor-pointer block overflow-hidden border shadow-md mode-theme-light border-light dark:border-border-dark rounded-5" for="light-checked"> <img class="w-[90px] object-cover" src="../../assets/images/customizer/light.png" alt="light"></label>
+                    </li>
+                    <li class="relative">
+                      <input class="absolute invisible opacity-0 peer" id="dark-checked" type="radio" name="mode"><i class="stroke-white z-[10] transition-all scale-0 opacity-0 absolute peer-checked:opacity-100 peer-checked:scale-100 top-2 right-2 w-4 h-4" data-feather="check-circle"></i>
+                      <label class="cursor-pointer block overflow-hidden border shadow-md mode-theme-dark border-light dark:border-border-dark rounded-5" for="dark-checked"> <img class="w-[90px] object-cover" src="../../assets/images/customizer/dark.png" alt="dark"></label>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5 class="leading-none text-dark text-sm font-semibold dark:text-white">Layout Type</h5><span class="leading-none text-content text-xs">Choose layout Ltr & Rtl</span>
+                </div>
+                <div class="mt-2">
+                  <ul class="flex items-center gap-3"> 
+                    <li class="relative">
+                      <input class="absolute invisible opacity-0 peer" checked id="ltr-checked" type="radio" name="dir"><i class="stroke-primary z-[10] transition-all scale-0 opacity-0 absolute peer-checked:opacity-100 peer-checked:scale-100 top-2 right-2 w-4 h-4" data-feather="check-circle"></i>
+                      <label class="cursor-pointer block overflow-hidden border shadow-md layout-ltr border-light dark:border-border-dark rounded-5" for="ltr-checked"> <img class="w-[90px] object-cover" src="../../assets/images/customizer/ltr.png" alt="ltr"></label>
+                    </li>
+                    <li class="relative"> 
+                      <input class="absolute invisible opacity-0 peer" id="rtl-checked" type="radio" name="dir"><i class="stroke-white z-[10] transition-all scale-0 opacity-0 absolute peer-checked:opacity-100 peer-checked:scale-100 top-2 right-2 w-4 h-4" data-feather="check-circle"></i>
+                      <label class="cursor-pointer block overflow-hidden border shadow-md layout-rtl border-light dark:border-border-dark rounded-5" for="rtl-checked"> <img class="w-[90px] object-cover" src="../../assets/images/customizer/rtl.png" alt="rtl"></label>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center justify-between"><span class="dark:text-white text-sm font-semibold text-title">Monochrome Mode </span>
+                  <label class="cursor-pointer inline-flex relative items-center">
+                    <input class="sr-only peer monochrome toggle toggle-primary" name="monochrome" type="checkbox" id="monochrome"><span class="w-7 h-4 bg-content rounded-full peer peer-focus:outline-none peer-checked:after:translate-x-full peer-checked:after:content-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-light after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-primary"></span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 p-[15px] border-t border-light dark:bg-primaryLight dark:border-t dark:border-border-dark "> 
+          <button class="btn btn-ghost flex-1 reset-customizer dark:!bg-sidebar-dark dark:text-white">Reset </button>
+          <button class="btn btn-primary text-white flex-1">Buy Now</button>
         </div>
       </div>
-      <div class="flex items-center gap-2 p-[15px] border-t border-light dark:bg-primaryLight dark:border-t dark:border-border-dark "> 
-        <button class="btn btn-ghost flex-1 reset-customizer dark:!bg-sidebar-dark dark:text-white">Reset </button>
-        <button class="btn btn-primary text-white flex-1">Buy Now</button>
-      </div>
-    </div>
+    </main>
+    <!-- Feather Icon Js -->
+    <script src="../../assets/js/feather.min.js"></script>
+    <script src="../../assets/js/feather-custom.js"></script>
+    <!-- Select Js -->
+    <script src="../../assets/js/custom-select.js"></script>
+    <!-- prism js-->
+    <script src="../../assets/js/prism.js"></script>
+    <!-- Sidebar Js -->
+    <script src="../../assets/js/sidebar.js"></script>
+    <!-- customizer js-->
+    <script src="../../assets/js/customizer.js"> </script>
+    <!-- Custom script   -->
+    <script src="../../assets/js/script.js"> </script>
   </body>
-  <!-- Feather Icon Js -->
-  <script src="../../assets/js/feather.min.js"></script>
-  <script src="../../assets/js/feather-custom.js"></script>
-  <!-- Select Js -->
-  <script src="../../assets/js/custom-select.js"></script>
-  <!-- prism js-->
-  <script src="../../assets/js/prism.js"></script>
-  <!-- Sidebar Js -->
-  <script src="../../assets/js/sidebar.js"></script>
-  <!-- customizer js-->
-  <script src="../../assets/js/customizer.js"> </script>
-  <!-- Custom script   -->
-  <script src="../../assets/js/script.js"> </script>
 </html>

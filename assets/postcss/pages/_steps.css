@@ -80,7 +80,6 @@
       counter-reset: my-sec-counter;
       .step {
         &:after {
-          /* counter-reset: my-sec-counter; */
           counter-increment: my-sec-counter;
           content: counter(my-sec-counter, upper-roman);
         }

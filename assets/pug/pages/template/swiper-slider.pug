@@ -385,7 +385,7 @@ html(lang='en')
                             img.w-full(class="h-[17.625rem] xl:h-[13.4375rem]  lg:h-80 sm:h-52 2sm:h-44" src='../../assets/images/carousel/2.jpg' alt="butterfly")
                           div.swiper-slide 
                             img.w-full(class="h-[17.625rem] xl:h-[13.4375rem]  lg:h-80 sm:h-52 2sm:h-44" src='../../assets/images/carousel/3.jpg' alt="sky view")
-                      div.swiper.sliderThumbnail(thumbsslider='')
+                      div.swiper.sliderThumbnail(data-thumbsslider="")
                         div.swiper-wrapper
                           div.swiper-slide 
                             img.w-full(class="h-[4.8125rem] xl:h-[4.0625rem] 2lg:h-[5rem] md:h-[4.375rem] sm:h-[3.125rem]" src='../../assets/images/carousel/1.jpg' alt="nature")
@@ -431,7 +431,7 @@ html(lang='en')
                           |       &lt;/div&gt;
                           |   &lt;/div&gt; 
                           |&lt;/div&gt;
-                          |&lt;div class="swiper sliderThumbnail thumbsslider="""&gt;
+                          |&lt;div class="swiper sliderThumbnail" data-thumbsslider=""&gt;
                           |   &lt;div class="swiper-wrapper"&gt;
                           |       &lt;div class="swiper-slide"&gt;
                           |           img(class="w-full h-[4.8125rem] xl:h-[4.0625rem] 2lg:h-[5rem] md:h-[4.375rem] sm:h-[3.125rem]" src="../../assets/images/carousel/1.jpg" alt="nature")
@@ -460,6 +460,6 @@ html(lang='en')
         // Page Body End 
         +footer("sm:flex-col flex sm:gap-1 gap-2 items-center justify-between py-[1.1875rem] sm:py-4  shadow-footer bg-white px-body-space mt-card-gap")
 
-    include ../../components/customizer
+      include ../../components/customizer
 
-include ../../layout/footer-files
+    include ../../layout/footer-files

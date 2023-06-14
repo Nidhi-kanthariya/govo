@@ -55,7 +55,18 @@ const revenueChart = {
     breakpoint: 992,
     options: {
       chart: {
-        height: 87,
+        height: 92,
+        sparkline: {
+          enabled: true,
+        },
+      },
+    },
+  },
+  {
+    breakpoint: 922,
+    options: {
+      chart: {
+        height: 95,
         sparkline: {
           enabled: true,
         },
@@ -164,7 +175,7 @@ const earningChart = {
       chart: {
         height: 280,
 
-        offsetY: 5,
+        offsetY: -5,
         sparkline: {
           enabled: true,
         },
@@ -176,6 +187,7 @@ const earningChart = {
     options: {
       chart: {
         height: 250,
+        offsetY: 0,
       }
     }
   },
@@ -185,7 +197,7 @@ const earningChart = {
       chart: {
         height: 250,
 
-        offsetY: 10,
+        offsetY: 0,
         sparkline: {
           enabled: true,
         },
@@ -194,6 +206,15 @@ const earningChart = {
         padding: {
           top: -10,
         },
+      },
+    },
+  },
+  {
+    breakpoint: 992,
+    options: {
+      chart: {
+
+        offsetY: -3,
       },
     },
   },

@@ -33,15 +33,6 @@
       }
     }
   }
-
-  /* .shop-sidebar,
-  .blog-sidebar {
-    @apply sm:w-[17.875rem] xl:opacity-0 xl:invisible xl:absolute xl:left-[-19.375rem] xl:top-0 xl:transition-all xl:z-[4] xl:duration-1000 xl:translate-x-[-19.375rem] xl:ease-in-out;
-    &.show {
-      @apply opacity-100 visible absolute top-0 left-0 z-[7] transition-all duration-1000 translate-x-0 ease-in-out;
-    }
-  } */
-
   .shop-sidebar,
   .blog-sidebar {
     @apply sm:w-[17.875rem] lg:opacity-0 lg:invisible lg:absolute lg:left-[-19.375rem] lg:top-0 lg:transition-all lg:z-[4] lg:duration-1000 lg:translate-x-[-19.375rem] lg:ease-in-out;
