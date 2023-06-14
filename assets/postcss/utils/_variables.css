@@ -4,16 +4,16 @@
 :root {
   --primary: 51, 191, 191;
   --secondary: 255, 97, 80;
-  --success: #63d5be;
-  --success-light: #e9faf3;
+  --success: #0dbe54;
+  --success-light: #0dbe5433;
   --info: #b52af6;
   --info-light: #b52af64d;
   --info-extralight: #b52af61a;
   --warning: #feb858;
   --warning-light: #feb8584d;
   --warning-extralight: #F8AA4B1A;
-  --danger: #f1523d; 
-  --danger-light: #f1523d4d;  
+  --danger: #ee412a;
+  --danger-light: #ee412a33;
   --light: #d8ecff; 
   --dark: #44588f;  
   --body: #f4f4f4;   

@@ -78,16 +78,16 @@
 :root {
   --primary: 51, 191, 191;
   --secondary: 255, 97, 80;
-  --success: #63d5be;
-  --success-light: #e9faf3;
+  --success: #0dbe54;
+  --success-light: #0dbe5433;
   --info: #b52af6;
   --info-light: #b52af64d;
   --info-extralight: #b52af61a;
   --warning: #feb858;
   --warning-light: #feb8584d;
   --warning-extralight: #F8AA4B1A;
-  --danger: #f1523d; 
-  --danger-light: #f1523d4d;  
+  --danger: #ee412a;
+  --danger-light: #ee412a33;
   --light: #d8ecff; 
   --dark: #44588f;  
   --body: #f4f4f4;   
@@ -3330,14 +3330,6 @@ input:focus {
       }
 
 .shopping-cart svg:not(.svg-inline--fa) {
-        position: absolute;
-      }
-
-.modal-eye svg * {
-        fill: url(#rgrad);
-      }
-
-.modal-eye svg:not(.svg-inline--fa) {
         position: absolute;
       }
 
@@ -9264,6 +9256,10 @@ header {
   right: 0.875rem;
 }
 
+.right-4 {
+  right: 1rem;
+}
+
 .right-6 {
   right: 1.5rem;
 }
@@ -9364,6 +9360,10 @@ header {
   top: 0.75rem;
 }
 
+.top-4 {
+  top: 1rem;
+}
+
 .top-\[-0\.9375rem\] {
   top: -0.9375rem;
 }
@@ -9454,18 +9454,6 @@ header {
 
 .top-\[8\%\] {
   top: 8%;
-}
-
-.top-1 {
-  top: 0.25rem;
-}
-
-.right-4 {
-  right: 1rem;
-}
-
-.top-4 {
-  top: 1rem;
 }
 
 .isolate {
