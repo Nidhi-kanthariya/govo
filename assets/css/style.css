@@ -190,7 +190,7 @@ html[class='dark'] .apexcharts-tooltip.apexcharts-theme-light .apexcharts-toolti
 
 /* Tailwind */
 
-/*! tailwindcss v3.3.1 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -908,6 +908,9 @@ input:focus {
   --tw-pan-y:  ;
   --tw-pinch-zoom:  ;
   --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
   --tw-ordinal:  ;
   --tw-slashed-zero:  ;
   --tw-numeric-figure:  ;
@@ -955,6 +958,9 @@ input:focus {
   --tw-pan-y:  ;
   --tw-pinch-zoom:  ;
   --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
   --tw-ordinal:  ;
   --tw-slashed-zero:  ;
   --tw-numeric-figure:  ;
@@ -3307,14 +3313,11 @@ input:focus {
       background-clip: text;
       background-image: linear-gradient(to right, var(--tw-gradient-stops));
       --tw-gradient-from: #fbbf24 var(--tw-gradient-from-position);
-      --tw-gradient-from-position:  ;
-      --tw-gradient-to: rgb(251 191 36 / 0)  var(--tw-gradient-from-position);
+      --tw-gradient-to: rgb(251 191 36 / 0) var(--tw-gradient-to-position);
       --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-      --tw-gradient-via-position:  ;
       --tw-gradient-to: rgb(220 38 38 / 0)  var(--tw-gradient-to-position);
       --tw-gradient-stops: var(--tw-gradient-from), #dc2626 var(--tw-gradient-via-position), var(--tw-gradient-to);
       --tw-gradient-to: #2563eb var(--tw-gradient-to-position);
-      --tw-gradient-to-position:  ;
     }
 
 .heart svg * {
@@ -8959,61 +8962,49 @@ header {
 .circle.primary-circle {
   background-image: linear-gradient(to left, var(--tw-gradient-stops));
   --tw-gradient-from: rgba(var(--primary),1) var(--tw-gradient-from-position);
-  --tw-gradient-from-position:  ;
-  --tw-gradient-to: rgba(var(--primary), 0)  var(--tw-gradient-from-position);
+  --tw-gradient-to: rgba(var(--primary), 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   --tw-gradient-to: var(--primary-extralight) var(--tw-gradient-to-position);
-  --tw-gradient-to-position:  ;
 }
 
 .circle.secondary-circle {
   background-image: linear-gradient(to left, var(--tw-gradient-stops));
   --tw-gradient-from: rgba(var(--secondary),1) var(--tw-gradient-from-position);
-  --tw-gradient-from-position:  ;
-  --tw-gradient-to: rgba(var(--secondary), 0)  var(--tw-gradient-from-position);
+  --tw-gradient-to: rgba(var(--secondary), 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   --tw-gradient-to: var(--secondary-extralight) var(--tw-gradient-to-position);
-  --tw-gradient-to-position:  ;
 }
 
 .circle.info-circle {
   background-image: linear-gradient(to left, var(--tw-gradient-stops));
   --tw-gradient-from: var(--info) var(--tw-gradient-from-position);
-  --tw-gradient-from-position:  ;
-  --tw-gradient-to: rgb(255 255 255 / 0)  var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   --tw-gradient-to: var(--info-light) var(--tw-gradient-to-position);
-  --tw-gradient-to-position:  ;
 }
 
 .circle.success-circle {
   background-image: linear-gradient(to left, var(--tw-gradient-stops));
   --tw-gradient-from: var(--success) var(--tw-gradient-from-position);
-  --tw-gradient-from-position:  ;
-  --tw-gradient-to: rgb(255 255 255 / 0)  var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   --tw-gradient-to: var(--success-light) var(--tw-gradient-to-position);
-  --tw-gradient-to-position:  ;
 }
 
 .circle.warning-circle {
   background-image: linear-gradient(to left, var(--tw-gradient-stops));
   --tw-gradient-from: var(--warning) var(--tw-gradient-from-position);
-  --tw-gradient-from-position:  ;
-  --tw-gradient-to: rgb(255 255 255 / 0)  var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   --tw-gradient-to: var(--warning-light) var(--tw-gradient-to-position);
-  --tw-gradient-to-position:  ;
 }
 
 .circle.danger-circle {
   background-image: linear-gradient(to left, var(--tw-gradient-stops));
   --tw-gradient-from: var(--danger) var(--tw-gradient-from-position);
-  --tw-gradient-from-position:  ;
-  --tw-gradient-to: rgb(255 255 255 / 0)  var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   --tw-gradient-to: var(--danger-light) var(--tw-gradient-to-position);
-  --tw-gradient-to-position:  ;
 }
 
 .sr-only {
@@ -11179,6 +11170,10 @@ header {
 .min-w-max {
   min-width: -moz-max-content;
   min-width: max-content;
+}
+
+.min-w-\[2\.5rem\] {
+  min-width: 2.5rem;
 }
 
 .max-w-2xl {

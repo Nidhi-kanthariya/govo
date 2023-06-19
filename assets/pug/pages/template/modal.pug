@@ -745,19 +745,19 @@ html(lang='en')
               i(data-feather="x" class="w-4 h-4 stroke-dark")
           div.modal-body.modal-content-scroll(class="h-[25rem]")
             div.flex.items-center.mb-3.gap-3 
-              +SVG_ICON("Arrow-Right","w-[2.5rem] h-[2.5rem] stroke-title")
+              +SVG_ICON("Arrow-Right","w-[2.5rem] min-w-[1.25rem] h-[2.5rem] stroke-title")
               p For a site to be successful, a designer must be able to communicate their ideas.
             div.flex.items-center.mb-3.gap-3 
-              +SVG_ICON("Arrow-Right","w-[2.5rem] h-[2.5rem] stroke-title")
+              +SVG_ICON("Arrow-Right","w-[2.5rem] min-w-[1.25rem] h-[2.5rem] stroke-title")
               p Most businesses employ a certain font or typography so that clients can quickly distinguish them from their rivals.
             div.flex.items-center.mb-3.gap-3 
-              +SVG_ICON("Arrow-Right","w-[2.5rem] h-[2.5rem] stroke-title")
+              +SVG_ICON("Arrow-Right","w-[2.5rem] min-w-[1.25rem] h-[2.5rem] stroke-title")
               p We build specialized websites for companies, list them on digital directories, and set up a sales funnel to boost ROI.
             div.flex.items-center.mb-3.gap-3 
-              +SVG_ICON("Arrow-Right","w-[2.5rem] h-[2.5rem] stroke-title")
+              +SVG_ICON("Arrow-Right","w-[2.5rem] min-w-[1.25rem] h-[2.5rem] stroke-title")
               p  Chat with a firm about what they want, and inquire about the target audience.
             div.flex.items-center.mb-3.gap-3 
-              +SVG_ICON("Arrow-Right","w-[2.5rem] h-[2.5rem] stroke-title")
+              +SVG_ICON("Arrow-Right","w-[2.5rem] min-w-[1.25rem] h-[2.5rem] stroke-title")
               p firms may more easily and precisely communicate their brands through typography.
           div.modal-footer
             label(for="modal-7" class="cursor-pointer").btn.btn-primary.text-white.py-1.px-2.inline-block.text-sm(class="!text-end") Close
@@ -784,8 +784,8 @@ html(lang='en')
                   span Remember Me
                 div(class="!mb-0")
                   a(href="forgot-password.html") Forgot Password? 
-              div(class="!mb-0")
-                a.btn.btn-primary.text-white(href="index.html") Sign in
+              div(class="!mb-0 mx-auto")
+                a.btn.btn-primary(class="!text-white py-2" href="index.html") Sign in
               div
                 h4 Or Sign in with
               div.social
@@ -802,7 +802,7 @@ html(lang='en')
                 span Don't have an account? 
                   a(href="register.html") Create Now
 
-      //- Tooltip modal
+      //- Tooltip modal   
       div.modal-main
         input#modal-9(class="peer" name="modal-9" type='checkbox')
         label.modal-overlay(class="peer-checked:block" for='modal-9')
@@ -820,88 +820,90 @@ html(lang='en')
             //- p.leading- Tooltip 
             //-   a(href="javascript:void(0)" class="font-semibold text-secondary" data-tw-tooltip="link") This link  
             //-   |  and that link have tooltips on hover.
-            //- Top-left modal
-            div.modal-main
-              input#modal-10(class="peer" name="modal-10" type='checkbox')
-              label.modal-overlay(class="peer-checked:block" for='modal-10')
-              div.modal.modal-top-left(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] sm:w-56 dark:bg-sidebar-dark2")
-                div.modal-body.text-center
-                  ul.modal-img
-                    li
-                      img(class="" src="../../assets/images/modal/whatsapp.gif" alt="whatsapp" class="w-52")
-                    li
-                      img(class="" src="../../assets/images/modal/instagram.gif" alt="instagram" class="w-52")
-                    li
-                      img(class="" src="../../assets/images/modal/facebook.gif" alt="facebook" class="w-52")
-                  p.my-3 Remove your complete account from your phone or tablet to sign out of the Gmail app.
-                  label(for="modal-10" class="cursor-pointer").btn.btn-primary.py-1.px-2.text-white.inline-block.text-sm Create an account
 
-            //- Top-center modal
-            div.modal-main
-              input#modal-11(class="peer" name="modal-11" type='checkbox')
-              label.modal-overlay(class="peer-checked:block" for='modal-11')
-              div.modal.modal-top-center(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] sm:w-56 dark:bg-sidebar-dark2")
-                div.modal-body.text-center
-                  ul.modal-img
-                    li
-                      img(class="" src="../../assets/images/modal/whatsapp.gif" alt="whatsapp" class="w-52")
-                    li
-                      img(class="" src="../../assets/images/modal/instagram.gif" alt="instagram" class="w-52")
-                    li
-                      img(class="" src="../../assets/images/modal/facebook.gif" alt="facebook" class="w-52")
-                  p.my-3 Remove your complete account from your phone or tablet to sign out of the Gmail app.
-                  label(for="modal-11" class="cursor-pointer").btn.btn-primary.py-1.px-2.text-white.inline-block.text-sm Create an account
 
-            //- Top-right modal
-            div.modal-main
-              input#modal-14(class="peer" name="modal-14" type='checkbox')
-              label.modal-overlay(class="peer-checked:block" for='modal-14')
-              div.modal.modal-top-right(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] sm:w-56 dark:bg-sidebar-dark2")
-                div.modal-body.text-center
-                  ul.modal-img
-                    li
-                      img(class="" src="../../assets/images/modal/whatsapp.gif" alt="whatsapp" class="w-52")
-                    li
-                      img(class="" src="../../assets/images/modal/instagram.gif" alt="instagram" class="w-52")
-                    li 
-                      img(class="" src="../../assets/images/modal/facebook.gif" alt="facebook" class="w-52")
-                  p.my-3 Remove your complete account from your phone or tablet to sign out of the Gmail app.
-                  label(for="modal-14" class="cursor-pointer").btn.btn-primary.py-1.px-2.text-white.inline-block.text-sm  Create an account
+      //- Top-left modal
+      div.modal-main
+        input#modal-10(class="peer" name="modal-10" type='checkbox')
+        label.modal-overlay(class="peer-checked:block" for='modal-10')
+        div.modal.modal-top-left(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] sm:w-56 dark:bg-sidebar-dark2")
+          div.modal-body.text-center
+            ul.modal-img
+              li
+                img(class="" src="../../assets/images/modal/whatsapp.gif" alt="whatsapp" class="w-52")
+              li
+                img(class="" src="../../assets/images/modal/instagram.gif" alt="instagram" class="w-52")
+              li
+                img(class="" src="../../assets/images/modal/facebook.gif" alt="facebook" class="w-52")
+            p.my-3 Remove your complete account from your phone or tablet to sign out of the Gmail app.
+            label(for="modal-10" class="cursor-pointer").btn.btn-primary.py-1.px-2.text-white.inline-block.text-sm Create an account
 
-            //- Bottom-left modal
-            div.modal-main
-              input#modal-12(class="peer" name="modal-12" type='checkbox')
-              label.modal-overlay(class="peer-checked:block" for='modal-12')
-              div.modal.modal-bottom-left(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] sm:w-56 dark:bg-sidebar-dark2")
-                div.modal-body.text-center
-                  div.modal-img
-                    img(class="" src="../../assets/images/modal/success.gif" alt="success" class="w-28")
-                  h3.text-lg.font-bold.leading-none.mt-1 Success Message
-                  p.mb-3 Now, you can access your account.
-                  label(for="modal-12" class="cursor-pointer").btn.btn-success.py-1.px-2.text-white.inline-block.text-sm Close
+      //- Top-center modal
+      div.modal-main
+        input#modal-11(class="peer" name="modal-11" type='checkbox')
+        label.modal-overlay(class="peer-checked:block" for='modal-11')
+        div.modal.modal-top-center(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] sm:w-56 dark:bg-sidebar-dark2")
+          div.modal-body.text-center
+            ul.modal-img
+              li
+                img(class="" src="../../assets/images/modal/whatsapp.gif" alt="whatsapp" class="w-52")
+              li
+                img(class="" src="../../assets/images/modal/instagram.gif" alt="instagram" class="w-52")
+              li
+                img(class="" src="../../assets/images/modal/facebook.gif" alt="facebook" class="w-52")
+            p.my-3 Remove your complete account from your phone or tablet to sign out of the Gmail app.
+            label(for="modal-11" class="cursor-pointer").btn.btn-primary.py-1.px-2.text-white.inline-block.text-sm Create an account
 
-            //- Bottom-center modal
-            div.modal-main
-              input#modal-13(class="peer" name="modal-13" type='checkbox')
-              label.modal-overlay(class="peer-checked:block" for='modal-13')
-              div.modal.modal-bottom-center(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] sm:w-56 dark:bg-sidebar-dark2")
-                div.modal-body.text-center
-                  div.modal-img
-                    img(class="" src="../../assets/images/modal/success.gif" alt="success" class="w-28")
-                  h3.text-lg.font-bold.leading-none.mt-1 Success Message
-                  p.mb-3 Now, you can access your account.
-                  label(for="modal-13" class="cursor-pointer").btn.btn-success.py-1.px-2.text-white.inline-block.text-sm Close
+      //- Top-right modal
+      div.modal-main
+        input#modal-14(class="peer" name="modal-14" type='checkbox')
+        label.modal-overlay(class="peer-checked:block" for='modal-14')
+        div.modal.modal-top-right(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] sm:w-56 dark:bg-sidebar-dark2")
+          div.modal-body.text-center
+            ul.modal-img
+              li
+                img(class="" src="../../assets/images/modal/whatsapp.gif" alt="whatsapp" class="w-52")
+              li
+                img(class="" src="../../assets/images/modal/instagram.gif" alt="instagram" class="w-52")
+              li 
+                img(class="" src="../../assets/images/modal/facebook.gif" alt="facebook" class="w-52")
+            p.my-3 Remove your complete account from your phone or tablet to sign out of the Gmail app.
+            label(for="modal-14" class="cursor-pointer").btn.btn-primary.py-1.px-2.text-white.inline-block.text-sm  Create an account
 
-            //- Bottom-right modal
-            div.modal-main
-              input#modal-15(class="peer" name="modal-15" type='checkbox')
-              label.modal-overlay(class="peer-checked:block" for='modal-15')
-              div.modal.modal-bottom-right(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] sm:w-56 dark:bg-sidebar-dark2")
-                div.modal-body.text-center
-                  div.modal-img
-                    img(class="" src="../../assets/images/modal/success.gif" alt="success" class="w-28")
-                  h3.text-lg.font-bold.leading-none.mt-1 Success Message
-                  p.mb-3 Now, you can access your account.
-                  label(for="modal-15" class="cursor-pointer").btn.btn-success.py-1.px-2.text-white.inline-block.text-sm Close
+      //- Bottom-left modal
+      div.modal-main
+        input#modal-12(class="peer" name="modal-12" type='checkbox')
+        label.modal-overlay(class="peer-checked:block" for='modal-12')
+        div.modal.modal-bottom-left(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] sm:w-56 dark:bg-sidebar-dark2")
+          div.modal-body.text-center
+            div.modal-img
+              img(class="" src="../../assets/images/modal/success.gif" alt="success" class="w-28")
+            h3.text-lg.font-bold.leading-none.mt-1 Success Message
+            p.mb-3 Now, you can access your account.
+            label(for="modal-12" class="cursor-pointer").btn.btn-success.py-1.px-2.text-white.inline-block.text-sm Close
+
+      //- Bottom-center modal
+      div.modal-main
+        input#modal-13(class="peer" name="modal-13" type='checkbox')
+        label.modal-overlay(class="peer-checked:block" for='modal-13')
+        div.modal.modal-bottom-center(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] sm:w-56 dark:bg-sidebar-dark2")
+          div.modal-body.text-center
+            div.modal-img
+              img(class="" src="../../assets/images/modal/success.gif" alt="success" class="w-28")
+            h3.text-lg.font-bold.leading-none.mt-1 Success Message
+            p.mb-3 Now, you can access your account.
+            label(for="modal-13" class="cursor-pointer").btn.btn-success.py-1.px-2.text-white.inline-block.text-sm Close
+
+      //- Bottom-right modal
+      div.modal-main
+        input#modal-15(class="peer" name="modal-15" type='checkbox')
+        label.modal-overlay(class="peer-checked:block" for='modal-15')
+        div.modal.modal-bottom-right(class="peer-checked:opacity-100 peer-checked:visible w-[18.75rem] sm:w-56 dark:bg-sidebar-dark2")
+          div.modal-body.text-center
+            div.modal-img
+              img(class="" src="../../assets/images/modal/success.gif" alt="success" class="w-28")
+            h3.text-lg.font-bold.leading-none.mt-1 Success Message
+            p.mb-3 Now, you can access your account.
+            label(for="modal-15" class="cursor-pointer").btn.btn-success.py-1.px-2.text-white.inline-block.text-sm Close
 
     include ../../layout/footer-files
