@@ -353,7 +353,7 @@ div[class*=activity-dot-secondary]{
   background-repeat: no-repeat;
   display: block;
   height: 100vh;
-  @apply lg:h-auto;
+  @apply lg:h-auto 4xl:h-[90vh] 2xl:h-[80vh];
 }
 
 /* Tranding Text Animation */

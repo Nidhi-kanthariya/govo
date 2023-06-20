@@ -2384,7 +2384,7 @@ input:focus {
 }
 
 .close .accordionItemContent {
-    transition: height 2s ease-in-out;
+    transition: height 3s ease-in-out;
     float: left;
     display: block;
     height: 0px;
@@ -2405,6 +2405,7 @@ input:focus {
   padding: 0.75rem;
   transition-delay: 100ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.2s ease-in-out;
 }
 
 .open .accordionItemHeading {
@@ -11172,10 +11173,6 @@ header {
   min-width: max-content;
 }
 
-.min-w-\[2\.5rem\] {
-  min-width: 2.5rem;
-}
-
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -12614,6 +12611,11 @@ header {
 .px-padding {
   padding-left: calc(0.9375rem + (1.5625 - 0.9375) * ((100vw - 20rem) / (120 - 20)));
   padding-right: calc(0.9375rem + (1.5625 - 0.9375) * ((100vw - 20rem) / (120 - 20)));
+}
+
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .py-1 {
@@ -16022,6 +16024,20 @@ div[class*=activity-dot-secondary]{
   height: 100vh;
 }
 
+@media (max-width: 1599px) {
+
+  .bg-landing-size {
+    height: 90vh;
+  }
+}
+
+@media (max-width: 1399px) {
+
+  .bg-landing-size {
+    height: 80vh;
+  }
+}
+
 @media (max-width: 991px) {
 
   .bg-landing-size {
@@ -18910,6 +18926,10 @@ div[class*=activity-dot-secondary]{
     height: 590px;
   }
 
+  .\34xl\:h-\[79\%\] {
+    height: 79%;
+  }
+
   .\34xl\:w-5 {
     width: 1.25rem;
   }
@@ -19259,8 +19279,20 @@ div[class*=activity-dot-secondary]{
     height: 20px;
   }
 
+  .\32xl\:h-\[360px\] {
+    height: 360px;
+  }
+
   .\32xl\:h-\[40px\] {
     height: 40px;
+  }
+
+  .\32xl\:h-\[500px\] {
+    height: 500px;
+  }
+
+  .\32xl\:h-\[69\%\] {
+    height: 69%;
   }
 
   .\32xl\:w-\[20px\] {
