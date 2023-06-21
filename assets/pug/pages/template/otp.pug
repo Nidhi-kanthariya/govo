@@ -34,7 +34,7 @@ html(lang='en')
                                     input.w-full.text-center(class="input-otp " placeholder='0' type='tel' required oninput='digitValidate(this)' onkeyup='tabChange(2)' maxlength='1')
                                     input.w-full.text-center(class="input-otp " placeholder='0' type='tel' required oninput='digitValidate(this)' onkeyup='tabChange(3)' maxlength='1')
                                     input.w-full.text-center(class="input-otp " placeholder='0' type='tel' required oninput='digitValidate(this)' onkeyup='tabChange(4)' maxlength='1')
-                                button.btn.btn-primary.text-white(class="hover:drop-shadow-lg md:!mb-0 sm:!mt-2") Submit
+                                a.btn.btn-primary(class="!text-white hover:drop-shadow-lg my-2") Submit
                                 div.flex.items-center.justify-center.gap-2
                                     a.resend-otp(class="text-xs text-primary" href='javascript:void(0)') Resend 
                                     span.time.flex.gap-2 
@@ -64,4 +64,5 @@ html(lang='en')
                                 img(src="../../assets/images/svg/otp.svg" alt="register vector" class="w-[100%]")
                                 img(src="../../assets/images/svg/otp2.svg" alt="register vector" class="common-animate animate-ping bottom-[28%] absolute left-[11%] w-[52%] animate__animated animate__infinite animate__shakeY animate__slower")
             // Page Body End
+        include ../../layout/footer-files
 

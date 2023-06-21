@@ -352,8 +352,8 @@ div[class*=activity-dot-secondary]{
   background-position: center;
   background-repeat: no-repeat;
   display: block;
-  height: 100vh;
-  @apply lg:h-auto 4xl:h-[90vh] 2xl:h-[80vh];
+  min-height: calc(500px + (820 - 500) * ((100vw - 992px) / (1920 - 992)));
+  @apply lg:min-h-0;
 }
 
 /* Tranding Text Animation */
